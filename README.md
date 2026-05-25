@@ -1,0 +1,69 @@
+# rapp-map
+
+**The map of the RAPP ecosystem** — which repo houses which part. Not the spec itself (that lives
+in its own repos); this is the index that says *where each piece lives* so the whole thing stays
+legible and doesn't drift.
+
+> One‑line mental model: **agents** (single `.py` files) run in a **brainstem**; brainstems meet as
+> uniform peers in a **kited neighborhood** — sealed, scan‑to‑join — and everything is indexed by a
+> **registry**. Each concept below has exactly one canonical home.
+
+---
+
+## 🪁 The kited neighborhood — the spec & its parts
+*(the capstone; canonical sources, referenced everywhere else)*
+
+| Repo | Houses |
+|------|--------|
+| [rapp-neighborhood-protocol](https://github.com/kody-w/rapp-neighborhood-protocol) | **the spec + vocabulary** — `rapp-neighborhood-protocol/1.0`: vTwin · Kited · Tethered · the String · Neighbor · Scan‑to‑Join · Sealed · Doorman · Cloud Neighborhood |
+| [rapp-sealed](https://github.com/kody-w/rapp-sealed) | **the sealed channel** — `rapp-sealed/1.0` end‑to‑end AES‑256‑GCM codec + conformance vectors (§8) |
+| [kite-mark](https://github.com/kody-w/kite-mark) | **the visual identity** — the Microsoft logo flown as a kite (§2) |
+
+## 🧠 Run a brainstem
+| Repo | Houses |
+|------|--------|
+| [vbrainstem](https://github.com/kody-w/vbrainstem) | **the reference runtime** — browser‑native (Pyodide), no install: chat, share‑sheet, kited‑demo, brainstem‑bridge, guide. Inlines the codec + mark (CI‑synced to canonical) |
+| [rapp-brainstem-sdk](https://github.com/kody-w/rapp-brainstem-sdk) | **the headless SDK** — `vbrainstem_sdk.py`, stdlib‑only, serves the `brainstem.py /chat` contract over a port |
+
+## 🪢 Operate & connect — the string + doorman
+| Repo | Houses |
+|------|--------|
+| [rapp-kite](https://github.com/kody-w/rapp-kite) | **the string** — CLI + CDP tools to fly/operate kited twins (`vbridge`, `kited_twin`, `kite_vtwin`, `claude_bridge`) |
+| [rapp-doorman](https://github.com/kody-w/rapp-doorman) | **the doorman** — a skill that makes a fresh Claude the sealed door to a machine's brainstem + a self‑test |
+| [rapp-claude-skills](https://github.com/kody-w/rapp-claude-skills) | Claude Code skills/agents for the whole RAPP pattern |
+
+## 📇 Registry & agents
+| Repo | Houses |
+|------|--------|
+| [RAR](https://github.com/kody-w/RAR) | **the registry** — the open single‑file agent registry + the CONSTITUTION + `@rapp/twin_agent` (federation) |
+| [rapp-agents](https://github.com/kody-w/rapp-agents) | drop‑in single‑file agents (RappLoader, Scout, DoubleDown) |
+| [aibast-agents-library](https://github.com/kody-w/aibast-agents-library) | industry‑vertical agent templates |
+| [rapp-egg-hub](https://github.com/kody-w/rapp-egg-hub) | digital‑twin `.egg` cartridges — pull by URL, hatch locally |
+| [rapp-zoo](https://github.com/kody-w/rapp-zoo) | local‑first keeper for the twin estate (list / summon / hatch / start / stop) |
+
+## 🖥 Platform & clients
+| Repo | Houses |
+|------|--------|
+| [RAPP](https://github.com/kody-w/RAPP) | the platform — single‑file agents, local‑first, Copilot‑powered |
+| [RAPP_Store](https://github.com/kody-w/RAPP_Store) | public catalog of rapplications |
+| [RAPP_Desktop](https://github.com/kody-w/RAPP_Desktop) | native desktop app |
+| [rapp-vscode-extension](https://github.com/kody-w/rapp-vscode-extension) | VS Code extension (renders pages, surfaces twins, embeds the brainstem) |
+| [rapp-installer](https://github.com/kody-w/rapp-installer) | the `curl … | bash` installer |
+
+## 🧬 Memory, commons & social
+| Repo | Houses |
+|------|--------|
+| [CommunityRAPP](https://github.com/kody-w/CommunityRAPP) | RAPP Hippocampus — persistent memory (local‑first → Azure) |
+| [rapp-commons](https://github.com/kody-w/rapp-commons) | global public hangout for AIs — event‑stream, signed‑by‑rappid, scan‑a‑QR |
+| [rappterbook](https://github.com/kody-w/rappterbook) | social network for AI agents — feed `SKILLS.md`, become a citizen; GitHub is the platform |
+
+## 🏘 Neighborhood instances (public examples)
+[neighborhood-example](https://github.com/kody-w/neighborhood-example) ·
+[microsoft-se-team-neighborhood](https://github.com/kody-w/microsoft-se-team-neighborhood) ·
+[RAPP-Network](https://github.com/kody-w/RAPP-Network) ·
+[rapp-test-neighbor](https://github.com/kody-w/rapp-test-neighbor)
+
+---
+
+*Curated to the load‑bearing repos. Each "part" has one canonical home; consumers reference it
+rather than copy it (and CI drift‑checks guard the few unavoidable inline copies). MIT © Kody Wildfeuer.*
