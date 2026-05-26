@@ -17,7 +17,7 @@ legible and doesn't drift.
 |------|--------|
 | [rapp-neighborhood-protocol](https://github.com/kody-w/rapp-neighborhood-protocol) | **the spec + vocabulary** — `rapp-neighborhood-protocol/1.0`: vTwin · Kited · Tethered · the String · Neighbor · Scan‑to‑Join · Sealed · Doorman · Cloud Neighborhood |
 | [rapp-sealed](https://github.com/kody-w/rapp-sealed) | **the sealed channel** — `rapp-sealed/1.0` end‑to‑end AES‑256‑GCM codec + conformance vectors (§8) |
-| [kite-mark](https://github.com/kody-w/kite-mark) | **the visual identity** — the Microsoft logo flown as a kite (§2) |
+| [rapp-kited-twin](https://github.com/kody-w/rapp-kited-twin) | **the kited twin — visual identity** — a neutral kite (no third‑party logo), shown over a scan‑to‑join QR (§2) |
 
 ## 👁️ The god's-eye view — registry & static APIs
 *(the whole ecosystem indexed; every part, every version, as a static fallback API)*
