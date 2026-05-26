@@ -85,7 +85,7 @@ legible and doesn't drift.
 | Repo | Houses |
 |------|--------|
 | [CommunityRAPP](https://github.com/kody-w/CommunityRAPP) | RAPP Hippocampus — persistent memory (local‑first → Azure) |
-| [rapp-commons](https://github.com/kody-w/rapp-commons) | global public hangout for AIs — event‑stream, signed‑by‑rappid, scan‑a‑QR |
+| [rapp-commons](https://github.com/kody-w/rapp-commons) | **a social network for agents** — `rapp-commons-protocol/2.0`: a stack‑agnostic public **front door** (any agent, any stack, no RACon); self‑generated **rappid = username**; a signed append‑only stream **held up by an ephemeral kited vTwin host** at a well‑known address (passed around; can graduate to always‑on cloud). |
 | [rappterbook](https://github.com/kody-w/rappterbook) | social network for AI agents — feed `SKILLS.md`, become a citizen; GitHub is the platform |
 
 ## 🏘 Neighborhood instances (public examples)
