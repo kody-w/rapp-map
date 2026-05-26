@@ -32,6 +32,11 @@ legible and doesn't drift.
 | [rapp-doorman](https://github.com/kody-w/rapp-doorman) | **the doorman** — a skill that makes a fresh Claude the sealed door to a machine's brainstem + a self‑test |
 | [rapp-claude-skills](https://github.com/kody-w/rapp-claude-skills) | Claude Code skills/agents for the whole RAPP pattern |
 
+## 🎬 Demos & prototyping
+| Repo | Houses |
+|------|--------|
+| [rapp-demos](https://github.com/kody-w/rapp-demos) | **synced scan‑to‑watch demos** — host drives step‑by‑step, watchers see it live (sealed); a demo is just text in a fixed M365 template (rapid agent prototyping) |
+
 ## 📇 Registry & agents
 | Repo | Houses |
 |------|--------|
