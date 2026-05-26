@@ -4,6 +4,13 @@
 in its own repos); this is the index that says *where each piece lives* so the whole thing stays
 legible and doesn't drift.
 
+> 📸 **v1.0.0 — the first full‑ecosystem snapshot** (2026‑05‑26). Every repo below is tagged
+> `v1.0.0`. The live registry of every part *and every version* is
+> **[rapp‑god](https://kody-w.github.io/rapp-god/)** (release 1.0.0) — the god's‑eye view that watches
+> the whole ecosystem for drift. The user‑facing layer is **[RACon](https://github.com/kody-w/racon)**:
+> drop a cartridge (`agent.py` / `.egg`), it runs as its own twin; take it anywhere + play together
+> (RACon Kited).
+
 > One‑line mental model: **agents** (single `.py` files) run in a **brainstem**; brainstems meet as
 > uniform peers in a **kited neighborhood** — sealed, scan‑to‑join — and everything is indexed by a
 > **registry**. Each concept below has exactly one canonical home.
