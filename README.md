@@ -19,6 +19,14 @@ legible and doesn't drift.
 | [rapp-sealed](https://github.com/kody-w/rapp-sealed) | **the sealed channel** — `rapp-sealed/1.0` end‑to‑end AES‑256‑GCM codec + conformance vectors (§8) |
 | [kite-mark](https://github.com/kody-w/kite-mark) | **the visual identity** — the Microsoft logo flown as a kite (§2) |
 
+## 👁️ The god's-eye view — registry & static APIs
+*(the whole ecosystem indexed; every part, every version, as a static fallback API)*
+
+| Repo | Houses |
+|------|--------|
+| [rapp-god](https://github.com/kody-w/rapp-god) | **the registry of the whole RAPP god** — every load‑bearing part *and every version* of it, content‑addressed as immutable fallback frames; a live drift / update‑waiting observatory (it observes, never fixes). Built on `rapp-static-api/1.0`. |
+| [rapp-static-apis](https://github.com/kody-w/rapp-static-apis) | **the spec** — `rapp-static-api/1.0`: APIs built entirely on GitHub raw user data, no server. Manifest → one build step → generated index + `api/v1/*` + append‑only content‑addressed fallbacks. Reference impl: rapp‑god. |
+
 ## 🧠 Run a brainstem
 | Repo | Houses |
 |------|--------|
