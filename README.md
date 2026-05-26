@@ -9,7 +9,7 @@ legible and doesn't drift.
 > **[rapp‑god](https://kody-w.github.io/rapp-god/)** (release 1.0.0) — the god's‑eye view that watches
 > the whole ecosystem for drift. The user‑facing layer is **[RACon](https://github.com/kody-w/racon)**:
 > drop a cartridge (`agent.py` / `.egg`), it runs as its own twin; take it anywhere + play together
-> (RACon Kited).
+> (RACon Kited). **Full v1 release notes: [ECOSYSTEM.md](ECOSYSTEM.md).**
 
 > One‑line mental model: **agents** (single `.py` files) run in a **brainstem**; brainstems meet as
 > uniform peers in a **kited neighborhood** — sealed, scan‑to‑join — and everything is indexed by a
