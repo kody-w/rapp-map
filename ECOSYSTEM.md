@@ -3,6 +3,8 @@
 **First full‑ecosystem snapshot · 2026‑05‑26.** Every repo below is tagged `v1.0.0`; the live registry
 of every part *and every version* is **[rapp‑god](https://kody-w.github.io/rapp-god/)** (release 1.0.0).
 
+**Why it exists →** [VISION.md](VISION.md).
+
 ---
 
 ## What RAPP is, in one breath
