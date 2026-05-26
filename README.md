@@ -55,6 +55,7 @@ legible and doesn't drift.
 | [racon](https://github.com/kody-w/racon) | **the experience (grail)** — `racon/1.0`: RACon is all the user sees; cartridges just work; **RACon Kited** = cross‑device + multiplayer. The frozen north‑star. |
 | [rapp-carts](https://github.com/kody-w/rapp-carts) | **the cartridge spec** — `rapp-cart/1.0`: an `agent.py` + an `.egg` are cartridges (rapp_carts); brainstem.py is the bootloader; everything else is under the hood. |
 | [cowork-cookbook-rapp](https://github.com/kody-w/cowork-cookbook-rapp) | **the first RACon cartridge** — the Cowork Cookbook as a vTwin (recipe→agent.py with WorkIQ); a portable `.egg` + a one‑file loader + vRACon (browser). |
+| [rio](https://github.com/kody-w/rio) | **RIO — the browser** (OSI L7): an early‑web‑style rapplication you load into RACon to browse the kited ecosystem; ships in RACon's catalog. |
 | [ai-agent-templates-mirror](https://github.com/kody-w/ai-agent-templates-mirror) | mirror of the AI agent stack library; target for one‑click MCS / Copilot Studio deploy (`ONE_CLICK.md`). |
 
 ## 🎬 Demos & prototyping
