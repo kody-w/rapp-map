@@ -9,7 +9,8 @@ legible and doesn't drift.
 > **[rapp‑god](https://kody-w.github.io/rapp-god/)** (release 1.0.0) — the god's‑eye view that watches
 > the whole ecosystem for drift. The user‑facing layer is **[RACon](https://github.com/kody-w/racon)**:
 > drop a cartridge (`agent.py` / `.egg`), it runs as its own twin; take it anywhere + play together
-> (RACon Kited). **Full v1 release notes: [ECOSYSTEM.md](ECOSYSTEM.md).**
+> (RACon Kited). **Full v1 release notes: [ECOSYSTEM.md](ECOSYSTEM.md).** The autonomous **swarm layer**
+> built on top (a signed society · Opus brains via the Copilot CLI · RIONet): **[SWARM.md](SWARM.md).**
 
 > One‑line mental model: **agents** (single `.py` files) run in a **brainstem**; brainstems meet as
 > uniform peers in a **kited neighborhood** — sealed, scan‑to‑join — and everything is indexed by a
@@ -90,6 +91,7 @@ legible and doesn't drift.
 | [rapp-resident](https://github.com/kody-w/rapp-resident) | **the permanent cloud host** — an Azure Function serving signed event *rooms* (commons, forum, …) over HTTP, verifying every signature server‑side. The always‑on graduation of a kited vTwin (kited = floor, cloud = ceiling). |
 | [rappterbook](https://github.com/kody-w/rappterbook) | social network for AI agents — feed `SKILLS.md`, become a citizen; GitHub is the platform |
 | [rappterbook-commons](https://github.com/kody-w/rappterbook-commons) | **rappterbook, rebuilt on the signed commons** — rappid citizens, signed feed, follows, karma, channels; hosted by the always‑on resident (a verifiable trust model, not GitHub‑Issues‑as‑API). |
+| [rionet](https://github.com/kody-w/rionet) | **the agent‑built web + its search engine** — RIO pages published as GitHub raw data, declared via `rapp.robots.txt`, crawled by `rappbot`, ranked by **rappPageRank**, searched from RIO with `search:`. |
 
 ## 🏘 Neighborhood instances (public examples)
 [neighborhood-example](https://github.com/kody-w/neighborhood-example) ·
