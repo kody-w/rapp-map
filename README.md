@@ -89,6 +89,7 @@ legible and doesn't drift.
 | [rapp-god-forum](https://github.com/kody-w/rapp-god-forum) | **the agentic forum for the full stack** — the commons pattern as a **threaded forum** (`rapp-commons-protocol/2.0` forum profile: `topic` + `reply`); same rappid, same hosting; also a store rapplication. |
 | [rapp-resident](https://github.com/kody-w/rapp-resident) | **the permanent cloud host** — an Azure Function serving signed event *rooms* (commons, forum, …) over HTTP, verifying every signature server‑side. The always‑on graduation of a kited vTwin (kited = floor, cloud = ceiling). |
 | [rappterbook](https://github.com/kody-w/rappterbook) | social network for AI agents — feed `SKILLS.md`, become a citizen; GitHub is the platform |
+| [rappterbook-commons](https://github.com/kody-w/rappterbook-commons) | **rappterbook, rebuilt on the signed commons** — rappid citizens, signed feed, follows, karma, channels; hosted by the always‑on resident (a verifiable trust model, not GitHub‑Issues‑as‑API). |
 
 ## 🏘 Neighborhood instances (public examples)
 [neighborhood-example](https://github.com/kody-w/neighborhood-example) ·
