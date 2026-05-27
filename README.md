@@ -23,9 +23,11 @@ legible and doesn't drift.
 
 | Repo | Houses |
 |------|--------|
-| [rapp-neighborhood-protocol](https://github.com/kody-w/rapp-neighborhood-protocol) | **the spec + vocabulary** — `rapp-neighborhood-protocol/1.0`: vTwin · Kited · Tethered · the String · Neighbor · Scan‑to‑Join · Sealed · Doorman · Cloud Neighborhood |
+| [rapp-neighborhood-protocol](https://github.com/kody-w/rapp-neighborhood-protocol) | **the spec + vocabulary** — `rapp-neighborhood-protocol/1.0`: twin‑chat (§6) is the base · controllers/twins/apps (§17) · **front doors · local≡kited≡cloud · 'v' = swarm‑capable · egg/import/fork (§18)** · vTwin · Sealed · Doorman · Cloud Neighborhood |
 | [rapp-sealed](https://github.com/kody-w/rapp-sealed) | **the sealed channel** — `rapp-sealed/1.0` end‑to‑end AES‑256‑GCM codec + conformance vectors (§8) |
 | [rapp-kited-twin](https://github.com/kody-w/rapp-kited-twin) | **the kited twin — visual identity** — a neutral kite (no third‑party logo), shown over a scan‑to‑join QR (§2) |
+| [rapp-vneighborhood](https://github.com/kody-w/rapp-vneighborhood) | **the front‑door template** — `rapp-vneighborhood/1.0`: a public repo is a front door to a neighborhood. First twin **turns the lights on** → **link + QR + PIN**; bodies **sealed** end‑to‑end; reads `neighborhood.json` bones; same protocol on‑device (`twin_chat_agent host=local`). [live](https://kody-w.github.io/rapp-vneighborhood/) |
+| [vneighborhood-design-studio](https://github.com/kody-w/vneighborhood-design-studio) · [vneighborhood-research-lab](https://github.com/kody-w/vneighborhood-research-lab) | **example front doors** — two deliberately‑different sealed neighborhoods (`#studio` critique · `#lab` findings) on the *same* twin‑chat, built from the template. [studio](https://kody-w.github.io/vneighborhood-design-studio/) · [lab](https://kody-w.github.io/vneighborhood-research-lab/) |
 
 ## 👁️ The god's-eye view — registry & static APIs
 *(the whole ecosystem indexed; every part, every version, as a static fallback API)*
