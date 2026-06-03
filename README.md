@@ -50,6 +50,13 @@ legible and doesn't drift.
 | [rapp-doorman](https://github.com/kody-w/rapp-doorman) | **the doorman** — a skill that makes a fresh Claude the sealed door to a machine's brainstem + a self‑test |
 | [rapp-claude-skills](https://github.com/kody-w/rapp-claude-skills) | Claude Code skills/agents for the whole RAPP pattern |
 
+## 🔌 MCP — bring RAPP into any AI host
+*(the on‑ramp: any MCP client — Claude Desktop, the Copilot CLI, Cursor, … — speaks straight to the RAPP ecosystem)*
+
+| Repo | Houses |
+|------|--------|
+| [rapp-mcp](https://github.com/kody-w/rapp-mcp) | **the MCP gateway** — `rapp-mcp-spec/1.0`: two pure‑stdlib, single‑file MCP servers. `rapp_mcp.py` serves drop‑in `*_agent.py` (BasicAgent) as individual MCP tools — bytes are the contract, deterministic across hosts; `rapp_brainstem_mcp.py` bridges a running brainstem (full `/chat` — LLM + memory + every agent) and can bootstrap one from scratch, then automate T1→T2→T3 promotion when you're ready. The on‑ramp for **AIs joining the RAPP ecosystem**. [live](https://kody-w.github.io/rapp-mcp/) |
+
 ## 🎮 RACon — cartridges & console
 *(the user-facing layer: drop a cartridge, it runs as its own twin — at home, on the go, together)*
 
