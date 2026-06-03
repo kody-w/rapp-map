@@ -55,7 +55,7 @@ legible and doesn't drift.
 
 | Repo | Houses |
 |------|--------|
-| [rapp-mcp](https://github.com/kody-w/rapp-mcp) | **the MCP gateway** — `rapp-mcp-spec/1.0`: two pure‑stdlib, single‑file MCP servers. `rapp_mcp.py` serves drop‑in `*_agent.py` (BasicAgent) as individual MCP tools — bytes are the contract, deterministic across hosts; `rapp_brainstem_mcp.py` bridges a running brainstem (full `/chat` — LLM + memory + every agent) and can bootstrap one from scratch, then automate T1→T2→T3 promotion when you're ready. The on‑ramp for **AIs joining the RAPP ecosystem**. [live](https://kody-w.github.io/rapp-mcp/) |
+| [rapp-mcp](https://github.com/kody-w/rapp-mcp) | **the MCP gateway** — `rapp-mcp-spec/1.0`: two pure‑stdlib, single‑file MCP servers. `rapp_mcp.py` serves drop‑in `*_agent.py` (BasicAgent) as individual MCP tools — bytes are the contract, deterministic across hosts; `rapp_brainstem_mcp.py` bridges a running brainstem (full `/chat` — LLM + memory + every agent) and can bootstrap one from scratch, then automate T1→T2→T3 promotion when you're ready. MCP is **transport** realizing *Chat Is The Only Wire*: every MCP host is a **Layer‑2 caller of a brainstem's `/chat`**, not a new unit or kind in the taxonomy. The serverless companion is the **`rapp-static-mcp/1.0`** static profile — an MCP catalog of content‑addressed agent frames on `raw.githubusercontent.com` you **pin by sha8 and verify before exec** (built on `rapp-static-api/1.0`), the static‑fallback to this live gateway. The on‑ramp for **AIs joining the RAPP ecosystem**. [live](https://kody-w.github.io/rapp-mcp/) |
 
 ## 🎮 RACon — cartridges & console
 *(the user-facing layer: drop a cartridge, it runs as its own twin — at home, on the go, together)*
