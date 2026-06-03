@@ -23,10 +23,11 @@ GitHub raw data — no servers.
 | **User‑facing** | the console + the cartridge unit | `racon` (experience grail) · `rapp-carts` (cartridge spec) |
 | **Cartridges** | apps/games/tools as portable twins | `cowork-cookbook-rapp` (first cartridge) · `RAPP_Store` (catalog) |
 | **Twin runtime** | how a cartridge runs in isolation | `RAPP_Store` SPEC §13 (`runtime:"twin"`) · `rapp-brainstem-sdk` · `vbrainstem` |
-| **Kited neighborhood** | cross‑device + multiplayer, sealed | `rapp-neighborhood-protocol` · `rapp-sealed` · `rapp-kite` · `rapp-doorman` · `rapp-kited-twin` |
+| **Kited neighborhood** | cross‑device + multiplayer, sealed | `rapp-neighborhood-protocol` · `rapp-sealed` · `rapp-kite` · `rapp-doorman` · `rapp-kited-twin` · `rapp-vneighborhood` (front‑door template) · `vneighborhood-design-studio` + `vneighborhood-research-lab` (example front doors) |
+| **MCP on‑ramp** | transport into any AI host | `rapp-mcp` (`rapp-mcp-spec/1.0`) — any MCP client speaks to a brainstem over `/chat`; MCP is **transport** realizing *Chat Is The Only Wire* (every MCP host is a Layer‑2 caller of `/chat`), not a new unit |
 | **Registry & observability** | the index + drift watch | `rapp-god` · `rapp-static-apis` · `rapp-map` · `RAR` |
-| **Platform & apps** | agents, templates, clients | `RAPP` · `ai-agent-templates-mirror` · `rapp-demos` · `rapp-agents` · `aibast-agents-library` · `rapp-egg-hub` · `rapp-zoo` · `RAPP_Desktop` · `rapp-installer` · `rapp-vscode-extension` · `rapp-claude-skills` |
-| **Memory, commons & social** | persistence + the public square | `CommunityRAPP` · `rapp-commons` · `rappterbook` |
+| **Platform & apps** | agents, templates, clients | `RAPP` · `ai-agent-templates-mirror` · `rapp-demos` · `rapp-agents` · `aibast-agents-library` · `rapp-egg-hub` · `rapp-zoo` · `RAPP_Desktop` · `rapp-installer` · `rapp-vscode-extension` · `rapp-claude-skills` · `rio` (the RIO browser) |
+| **Memory, commons & social** | persistence + the public square | `CommunityRAPP` · `rapp-commons` · `rapp-god-forum` · `rapp-resident` (always‑on cloud host) · `rappterbook` · `rappterbook-commons` · `rionet` (agent‑built web + search) |
 | **Neighborhood instances** | live examples | `microsoft-se-team-neighborhood` · `neighborhood-example` · `RAPP-Network` · `rapp-test-neighbor` |
 
 ## Highlights of v1
@@ -62,7 +63,9 @@ GitHub raw data — no servers.
 
 ## Snapshot facts
 
-- **33 repos** tagged `v1.0.0` (2026‑05‑26).
+- **33 repos** tagged `v1.0.0` (2026‑05‑26) — a *frozen* snapshot. The
+  [rapp‑map README](README.md) tracks the **live** map, including post‑v1 additions above this
+  snapshot (e.g. `rapp-mcp`, `rio`, `rionet`, `rapp-resident`, `rapp-god-forum`, `rappterbook-commons`).
 - **rapp‑god release 1.0.0** — 42 parts tracked, 116 versions held, a map of 38 repos.
 - Served off **GitHub raw data**; the registry CI re‑runs every 6h to keep the *live* view current
   while the `v1.0.0` tags hold this snapshot fixed.

@@ -29,7 +29,7 @@ just *uses*, the way the personal computer did that for software.
 | **Desktop / console** | **RACon** — the user‑facing layer; all anyone has to know |
 | **Apps** | **rapplications**, shipped as **`.egg` cartridges** that hatch into twins |
 | **Identity + runtime** | your **GitHub account** — the only account you need |
-| **Network** | the **kited layer** — the web that links every device + twin |
+| **Network** | the **kited layer** — the web that links every device + twin; **MCP** is the second on‑ramp — external AI hosts call into a brainstem's `/chat` (the kite links *your* devices/twins; MCP lets any AI host reach one) |
 
 ## Why it matters
 
