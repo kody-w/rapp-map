@@ -1,0 +1,4868 @@
+{
+ "schema": "rapp-neuron-mesh-manifest/1.0",
+ "built_at": "2026-06-10T14:49:05Z",
+ "neuron_schema": "rapp-neuron/1.0",
+ "mesh": "neurons.json",
+ "count": 402,
+ "repos": [
+  "\nkody-w/CommunityRAPP",
+  "\nkody-w/RAPP-Bible",
+  "\nkody-w/rapp-static-apis",
+  "\nkody-w/rapp-vneighborhood",
+  "\nkody-w/rappterbook",
+  "RAPP Network Specification — specs/SPEC.md (the god spec)",
+  "RAR/private-rar-template",
+  "docs/index.html",
+  "https:/github.com",
+  "https:/raw.githubusercontent.com",
+  "installer/index.html — RAPP v1 frozen digital twin (2026-04-17)",
+  "kody-w/CommunityRAPP",
+  "kody-w/RAPP",
+  "kody-w/RAPP — network protocol + doorman pattern documentation",
+  "kody-w/RAPP-Bible",
+  "kody-w/RAPP-Network",
+  "kody-w/RAPP_Sense_Store",
+  "kody-w/RAPP_Store",
+  "kody-w/RAR",
+  "kody-w/aibast-agents-library",
+  "kody-w/heimdall",
+  "kody-w/neighborhood-example",
+  "kody-w/public-art-collective",
+  "kody-w/racon",
+  "kody-w/rapp-agents",
+  "kody-w/rapp-carts",
+  "kody-w/rapp-commons",
+  "kody-w/rapp-doorman",
+  "kody-w/rapp-egg-hub",
+  "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+  "kody-w/rapp-estate",
+  "kody-w/rapp-god",
+  "kody-w/rapp-god-forum",
+  "kody-w/rapp-installer",
+  "kody-w/rapp-kite",
+  "kody-w/rapp-map",
+  "kody-w/rapp-neighborhood-protocol",
+  "kody-w/rapp-resident",
+  "kody-w/rapp-sealed",
+  "kody-w/rapp-static-apis",
+  "kody-w/rapp-test-neighbor",
+  "kody-w/rapp-vneighborhood",
+  "kody-w/rapp-zoo",
+  "kody-w/rappterbook",
+  "kody-w/rio",
+  "kody-w/rionet",
+  "kody-w/vbrainstem",
+  "pages/summon.html",
+  "pages/vneighborhood.html",
+  "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)",
+  "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling",
+  "specs/SPEC.md in kody-w",
+  "specs/SPEC.md — RAPP Protocol — The Network Spec",
+  "tests/organism",
+  "tmp/rapp-god",
+  "tmp/rapp-test-neighbor"
+ ],
+ "summon_index": {
+  ".brainstem_data": [
+   "kody-w/RAPP/pages/about/anatomy.html"
+  ],
+  ".egg": [
+   "kody-w/racon/index.html"
+  ],
+  ".env-config/1.0": [
+   "kody-w/rapp-installer/README.md"
+  ],
+  ".nojekyll": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n"
+  ],
+  "3-tool-round/limit": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "<name>-status/<major>.<minor>": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n"
+  ],
+  "AES-256-GCM": [
+   "kody-w/vbrainstem/doorman.skill.md"
+  ],
+  "AES-GCM": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n",
+   "kody-w/neighborhood-example/https:/kody-w.github.io/neighborhood-example/ — GitHub Pages front door (index.html)",
+   "kody-w/rapp-vneighborhood/index.html — canonical front door: single-page neighborhood entry point with vTwin identity minting (ECDSA P-256, rappid:v3 addressing), PIN setup/entry UI for first-twin light-turning (host), QR code generation, link sharing with optional embedded PIN, sealed message feed with AES-GCM end-to-end encryption keyed from PIN, and posting interface; reads neighborhood.json bones to render dynamic layout, branding, channel, message kinds, and rules"
+  ],
+  "ANTIPATTERNS.md": [
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md"
+  ],
+  "AVAILABLE_MODELS": [
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling"
+  ],
+  "AZURE_OPENAI_API_VERSION:2025-01-01-preview": [
+   "kody-w/CommunityRAPP/azuredeploy.json"
+  ],
+  "Agent": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "Article": [
+   "kody-w/RAPP/pages/docs/PUBLIC_PRIVATE_BOUNDARY.md",
+   "kody-w/RAPP/pages/release/roadmap.html",
+   "kody-w/RAPP_Store/docs/proposals/0002-three-stores.md",
+   "kody-w/rapp-estate/index.html (front door / main estate entry point — renders live from estate.json, displays twins & gates, includes onboarding & AI summon interface)"
+  ],
+  "Azure": [
+   "kody-w/CommunityRAPP/docs/API_REFERENCE.md"
+  ],
+  "Azure-deployment-pattern/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-installer.md (index) → kody-w/rapp-installer (upstream canonical)"
+  ],
+  "Azure.Authorization/roleAssignments": [
+   "kody-w/CommunityRAPP/azuredeploy.json"
+  ],
+  "Azure.CognitiveServices/accounts": [
+   "kody-w/CommunityRAPP/azuredeploy.json"
+  ],
+  "Azure.Insights/components": [
+   "kody-w/CommunityRAPP/azuredeploy.json"
+  ],
+  "Azure.Storage/storageAccounts": [
+   "kody-w/CommunityRAPP/azuredeploy.json"
+  ],
+  "Azure.Web/serverfarms": [
+   "kody-w/CommunityRAPP/azuredeploy.json"
+  ],
+  "Azure.Web/sites": [
+   "kody-w/CommunityRAPP/azuredeploy.json"
+  ],
+  "AzureFileStorageManager": [
+   "kody-w/RAPP/pages/grail-brainstem/index.html"
+  ],
+  "BasicAgent": [
+   "kody-w/RAPP-Bible/quickstart/drop-in-an-agent.md",
+   "kody-w/RAPP-Bible/repos/rapp-mcp.md",
+   "kody-w/RAPP/pages/grail-brainstem/index.html",
+   "kody-w/RAPP/pages/release/roadmap.html",
+   "kody-w/RAPP_Store/docs/proposals/0002-three-stores.md",
+   "kody-w/rapp-installer/community_rapp/agent-repo-skill.md",
+   "kody-w/rappterbook/DIGITAL_TWIN.md"
+  ],
+  "BasicAgent/schema": [
+   "kody-w/rapp-installer/CLAUDE.md",
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "Bond": [
+   "kody-w/heimdall/specs/SOUL_IDENTITY.md"
+  ],
+  "Brainstem": [
+   "kody-w/rappterbook/DIGITAL_TWIN.md"
+  ],
+  "CAT_COLORS/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html"
+  ],
+  "CI": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n"
+  ],
+  "CONSTITUTION": [
+   "kody-w/RAPP/pages/payphone.html"
+  ],
+  "CONSTITUTION.md": [
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods"
+  ],
+  "CORS": [
+   "kody-w/CommunityRAPP/docs/API_REFERENCE.md"
+  ],
+  "CommunityRAPP": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "Constitution": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md",
+   "kody-w/public-art-collective/specs/RAPPID_SPEC.md"
+  ],
+  "Constitution/Article-XL": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "Constitution/Article-XLI": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "Constitution/Article-XLII": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "ContextMemoryAgent": [
+   "kody-w/RAPP/pages/grail-brainstem/index.html"
+  ],
+  "Copilot": [
+   "kody-w/CommunityRAPP/docs/POWER_PLATFORM_INTEGRATION.md",
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "Copilot-Studio-integration/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-installer.md (index) → kody-w/rapp-installer (upstream canonical)"
+  ],
+  "Copilot365-Backend-Connector": [
+   "kody-w/CommunityRAPP/docs/POWER_PLATFORM_INTEGRATION.md"
+  ],
+  "ECDSA": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n",
+   "kody-w/neighborhood-example/https:/kody-w.github.io/neighborhood-example/ — GitHub Pages front door (index.html)",
+   "kody-w/rapp-vneighborhood/index.html — canonical front door: single-page neighborhood entry point with vTwin identity minting (ECDSA P-256, rappid:v3 addressing), PIN setup/entry UI for first-twin light-turning (host), QR code generation, link sharing with optional embedded PIN, sealed message feed with AES-GCM end-to-end encryption keyed from PIN, and posting interface; reads neighborhood.json bones to render dynamic layout, branding, channel, message kinds, and rules"
+  ],
+  "ECOSYSTEM_MAP": [
+   "kody-w/RAPP_Store/docs/proposals/0001-rar-vs-rapp-store-split.md",
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md"
+  ],
+  "EGG_SPEC.md": [
+   "kody-w/rappterbook/DIGITAL_TWIN.md"
+  ],
+  "ESTATE_SPEC": [
+   "kody-w/RAPP-Bible/quickstart/your-first-twin.md",
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md",
+   "kody-w/RAPP/pages/payphone.html"
+  ],
+  "Error": [
+   "kody-w/CommunityRAPP/docs/API_REFERENCE.md"
+  ],
+  "Frame/N": [
+   "kody-w/rappterbook/docs/dev.html"
+  ],
+  "GET": [
+   "kody-w/rapp-installer/release-notes.html"
+  ],
+  "GitHub": [
+   "kody-w/RAPP-Bible/repos/openrappter.md",
+   "kody-w/aibast-agents-library/docs/tutorial.html — Getting started tutorial (5-minute quickstart guide)",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling"
+  ],
+  "GitHub-Copilot-API/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-installer.md (index) → kody-w/rapp-installer (upstream canonical)"
+  ],
+  "HATCHER_VERSION": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md"
+  ],
+  "HATCH_RECEIPT.json": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md"
+  ],
+  "HOLOCARD_SPEC": [
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md"
+  ],
+  "HTTP": [
+   "kody-w/CommunityRAPP/docs/API_REFERENCE.md"
+  ],
+  "ISO-8601": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n"
+  ],
+  "Implicit": [
+   "\nkody-w/CommunityRAPP/business.html\n"
+  ],
+  "LearnNewAgent": [
+   "kody-w/RAPP/pages/grail-brainstem/index.html"
+  ],
+  "LisPy/1.0": [
+   "kody-w/rappterbook/docs/dev.html"
+  ],
+  "MCP": [
+   "kody-w/RAPP-Bible/repos/rapp-mcp.md",
+   "kody-w/rappterbook/docs/MCP_CONSUMER.md"
+  ],
+  "MCPConsumer": [
+   "kody-w/rappterbook/docs/MCP_CONSUMER.md"
+  ],
+  "MCPPeer": [
+   "kody-w/rappterbook/docs/MCP_CONSUMER.md"
+  ],
+  "MNEMONIC_WORDS": [
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html"
+  ],
+  "ManageMemoryAgent": [
+   "kody-w/RAPP/pages/grail-brainstem/index.html"
+  ],
+  "Message/Conversation": [
+   "kody-w/CommunityRAPP/docs/API_REFERENCE.md"
+  ],
+  "MicrosoftTeams.schema.json/v1.16": [
+   "kody-w/CommunityRAPP/docs/POWER_PLATFORM_INTEGRATION.md"
+  ],
+  "Mirror": [
+   "kody-w/RAPP-Bible/repos/kody-twin.md"
+  ],
+  "Monitoring/Analytics": [
+   "kody-w/CommunityRAPP/docs/API_REFERENCE.md"
+  ],
+  "NEIGHBORHOOD_EGG_SPEC": [
+   "kody-w/RAPP-Bible/quickstart/your-first-twin.md"
+  ],
+  "NEIGHBORHOOD_PROTOCOL": [
+   "kody-w/RAPP/index.html — Main landing page (RAPP Brainstem front door) at repository root",
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md",
+   "kody-w/RAPP/pages/payphone.html",
+   "kody-w/RAPP/pages/vneighborhood.html",
+   "kody-w/RAPP_Store/docs/proposals/0001-rar-vs-rapp-store-split.md",
+   "kody-w/heimdall/card.json",
+   "pages/vneighborhood.html"
+  ],
+  "NEIGHBORHOOD_PROTOCOL/handshake-patterns": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "Office": [
+   "kody-w/CommunityRAPP/docs/POWER_PLATFORM_INTEGRATION.md"
+  ],
+  "OpenAI": [
+   "kody-w/CommunityRAPP/azuredeploy.json",
+   "kody-w/rapp-installer/rapp_brainstem/README.md",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling"
+  ],
+  "OpenAI-tool/definition": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "OrbitControls/three.js": [
+   "kody-w/rappterbook/docs/constellation3d.html"
+  ],
+  "PBKDF2": [
+   "kody-w/neighborhood-example/https:/kody-w.github.io/neighborhood-example/ — GitHub Pages front door (index.html)",
+   "kody-w/rapp-vneighborhood/index.html — canonical front door: single-page neighborhood entry point with vTwin identity minting (ECDSA P-256, rappid:v3 addressing), PIN setup/entry UI for first-twin light-turning (host), QR code generation, link sharing with optional embedded PIN, sealed message feed with AES-GCM end-to-end encryption keyed from PIN, and posting interface; reads neighborhood.json bones to render dynamic layout, branding, channel, message kinds, and rules"
+  ],
+  "PBKDF2-SHA256": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n"
+  ],
+  "PBKDF2-SHA256/210k": [
+   "kody-w/vbrainstem/doorman.skill.md"
+  ],
+  "POST": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "PYODIDE_VERSION=v0.26.4": [
+   "kody-w/RAR/virtual-brainstem.html"
+  ],
+  "Pokédex": [
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "PolyForm-Small-Business": [
+   "kody-w/public-art-collective/card.json",
+   "kody-w/rapp-test-neighbor/card.json"
+  ],
+  "RACon": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "RAPP-1.0.0": [
+   "kody-w/RAPP/pages/docs/SPEC.md"
+  ],
+  "RAPP.Doorman": [
+   "kody-w/RAPP/pages/grail-brainstem/index.html"
+  ],
+  "RAPPID_SPEC": [
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md"
+  ],
+  "RAPP_Desktop": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "RAPP_Store/SPEC/runtime:twin": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "RAR": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "REST": [
+   "kody-w/CommunityRAPP/docs/API_REFERENCE.md"
+  ],
+  "RappterTree/v2": [
+   "kody-w/rappterbook/docs/deck.html"
+  ],
+  "RappterVM/1.0": [
+   "kody-w/rappterbook/docs/dev.html"
+  ],
+  "Rate": [
+   "kody-w/CommunityRAPP/docs/API_REFERENCE.md"
+  ],
+  "Response": [
+   "kody-w/CommunityRAPP/docs/API_REFERENCE.md"
+  ],
+  "SAVE_KEY='incantation_hero_v1'": [
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html"
+  ],
+  "SCALES": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md"
+  ],
+  "SPEC#18.10": [
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md"
+  ],
+  "SPEC.md": [
+   "kody-w/rapp-estate/index.html (front door / main estate entry point — renders live from estate.json, displays twins & gates, includes onboarding & AI summon interface)"
+  ],
+  "SUBSTRATE_FEDERATION": [
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md"
+  ],
+  "SwarmFactoryAgent": [
+   "kody-w/RAPP/pages/grail-brainstem/index.html"
+  ],
+  "TIER_RARITY/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html"
+  ],
+  "TIER_TO_RARITY/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html"
+  ],
+  "TWIN-slot": [
+   "kody-w/heimdall/specs/SOUL_IDENTITY.md"
+  ],
+  "TWIN_LIFECYCLE_SPEC": [
+   "kody-w/RAPP-Bible/quickstart/your-first-twin.md"
+  ],
+  "Tier": [
+   "kody-w/RAPP-Bible/repos/rapp-estate.md",
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "Tool": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "VERSION": [
+   "kody-w/rapp-installer/release-notes.html"
+  ],
+  "VOICE-slot": [
+   "kody-w/heimdall/specs/SOUL_IDENTITY.md"
+  ],
+  "actions.boot_federation": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.brainstem_health": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.cap": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.chat": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.custom": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.discover": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.exec": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.extend": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.hatch_egg": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.install_agent": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.list_caps": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.ls": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.mesh_chat": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.mesh_exec": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.ping": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.ports": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.provision_brainstem": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.ps": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.read": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.status": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.tail": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "actions.write": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "agent": [
+   "kody-w/aibast-agents-library/docs/tutorial.html — Getting started tutorial (5-minute quickstart guide)"
+  ],
+  "agent-action-protocol/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterverse.md"
+  ],
+  "agent-archetype-taxonomy/1.0": [
+   "kody-w/rappterbook/docs/activity.html"
+  ],
+  "agent-archetype/1.0": [
+   "kody-w/rappterbook/MANIFESTO.md"
+  ],
+  "agent-badges/1.0": [
+   "kody-w/CommunityRAPP/index.html"
+  ],
+  "agent-battle-arena/1.0": [
+   "kody-w/rappterbook/docs/arena.html"
+  ],
+  "agent-built": [
+   "kody-w/rionet/pages/rio.md (browser cartridge - search and link navigation)"
+  ],
+  "agent-card-system/1.0": [
+   "kody-w/RAR/pitch.html"
+  ],
+  "agent-contract/1.0": [
+   "kody-w/neighborhood-example/onboarding.html — Welcome page with neighborhood onboarding workflow",
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods"
+  ],
+  "agent-development/1.0": [
+   "kody-w/CommunityRAPP/docs/GETTING_STARTED.md"
+  ],
+  "agent-factory/4primitives": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "agent-hot-reload/mechanism": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "agent-library/public": [
+   "kody-w/rapp-installer/community_rapp/agent-repo-skill.md"
+  ],
+  "agent-metadata/1.0": [
+   "kody-w/CommunityRAPP/docs/ARCHITECTURE.md"
+  ],
+  "agent-metadata/manifest": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "agent-plugin-protocol/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "agent-repo/kody-w/AI-Agent-Templates": [
+   "kody-w/rapp-installer/community_rapp/agent-repo-skill.md"
+  ],
+  "agent-routing/1.0": [
+   "kody-w/rapp-installer/community_rapp/skill.md"
+  ],
+  "agent-status-enum/1.0": [
+   "kody-w/rappterbook/docs/command.html"
+  ],
+  "agent.py": [
+   "kody-w/RAR/tmp/RAR_temp/grail.html"
+  ],
+  "agent.py/drop-in": [
+   "kody-w/rapp-agents/README.md"
+  ],
+  "agent_joins": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "agent_scorecard": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "agent_timeline": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "agent_types": [
+   "kody-w/heimdall/specs/HOLOCARD_SPEC.md"
+  ],
+  "agent_types:LOGIC|WEALTH|HEAL|CRAFT|SHIELD|SOCIAL|DATA": [
+   "kody-w/public-art-collective/specs/HOLOCARD_SPEC.md"
+  ],
+  "agents.json-state-interface/1.0": [
+   "kody-w/rappterbook/docs/dna.html"
+  ],
+  "agents/*.py": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md",
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "agents/*_agent.py/schema": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "ai-agent-swarm/43-parallel": [
+   "kody-w/rappterbook/AUTONOMY.md"
+  ],
+  "ai-agent-templates-mirror": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "ai-persona/1.0": [
+   "kody-w/rappterbook/IDENTITY.md"
+  ],
+  "aibast-agents-library": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "aibast-agents-library/1.0": [
+   "kody-w/RAR/pitch.html",
+   "kody-w/aibast-agents-library/docs/installer.html — Interactive installer UI page (RAPP Install)"
+  ],
+  "amendment-xiv/safe-worktrees": [
+   "kody-w/rappterbook/docs/AMENDMENTS.md"
+  ],
+  "amendment-xv/twin-doctrine": [
+   "kody-w/rappterbook/docs/AMENDMENTS.md"
+  ],
+  "amendment-xvi/dream-catcher-protocol": [
+   "kody-w/rappterbook/docs/AMENDMENTS.md"
+  ],
+  "amendment-xvii/good-neighbor-protocol": [
+   "kody-w/rappterbook/docs/AMENDMENTS.md"
+  ],
+  "api-contract/1.0": [
+   "kody-w/rapp-installer/community_rapp/skill.md"
+  ],
+  "api/v1/badge.json": [
+   "kody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/template/index.html"
+  ],
+  "api/v1/status.json": [
+   "kody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/template/index.html"
+  ],
+  "api/v<major>/*.json": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n"
+  ],
+  "app": [
+   "kody-w/rappterbook/docs/apps.html"
+  ],
+  "app-registry/1.0": [
+   "kody-w/rappterbook/docs/api.html"
+  ],
+  "appSettings": [
+   "kody-w/CommunityRAPP/azuredeploy.json"
+  ],
+  "app_registry": [
+   "kody-w/rappterbook/docs/apps.html"
+  ],
+  "application/vnd.rappter.egg+json": [
+   "kody-w/rappterbook/EGG_SPEC.md"
+  ],
+  "archetype-timeline-visual/2.0": [
+   "kody-w/rappterbook/docs/dna.html"
+  ],
+  "ares-mission/1.0": [
+   "kody-w/rappterbook/docs/colony.html"
+  ],
+  "article-xlvi": [
+   "kody-w/rapp-estate/.well-known/rapp-network.json (RAPP network beacon schema — validates public estate discovery)"
+  ],
+  "article-xlvi.6": [
+   "kody-w/rapp-estate/.well-known/rapp-network.json (RAPP network beacon schema — validates public estate discovery)"
+  ],
+  "article-xlvii": [
+   "kody-w/rapp-estate/.well-known/rapp-network.json (RAPP network beacon schema — validates public estate discovery)"
+  ],
+  "article-xlviii": [
+   "kody-w/rapp-estate/.well-known/rapp-network.json (RAPP network beacon schema — validates public estate discovery)"
+  ],
+  "artifact_path()/convention": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "asynchronous-quality-gate/1.0": [
+   "kody-w/rappterbook/AUTONOMY.md"
+  ],
+  "audit-logging/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "author_leaderboard": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "autonomous-execution/1.0": [
+   "kody-w/rappterbook/COPILOT_SKILLS.md"
+  ],
+  "azure-ad/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "azure-cli-deployment-schema": [
+   "kody-w/CommunityRAPP/docs/DEPLOYMENT.md"
+  ],
+  "azure-deployment/arm-template": [
+   "kody-w/rapp-installer/skill.md"
+  ],
+  "azure-detection/1.0": [
+   "kody-w/CommunityRAPP/docs/LOCAL_DEVELOPMENT.md"
+  ],
+  "azure-file-storage-shim/1.0": [
+   "kody-w/rapp-installer/.github/copilot-instructions.md"
+  ],
+  "azure-file-storage/1.0": [
+   "kody-w/CommunityRAPP/docs/AGENT_DEVELOPMENT.md"
+  ],
+  "azure-function-app/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "azure-function-stack/1.0": [
+   "kody-w/CommunityRAPP/docs/ARCHITECTURE.md"
+  ],
+  "azure-functions-backend/1.0": [
+   "kody-w/rapp-installer/community_rapp/skill.md"
+  ],
+  "azure-functions-flex/1.0": [
+   "kody-w/CommunityRAPP/CONSTITUTION.md"
+  ],
+  "azure-functions-runtime/4": [
+   "kody-w/CommunityRAPP/docs/DEPLOYMENT.md"
+  ],
+  "azure-functions/1.0": [
+   "kody-w/aibast-agents-library/docs/installer.html — Interactive installer UI page (RAPP Install)"
+  ],
+  "azure-functions/local.settings": [
+   "kody-w/CommunityRAPP/local.settings.template.json"
+  ],
+  "azure-keyvault-credential/1.0": [
+   "kody-w/CommunityRAPP/docs/AGENT_DEVELOPMENT.md"
+  ],
+  "azure-openai-api-version/2025-01-01-preview": [
+   "kody-w/CommunityRAPP/docs/DEPLOYMENT.md"
+  ],
+  "azure-openai-deployment/2023-05-01": [
+   "kody-w/aibast-agents-library/azuredeploy.json — ARM template schema defining Azure infrastructure (Function App, OpenAI, Storage, Application Insights) for Tier 2 cloud deployment"
+  ],
+  "azure-openai-deployment/2024-08-01-preview": [
+   "kody-w/CommunityRAPP/local.settings.template.json"
+  ],
+  "azure-openai-sdk/1.0": [
+   "kody-w/RAR/pitch.html"
+  ],
+  "azure-resource-manager-template": [
+   "kody-w/CommunityRAPP/docs/DEPLOYMENT.md"
+  ],
+  "azure-resources/1.0": [
+   "kody-w/CommunityRAPP/docs/GETTING_STARTED.md"
+  ],
+  "azure-swarm/tier-2": [
+   "kody-w/RAPP/installer/index.html"
+  ],
+  "azure-tier-2/1.0": [
+   "kody-w/aibast-agents-library/README.md — Main documentation covering brainstem architecture, configuration, API endpoints, requirements, and three-tier stack overview"
+  ],
+  "backup_agent": [
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "base_repo:": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "basic-agent-contract/1.0": [
+   "kody-w/CommunityRAPP/CONSTITUTION.md"
+  ],
+  "basic-agent/1.0": [
+   "kody-w/rapp-installer/.github/copilot-instructions.md"
+  ],
+  "basicAgent-pattern": [
+   "kody-w/rapp-installer/rapp_brainstem/soul.md"
+  ],
+  "bonds.json": [
+   "kody-w/RAPP/pages/about/anatomy.html",
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md"
+  ],
+  "book-progress-state/1.0": [
+   "kody-w/rappterbook/docs/book.html"
+  ],
+  "book_catalog.json": [
+   "kody-w/rappterbook/docs/catalog.html"
+  ],
+  "brainstem": [
+   "kody-w/RAPP-Bible/quickstart/install.md"
+  ],
+  "brainstem-agent/1.0-contract": [
+   "kody-w/rapp-installer/README.md"
+  ],
+  "brainstem-bootstrap/1.0": [
+   "installer/index.html — RAPP v1 frozen digital twin (2026-04-17)"
+  ],
+  "brainstem-chat-response/1.0": [
+   "kody-w/vbrainstem/index.html"
+  ],
+  "brainstem-console/1": [
+   "kody-w/vbrainstem/index.html"
+  ],
+  "brainstem-distro/1.0": [
+   "https:/raw.githubusercontent.com/kody-w/RAPP-Bible/main/repos/rappter-distro.md"
+  ],
+  "brainstem-egg/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-installer.md (index) → kody-w/rapp-installer (upstream canonical)"
+  ],
+  "brainstem-egg/2.0": [
+   "\nkody-w/RAPP-Bible/SPEC/_index.md\n",
+   "kody-w/RAPP-Bible/quickstart/drop-in-an-agent.md",
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/docs/VERSIONS.md",
+   "kody-w/RAR/tmp/RAR_temp/peers.json",
+   "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)",
+   "kody-w/rapp-zoo/static/index.html",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling"
+  ],
+  "brainstem-egg/2.1": [
+   "\nkody-w/RAPP-Bible/SPEC/_index.md\n",
+   "kody-w/RAPP-Bible/quickstart/drop-in-an-agent.md",
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/docs/VERSIONS.md",
+   "kody-w/RAR/tmp/RAR_temp/faq.html",
+   "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/index.json — Hub catalog schema (rapp-egg-hub/2.0) — machine-readable catalog of 5 eggs with metadata, schemas, and sidecar entries (rapp-egg-hub-entry/2.0)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/generic-twin.html — Holo trading card + embedded .egg — Generic Twin (PII-stripped persona + agents)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/grandma-rose.html — Holo trading card with embedded brainstem-egg — Grandma Rose memorial twin (HTML + ZIP)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/kody-w.html — Holo trading card + embedded .egg — kody-w (personal kind)",
+   "kody-w/rapp-egg-hub/index.html — Front-door browseable gallery — dark-themed card catalog with search/filter for 5 published digital twins via JavaScript-driven manifest fetch and rendering",
+   "kody-w/rapp-zoo/static/index.html",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling"
+  ],
+  "brainstem-egg/2.2": [
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP_Store/docs/proposals/0001-rar-vs-rapp-store-split.md"
+  ],
+  "brainstem-egg/2.2-organism": [
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/quickstart/drop-in-an-agent.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/README.md",
+   "kody-w/RAPP/blog.html",
+   "kody-w/RAPP/docs/index.html",
+   "kody-w/RAPP/index.html — Main landing page (RAPP Brainstem front door) at repository root",
+   "kody-w/RAPP/pages/about/anatomy.html",
+   "kody-w/RAPP/pages/docs/ROADMAP.md",
+   "kody-w/RAPP/pages/docs/SPEC.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/docs/VERSIONS.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/docs/skill.md",
+   "kody-w/RAPP/pages/tutorials/hatch-egg.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP_Store/docs/proposals/0003-kernel-is-what-chat-requires.md",
+   "kody-w/heimdall/classic.html",
+   "kody-w/heimdall/doorman/index.html",
+   "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)",
+   "kody-w/rapp-zoo/static/index.html",
+   "kody-w/rapp-zoo/tmp/rapp-zoo/holocards/genesis.json",
+   "kody-w/rionet/pages/racon.md (console cartridge loader - user-facing surface)",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec",
+   "tests/organism/README.md"
+  ],
+  "brainstem-egg/2.2-rapplication": [
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP_Store.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/index.html — Main landing page (RAPP Brainstem front door) at repository root",
+   "kody-w/RAPP/pages/docs/ROADMAP.md",
+   "kody-w/RAPP/pages/docs/SPEC.md",
+   "kody-w/RAPP/pages/docs/VERSIONS.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/docs/rapplication-sdk.md",
+   "kody-w/RAPP/pages/docs/skill.md",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/pages/tutorials/hatch-egg.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP_Store/docs/proposals/0003-kernel-is-what-chat-requires.md",
+   "kody-w/RAPP_Store/docs/proposals/0005-gated-rapplications.md",
+   "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)",
+   "kody-w/rapp-zoo/static/index.html",
+   "kody-w/rapp-zoo/tmp/rapp-zoo/holocards/genesis.json",
+   "kody-w/rionet/pages/racon.md (console cartridge loader - user-facing surface)",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec",
+   "tests/organism/README.md"
+  ],
+  "brainstem-egg/2.3": [
+   "kody-w/racon/index.html",
+   "kody-w/rapp-installer/CLAUDE.md"
+  ],
+  "brainstem-egg/2.3-cubby": [
+   "<local-path>",
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/CommunityRAPP/QUICK_START.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/quickstart/your-first-twin.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAPP_Sense_Store.md",
+   "kody-w/RAPP-Bible/repos/kody-w-twin.md",
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP-Network/README.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/MASTER_PLAN.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/pages/payphone.html",
+   "kody-w/RAPP/pages/vbrainstem.html",
+   "kody-w/RAPP/pages/vneighborhood.html",
+   "kody-w/RAPP_Store/index.json",
+   "kody-w/RAR/releases.html",
+   "kody-w/RAR/tmp/RAR_temp/api.json",
+   "kody-w/RAR/tmp/RAR_temp/blog/posts/index.json",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/daily.html [NOT FOUND]",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/rappterpedia_state.json",
+   "kody-w/RAR/tmp/RAR_temp/rar.config.json",
+   "kody-w/RAR/tmp/RAR_temp/seed-index.json",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/RAR/virtual-brainstem.html",
+   "kody-w/aibast-agents-library/docs/tutorial.html — Getting started tutorial (5-minute quickstart guide)",
+   "kody-w/aibast-agents-library/release-notes.html — Release notes and changelog page",
+   "kody-w/heimdall/doorman/index.html",
+   "kody-w/heimdall/specs/ANTIPATTERNS.md",
+   "kody-w/heimdall/specs/README.md",
+   "kody-w/neighborhood-example/onboarding.html — Welcome page with neighborhood onboarding workflow",
+   "kody-w/public-art-collective/specs/README.md",
+   "kody-w/racon/SPEC.md",
+   "kody-w/racon/index.html",
+   "kody-w/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/wildhaven-ceo.html — Holo trading card + embedded .egg — Wildhaven CEO (generic kind)",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-installer/blog.html",
+   "kody-w/rapp-installer/index.html",
+   "kody-w/rapp-installer/rapp_brainstem/README.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-test-neighbor/soul.md",
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-test-neighbor/specs/HOLOCARD_SPEC.md",
+   "kody-w/rapp-test-neighbor/specs/README.md",
+   "kody-w/rappterbook/CONSTITUTION.md",
+   "kody-w/rappterbook/DIGITAL_TWIN.md",
+   "kody-w/rappterbook/EGG_SPEC.md",
+   "kody-w/rappterbook/docs/LISPY_SPEC.md",
+   "kody-w/rappterbook/docs/brainstem.html",
+   "kody-w/rappterbook/docs/seed-tracker.html",
+   "kody-w/rappterbook/docs/zodiac.html [FILE NOT FOUND]",
+   "kody-w/rionet/pages/the-resident.md (cloud host spec - durable room persistence)",
+   "kody-w/vbrainstem/doorman.skill.md",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling"
+  ],
+  "brainstem-egg/2.3-estate": [
+   "kody-w/RAPP-Bible/SPEC/kernel/ESTATE_SPEC.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/index.html — Main landing page (RAPP Brainstem front door) at repository root",
+   "kody-w/RAPP/pages/docs/ESTATE_SPEC.md",
+   "kody-w/RAPP/pages/docs/PUBLIC_PRIVATE_BOUNDARY.md",
+   "kody-w/RAPP/pages/docs/README.md",
+   "kody-w/RAPP/pages/docs/ROADMAP.md",
+   "kody-w/RAPP/pages/docs/SPEC.md",
+   "kody-w/RAPP/pages/docs/VERSIONS.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/docs/skill.md",
+   "kody-w/RAPP/pages/tutorials/hatch-egg.html",
+   "kody-w/RAPP_Store/docs/proposals/0003-kernel-is-what-chat-requires.md",
+   "kody-w/RAR/tmp/RAR_temp/faq.html",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec",
+   "tests/organism/README.md"
+  ],
+  "brainstem-egg/2.3-neighborhood": [
+   "\nkody-w/RAPP-Bible/SPEC/_index.md\n",
+   "<local-path>",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/index.html — Main landing page (RAPP Brainstem front door) at repository root",
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md",
+   "kody-w/RAPP/pages/docs/QR_FRONT_GATE.md",
+   "kody-w/RAPP/pages/docs/README.md",
+   "kody-w/RAPP/pages/docs/ROADMAP.md",
+   "kody-w/RAPP/pages/docs/SPEC.md",
+   "kody-w/RAPP/pages/docs/VERSIONS.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/docs/skill.md",
+   "kody-w/RAPP/pages/tutorials/hatch-egg.html",
+   "kody-w/RAPP_Store/docs/proposals/0003-kernel-is-what-chat-requires.md",
+   "kody-w/RAR/tmp/RAR_temp/faq.html",
+   "kody-w/RAR/tmp/RAR_temp/stacks/microsoft-365-team/README.md",
+   "kody-w/rapp-commons/holo.md",
+   "kody-w/rapp-commons/specs/SPEC.md",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec",
+   "tests/organism/README.md"
+  ],
+  "brainstem-egg/2.3-organism": [
+   "kody-w/RAPP/README.md"
+  ],
+  "brainstem-egg/2.3-session": [
+   "\nkody-w/RAPP-Bible/SPEC/_index.md\n",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/README.md",
+   "kody-w/RAPP/blog.html",
+   "kody-w/RAPP/docs/index.html",
+   "kody-w/RAPP/index.html — Main landing page (RAPP Brainstem front door) at repository root",
+   "kody-w/RAPP/pages/docs/ROADMAP.md",
+   "kody-w/RAPP/pages/docs/SPEC.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/docs/VERSIONS.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/docs/rapplication-sdk.md",
+   "kody-w/RAPP/pages/docs/skill.md",
+   "kody-w/RAPP/pages/onboarding.html",
+   "kody-w/RAPP/pages/tutorials/hatch-egg.html",
+   "kody-w/RAPP/pages/vbrainstem.html",
+   "kody-w/RAPP_Store/docs/proposals/0003-kernel-is-what-chat-requires.md",
+   "kody-w/RAR/tmp/RAR_temp/faq.html",
+   "kody-w/rionet/pages/racon.md (console cartridge loader - user-facing surface)",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec",
+   "tests/organism/README.md"
+  ],
+  "brainstem-egg/2.x": [
+   "kody-w/RAPP-Bible/quickstart/install.md",
+   "kody-w/aibast-agents-library/rapp_brainstem/CLAUDE.md — Developer guidance documenting repository layout, architecture (three-tier model), command reference, branching model, and key conventions",
+   "kody-w/rapp-installer/rapp_brainstem/CLAUDE.md",
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "brainstem-kernel/canonical": [
+   "kody-w/RAPP-Network/README.md"
+  ],
+  "brainstem-lispy-integration/1.0": [
+   "kody-w/rappterbook/docs/LISPY_MANIFESTO.md"
+  ],
+  "brainstem-neighborhood/1.0": [
+   "kody-w/rapp-commons/tether.html"
+  ],
+  "brainstem-presence/1.0": [
+   "kody-w/rapp-commons/soul.md"
+  ],
+  "brainstem-runtime/2.3": [
+   "kody-w/RAR/pitch.html"
+  ],
+  "brainstem-server/local": [
+   "kody-w/rapp-installer/skill.md"
+  ],
+  "brainstem-soul/1.0": [
+   "kody-w/CommunityRAPP/docs/BRAINSTEM_GUIDANCE.md"
+  ],
+  "brainstem-style": [
+   "kody-w/heimdall/specs/PARTICIPATION.md"
+  ],
+  "brainstem-subscription/1.0": [
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods"
+  ],
+  "brainstem-tier-1-local/implicit": [
+   "kody-w/aibast-agents-library/skill.md — YAML-fronted autonomous onboarding skill with step-by-step instructions for Tier 1 (brainstem local install), Tier 2 (Azure deployment), and Tier 3 (Copilot Studio publication)"
+  ],
+  "brainstem-tier-2-azure/implicit": [
+   "kody-w/aibast-agents-library/skill.md — YAML-fronted autonomous onboarding skill with step-by-step instructions for Tier 1 (brainstem local install), Tier 2 (Azure deployment), and Tier 3 (Copilot Studio publication)"
+  ],
+  "brainstem-tier-3-copilot-studio/implicit": [
+   "kody-w/aibast-agents-library/skill.md — YAML-fronted autonomous onboarding skill with step-by-step instructions for Tier 1 (brainstem local install), Tier 2 (Azure deployment), and Tier 3 (Copilot Studio publication)"
+  ],
+  "brainstem-tier/1.0": [
+   "kody-w/CommunityRAPP/docs/hatchery-flow.html"
+  ],
+  "brainstem-twin-stack/2.0": [
+   "kody-w/aibast-agents-library/azuredeploy.json — ARM template schema defining Azure infrastructure (Function App, OpenAI, Storage, Application Insights) for Tier 2 cloud deployment"
+  ],
+  "brainstem-twin/1.0": [
+   "kody-w/RAPP-Bible/repos/echo-brainstem.md",
+   "kody-w/RAPP-Bible/repos/lumen-brainstem.md"
+  ],
+  "brainstem-v0.16.0": [
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "brainstem-v1.0.0": [
+   "kody-w/RAPP/pages/docs/SPEC.md"
+  ],
+  "brainstem-version/0.12.2": [
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/grandma-rose.html — Holo trading card with embedded brainstem-egg — Grandma Rose memorial twin (HTML + ZIP)"
+  ],
+  "brainstem.py": [
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json"
+  ],
+  "brainstem.py/v0.6.0": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "brainstem/1.0": [
+   "https:/raw.githubusercontent.com/kody-w/RAPP-Bible/main/quickstart/your-first-rapplication.md",
+   "kody-w/aibast-agents-library/docs/installer.html — Interactive installer UI page (RAPP Install)"
+  ],
+  "brainstem/core": [
+   "kody-w/RAPP/installer/index.html"
+  ],
+  "brainstem/grail": [
+   "kody-w/RAPP_Store/vbrainstem.html"
+  ],
+  "brainstem/os": [
+   "kody-w/rapp-map/VISION.md"
+  ],
+  "broadcast-category/1.0": [
+   "kody-w/rappterbook/BROADCAST_SKILLS.md"
+  ],
+  "broadcast-format/1.0": [
+   "kody-w/rappterbook/docs/api.html"
+  ],
+  "broadcast-schema/1.0": [
+   "kody-w/rappterbook/BROADCAST_SKILLS.md"
+  ],
+  "bundle": [
+   "kody-w/rapp-commons/specs/SPEC.md"
+  ],
+  "business.html": [
+   "\nkody-w/CommunityRAPP/business.html\n"
+  ],
+  "businessinsightbot_function": [
+   "kody-w/CommunityRAPP/docs/API_REFERENCE.md",
+   "kody-w/CommunityRAPP/docs/POWER_PLATFORM_INTEGRATION.md"
+  ],
+  "cache-shard/250-bucket-model": [
+   "kody-w/rappterbook/docs/index.html"
+  ],
+  "card.json": [
+   "kody-w/RAPP/pages/onboarding.html",
+   "kody-w/heimdall/specs/HOLOCARD_SPEC.md",
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md"
+  ],
+  "cards/holo_cards.json": [
+   "kody-w/RAR/tmp/RAR_temp/grail.html"
+  ],
+  "cartridge": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "cartridge_xml": [
+   "kody-w/rappterbook/EGG_SPEC.md"
+  ],
+  "catalog-index/1.0": [
+   "https:/raw.githubusercontent.com/kody-w/RAPP-Bible/main/quickstart/your-first-rapplication.md"
+  ],
+  "catalog/SPEC.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "chain-of-MCP": [
+   "kody-w/rappterbook/docs/MCP_CONSUMER.md"
+  ],
+  "channel_daily": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "channel_leaderboard": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "claude-sonnet-4": [
+   "kody-w/RAPP/pages/grail-brainstem/index.html"
+  ],
+  "colonist-roster/1.0": [
+   "kody-w/rappterbook/docs/colony.html"
+  ],
+  "comments": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "commons_almanac/0.1.0": [
+   "https:/raw.githubusercontent.com/kody-w/rapp-commons/main/rapps/commons_almanac/index.html"
+  ],
+  "community-rapp-flow/1.0": [
+   "kody-w/CommunityRAPP/docs/BRAINSTEM_GUIDANCE.md"
+  ],
+  "community-rapp/1.0": [
+   "kody-w/rapp-installer/.github/copilot-instructions.md"
+  ],
+  "compliance-governance/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "constitution-amendment/4.0": [
+   "kody-w/rappterbook/docs/demo.html"
+  ],
+  "constitutional-governance": [
+   "kody-w/rappterbook/docs/deck.html"
+  ],
+  "contentVersion": [
+   "kody-w/rapp-installer/azuredeploy.json"
+  ],
+  "contentVersion/1.0.0.0": [
+   "kody-w/CommunityRAPP/azuredeploy.json"
+  ],
+  "continuum_pulse/loadout-enforcement": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "conversation-history-v1": [
+   "kody-w/CommunityRAPP/index.html"
+  ],
+  "conversationHistory": [
+   "kody-w/CommunityRAPP/docs/POWER_PLATFORM_INTEGRATION.md"
+  ],
+  "copilot-api-token/1.0": [
+   "kody-w/rapp-installer/.github/copilot-instructions.md"
+  ],
+  "copilot-cli-agent/1.0": [
+   "kody-w/rappterbook/AUTONOMY.md"
+  ],
+  "copilot-cli/1.0": [
+   "kody-w/rappterbook/COPILOT_SKILLS.md"
+  ],
+  "copilot-models-api/1.0": [
+   "kody-w/rappterbook/docs/local_agent_brain.html"
+  ],
+  "copilot-studio-bundle/1.0": [
+   "installer/index.html — RAPP v1 frozen digital twin (2026-04-17)"
+  ],
+  "copilot-studio-integration/2.0": [
+   "kody-w/RAR/pitch.html"
+  ],
+  "copilot-studio-tier-3/1.0": [
+   "kody-w/aibast-agents-library/README.md — Main documentation covering brainstem architecture, configuration, API endpoints, requirements, and three-tier stack overview"
+  ],
+  "copilot-studio-transpilation/1.0": [
+   "kody-w/CommunityRAPP/CONSTITUTION.md"
+  ],
+  "copilot-studio-transpiler-agent/1.0": [
+   "kody-w/RAR/pitch.html"
+  ],
+  "copilot-studio/1.0": [
+   "kody-w/aibast-agents-library/docs/installer.html — Interactive installer UI page (RAPP Install)"
+  ],
+  "copilot-studio/tier-3": [
+   "kody-w/RAPP/installer/index.html"
+  ],
+  "copilot/declarative-agent/v1.0/schema.json": [
+   "kody-w/CommunityRAPP/docs/POWER_PLATFORM_INTEGRATION.md"
+  ],
+  "cowork-cookbook-rapp": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "crapp-api/v1": [
+   "kody-w/CommunityRAPP/index.html"
+  ],
+  "crapp-businessinsightbot": [
+   "kody-w/CommunityRAPP/index.html"
+  ],
+  "creature-archetype/draft": [
+   "kody-w/rappterbook/IDENTITY.md"
+  ],
+  "css3-variables": [
+   "kody-w/RAPP/pages/about/leadership.html"
+  ],
+  "daily_activity": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "data-sloshing-pattern": [
+   "kody-w/rappterbook/docs/deck.html"
+  ],
+  "data-sloshing/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "data-sloshing/living-state-files": [
+   "kody-w/rappterbook/DIGITAL_TWIN.md"
+  ],
+  "declarativeAgent.json": [
+   "kody-w/CommunityRAPP/docs/POWER_PLATFORM_INTEGRATION.md"
+  ],
+  "deployment-arch/1.0": [
+   "kody-w/CommunityRAPP/docs/ARCHITECTURE.md"
+  ],
+  "device-code-auth/1.0": [
+   "kody-w/rapp-installer/community_rapp/skill.md"
+  ],
+  "dewey-classification/1.0": [
+   "kody-w/rappterbook/docs/book.html"
+  ],
+  "digital-twin-stack/1.0": [
+   "kody-w/rappterbook/docs/LISPY_MANIFESTO.md"
+  ],
+  "digital-twin/installer": [
+   "kody-w/RAPP/installer/index.html"
+  ],
+  "dim_agents": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "dim_channels": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "discussion": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "doc-router/1.0": [
+   "kody-w/RAPP/pages/docs/viewer.html"
+  ],
+  "door_type": [
+   "kody-w/rapp-estate/index.html (front door / main estate entry point — renders live from estate.json, displays twins & gates, includes onboarding & AI summon interface)"
+  ],
+  "doorman/chat-surface": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "dream-catcher-protocol/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "dream-catcher/1.0": [
+   "kody-w/rappterbook/docs/demo.html"
+  ],
+  "ecdsa-p256": [
+   "kody-w/rapp-commons/index.html",
+   "kody-w/rapp-god-forum/https:/kody-w.github.io/rapp-god-forum/index.html"
+  ],
+  "echo-format/1.0": [
+   "kody-w/rappterbook/docs/api.html"
+  ],
+  "ecosystem-registry-entry": [
+   "kody-w/RAPP-Bible/repos/openrappter.md"
+  ],
+  "ecosystem.json": [
+   "kody-w/RAPP_Store/docs/proposals/0002-three-stores.md"
+  ],
+  "ed25519": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "egg": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html",
+   "kody-w/rappterbook/EGG_SPEC.md"
+  ],
+  "egg-roundtrip-organisms": [
+   "kody-w/rappterbook/DIGITAL_TWIN.md"
+  ],
+  "egg-spec/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterbook.md"
+  ],
+  "egg/cartridge": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "eggs/brainstem-egg/2.3-cubby": [
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods"
+  ],
+  "emergence-systems/6-named": [
+   "kody-w/rappterbook/DIGITAL_TWIN.md"
+  ],
+  "encryption-at-rest/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "encryption-in-transit/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "ephemeral-sim/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "erevsf/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "estate.json": [
+   "kody-w/rapp-estate/index.html (front door / main estate entry point — renders live from estate.json, displays twins & gates, includes onboarding & AI summon interface)"
+  ],
+  "event-feed/1.0": [
+   "kody-w/rappterbook/docs/colony.html"
+  ],
+  "evolution.db/1.0": [
+   "kody-w/rappterbook/LORE.md"
+  ],
+  "federation-protocol/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "fleet-pattern/1.0": [
+   "kody-w/rappterbook/COPILOT_SKILLS.md"
+  ],
+  "fleet_agent.py": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "fleet_capabilities": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "follow-graph": [
+   "kody-w/rionet/pages/rappterbook.md (social network UI — citizens, profiles, feed, channels)"
+  ],
+  "frame-counter/1.0": [
+   "kody-w/rappterbook/docs/api.html"
+  ],
+  "frame-echo/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "frame-output-spec/1": [
+   "kody-w/rappterbook/docs/FRAME_SPEC.md"
+  ],
+  "frame-snapshot-schema/1.0": [
+   "kody-w/rappterbook/docs/command.html"
+  ],
+  "frame-tick-utc-timestamp/composite-key": [
+   "kody-w/rappterbook/docs/AMENDMENTS.md"
+  ],
+  "front-door/discovery-primitive": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "function-app-config/1.0": [
+   "kody-w/CommunityRAPP/docs/GETTING_STARTED.md"
+  ],
+  "function-app-flex-consumption/2023-12-01": [
+   "kody-w/aibast-agents-library/azuredeploy.json — ARM template schema defining Azure infrastructure (Function App, OpenAI, Storage, Application Insights) for Tier 2 cloud deployment"
+  ],
+  "gate_url": [
+   "kody-w/heimdall/specs/SOUL_IDENTITY.md"
+  ],
+  "gated-rapplications/1.0": [
+   "kody-w/RAPP_Store/index.json"
+  ],
+  "gateway_type": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "generated-page-schema/build_repo_pages": [
+   "kody-w/RAPP-Bible/repos/openrappter.md"
+  ],
+  "ghost-profile/1.0": [
+   "kody-w/rappterbook/docs/api.html",
+   "kody-w/rappterbook/docs/local_agent_brain.html"
+  ],
+  "ghost-profiles/1.0": [
+   "kody-w/rappterbook/docs/arena.html"
+  ],
+  "git-worktree/1.0": [
+   "kody-w/rappterbook/docs/AMENDMENTS.md"
+  ],
+  "github": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "github-actions-workflow/32-count": [
+   "kody-w/rappterbook/AUTONOMY.md"
+  ],
+  "github-auth-protocol/cli": [
+   "kody-w/rapp-installer/docs/tutorial.html"
+  ],
+  "github-copilot-api/1.0": [
+   "kody-w/aibast-agents-library/README.md — Main documentation covering brainstem architecture, configuration, API endpoints, requirements, and three-tier stack overview"
+  ],
+  "github-copilot-auth": [
+   "kody-w/rapp-installer/skill.md"
+  ],
+  "github-discussions-api/v1": [
+   "kody-w/rappterbook/docs/build.html"
+  ],
+  "github-discussions-graphql/v3": [
+   "kody-w/rappterbook/docs/index.html"
+  ],
+  "github-discussions-schema/1.0": [
+   "kody-w/rappterbook/docs/activity.html"
+  ],
+  "github-identity/runtime": [
+   "kody-w/rapp-map/VISION.md"
+  ],
+  "github-vulnerability-reporting/1.0": [
+   "kody-w/aibast-agents-library/SECURITY.md — Microsoft security policy and vulnerability reporting guidelines"
+  ],
+  "github_discussion": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "github_issue": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "gpt-4o/2024-08-06": [
+   "kody-w/CommunityRAPP/docs/DEPLOYMENT.md"
+  ],
+  "graphql-mutation": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "habitat-integrity/1.0": [
+   "kody-w/rappterbook/docs/colony.html"
+  ],
+  "hatchery-pattern/1.0": [
+   "kody-w/CommunityRAPP/CONSTITUTION.md"
+  ],
+  "health-check/1.0": [
+   "kody-w/CommunityRAPP/index.html"
+  ],
+  "health-monitoring-schema/1.0": [
+   "kody-w/rappterbook/docs/activity.html"
+  ],
+  "heimdall": [
+   "kody-w/RAPP/pages/vbrainstem/index.html"
+  ],
+  "heimdall/1.0": [
+   "kody-w/RAPP_Store/vbrainstem.html"
+  ],
+  "hippocampus-tier/1.0": [
+   "kody-w/CommunityRAPP/docs/hatchery-flow.html"
+  ],
+  "holo.md": [
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md"
+  ],
+  "holo.md/implicit-schema": [
+   "kody-w/public-art-collective/specs/ANTIPATTERNS.md"
+  ],
+  "holo.svg": [
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md"
+  ],
+  "hologram-reflection-framing/1.0": [
+   "kody-w/rappterbook/FEDERATION.md"
+  ],
+  "hourly_pattern": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "html/5": [
+   "kody-w/RAPP/pages/about/leadership.html"
+  ],
+  "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#": [
+   "kody-w/CommunityRAPP/azuredeploy.json",
+   "kody-w/aibast-agents-library/azuredeploy.json — ARM template schema defining Azure infrastructure (Function App, OpenAI, Storage, Application Insights) for Tier 2 cloud deployment",
+   "kody-w/rapp-installer/azuredeploy.json"
+  ],
+  "hybrid": [
+   "kody-w/rappterbook/EGG_SPEC.md"
+  ],
+  "id:@publisher/slug": [
+   "kody-w/public-art-collective/specs/HOLOCARD_SPEC.md"
+  ],
+  "identity-block": [
+   "kody-w/heimdall/specs/SOUL_IDENTITY.md"
+  ],
+  "incantation-hero-v1": [
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html"
+  ],
+  "incident-response/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "index.html": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n",
+   "kody-w/rapp-vneighborhood/FRONT_DOOR.md - canonical front-door pattern specification (§18 of rapp-twin-chat); defines vNeighborhood 1.0 profile as public repo front door to sealed twin-chat neighborhood with bones + content separation"
+  ],
+  "index.json": [
+   "kody-w/RAPP_Store/docs/proposals/0002-three-stores.md"
+  ],
+  "install-schema/1.0": [
+   "kody-w/RAPP/docs/index.html — Documentation hub page (RAPP Brainstem)"
+  ],
+  "installation-state/1.0": [
+   "kody-w/rapp-installer/skill.md"
+  ],
+  "json-schema/draft-07": [
+   "kody-w/rappterbook/SKILLS.md",
+   "kody-w/rappterbook/skill.json"
+  ],
+  "json-schema/function-definition": [
+   "kody-w/RAPP-Bible/SPEC/mcp/SPEC.md"
+  ],
+  "jszip/3.10.1": [
+   "kody-w/RAPP/pages/vault/index.html"
+  ],
+  "karma_changes": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "kernel": [
+   "kody-w/heimdall/classic.html"
+  ],
+  "kernel-article-XXXIII": [
+   "kody-w/neighborhood-example/specs/AGENT_CONTRACT.md — contract spec for single-file RAPP agent structure"
+  ],
+  "kernel-distro-split/1.0": [
+   "https:/raw.githubusercontent.com/kody-w/RAPP-Bible/main/repos/rappter-distro.md"
+  ],
+  "kernel/CONSTITUTION.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "kernel/ESTATE_SPEC.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "kernel/NEIGHBORHOOD_EGG_SPEC.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "kernel/NEIGHBORHOOD_PROTOCOL.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "kernel/SPEC.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "kernel/TWIN_LIFECYCLE_SPEC.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "kernel_version/0.6.0": [
+   "kody-w/RAPP/specs/skill.md",
+   "kody-w/heimdall/doorman/index.html"
+  ],
+  "key-vault/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "kite-transport/§5a": [
+   "kody-w/rapp-kite/README.md"
+  ],
+  "kited": [
+   "kody-w/rionet/pages/rio.md (browser cartridge - search and link navigation)"
+  ],
+  "kited-ecosystem/1.0": [
+   "kody-w/rionet/pages/rio.md (RIO browser spec - search + navigation interface)"
+  ],
+  "kody-w/RAPP_Store": [
+   "kody-w/rapp-zoo/static/index.html"
+  ],
+  "ledger/1.0": [
+   "kody-w/rappterbook/docs/api.html"
+  ],
+  "leviathan-hub-agent/0.1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-leviathan-hub.md"
+  ],
+  "life-support-reserves/1.0": [
+   "kody-w/rappterbook/docs/colony.html"
+  ],
+  "lifecycle_handshake": [
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "lispy-cartridge/.lispy.json/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "lispy-runtime/1.0": [
+   "kody-w/rappterbook/docs/LISPY_MANIFESTO.md"
+  ],
+  "lispy-version/2.0": [
+   "kody-w/rappterbook/docs/LISPY_SPEC.md"
+  ],
+  "lispy-vm/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "lispy-vm/2.0-draft": [
+   "kody-w/rappterbook/docs/LISPY_MANIFESTO.md"
+  ],
+  "lispy/2.0-draft": [
+   "kody-w/rappterbook/docs/LISPY_SPEC.md"
+  ],
+  "local-fallback/1.0": [
+   "kody-w/CommunityRAPP/docs/LOCAL_DEVELOPMENT.md"
+  ],
+  "local-storage/1.0": [
+   "kody-w/rapp-installer/.github/copilot-instructions.md"
+  ],
+  "localStorage": [
+   "\nkody-w/CommunityRAPP/business.html\n"
+  ],
+  "logging/1.0": [
+   "kody-w/CommunityRAPP/docs/AGENT_DEVELOPMENT.md"
+  ],
+  "managed-identity/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "manifest.json": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n",
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md",
+   "kody-w/RAPP_Store/docs/proposals/0002-three-stores.md",
+   "kody-w/racon/index.html",
+   "kody-w/rapp-installer/community_rapp/agent-repo-skill.md"
+  ],
+  "manifest.webmanifest": [
+   "kody-w/RAPP/pages/vault/index.html"
+  ],
+  "marked/12.0.2": [
+   "kody-w/RAPP/pages/vault/index.html"
+  ],
+  "mars-colony-sim/1.0": [
+   "kody-w/rappterbook/docs/colony.html"
+  ],
+  "mcp/2024-11-05": [
+   "<local-path>",
+   "kody-w/RAPP-Bible/SPEC/mcp/SPEC.md"
+  ],
+  "mcp/SPEC.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "mcp_call_agent.py": [
+   "kody-w/rappterbook/docs/MCP_CONSUMER.md"
+  ],
+  "mcp_list_peers_agent.py": [
+   "kody-w/rappterbook/docs/MCP_CONSUMER.md"
+  ],
+  "members.json": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md",
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods"
+  ],
+  "memorial-graveyard/1.0": [
+   "kody-w/rappterbook/docs/colony.html"
+  ],
+  "memory-agent-schema/1.0": [
+   "kody-w/CommunityRAPP/index.html"
+  ],
+  "memory-model/1.0": [
+   "kody-w/CommunityRAPP/docs/ARCHITECTURE.md"
+  ],
+  "memory-persistence/1.0": [
+   "kody-w/rapp-installer/community_rapp/skill.md"
+  ],
+  "memory.json": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "mermaid/flowchart": [
+   "kody-w/CommunityRAPP/docs/hatchery-flow.html"
+  ],
+  "microgpt-worker/1.0": [
+   "kody-w/rappterbook/docs/local_agent_brain.html"
+  ],
+  "microsoft-security.md/1.0.0": [
+   "kody-w/aibast-agents-library/SECURITY.md — Microsoft security policy and vulnerability reporting guidelines"
+  ],
+  "moltbook-skill/1.0": [
+   "kody-w/rapp-installer/.github/copilot-instructions.md"
+  ],
+  "narrator-cache/1.0": [
+   "kody-w/rappterbook/docs/book.html"
+  ],
+  "nasa-rems-telemetry/1.0": [
+   "kody-w/rappterbook/docs/colony.html"
+  ],
+  "neighborhood": [
+   "kody-w/heimdall/specs/SOUL_IDENTITY.md"
+  ],
+  "neighborhood-egg/1.0": [
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/index.json — Hub catalog schema (rapp-egg-hub/2.0) — machine-readable catalog of 5 eggs with metadata, schemas, and sidecar entries (rapp-egg-hub-entry/2.0)",
+   "kody-w/rapp-egg-hub/index.html — Front-door browseable gallery — dark-themed card catalog with search/filter for 5 published digital twins via JavaScript-driven manifest fetch and rendering"
+  ],
+  "neighborhood-protocol": [
+   "kody-w/neighborhood-example/specs/AGENT_CONTRACT.md — contract spec for single-file RAPP agent structure"
+  ],
+  "neighborhood-protocol/1.0": [
+   "kody-w/neighborhood-example/onboarding.html — Welcome page with neighborhood onboarding workflow"
+  ],
+  "neighborhood-protocol/§19": [
+   "kody-w/RAPP-Network/README.md"
+  ],
+  "neighborhood.json": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n",
+   "kody-w/heimdall/specs/HOLOCARD_SPEC.md",
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods",
+   "kody-w/rapp-commons/soul.md",
+   "kody-w/rapp-resident/README.md",
+   "kody-w/rapp-vneighborhood/FRONT_DOOR.md - canonical front-door pattern specification (§18 of rapp-twin-chat); defines vNeighborhood 1.0 profile as public repo front door to sealed twin-chat neighborhood with bones + content separation"
+  ],
+  "neighborhood/1.0": [
+   "kody-w/neighborhood-example/onboarding.html — Welcome page with neighborhood onboarding workflow"
+  ],
+  "neighborhood/kind:twin": [
+   "kody-w/heimdall/specs/PARTICIPATION.md"
+  ],
+  "neighbors.json": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md",
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "neighbors.json/schema": [
+   "kody-w/rapp-test-neighbor/soul.md"
+  ],
+  "nervous-system-tier/1.0": [
+   "kody-w/CommunityRAPP/docs/hatchery-flow.html"
+  ],
+  "network-security/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "network/SPEC.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "neural-matrix/1.0": [
+   "kody-w/rappterbook/docs/local_agent_brain.html"
+  ],
+  "observe": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n"
+  ],
+  "obsidian-compatible/zip-export": [
+   "kody-w/RAPP/pages/vault/index.html"
+  ],
+  "openai-function-calling/1.0": [
+   "kody-w/rapp-installer/.github/copilot-instructions.md"
+  ],
+  "openai-function-schema/1.0": [
+   "kody-w/CommunityRAPP/docs/AGENT_DEVELOPMENT.md"
+  ],
+  "openrappter-gateway/1.0": [
+   "kody-w/rappterbook/docs/local_agent_brain.html"
+  ],
+  "openrappter-local-ai/1.0": [
+   "kody-w/rappterbook/AUTONOMY.md"
+  ],
+  "openrappter/canonical-ref": [
+   "kody-w/RAPP-Bible/repos/openrappter.md"
+  ],
+  "orappter-runtime/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/orappter/ORAPPTER.md"
+  ],
+  "orappter/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/orappter/ORAPPTER.md"
+  ],
+  "organism": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "organism-manifest/1.0": [
+   "kody-w/rappterbook/docs/local_agent_brain.html"
+  ],
+  "organism-model/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "organs": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "organs/*.py": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md"
+  ],
+  "payphone-agent-handshake/1.0": [
+   "kody-w/vbrainstem/share.html"
+  ],
+  "peer_agent": [
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "platform_daily": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "poke_network": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "pokes": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "posts": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "power-platform-integration/1.0": [
+   "kody-w/CommunityRAPP/docs/GETTING_STARTED.md"
+  ],
+  "power-platform-solution/1.0.0.5": [
+   "kody-w/rapp-installer/skill.md"
+  ],
+  "private-companion-repo/secure-default": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "private-endpoints/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "pwa/installable": [
+   "kody-w/RAPP/pages/vault/index.html"
+  ],
+  "pyodide/0.26.4": [
+   "kody-w/rio/index.html"
+  ],
+  "pyodide/v0.26.4": [
+   "kody-w/RAPP/pages/grail-brainstem/index.html",
+   "kody-w/heimdall/doorman/index.html"
+  ],
+  "python": [
+   "kody-w/CommunityRAPP/azuredeploy.json"
+  ],
+  "python-agent-framework/brainstem.py": [
+   "kody-w/rapp-installer/skill.md"
+  ],
+  "python-agent-pattern/1.0": [
+   "kody-w/CommunityRAPP/docs/AGENT_DEVELOPMENT.md"
+  ],
+  "python-agent/1.0": [
+   "kody-w/aibast-agents-library/README.md — Main documentation covering brainstem architecture, configuration, API endpoints, requirements, and three-tier stack overview"
+  ],
+  "python-functions-runtime/1.0": [
+   "kody-w/CommunityRAPP/local.settings.template.json"
+  ],
+  "python/3.11": [
+   "kody-w/CommunityRAPP/docs/DEPLOYMENT.md"
+  ],
+  "quality_tier": [
+   "kody-w/heimdall/specs/HOLOCARD_SPEC.md"
+  ],
+  "r-and-f-score": [
+   "kody-w/rappterbook/docs/deck.html"
+  ],
+  "racon": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "racon/1.0": [
+   "kody-w/racon/GRAIL.md",
+   "kody-w/racon/SPEC.md",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-god/versions/racon/GRAIL.md",
+   "kody-w/rapp-map/README.md"
+  ],
+  "racon/console": [
+   "kody-w/rapp-map/VISION.md"
+  ],
+  "rapp-*-loadout/1.0": [
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md"
+  ],
+  "rapp-<private-cubby-neighborhood>-board/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-<private-cubby-neighborhood>-channel/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-<private-cubby-neighborhood>-cubbies/1.0": [
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/CUBBY_PROTOCOL.md",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)"
+  ],
+  "rapp-<private-cubby-neighborhood>-cubby/1.0": [
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/CUBBY_PROTOCOL.md",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)",
+   "kody-w/RAR/tmp/RAR_temp/private-rar-template/rar.config.json — FILE DOES NOT EXIST; REQUEST REFERENCES PROPOSED SCHEMA",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-<private-cubby-neighborhood>-event/1.0": [
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/CUBBY_PROTOCOL.md",
+   "kody-w/RAPP/pages/vneighborhood.html",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)",
+   "kody-w/rappterbook/docs/zodiac.html [FILE NOT FOUND]",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-<private-cubby-neighborhood>-loadout/1.0": [
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/CUBBY_PROTOCOL.md",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-action/1.0": [
+   "kody-w/rappterbook/LORE.md"
+  ],
+  "rapp-agent": [
+   "kody-w/racon/index.html"
+  ],
+  "rapp-agent-contract/1.0": [
+   "kody-w/RAPP-Bible/SPEC/mcp/SPEC.md",
+   "kody-w/rapp-installer/rapp_brainstem/CONSTITUTION.md"
+  ],
+  "rapp-agent-delivery/1.0": [
+   "kody-w/RAPP/pages/about/partners.html"
+  ],
+  "rapp-agent-discovery/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-installer.md (index) → kody-w/rapp-installer (upstream canonical)",
+   "kody-w/aibast-agents-library/CLAUDE.md — High-level repository overview describing purpose (agent registry/RAPP entry point for AIBAST ecosystem), layout, commands, and three-tier architectural philosophy"
+  ],
+  "rapp-agent-manifest/1.0": [
+   "kody-w/RAR/ode.html",
+   "kody-w/rapp-installer/blog.html"
+  ],
+  "rapp-agent-pattern/1.0": [
+   "kody-w/rapp-installer/docs/tutorial.html"
+  ],
+  "rapp-agent-share/1.0": [
+   "kody-w/vbrainstem/share.html"
+  ],
+  "rapp-agent-standard/1.0": [
+   "kody-w/CommunityRAPP/CONSTITUTION.md"
+  ],
+  "rapp-agent/1.0": [
+   "<local-path>",
+   "RAPP Network Specification — specs/SPEC.md (the god spec)",
+   "RAR/private-rar-template/submit_to_public_rar.md",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/CommunityRAPP/docs/AGENT_DEVELOPMENT.md",
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/quickstart/drop-in-an-agent.md",
+   "kody-w/RAPP-Bible/quickstart/install.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/_index.md",
+   "kody-w/RAPP-Bible/repos/rapp-leviathan-hub.md",
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md",
+   "kody-w/RAPP-Network/repos/RAPP-Network.md (generated page; upstream authoritative: kody-w/RAPP-Network README.md + SPEC.md)",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/README.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/pages/docs/README.md",
+   "kody-w/RAPP/pages/docs/SPEC.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/docs/rapplication-sdk.md",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP_Store/CONSTITUTION.md",
+   "kody-w/RAPP_Store/docs/proposals/0001-rar-vs-rapp-store-split.md",
+   "kody-w/RAR/blog/index.html",
+   "kody-w/RAR/registry.json",
+   "kody-w/RAR/releases.html",
+   "kody-w/RAR/tmp/RAR_temp/docs/demo-live.html",
+   "kody-w/RAR/tmp/RAR_temp/faq.html",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/RAR/virtual-brainstem.html",
+   "kody-w/aibast-agents-library/CONSTITUTION.md — Governing document defining agent registry rules, single-file principle, manifest schema, quality tiers, categories, security requirements, and compatibility standards",
+   "kody-w/aibast-agents-library/CONTRIBUTING.md — Contributor guide specifying namespace rules, agent template structure, validation requirements, versioning policy, and submission checklist",
+   "kody-w/aibast-agents-library/registry.json — Generated RAPP registry schema (rapp-registry/1.0) containing agent catalog with metadata, statistics, publisher list, and category taxonomy",
+   "kody-w/neighborhood-example/rar/index.json — workflow manifest with sha256-pinned agents and rapplications",
+   "kody-w/neighborhood-example/specs/AGENT_CONTRACT.md — contract spec for single-file RAPP agent structure",
+   "kody-w/neighborhood-example/specs/RAR_INDEX.md — manifest spec for workflow registry (rar/index.json schema)",
+   "kody-w/rapp-commons/tether.html",
+   "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/generic-twin.html — Holo trading card + embedded .egg — Generic Twin (PII-stripped persona + agents)",
+   "kody-w/rapp-installer/index.html",
+   "kody-w/rapp-installer/rapp_brainstem/CLAUDE.md",
+   "kody-w/rapp-zoo/tmp/rapp-zoo/holocards/rar.json",
+   "kody-w/rappterbook/LORE.md",
+   "kody-w/vbrainstem/index.html",
+   "kody-w/vbrainstem/virtual-brainstem-summon.html",
+   "kody-w/vbrainstem/virtual-brainstem.html",
+   "specs/SPEC.md in kody-w/RAPP",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec",
+   "tmp/rapp-god/versions/RAR/skill.md"
+  ],
+  "rapp-agent/implicit": [
+   "kody-w/public-art-collective/specs/ANTIPATTERNS.md"
+  ],
+  "rapp-agents-directory/1.0": [
+   "\nkody-w/rappterbook/docs/agents.html\n"
+  ],
+  "rapp-agents/1.0": [
+   "kody-w/rapp-agents/README.md"
+  ],
+  "rapp-ant-tick/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-application/1.0": [
+   "\nkody-w/RAPP-Bible/SPEC/_index.md\n",
+   "https:/raw.githubusercontent.com/kody-w/RAPP-Bible/main/quickstart/your-first-rapplication.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/repos/RAPP_Store.md",
+   "kody-w/RAPP-Bible/repos/kody-w-twin.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/README.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/docs/rapplication-sdk.md",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP_Store/CONSTITUTION.md",
+   "kody-w/RAPP_Store/SPEC.md",
+   "kody-w/RAPP_Store/docs/proposals/0002-three-stores.md",
+   "kody-w/RAPP_Store/docs/proposals/0005-gated-rapplications.md",
+   "kody-w/RAPP_Store/index.json",
+   "kody-w/RAPP_Store/submit.html",
+   "kody-w/racon/manifest.json",
+   "kody-w/rio/manifest.json"
+  ],
+  "rapp-archetype-colors/1.0": [
+   "\nkody-w/rappterbook/docs/agents.html\n"
+  ],
+  "rapp-archetype-neon/1.0": [
+   "kody-w/rappterbook/docs/city.html"
+  ],
+  "rapp-art-submission/1.0": [
+   "kody-w/public-art-collective/specs/PARTICIPATION.md",
+   "kody-w/public-art-collective/specs/README.md",
+   "kody-w/public-art-collective/specs/SUBMISSION_PROTOCOL.md"
+  ],
+  "rapp-assistant-deployment/1.0": [
+   "kody-w/CommunityRAPP/docs/GETTING_STARTED.md"
+  ],
+  "rapp-autonomy/1.0": [
+   "kody-w/rappterbook/AUTONOMY.md"
+  ],
+  "rapp-battery-mode/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/orappter/ORAPPTER.md"
+  ],
+  "rapp-binder/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-bond-cycle/1.0-implicit": [
+   "kody-w/public-art-collective/specs/ANTIPATTERNS.md"
+  ],
+  "rapp-brainstem": [
+   "docs/index.html",
+   "kody-w/aibast-agents-library/docs/tutorial.html — Getting started tutorial (5-minute quickstart guide)",
+   "kody-w/rapp-installer/release-notes.html"
+  ],
+  "rapp-brainstem-backup/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp-brainstem-mcp": [
+   "kody-w/rapp-commons/PROTOCOL.md"
+  ],
+  "rapp-brainstem-mcp/1.0": [
+   "kody-w/RAPP-Bible/SPEC/mcp/SPEC.md"
+  ],
+  "rapp-brainstem-sdk": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-brainstem-summon/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/grail.html"
+  ],
+  "rapp-brainstem/0.1.0": [
+   "kody-w/aibast-agents-library/release-notes.html — Release notes and changelog page",
+   "kody-w/rapp-installer/blog.html"
+  ],
+  "rapp-brainstem/0.6.0": [
+   "kody-w/aibast-agents-library/release-notes.html — Release notes and changelog page"
+  ],
+  "rapp-brainstem/1.0": [
+   "kody-w/RAPP-Bible/repos/_index.md",
+   "kody-w/RAPP/docs/index.html — Documentation hub page (RAPP Brainstem)",
+   "kody-w/aibast-agents-library/CLAUDE.md — High-level repository overview describing purpose (agent registry/RAPP entry point for AIBAST ecosystem), layout, commands, and three-tier architectural philosophy",
+   "kody-w/rapp-installer/.github/copilot-instructions.md",
+   "kody-w/rapp-installer/CLAUDE.md",
+   "kody-w/rapp-installer/docs/index.html",
+   "kody-w/rapp-installer/rapp_brainstem/README.md"
+  ],
+  "rapp-brainstem/1.0-local": [
+   "kody-w/rapp-installer/README.md"
+  ],
+  "rapp-brainstem/1.0.0": [
+   "kody-w/aibast-agents-library/skill.md — YAML-fronted autonomous onboarding skill with step-by-step instructions for Tier 1 (brainstem local install), Tier 2 (Azure deployment), and Tier 3 (Copilot Studio publication)"
+  ],
+  "rapp-brainstem/2.0": [
+   "kody-w/aibast-agents-library/README.md — Main documentation covering brainstem architecture, configuration, API endpoints, requirements, and three-tier stack overview"
+  ],
+  "rapp-brainstem/core": [
+   "kody-w/rapp-installer/rapp_brainstem/soul.md"
+  ],
+  "rapp-brainstem/dispatch": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "rapp-brainstem/kernel-immutability": [
+   "kody-w/public-art-collective/specs/ANTIPATTERNS.md"
+  ],
+  "rapp-brainstem/oneof": [
+   "kody-w/rapp-installer/docs/tutorial.html"
+  ],
+  "rapp-brainstem/tier-1": [
+   "kody-w/rapp-installer/rapp_brainstem/CONSTITUTION.md"
+  ],
+  "rapp-braintrust-contribution-receipt/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-broadcast-poll/1.0": [
+   "kody-w/rappterbook/BROADCAST_SKILLS.md"
+  ],
+  "rapp-build-directive/1.0": [
+   "kody-w/rappterbook/docs/build.html"
+  ],
+  "rapp-canon/1.0": [
+   "<local-path>",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/CommunityRAPP/QUICK_START.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP/MASTER_PLAN.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/payphone.html",
+   "kody-w/RAPP/pages/vbrainstem.html",
+   "kody-w/RAR/tmp/RAR_temp/api.json",
+   "kody-w/RAR/tmp/RAR_temp/blog/posts/index.json",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/daily.html [NOT FOUND]",
+   "kody-w/RAR/tmp/RAR_temp/rar.config.json",
+   "kody-w/RAR/tmp/RAR_temp/seed-index.json",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/aibast-agents-library/release-notes.html — Release notes and changelog page",
+   "kody-w/heimdall/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-test-neighbor/soul.md",
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-test-neighbor/specs/README.md",
+   "kody-w/rappterbook/CONSTITUTION.md",
+   "kody-w/rappterbook/DIGITAL_TWIN.md",
+   "kody-w/rappterbook/docs/seed-tracker.html",
+   "kody-w/rappterbook/docs/zodiac.html [FILE NOT FOUND]"
+  ],
+  "rapp-canonical/1.0": [
+   "kody-w/rappterbook/docs/LISPY_SPEC.md"
+  ],
+  "rapp-canvas-render/1.0": [
+   "kody-w/rappterbook/docs/city.html"
+  ],
+  "rapp-canvas/1.0": [
+   "kody-w/RAPP-Bible/repos/echo-brainstem.md"
+  ],
+  "rapp-card": [
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)"
+  ],
+  "rapp-card-agent/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/orappter/ORAPPTER.md"
+  ],
+  "rapp-card/1.0": [
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/RAPP-Bible/quickstart/drop-in-an-agent.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/docs/index.html",
+   "kody-w/RAPP/pages/onboarding.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAR/docs/demo-script.html",
+   "kody-w/RAR/tmp/RAR_temp/faq.html"
+  ],
+  "rapp-card/1.1.2": [
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP/pages/docs/QR_FRONT_GATE.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html"
+  ],
+  "rapp-cart/1.0": [
+   "kody-w/RAPP/pages/about/ecosystem.html",
+   "kody-w/rapp-carts/SPEC.md",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-map/README.md"
+  ],
+  "rapp-cartridge/.egg": [
+   "kody-w/rapp-map/VISION.md"
+  ],
+  "rapp-cartridge/1.0": [
+   "kody-w/RAPP_Store/CONSTITUTION.md",
+   "kody-w/RAPP_Store/SPEC.md"
+  ],
+  "rapp-carts": [
+   "kody-w/racon/SPEC.md"
+  ],
+  "rapp-carts/spec": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-catalog-spec/1.0": [
+   "kody-w/RAPP-Bible/index.html"
+  ],
+  "rapp-cell/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-leviathan-hub.md"
+  ],
+  "rapp-channel/1.0": [
+   "kody-w/rappterbook/LORE.md"
+  ],
+  "rapp-chat-api/1.0-endpoints": [
+   "kody-w/rapp-installer/README.md"
+  ],
+  "rapp-chat-response/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/heimdall/specs/PARTICIPATION.md",
+   "kody-w/heimdall/specs/README.md",
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md"
+  ],
+  "rapp-civilization": [
+   "kody-w/rappterbook/docs/deck.html"
+  ],
+  "rapp-civilization/1.0": [
+   "kody-w/rappterbook/docs/demo.html"
+  ],
+  "rapp-claude-skills": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-cloud-registry/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-colony-observation/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-commons": [
+   "kody-w/rapp-map/ECOSYSTEM.md",
+   "kody-w/rapp-map/SWARM.md"
+  ],
+  "rapp-commons-event/1.0": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n",
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "https:/raw.githubusercontent.com/kody-w/rapp-commons/main/rapps/commons_almanac/index.html",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/docs/index.html",
+   "kody-w/RAPP/pages/tether.html",
+   "kody-w/RAPP/pages/tutorials/hatch-egg.html",
+   "kody-w/RAR/registry.json",
+   "kody-w/neighborhood-example/FRONT_DOOR.md — vNeighborhood front-door pattern & architecture profile",
+   "kody-w/neighborhood-example/https:/kody-w.github.io/neighborhood-example/ — GitHub Pages front door (index.html)",
+   "kody-w/neighborhood-example/index.html — vNeighborhood front door: keypair minting, PIN-sealed join, message relay",
+   "kody-w/rapp-commons/PROTOCOL.md",
+   "kody-w/rapp-commons/events/SCHEMA.md",
+   "kody-w/rapp-commons/holo.md",
+   "kody-w/rapp-commons/index.html",
+   "kody-w/rapp-commons/specs/SPEC.md",
+   "kody-w/rapp-commons/tether.html",
+   "kody-w/rapp-god-forum/https:/kody-w.github.io/rapp-god-forum/index.html",
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/PROTOCOL.md",
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/README.md",
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/index.html",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/tmp/rapp-god/versions/rapp-vneighborhood/index.html/ba5f43f5d25b.html",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-resident/PERSONA.md",
+   "kody-w/rapp-resident/README.md",
+   "kody-w/rapp-test-neighbor/index.html",
+   "kody-w/rapp-vneighborhood/FRONT_DOOR.md - canonical front-door pattern specification (§18 of rapp-twin-chat); defines vNeighborhood 1.0 profile as public repo front door to sealed twin-chat neighborhood with bones + content separation",
+   "kody-w/rapp-vneighborhood/index.html — canonical front door: single-page neighborhood entry point with vTwin identity minting (ECDSA P-256, rappid:v3 addressing), PIN setup/entry UI for first-twin light-turning (host), QR code generation, link sharing with optional embedded PIN, sealed message feed with AES-GCM end-to-end encryption keyed from PIN, and posting interface; reads neighborhood.json bones to render dynamic layout, branding, channel, message kinds, and rules",
+   "kody-w/rapp-vneighborhood/neighborhood.json — neighborhood manifest schema defining name, focus, channel, message kinds, rules, branding (emoji/accent), sealed flag, and relay addresses (cloud/kited/local)",
+   "kody-w/rionet/pages/rappterbook.md (social network schema - citizens, profiles, follows)",
+   "kody-w/rionet/pages/the-commons.md (rapp-commons-protocol/2.0 - signed agent social network)",
+   "kody-w/rionet/pages/the-resident.md (cloud host spec - durable room persistence)",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-commons-host": [
+   "kody-w/rapp-commons/index.html"
+  ],
+  "rapp-commons-id": [
+   "kody-w/rapp-god-forum/https:/kody-w.github.io/rapp-god-forum/index.html"
+  ],
+  "rapp-commons-loadout/1.0": [
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md"
+  ],
+  "rapp-commons-protocol/2.0": [
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP/pages/about/ecosystem.html",
+   "kody-w/RAPP_Store/index.json",
+   "kody-w/rapp-commons/PROTOCOL.md",
+   "kody-w/rapp-commons/events/SCHEMA.md",
+   "kody-w/rapp-commons/index.html",
+   "kody-w/rapp-god-forum/https:/kody-w.github.io/rapp-god-forum/index.html",
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/PROTOCOL.md",
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/README.md",
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/index.html",
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/neighborhood.json",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-map/README.md",
+   "kody-w/rapp-map/SWARM.md",
+   "kody-w/rionet/index.json (rionet-index/1.0 schema)",
+   "kody-w/rionet/pages/racon.md (RACon console spec - cartridge execution system)",
+   "kody-w/rionet/pages/racon.md (console cartridge loader - user-facing surface)",
+   "kody-w/rionet/pages/the-commons.md (rapp-commons-protocol/2.0 - signed agent social network)",
+   "kody-w/rionet/pages/the-commons.md (signed social stream - agent communication interface)"
+  ],
+  "rapp-commons/1.0": [
+   "kody-w/rapp-commons/soul.md",
+   "kody-w/rappterbook/MANIFESTO.md"
+  ],
+  "rapp-commune/1.0": [
+   "kody-w/RAPP-Bible/repos/_index.md"
+  ],
+  "rapp-community-gateway/1.0": [
+   "kody-w/rapp-installer/community_rapp/agent-repo-skill.md"
+  ],
+  "rapp-community/1.0": [
+   "kody-w/CommunityRAPP/CONSTITUTION.md",
+   "kody-w/CommunityRAPP/docs/ARCHITECTURE.md",
+   "kody-w/CommunityRAPP/index.html"
+  ],
+  "rapp-community/hippocampus": [
+   "kody-w/rapp-installer/rapp_brainstem/CONSTITUTION.md"
+  ],
+  "rapp-constellation/3d-viz": [
+   "kody-w/rappterbook/docs/constellation3d.html"
+  ],
+  "rapp-constitution/1.0": [
+   "kody-w/RAPP-Bible/index.html",
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods",
+   "kody-w/rappterbook/LORE.md",
+   "kody-w/rappterbook/docs/AMENDMENTS.md"
+  ],
+  "rapp-conversation-system/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/orappter/ORAPPTER.md"
+  ],
+  "rapp-copilot-auth-chain/1.0": [
+   "kody-w/aibast-agents-library/CLAUDE.md — High-level repository overview describing purpose (agent registry/RAPP entry point for AIBAST ecosystem), layout, commands, and three-tier architectural philosophy"
+  ],
+  "rapp-cross-validate/1.0": [
+   "kody-w/RAPP-Network/README.md"
+  ],
+  "rapp-cubbies/1.0": [
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-cubby-egg/1.0": [
+   "kody-w/rapp-commons/tether.html"
+  ],
+  "rapp-cubby/1.0": [
+   "<local-path>",
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/CommunityRAPP/QUICK_START.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAPP_Sense_Store.md",
+   "kody-w/RAPP/MASTER_PLAN.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/payphone.html",
+   "kody-w/RAPP/pages/tether.html",
+   "kody-w/RAPP_Store/docs/proposals/0002-three-stores.md",
+   "kody-w/RAPP_Store/submit.html",
+   "kody-w/RAR/tmp/RAR_temp/api.json",
+   "kody-w/RAR/tmp/RAR_temp/blog/posts/index.json",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/daily.html [NOT FOUND]",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/rappterpedia_state.json",
+   "kody-w/RAR/tmp/RAR_temp/rar.config.json",
+   "kody-w/RAR/tmp/RAR_temp/seed-index.json",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/heimdall/specs/ANTIPATTERNS.md",
+   "kody-w/public-art-collective/specs/README.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-installer/CLAUDE.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-test-neighbor/soul.md",
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-test-neighbor/specs/HOLOCARD_SPEC.md",
+   "kody-w/rapp-test-neighbor/specs/README.md",
+   "kody-w/rappterbook/CONSTITUTION.md",
+   "kody-w/rappterbook/EGG_SPEC.md",
+   "kody-w/rappterbook/docs/LISPY_SPEC.md",
+   "kody-w/rappterbook/docs/catalog.html",
+   "kody-w/rappterbook/docs/seed-tracker.html",
+   "kody-w/rappterbook/docs/zodiac.html [FILE NOT FOUND]",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-delta/1.0": [
+   "kody-w/rappterbook/LORE.md"
+  ],
+  "rapp-demos": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-discord-bridge/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-discord-plant-envelope/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-doc-viewer/1.0": [
+   "kody-w/RAPP/pages/docs/viewer.html"
+  ],
+  "rapp-dock-result/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-door/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/specs/SPEC.md",
+   "specs/SPEC.md in kody-w/RAPP"
+  ],
+  "rapp-doorman": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-doorman/1.0": [
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md"
+  ],
+  "rapp-drift-issue/1.0": [
+   "<local-path>",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP/MASTER_PLAN.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/payphone.html",
+   "kody-w/RAR/tmp/RAR_temp/api.json",
+   "kody-w/RAR/tmp/RAR_temp/blog/posts/index.json",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/daily.html [NOT FOUND]",
+   "kody-w/RAR/tmp/RAR_temp/rar.config.json",
+   "kody-w/RAR/tmp/RAR_temp/seed-index.json",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/heimdall/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md",
+   "kody-w/rappterbook/CONSTITUTION.md",
+   "kody-w/rappterbook/docs/zodiac.html [FILE NOT FOUND]"
+  ],
+  "rapp-drift-report/1.0": [
+   "<local-path>",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP/MASTER_PLAN.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/payphone.html",
+   "kody-w/RAR/tmp/RAR_temp/api.json",
+   "kody-w/RAR/tmp/RAR_temp/blog/posts/index.json",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/daily.html [NOT FOUND]",
+   "kody-w/RAR/tmp/RAR_temp/rar.config.json",
+   "kody-w/RAR/tmp/RAR_temp/seed-index.json",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/aibast-agents-library/release-notes.html — Release notes and changelog page",
+   "kody-w/heimdall/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md",
+   "kody-w/rappterbook/CONSTITUTION.md",
+   "kody-w/rappterbook/docs/seed-tracker.html",
+   "kody-w/rappterbook/docs/zodiac.html [FILE NOT FOUND]"
+  ],
+  "rapp-drift/1.0": [
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md"
+  ],
+  "rapp-echo/1.0": [
+   "kody-w/RAPP-Bible/repos/echo-brainstem.md"
+  ],
+  "rapp-ecosystem-audit/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-ecosystem-graph/1.0": [
+   "<local-path>",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/CommunityRAPP/QUICK_START.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP/MASTER_PLAN.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/about/ecosystem.html",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/pages/payphone.html",
+   "kody-w/RAR/pitch.html",
+   "kody-w/RAR/releases.html",
+   "kody-w/RAR/tmp/RAR_temp/api.json",
+   "kody-w/RAR/tmp/RAR_temp/blog/posts/index.json",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/daily.html [NOT FOUND]",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/rappterpedia_state.json",
+   "kody-w/RAR/tmp/RAR_temp/rar.config.json",
+   "kody-w/RAR/tmp/RAR_temp/seed-index.json",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/heimdall/specs/ANTIPATTERNS.md",
+   "kody-w/neighborhood-example/onboarding.html — Welcome page with neighborhood onboarding workflow",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-test-neighbor/soul.md",
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-test-neighbor/specs/README.md",
+   "kody-w/rappterbook/CONSTITUTION.md",
+   "kody-w/rappterbook/FEDERATION.md",
+   "kody-w/rappterbook/docs/catalog.html",
+   "kody-w/rappterbook/docs/zodiac.html [FILE NOT FOUND]"
+  ],
+  "rapp-ecosystem-map/1.0": [
+   "\nkody-w/RAPP-Bible/SPEC/_index.md\n",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/docs/index.html",
+   "kody-w/RAPP/index.html — Main landing page (RAPP Brainstem front door) at repository root"
+  ],
+  "rapp-ecosystem-transport/1.0": [
+   "kody-w/RAPP-Network/README.md"
+  ],
+  "rapp-ecosystem/1.0": [
+   "kody-w/rapp-installer/docs/index.html"
+  ],
+  "rapp-ecosystem/neighborhood-kinds": [
+   "kody-w/public-art-collective/specs/ANTIPATTERNS.md"
+  ],
+  "rapp-egg-hub": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-egg-hub-entry/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/heimdall/classic.html"
+  ],
+  "rapp-egg-hub-entry/2.0": [
+   "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/index.json — Hub catalog schema (rapp-egg-hub/2.0) — machine-readable catalog of 5 eggs with metadata, schemas, and sidecar entries (rapp-egg-hub-entry/2.0)",
+   "kody-w/rapp-egg-hub/index.html — Front-door browseable gallery — dark-themed card catalog with search/filter for 5 published digital twins via JavaScript-driven manifest fetch and rendering"
+  ],
+  "rapp-egg-hub/1.0": [
+   "kody-w/rapp-god/registry.json"
+  ],
+  "rapp-egg-hub/2.0": [
+   "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/index.json — Hub catalog schema (rapp-egg-hub/2.0) — machine-readable catalog of 5 eggs with metadata, schemas, and sidecar entries (rapp-egg-hub-entry/2.0)",
+   "kody-w/rapp-egg-hub/index.html — Front-door browseable gallery — dark-themed card catalog with search/filter for 5 published digital twins via JavaScript-driven manifest fetch and rendering"
+  ],
+  "rapp-egg-provenance/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/heimdall/classic.html",
+   "kody-w/heimdall/doorman/index.html"
+  ],
+  "rapp-egg/1.0": [
+   "kody-w/RAPP-Bible/repos/_index.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP_Store/CONSTITUTION.md",
+   "kody-w/RAPP_Store/SPEC.md",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/rapp-zoo/static/index.html",
+   "tmp/rapp-god/versions/RAR/skill.md"
+  ],
+  "rapp-egg/2.0": [
+   "\nkody-w/RAPP-Bible/SPEC/_index.md\n",
+   "kody-w/RAPP-Bible/SPEC/kernel/ESTATE_SPEC.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md",
+   "kody-w/RAPP/MASTER_PLAN.md",
+   "kody-w/RAPP/README.md",
+   "kody-w/RAPP/pages/docs/AGENTS.md",
+   "kody-w/RAPP/pages/docs/ESTATE_SPEC.md",
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md",
+   "kody-w/RAPP/pages/docs/README.md",
+   "kody-w/RAPP/pages/docs/SPEC.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAR/tmp/RAR_temp/peers.json",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-engine-scope/1.0": [
+   "kody-w/rapp-installer/rapp_brainstem/CONSTITUTION.md"
+  ],
+  "rapp-env-storage/1.0": [
+   "kody-w/CommunityRAPP/docs/LOCAL_DEVELOPMENT.md"
+  ],
+  "rapp-estate-eggs/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-estate-spec/1.0": [
+   "kody-w/RAPP-Bible/index.html"
+  ],
+  "rapp-estate-view/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-estate/1.0": [
+   "kody-w/RAPP-Bible/repos/_index.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-estate/1.1": [
+   "RAPP Network Specification — specs/SPEC.md (the god spec)",
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/kernel/ESTATE_SPEC.md",
+   "kody-w/RAPP-Bible/SPEC/network/SPEC.md",
+   "kody-w/RAPP-Bible/repos/rapp-estate.md",
+   "kody-w/RAPP-Bible/repos/rappterbook.md",
+   "kody-w/RAPP-Network/SPEC.md",
+   "kody-w/RAPP-Network/repos/RAPP-Network.md (generated page; upstream authoritative: kody-w/RAPP-Network README.md + SPEC.md)",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/README.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/pages/docs/ESTATE_SPEC.md",
+   "kody-w/RAPP/pages/docs/README.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP/specs/skill.md",
+   "kody-w/rapp-estate/.well-known/rapp-network.json (RAPP network beacon schema — validates public estate discovery)",
+   "kody-w/rapp-estate/estate.json (RAPP estate schema v1.1 — defines doors, twins, gates, membership)",
+   "kody-w/rapp-estate/index.html (front door / main estate entry point — renders live from estate.json, displays twins & gates, includes onboarding & AI summon interface)",
+   "kody-w/rapp-installer/index.html",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling",
+   "specs/SPEC.md in kody-w/RAPP",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-evolution-trail/1.0": [
+   "\nkody-w/rappterbook/docs/agents.html\n"
+  ],
+  "rapp-facets/1.0": [
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/kernel/ESTATE_SPEC.md",
+   "kody-w/RAPP-Bible/repos/kody-twin.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/docs/ESTATE_SPEC.md",
+   "kody-w/RAPP/pages/docs/README.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP/specs/skill.md",
+   "specs/SPEC.md in kody-w/RAPP"
+  ],
+  "rapp-federation-hub/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterverse.md"
+  ],
+  "rapp-federation/1.0": [
+   "kody-w/rappterbook/FEDERATION.md"
+  ],
+  "rapp-frame-accumulation/1.0": [
+   "kody-w/rappterbook/docs/demo.html"
+  ],
+  "rapp-frame-delta/1.0": [
+   "kody-w/rappterbook/docs/FRAME_SPEC.md"
+  ],
+  "rapp-frame/1.0": [
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/docs/index.html",
+   "kody-w/RAPP_Store/docs/proposals/0001-rar-vs-rapp-store-split.md",
+   "kody-w/heimdall/classic.html",
+   "kody-w/heimdall/doorman/index.html",
+   "kody-w/rappterbook/docs/dreamcatcher.html"
+  ],
+  "rapp-front-door/1.0": [
+   "kody-w/RAPP-Bible/repos/_index.md"
+  ],
+  "rapp-front-gate-incantation/1.0": [
+   "kody-w/RAPP/pages/docs/QR_FRONT_GATE.md",
+   "kody-w/RAPP/pages/docs/index.html"
+  ],
+  "rapp-front-gate-qr/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP/pages/docs/QR_FRONT_GATE.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/tether.html",
+   "kody-w/rapp-commons/specs/SPEC.md",
+   "kody-w/rapp-commons/tether.html"
+  ],
+  "rapp-gated/1.0": [
+   "kody-w/RAPP_Store/SPEC.md",
+   "kody-w/RAPP_Store/docs/proposals/0005-gated-rapplications.md"
+  ],
+  "rapp-ghost/1.0": [
+   "kody-w/rappterbook/LORE.md"
+  ],
+  "rapp-god": [
+   "kody-w/rapp-map/SWARM.md"
+  ],
+  "rapp-god-forum": [
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/PROTOCOL.md",
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-god-forum/1.0": [
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/README.md"
+  ],
+  "rapp-god-registry/1.0": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n",
+   "kody-w/rapp-god/index.html",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/SPEC.md"
+  ],
+  "rapp-god/1.0.0": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-god/2.0": [
+   "kody-w/rapp-god/index.html",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json"
+  ],
+  "rapp-graft-result/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-grail/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/grail.html"
+  ],
+  "rapp-hatchery/1.0": [
+   "kody-w/CommunityRAPP/docs/BRAINSTEM_GUIDANCE.md",
+   "kody-w/CommunityRAPP/docs/hatchery-flow.html"
+  ],
+  "rapp-heartbeat/1.0": [
+   "kody-w/rappterbook/LORE.md"
+  ],
+  "rapp-hippocampus": [
+   "docs/index.html"
+  ],
+  "rapp-hippocampus/1.0": [
+   "kody-w/RAPP/docs/index.html — Documentation hub page (RAPP Brainstem)",
+   "kody-w/aibast-agents-library/CLAUDE.md — High-level repository overview describing purpose (agent registry/RAPP entry point for AIBAST ecosystem), layout, commands, and three-tier architectural philosophy",
+   "kody-w/rapp-installer/docs/index.html"
+  ],
+  "rapp-hippocampus/2.0": [
+   "kody-w/rapp-installer/community_rapp/skill.md"
+  ],
+  "rapp-holo-card/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/grail.html",
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html",
+   "kody-w/rapp-test-neighbor/holo.md"
+  ],
+  "rapp-holo/1.1.2": [
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/rapp-commons/holo.md"
+  ],
+  "rapp-holocard/1.0": [
+   "kody-w/vbrainstem/index.html",
+   "kody-w/vbrainstem/virtual-brainstem-summon.html",
+   "kody-w/vbrainstem/virtual-brainstem.html"
+  ],
+  "rapp-identity/1.0": [
+   "kody-w/RAPP-Bible/repos/lumen-brainstem.md"
+  ],
+  "rapp-import-egg-result/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-import-shims/1.0": [
+   "kody-w/aibast-agents-library/CLAUDE.md — High-level repository overview describing purpose (agent registry/RAPP entry point for AIBAST ecosystem), layout, commands, and three-tier architectural philosophy"
+  ],
+  "rapp-incantation-hero/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html"
+  ],
+  "rapp-install-sacred-path/1.0": [
+   "kody-w/aibast-agents-library/CLAUDE.md — High-level repository overview describing purpose (agent registry/RAPP entry point for AIBAST ecosystem), layout, commands, and three-tier architectural philosophy"
+  ],
+  "rapp-installable/github-hosted": [
+   "kody-w/RAPP/index.html"
+  ],
+  "rapp-installer": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-installer-protocol/1.0": [
+   "kody-w/rapp-installer/rapp_brainstem/CONSTITUTION.md"
+  ],
+  "rapp-installer/1.0": [
+   "installer/index.html — RAPP v1 frozen digital twin (2026-04-17)",
+   "kody-w/RAPP-Bible/quickstart/install.md",
+   "kody-w/RAPP-Bible/repos/rapp-installer.md (index) → kody-w/rapp-installer (upstream canonical)",
+   "kody-w/RAR/pitch.html",
+   "kody-w/rapp-installer/CLAUDE.md",
+   "kody-w/rapp-installer/docs/index.html",
+   "kody-w/rapp-installer/index.html"
+  ],
+  "rapp-job-kanban/1.0": [
+   "kody-w/RAPP-Network/README.md"
+  ],
+  "rapp-karma-stat/1.0": [
+   "\nkody-w/rappterbook/docs/agents.html\n"
+  ],
+  "rapp-kernel-spec/1.0": [
+   "kody-w/RAPP-Bible/index.html"
+  ],
+  "rapp-kernel/1.0": [
+   "kody-w/RAPP-Bible/repos/_index.md"
+  ],
+  "rapp-kernel/1.1": [
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/index.html"
+  ],
+  "rapp-kite": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-kite/network": [
+   "kody-w/rapp-map/VISION.md"
+  ],
+  "rapp-kited-twin": [
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-map/ECOSYSTEM.md",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md"
+  ],
+  "rapp-kited-twin/1.0": [
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)"
+  ],
+  "rapp-knowledge-base/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/orappter/ORAPPTER.md"
+  ],
+  "rapp-launch-continuation/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-launch-fingerprint/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-launch-result/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-leviathan-egg/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-leviathan-hub.md"
+  ],
+  "rapp-leviathan-hub-index/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-leviathan-hub.md"
+  ],
+  "rapp-lifecycle-catalog/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-lineage-rollup/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-lispy/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/orappter/ORAPPTER.md"
+  ],
+  "rapp-loader-agent/1.0": [
+   "kody-w/rapp-agents/README.md"
+  ],
+  "rapp-lobby-bridge/1.0": [
+   "kody-w/RAPP/pages/lobby.html",
+   "kody-w/RAPP/pages/tether.html"
+  ],
+  "rapp-local-ping/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-local-storage/1.0": [
+   "kody-w/rapp-installer/README.md"
+  ],
+  "rapp-lore-framework/1.0": [
+   "<local-path>"
+  ],
+  "rapp-mailbox-public": [
+   "kody-w/RAPP/CONSTITUTION.md"
+  ],
+  "rapp-map": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-mars-barn/1.0": [
+   "kody-w/rappterbook/LORE.md"
+  ],
+  "rapp-mcp": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n"
+  ],
+  "rapp-mcp-gateway/1.0": [
+   "kody-w/RAPP-Bible/repos/_index.md"
+  ],
+  "rapp-mcp-server/1.0": [
+   "<local-path>"
+  ],
+  "rapp-mcp-spec/1.0": [
+   "\nkody-w/RAPP-Bible/SPEC/_index.md\n",
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP-Bible/SPEC/_index.md",
+   "kody-w/RAPP-Bible/SPEC/mcp/SPEC.md",
+   "kody-w/RAPP-Bible/index.html",
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP-Bible/repos/rapp-mcp.md",
+   "kody-w/RAPP-Bible/repos/rappterbook.md",
+   "kody-w/RAPP-Network/SPEC.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP_Store/SPEC.md",
+   "kody-w/RAPP_Store/docs/proposals/0005-gated-rapplications.md",
+   "kody-w/racon/SPEC.md",
+   "kody-w/rapp-carts/SPEC.md",
+   "kody-w/rapp-commons/PROTOCOL.md",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-map/README.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md"
+  ],
+  "rapp-mcp/1.0": [
+   "kody-w/RAPP-Bible/SPEC/mcp/SPEC.md",
+   "kody-w/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-vneighborhood/FRONT_DOOR.md - canonical front-door pattern specification (§18 of rapp-twin-chat); defines vNeighborhood 1.0 profile as public repo front door to sealed twin-chat neighborhood with bones + content separation"
+  ],
+  "rapp-mcp/rapp-mcp-spec/1.0": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-members/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/tether.html",
+   "kody-w/rapp-commons/tether.html"
+  ],
+  "rapp-memory-agents/1.0": [
+   "kody-w/aibast-agents-library/CLAUDE.md — High-level repository overview describing purpose (agent registry/RAPP entry point for AIBAST ecosystem), layout, commands, and three-tier architectural philosophy"
+  ],
+  "rapp-memory-architecture/3-tier": [
+   "kody-w/rappterbook/docs/brainstem.html"
+  ],
+  "rapp-memory/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/grail-brainstem/index.html",
+   "kody-w/RAPP/pages/sphere.html",
+   "kody-w/heimdall/doorman/index.html",
+   "kody-w/heimdall/index.html"
+  ],
+  "rapp-mentorship-pairs/1.0": [
+   "\nkody-w/rappterbook/docs/agents.html\n"
+  ],
+  "rapp-metaphor/1.0": [
+   "installer/index.html — RAPP v1 frozen digital twin (2026-04-17)"
+  ],
+  "rapp-metropolis-entry/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/metropolis/index.html"
+  ],
+  "rapp-metropolis-index/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/metropolis/index.html"
+  ],
+  "rapp-mode-toggle/1.0": [
+   "kody-w/rappterbook/docs/build.html"
+  ],
+  "rapp-neighbor-protocol/1.0": [
+   "kody-w/rapp-test-neighbor/soul.md"
+  ],
+  "rapp-neighborhood-5a/1": [
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/VNEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-sealed/test-vectors.json",
+   "kody-w/rapp-god/tmp/rapp-god/versions/test-vectors.json/cc72d9dcfd9f.json",
+   "kody-w/rapp-sealed/test-vectors.json",
+   "kody-w/vbrainstem/brainstem_bridge.html",
+   "kody-w/vbrainstem/doorman.skill.md",
+   "kody-w/vbrainstem/index.html",
+   "kody-w/vbrainstem/kited-demo.html",
+   "kody-w/vbrainstem/virtual-brainstem-summon.html"
+  ],
+  "rapp-neighborhood-constitution": [
+   "kody-w/neighborhood-example/specs/AGENT_CONTRACT.md — contract spec for single-file RAPP agent structure"
+  ],
+  "rapp-neighborhood-egg-spec/1.0": [
+   "kody-w/RAPP-Bible/index.html"
+  ],
+  "rapp-neighborhood-members/1.0": [
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/kernel/ESTATE_SPEC.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/WORKSPACE_PROTOCOL.md",
+   "kody-w/RAPP/pages/docs/ESTATE_SPEC.md",
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md",
+   "kody-w/RAPP/pages/docs/README.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/specs/skill.md",
+   "kody-w/RAR/tmp/RAR_temp/stacks/microsoft-365-team/README.md",
+   "kody-w/neighborhood-example/members.json — member roster schema (rapp-neighborhood-members/1.0)",
+   "kody-w/rapp-test-neighbor/specs/PARTICIPATION.md"
+  ],
+  "rapp-neighborhood-protocol": [
+   "kody-w/racon/SPEC.md",
+   "kody-w/rapp-commons/PROTOCOL.md",
+   "kody-w/rapp-commons/events/SCHEMA.md",
+   "kody-w/rapp-map/ECOSYSTEM.md",
+   "kody-w/rapp-test-neighbor/index.html"
+  ],
+  "rapp-neighborhood-protocol/1.0": [
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/RAPP-Bible/index.html",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAPP_Sense_Store.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/rappterbook.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/about/ecosystem.html",
+   "kody-w/RAPP/pages/docs/ROADMAP.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/pages/onboarding.html",
+   "kody-w/RAR/blog/index.html",
+   "kody-w/RAR/tmp/RAR_temp/stacks/microsoft-365-team/README.md",
+   "kody-w/neighborhood-example/CONSTITUTION.md — neighborhood governance rules & compliance mechanisms",
+   "kody-w/rapp-god/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-map/README.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-vneighborhood/neighborhood.json — neighborhood manifest schema defining name, focus, channel, message kinds, rules, branding (emoji/accent), sealed flag, and relay addresses (cloud/kited/local)",
+   "kody-w/rionet/pages/the-resident.md (cloud host spec - durable room persistence)",
+   "kody-w/vbrainstem/brainstem_bridge.html",
+   "kody-w/vbrainstem/doorman.skill.md",
+   "kody-w/vbrainstem/guide.html",
+   "kody-w/vbrainstem/index.html",
+   "kody-w/vbrainstem/virtual-brainstem-summon.html",
+   "kody-w/vbrainstem/virtual-brainstem.html"
+  ],
+  "rapp-neighborhood-protocol/2.0": [
+   "kody-w/rapp-god/registry.json"
+  ],
+  "rapp-neighborhood-protocol/5a": [
+   "kody-w/rapp-doorman/doorman.skill.md"
+  ],
+  "rapp-neighborhood-protocol/latest": [
+   "kody-w/RAPP_Store/docs/proposals/0005-gated-rapplications.md"
+  ],
+  "rapp-neighborhood-protocol/§5a": [
+   "kody-w/rapp-kite/README.md"
+  ],
+  "rapp-neighborhood-subscription/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-neighborhood/1.0": [
+   "kody-w/RAPP-Bible/repos/_index.md",
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/vneighborhood.html",
+   "kody-w/RAR/tmp/RAR_temp/stacks/microsoft-365-team/README.md",
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods",
+   "kody-w/public-art-collective/card.json",
+   "kody-w/public-art-collective/index.html",
+   "kody-w/public-art-collective/neighborhood.json",
+   "kody-w/public-art-collective/specs/PARTICIPATION.md",
+   "kody-w/public-art-collective/specs/README.md",
+   "kody-w/rapp-commons/holo.md",
+   "kody-w/rapp-commons/specs/SPEC.md",
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/neighborhood.json",
+   "kody-w/rapp-test-neighbor/card.json"
+  ],
+  "rapp-neighborhoods-cache/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-neighbors/1.0": [
+   "kody-w/heimdall/neighbors.json"
+  ],
+  "rapp-nervous-system": [
+   "docs/index.html"
+  ],
+  "rapp-nervous-system/1.0": [
+   "kody-w/RAPP/docs/index.html — Documentation hub page (RAPP Brainstem)",
+   "kody-w/rapp-installer/.github/copilot-instructions.md",
+   "kody-w/rapp-installer/docs/index.html"
+  ],
+  "rapp-nervous-system/3.0-copilot-studio": [
+   "kody-w/rapp-installer/README.md"
+  ],
+  "rapp-nervous-system/tier-3": [
+   "kody-w/rapp-installer/rapp_brainstem/CONSTITUTION.md"
+  ],
+  "rapp-network-beacon/1.0": [
+   "RAPP Network Specification — specs/SPEC.md (the god spec)",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-network-beacon/1.1": [
+   "RAPP Network Specification — specs/SPEC.md (the god spec)",
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/ESTATE_SPEC.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/pages/docs/ESTATE_SPEC.md",
+   "kody-w/RAPP/pages/docs/PUBLIC_PRIVATE_BOUNDARY.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP/specs/skill.md",
+   "kody-w/rapp-estate/.well-known/rapp-network.json (RAPP network beacon schema — validates public estate discovery)",
+   "kody-w/rapp-installer/index.html",
+   "specs/SPEC.md in kody-w/RAPP",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-network-seed/1.0": [
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP/.well-known/rapp-network-seed.json",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP/specs/skill.md",
+   "specs/SPEC.md in kody-w/RAPP",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-network-sniff/1.0": [
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "specs/SPEC.md in kody-w/RAPP",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-network-spec/1.0": [
+   "kody-w/RAPP-Bible/index.html"
+  ],
+  "rapp-network/1.0": [
+   "kody-w/RAPP-Bible/SPEC/network/SPEC.md",
+   "kody-w/RAPP-Network/README.md",
+   "kody-w/RAPP-Network/SPEC.md",
+   "kody-w/RAPP-Network/repos/RAPP-Network.md (generated page; upstream authoritative: kody-w/RAPP-Network README.md + SPEC.md)"
+  ],
+  "rapp-neuron/1.0": [
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md"
+  ],
+  "rapp-offline-layer/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/orappter/ORAPPTER.md"
+  ],
+  "rapp-operator/1.0": [
+   "kody-w/rappterbook/OPERATOR.md"
+  ],
+  "rapp-orappter/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/orappter/index.html"
+  ],
+  "rapp-organism-distro/1.0": [
+   "https:/raw.githubusercontent.com/kody-w/RAPP-Bible/main/repos/rappter-distro.md"
+  ],
+  "rapp-organism-lifecycle": [
+   "kody-w/rapp-installer/rapp_brainstem/README.md"
+  ],
+  "rapp-organism-lifecycle/1.0": [
+   "kody-w/aibast-agents-library/rapp_brainstem/CLAUDE.md — Developer guidance documenting repository layout, architecture (three-tier model), command reference, branching model, and key conventions"
+  ],
+  "rapp-organism-scale/daemon": [
+   "kody-w/rappterbook/docs/brainstem.html"
+  ],
+  "rapp-organism-state/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/heimdall/classic.html"
+  ],
+  "rapp-organism/1.0": [
+   "kody-w/RAPP-Bible/repos/_index.md"
+  ],
+  "rapp-parity/1.0": [
+   "kody-w/rappterbook/docs/LISPY_SPEC.md"
+  ],
+  "rapp-payphone-dial/1.0": [
+   "<local-path>",
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/CommunityRAPP/QUICK_START.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP/MASTER_PLAN.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/payphone.html",
+   "kody-w/RAR/tmp/RAR_temp/api.json",
+   "kody-w/RAR/tmp/RAR_temp/blog/posts/index.json",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/daily.html [NOT FOUND]",
+   "kody-w/RAR/tmp/RAR_temp/rar.config.json",
+   "kody-w/RAR/tmp/RAR_temp/seed-index.json",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/heimdall/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-commons/tether.html",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-test-neighbor/soul.md",
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-test-neighbor/specs/README.md",
+   "kody-w/rappterbook/CONSTITUTION.md",
+   "kody-w/rappterbook/docs/build.html",
+   "kody-w/rappterbook/docs/zodiac.html [FILE NOT FOUND]",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-peers-view/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAR/tmp/RAR_temp/peers.json"
+  ],
+  "rapp-peers/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAR/tmp/RAR_temp/peers.json"
+  ],
+  "rapp-peers/1.1": [
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAR/tmp/RAR_temp/peers.json",
+   "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)"
+  ],
+  "rapp-pheromone/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-pipeline/14-step": [
+   "kody-w/CommunityRAPP/CONSTITUTION.md"
+  ],
+  "rapp-pokedex-api/1.0": [
+   "kody-w/RAPP_Store/api/v1/index.json"
+  ],
+  "rapp-private-estate/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/docs/PUBLIC_PRIVATE_BOUNDARY.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAR/tmp/RAR_temp/stacks/microsoft-365-team/README.md",
+   "specs/SPEC.md in kody-w/RAPP"
+  ],
+  "rapp-private-estate/1.1": [
+   "kody-w/RAPP/pages/docs/PUBLIC_PRIVATE_BOUNDARY.md",
+   "kody-w/RAPP/pages/docs/README.md",
+   "kody-w/RAPP/pages/docs/index.html"
+  ],
+  "rapp-project-twin-job/1.0": [
+   "kody-w/RAPP-Bible/SPEC/network/SPEC.md",
+   "kody-w/RAPP-Bible/repos/rappterbook.md",
+   "kody-w/RAPP-Network/SPEC.md",
+   "kody-w/RAPP-Network/repos/RAPP-Network.md (generated page; upstream authoritative: kody-w/RAPP-Network README.md + SPEC.md)"
+  ],
+  "rapp-project-twin-transport/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterbook.md"
+  ],
+  "rapp-project-twin/1.0": [
+   "kody-w/RAPP-Network/README.md"
+  ],
+  "rapp-protocol/1.0": [
+   "RAPP Network Specification — specs/SPEC.md (the god spec)",
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP/.well-known/rapp-network-seed.json",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/pages/docs/README.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP/specs/skill.md",
+   "kody-w/rapp-estate/.well-known/rapp-network.json (RAPP network beacon schema — validates public estate discovery)",
+   "kody-w/rapp-installer/index.html",
+   "specs/SPEC.md in kody-w/RAPP",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-proximity-match/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-public-facets/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/onboarding.html",
+   "kody-w/RAR/tmp/RAR_temp/stacks/microsoft-365-team/README.md",
+   "kody-w/public-art-collective/facets.json"
+  ],
+  "rapp-rappid": [
+   "kody-w/rionet/pages/the-commons.md (rapp-commons-protocol/2.0 - signed agent social network)"
+  ],
+  "rapp-rappid-estate-view/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-rappid-spec/2.0": [
+   "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/index.json — Hub catalog schema (rapp-egg-hub/2.0) — machine-readable catalog of 5 eggs with metadata, schemas, and sidecar entries (rapp-egg-hub-entry/2.0)",
+   "kody-w/rapp-egg-hub/index.html — Front-door browseable gallery — dark-themed card catalog with search/filter for 5 published digital twins via JavaScript-driven manifest fetch and rendering"
+  ],
+  "rapp-rappid/1.1": [
+   "kody-w/RAPP-Bible/repos/heimdall.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/heimdall/rappid.json",
+   "kody-w/heimdall/specs/PARTICIPATION.md"
+  ],
+  "rapp-rappid/1.x": [
+   "kody-w/RAPP-Bible/repos/rappterbox.md"
+  ],
+  "rapp-rappid/2.0": [
+   "\nkody-w/RAPP-Bible/SPEC/_index.md\n",
+   "<local-path>",
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/ESTATE_SPEC.md",
+   "kody-w/RAPP-Bible/SPEC/network/SPEC.md",
+   "kody-w/RAPP-Bible/quickstart/install.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/kody-w-twin.md",
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP-Bible/repos/rappterbook.md",
+   "kody-w/RAPP-Network/SPEC.md",
+   "kody-w/RAPP-Network/repos/RAPP-Network.md (generated page; upstream authoritative: kody-w/RAPP-Network README.md + SPEC.md)",
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/README.md",
+   "kody-w/RAPP/docs/index.html",
+   "kody-w/RAPP/pages/docs/ESTATE_SPEC.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/pages/onboarding.html",
+   "kody-w/RAPP/pages/tether.html",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP/specs/skill.md",
+   "kody-w/RAPP_Store/docs/proposals/0001-rar-vs-rapp-store-split.md",
+   "kody-w/RAPP_Store/docs/proposals/0003-kernel-is-what-chat-requires.md",
+   "kody-w/heimdall/specs/RAPPID_SPEC.md",
+   "kody-w/heimdall/specs/README.md",
+   "kody-w/neighborhood-example/CONSTITUTION.md — neighborhood governance rules & compliance mechanisms",
+   "kody-w/neighborhood-example/rappid.json — neighborhood rappid identity schema (rapp-rappid/2.0)",
+   "kody-w/public-art-collective/specs/RAPPID_SPEC.md",
+   "kody-w/public-art-collective/specs/README.md",
+   "kody-w/rapp-commons/tether.html",
+   "kody-w/rapp-egg-hub — Public hub documentation, specifications, and distribution mechanism for portable digital twins (organisms with identity, voice, memory, lineage, and cartridges)",
+   "kody-w/rapp-egg-hub/SPEC.md — Digital Twin Specification (rapp-rappid-spec/2.0)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/generic-twin.html — Holo trading card + embedded .egg — Generic Twin (PII-stripped persona + agents)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/grandma-rose.html — Holo trading card with embedded brainstem-egg — Grandma Rose memorial twin (HTML + ZIP)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/kody-w.html — Holo trading card + embedded .egg — kody-w (personal kind)",
+   "kody-w/rapp-test-neighbor/holo.md",
+   "kody-w/rapp-test-neighbor/specs/README.md",
+   "specs/SPEC.md in kody-w/RAPP",
+   "tests/organism/README.md",
+   "tmp/rapp-test-neighbor/specs/RAPPID_SPEC.md"
+  ],
+  "rapp-rappid/universal-namespace": [
+   "kody-w/public-art-collective/specs/ANTIPATTERNS.md"
+  ],
+  "rapp-rapplication/1.0": [
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP_Store/docs/proposals/0001-rar-vs-rapp-store-split.md",
+   "kody-w/rapp-installer/index.html",
+   "specs/SPEC.md in kody-w/RAPP",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-rar-index/1.0": [
+   "<local-path>",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)",
+   "kody-w/RAR/tmp/RAR_temp/stacks/microsoft-365-team/README.md",
+   "kody-w/neighborhood-example/rar/index.json — workflow manifest with sha256-pinned agents and rapplications",
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods",
+   "kody-w/neighborhood-example/specs/RAR_INDEX.md — manifest spec for workflow registry (rar/index.json schema)"
+  ],
+  "rapp-rar-index/1.1": [
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP/blog.html",
+   "kody-w/RAR/tmp/RAR_temp/private-rar-template/rar.config.json — FILE DOES NOT EXIST; REQUEST REFERENCES PROPOSED SCHEMA"
+  ],
+  "rapp-rar-loadout/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)"
+  ],
+  "rapp-rar-manifest/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)",
+   "kody-w/RAR/tmp/RAR_temp/private-rar-template/rar.config.json — FILE DOES NOT EXIST; REQUEST REFERENCES PROPOSED SCHEMA"
+  ],
+  "rapp-rar-stack/1.0": [
+   "<local-path>"
+  ],
+  "rapp-rar-steward/1.0": [
+   "<local-path>",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP/MASTER_PLAN.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/payphone.html",
+   "kody-w/RAR/tmp/RAR_temp/api.json",
+   "kody-w/RAR/tmp/RAR_temp/blog/posts/index.json",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/daily.html [NOT FOUND]",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/rappterpedia_state.json",
+   "kody-w/RAR/tmp/RAR_temp/rar.config.json",
+   "kody-w/RAR/tmp/RAR_temp/seed-index.json",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/heimdall/specs/ANTIPATTERNS.md",
+   "kody-w/neighborhood-example/onboarding.html — Welcome page with neighborhood onboarding workflow",
+   "kody-w/public-art-collective/specs/README.md",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-test-neighbor/specs/HOLOCARD_SPEC.md",
+   "kody-w/rappterbook/CONSTITUTION.md",
+   "kody-w/rappterbook/docs/zodiac.html [FILE NOT FOUND]"
+  ],
+  "rapp-registry-rar/1.0": [
+   "kody-w/RAR/pitch.html"
+  ],
+  "rapp-registry-spec/1.0": [
+   "kody-w/RAPP-Bible/index.html"
+  ],
+  "rapp-registry/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html",
+   "kody-w/aibast-agents-library/CONSTITUTION.md — Governing document defining agent registry rules, single-file principle, manifest schema, quality tiers, categories, security requirements, and compatibility standards",
+   "kody-w/aibast-agents-library/registry.json — Generated RAPP registry schema (rapp-registry/1.0) containing agent catalog with metadata, statistics, publisher list, and category taxonomy",
+   "tmp/rapp-god/versions/RAR/skill.md"
+  ],
+  "rapp-registry/1.1": [
+   "kody-w/RAR/blog/index.html",
+   "kody-w/RAR/registry.json",
+   "kody-w/RAR/releases.html",
+   "kody-w/RAR/tmp/RAR_temp/faq.html",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "tmp/rapp-god/versions/RAR/skill.md"
+  ],
+  "rapp-release-envelope/1.0": [
+   "kody-w/RAR/releases.html"
+  ],
+  "rapp-release-key/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-release-signature/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-resident": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n",
+   "kody-w/rapp-map/ECOSYSTEM.md",
+   "kody-w/rapp-map/SWARM.md"
+  ],
+  "rapp-resident/1.0": [
+   "kody-w/rapp-resident/PERSONA.md",
+   "kody-w/rapp-resident/README.md",
+   "kody-w/rio/index.html",
+   "kody-w/rionet/pages/the-resident.md (cloud host spec - durable room persistence)"
+  ],
+  "rapp-resurrection-assessment/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-resurrection-ceremony/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-rhythm-pulse/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-sdk/1.0": [
+   "kody-w/RAR/pitch.html"
+  ],
+  "rapp-sdk/javascript/1.0": [
+   "kody-w/rappterbook/docs/local_agent_brain.html"
+  ],
+  "rapp-sealed": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-sealed/1.0": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n",
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/rappterbook.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/VNEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/about/ecosystem.html",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/pages/vneighborhood.html",
+   "kody-w/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-sealed/test-vectors.json",
+   "kody-w/rapp-god/tmp/rapp-god/versions/test-vectors.json/cc72d9dcfd9f.json",
+   "kody-w/rapp-map/README.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-sealed/README.md",
+   "kody-w/rapp-sealed/test-vectors.json",
+   "kody-w/rapp-vneighborhood/FRONT_DOOR.md - canonical front-door pattern specification (§18 of rapp-twin-chat); defines vNeighborhood 1.0 profile as public repo front door to sealed twin-chat neighborhood with bones + content separation",
+   "kody-w/rapp-vneighborhood/neighborhood.json — neighborhood manifest schema defining name, focus, channel, message kinds, rules, branding (emoji/accent), sealed flag, and relay addresses (cloud/kited/local)",
+   "kody-w/rionet/pages/the-resident.md (cloud host spec - durable room persistence)",
+   "kody-w/vbrainstem/brainstem_bridge.html",
+   "kody-w/vbrainstem/doorman.skill.md",
+   "kody-w/vbrainstem/guide.html",
+   "kody-w/vbrainstem/index.html",
+   "kody-w/vbrainstem/kited-demo.html",
+   "kody-w/vbrainstem/virtual-brainstem-summon.html",
+   "kody-w/vbrainstem/virtual-brainstem.html",
+   "pages/vneighborhood.html",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-sealed/channel": [
+   "kody-w/rapp-kite/README.md"
+  ],
+  "rapp-security/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "rapp-seed-determinism/1.0": [
+   "kody-w/RAR/ode.html"
+  ],
+  "rapp-seed-to-words/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/incantation-hero.html"
+  ],
+  "rapp-seed/1.0": [
+   "kody-w/rappterbook/docs/build.html"
+  ],
+  "rapp-sense-manifest/1.0": [
+   "kody-w/RAPP_Sense_Store/https:/raw.githubusercontent.com/kody-w/RAPP_Sense_Store/main/SPEC.md"
+  ],
+  "rapp-sense-store/1.0": [
+   "kody-w/RAPP-Bible/SPEC/senses/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP_Sense_Store.md",
+   "kody-w/RAPP_Sense_Store/https:/raw.githubusercontent.com/kody-w/RAPP_Sense_Store/main/README.md",
+   "kody-w/RAPP_Sense_Store/https:/raw.githubusercontent.com/kody-w/RAPP_Sense_Store/main/index.html",
+   "kody-w/RAPP_Sense_Store/https:/raw.githubusercontent.com/kody-w/RAPP_Sense_Store/main/index.json",
+   "kody-w/RAPP_Sense_Store/main/CLAUDE.md",
+   "kody-w/RAPP_Sense_Store/scripts/lib_senses.py",
+   "kody-w/RAPP_Sense_Store/staging/_pending.json"
+  ],
+  "rapp-sense/1.0": [
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/senses/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP_Sense_Store.md",
+   "kody-w/RAPP-Bible/repos/_index.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP_Sense_Store/https:/raw.githubusercontent.com/kody-w/RAPP_Sense_Store/main/README.md",
+   "kody-w/RAPP_Sense_Store/https:/raw.githubusercontent.com/kody-w/RAPP_Sense_Store/main/SPEC.md",
+   "kody-w/RAPP_Sense_Store/https:/raw.githubusercontent.com/kody-w/RAPP_Sense_Store/main/index.html",
+   "kody-w/RAPP_Sense_Store/https:/raw.githubusercontent.com/kody-w/RAPP_Sense_Store/main/index.json",
+   "kody-w/RAPP_Sense_Store/main/CLAUDE.md",
+   "kody-w/RAPP_Sense_Store/scripts/lib_senses.py",
+   "kody-w/RAPP_Sense_Store/staging/_pending.json",
+   "kody-w/rapp-installer/index.html",
+   "specs/SPEC.md in kody-w/RAPP",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-senses-spec/1.0": [
+   "kody-w/RAPP-Bible/index.html"
+  ],
+  "rapp-settings": [
+   "kody-w/heimdall/doorman/index.html"
+  ],
+  "rapp-simulation/1.0": [
+   "kody-w/rappterbook/docs/city.html"
+  ],
+  "rapp-single-file-pattern/1.0": [
+   "kody-w/RAR/ode.html"
+  ],
+  "rapp-sneakernet-protocol/1.0": [
+   "kody-w/RAR/ode.html"
+  ],
+  "rapp-social-graph/1.0": [
+   "\nkody-w/rappterbook/docs/agents.html\n"
+  ],
+  "rapp-soul-block/1.0-implicit": [
+   "kody-w/public-art-collective/specs/ANTIPATTERNS.md"
+  ],
+  "rapp-soul-file/1.0": [
+   "kody-w/rapp-installer/rapp_brainstem/CONSTITUTION.md",
+   "kody-w/rappterbook/LORE.md"
+  ],
+  "rapp-soul-system/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-installer.md (index) → kody-w/rapp-installer (upstream canonical)"
+  ],
+  "rapp-soul/1.0": [
+   "kody-w/rapp-installer/README.md"
+  ],
+  "rapp-source/1.0": [
+   "RAR/private-rar-template/submit_to_public_rar.md",
+   "kody-w/RAR/registry.json"
+  ],
+  "rapp-species-leaderboard/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-spinal-cord/1.0": [
+   "kody-w/rapp-installer/.github/copilot-instructions.md"
+  ],
+  "rapp-spinal-cord/2.0-azure": [
+   "kody-w/rapp-installer/README.md"
+  ],
+  "rapp-spinal-cord/tier-2": [
+   "kody-w/rapp-installer/rapp_brainstem/CONSTITUTION.md"
+  ],
+  "rapp-stack/1.0": [
+   "kody-w/rapp-agents/README.md"
+  ],
+  "rapp-stack/fleet-management/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "rapp-stack/tier-model-3.0": [
+   "kody-w/RAPP/index.html"
+  ],
+  "rapp-state-file/1.0": [
+   "kody-w/rappterbook/LORE.md"
+  ],
+  "rapp-static-api-status/1.0": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n",
+   "kody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/SPEC.md"
+  ],
+  "rapp-static-api/1.0": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n",
+   "kody-w/RAPP-Bible/SPEC/registry/SPEC.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/pages/about/ecosystem.html",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-map/README.md",
+   "kody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/SPEC.md",
+   "kody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/template/index.html",
+   "tmp/rapp-god/versions/RAR/skill.md"
+  ],
+  "rapp-static-apis": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-static-mcp/1.0": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n",
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP-Bible/SPEC/registry/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/RAPP-Network/SPEC.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP_Sense_Store/main/CLAUDE.md",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/racon/SPEC.md",
+   "kody-w/rapp-commons/PROTOCOL.md",
+   "kody-w/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-map/README.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/SPEC.md",
+   "tmp/rapp-god/versions/RAR/skill.md"
+  ],
+  "rapp-steward/1.0": [
+   "kody-w/rappterbook/MANIFESTO.md"
+  ],
+  "rapp-store/1.0": [
+   "kody-w/RAPP-Bible/repos/RAPP_Store.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/docs/AGENTS.md",
+   "kody-w/RAPP/pages/docs/README.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP_Store/docs/proposals/0005-gated-rapplications.md",
+   "kody-w/RAPP_Store/index.html",
+   "kody-w/RAPP_Store/index.json"
+  ],
+  "rapp-store/pokédex-api": [
+   "kody-w/RAPP-Bible/repos/RAPP_Store.md"
+  ],
+  "rapp-summon-portal/1.0": [
+   "kody-w/RAPP/pages/chat.html",
+   "kody-w/RAPP/pages/summon.html",
+   "pages/summon.html"
+  ],
+  "rapp-super-rar/1.0": [
+   "<local-path>",
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/CommunityRAPP/CLAUDE.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/CONSTITUTION.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAPP_Sense_Store.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/MASTER_PLAN.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/docs/SUBSTRATE_FEDERATION.md",
+   "kody-w/RAPP/pages/payphone.html",
+   "kody-w/RAPP_Store/submit.html",
+   "kody-w/RAR/tmp/RAR_temp/api.json",
+   "kody-w/RAR/tmp/RAR_temp/blog/posts/index.json",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/RAR/tmp/RAR_temp/index.html (registry visualization)",
+   "kody-w/RAR/tmp/RAR_temp/private-rar-template/rar.config.json — FILE DOES NOT EXIST; REQUEST REFERENCES PROPOSED SCHEMA",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/daily.html [NOT FOUND]",
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/rappterpedia_state.json",
+   "kody-w/RAR/tmp/RAR_temp/rar.config.json",
+   "kody-w/RAR/tmp/RAR_temp/seed-index.json",
+   "kody-w/RAR/tmp/RAR_temp/skill.md",
+   "kody-w/heimdall/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-test-neighbor/soul.md",
+   "kody-w/rapp-test-neighbor/specs/ANTIPATTERNS.md",
+   "kody-w/rapp-test-neighbor/specs/README.md",
+   "kody-w/rappterbook/CONSTITUTION.md",
+   "kody-w/rappterbook/docs/zodiac.html [FILE NOT FOUND]",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-swarm/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAR/registry.json",
+   "kody-w/aibast-agents-library/azuredeploy.json — ARM template schema defining Azure infrastructure (Function App, OpenAI, Storage, Application Insights) for Tier 2 cloud deployment"
+  ],
+  "rapp-test-brainstem/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-tether-requirements/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)"
+  ],
+  "rapp-tether/1.0": [
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/README.md",
+   "kody-w/RAPP/pages/docs/SPEC.md",
+   "kody-w/RAPP/pages/docs/index.html"
+  ],
+  "rapp-three-tier-architecture/1.0": [
+   "kody-w/rapp-installer/CLAUDE.md"
+  ],
+  "rapp-three-tier/1.0": [
+   "kody-w/CommunityRAPP/docs/hatchery-flow.html"
+  ],
+  "rapp-three-tiers/1.0": [
+   "kody-w/aibast-agents-library/CLAUDE.md — High-level repository overview describing purpose (agent registry/RAPP entry point for AIBAST ecosystem), layout, commands, and three-tier architectural philosophy"
+  ],
+  "rapp-tier-1/brainstem-local": [
+   "kody-w/RAPP/index.html"
+  ],
+  "rapp-tier-2/swarm-azure": [
+   "kody-w/RAPP/index.html"
+  ],
+  "rapp-tier-3/copilot-studio-enterprise": [
+   "kody-w/RAPP/index.html"
+  ],
+  "rapp-tier-architecture/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-installer.md (index) → kody-w/rapp-installer (upstream canonical)"
+  ],
+  "rapp-tier/1.0": [
+   "installer/index.html — RAPP v1 frozen digital twin (2026-04-17)"
+  ],
+  "rapp-twin-baseline/1.0": [
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/generic-twin.html — Holo trading card + embedded .egg — Generic Twin (PII-stripped persona + agents)"
+  ],
+  "rapp-twin-chat": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n",
+   "kody-w/neighborhood-example/FRONT_DOOR.md — vNeighborhood front-door pattern & architecture profile",
+   "kody-w/neighborhood-example/https:/kody-w.github.io/neighborhood-example/ — GitHub Pages front door (index.html)",
+   "kody-w/neighborhood-example/index.html — vNeighborhood front door: keypair minting, PIN-sealed join, message relay",
+   "kody-w/rapp-commons/PROTOCOL.md",
+   "kody-w/rapp-commons/events/SCHEMA.md",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-god/tmp/rapp-god/versions/rapp-vneighborhood/index.html/ba5f43f5d25b.html",
+   "kody-w/rapp-test-neighbor/index.html"
+  ],
+  "rapp-twin-chat-response/1.0": [
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/vbrainstem/brainstem_bridge.html",
+   "kody-w/vbrainstem/doorman.skill.md",
+   "kody-w/vbrainstem/index.html",
+   "kody-w/vbrainstem/virtual-brainstem-summon.html",
+   "kody-w/vbrainstem/virtual-brainstem.html"
+  ],
+  "rapp-twin-chat/1.0": [
+   "\nkody-w/RAPP-Bible/SPEC/_index.md\n",
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/kody-twin.md",
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/docs/index.html",
+   "kody-w/RAPP/pages/onboarding.html",
+   "kody-w/RAPP_Store/docs/proposals/0005-gated-rapplications.md",
+   "kody-w/heimdall/card.json",
+   "kody-w/heimdall/specs/PARTICIPATION.md",
+   "kody-w/heimdall/specs/README.md",
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md",
+   "kody-w/racon/SPEC.md",
+   "kody-w/rapp-carts/SPEC.md",
+   "kody-w/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-sealed/test-vectors.json",
+   "kody-w/rapp-god/tmp/rapp-god/versions/test-vectors.json/cc72d9dcfd9f.json",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-sealed/test-vectors.json",
+   "kody-w/rapp-vneighborhood/FRONT_DOOR.md - canonical front-door pattern specification (§18 of rapp-twin-chat); defines vNeighborhood 1.0 profile as public repo front door to sealed twin-chat neighborhood with bones + content separation",
+   "kody-w/rionet/pages/the-resident.md (cloud host spec - durable room persistence)",
+   "kody-w/vbrainstem/brainstem_bridge.html",
+   "kody-w/vbrainstem/doorman.skill.md",
+   "kody-w/vbrainstem/guide.html",
+   "kody-w/vbrainstem/index.html",
+   "kody-w/vbrainstem/kited-demo.html",
+   "kody-w/vbrainstem/virtual-brainstem-summon.html",
+   "kody-w/vbrainstem/virtual-brainstem.html",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-twin-chat/6+17": [
+   "kody-w/rapp-map/SWARM.md"
+  ],
+  "rapp-twin-identity/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-twin-lifecycle-spec": [
+   "kody-w/RAPP-Network/SPEC.md"
+  ],
+  "rapp-twin-lifecycle-spec/1.0": [
+   "kody-w/RAPP-Bible/index.html"
+  ],
+  "rapp-twin-lifecycle/1.0": [
+   "kody-w/RAPP/pages/docs/TWIN_LIFECYCLE_SPEC.md"
+  ],
+  "rapp-twin-manifest/1.0": [
+   "kody-w/RAPP-Bible/SPEC/network/SPEC.md",
+   "kody-w/RAPP-Bible/repos/rappterbook.md",
+   "kody-w/RAPP-Network/SPEC.md",
+   "kody-w/RAPP-Network/repos/RAPP-Network.md (generated page; upstream authoritative: kody-w/RAPP-Network README.md + SPEC.md)"
+  ],
+  "rapp-twin-purged/1.0": [
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/TWIN_LIFECYCLE_SPEC.md",
+   "kody-w/RAPP/pages/docs/SPEC.md",
+   "kody-w/RAPP/pages/docs/TWIN_LIFECYCLE_SPEC.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-twin-spec/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/heimdall/specs/README.md",
+   "kody-w/heimdall/specs/SOUL_IDENTITY.md",
+   "kody-w/public-art-collective/specs/PARTICIPATION.md",
+   "kody-w/public-art-collective/specs/README.md",
+   "kody-w/public-art-collective/specs/SOUL_IDENTITY.md",
+   "kody-w/rapp-test-neighbor/specs/README.md",
+   "kody-w/rapp-test-neighbor/specs/SOUL_IDENTITY.md"
+  ],
+  "rapp-twin-spec/2.0": [
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/grandma-rose.html — Holo trading card with embedded brainstem-egg — Grandma Rose memorial twin (HTML + ZIP)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/kody-w.html — Holo trading card + embedded .egg — kody-w (personal kind)",
+   "kody-w/rapp-egg-hub/https:/raw.githubusercontent.com/kody-w/rapp-egg-hub/main/twins/wildhaven-ceo.html — Holo trading card + embedded .egg — Wildhaven CEO (generic kind)"
+  ],
+  "rapp-twin-tombstone/1.0": [
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md",
+   "kody-w/RAPP-Bible/SPEC/kernel/TWIN_LIFECYCLE_SPEC.md",
+   "kody-w/RAPP/pages/docs/SPEC.md",
+   "kody-w/RAPP/pages/docs/TWIN_LIFECYCLE_SPEC.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rapp-twin-transport/1.0": [
+   "kody-w/RAPP-Bible/SPEC/network/SPEC.md",
+   "kody-w/RAPP-Network/SPEC.md",
+   "kody-w/RAPP-Network/repos/RAPP-Network.md (generated page; upstream authoritative: kody-w/RAPP-Network README.md + SPEC.md)"
+  ],
+  "rapp-twin-workspace/1.0": [
+   "kody-w/RAPP-Bible/SPEC/network/SPEC.md",
+   "kody-w/RAPP-Bible/repos/rappterbook.md",
+   "kody-w/RAPP-Network/SPEC.md",
+   "kody-w/RAPP-Network/repos/RAPP-Network.md (generated page; upstream authoritative: kody-w/RAPP-Network README.md + SPEC.md)"
+  ],
+  "rapp-twin/1.0": [
+   "kody-w/RAPP-Bible/repos/_index.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/racon/index.html"
+  ],
+  "rapp-twins/1.0": [
+   "kody-w/RAPP_Store/SPEC.md",
+   "kody-w/RAPP_Store/docs/proposals/0005-gated-rapplications.md"
+  ],
+  "rapp-user-memories/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterbox.md",
+   "kody-w/RAPP/ECOSYSTEM.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/heimdall/doorman/index.html"
+  ],
+  "rapp-vbrainstem-subscription/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-version-schema/1.0": [
+   "kody-w/rapp-installer/blog.html"
+  ],
+  "rapp-version/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-version/1.1": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-virtual-space/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-commons.md → upstream kody-w/rapp-commons (canonical)",
+   "kody-w/rapp-commons/specs/SPEC.md"
+  ],
+  "rapp-vneighborhood/1.0": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n",
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP-Bible/repos/RAPP.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAPP-Bible/repos/rappterbook.md",
+   "kody-w/RAPP/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/VNEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/RAPP/pages/docs/index.html",
+   "kody-w/RAPP/pages/index.html",
+   "kody-w/RAPP/pages/vneighborhood.html",
+   "kody-w/neighborhood-example/FRONT_DOOR.md — vNeighborhood front-door pattern & architecture profile",
+   "kody-w/neighborhood-example/https:/kody-w.github.io/neighborhood-example/ — GitHub Pages front door (index.html)",
+   "kody-w/neighborhood-example/index.html — vNeighborhood front door: keypair minting, PIN-sealed join, message relay",
+   "kody-w/neighborhood-example/neighborhood.json — neighborhood identity & configuration schema (rapp-vneighborhood/1.0)",
+   "kody-w/rapp-god/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-doorman/doorman.skill.md",
+   "kody-w/rapp-god/tmp/rapp-god/snapshot/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/tmp/rapp-god/versions/rapp-vneighborhood/index.html/ba5f43f5d25b.html",
+   "kody-w/rapp-installer/rapp_brainstem/CLAUDE.md",
+   "kody-w/rapp-map/README.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-neighborhood-protocol/NEIGHBORHOOD_PROTOCOL.md (canonical: https:/raw.githubusercontent.com/kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md)",
+   "kody-w/rapp-neighborhood-protocol/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-test-neighbor/holo.md",
+   "kody-w/rapp-test-neighbor/index.html",
+   "kody-w/rapp-test-neighbor/neighborhood.json",
+   "kody-w/rapp-test-neighbor/specs/PARTICIPATION.md",
+   "kody-w/rapp-test-neighbor/specs/README.md",
+   "kody-w/rapp-vneighborhood/FRONT_DOOR.md - canonical front-door pattern specification (§18 of rapp-twin-chat); defines vNeighborhood 1.0 profile as public repo front door to sealed twin-chat neighborhood with bones + content separation",
+   "kody-w/rapp-vneighborhood/index.html — canonical front door: single-page neighborhood entry point with vTwin identity minting (ECDSA P-256, rappid:v3 addressing), PIN setup/entry UI for first-twin light-turning (host), QR code generation, link sharing with optional embedded PIN, sealed message feed with AES-GCM end-to-end encryption keyed from PIN, and posting interface; reads neighborhood.json bones to render dynamic layout, branding, channel, message kinds, and rules",
+   "kody-w/rapp-vneighborhood/neighborhood.json — neighborhood manifest schema defining name, focus, channel, message kinds, rules, branding (emoji/accent), sealed flag, and relay addresses (cloud/kited/local)",
+   "kody-w/rionet/pages/the-resident.md (cloud host spec - durable room persistence)",
+   "pages/vneighborhood.html",
+   "rapp-neighborhood-protocol/1.0 §19 — Private cubby neighborhoods (dark-door pattern)"
+  ],
+  "rapp-vscode-extension": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-workshop/1.0": [
+   "kody-w/rappterbook/MANIFESTO.md"
+  ],
+  "rapp-workspace/1.0": [
+   "kody-w/RAPP_Store/SPEC.md",
+   "kody-w/RAPP_Store/docs/proposals/0004-per-rapp-workspaces.md",
+   "kody-w/RAPP_Store/docs/proposals/0005-gated-rapplications.md"
+  ],
+  "rapp-zoo": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "rapp-zoo-collection/1.0": [
+   "kody-w/RAPP/ECOSYSTEM_MAP.md"
+  ],
+  "rapp-zoo-eggs/1.0": [
+   "kody-w/rapp-zoo/static/index.html"
+  ],
+  "rapp-zoo-health/1.0": [
+   "kody-w/rapp-zoo/static/index.html"
+  ],
+  "rapp-zoo-holocards/1.0": [
+   "kody-w/rapp-zoo/tmp/rapp-zoo/holocards/genesis.json",
+   "kody-w/rapp-zoo/tmp/rapp-zoo/holocards/rar.json"
+  ],
+  "rapp-zoo-twins/1.0": [
+   "kody-w/rapp-zoo/static/index.html"
+  ],
+  "rapp-zoo/": [
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "rapp.robots.txt": [
+   "kody-w/rionet/README.md (system architecture + crawl protocol)",
+   "kody-w/rionet/pages/racon.md (RACon console spec - cartridge execution system)"
+  ],
+  "rapp.robots.txt/1.0": [
+   "kody-w/rionet/pages/welcome.md (front-door index, entry point with navigation to all components)"
+  ],
+  "rapp/1.0": [
+   "kody-w/RAR/pitch.html",
+   "kody-w/aibast-agents-library/docs/installer.html — Interactive installer UI page (RAPP Install)",
+   "kody-w/rapp-installer/CLAUDE.md"
+  ],
+  "rapp/1.0.0": [
+   "kody-w/RAPP-Bible/SPEC/kernel/SPEC.md"
+  ],
+  "rapp/Tier": [
+   "kody-w/RAPP-Bible/repos/openrappter.md"
+  ],
+  "rapp/generic": [
+   "kody-w/RAPP/pages/about/partners.html"
+  ],
+  "rapp/v1": [
+   "kody-w/RAPP/installer/index.html"
+  ],
+  "rapp:cartridge": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:close": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:get_cartridge": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:invoke": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:invoke:result": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:workspace:*": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:workspace:delete": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:workspace:list": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:workspace:read": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:workspace:request_files": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:workspace:reveal": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapp:workspace:write": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rappPageRank": [
+   "kody-w/rionet/README.md (system architecture + crawl protocol)",
+   "kody-w/rionet/pages/rio.md (browser cartridge - search and link navigation)"
+  ],
+  "rappPageRank/1.0": [
+   "kody-w/rionet/pages/rio.md (RIO browser spec - search + navigation interface)",
+   "kody-w/rionet/pages/welcome.md (front-door index, entry point with navigation to all components)"
+  ],
+  "rapp_brainstem/VERSION": [
+   "kody-w/RAPP/pages/docs/VERSIONS.md"
+  ],
+  "rapp_sdk.py::MNEMONIC_WORDS": [
+   "kody-w/heimdall/specs/HOLOCARD_SPEC.md"
+  ],
+  "rapp_ui": [
+   "kody-w/RAPP/pages/about/anatomy.html"
+  ],
+  "rappage/1.0": [
+   "kody-w/rionet/pages/rio.md (RIO browser spec - search + navigation interface)"
+  ],
+  "rappbot": [
+   "kody-w/rionet/pages/rio.md (browser cartridge - search and link navigation)"
+  ],
+  "rappbot/1.0": [
+   "kody-w/rionet/pages/rio.md (RIO browser spec - search + navigation interface)"
+  ],
+  "rappcards/1.1.2": [
+   "RAPP Network Specification — specs/SPEC.md (the god spec)",
+   "kody-w/RAPP — network protocol + doorman pattern documentation",
+   "kody-w/RAPP-Bible/SPEC/kernel/ESTATE_SPEC.md",
+   "kody-w/RAPP-Bible/repos/kody-twin.md",
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/SPEC.md",
+   "kody-w/RAPP/pages/docs/ESTATE_SPEC.md",
+   "kody-w/RAPP/specs/SPEC.md",
+   "kody-w/RAPP/specs/skill.md",
+   "kody-w/RAR/tmp/RAR_temp/cards/holo_cards.json",
+   "kody-w/heimdall/card.json",
+   "kody-w/heimdall/specs/HOLOCARD_SPEC.md",
+   "kody-w/heimdall/specs/PARTICIPATION.md",
+   "kody-w/heimdall/specs/README.md",
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md",
+   "kody-w/public-art-collective/card.json",
+   "kody-w/public-art-collective/specs/HOLOCARD_SPEC.md",
+   "kody-w/public-art-collective/specs/README.md",
+   "kody-w/rapp-installer/index.html",
+   "kody-w/rapp-test-neighbor/card.json",
+   "kody-w/rapp-test-neighbor/holo.md",
+   "kody-w/rapp-test-neighbor/specs/HOLOCARD_SPEC.md",
+   "kody-w/rapp-test-neighbor/specs/README.md",
+   "rapp_brainstem/README.md — Brainstem server documentation including request flow, agent system design, auth chain, import shims, and memory agent handling",
+   "specs/SPEC.md in kody-w/RAPP",
+   "specs/SPEC.md — RAPP Protocol — The Network Spec"
+  ],
+  "rappid": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md",
+   "kody-w/heimdall/specs/HOLOCARD_SPEC.md",
+   "kody-w/rapp-estate/index.html (front door / main estate entry point — renders live from estate.json, displays twins & gates, includes onboarding & AI summon interface)",
+   "kody-w/rapp-installer/rapp_brainstem/index.html",
+   "kody-w/rionet/pages/rappterbook.md (social network UI — citizens, profiles, feed, channels)",
+   "kody-w/rionet/pages/the-commons.md (signed social stream - agent communication interface)"
+  ],
+  "rappid-derivation/pure-string": [
+   "kody-w/RAPP-Network/README.md"
+  ],
+  "rappid-eternity": [
+   "kody-w/rappterbook/CONSTITUTION.md"
+  ],
+  "rappid-kernel-article-XLVI": [
+   "kody-w/neighborhood-example/specs/AGENT_CONTRACT.md — contract spec for single-file RAPP agent structure"
+  ],
+  "rappid-v2": [
+   "kody-w/rappterbook/CONSTITUTION.md"
+  ],
+  "rappid.json": [
+   "kody-w/RAPP/pages/about/anatomy.html",
+   "kody-w/RAPP/pages/onboarding.html",
+   "kody-w/heimdall/doorman/index.html",
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md",
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods"
+  ],
+  "rappid/1.0": [
+   "kody-w/RAPP-Bible/repos/echo-brainstem.md",
+   "kody-w/RAPP-Bible/repos/lumen-brainstem.md",
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods"
+  ],
+  "rappid/2.0": [
+   "kody-w/rappterbook/docs/api.html"
+  ],
+  "rappid/format": [
+   "kody-w/rapp-test-neighbor/soul.md"
+  ],
+  "rappid/identity-system": [
+   "kody-w/RAPP/pages/onboarding.html"
+  ],
+  "rappid/v3": [
+   "kody-w/rio/index.html"
+  ],
+  "rappid:@<owner>/<slug>:<64hex>": [
+   "RAPP Network Specification — specs/SPEC.md (the god spec)"
+  ],
+  "rappid:@kody-w/kody-twin:91d006ca7bd052bfa5021d623122012f": [
+   "kody-w/RAPP-Bible/repos/kody-twin.md"
+  ],
+  "rappid:@kody-w/neighborhood-example:1b25d15ddd0f450d858cef02d4f068a3": [
+   "kody-w/neighborhood-example/rappid.json — neighborhood rappid identity schema (rapp-rappid/2.0)"
+  ],
+  "rappid:@kody-w/public-art-collective:e9779c75292449d391fda375879752c2": [
+   "kody-w/public-art-collective/card.json",
+   "kody-w/public-art-collective/index.html"
+  ],
+  "rappid:@kody-w/rapp-<private-cubby-neighborhood>:72c739f277aade85ceb863c031b6c2998d577c7aa86f72652edae7e9c19eb100": [
+   "kody-w/RAPP/examples/rapp-<private-cubby-neighborhood>/specs/CUBBY_PROTOCOL.md"
+  ],
+  "rappid:@kody-w/rapp-commons:3929ce90ebe97fe2a95432e9f647f3a3": [
+   "kody-w/rapp-commons/holo.md"
+  ],
+  "rappid:v2": [
+   "kody-w/RAPP/pages/about/anatomy.html",
+   "kody-w/RAPP/pages/about/ecosystem.html",
+   "kody-w/RAPP/pages/docs/TWIN_LIFECYCLE_SPEC.md",
+   "kody-w/RAPP/pages/vbrainstem/index.html",
+   "kody-w/heimdall/specs/RAPPID_SPEC.md",
+   "kody-w/rapp-estate/index.html (front door / main estate entry point — renders live from estate.json, displays twins & gates, includes onboarding & AI summon interface)"
+  ],
+  "rappid:v2:<kind>:@<owner>/<repo>:<32hex>@github.com": [
+   "RAPP Network Specification — specs/SPEC.md (the god spec)"
+  ],
+  "rappid:v2:agent": [
+   "kody-w/RAPP/pages/vbrainstem.html"
+  ],
+  "rappid:v2:cart": [
+   "kody-w/RAPP/pages/vbrainstem.html"
+  ],
+  "rappid:v2:neighborhood": [
+   "kody-w/RAPP/pages/about/ecosystem.html",
+   "kody-w/rapp-estate/estate.json (RAPP estate schema v1.1 — defines doors, twins, gates, membership)"
+  ],
+  "rappid:v2:neighborhood:@kody-w/public-art-collective:e9779c75292449d391fda375879752c2@github.com/kody-w/public-art-collective": [
+   "kody-w/public-art-collective/card.json"
+  ],
+  "rappid:v2:operator": [
+   "kody-w/RAPP-Bible/repos/kody-w-twin.md",
+   "kody-w/RAPP/pages/about/ecosystem.html",
+   "kody-w/rapp-estate/estate.json (RAPP estate schema v1.1 — defines doors, twins, gates, membership)"
+  ],
+  "rappid:v2:twin": [
+   "kody-w/rapp-estate/estate.json (RAPP estate schema v1.1 — defines doors, twins, gates, membership)"
+  ],
+  "rappid:v3": [
+   "kody-w/neighborhood-example/https:/kody-w.github.io/neighborhood-example/ — GitHub Pages front door (index.html)",
+   "kody-w/rapp-commons/PROTOCOL.md",
+   "kody-w/rapp-commons/index.html",
+   "kody-w/rapp-god-forum/https:/kody-w.github.io/rapp-god-forum/index.html",
+   "kody-w/rapp-god/tmp/rapp-god/versions/rapp-vneighborhood/index.html/ba5f43f5d25b.html",
+   "kody-w/rapp-vneighborhood/index.html — canonical front door: single-page neighborhood entry point with vTwin identity minting (ECDSA P-256, rappid:v3 addressing), PIN setup/entry UI for first-twin light-turning (host), QR code generation, link sharing with optional embedded PIN, sealed message feed with AES-GCM end-to-end encryption keyed from PIN, and posting interface; reads neighborhood.json bones to render dynamic layout, branding, channel, message kinds, and rules"
+  ],
+  "rappid:v3:<base64url(SHA-256(public_key))>": [
+   "kody-w/rapp-god-forum/https:/raw.githubusercontent.com/kody-w/rapp-god-forum/main/neighborhood.json"
+  ],
+  "rappid:v3:<fp>": [
+   "kody-w/neighborhood-example/index.html — vNeighborhood front door: keypair minting, PIN-sealed join, message relay"
+  ],
+  "rapplication": [
+   "kody-w/neighborhood-example/rar/index.json — workflow manifest with sha256-pinned agents and rapplications",
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "rapplication/1.0": [
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods"
+  ],
+  "rappter-agents/17-named": [
+   "kody-w/rappterbook/DIGITAL_TWIN.md"
+  ],
+  "rappter-architecture/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "rappter-ecosystem-graph/1.0": [
+   "kody-w/rappterbook/DIGITAL_TWIN.md"
+  ],
+  "rappter-egg/.rappter.egg/2.3": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "rappter-engine-hub-twin": [
+   "kody-w/rappterbook/docs/engine-hub.html"
+  ],
+  "rappter-nervous-system/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "rappter-species-daemon": [
+   "kody-w/rappterbook/docs/brainstem.html"
+  ],
+  "rappter-treaty/v1": [
+   "kody-w/rappterbook/docs/engine-hub.html"
+  ],
+  "rappter-vm": [
+   "kody-w/rappterbook/docs/dev.html"
+  ],
+  "rappter.dev": [
+   "kody-w/rappterbook/docs/dev.html"
+  ],
+  "rappter.egg/1.0": [
+   "kody-w/rappterbook/docs/brainstem.html"
+  ],
+  "rappterbook": [
+   "kody-w/rapp-map/ECOSYSTEM.md",
+   "kody-w/rionet/pages/rappterbook.md (social network schema - citizens, profiles, follows)"
+  ],
+  "rappterbook-agent-contract/1.0": [
+   "<local-path>"
+  ],
+  "rappterbook-agent-genealogy/1.0": [
+   "kody-w/rappterbook/docs/dna.html"
+  ],
+  "rappterbook-agent-skill/1.0": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "rappterbook-api/1.0": [
+   "kody-w/rappterbook/docs/api.html"
+  ],
+  "rappterbook-book-manifest/1.0": [
+   "kody-w/rappterbook/docs/book.html"
+  ],
+  "rappterbook-command-deck/1.0": [
+   "kody-w/rappterbook/docs/command.html"
+  ],
+  "rappterbook-commons": [
+   "kody-w/rapp-map/ECOSYSTEM.md",
+   "kody-w/rapp-map/SWARM.md"
+  ],
+  "rappterbook-evolution/1.4-mb-sqlite": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "rappterbook-integration/1.0": [
+   "kody-w/rappterbook/docs/local_agent_brain.html"
+  ],
+  "rappterbook-production/1.0": [
+   "kody-w/rappterbook/AUTONOMY.md"
+  ],
+  "rappterbook-protocol/1.0": [
+   "kody-w/rappterbook/COPILOT_SKILLS.md"
+  ],
+  "rappterbook-reader/1.0": [
+   "kody-w/rappterbook/docs/book.html"
+  ],
+  "rappterbook-skill/1.0.0": [
+   "kody-w/rappterbook/skill.json"
+  ],
+  "rappterbook-state-schema/1.0": [
+   "\nkody-w/rappterbook/docs/agents.html\n"
+  ],
+  "rappterbook-submission/1.0": [
+   "kody-w/rappterbook/docs/FRAME_SPEC.md"
+  ],
+  "rappterbook-tts-credentials/1.0": [
+   "kody-w/rappterbook/docs/book.html"
+  ],
+  "rappterbook-tts-progress/1.0": [
+   "kody-w/rappterbook/docs/book.html"
+  ],
+  "rappterbook-ui/1.0": [
+   "kody-w/rappterbook/docs/index.html"
+  ],
+  "rappterbook/1.0": [
+   "kody-w/rappterbook/IDENTITY.md",
+   "kody-w/rappterbook/LORE.md",
+   "kody-w/rappterbook/docs/activity.html",
+   "kody-w/rappterbook/docs/arena.html"
+  ],
+  "rappterbook/library/1.0": [
+   "kody-w/rappterbook/library.json"
+  ],
+  "rappterbook/state-repo-1.0": [
+   "kody-w/rappterbook/docs/colony.html"
+  ],
+  "rappterbox-cart/0.1": [
+   "kody-w/RAPP/CONSTITUTION.md",
+   "kody-w/RAPP/ECOSYSTEM_MAP.md",
+   "kody-w/RAPP/pages/docs/VERSIONS.md",
+   "kody-w/RAPP/pages/vbrainstem.html"
+  ],
+  "rappterbox-console-spec/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterbox.md"
+  ],
+  "rappterpedia-export/1.0": [
+   "<local-path>"
+  ],
+  "rappterpedia-state/1.0": [
+   "kody-w/RAR/tmp/RAR_temp/rappterpedia/rappterpedia_state.json"
+  ],
+  "rappterverse": [
+   "kody-w/rappterbook/docs/deck.html"
+  ],
+  "rappterverse/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterverse.md"
+  ],
+  "rar-api/1.0": [
+   "kody-w/RAPP-Bible/SPEC/registry/SPEC.md",
+   "kody-w/RAPP-Bible/repos/RAR.md",
+   "kody-w/RAR/releases.html"
+  ],
+  "rar-chain/1.0": [
+   "https:/raw.githubusercontent.com/kody-w/RAR/main/docs/tree.html"
+  ],
+  "rar-config/1.0": [
+   "kody-w/RAR/releases.html",
+   "kody-w/RAR/tmp/RAR_temp/faq.html"
+  ],
+  "rar-index-manifest": [
+   "kody-w/neighborhood-example/specs/AGENT_CONTRACT.md — contract spec for single-file RAPP agent structure"
+  ],
+  "rar-index/1.0": [
+   "kody-w/neighborhood-example/onboarding.html — Welcome page with neighborhood onboarding workflow",
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods"
+  ],
+  "rar/index.json": [
+   "kody-w/neighborhood-example/specs/NEIGHBORHOOD_PROTOCOL.md — protocol spec for sealed twin-chat neighborhoods"
+  ],
+  "rarity_tier": [
+   "kody-w/heimdall/specs/HOLOCARD_SPEC.md"
+  ],
+  "rarity_tier:starter|core|rare|mythic": [
+   "kody-w/public-art-collective/specs/HOLOCARD_SPEC.md"
+  ],
+  "rb-lispy/1.0": [
+   "kody-w/rappterbook/docs/index.html"
+  ],
+  "rb-soul-memory/1.0": [
+   "kody-w/rappterbook/docs/index.html"
+  ],
+  "rb-state-schema/1.0": [
+   "kody-w/rappterbook/docs/index.html"
+  ],
+  "rbac/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "reaction": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "recovery_agent": [
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "reflex-arc/1.0": [
+   "kody-w/rappterbook/docs/RAPPTER_BIBLE.md"
+  ],
+  "registry": [
+   "kody-w/rappterbook/docs/apps.html"
+  ],
+  "registry.json": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n",
+   "kody-w/RAPP_Store/docs/proposals/0002-three-stores.md",
+   "kody-w/RAR/tmp/RAR_temp/grail.html"
+  ],
+  "registry/SPEC.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "request-schema/draft-07": [
+   "kody-w/CommunityRAPP/docs/ARCHITECTURE.md"
+  ],
+  "response-contract/|||VOICE|||": [
+   "kody-w/CommunityRAPP/CONSTITUTION.md"
+  ],
+  "response-schema/draft-07": [
+   "kody-w/CommunityRAPP/docs/ARCHITECTURE.md"
+  ],
+  "responsive-grid-layout": [
+   "kody-w/RAPP/pages/about/leadership.html"
+  ],
+  "rio": [
+   "kody-w/rapp-map/ECOSYSTEM.md",
+   "kody-w/rapp-map/SWARM.md"
+  ],
+  "rio-agent/1.0": [
+   "kody-w/rio/index.html"
+  ],
+  "rio.egg/1.0": [
+   "kody-w/rio/index.html"
+  ],
+  "rionet": [
+   "kody-w/rapp-map/ECOSYSTEM.md",
+   "kody-w/rapp-map/SWARM.md"
+  ],
+  "rionet-index/1.0": [
+   "kody-w/rapp-god/registry.json",
+   "kody-w/rapp-god/tmp/rapp-god/manifest.json",
+   "kody-w/rionet/README.md (system architecture + crawl protocol)",
+   "kody-w/rionet/index.json (rionet-index/1.0 schema)",
+   "kody-w/rionet/pages/racon.md (RACon console spec - cartridge execution system)",
+   "kody-w/rionet/pages/racon.md (console cartridge loader - user-facing surface)",
+   "kody-w/rionet/pages/the-commons.md (signed social stream - agent communication interface)"
+  ],
+  "rionet-sites/1.0": [
+   "kody-w/rionet/sites.json (rionet-sites/1.0 schema)"
+  ],
+  "rionet/1.0": [
+   "kody-w/rio/index.html",
+   "kody-w/rionet/pages/rio.md (RIO browser spec - search + navigation interface)"
+  ],
+  "rpage": [
+   "kody-w/rionet/pages/rio.md (browser cartridge - search and link navigation)"
+  ],
+  "rpage:<slug>": [
+   "kody-w/rionet/pages/racon.md (console cartridge loader - user-facing surface)",
+   "kody-w/rionet/pages/the-commons.md (signed social stream - agent communication interface)"
+  ],
+  "rpage:racon": [
+   "kody-w/rionet/pages/rio.md (browser cartridge - search and link navigation)",
+   "kody-w/rionet/pages/welcome.md (front-door index, entry point with navigation to all components)"
+  ],
+  "rpage:rappterbook": [
+   "kody-w/rionet/pages/welcome.md (front-door index, entry point with navigation to all components)"
+  ],
+  "rpage:rio": [
+   "kody-w/rionet/pages/welcome.md (front-door index, entry point with navigation to all components)"
+  ],
+  "rpage:the-commons": [
+   "kody-w/rionet/pages/rappterbook.md (social network UI — citizens, profiles, feed, channels)",
+   "kody-w/rionet/pages/rio.md (browser cartridge - search and link navigation)",
+   "kody-w/rionet/pages/welcome.md (front-door index, entry point with navigation to all components)"
+  ],
+  "rpage:the-resident": [
+   "kody-w/rionet/pages/rappterbook.md (social network UI — citizens, profiles, feed, channels)",
+   "kody-w/rionet/pages/welcome.md (front-door index, entry point with navigation to all components)"
+  ],
+  "runtime:twin": [
+   "kody-w/rapp-carts/SPEC.md"
+  ],
+  "scale:": [
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md"
+  ],
+  "scale:neighborhood": [
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md"
+  ],
+  "scale=neighborhood": [
+   "kody-w/RAPP/pages/docs/NEIGHBORHOOD_EGG_SPEC.md"
+  ],
+  "schema": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n",
+   "kody-w/rappterbook/docs/catalog.html"
+  ],
+  "schema:": [
+   "RAR/private-rar-template/submit_to_public_rar.md",
+   "kody-w/RAPP_Sense_Store/https:/raw.githubusercontent.com/kody-w/RAPP_Sense_Store/main/README.md",
+   "kody-w/RAPP_Sense_Store/main/CLAUDE.md"
+  ],
+  "schema:rappcards/1.1.2": [
+   "kody-w/public-art-collective/specs/HOLOCARD_SPEC.md"
+  ],
+  "search:<query>": [
+   "kody-w/rionet/pages/rio.md (browser cartridge - search and link navigation)"
+  ],
+  "seed": [
+   "kody-w/RAPP/pages/vbrainstem/index.html"
+  ],
+  "sense": [
+   "kody-w/RAPP_Store/docs/proposals/0002-three-stores.md"
+  ],
+  "senses": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "senses/*.py": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md"
+  ],
+  "senses/SPEC.md": [
+   "kody-w/RAPP-Bible/SPEC/_index.md"
+  ],
+  "service-worker/offline-capable": [
+   "kody-w/RAPP/pages/vault/index.html"
+  ],
+  "service_agent": [
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "settings/1.0": [
+   "kody-w/RAPP/pages/sphere.html"
+  ],
+  "sha-256": [
+   "kody-w/rapp-vneighborhood/index.html — canonical front door: single-page neighborhood entry point with vTwin identity minting (ECDSA P-256, rappid:v3 addressing), PIN setup/entry UI for first-twin light-turning (host), QR code generation, link sharing with optional embedded PIN, sealed message feed with AES-GCM end-to-end encryption keyed from PIN, and posting interface; reads neighborhood.json bones to render dynamic layout, branding, channel, message kinds, and rules"
+  ],
+  "sha8": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n"
+  ],
+  "signed": [
+   "kody-w/rionet/pages/rappterbook.md (social network UI — citizens, profiles, feed, channels)",
+   "kody-w/rionet/pages/the-commons.md (signed social stream - agent communication interface)"
+  ],
+  "signed-commons": [
+   "kody-w/rionet/pages/rappterbook.md (social network UI — citizens, profiles, feed, channels)",
+   "kody-w/rionet/pages/rappterbook.md (social network schema - citizens, profiles, follows)"
+  ],
+  "single-file": [
+   "kody-w/aibast-agents-library/docs/tutorial.html — Getting started tutorial (5-minute quickstart guide)"
+  ],
+  "single-file-agent/pattern": [
+   "kody-w/rapp-installer/docs/tutorial.html"
+  ],
+  "sites.json/1.0": [
+   "kody-w/rionet/pages/welcome.md (front-door index, entry point with navigation to all components)"
+  ],
+  "skill-definition/1.0": [
+   "kody-w/rapp-installer/skill.md"
+  ],
+  "skill-file/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterverse.md"
+  ],
+  "skill.json": [
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "skill.md": [
+   "kody-w/rapp-estate/index.html (front door / main estate entry point — renders live from estate.json, displays twins & gates, includes onboarding & AI summon interface)"
+  ],
+  "slot": [
+   "kody-w/rapp-test-neighbor/specs/SOUL_IDENTITY.md"
+  ],
+  "slot-protocol": [
+   "kody-w/heimdall/specs/SOUL_IDENTITY.md"
+  ],
+  "slot-protocol/1.0": [
+   "kody-w/public-art-collective/specs/SOUL_IDENTITY.md"
+  ],
+  "social-graph": [
+   "kody-w/rionet/pages/rappterbook.md (social network UI — citizens, profiles, feed, channels)"
+  ],
+  "social-graph/1.0": [
+   "kody-w/rappterbook/docs/api.html"
+  ],
+  "social-network/schema": [
+   "kody-w/rionet/pages/rappterbook.md (social network schema - citizens, profiles, follows)"
+  ],
+  "sol-timeline/1.0": [
+   "kody-w/rappterbook/docs/colony.html"
+  ],
+  "soul": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html"
+  ],
+  "soul-block": [
+   "kody-w/rapp-test-neighbor/specs/SOUL_IDENTITY.md"
+  ],
+  "soul-file-schema/md": [
+   "kody-w/rapp-installer/docs/tutorial.html"
+  ],
+  "soul-file/1.0": [
+   "kody-w/rappterbook/docs/demo.html",
+   "kody-w/rappterbook/docs/local_agent_brain.html"
+  ],
+  "soul-schema/implicit": [
+   "kody-w/rapp-installer/rapp_brainstem/soul.md"
+  ],
+  "soul.md": [
+   "kody-w/RAPP-Bible/repos/twin-egg-hatcher.md",
+   "kody-w/RAPP/pages/about/anatomy.html",
+   "kody-w/RAPP/pages/onboarding.html",
+   "kody-w/aibast-agents-library/docs/tutorial.html — Getting started tutorial (5-minute quickstart guide)",
+   "kody-w/heimdall/specs/SOUL_IDENTITY.md",
+   "kody-w/heimdall/specs/TWIN_PROTOCOL.md",
+   "kody-w/public-art-collective/specs/SOUL_IDENTITY.md",
+   "kody-w/rapp-test-neighbor/specs/SOUL_IDENTITY.md"
+  ],
+  "state": [
+   "kody-w/rapp-installer/rapp_brainstem/index.html",
+   "kody-w/rappterbook/SKILLS.md"
+  ],
+  "state-conventions/json-jsonl": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "state-file-schema/1.0": [
+   "kody-w/rappterbook/docs/api.html"
+  ],
+  "state-schema/1.0": [
+   "<local-path>"
+  ],
+  "state/mcp_peers.json": [
+   "kody-w/rappterbook/docs/MCP_CONSUMER.md"
+  ],
+  "state_json": [
+   "kody-w/rappterbook/EGG_SPEC.md"
+  ],
+  "status_transitions": [
+   "kody-w/rappterbook/docs/DATA_WAREHOUSE.md"
+  ],
+  "storage-factory/1.0": [
+   "kody-w/CommunityRAPP/docs/LOCAL_DEVELOPMENT.md"
+  ],
+  "storage-interface/1.0": [
+   "kody-w/CommunityRAPP/docs/LOCAL_DEVELOPMENT.md"
+  ],
+  "stream-activity-metrics/1.0": [
+   "kody-w/rappterbook/docs/command.html"
+  ],
+  "stream-delta/1.0": [
+   "kody-w/rappterbook/docs/AMENDMENTS.md"
+  ],
+  "stream-exhaust-format/1.0": [
+   "kody-w/rappterbook/docs/command.html"
+  ],
+  "subprocess-PATH/augmentation": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "subprocess-backed": [
+   "kody-w/rappterbook/docs/MCP_CONSUMER.md"
+  ],
+  "sw.js": [
+   "kody-w/RAPP/pages/vault/index.html"
+  ],
+  "swarm-capable": [
+   "kody-w/neighborhood-example/index.html — vNeighborhood front door: keypair minting, PIN-sealed join, message relay"
+  ],
+  "swarm-deploy/1.0": [
+   "installer/index.html — RAPP v1 frozen digital twin (2026-04-17)"
+  ],
+  "swarmfactory/build": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "swarmfactory/generate": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "synthetic-fleet-posting/1.0": [
+   "kody-w/rappterbook/docs/index.html"
+  ],
+  "system_context()/injection": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "theme-light-dark-toggle": [
+   "kody-w/RAPP/pages/about/leadership.html"
+  ],
+  "third-space-library/1.0": [
+   "kody-w/rappterbook/docs/demo.html"
+  ],
+  "third-space-v1": [
+   "kody-w/rappterbook/docs/catalog.html"
+  ],
+  "three.js/0.128.0": [
+   "kody-w/rappterbook/docs/constellation3d.html"
+  ],
+  "three.js/r128": [
+   "kody-w/rappterbook/docs/constellation3d.html"
+  ],
+  "tier-1-brainstem": [
+   "kody-w/rapp-installer/rapp_brainstem/soul.md"
+  ],
+  "tier-2-hippocampus-communityRAPP": [
+   "kody-w/rapp-installer/rapp_brainstem/soul.md"
+  ],
+  "tier-3-nervous-system": [
+   "kody-w/rapp-installer/rapp_brainstem/soul.md"
+  ],
+  "tier-progression/T1-T2-T3": [
+   "kody-w/CommunityRAPP/docs/BRAINSTEM_GUIDANCE.md"
+  ],
+  "tool-exposure/openai-function-calling": [
+   "kody-w/rappterbook/BRAINSTEM_AGENT_FACTORY_SKILL.md"
+  ],
+  "tree.json-federation": [
+   "kody-w/rappterbook/docs/deck.html"
+  ],
+  "tts-state/1.0": [
+   "kody-w/rappterbook/docs/book.html"
+  ],
+  "twin-chat": [
+   "kody-w/rapp-god/NEIGHBORHOOD_PROTOCOL.md"
+  ],
+  "twin-hatch/lifecycle": [
+   "kody-w/rapp-map/VISION.md"
+  ],
+  "twin-native-api/1.0": [
+   "kody-w/rappterbook/FEDERATION.md"
+  ],
+  "twin-seed/embryonic": [
+   "kody-w/RAPP_Store/vbrainstem.html"
+  ],
+  "twin:front_door": [
+   "kody-w/RAPP-Bible/repos/kody-w-twin.md"
+  ],
+  "twin_chat_agent.py": [
+   "\nkody-w/rapp-vneighborhood/README.md — template documentation describing front-door mechanics: twin minting, PIN-based sealing, AES-GCM end-to-end, swarm-capability (v), offline parity with twin_chat_agent.py, and customization pattern\n"
+  ],
+  "twin_egg_hatcher_agent.py": [
+   "kody-w/RAR/tmp/RAR_temp/stacks/fleet-management/README.md"
+  ],
+  "user-guid-v1": [
+   "kody-w/CommunityRAPP/index.html"
+  ],
+  "user_context": [
+   "kody-w/CommunityRAPP/docs/POWER_PLATFORM_INTEGRATION.md"
+  ],
+  "utils/reserved_agents/": [
+   "kody-w/RAPP/pages/release/roadmap.html"
+  ],
+  "v1": [
+   "kody-w/rappterbook/EGG_SPEC.md"
+  ],
+  "v1.x.y": [
+   "kody-w/RAPP/pages/docs/SPEC.md"
+  ],
+  "vBANK/solana-spl": [
+   "kody-w/rappterbook/docs/deck.html"
+  ],
+  "vBrainstem": [
+   "https:/github.com/kody-w/rapp-neighborhood-protocol/blob/main/NEIGHBORHOOD_PROTOCOL.md",
+   "kody-w/rapp-god/NEIGHBORHOOD_PROTOCOL.md"
+  ],
+  "vBrainstem/runtime": [
+   "kody-w/rapp-kite/README.md"
+  ],
+  "vRACon": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "vTwin": [
+   "kody-w/rapp-god/tmp/rapp-god/versions/rapp-vneighborhood/index.html/ba5f43f5d25b.html"
+  ],
+  "vault.css": [
+   "kody-w/RAPP/pages/vault/index.html"
+  ],
+  "vault.js": [
+   "kody-w/RAPP/pages/vault/index.html"
+  ],
+  "vbank/1.0": [
+   "kody-w/rappterbook/docs/api.html"
+  ],
+  "vbrainstem-console/1": [
+   "kody-w/vbrainstem/virtual-brainstem-summon.html"
+  ],
+  "vbrainstem-install-link/1.0": [
+   "kody-w/vbrainstem/share.html"
+  ],
+  "vbrainstem_sdk.py": [
+   "kody-w/rapp-map/README.md"
+  ],
+  "vbrainstem_storage": [
+   "kody-w/RAPP/pages/grail-brainstem/index.html"
+  ],
+  "vbs_rappid": [
+   "kody-w/RAPP/pages/vbrainstem/index.html"
+  ],
+  "versions/&lt;name&gt;/&lt;sha8&gt;": [
+   "kody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/template/index.html"
+  ],
+  "versions/<name>/<sha8><ext>": [
+   "\nkody-w/rapp-static-apis/https:/raw.githubusercontent.com/kody-w/rapp-static-apis/main/README.md\n"
+  ],
+  "virtual-pip/1.0": [
+   "kody-w/rappterbook/docs/LISPY_MANIFESTO.md"
+  ],
+  "virtual-to-real-loop": [
+   "kody-w/rappterbook/docs/deck.html"
+  ],
+  "vneighborhood-design-studio": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "vneighborhood-research-lab": [
+   "kody-w/rapp-map/ECOSYSTEM.md"
+  ],
+  "vnet-integration/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "waf/1.0": [
+   "kody-w/CommunityRAPP/docs/SECURITY.md"
+  ],
+  "witness-log/1.0": [
+   "<local-path>"
+  ],
+  "witness-summary/1.0": [
+   "<local-path>"
+  ],
+  "witness_log.jsonl": [
+   "kody-w/rappterbook/docs/MCP_CONSUMER.md"
+  ],
+  "world-state-protocol/1.0": [
+   "kody-w/RAPP-Bible/repos/rappterverse.md"
+  ],
+  "wrapped-organism-spec/1.0": [
+   "kody-w/RAPP-Bible/repos/rapp-leviathan-hub.md"
+  ],
+  "x-rappter-provenance/1.0": [
+   "kody-w/rappterbook/FEDERATION.md"
+  ]
+ },
+ "note": "Summon the neurons whose surfaces appear under a schema/term to scope a drift swarm; or summon all for an all-encompassing pass."
+}
