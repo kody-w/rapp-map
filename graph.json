@@ -1,0 +1,462 @@
+{
+  "schema": "rapp-ecosystem-graph/1.0",
+  "generated": "2026-06-10T01:37:13Z",
+  "purpose": "Traverse the RAPP ecosystem across repos. The blast radius of a mutation in node X = every node with an edge pointing AT X (its consumers), transitively. Use it to keep the digital organism aligned: when one repo mutates, walk inbound edges to find which other repos should be reviewed for update.",
+  "edge_types": {
+    "governed_by": "bound by the species constitution / sacred constraints",
+    "specified_by": "implements a spec that lives in `to`",
+    "mirrors": "re-publishes / hubs `to`'s content",
+    "snapshots": "content-addressed observation of `to`",
+    "indexes": "catalogs / points at `to`",
+    "implements": "code realizing a protocol/contract in `to`",
+    "bundles": "ships a frozen copy of `to`",
+    "vendors": "vendored copy of `to`"
+  },
+  "authority_note": "Edges point from consumer to source. Lower-tier nodes (RAPP=1) win on conflict; mutations there have the widest blast radius. rapp-god is a witness (tier 6), never a judge.",
+  "nodes": [
+    {
+      "id": "RAPP",
+      "role": "species root \u2014 kernel + constitution + specs",
+      "tier": 1,
+      "repo": "kody-w/RAPP"
+    },
+    {
+      "id": "rapp-god",
+      "role": "observatory \u2014 registry of every part + version (content-addressed)",
+      "tier": 6,
+      "repo": "kody-w/rapp-god"
+    },
+    {
+      "id": "rapp-map",
+      "role": "index \u2014 which repo houses which part + this graph",
+      "tier": 5,
+      "repo": "kody-w/rapp-map"
+    },
+    {
+      "id": "RAPP-Bible",
+      "role": "specs hub \u2014 human-facing canon mirror",
+      "tier": 5,
+      "repo": "kody-w/RAPP-Bible"
+    },
+    {
+      "id": "RAR",
+      "role": "registry \u2014 single-file agents",
+      "tier": 4,
+      "repo": "kody-w/RAR"
+    },
+    {
+      "id": "RAPP_Store",
+      "role": "catalog \u2014 rapplications",
+      "tier": 4,
+      "repo": "kody-w/RAPP_Store"
+    },
+    {
+      "id": "RAPP_Sense_Store",
+      "role": "catalog \u2014 senses",
+      "tier": 4,
+      "repo": "kody-w/RAPP_Sense_Store"
+    },
+    {
+      "id": "rapp-egg-hub",
+      "role": "catalog \u2014 eggs",
+      "tier": 4,
+      "repo": "kody-w/rapp-egg-hub"
+    },
+    {
+      "id": "rapp-sealed",
+      "role": "channel \u2014 AES-256-GCM \u00a78 codec",
+      "tier": 4,
+      "repo": "kody-w/rapp-sealed"
+    },
+    {
+      "id": "rapp-neighborhood-protocol",
+      "role": "spec \u2014 the federation wire",
+      "tier": 3,
+      "repo": "kody-w/rapp-neighborhood-protocol"
+    },
+    {
+      "id": "rapp-vneighborhood",
+      "role": "front-door template \u2014 kited room",
+      "tier": 4,
+      "repo": "kody-w/rapp-vneighborhood"
+    },
+    {
+      "id": "rapp-kite",
+      "role": "operate \u2014 the string / kited twins",
+      "tier": 4,
+      "repo": "kody-w/rapp-kite"
+    },
+    {
+      "id": "rapp-doorman",
+      "role": "skill \u2014 the sealed door",
+      "tier": 4,
+      "repo": "kody-w/rapp-doorman"
+    },
+    {
+      "id": "rapp-kited-twin",
+      "role": "mark \u2014 kite visual identity",
+      "tier": 4,
+      "repo": "kody-w/rapp-kited-twin"
+    },
+    {
+      "id": "rapp-commons",
+      "role": "neighborhood \u2014 global town square",
+      "tier": 4,
+      "repo": "kody-w/rapp-commons"
+    },
+    {
+      "id": "rapp-resident",
+      "role": "relay \u2014 permanent cloud host",
+      "tier": 4,
+      "repo": "kody-w/rapp-resident"
+    },
+    {
+      "id": "rapp-mcp",
+      "role": "transport \u2014 MCP gateway (chat is the only wire)",
+      "tier": 4,
+      "repo": "kody-w/rapp-mcp"
+    },
+    {
+      "id": "rionet",
+      "role": "web \u2014 the agent-built web",
+      "tier": 4,
+      "repo": "kody-w/rionet"
+    },
+    {
+      "id": "rio",
+      "role": "browser \u2014 OSI L7",
+      "tier": 4,
+      "repo": "kody-w/rio"
+    },
+    {
+      "id": "racon",
+      "role": "cartridges \u2014 experience grail",
+      "tier": 4,
+      "repo": "kody-w/racon"
+    },
+    {
+      "id": "rapp-carts",
+      "role": "spec \u2014 cartridge format",
+      "tier": 4,
+      "repo": "kody-w/rapp-carts"
+    },
+    {
+      "id": "vbrainstem",
+      "role": "runtime \u2014 browser Pyodide brainstem",
+      "tier": 4,
+      "repo": "kody-w/vbrainstem"
+    },
+    {
+      "id": "rapp-brainstem-sdk",
+      "role": "runtime \u2014 headless /chat",
+      "tier": 4,
+      "repo": "kody-w/rapp-brainstem-sdk"
+    },
+    {
+      "id": "rapp-installer",
+      "role": "install \u2014 curl|bash front door",
+      "tier": 4,
+      "repo": "kody-w/rapp-installer"
+    },
+    {
+      "id": "CommunityRAPP",
+      "role": "memory \u2014 hippocampus",
+      "tier": 4,
+      "repo": "kody-w/CommunityRAPP"
+    },
+    {
+      "id": "planted-seeds",
+      "role": "every planted twin/neighborhood (bundles specs)",
+      "tier": 7,
+      "repo": null
+    }
+  ],
+  "edges": [
+    {
+      "from": "rapp-god",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-map",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "RAPP-Bible",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "RAR",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "RAPP_Store",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "RAPP_Sense_Store",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-egg-hub",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-sealed",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-neighborhood-protocol",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-vneighborhood",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-kite",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-doorman",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-kited-twin",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-commons",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-resident",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-mcp",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rionet",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rio",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "racon",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-carts",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "vbrainstem",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-brainstem-sdk",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "rapp-installer",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "CommunityRAPP",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "planted-seeds",
+      "to": "RAPP",
+      "type": "governed_by"
+    },
+    {
+      "from": "RAPP-Bible",
+      "to": "RAPP",
+      "type": "mirrors"
+    },
+    {
+      "from": "rapp-map",
+      "to": "RAPP",
+      "type": "indexes"
+    },
+    {
+      "from": "rapp-god",
+      "to": "RAPP",
+      "type": "snapshots"
+    },
+    {
+      "from": "rapp-god",
+      "to": "rapp-sealed",
+      "type": "snapshots"
+    },
+    {
+      "from": "rapp-god",
+      "to": "rapp-kite",
+      "type": "snapshots"
+    },
+    {
+      "from": "rapp-god",
+      "to": "rapp-doorman",
+      "type": "snapshots"
+    },
+    {
+      "from": "rapp-god",
+      "to": "rapp-neighborhood-protocol",
+      "type": "snapshots"
+    },
+    {
+      "from": "rapp-god",
+      "to": "rapp-brainstem-sdk",
+      "type": "snapshots"
+    },
+    {
+      "from": "rapp-god",
+      "to": "rapp-mcp",
+      "type": "snapshots"
+    },
+    {
+      "from": "rapp-god",
+      "to": "rapp-commons",
+      "type": "snapshots"
+    },
+    {
+      "from": "rapp-sealed",
+      "to": "rapp-neighborhood-protocol",
+      "type": "implements"
+    },
+    {
+      "from": "rapp-vneighborhood",
+      "to": "rapp-neighborhood-protocol",
+      "type": "implements"
+    },
+    {
+      "from": "rapp-doorman",
+      "to": "rapp-sealed",
+      "type": "implements"
+    },
+    {
+      "from": "rapp-kite",
+      "to": "rapp-neighborhood-protocol",
+      "type": "implements"
+    },
+    {
+      "from": "rapp-resident",
+      "to": "rapp-neighborhood-protocol",
+      "type": "implements"
+    },
+    {
+      "from": "rapp-commons",
+      "to": "rapp-neighborhood-protocol",
+      "type": "implements"
+    },
+    {
+      "from": "rapp-vneighborhood",
+      "to": "rapp-sealed",
+      "type": "implements"
+    },
+    {
+      "from": "rapp-neighborhood-protocol",
+      "to": "RAPP",
+      "type": "specified_by"
+    },
+    {
+      "from": "vbrainstem",
+      "to": "RAPP",
+      "type": "implements"
+    },
+    {
+      "from": "rapp-brainstem-sdk",
+      "to": "RAPP",
+      "type": "implements"
+    },
+    {
+      "from": "rapp-mcp",
+      "to": "RAPP",
+      "type": "implements"
+    },
+    {
+      "from": "RAR",
+      "to": "RAPP",
+      "type": "indexes"
+    },
+    {
+      "from": "RAPP_Store",
+      "to": "RAPP",
+      "type": "indexes"
+    },
+    {
+      "from": "RAPP_Sense_Store",
+      "to": "RAPP",
+      "type": "indexes"
+    },
+    {
+      "from": "rapp-egg-hub",
+      "to": "RAPP",
+      "type": "indexes"
+    },
+    {
+      "from": "planted-seeds",
+      "to": "RAPP",
+      "type": "bundles"
+    },
+    {
+      "from": "planted-seeds",
+      "to": "rapp-sealed",
+      "type": "implements"
+    },
+    {
+      "from": "racon",
+      "to": "rapp-carts",
+      "type": "implements"
+    },
+    {
+      "from": "rio",
+      "to": "rionet",
+      "type": "implements"
+    }
+  ],
+  "observatory_groups": [
+    "RACon & specs",
+    "RAPP front-door",
+    "RIONet",
+    "canonical",
+    "constitution",
+    "ecosystem",
+    "frozen kernel",
+    "kited-neighborhood spec",
+    "rapp-mcp",
+    "seed agents",
+    "the commons",
+    "the resident",
+    "the vNeighborhood front door",
+    "twin-chat"
+  ]
+}
