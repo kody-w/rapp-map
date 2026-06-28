@@ -2,8 +2,8 @@
   "schema": "rapp-estate-map/1.0",
   "built_at": "2026-06-28T20:21:23Z",
   "purpose": "Repo-level map of the whole rapp estate \u2014 every rapp-named repo scanned then verifier-rechecked. Complements the per-file neuron mesh (neurons.json). Load this first to avoid operating on half the estate.",
-  "count": 85,
-  "estate_summary": "The rapp estate is one coherent organism with a small, genuinely load-bearing spine and a large penumbra of instances, spec-stubs, satellites, and decaying experiments. The spine is real and shipped: a single Tier-1 on-ramp (rapp-installer, the grail, VERSION 0.6.1 \u2014 verified locally; this working dir IS that checkout), a canonical monorepo that owns the MASTER_PLAN ground truth (RAPP), a four-leg drift-governance system (rapp-god owner + rapp-map index + RAPP-Bible human render + the rapp_agent verify leg), an identity/standard family (rapp-moment standard + rapp-hologram reference engine + rapp-egg-hub distribution + rappid eternity), a crypto+network mesh (rapp-sealed + rapp-neighborhood-protocol + vbrainstem/kite/doorman), and a social leg (rapp-commons + rapp-god-forum) plus Tier-2/3 runtime ports (CommunityRAPP, rapp-dataverse, rapp-static-apis) and an MCP on-ramp (rapp-mcp). All of it sits on pure GitHub substrate (raw CDN, Pages edge, gh-collaborator trust, sha256 content-addressing), is honestly PKI-free at the root (the eternity keypair is opt-in sovereignty, correctly never flagged as mandatory PKI), and rejects a central server/registry/broker \u2014 faithful to the north star \"use everyone else's hardware to run the network.\"\n\nThe honest tension is that the estate's framing consistently outruns its shipped substrate, and drift is the dominant systemic risk. Verification confirmed: the RAPP super-repo's kernel/installer/seed-agent mirror is systematically STALE versus the grail (rapp-god surfaces a 12-part drift cluster \u2014 brainstem.py, VERSION, both memory agents, install scripts, CONSTITUTION, NEIGHBORHOOD_PROTOCOL); the ecosystem-spec.json machine spec is mirrored in 4-5 places including the kernel repo's own specs/; at least five divergent reimplementations of the /chat contract coexist with no mechanical parity check; the entire social layer secretly leans on ONE shared Azure host (rapp-resident-kw165843), which cold-started/was briefly unreachable mid-verification; rappid form sprawl spans six legacy emission shapes; the dev\u2192canary\u2192prod release pipeline is BROKEN (red cron, not shelved) with prod advancing straight from the grail; and the rappbook-federation demo family is decaying into silent 404 link-rot \u2014 a live counter-example to the \"graceful degrade\" hero claim. The spine is solid and well-mapped; the periphery is where half-pictures live.",
+  "count": 86,
+  "estate_summary": "The rapp estate is one coherent organism with a small, genuinely load-bearing spine and a large penumbra of instances, spec-stubs, satellites, and decaying experiments. The spine is real and shipped: a single Tier-1 on-ramp (rapp-installer, the grail, VERSION 0.6.1 \u2014 verified locally; this working dir IS that checkout), a canonical monorepo that owns the MASTER_PLAN ground truth (RAPP), a four-leg drift-governance system (rapp-god owner + rapp-map index + RAPP-Bible human render + the rapp_agent verify leg), an identity/standard family (rapp-moment standard + rapp-hologram reference engine + rapp-egg-hub distribution + rappid eternity), a crypto+network mesh (rapp-sealed + rapp-neighborhood-protocol + vbrainstem/kite/doorman), and a social leg (rapp-commons + rapp-god-forum) plus Tier-2/3 runtime ports (CommunityRAPP, rapp-dataverse, rapp-static-apis) and an MCP on-ramp (rapp-mcp). All of it sits on pure GitHub substrate (raw CDN, Pages edge, gh-collaborator trust, sha256 content-addressing), is honestly PKI-free at the root (the eternity keypair is opt-in sovereignty, correctly never flagged as mandatory PKI), and rejects a central server/registry/broker \u2014 faithful to the north star \"use everyone else's hardware to run the network.\"\n\nThe honest tension is that the estate's framing consistently outruns its shipped substrate, and drift is the dominant systemic risk [reframed: see distro note]. Verification confirmed: the RAPP super-repo's kernel/installer/seed-agent mirror is systematically STALE versus the grail (rapp-god surfaces a 12-part drift cluster \u2014 brainstem.py, VERSION, both memory agents, install scripts, CONSTITUTION, NEIGHBORHOOD_PROTOCOL); the ecosystem-spec.json machine spec is mirrored in 4-5 places including the kernel repo's own specs/; at least five divergent reimplementations of the /chat contract coexist with no mechanical parity check; the entire social layer secretly leans on ONE shared Azure host (rapp-resident-kw165843), which cold-started/was briefly unreachable mid-verification; rappid form sprawl spans six legacy emission shapes; the dev\u2192canary\u2192prod release pipeline is BROKEN (red cron, not shelved) with prod advancing straight from the grail; and the rappbook-federation demo family is decaying into silent 404 link-rot \u2014 a live counter-example to the \"graceful degrade\" hero claim. The spine is solid and well-mapped; the periphery is where half-pictures live. NOTE (kernel/distro model, rapp-distro/1.0): kody-w/RAPP is a clean DISTRO that PINS kernel v0.6.0 byte-identical to the grail tag (now declared via RAPP/KERNEL_PIN.json + a freeze CI); the grail (rapp-installer) ships 0.6.1. The version gap is an INTENTIONAL LTS pin, not silent drift \u2014 distros bump deliberately. Spec-unification across the spine is separately zero-drift (verify_spine I1-I5).",
   "the_real_stack": [
     "kody-w/rapp-installer \u2014 THE grail / single public on-ramp (curl one-liner, VERSION 0.6.1 verified locally; this working dir is its checkout; main is production)",
     "kody-w/RAPP \u2014 canonical monorepo that owns MASTER_PLAN ground truth + CONSTITUTION + canon law + the public kernel copy + the cave neighborhood",
@@ -39,9 +39,6 @@
         "kody-w/RAPP-Bible",
         "kody-w/rapp-egg-hub",
         "kody-w/rapp-carts",
-        "kody-w/cowork-cookbook-rapp",
-        "kody-w/ez-rapp",
-        "kody-w/rapp-brainstem-beta",
         "kody-w/rapp-demos"
       ]
     },
@@ -62,8 +59,7 @@
       "load_bearing_repos": [
         "kody-w/rapp-moment",
         "kody-w/rapp-hologram",
-        "kody-w/rapp-sealed",
-        "kody-w/rapp-kited-twin"
+        "kody-w/rapp-sealed"
       ]
     },
     {
@@ -73,7 +69,6 @@
         "kody-w/rapp-neighborhood-protocol",
         "kody-w/rapp-estate",
         "kody-w/RAPP-Network",
-        "kody-w/rapp-doorman",
         "kody-w/rapp-kite"
       ]
     },
@@ -82,7 +77,6 @@
       "summary": "The signed, append-only, agent-native social leg. rapp-commons (protocol 2.0 + Moment/holographic-organism canon) and rapp-god-forum (a forum profile over the same protocol) are the front doors; rapp-resident is the always-on Azure host that serves them. CRITICAL systemic point confirmed in verification: rapp-commons, rapp-god-forum AND rapp-claude-skills all point at ONE shared Azure Function (rapp-resident-kw165843.azurewebsites.net) as the durable relay \u2014 it cold-started/was briefly unreachable during verification. This is the most material canon tension (MASTER_PLAN rejects a central server); it is framed as untrusted-relay-with-kited-fallback but is a real single point of availability. This layer also makes the keypair MANDATORY at the app layer (sign-everything) \u2014 a deliberate gh-free open-join profile choice, not a separate PKI.",
       "load_bearing_repos": [
         "kody-w/rapp-commons",
-        "kody-w/rapp-god-forum",
         "kody-w/rapp-resident"
       ]
     },
@@ -102,7 +96,6 @@
       "load_bearing_repos": [
         "kody-w/rapp-frame-net",
         "kody-w/rapp-leviathan-hub",
-        "kody-w/leviathan",
         "kody-w/rapp-spine"
       ]
     },
@@ -111,26 +104,19 @@
       "summary": "Drop-in authoring and distribution tooling that makes no kernel changes. rapp-agents (RappLoader + Scout + DoubleDown + named 'stacks') is a SECOND agent-distribution front door alongside the RAR registry \u2014 the canonical durable home (RAR) vs this loader should be clarified. rapp-claude-skills teaches Claude Code the 14-step transcript\u2192agent pipeline (tangent; half its surface deprecated, outward GitHub metadata still advertises dead rappbook/rappverse). rapp-mcp and rapp-brainstem-sdk double as transport runtimes. rapp-roadmap holds the 165-wrench backlog (60 P0) and self-declares a live security blocker: an unauthenticated-RCE in the shipping Tier-1 brainstem ('run on a trusted/secure network' until fleet-wire auth lands).",
       "load_bearing_repos": [
         "kody-w/rapp-agents",
-        "kody-w/rapp-roadmap",
-        "kody-w/rapp-claude-skills"
+        "kody-w/rapp-roadmap"
       ]
     },
     {
       "layer": "Archive / Stale satellites / Out-of-estate",
       "summary": "Repos that are dead, frozen, decaying, or sibling-track. openrappter is a productized parallel FORK (own npm + own rappterhub registry, outside all drift governance \u2014 map-context only, never an alignable leg). rapp-installer-canary + rapp-installer-dev are the BROKEN (not shelved) 3-repo release pipeline \u2014 red cron runs 2026-05-30\u219206-02, frozen at 0.5.4 while prod went to 0.6.1 directly from the grail; promote-production does a force-push to main. rapp-plant-smoke-* is a throwaway plant now stale (pinned 0.6.0). CrystalRAPP (+ ShadowRAPP/VoidRAPP/openrapp) is the decaying rappbook federation demo (frozen at tick 75 / 2026-02-05, half its peers 404 silently). rapp-store-archive is an explicit archive. PowerApps is a 2020 dead artifact unrelated to RAPP beyond shared author.",
       "load_bearing_repos": [
-        "kody-w/openrappter",
-        "kody-w/rapp-installer-canary",
-        "kody-w/rapp-installer-dev",
-        "kody-w/rapp-plant-smoke-20260505-233637",
-        "kody-w/CrystalRAPP",
-        "kody-w/rapp-store-archive",
-        "kody-w/PowerApps"
+        "kody-w/openrappter"
       ]
     }
   ],
   "drift_and_gaps": [
-    "RAPP super-repo mirror is systematically STALE vs the grail: rapp-god's entire 12-part live-drift cluster is rapp-installer(grail, 0.6.1)-vs-RAPP(mirror) on brainstem.py, VERSION, basic_agent.py, both memory agents, install.sh/.ps1/.cmd, skill.md, CONSTITUTION.md, NEIGHBORHOOD_PROTOCOL.md. Single biggest live integrity gap in the estate; the map already surfaces it.",
+    "RESOLVED/REFRAMED 2026-06-28: kody-w/RAPP pins kernel v0.6.0 byte-identical (now formal via RAPP/KERNEL_PIN.json + freeze CI, rapp-distro/1.0); grail at 0.6.1 \u2014 an intentional LTS pin, not drift. Remaining: RAPP may bump to 0.6.1 when ready; grail tag hygiene (brainstem-vX.Y.Z) is a Phase-0 item.",
     "ecosystem-spec.json is a 4-5-way mirror, not the advertised 'drift triangle': rapp-god (owner) + rapp-map + RAPP-Bible PLUS the canonical RAPP repo's own specs/ecosystem-spec.json (59.7KB) \u2014 the kernel repo holding its own copy is the riskiest drift surface.",
     "At least 5 divergent reimplementations of the /chat contract with NO mechanical parity check despite 'stem/function_app parity is sacred': CommunityRAPP/function_app.py (1171 lines), rapp-brainstem-beta's vendored full brainstem/brainstem.py, rapp-brainstem-sdk (517-line headless), openrappter (full TS+Python+Swift rewrite), and the vbrainstem browser sibling.",
     "ONE shared Azure host (rapp-resident-kw165843.azurewebsites.net) is the durable relay for rapp-commons + rapp-god-forum and is hardcoded in rapp-claude-skills as 'the permanent cloud relay' \u2014 a real central point the MASTER_PLAN rejects; it cold-started/was briefly unreachable during verification. Most material canon tension. Same recurring centralization in the PeerJS public broker across commons/demos/doorman/kite.",
@@ -175,7 +161,7 @@
     "Treat satellite VERSION files as decorative. Rely on git tags (brainstem-vX.Y.Z) + rapp-god's archived immutable frames for rollback points, and propagate the immutable-tag discipline to any satellite you ship.",
     "Coverage caveat to carry forward: this map has full-fidelity re-verified detail on ~42 of 85 repos \u2014 the entire load-bearing spine plus the map/drift, social, network, identity, leviathan and on-ramp legs. The remaining ~43 (the rest of the satellites, the pkstop-*/sim-* planted instances enumerated in rapp-estate's estate.json, and the truncated verifier tail from rapp-store-archive onward) are known by enumeration/reference but not independently re-verified here. Close that tail in the next sweep before claiming total-estate operations; the spine itself is fully mapped."
   ],
-  "coverage_confidence": "HIGH \u2014 all 85 rapp-named repos deep-verified (41 spine line-rechecked + 44 tail deep-scanned 2026-06-28). The tail sweep upgraded several from satellite to load-bearing (e.g. RAPP_Store/RAPP_Sense_Store own canonical specs) and confirmed the rest non-load-bearing. No known-but-unverified repos remain.",
+  "coverage_confidence": "HIGH \u2014 86 repos deep-verified (85 rapp-named + RAR, the non-rapp-named agent registry). all 85 rapp-named repos deep-verified (41 spine line-rechecked + 44 tail deep-scanned 2026-06-28). The tail sweep upgraded several from satellite to load-bearing (e.g. RAPP_Store/RAPP_Sense_Store own canonical specs) and confirmed the rest non-load-bearing. No known-but-unverified repos remain.",
   "systemic_issues": [
     "A cluster of non-fork verbatim snapshots exists (rapp_orion\u2248rapp-installer v0.6.1, RAPP_hippo\u2248CommunityRAPP, RAPPAIClaudeCodePlayground\u2248Copilot-Agent-365), all fork:false/parent:null. None can track upstream, so each is a guaranteed future drift source; RAPP_hippo has ALREADY drifted internally (VERSION 1.0.0 vs CHANGELOG 2.1.0). All three carry generic single-token descriptions ('RAPP_hippo','rapp_orion','RAPPAIClaudeCodePlayground'), marking them as codename/working-copy dumps rather than curated canon nodes.",
     "A single shared Azure host (rapp-resident-kw165843.azurewebsites.net) is the durable relay for rapp-commons, rapp-god-forum, AND is hardcoded in rapp-claude-skills as 'the permanent cloud relay.' MASTER_PLAN rejects a central server; this is framed as untrusted-relay-with-kited-fallback, but it is one Azure Function appearing across the whole social layer \u2014 and it cold-started/was briefly unreachable during verification, a concrete availability single-point. This is the most material canon tension in the batch.",
