@@ -414,7 +414,8 @@
         "missed": "Minor: the '1,407 recipes' is purely an index/manifest assertion, not shipped content (only ~0.6% materialized on disk); and the converter hard-depends on a host-provided utils.workiq layer that is not in-repo, so the cartridge is non-functional without WorkIQ host wiring. Finding's gaps already gesture at both."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/ez-rapp",
@@ -443,7 +444,8 @@
         "missed": "Nothing material. The 'installer is sacred / delegates to canonical install.sh' alignment is correctly characterized."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/openrappter",
@@ -623,7 +625,8 @@
         "missed": "The pipeline isn't 'abandoned/unused' \u2014 it's actively BROKEN: scheduled dev\u2192canary promotion runs are all red (Gate 2 + Promote to Canary fail repeatedly), so the freeze is caused by failing CI, not neglect. The repo still has cron runs firing against frozen 0.5.4 code and failing."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-installer-dev",
@@ -652,7 +655,8 @@
         "missed": "shipped_evidence omitted the 3 actual workflow files (only mentioned docs/). The true story is a failing scheduled promotion chain (red runs), not an abandoned proposal."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-oneclick-deploy",
@@ -681,14 +685,15 @@
         "install_one_liner is null in api/v1/index.json (egg-hatch / curl-singleton are the actual install paths)"
       ],
       "canon_alignment": "aligned",
-      "load_bearing": true,
+      "load_bearing": false,
       "notes": "Prior estate note ('a RAPP rapplication that converts any RAPP agent.py and deploys') is CONFIRMED and precise. Layer distribution / status planted-instance both confirmed against rapp-map. It does NOT own a canonical spec \u2014 it conforms to others (rapp-application, rapp-rappid Eternity, brainstem-egg, pokedex-api). Despite being a 'tail' rapplication, I am flagging load_bearing=true: the RAR-published @rapp/copilot_studio_deploy_agent hardcodes REPO_RAW = raw.githubusercontent.com/kody-w/rapp-oneclick-deploy/main and fetches catalog/agents.json + solutions/*.zip from THIS repo at runtime, so the registry copy breaks if this repo's raw data disappears \u2014 a genuine cross-repo runtime dependency. Secondary signals: it is the named reference instance for the new Eternity rappid form (MIGRATION-TRACKER.md) and the canonical deploy path for the Tier-3 (Copilot Studio) on-ramp. Strongly canon-aligned: local-first, credentials-stay-on-machine, GitHub raw-CDN substrate, deploy into the user's OWN tenant ('use everyone else's hardware'). Not stale, not a stub, not a fork.",
       "deep_verified": true,
       "recheck": {
         "confirmed": true,
         "correction": "none \u2014 verified. CI 'tests' green (run 27109665361 success), Pages built, 8 test_*.py + conftest (=9), and exactly 10 solution .zip bundles under solutions/.",
         "missed": "The duplicate-agent drift is concrete and triple, not just a 'duplicate': root agent.py AND root copilot_deploy_agent.py AND apps/@kody-w/copilot_studio_deploy/singleton/copilot_studio_deploy_agent.py all coexist (3 copies of the deploy agent) \u2014 consistent with the in-flight MIGRATION-TRACKER.md; last push 2026-06-08."
-      }
+      },
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-plant-smoke-20260505-233637",
@@ -717,7 +722,8 @@
         "missed": "The 'drift possible if grail advanced' caveat is NOW REALIZED: the planted kernel is pinned at 0.6.0 while grail/prod rapp-installer has advanced to 0.6.1 \u2014 so the mirror is no longer byte-identical to current grail. The drift-verification recipe would now FAIL on VERSION. It's a real-but-stale one-off plant."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-static-apis",
@@ -784,7 +790,8 @@
         "missed": "The store agent references kody-w/RAPP_Store at 3 sites; since that name now resolves to the LIVE catalog that took over the rapp_store slug, those refs aren't 404 \u2014 they silently resolve to a DIFFERENT (newer) repo than intended, which is a subtler semantic-drift hazard than a dead link."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-zoo",
@@ -1307,7 +1314,8 @@
         "missed": "This repo was RENAMED from kody-w/kite-mark (that slug now redirects here). Sibling rapp-neighborhood-protocol still lists depends_on 'kody-w/kite-mark' (the dead old name). The 'Microsoft logo' framing appears in the GitHub description, the former repo name, AND rapp-kite's code \u2014 only the README claims neutral. Pervasive identity contradiction (memory already flags 'kite-mark logo' as a governance leftover)."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-moment",
@@ -1475,7 +1483,8 @@
         "missed": "roadmap.json status.posture explicitly says 'Run on a trusted/secure network' BECAUSE of a present-day unauthenticated-RCE in the shipping Tier-1 brainstem (fleet-wire auth is the Phase-1 gate) \u2014 this is a self-declared live security blocker, stronger than the finding's framing. The north_star string is literally Agent-365-centric ('planetary swarm of governed Leviathans enhancing every Agent 365 workflow'), corroborating the finding's enterprise-vector note."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-god",
@@ -1642,7 +1651,8 @@
         "missed": "rapp-god's registry lists doorman.skill.md + doorman_selftest.sh under group 'canonical \u00b7 rapp-doorman' (in_sync) \u2014 i.e., the map treats THIS repo as the canonical home of the skill+selftest, while vbrainstem is canonical for the runtime tools. There's a mild authority split the finding under-states ('canonical home is arguably vbrainstem' is only half the picture). rapp-god holds 2 versions of doorman.skill.md, consistent with the PR #1 drift-fix."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-estate",
@@ -1936,7 +1946,8 @@
         "missed": "Nothing. Correctly out-of-estate."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/CommunityRAPP",
@@ -2061,7 +2072,8 @@
         "missed": "It does not demonstrate a healthy mesh; it demonstrates silent raw-CDN link-rot with no liveness/healing. That is directly relevant to the MASTER_PLAN 'graceful degrade' hero claim \u2014 the federation just 404s a dead peer with no fallback. Worth flagging as evidence the rappbook-federation experiment is decaying, not as a working substrate proof."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/RAPPsquared",
@@ -2189,7 +2201,8 @@
         "missed": "The host required an Azure COLD START \u2014 the first request timed out/returned non-JSON and only succeeded on retry (~25s) \u2014 concretely demonstrating the single-host availability risk the finding flagged. And critically, this is the SAME rapp-resident-kw165843 Azure Function used by rapp-commons AND documented in rapp-claude-skills \u2014 one cloud instance is the shared durable relay across the entire social layer (systemic central point, mitigated only by kited fallback)."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-hologram",
@@ -2216,7 +2229,8 @@
         "missed": "The 8 modules + fractal.html in this repo are DUPLICATED inside rapp-commons/hologram/ (identical filenames: fidelity.js, fingerprint.js, homeostasis.js, fractal.html, etc.). The finding noted it's a 'sibling to grail-side hologram/' but missed that rapp-commons carries a full parallel COPY of this repo's reference engine \u2014 drift between the authoritative engine repo and the commons-embedded copy is unverified and a real duplication risk."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rappbook-admin",
@@ -2298,14 +2312,15 @@
         "Heavy sprawl (GeoRiskDashboard, Vim, dist/lispy.py, many one-off experiments) makes the load-bearing core hard to isolate"
       ],
       "canon_alignment": "core-canon",
-      "load_bearing": true,
+      "load_bearing": false,
       "notes": "CORRECTION to the 'non-spine tail / not load-bearing' premise: this repo IS load-bearing on two counts. (1) It owns a canonical spec \u2014 EGG_SPEC.md is the canonical-URL home of the .egg container format used estate-wide (RAPP Zoo .egg seeds, awakening.rappterbook.egg, the egg packer/hatcher contract). (2) It is the reference implementation of the named 'rappterbook pattern' (GitHub-as-substrate, append-only events -> materialized views) that rapp-frame-net's rapp-frame/1.0 explicitly cites as proven-live prior art. It is also the purest concrete proof of the MASTER_PLAN north star (GitHub raw CDN + Issues-mailbox + PR-consent + Pages-edge + sha256/collaborator trust, PKI-free) \u2014 arguably the canonical demonstrator of 'use everyone else's hardware -> metropolis' at the social layer. Layer tagged 'social'; it doubles as a network/substrate demonstrator. Recommend NOT treating as a prunable tail repo.",
       "deep_verified": true,
       "recheck": {
         "confirmed": true,
         "correction": "The v2 rappid string form is more specific than stated: actual is 'rappid:v2:project:@owner/namespace:hash@host' (e.g. rappid:v2:project:@kody-w/authenticity-twin:rappterbook-outside-visitor@local) \u2014 the finding's 'rappid:v2:project:@owner/hash@host' drops the namespace segment. Core point (non-canonical rapp-rappid/2.0, not eternity's @owner/slug:64hex) is correct. EGG_SPEC confirmed 'Version 1 / draft-adopted / ref impl in private rappter engine / daemon-scale buddy eggs pending migration'. CONSTITUTION.md confirmed a 2.4KB stub that just links to CLAUDE/AGENTS/AUTONOMY/OPERATOR.md.",
         "missed": "This is the family FLAGSHIP and the only repo with meaningful external traction: 12 stars (vs 0-1 everywhere else) and ~2.9GB disk (diskUsage 2942815). The 'synthetic activity' gap is stronger than stated \u2014 the planted authenticity-twin rappid EXPLICITLY watches synthetic_posts.json/synthetic_comments.json/synthetic_votes.json/synthetic_activity.json, so the headline '113 agents / 3,000+ posts' is substantially fabricated by design. It shares a heartbeat cadence with rappterbook-agent-exchange (both pushed within ~30min on 2026-06-28) \u2014 same autonomous cron family keeps both alive."
-      }
+      },
+      "load_bearing_note": "corrected R1: social/userland repo; its EGG_SPEC v1 has no clean versioned id and is superseded by the kernel's rapp-egg/2.0"
     },
     {
       "repo": "kody-w/rappterbook-agent-dna",
@@ -2464,14 +2479,15 @@
         "Append-only + GitHub-commit materialization gives no real-time concurrency guarantees beyond what test_concurrent exercises"
       ],
       "canon_alignment": "aligned",
-      "load_bearing": true,
+      "load_bearing": false,
       "notes": "Prior note (\"Public event-sourced state database for Rappterbook v2\") is ACCURATE \u2014 confirmed, not corrected. This is a genuine tail repo (not part of the rapp-spine FOUNDATION), but it IS load-bearing WITHIN its own subsystem: it owns the canonical Rappterbook v2 event schema (schema/events.json) AND it is the sole backing store the Rappterbook v2 app queries. It is not load-bearing for the broader RAPP kernel/spine/metropolis \u2014 nothing in the core estate depends on it; it is a self-contained social-network state store. Strong canonical demonstration of the GitHub-substrate + append-only-events/materialized-views (rapp-frame/hydra) pattern: zero-auth raw-CDN reads, no server, Pages-edge style. Verdict: confirmed role/layer; load_bearing=true scoped to the Rappterbook v2 subsystem.",
       "deep_verified": true,
       "recheck": {
         "confirmed": true,
         "correction": "stats verified exactly (138 agents / 18 channels / 307 events / 11089 posts / 49522 comments / materialized 2026-04-09T20:07; v1_federated true); schema/events.json is JSON-Schema draft 2020-12 confirmed; 7 test files + 6 scripts confirmed; raw CDN read returns 200. BUT stats.json reports total_frames=7 while the repo actually has 8 event dirs (frame-000000..000007) \u2014 an internal off-by-one in the materialized view.",
         "missed": "Status 'active' is inconsistent with the paired platform (rappterbook-v2 labeled 'stale') \u2014 both repos were last touched the SAME day (2026-04-09) and the state has not materialized since. The state repo is equally dormant, not 'active'."
-      }
+      },
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rappterbook-vm",
@@ -2628,7 +2644,8 @@
         "missed": "Nothing major. The two flagged tensions (vendored brainstem copy + surgery exposed as a side REST surface on :7072 rather than through /chat) are the right ones."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-brainstem-sdk",
@@ -2691,7 +2708,8 @@
         "missed": "Two things. (1) The repo's OUTWARD GitHub metadata is still stale: description still reads 'Makes Claude Code compatible with RAPPbook, RAPPverse' and topics still include rappbook+rappverse \u2014 contradicting the in-README deprecation, so discovery surfaces still advertise the dead products. (2) The README now hardcodes the single Azure host https://rapp-resident-kw165843.azurewebsites.net/api as 'the permanent cloud relay' for the social layer (kited host only as fallback) \u2014 the skills pack teaches the central-relay path, same centralization point as rapp-commons/rapp-god-forum."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
     },
     {
       "repo": "kody-w/rapp-mcp",
