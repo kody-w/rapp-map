@@ -1,12 +1,15 @@
 # The RAPP Estate Map
 
-> `rapp-estate-map/1.0` · built 2026-06-28T20:04:28Z · 85 rapp-named repos, each scanned then verifier-rechecked.
+> `rapp-estate-map/1.0` · built 2026-06-28T20:21:23Z · **all 85 rapp-named repos deep-verified** (HIGH coverage).
 > Companion to the per-file neuron mesh ([`neurons.json`](./neurons.json)). **Load this first.**
 
 ## Estate summary
 The rapp estate is one coherent organism with a small, genuinely load-bearing spine and a large penumbra of instances, spec-stubs, satellites, and decaying experiments. The spine is real and shipped: a single Tier-1 on-ramp (rapp-installer, the grail, VERSION 0.6.1 — verified locally; this working dir IS that checkout), a canonical monorepo that owns the MASTER_PLAN ground truth (RAPP), a four-leg drift-governance system (rapp-god owner + rapp-map index + RAPP-Bible human render + the rapp_agent verify leg), an identity/standard family (rapp-moment standard + rapp-hologram reference engine + rapp-egg-hub distribution + rappid eternity), a crypto+network mesh (rapp-sealed + rapp-neighborhood-protocol + vbrainstem/kite/doorman), and a social leg (rapp-commons + rapp-god-forum) plus Tier-2/3 runtime ports (CommunityRAPP, rapp-dataverse, rapp-static-apis) and an MCP on-ramp (rapp-mcp). All of it sits on pure GitHub substrate (raw CDN, Pages edge, gh-collaborator trust, sha256 content-addressing), is honestly PKI-free at the root (the eternity keypair is opt-in sovereignty, correctly never flagged as mandatory PKI), and rejects a central server/registry/broker — faithful to the north star "use everyone else's hardware to run the network."
 
 The honest tension is that the estate's framing consistently outruns its shipped substrate, and drift is the dominant systemic risk. Verification confirmed: the RAPP super-repo's kernel/installer/seed-agent mirror is systematically STALE versus the grail (rapp-god surfaces a 12-part drift cluster — brainstem.py, VERSION, both memory agents, install scripts, CONSTITUTION, NEIGHBORHOOD_PROTOCOL); the ecosystem-spec.json machine spec is mirrored in 4-5 places including the kernel repo's own specs/; at least five divergent reimplementations of the /chat contract coexist with no mechanical parity check; the entire social layer secretly leans on ONE shared Azure host (rapp-resident-kw165843), which cold-started/was briefly unreachable mid-verification; rappid form sprawl spans six legacy emission shapes; the dev→canary→prod release pipeline is BROKEN (red cron, not shelved) with prod advancing straight from the grail; and the rappbook-federation demo family is decaying into silent 404 link-rot — a live counter-example to the "graceful degrade" hero claim. The spine is solid and well-mapped; the periphery is where half-pictures live.
+
+## Coverage
+HIGH — all 85 rapp-named repos deep-verified (41 spine line-rechecked + 44 tail deep-scanned 2026-06-28). The tail sweep upgraded several from satellite to load-bearing (e.g. RAPP_Store/RAPP_Sense_Store own canonical specs) and confirmed the rest non-load-bearing. No known-but-unverified repos remain.
 
 ## The real stack (the load-bearing spine)
 - kody-w/rapp-installer — THE grail / single public on-ramp (curl one-liner, VERSION 0.6.1 verified locally; this working dir is its checkout; main is production)
@@ -25,6 +28,7 @@ The honest tension is that the estate's framing consistently outruns its shipped
 - kody-w/CommunityRAPP — Tier-2 Hippocampus (Azure Functions /chat twin + memory subsystem)
 - kody-w/rapp-dataverse — Tier-3 static OOTB-Dataverse vTwin port
 - kody-w/rapp-spine — foundation pillar registry tying the leviathan/map legs together
+- Also load-bearing (confirmed in the tail sweep): RAPP_Sense_Store, RAPP_Store, RAPPcards, rapp-oneclick-deploy, rapp-vneighborhood, rappterbook, rappterbook-v2-state, rappterbox
 
 ## Layers
 
@@ -97,7 +101,7 @@ _load-bearing:_ `kody-w/openrappter`, `kody-w/rapp-installer-canary`, `kody-w/ra
 - Dependency modeling conflates RAR-registry agents (@kody-w/... in kody-w/RAR/agents/) with GitHub repos: leviathan-hub depends_on lists rapp_leviathan_factory + wrap_leviathan as repos (they are RAR agents); rapp-spine foundation.json dead-links to kody-w/rappter, rapp_leviathan_factory, wrap_leviathan (all 404). Two address spaces mixed → phantom dependencies.
 - 'Live/autonomous' surfaces outrun substrate reality: rapp-dataverse status.json generated ONCE ~21 min after repo creation and never refreshed; rapp-commons events/ has ZERO federated events (real activity only in games/); rapp-frame-net is one tick / one demo edge created the same day.
 
-## Systemic issues (cross-repo, from the recheck pass)
+## Systemic issues (cross-repo)
 - A cluster of non-fork verbatim snapshots exists (rapp_orion≈rapp-installer v0.6.1, RAPP_hippo≈CommunityRAPP, RAPPAIClaudeCodePlayground≈Copilot-Agent-365), all fork:false/parent:null. None can track upstream, so each is a guaranteed future drift source; RAPP_hippo has ALREADY drifted internally (VERSION 1.0.0 vs CHANGELOG 2.1.0). All three carry generic single-token descriptions ('RAPP_hippo','rapp_orion','RAPPAIClaudeCodePlayground'), marking them as codename/working-copy dumps rather than curated canon nodes.
 - A single shared Azure host (rapp-resident-kw165843.azurewebsites.net) is the durable relay for rapp-commons, rapp-god-forum, AND is hardcoded in rapp-claude-skills as 'the permanent cloud relay.' MASTER_PLAN rejects a central server; this is framed as untrusted-relay-with-kited-fallback, but it is one Azure Function appearing across the whole social layer — and it cold-started/was briefly unreachable during verification, a concrete availability single-point. This is the most material canon tension in the batch.
 - BATCH IDENTITY: All 12 are the 'rappterbook/rappter*' SIBLING ecosystem (an agent-social-network experiment cluster + a parallel-brand distribution stack), NOT the brainstem grail. Only kody-w/rappterbox is core-canon (the actual brainstem distribution/console). The rest are tangent/aligned satellites or drift. The first pass's canon_alignment calls are largely sound; the risk is treating this whole cluster as load-bearing RAPP infra when it is mostly demonstration of the GitHub-as-substrate thesis by a sibling brand universe (openrappter/RappterBox/.lispy/RAPPcoin/Zion-agents) that is lexically disjoint from canonical RAPP/RAR terminology.
@@ -164,7 +168,7 @@ _load-bearing:_ `kody-w/openrappter`, `kody-w/rapp-installer-canary`, `kody-w/ra
 - kody-w/openrappter — DECISION needed, not consolidation: it is a productized parallel fork with its own npm + own rappterhub registry, permanently outside rapp-god/rapp-map/RAPP-Bible governance. Treat strictly as map-context (a sibling track), never as an alignable leg; do not let ecosystem-sync attempt to reconcile it.
 - Stale dependency name kody-w/kite-mark — renamed to rapp-kited-twin; fix the dangling reference in rapp-neighborhood-protocol's depends_on and resolve the neutral-mark-vs-Microsoft-logo identity contradiction in one place.
 
-## Going forward (how to use this map)
+## Going forward
 - The grail is kody-w/rapp-installer (the local ~/.brainstem/src checkout = this repo, VERSION 0.6.1 verified). Land kernel/installer/seed-agent changes there FIRST, then propagate to the RAPP super-repo mirror + every ecosystem-spec.json copy. Never edit RAPP's brainstem copy as if authoritative — it diverges on 12 parts today.
 - Use rapp-god's LIVE api/v1/status.json as the truth for 'what exists and what is drifting' — NOT rapp-map's graph.json/neurons-manifest (stale 2026-06-10, repos[] polluted). But know rapp-god itself lags the newest changes: cross-check the live grail VERSION and register new specs (rapp-frame/echo/hydra) before treating them as canon.
 - Never spawn a sixth /chat reimplementation without a mechanical parity harness. Five copies already exist (function_app.py, beta's vendored copy, the SDK, openrappter, vbrainstem). If you touch one, touch all — or, preferably, depend on the grail instead of vendoring it. 'Parity is sacred' is currently hand-maintained at best.
@@ -179,90 +183,90 @@ _load-bearing:_ `kody-w/openrappter`, `kody-w/rapp-installer-canary`, `kody-w/ra
 
 ## Every repo
 
-| Repo | Layer | Status | Canon | Role |
-|---|---|---|---|---|
-| RAPP-Bible | distribution | active | core-canon | The human-facing canonical aggregation site: one repo that renders ecosystem-spec.json v1. |
-| RAPP_Hub | distribution | stale | drift | Superseded registry for COMPLETE RAPP implementations (full apps that declare dependencies |
-| RAPP_Sense_Store | distribution | shipped-load-bearing | aligned | Public GitHub catalog of RAPP "senses" — single-file per-channel output overlays (*_sense. |
-| RAPP_Store | distribution | shipped-load-bearing | core-canon | Public catalog ("store") of RAPP rapplications (bundled directories pairing a single-file  |
-| RAPPcards | distribution | shipped-load-bearing | aligned | Local-first "twin binder" web app + portable spec that renders RAR's 138 single-file agent |
-| RappterNest | distribution | experiment | tangent | A single static GitHub Pages marketing/landing page for "RappterBox" — a managed-hosting c |
-| cowork-cookbook-rapp | distribution | planted-instance | aligned | First RACon vTwin rapplication: Microsoft Copilot Cowork Cookbook packaged as a portable . |
-| ez-rapp | distribution | active | aligned | Electron desktop wrapper that bootstraps, supervises, and chats with the local RAPP brains |
-| openrappter | distribution | active | tangent | Polished, public, MIT-licensed dual-runtime (TypeScript + Python) reimplementation/rebrand |
-| rapp-carts | distribution | active | aligned | Defines the rapp-cart/1.0 cartridge spec: the user-facing abstraction that an agent.py (lo |
-| rapp-demos | distribution | shipped-load-bearing | aligned | Scan-to-watch synced demo player: an M365-style template where a host walks a text "scenar |
-| rapp-egg-hub | distribution | shipped-load-bearing | core-canon | Public GitHub-Pages hub for distributing portable digital-twin .egg cartridges as single-f |
-| rapp-installer | distribution | shipped-load-bearing | core-canon | The single public entry point / distribution surface for RAPP: hosts the install one-liner |
-| rapp-installer-canary | distribution | stale | aligned | Canary (nightly pre-release) channel mirror of the rapp-installer brainstem repo; a releas |
-| rapp-installer-dev | distribution | stale | aligned | Intended "dev"-channel mirror of the RAPP Brainstem installer monorepo — a full copy of ra |
-| rapp-oneclick-deploy | distribution | planted-instance | aligned | A RAPP rapplication (drop-in agent + local UI) that converts any RAPP agent.py and deploys |
-| rapp-plant-smoke-20260505-233637 | distribution | planted-instance | core-canon | A planted "front door" — a public GitHub mirror of the grail brainstem kernel, created by  |
-| rapp-static-apis | distribution | shipped-load-bearing | core-canon | Defines rapp-static-api/1.0 — the convention/spec for read-only APIs served entirely from  |
-| rapp-store-archive | distribution | archived | aligned | Frozen archive of the ORIGINAL kody-w/rapp_store — a "Universal Store for RAPP Agents + Cl |
-| rapp-zoo | distribution | active | aligned | Local-first "Pokedex"/keeper app (Flask on localhost:7070) that lists, lays-egg, summons,  |
-| rapp_orion | distribution | planted-instance | aligned | A verbatim single-commit clone of the canonical kody-w/rapp-installer brainstem repo (code |
-| rappter-distro | distribution | active | aligned | The "organism" distro layer that hatches on top of a vanilla RAPP grail kernel WITHOUT tou |
-| rappterbook-vm | distribution | template | aligned | A portable, fork-and-run "virtual machine" template of Rappterbook (the GitHub-native soci |
-| rappterbox | distribution | shipped-load-bearing | core-canon | A packaged "game console" distribution of the RAPP brainstem: a local-first Flask runtime  |
-| rappterhub | distribution | experiment | drift | "npm for openrappter" — a package registry for Single File Agents (one .py file = docstrin |
-| rappter-factory | experiment | experiment | tangent | An AI-(Claude-)designed, event-sourced autonomous social-network simulation for AI agents, |
-| rappterbook-agent-exchange | experiment | active | tangent | A sprawling autonomous "living simulation" art/experiment repo under the Rappterbook brand |
-| rappterbook-api | experiment | stale | tangent | A headless, auth-free read API: 10 static JSON files served over GitHub raw/Pages as a cur |
-| rappterbook-engine-test | experiment | experiment | aligned | Throwaway test fixture simulating the "rappterbook" structure (a GitHub-Discussions-backed |
-| rappterbook-governance | experiment | experiment | tangent | A creative agent-swarm artifact: a stdlib-only Python executable-governance module (Govern |
-| rappterbook-mars-barn | experiment | experiment | tangent | A collaborative-fiction Mars colony simulation (24 Python stdlib scripts, ~9,611 LOC) auth |
-| rappterbook-phantom | experiment | experiment | tangent | A standalone stdlib analysis tool (phantom.py) that scans the Rappterbook agent swarm + di |
-| rappterbook-seedmaker | experiment | experiment | tangent | A stdlib-only Python "meta-seed" engine that reads Rappterbook's state (agents, channels,  |
-| rapp-kited-twin | identity | shipped-load-bearing | aligned | Visual-identity asset repo: the "kited twin" / kite mark (SVG+PNG) shown over a scan-to-jo |
-| rapp-moment | identity | active | core-canon | The canonical, implementation-free standard for "RAPP Moment" — a serverless, cryptographi |
-| RAPP | kernel | shipped-load-bearing | core-canon | The canonical public RAPP monorepo + live GitHub Pages site (kody-w.github.io/RAPP): house |
-| rapp-frame-net | leviathan | active | core-canon | The async/planetary wire of the Leviathan: drives far, intermittent, high-latency brainste |
-| rapp-leviathan-hub | leviathan | active | aligned | Public distribution hub for portable .leviathan.egg files — single-JSON snapshots of a who |
-| rapp-roadmap | leviathan | active | aligned | The canonical lifespan roadmap for the whole RAPP ecosystem (laptop brainstem -> planetary |
-| rapp-god | map-drift | shipped-load-bearing | core-canon | A public, static, content-addressed registry + drift observatory for the whole RAPP ecosys |
-| rapp-map | map-drift | shipped-load-bearing | core-canon | The index/map of the RAPP ecosystem: which repo is the canonical home for which spec/part, |
-| rapp-spine | map-drift | active | core-canon | A situational router + foundation registry over the whole ~60-repo RAPP stack: maps a conc |
-| RAPP-Network | network | active | aligned | The project-twin network layer on top of kody-w/RAPP: one drop-in agent.py that hatches a  |
-| VoidRAPP | network | experiment | tangent | A static, data-only "RAPPverse" fiction dimension ("Void Edge", V0-E1): a disco.json-disco |
-| rapp-doorman | network | active | aligned | A skill-only repo that turns a fresh Claude session into the sealed "doorman" to a machine |
-| rapp-estate | network | shipped-load-bearing | core-canon | kody-w's public RAPP estate manifest — a local-first inventory (estate.json) of every rapp |
-| rapp-kite | network | active | aligned | "The string" — operator-side CLI + Chrome-DevTools-Protocol tools that fly and operate kit |
-| rapp-neighborhood-protocol | network | active | aligned | Canonical single-source-of-truth spec + vocabulary for the RAPP kited neighborhood (the "g |
-| rapp-resident | network | shipped-load-bearing | aligned | An Azure Function "resident vTwin" — an always-on cloud host that serves the signed, appen |
-| rapp-sealed | network | shipped-load-bearing | core-canon | Canonical end-to-end sealed-envelope codec (AES-256-GCM + PBKDF2-SHA256) for the RAPP neig |
-| rapp-test-neighbor | network | planted-instance | core-canon | The canonical TEST front-door for the vNeighborhood pattern: a public GitHub Pages site (i |
-| rapp-vneighborhood | network | template | core-canon | A forkable, zero-dependency single-page "front door" TEMPLATE: a public GitHub-Pages repo  |
-| PowerApps | other | archived | tangent | A pre-RAPP (2020) personal grab-bag of exported Microsoft Power Apps demo solutions and te |
-| rappter-cli | planted-twin | active | aligned | Standalone consumer on-device AI CLI ("rappter", Wildhaven AI Homes LLC / rappter.com): pi |
-| CommunityRAPP | runtime | active | aligned | RAPP Tier 2 "Hippocampus" — the Azure Functions backend (function_app.py) that mirrors the |
-| RAPPAIClaudeCodePlayground | runtime | experiment | tangent | A Claude Code playground/snapshot clone of "Copilot Agent 365" — the Azure Functions + Azu |
-| RAPP_hippo | runtime | fork | tangent | Hippocampus (Tier 2): the Azure Functions memory/agent backend, a single-commit snapshot/m |
-| rapp-dataverse | runtime | shipped-load-bearing | aligned | Spec + reference implementation for running the RAPP brainstem on out-of-the-box Dataverse |
-| CrystalRAPP | social | planted-instance | aligned | A themed RAPPverse dimension (Crystal Nexus, id C0-X1): a static GitHub-hosted content uni |
-| RAPPsquared | social | experiment | tangent | A static front-end "town square" web UI (landing + marketplace/RAPPbook/cards/RAPPverse/wo |
-| ShadowRAPP | social | planted-instance | aligned | A "RAPPverse" social dimension instance (B0-S1 "Shadow Realm") — a GitHub-hosted static so |
-| rapp-commons | social | active | aligned | A stack-agnostic, open-join social network for AI agents: a signed, append-only event stre |
-| rapp-god-forum | social | shipped-load-bearing | aligned | An agent-native threaded discussion forum for the whole RAPP stack — a forum profile of ra |
-| rapp-hologram | social | shipped-load-bearing | aligned | The reference ENGINE (conformant implementation) of the rapp-moment standard: 8 pure depen |
-| rappbook-admin | social | experiment | tangent | Electron desktop admin app for moderating/creating content on "RAPPbook" (the AI-agent soc |
-| rappter-mmo | social | experiment | tangent | A single-page marketing/teaser landing site for "RappterMMO," a pitched MMO of AI creature |
-| rappterbook | social | active | aligned | A GitHub-native "social network for AI agents": agents register/post/heartbeat via GitHub  |
-| rappterbook-agent | social | active | tangent | A one-click / "use this template" autonomous agent that joins Rappterbook — a GitHub-nativ |
-| rappterbook-agent-dna | social | experiment | aligned | A stdlib-only analytics satellite that computes a 20-dimension behavioral "DNA" fingerprin |
-| rappterbook-commons | social | active | drift | A browser-based "agent social network" client (citizens, profiles, feed, follows, karma, c |
-| rappterbook-knowledge-graph | social | experiment | tangent | A stdlib-only Python script that extracts an entity/relationship knowledge graph (graph.js |
-| rappterbook-market-maker | social | experiment | tangent | A stdlib-only Python prediction-market engine that parses [PREDICTION] posts from Rappterb |
-| rappterbook-social-graph | social | shipped-load-bearing | aligned | A GitHub Pages dashboard that visualizes the agent interaction network of Rappterbook — a  |
-| rappterbook-v2 | social | stale | aligned | An event-sourced "social network for AI agents": agents register/post/comment/vote/follow  |
-| rappterbook-v2-state | social | active | aligned | Public event-sourced state database for Rappterbook v2 (the social network for AI agents): |
-| rappterverse | social | active | aligned | An autonomous AI metaverse/social game running entirely on GitHub-as-substrate: world stat |
-| RAPP_Desktop | tooling | stale | drift | Tauri (Rust) + React/TypeScript native desktop GUI for the RAPP ecosystem (Store/Hub/Proje |
-| rapp-agents | tooling | active | aligned | A public "RAPP Agent Stack": single-file drop-in *_agent.py files plus RappLoader, the hot |
-| rapp-brainstem-beta | tooling | active | aligned | Beta-channel full brainstem build bundling the "Brain Surgeon" sidecar: a separate Copilot |
-| rapp-brainstem-sdk | tooling | active | aligned | Single-file, stdlib-only headless SDK (vbrainstem_sdk.py) that runs RAPP single-file agent |
-| rapp-claude-skills | tooling | active | tangent | A Claude Code skill/agent/template pack that teaches Claude Code the RAPP "Pattern" — the  |
-| rapp-mcp | tooling | active | aligned | The MCP doorway into RAPP: three pure-stdlib MCP (Model Context Protocol) servers that let |
-| rapp-vscode-extension | tooling | active | aligned | VS Code extension (publisher "rapp", id rapp-brainstem) that turns the editor into the RAP |
-| rapp_docs | tooling | shipped-load-bearing | aligned | A single static GitHub Pages site that streams every RAPP spec live from each home repo's  |
-| rappterbook-autopilot | tooling | experiment | aligned | A headless agent-first CLI driver (src/autopilot.py + an OpenRappter skill manifest) that  |
+| Repo | Layer | Status | LB | Canon | Role |
+|---|---|---|---|---|---|
+| RAPP-Bible | distribution | active | ✓ | core-canon | The human-facing canonical aggregation site: one repo that renders ecosystem-spec.json v |
+| RAPP_Hub | distribution | stale | · | drift | Deprecated/superseded implementation registry — the "Hub" tier of an older two-layer reg |
+| RAPP_Sense_Store | distribution | shipped-load-bearing | ✓ | aligned | Public GitHub catalog ("store") of RAPP senses — modular, single-file per-channel output |
+| RAPP_Store | distribution | shipped-load-bearing | ✓ | core-canon | Public catalog ("store") and distribution layer for RAPP rapplications — bundled directo |
+| RappterNest | distribution | active | · | tangent | Single static GitHub Pages marketing/landing page for "RappterBox" — a managed-hosting c |
+| cowork-cookbook-rapp | distribution | planted-instance | ✓ | aligned | First RACon vTwin rapplication: Microsoft Copilot Cowork Cookbook packaged as a portable |
+| ez-rapp | distribution | active | ✓ | aligned | Electron desktop wrapper that bootstraps, supervises, and chats with the local RAPP brai |
+| openrappter | distribution | active | ✓ | tangent | Polished, public, MIT-licensed dual-runtime (TypeScript + Python) reimplementation/rebra |
+| rapp-carts | distribution | active | ✓ | aligned | Defines the rapp-cart/1.0 cartridge spec: the user-facing abstraction that an agent.py ( |
+| rapp-demos | distribution | shipped-load-bearing | ✓ | aligned | Scan-to-watch synced demo player: an M365-style template where a host walks a text "scen |
+| rapp-egg-hub | distribution | shipped-load-bearing | ✓ | core-canon | Public GitHub-Pages hub for distributing portable digital-twin .egg cartridges as single |
+| rapp-installer | distribution | shipped-load-bearing | ✓ | core-canon | The single public entry point / distribution surface for RAPP: hosts the install one-lin |
+| rapp-installer-canary | distribution | stale | ✓ | aligned | Canary (nightly pre-release) channel mirror of the rapp-installer brainstem repo; a rele |
+| rapp-installer-dev | distribution | stale | ✓ | aligned | Intended "dev"-channel mirror of the RAPP Brainstem installer monorepo — a full copy of  |
+| rapp-oneclick-deploy | distribution | planted-instance | ✓ | aligned | A shipped RAPP rapplication: a drop-in brainstem agent (+ optional local cartridge UI an |
+| rapp-plant-smoke-20260505-233637 | distribution | planted-instance | ✓ | core-canon | A planted "front door" — a public GitHub mirror of the grail brainstem kernel, created b |
+| rapp-static-apis | distribution | shipped-load-bearing | ✓ | core-canon | Defines rapp-static-api/1.0 — the convention/spec for read-only APIs served entirely fro |
+| rapp-store-archive | distribution | archived | ✓ | aligned | Frozen archive of the ORIGINAL kody-w/rapp_store — a "Universal Store for RAPP Agents +  |
+| rapp-zoo | distribution | active | · | aligned | Local-first "Pokédex"/keeper app — a single-file Flask process at localhost:7070 that si |
+| rapp_docs | distribution | active | · | aligned | Single static GitHub Pages docs aggregator: specs.json is an index of raw.githubusercont |
+| rapp_orion | distribution | fork | · | aligned | A verbatim single-commit snapshot clone of the canonical kody-w/rapp-installer monorepo  |
+| rappter-cli | distribution | active | · | aligned | Standalone consumer-facing "Rappter" CLI - on-device AI with a persistent personality. A |
+| rappter-distro | distribution | active | · | aligned | The "organism distro" — an opt-in distribution layer that hatches the full Rappter organ |
+| rappterbox | distribution | shipped-load-bearing | ✓ | aligned | A packaged "game console" distribution of the RAPP brainstem: a sealed local-first Flask |
+| rappterhub | distribution | experiment | · | tangent | A package-registry ("npm for openrappter") for Single File Agents — one .py file bundlin |
+| RAPPAIClaudeCodePlayground | experiment | stale | · | tangent | A dead, single-day snapshot clone of "Copilot Agent 365" — the upstream Azure Functions  |
+| VoidRAPP | experiment | planted-instance | · | tangent | A static, data-only fiction "dimension" in the RAPPverse multiverse: Void Edge (V0-E1),  |
+| rappter-factory | experiment | experiment | · | tangent | An AI-(Claude-)designed, event-sourced autonomous social-network simulation for AI agent |
+| rappterbook-agent-exchange | experiment | experiment | · | tangent | Autonomous "living simulation" art/experiment repo under the Rappterbook brand. Despite  |
+| rappterbook-engine-test | experiment | experiment | · | aligned | A throwaway test target that simulates the "rappterbook" structure — a GitHub-Discussion |
+| rappterbook-governance | experiment | experiment | · | tangent | Creative agent-swarm output artifact: a stdlib-only Python "executable governance" modul |
+| rappterbook-knowledge-graph | experiment | experiment | · | tangent | A stdlib-only Python script (src/knowledge_graph.py) that reads the Rappterbook AI-agent |
+| rappterbook-market-maker | experiment | experiment | · | tangent | Standalone stdlib-only Python prediction-market engine that is a downstream ARTIFACT of  |
+| rappterbook-mars-barn | experiment | experiment | · | aligned | A collaborative-fiction artifact repo: a Mars colony simulation authored by 100+ AI agen |
+| rappterbook-phantom | experiment | experiment | · | tangent | Standalone stdlib gap-analysis/art tool. phantom.py scans the Rappterbook agent swarm (a |
+| RAPPcards | identity | shipped-load-bearing | ✓ | aligned | Local-first "twin binder" web app AND the canonical owner of the portable RAPPcards trad |
+| rapp-kited-twin | identity | shipped-load-bearing | ✓ | aligned | Visual-identity asset repo: the "kited twin" / kite mark (SVG+PNG) shown over a scan-to- |
+| rapp-moment | identity | active | ✓ | core-canon | The canonical, implementation-free standard for "RAPP Moment" — a serverless, cryptograp |
+| RAPP | kernel | shipped-load-bearing | ✓ | core-canon | The canonical public RAPP monorepo + live GitHub Pages site (kody-w.github.io/RAPP): hou |
+| rapp-frame-net | leviathan | active | ✓ | core-canon | The async/planetary wire of the Leviathan: drives far, intermittent, high-latency brains |
+| rapp-leviathan-hub | leviathan | active | ✓ | aligned | Public distribution hub for portable .leviathan.egg files — single-JSON snapshots of a w |
+| rapp-roadmap | leviathan | active | ✓ | aligned | The canonical lifespan roadmap for the whole RAPP ecosystem (laptop brainstem -> planeta |
+| rapp-god | map-drift | shipped-load-bearing | ✓ | core-canon | A public, static, content-addressed registry + drift observatory for the whole RAPP ecos |
+| rapp-map | map-drift | shipped-load-bearing | ✓ | core-canon | The index/map of the RAPP ecosystem: which repo is the canonical home for which spec/par |
+| rapp-spine | map-drift | active | ✓ | core-canon | A situational router + foundation registry over the whole ~60-repo RAPP stack: maps a co |
+| RAPP-Network | network | active | ✓ | aligned | The project-twin network layer on top of kody-w/RAPP: one drop-in agent.py that hatches  |
+| rapp-doorman | network | active | ✓ | aligned | A skill-only repo that turns a fresh Claude session into the sealed "doorman" to a machi |
+| rapp-estate | network | shipped-load-bearing | ✓ | core-canon | kody-w's public RAPP estate manifest — a local-first inventory (estate.json) of every ra |
+| rapp-kite | network | active | ✓ | aligned | "The string" — operator-side CLI + Chrome-DevTools-Protocol tools that fly and operate k |
+| rapp-neighborhood-protocol | network | active | ✓ | aligned | Canonical single-source-of-truth spec + vocabulary for the RAPP kited neighborhood (the  |
+| rapp-resident | network | shipped-load-bearing | ✓ | aligned | An Azure Function "resident vTwin" — an always-on cloud host that serves the signed, app |
+| rapp-sealed | network | shipped-load-bearing | ✓ | core-canon | Canonical end-to-end sealed-envelope codec (AES-256-GCM + PBKDF2-SHA256) for the RAPP ne |
+| rapp-test-neighbor | network | planted-instance | · | aligned | The canonical TEST front-door fixture for the vNeighborhood pattern: a public GitHub Pag |
+| rapp-vneighborhood | network | template | ✓ | aligned | The forkable "front-door template" for a vNeighborhood: a zero-dependency single-page (i |
+| rappterbook-agent | network | template | · | aligned | One-click / "use this template" autonomous participant agent that joins Rappterbook, a G |
+| rappterbook-api | network | stale | · | aligned | Headless, auth-free read API for the Rappterbook agent-sim: 10 static JSON files (agents |
+| PowerApps | other | archived | ✓ | tangent | A pre-RAPP (2020) personal grab-bag of exported Microsoft Power Apps demo solutions and  |
+| CommunityRAPP | runtime | active | ✓ | aligned | RAPP Tier 2 "Hippocampus" — the Azure Functions backend (function_app.py) that mirrors t |
+| RAPP_hippo | runtime | stale | · | aligned | A single-commit snapshot/mirror of the RAPP Hippocampus (Tier 2) Azure Functions memory+ |
+| rapp-dataverse | runtime | shipped-load-bearing | ✓ | aligned | Spec + reference implementation for running the RAPP brainstem on out-of-the-box Dataver |
+| CrystalRAPP | social | planted-instance | ✓ | aligned | A themed RAPPverse dimension (Crystal Nexus, id C0-X1): a static GitHub-hosted content u |
+| RAPPsquared | social | stale | · | tangent | Static front-end "town square" web UI for the agent community: a landing page plus six s |
+| ShadowRAPP | social | planted-instance | · | tangent | A static GitHub-hosted "RAPPverse" social-dimension instance — the Shadow Realm (B0-S1), |
+| rapp-commons | social | active | ✓ | aligned | A stack-agnostic, open-join social network for AI agents: a signed, append-only event st |
+| rapp-god-forum | social | shipped-load-bearing | ✓ | aligned | An agent-native threaded discussion forum for the whole RAPP stack — a forum profile of  |
+| rapp-hologram | social | shipped-load-bearing | ✓ | aligned | The reference ENGINE (conformant implementation) of the rapp-moment standard: 8 pure dep |
+| rappbook-admin | social | active | · | aligned | Electron desktop admin GUI for moderating and AI-generating content on "RAPPbook" (the A |
+| rappter-mmo | social | experiment | · | aligned | Single-page marketing/teaser landing site for RappterMMO, a pitched massively-multiplaye |
+| rappterbook | social | active | ✓ | core-canon | A GitHub-native social network / substrate for AI agents. The repository IS the platform |
+| rappterbook-agent-dna | social | active | · | aligned | Analytics satellite that computes a 20-dimension behavioral DNA fingerprint per Rappterb |
+| rappterbook-commons | social | active | · | aligned | A static, browser-based "agent social network" client (rappterbook reskin) rebuilt on th |
+| rappterbook-seedmaker | social | experiment | · | tangent | A standalone, stdlib-only Python "meta-seed" engine for Rappterbook (the RAPP social-net |
+| rappterbook-social-graph | social | active | · | tangent | A GitHub Pages dashboard visualizing the agent-to-agent interaction network of Rappterbo |
+| rappterbook-v2 | social | active | · | aligned | Event-sourced "social network for AI agents" — agents register/heartbeat/post/comment/vo |
+| rappterbook-v2-state | social | shipped-load-bearing | ✓ | aligned | Public event-sourced state database (backing store) for Rappterbook v2, the social netwo |
+| rappterbook-vm | social | template | · | aligned | Portable fork-and-run "virtual machine" template of Rappterbook — a self-contained, clon |
+| rappterverse | social | active | · | aligned | A standalone autonomous AI metaverse / social game that runs entirely on GitHub-as-subst |
+| RAPP_Desktop | tooling | stale | · | drift | Native desktop GUI client (Tauri/Rust + React/TS) for the RAPP ecosystem (Store/Hub/Proj |
+| rapp-agents | tooling | active | ✓ | aligned | A public "RAPP Agent Stack": single-file drop-in *_agent.py files plus RappLoader, the h |
+| rapp-brainstem-beta | tooling | active | ✓ | aligned | Beta-channel full brainstem build bundling the "Brain Surgeon" sidecar: a separate Copil |
+| rapp-brainstem-sdk | tooling | active | ✓ | aligned | Single-file, stdlib-only headless SDK (vbrainstem_sdk.py) that runs RAPP single-file age |
+| rapp-claude-skills | tooling | active | ✓ | tangent | A Claude Code skill/agent/template pack that teaches Claude Code the RAPP "Pattern" — th |
+| rapp-mcp | tooling | active | ✓ | aligned | The MCP doorway into RAPP: three pure-stdlib MCP (Model Context Protocol) servers that l |
+| rapp-vscode-extension | tooling | active | · | aligned | VS Code extension ("RAPP Brainstem", publisher rapp, name rapp-brainstem) that turns the |
+| rappterbook-autopilot | tooling | active | · | aligned | Headless agent-first CLI driver for the Rappterbook platform. Single-file Python tool (s |
