@@ -356,6 +356,24 @@
       }
     },
     {
+      "repo": "kody-w/RAR",
+      "role": "The RAPP Agent Registry \u2014 the canonical home + minting authority for every agent (SDK validate->stage->approve->forge a card->registry.json); peer to RAPP_Store/RAPP_Sense_Store.",
+      "layer": "distribution",
+      "status": "shipped-load-bearing",
+      "specs": [],
+      "depends_on": [
+        "kody-w/rapp-installer"
+      ],
+      "shipped_evidence": "Live registry.json + SDK + GitHub Pages; 27 @kody-w agents; the durable home referenced ~12x across the spine.",
+      "gaps": [
+        "owns no versioned spec id yet (rapp-registry/1.0 candidate)"
+      ],
+      "canon_alignment": "core-canon",
+      "load_bearing": true,
+      "deep_verified": true,
+      "load_bearing_note": "added R2: was MISSING from the map (adversary-caught)"
+    },
+    {
       "repo": "kody-w/RappterNest",
       "role": "Single static GitHub Pages marketing/landing page for \"RappterBox\" \u2014 a managed-hosting commercial offering (rent a managed Mac Mini that runs the local-first RAPP/brainstem stack 24/7). Pure brochure: hero, how-it-works, cloud-vs-RappterBox comparison, a 3-tier pricing table (Starter/Pro/Network), and an open-questions section. Sole CTA is a mailto inquiry; no installer, no app, no API.",
       "layer": "distribution",
@@ -685,7 +703,7 @@
         "install_one_liner is null in api/v1/index.json (egg-hatch / curl-singleton are the actual install paths)"
       ],
       "canon_alignment": "aligned",
-      "load_bearing": false,
+      "load_bearing": true,
       "notes": "Prior estate note ('a RAPP rapplication that converts any RAPP agent.py and deploys') is CONFIRMED and precise. Layer distribution / status planted-instance both confirmed against rapp-map. It does NOT own a canonical spec \u2014 it conforms to others (rapp-application, rapp-rappid Eternity, brainstem-egg, pokedex-api). Despite being a 'tail' rapplication, I am flagging load_bearing=true: the RAR-published @rapp/copilot_studio_deploy_agent hardcodes REPO_RAW = raw.githubusercontent.com/kody-w/rapp-oneclick-deploy/main and fetches catalog/agents.json + solutions/*.zip from THIS repo at runtime, so the registry copy breaks if this repo's raw data disappears \u2014 a genuine cross-repo runtime dependency. Secondary signals: it is the named reference instance for the new Eternity rappid form (MIGRATION-TRACKER.md) and the canonical deploy path for the Tier-3 (Copilot Studio) on-ramp. Strongly canon-aligned: local-first, credentials-stay-on-machine, GitHub raw-CDN substrate, deploy into the user's OWN tenant ('use everyone else's hardware'). Not stale, not a stub, not a fork.",
       "deep_verified": true,
       "recheck": {
@@ -693,7 +711,7 @@
         "correction": "none \u2014 verified. CI 'tests' green (run 27109665361 success), Pages built, 8 test_*.py + conftest (=9), and exactly 10 solution .zip bundles under solutions/.",
         "missed": "The duplicate-agent drift is concrete and triple, not just a 'duplicate': root agent.py AND root copilot_deploy_agent.py AND apps/@kody-w/copilot_studio_deploy/singleton/copilot_studio_deploy_agent.py all coexist (3 copies of the deploy agent) \u2014 consistent with the in-flight MIGRATION-TRACKER.md; last push 2026-06-08."
       },
-      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
+      "load_bearing_note": "restored R2: genuinely load-bearing (adversary-confirmed)"
     },
     {
       "repo": "kody-w/rapp-plant-smoke-20260505-233637",
@@ -1295,7 +1313,7 @@
       "repo": "kody-w/rapp-kited-twin",
       "role": "Visual-identity asset repo: the \"kited twin\" / kite mark (SVG+PNG) shown over a scan-to-join QR when a twin is hosting a live neighborhood.",
       "layer": "identity",
-      "status": "shipped-load-bearing",
+      "status": "active",
       "specs": [],
       "depends_on": [
         "kody-w/rapp-map"
@@ -1483,8 +1501,8 @@
         "missed": "roadmap.json status.posture explicitly says 'Run on a trusted/secure network' BECAUSE of a present-day unauthenticated-RCE in the shipping Tier-1 brainstem (fleet-wire auth is the Phase-1 gate) \u2014 this is a self-declared live security blocker, stronger than the finding's framing. The north_star string is literally Agent-365-centric ('planetary swarm of governed Leviathans enhancing every Agent 365 workflow'), corroborating the finding's enterprise-vector note."
       },
       "deep_verified": true,
-      "load_bearing": false,
-      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
+      "load_bearing": true,
+      "load_bearing_note": "restored R2: genuinely load-bearing (adversary-confirmed)"
     },
     {
       "repo": "kody-w/rapp-god",
@@ -2174,7 +2192,7 @@
       "repo": "kody-w/rapp-god-forum",
       "role": "An agent-native threaded discussion forum for the whole RAPP stack \u2014 a forum profile of rapp-commons-protocol/2.0 with topic/reply event kinds, served as a static GitHub Pages UI plus a Python client agent.",
       "layer": "social",
-      "status": "shipped-load-bearing",
+      "status": "active",
       "specs": [
         "rapp-commons-protocol/2.0 (forum profile)",
         "rapp-commons-event/1.0 (topic + reply kinds)",
@@ -2229,8 +2247,8 @@
         "missed": "The 8 modules + fractal.html in this repo are DUPLICATED inside rapp-commons/hologram/ (identical filenames: fidelity.js, fingerprint.js, homeostasis.js, fractal.html, etc.). The finding noted it's a 'sibling to grail-side hologram/' but missed that rapp-commons carries a full parallel COPY of this repo's reference engine \u2014 drift between the authoritative engine repo and the commons-embedded copy is unverified and a real duplication risk."
       },
       "deep_verified": true,
-      "load_bearing": false,
-      "load_bearing_note": "corrected 2026-06-28 (convergence R1): conforming instance/demo/archive/tooling, owns no canonical spine spec"
+      "load_bearing": true,
+      "load_bearing_note": "restored R2: genuinely load-bearing (adversary-confirmed)"
     },
     {
       "repo": "kody-w/rappbook-admin",
@@ -2312,7 +2330,7 @@
         "Heavy sprawl (GeoRiskDashboard, Vim, dist/lispy.py, many one-off experiments) makes the load-bearing core hard to isolate"
       ],
       "canon_alignment": "core-canon",
-      "load_bearing": false,
+      "load_bearing": true,
       "notes": "CORRECTION to the 'non-spine tail / not load-bearing' premise: this repo IS load-bearing on two counts. (1) It owns a canonical spec \u2014 EGG_SPEC.md is the canonical-URL home of the .egg container format used estate-wide (RAPP Zoo .egg seeds, awakening.rappterbook.egg, the egg packer/hatcher contract). (2) It is the reference implementation of the named 'rappterbook pattern' (GitHub-as-substrate, append-only events -> materialized views) that rapp-frame-net's rapp-frame/1.0 explicitly cites as proven-live prior art. It is also the purest concrete proof of the MASTER_PLAN north star (GitHub raw CDN + Issues-mailbox + PR-consent + Pages-edge + sha256/collaborator trust, PKI-free) \u2014 arguably the canonical demonstrator of 'use everyone else's hardware -> metropolis' at the social layer. Layer tagged 'social'; it doubles as a network/substrate demonstrator. Recommend NOT treating as a prunable tail repo.",
       "deep_verified": true,
       "recheck": {
@@ -2320,7 +2338,7 @@
         "correction": "The v2 rappid string form is more specific than stated: actual is 'rappid:v2:project:@owner/namespace:hash@host' (e.g. rappid:v2:project:@kody-w/authenticity-twin:rappterbook-outside-visitor@local) \u2014 the finding's 'rappid:v2:project:@owner/hash@host' drops the namespace segment. Core point (non-canonical rapp-rappid/2.0, not eternity's @owner/slug:64hex) is correct. EGG_SPEC confirmed 'Version 1 / draft-adopted / ref impl in private rappter engine / daemon-scale buddy eggs pending migration'. CONSTITUTION.md confirmed a 2.4KB stub that just links to CLAUDE/AGENTS/AUTONOMY/OPERATOR.md.",
         "missed": "This is the family FLAGSHIP and the only repo with meaningful external traction: 12 stars (vs 0-1 everywhere else) and ~2.9GB disk (diskUsage 2942815). The 'synthetic activity' gap is stronger than stated \u2014 the planted authenticity-twin rappid EXPLICITLY watches synthetic_posts.json/synthetic_comments.json/synthetic_votes.json/synthetic_activity.json, so the headline '113 agents / 3,000+ posts' is substantially fabricated by design. It shares a heartbeat cadence with rappterbook-agent-exchange (both pushed within ~30min on 2026-06-28) \u2014 same autonomous cron family keeps both alive."
       },
-      "load_bearing_note": "corrected R1: social/userland repo; its EGG_SPEC v1 has no clean versioned id and is superseded by the kernel's rapp-egg/2.0"
+      "load_bearing_note": "restored R2: genuinely load-bearing (adversary-confirmed)"
     },
     {
       "repo": "kody-w/rappterbook-agent-dna",
@@ -2463,7 +2481,7 @@
       "repo": "kody-w/rappterbook-v2-state",
       "role": "Public event-sourced state database (backing store) for Rappterbook v2, the social network for AI agents. Append-only event log under events/frame-{N}/*.json, replayed by scripts/materializer.py into derived views/*.json (agents, channels, stats, trending, social_graph, seeds, recent_events, health). Served zero-auth via raw.githubusercontent.com \u2014 a textbook instance of the rapp-frame/rappterbook append-only-events\u2192materialized-views pattern on the GitHub-as-substrate north star.",
       "layer": "social",
-      "status": "shipped-load-bearing",
+      "status": "active",
       "specs": [
         "schema/events.json \u2014 canonical Rappterbook v2 event schema (JSON Schema 2020-12): 27 event types across agent/post/comment/channel/social/seed/frame/system namespaces, required id/frame/timestamp/type/agent_id/data"
       ],
