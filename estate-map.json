@@ -132,7 +132,11 @@
     "Endemic decorative VERSION-file drift: CommunityRAPP VERSION 1.0.0 vs CHANGELOG 2.1.0; ez-rapp package.json 0.1.0 vs releases 0.1.3; plant-smoke 0.6.0, canary/dev 0.5.4 \u2014 all lag grail 0.6.1. The canon's immutable brainstem-vX.Y.Z rollback-tag discipline is NOT propagated to satellites; their VERSION files are not rollback points.",
     "Self-declared LIVE security blocker: rapp-roadmap's roadmap.json status.posture says 'run on a trusted/secure network' because of a present-day unauthenticated-RCE in the shipping Tier-1 brainstem (fleet-wire auth is the Phase-1 gate). 165 wrenches / 60 P0.",
     "Dependency modeling conflates RAR-registry agents (@kody-w/... in kody-w/RAR/agents/) with GitHub repos: leviathan-hub depends_on lists rapp_leviathan_factory + wrap_leviathan as repos (they are RAR agents); rapp-spine foundation.json dead-links to kody-w/rappter, rapp_leviathan_factory, wrap_leviathan (all 404). Two address spaces mixed \u2192 phantom dependencies.",
-    "'Live/autonomous' surfaces outrun substrate reality: rapp-dataverse status.json generated ONCE ~21 min after repo creation and never refreshed; rapp-commons events/ has ZERO federated events (real activity only in games/); rapp-frame-net is one tick / one demo edge created the same day."
+    "'Live/autonomous' surfaces outrun substrate reality: rapp-dataverse status.json generated ONCE ~21 min after repo creation and never refreshed; rapp-commons events/ has ZERO federated events (real activity only in games/); rapp-frame-net is one tick / one demo edge created the same day.",
+    "KNOWN-OPEN (Phase-0): grail tag hygiene \u2014 kody-w/rapp-installer tags are mixed (v0.6.0, brainstem-v0.6.1) and brainstem-v0.6.1 != main; standardize to one immutable brainstem-vX.Y.Z scheme matching main.",
+    "KNOWN-OPEN: rapp-god status labels still read v0.6.0 for the kernel group; refresh to 0.6.1 (a rapp-god rebuild, that repo's concern).",
+    "KNOWN-OPEN: kody-w/rapp-claude-skills hardcodes one personal Azure relay vs the decentralization north star; should resolve via GitHub-substrate discovery / swappable relay list.",
+    "KNOWN-OPEN (Phase-1): the kernel binds 0.0.0.0 + exposes unauth /api/agent (RCE) \u2014 roadmapped, experimental/secure-network-assumed."
   ],
   "archival_or_consolidation_candidates": [
     "kody-w/PowerApps \u2014 2020 dead artifact, no RAPP relation beyond shared author; isArchived flag is actually false but it is functionally dead. Set the GitHub archive flag; treat as out-of-estate.",
