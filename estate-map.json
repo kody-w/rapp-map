@@ -2,7 +2,7 @@
   "schema": "rapp-estate-map/1.0",
   "built_at": "2026-06-28T20:21:23Z",
   "purpose": "Repo-level map of the whole rapp estate \u2014 every rapp-named repo scanned then verifier-rechecked. Complements the per-file neuron mesh (neurons.json). Load this first to avoid operating on half the estate.",
-  "count": 87,
+  "count": 89,
   "estate_summary": "The rapp estate is one coherent organism with a small, genuinely load-bearing spine and a large penumbra of instances, spec-stubs, satellites, and decaying experiments. The spine is real and shipped: a single Tier-1 on-ramp (rapp-installer, the grail, VERSION 0.6.1 \u2014 verified locally; this working dir IS that checkout), a canonical monorepo that owns the MASTER_PLAN ground truth (RAPP), a four-leg drift-governance system (rapp-god owner + rapp-map index + RAPP-Bible human render + the rapp_agent verify leg), an identity/standard family (rapp-moment standard + rapp-hologram reference engine + rapp-egg-hub distribution + rappid eternity), a crypto+network mesh (rapp-sealed + rapp-neighborhood-protocol + vbrainstem/kite/doorman), and a social leg (rapp-commons + rapp-god-forum) plus Tier-2/3 runtime ports (CommunityRAPP, rapp-dataverse, rapp-static-apis) and an MCP on-ramp (rapp-mcp). All of it sits on pure GitHub substrate (raw CDN, Pages edge, gh-collaborator trust, sha256 content-addressing), is honestly PKI-free at the root (the eternity keypair is opt-in sovereignty, correctly never flagged as mandatory PKI), and rejects a central server/registry/broker \u2014 faithful to the north star \"use everyone else's hardware to run the network.\"\n\nThe honest tension is that the estate's framing consistently outruns its shipped substrate, and drift is the dominant systemic risk [reframed: see distro note]. Verification confirmed: the RAPP super-repo's kernel/installer/seed-agent mirror is systematically STALE versus the grail (rapp-god surfaces a 12-part drift cluster \u2014 brainstem.py, VERSION, both memory agents, install scripts, CONSTITUTION, NEIGHBORHOOD_PROTOCOL); the ecosystem-spec.json machine spec is mirrored in 4-5 places including the kernel repo's own specs/; at least five divergent reimplementations of the /chat contract coexist with no mechanical parity check; the entire social layer secretly leans on ONE shared Azure host (rapp-resident-kw165843), which cold-started/was briefly unreachable mid-verification; rappid form sprawl spans six legacy emission shapes; the dev\u2192canary\u2192prod release pipeline is BROKEN (red cron, not shelved) with prod advancing straight from the grail; and the rappbook-federation demo family is decaying into silent 404 link-rot \u2014 a live counter-example to the \"graceful degrade\" hero claim. The spine is solid and well-mapped; the periphery is where half-pictures live. NOTE (kernel/distro model, rapp-distro/1.0): kody-w/RAPP is a clean DISTRO that PINS kernel v0.6.0 byte-identical to the grail tag (now declared via RAPP/KERNEL_PIN.json + a freeze CI); the grail (rapp-installer) ships 0.6.1. The version gap is an INTENTIONAL LTS pin, not silent drift \u2014 distros bump deliberately. Spec-unification across the spine is separately zero-drift (verify_spine I1-I5).",
   "the_real_stack": [
     "kody-w/rapp-installer \u2014 THE grail / single public on-ramp (curl one-liner, VERSION 0.6.1 verified locally; this working dir is its checkout; main is production)",
@@ -28,7 +28,10 @@
       "layer": "Kernel / Canon",
       "summary": "The single source of canon law and the kernel runtime. RAPP ships MASTER_PLAN.md (north-star ground truth), BRAINSTEM_MANDATE, HERO_USECASE (Charizard-in-the-woods + Dream Catcher), CONSTITUTION, the top-level specs/ tree (SPEC.md + ecosystem-spec.json mirror), the public brainstem.py kernel + core agents, the cave/ neighborhood, and the ~150-doc Obsidian vault. It both DEFINES canon and CARRIES a runtime copy \u2014 which is exactly why it is the riskiest mirror: its brainstem/installer/seed-agent copy is currently STALE vs the rapp-installer grail (rapp-god's 12-part drift cluster), and it holds its own specs/ecosystem-spec.json (59.7KB) duplicating the spec rapp-god owns.",
       "load_bearing_repos": [
-        "kody-w/RAPP"
+        "kody-w/rapp-installer",
+        "kody-w/rapp-eternity",
+        "kody-w/rapp-distro",
+        "kody-w/rapp-spine"
       ]
     },
     {
@@ -92,7 +95,7 @@
     },
     {
       "layer": "Leviathan (planetary swarm)",
-      "summary": "The newest and youngest layer \u2014 the async/planetary fabric. rapp-frame-net is the HYDRA async wire (append-only frame/echo log over raw CDN reads + Issues-API writes + a GitHub-Action forge; defines rapp-frame/1.0 + rapp-frame-echo/1.0 + rapp-hydra/1.0). rapp-leviathan-hub distributes portable .leviathan.egg multicellular organisms (rapp-leviathan-egg/1.0). kody-w/leviathan is the FLEET complement (confirmed real). This layer is genuine but ahead of its substrate: rapp-frame-net is one tick / one demo edge created the same day, its three new specs are NOT yet in rapp-god's registry, leviathan-hub ships only 2 kody-authored eggs at a v0.1.0 agent, and its dependency modeling conflates RAR-registry agents (@kody-w/rapp_leviathan_factory, wrap_leviathan) with non-existent GitHub repos.",
+      "summary": "The newest and youngest layer \u2014 the async/planetary fabric. rapp-frame-net is the HYDRA async wire (append-only frame/echo log over raw CDN reads + Issues-API writes + a GitHub-Action forge; defines rapp-frame/2.0 + rapp-frame-echo/1.0 + rapp-hydra/1.0). rapp-leviathan-hub distributes portable .leviathan.egg multicellular organisms (rapp-leviathan-egg/1.0). kody-w/leviathan is the FLEET complement (confirmed real). This layer is genuine but ahead of its substrate: rapp-frame-net is one tick / one demo edge created the same day, its three new specs are NOT yet in rapp-god's registry, leviathan-hub ships only 2 kody-authored eggs at a v0.1.0 agent, and its dependency modeling conflates RAR-registry agents (@kody-w/rapp_leviathan_factory, wrap_leviathan) with non-existent GitHub repos.",
       "load_bearing_repos": [
         "kody-w/rapp-frame-net",
         "kody-w/rapp-leviathan-hub",
@@ -124,7 +127,7 @@
     "rappbook/RAPPverse federation family is decaying with no liveness/self-healing \u2014 a live counter-example to 'graceful degrade': CommunityRAPP deliberately EXITED (archived rappbook/+disco.json+10 dimension-sync workflows per CHANGELOG 2.1.0), openrapp's rapphub.json dns_seed is gone, so CrystalRAPP's disco.json points at 2 dead 404 peers + 2 live ones SILENTLY (no fallback, no health flag).",
     "Engine/code duplication without drift control: rapp-commons embeds a FULL copy of the standalone rapp-hologram reference engine (hologram/*.js, fractal.html) with no hash parity; rapp-brainstem-beta vendors a full brainstem/ copy; commons also commits __pycache__/*.pyc cruft + ~36MB binaries (ambient.mp4 7.4MB, commons.html 423KB).",
     "Broken pipelines firing red cron (not 'shelved'): rapp-commons federate.yml invokes a MISSING tools/federate.py (federation pipeline is broken); the dev\u2192canary\u2192prod release pipeline is BROKEN \u2014 every scheduled Promote-to-Canary/Gate-2 run red (2026-05-30\u219206-02), canary+dev frozen at 0.5.4, prod advanced to 0.6.1 straight from the grail, and promote-production does `git push production HEAD:main --force` (against 'never push to main').",
-    "Map+drift observatory lags the freshest estate: rapp-frame-net's rapp-frame/1.0 + rapp-frame-echo/1.0 + rapp-hydra/1.0 are ABSENT from rapp-god's 57-part registry; rapp-god's kernel label still says v0.6.0 while grail is 0.6.1; rapp-map's graph.json (gen 2026-06-10) misses repos pushed since (leviathan-hub 2026-06-28).",
+    "Map+drift observatory lags the freshest estate: rapp-frame-net's rapp-frame/2.0 + rapp-frame-echo/1.0 + rapp-hydra/1.0 are ABSENT from rapp-god's 57-part registry; rapp-god's kernel label still says v0.6.0 while grail is 0.6.1; rapp-map's graph.json (gen 2026-06-10) misses repos pushed since (leviathan-hub 2026-06-28).",
     "rapp-map is a stale + DIRTY index: its 402-card neurons-manifest repos[] holds ~56 entries that are NOT repos \u2014 doc titles ('RAPP Network Specification \u2014 specs/SPEC.md (the god spec)'), file paths ('docs/index.html'), bare hostnames ('https:/github.com'), and 'RAR/private-rar-template'. Any per-repo coverage count off it is unreliable.",
     "Two parallel, uncoordinated 'network layer' god-specs with a name collision and ZERO cross-references: rapp-neighborhood-protocol/1.0 (cross-machine kited mesh) vs rapp-network/1.0 (RAPP-Network, on-device project twins). rapp-map's manifest even mislabels RAPP-Network's SPEC as 'the god spec'.",
     "Kite-mark identity contradiction leaked into code + metadata: rapp-kited-twin's README says the mark is neutral/no-third-party-branding, but its GitHub description, its FORMER repo name (kody-w/kite-mark, still redirects and is still referenced as a stale dep by rapp-neighborhood-protocol), AND rapp-kite's kite_vtwin.js comment all call it 'the Microsoft logo flown as a kite'.",
@@ -165,7 +168,7 @@
     "Treat satellite VERSION files as decorative. Rely on git tags (brainstem-vX.Y.Z) + rapp-god's archived immutable frames for rollback points, and propagate the immutable-tag discipline to any satellite you ship.",
     "Coverage caveat to carry forward: this map has full-fidelity re-verified detail on ~42 of 85 repos \u2014 the entire load-bearing spine plus the map/drift, social, network, identity, leviathan and on-ramp legs. The remaining ~43 (the rest of the satellites, the pkstop-*/sim-* planted instances enumerated in rapp-estate's estate.json, and the truncated verifier tail from rapp-store-archive onward) are known by enumeration/reference but not independently re-verified here. Close that tail in the next sweep before claiming total-estate operations; the spine itself is fully mapped."
   ],
-  "coverage_confidence": "HIGH \u2014 86 repos deep-verified (85 rapp-named + RAR, the non-rapp-named agent registry). all 85 rapp-named repos deep-verified (41 spine line-rechecked + 44 tail deep-scanned 2026-06-28). The tail sweep upgraded several from satellite to load-bearing (e.g. RAPP_Store/RAPP_Sense_Store own canonical specs) and confirmed the rest non-load-bearing. No known-but-unverified repos remain.",
+  "coverage_confidence": "HIGH \u2014 86 repos deep-verified (85 rapp-named + RAR, the non-rapp-named agent registry). all 85 rapp-named repos deep-verified (41 spine line-rechecked + 44 tail deep-scanned 2026-06-28). The tail sweep upgraded several from satellite to load-bearing (e.g. RAPP_Store/RAPP_Sense_Store own canonical specs) and confirmed the rest non-load-bearing. The census tracks the live repo set incl. the new kernel-layer homes (rapp-eternity, rapp-distro).",
   "systemic_issues": [
     "A cluster of non-fork verbatim snapshots exists (rapp_orion\u2248rapp-installer v0.6.1, RAPP_hippo\u2248CommunityRAPP, RAPPAIClaudeCodePlayground\u2248Copilot-Agent-365), all fork:false/parent:null. None can track upstream, so each is a guaranteed future drift source; RAPP_hippo has ALREADY drifted internally (VERSION 1.0.0 vs CHANGELOG 2.1.0). All three carry generic single-token descriptions ('RAPP_hippo','rapp_orion','RAPPAIClaudeCodePlayground'), marking them as codename/working-copy dumps rather than curated canon nodes.",
     "A single shared Azure host (rapp-resident-kw165843.azurewebsites.net) is the durable relay for rapp-commons, rapp-god-forum, AND is hardcoded in rapp-claude-skills as 'the permanent cloud relay.' MASTER_PLAN rejects a central server; this is framed as untrusted-relay-with-kited-fallback, but it is one Azure Function appearing across the whole social layer \u2014 and it cold-started/was briefly unreachable during verification, a concrete availability single-point. This is the most material canon tension in the batch.",
@@ -182,7 +185,7 @@
     "ITERATION-CRUFT AUTHORSHIP SIGNATURE: versioned-file accumulation instead of pruning recurs as an agent-swarm fingerprint \u2014 mars-barn (decisions_v1-5 + multicolony_v1-5), social-graph (social_graph + _v2 + _v3 PLUS a duplicated src/docs/ mirror of docs/). Multi-agent authorship leaves dead iteration trees rather than collapsing to a single converged file (contra the 'a swarm is a singleton' convergence norm).",
     "KERNEL-VERSION DRIFT ACROSS MIRRORS/CHANNELS: plant-smoke (0.6.0), canary (0.5.4), and dev (0.5.4) all lag the grail (0.6.1). Mirror integrity depends on manual byte-identical discipline with no automated re-sync that actually succeeds (the one automated path \u2014 the pipeline \u2014 is red). Anti-drift recipes shipped by these mirrors would now fail on VERSION.",
     "KITE-MARK IDENTITY CONTRADICTION (pervasive, not isolated): rapp-kited-twin's README insists the mark is 'neutral, fully ownable, NO third-party branding,' yet its GitHub description, its FORMER repo name (kody-w/kite-mark, which still redirects), and rapp-kite's kite_vtwin.js code comment ALL call it 'the Microsoft logo flown as a kite.' The neutral-mark story exists only in one README; everything else says Microsoft logo. Memory already flags 'kite-mark logo' as a governance leftover \u2014 this batch confirms it leaked into code and sibling descriptions.",
-    "Newest specs are not yet registered in canon: rapp-frame-net's rapp-frame/1.0 + rapp-frame-echo/1.0 + rapp-hydra/1.0 are absent from rapp-god's 57-part registry, and rapp-god's kernel label still says v0.6.0 while the installer is 0.6.1 \u2014 the map+drift observatory lags the freshest changes by a beat.",
+    "Newest specs are not yet registered in canon: rapp-frame-net's rapp-frame/2.0 + rapp-frame-echo/1.0 + rapp-hydra/1.0 are absent from rapp-god's 57-part registry, and rapp-god's kernel label still says v0.6.0 while the installer is 0.6.1 \u2014 the map+drift observatory lags the freshest changes by a beat.",
     "Parallel ecosystem, not RAPP canon: the entire family runs a 'rappter / OpenRappter / Noopolis / ClawHub / rappterhub' vocabulary and owns its OWN spec family (egg/1, frame-output/1, rappterbook-protocol/1.0.0, lispy, rapp-commons-protocol/2.0, rapp-neighborhood/1.0, market_maker/3.0.0) \u2014 NONE registered in the rapp-god / RAR registry. It is a sibling universe sharing only the GitHub-substrate philosophy, not a citizen of the brainstem/eternity canon line.",
     "Parallel reimplementations of the brainstem /chat contract are proliferating with no mechanical parity enforcement, despite 'stem/function_app parity is sacred.' Confirmed distinct copies of the engine/contract: CommunityRAPP/function_app.py (1171 lines), rapp-brainstem-beta vendors a full brainstem/brainstem.py, rapp-brainstem-sdk (517-line headless reimpl), openrappter (full TS+Python+Swift rewrite), plus the vbrainstem browser sibling. At least 5 divergent implementations of one wire, parity hand-maintained at best.",
     "Pervasive synthetic activity: the flagship's own authenticity-twin exists to judge organic-vs-AI and explicitly watches synthetic_posts/comments/votes/activity.json \u2014 so the marquee '113 agents / 3,000+ posts' figures are largely fabricated, and the downstream satellites (api, market-maker, agent-dna, knowledge-graph, governance) all compute 'platform intelligence' over that synthetic corpus, inheriting the fabrication.",
@@ -1130,11 +1133,11 @@
         "No README content (empty).",
         "scripts/actions/shared.py hardcodes absolute local path /Users/kodyw/Projects/rappterbook \u2014 non-portable, single-machine.",
         "No VERSION, no SPEC doc, no rappid/eternity identity, no CONSTITUTION linkage.",
-        "Frozen since March 2026 \u2014 likely superseded by the productized 'rappterbook pattern' now referenced in rapp-frame-net (rapp-frame/1.0)."
+        "Frozen since March 2026 \u2014 likely superseded by the productized 'rappterbook pattern' now referenced in rapp-frame-net (rapp-frame/2.0)."
       ],
       "canon_alignment": "aligned",
       "load_bearing": false,
-      "notes": "Confirms the prior note. Genuinely NOT load-bearing: it is the TARGET of the rappter engine migration, not a dependency of it \u2014 nothing in the spine imports it, and it owns no canonical spec. The durable, load-bearing realization of this idea is the \"rappterbook pattern\" cited in kody-w/rapp-frame-net (rapp-frame/1.0, append-only events \u2192 materialized views). This repo is a frozen, locally-pathed scratch fixture. Canon-aligned because it embodies the GitHub-as-substrate (Discussions-mailbox, gh-auth, PR-consent) north star, but it is a sandbox instance of that pattern, not a spec owner. Safe to treat as stale/archivable.",
+      "notes": "Confirms the prior note. Genuinely NOT load-bearing: it is the TARGET of the rappter engine migration, not a dependency of it \u2014 nothing in the spine imports it, and it owns no canonical spec. The durable, load-bearing realization of this idea is the \"rappterbook pattern\" cited in kody-w/rapp-frame-net (rapp-frame/2.0, append-only events \u2192 materialized views). This repo is a frozen, locally-pathed scratch fixture. Canon-aligned because it embodies the GitHub-as-substrate (Discussions-mailbox, gh-auth, PR-consent) north star, but it is a sandbox instance of that pattern, not a spec owner. Safe to treat as stale/archivable.",
       "deep_verified": true,
       "recheck": {
         "confirmed": true,
@@ -1398,7 +1401,7 @@
       "layer": "leviathan",
       "status": "active",
       "specs": [
-        "rapp-frame/1.0",
+        "rapp-frame/2.0",
         "rapp-frame-echo/1.0",
         "rapp-hydra/1.0"
       ],
@@ -1420,11 +1423,11 @@
         "Forge LLM/coordinating-brainstem reasoning path described but live forge appears deterministic"
       ],
       "canon_alignment": "core-canon",
-      "notes": "Direct embodiment of the north star (\"use everyone else's hardware to run the network\"): substrate is purely GitHub (raw-CDN reads, Issues append-only mailbox, commit/PR writes, Action for serverless global compute), trust is sha256 content-addressing + gh-collaborator, NO central server/registry/broker. Content-addressed and PKI-free at the root (Ed25519 is an OPTIONAL production upgrade, not mandatory) \u2014 consistent with resolved rappid-eternity stance; do not flag as PKI. HYDRA.md extends the survival fabric to the whole estate (leviathans->fleets->beings->brainstems->agent.pys->caves->cubbies->front doors), privacy as a rapp-sealed ciphertext envelope (seal not location). Defines new specs rapp-frame/1.0 + rapp-frame-echo/1.0 + rapp-hydra/1.0 that should be registered in the spec corpus (rapp_docs / rapp-god / RAPP-Bible). Async counterpart to kody-w/leviathan's sync LAN wire. Load-bearing files: SPEC.md, HYDRA.md, edge_node_agent.py, scripts/frame_loop.py, scripts/event_store.py, .github/workflows/forge.yml.",
+      "notes": "Direct embodiment of the north star (\"use everyone else's hardware to run the network\"): substrate is purely GitHub (raw-CDN reads, Issues append-only mailbox, commit/PR writes, Action for serverless global compute), trust is sha256 content-addressing + gh-collaborator, NO central server/registry/broker. Content-addressed and PKI-free at the root (Ed25519 is an OPTIONAL production upgrade, not mandatory) \u2014 consistent with resolved rappid-eternity stance; do not flag as PKI. HYDRA.md extends the survival fabric to the whole estate (leviathans->fleets->beings->brainstems->agent.pys->caves->cubbies->front doors), privacy as a rapp-sealed ciphertext envelope (seal not location). Defines new specs rapp-frame/2.0 + rapp-frame-echo/1.0 + rapp-hydra/1.0 that should be registered in the spec corpus (rapp_docs / rapp-god / RAPP-Bible). Async counterpart to kody-w/leviathan's sync LAN wire. Load-bearing files: SPEC.md, HYDRA.md, edge_node_agent.py, scripts/frame_loop.py, scripts/event_store.py, .github/workflows/forge.yml.",
       "recheck": {
         "confirmed": true,
         "correction": "none \u2014 verified: created 2026-06-28, 6 commits; keys/verify.json scheme sha256-content-address/1.0 with ed25519_pubkey:null + HMAC-SHA256 (exactly as claimed); net/frames/c6a2dbaf9fbf21c5.json present (HYDRA frame hash confirmed); forge.yml + edge_node_agent.py + scripts/{frame_loop,event_store}.py + events/frame-1.json + views/events.json + twins/{edge-demo,edge-mac} all present.",
-        "missed": "The three new specs it defines (rapp-frame/1.0, rapp-frame-echo/1.0, rapp-hydra/1.0) are NOT yet present in rapp-god's canon registry \u2014 rapp-god's status.json (generated 2026-06-28T04:49, 57 parts) lists none of them. So the newest leg of the estate is currently unregistered/invisible to the map+drift observatory; the finding said they 'should be registered' but verification confirms they are currently ABSENT."
+        "missed": "The three new specs it defines (rapp-frame/2.0, rapp-frame-echo/1.0, rapp-hydra/1.0) are NOT yet present in rapp-god's canon registry \u2014 rapp-god's status.json (generated 2026-06-28T04:49, 57 parts) lists none of them. So the newest leg of the estate is currently unregistered/invisible to the map+drift observatory; the finding said they 'should be registered' but verification confirms they are currently ABSENT."
       },
       "deep_verified": true,
       "load_bearing": true
@@ -1478,7 +1481,7 @@
         "kody-w/rapp-frame-net",
         "rapp-agent/1.0 kernel"
       ],
-      "shipped_evidence": "8 files. roadmap.json (north_star, 5 phases 0-4 with milestones/exit-criteria, hero_use_cases, agent365_pitch, kernel_sacred_guarantees, architecture pillars: leviathan/1.0, rapp-leviathan-egg/1.0, rapp-frame/1.0, rapp-hydra/1.0, rapp-spine/1.0; status.phase=experimental). backlog.json = rapp-backlog/1.0, 165 adversarial wrenches (60 P0 / 76 P1 / 28 P2 / 1 P3) with pre-thought mitigations. rapp_roadmap_agent.py is a drop-in BasicAgent (tool RappRoadmap) fetching roadmap.json over 3 hydra heads (raw/jsdelivr/rachack) with local cache for full-offline degrade. ROADMAP.md + BACKLOG.md + README.",
+      "shipped_evidence": "8 files. roadmap.json (north_star, 5 phases 0-4 with milestones/exit-criteria, hero_use_cases, agent365_pitch, kernel_sacred_guarantees, architecture pillars: leviathan/1.0, rapp-leviathan-egg/1.0, rapp-frame/2.0, rapp-hydra/1.0, rapp-spine/1.0; status.phase=experimental). backlog.json = rapp-backlog/1.0, 165 adversarial wrenches (60 P0 / 76 P1 / 28 P2 / 1 P3) with pre-thought mitigations. rapp_roadmap_agent.py is a drop-in BasicAgent (tool RappRoadmap) fetching roadmap.json over 3 hydra heads (raw/jsdelivr/rachack) with local cache for full-offline degrade. ROADMAP.md + BACKLOG.md + README.",
       "gaps": [
         "Does not declare a versioned spec id for the roadmap document itself (only rapp-backlog/1.0 is versioned); the roadmap is data, not a contract.",
         "Self-described status.phase = experimental; honestly names the standing fleet-wire RCE (unauthenticated POST /api/agent/<name> + remote_control shell agent) as the gating blocker, deferred to Phase 1.",
@@ -1926,7 +1929,7 @@
       ],
       "canon_alignment": "aligned",
       "load_bearing": false,
-      "notes": "Genuinely NOT load-bearing. Owns no spec (no spec .md, no versioned rapp-*/X.Y schema) and nothing in the spine depends on it \u2014 it is a derived, read-only dump from a Rappterbook sim. It is a concrete instance of the rappterbook/rapp-frame pattern (append-only events.json + materialized views like reputation/skills/topics over GitHub-raw substrate), so canon-aligned as an illustrative artifact, but the canonical spec for that pattern lives in rapp-frame-net (rapp-frame/1.0). Correct the prior note's implication of a live API: it is a frozen snapshot, hence status 'stale'. Safe to treat as a tail repo.",
+      "notes": "Genuinely NOT load-bearing. Owns no spec (no spec .md, no versioned rapp-*/X.Y schema) and nothing in the spine depends on it \u2014 it is a derived, read-only dump from a Rappterbook sim. It is a concrete instance of the rappterbook/rapp-frame pattern (append-only events.json + materialized views like reputation/skills/topics over GitHub-raw substrate), so canon-aligned as an illustrative artifact, but the canonical spec for that pattern lives in rapp-frame-net (rapp-frame/2.0). Correct the prior note's implication of a live API: it is a frozen snapshot, hence status 'stale'. Safe to treat as a tail repo.",
       "deep_verified": true,
       "recheck": {
         "confirmed": true,
@@ -2313,7 +2316,7 @@
         "Python 3.11+ stdlib ONLY (no pip / no requirements.txt)",
         "rappter engine (engine/organism_egg.py) as the EGG_SPEC reference implementation \u2014 referenced, not vendored"
       ],
-      "shipped_evidence": "Live and running: GitHub Pages dashboard (kody-w.github.io/rappterbook) plus command/build/seed-tracker/apps/agent-brain control pages; ~40 .github/workflows/*.yml processors (process-issues, process-inbox, agent-heartbeat, overseer, twin-driver, deploy-pages, cloud-brainstem); 35+ Issue-template actions (register_agent, heartbeat, create_topic, forge_artifact...); SDK at sdk/python/rapp.py; agents/ Python actors (worker/reviewer/foreman/publish_to_rar/rapp_egg); hundreds of committed docs/api/discussions/*.json state snapshots; README badges 112 agents / 1637+ tests / 0 deps. The 'rappterbook pattern' (append-only events -> materialized views) is the named architecture cited by rapp-frame-net (rapp-frame/1.0) in estate canon.",
+      "shipped_evidence": "Live and running: GitHub Pages dashboard (kody-w.github.io/rappterbook) plus command/build/seed-tracker/apps/agent-brain control pages; ~40 .github/workflows/*.yml processors (process-issues, process-inbox, agent-heartbeat, overseer, twin-driver, deploy-pages, cloud-brainstem); 35+ Issue-template actions (register_agent, heartbeat, create_topic, forge_artifact...); SDK at sdk/python/rapp.py; agents/ Python actors (worker/reviewer/foreman/publish_to_rar/rapp_egg); hundreds of committed docs/api/discussions/*.json state snapshots; README badges 112 agents / 1637+ tests / 0 deps. The 'rappterbook pattern' (append-only events -> materialized views) is the named architecture cited by rapp-frame-net (rapp-frame/2.0) in estate canon.",
       "gaps": [
         "Self-described as 'walls but no visitors' \u2014 ROADMAP/FEATURE_FREEZE milestone is 10 EXTERNAL registered agents; to date the swarm largely talks to itself (founding Zion agents)",
         "Feature freeze active since 2026-02-27: no new actions/state files/workflows, only DX + adoption \u2014 so growth is intentionally capped",
@@ -2322,7 +2325,7 @@
       ],
       "canon_alignment": "core-canon",
       "load_bearing": true,
-      "notes": "CORRECTION to the 'non-spine tail / not load-bearing' premise: this repo IS load-bearing on two counts. (1) It owns a canonical spec \u2014 EGG_SPEC.md is the canonical-URL home of the .egg container format used estate-wide (RAPP Zoo .egg seeds, awakening.rappterbook.egg, the egg packer/hatcher contract). (2) It is the reference implementation of the named 'rappterbook pattern' (GitHub-as-substrate, append-only events -> materialized views) that rapp-frame-net's rapp-frame/1.0 explicitly cites as proven-live prior art. It is also the purest concrete proof of the MASTER_PLAN north star (GitHub raw CDN + Issues-mailbox + PR-consent + Pages-edge + sha256/collaborator trust, PKI-free) \u2014 arguably the canonical demonstrator of 'use everyone else's hardware -> metropolis' at the social layer. Layer tagged 'social'; it doubles as a network/substrate demonstrator. Recommend NOT treating as a prunable tail repo.",
+      "notes": "CORRECTION to the 'non-spine tail / not load-bearing' premise: this repo IS load-bearing on two counts. (1) It owns a canonical spec \u2014 EGG_SPEC.md is the canonical-URL home of the .egg container format used estate-wide (RAPP Zoo .egg seeds, awakening.rappterbook.egg, the egg packer/hatcher contract). (2) It is the reference implementation of the named 'rappterbook pattern' (GitHub-as-substrate, append-only events -> materialized views) that rapp-frame-net's rapp-frame/2.0 explicitly cites as proven-live prior art. It is also the purest concrete proof of the MASTER_PLAN north star (GitHub raw CDN + Issues-mailbox + PR-consent + Pages-edge + sha256/collaborator trust, PKI-free) \u2014 arguably the canonical demonstrator of 'use everyone else's hardware -> metropolis' at the social layer. Layer tagged 'social'; it doubles as a network/substrate demonstrator. Recommend NOT treating as a prunable tail repo.",
       "deep_verified": true,
       "recheck": {
         "confirmed": true,
@@ -2454,7 +2457,7 @@
       "shipped_evidence": "Live and maintained: separate state repo kody-w/rappterbook-v2-state exists with append-only event log + views; GitHub Actions workflows deploy-pages.yml + frame-tick.yml; docs/index.html + health.html frontend live on Pages; full Python-stdlib engine (orchestrator, frame_runner, state_client, llm, agent_harness, 4 action handlers) with a complete tests/ suite (10 test files); skill.json API contract published; recent commits (Opus 4.6) actively refining v1->v2 post rendering and zero-API-call static serving.",
       "gaps": [
         "Owns its own ad-hoc event schema / skill.json contract rather than referencing a canonical rapp-* spec \u2014 not registered in the spine corpus (rapp_docs/rapp-god) as far as verifiable",
-        "Conceptually the 'rappterbook pattern' is cited by rapp-frame-net (rapp-frame/1.0) but that is an independent reimplementation; no code import/dependency links the two",
+        "Conceptually the 'rappterbook pattern' is cited by rapp-frame-net (rapp-frame/2.0) but that is an independent reimplementation; no code import/dependency links the two",
         "rappid eternity (sha256 content-address) identity canon is not used \u2014 agents keyed by ad-hoc agent_id, not rappid:@owner/slug:<hash>",
         "Trust model is GitHub-collaborator/Issues-PR implicitly; no explicit collaborator+sha256 verification of contributed events documented"
       ],
@@ -2830,6 +2833,42 @@
       "load_bearing": true,
       "deep_verified": true,
       "load_bearing_note": "added R4: was a foundation pillar omitted from the map"
+    },
+    {
+      "repo": "kody-w/rapp-eternity",
+      "role": "The SOLE rappid identity standard (PKI-free sha256 content-address; keypair optional). The single canonical home.",
+      "layer": "kernel",
+      "status": "shipped-load-bearing",
+      "specs": [
+        "rapp-eternity/1.0"
+      ],
+      "depends_on": [
+        "kody-w/rapp-installer"
+      ],
+      "shipped_evidence": "SPEC.md live; registered kernel-layer home.",
+      "gaps": [],
+      "canon_alignment": "core-canon",
+      "load_bearing": true,
+      "deep_verified": true,
+      "load_bearing_note": "added R5"
+    },
+    {
+      "repo": "kody-w/rapp-distro",
+      "role": "The RAPP distro standard \u2014 a distro = unmodified pinned grail kernel + userland; freeze CI proves it.",
+      "layer": "kernel",
+      "status": "shipped-load-bearing",
+      "specs": [
+        "rapp-distro/1.0"
+      ],
+      "depends_on": [
+        "kody-w/rapp-installer"
+      ],
+      "shipped_evidence": "SPEC.md live; registered kernel-layer home.",
+      "gaps": [],
+      "canon_alignment": "core-canon",
+      "load_bearing": true,
+      "deep_verified": true,
+      "load_bearing_note": "added R5"
     }
   ]
 }
