@@ -2,7 +2,7 @@
   "schema": "rapp-estate-map/1.0",
   "built_at": "2026-06-28T20:21:23Z",
   "purpose": "Repo-level map of the whole rapp estate \u2014 every rapp-named repo scanned then verifier-rechecked. Complements the per-file neuron mesh (neurons.json). Load this first to avoid operating on half the estate.",
-  "count": 86,
+  "count": 87,
   "estate_summary": "The rapp estate is one coherent organism with a small, genuinely load-bearing spine and a large penumbra of instances, spec-stubs, satellites, and decaying experiments. The spine is real and shipped: a single Tier-1 on-ramp (rapp-installer, the grail, VERSION 0.6.1 \u2014 verified locally; this working dir IS that checkout), a canonical monorepo that owns the MASTER_PLAN ground truth (RAPP), a four-leg drift-governance system (rapp-god owner + rapp-map index + RAPP-Bible human render + the rapp_agent verify leg), an identity/standard family (rapp-moment standard + rapp-hologram reference engine + rapp-egg-hub distribution + rappid eternity), a crypto+network mesh (rapp-sealed + rapp-neighborhood-protocol + vbrainstem/kite/doorman), and a social leg (rapp-commons + rapp-god-forum) plus Tier-2/3 runtime ports (CommunityRAPP, rapp-dataverse, rapp-static-apis) and an MCP on-ramp (rapp-mcp). All of it sits on pure GitHub substrate (raw CDN, Pages edge, gh-collaborator trust, sha256 content-addressing), is honestly PKI-free at the root (the eternity keypair is opt-in sovereignty, correctly never flagged as mandatory PKI), and rejects a central server/registry/broker \u2014 faithful to the north star \"use everyone else's hardware to run the network.\"\n\nThe honest tension is that the estate's framing consistently outruns its shipped substrate, and drift is the dominant systemic risk [reframed: see distro note]. Verification confirmed: the RAPP super-repo's kernel/installer/seed-agent mirror is systematically STALE versus the grail (rapp-god surfaces a 12-part drift cluster \u2014 brainstem.py, VERSION, both memory agents, install scripts, CONSTITUTION, NEIGHBORHOOD_PROTOCOL); the ecosystem-spec.json machine spec is mirrored in 4-5 places including the kernel repo's own specs/; at least five divergent reimplementations of the /chat contract coexist with no mechanical parity check; the entire social layer secretly leans on ONE shared Azure host (rapp-resident-kw165843), which cold-started/was briefly unreachable mid-verification; rappid form sprawl spans six legacy emission shapes; the dev\u2192canary\u2192prod release pipeline is BROKEN (red cron, not shelved) with prod advancing straight from the grail; and the rappbook-federation demo family is decaying into silent 404 link-rot \u2014 a live counter-example to the \"graceful degrade\" hero claim. The spine is solid and well-mapped; the periphery is where half-pictures live. NOTE (kernel/distro model, rapp-distro/1.0): kody-w/RAPP is a clean DISTRO that PINS kernel v0.6.0 byte-identical to the grail tag (now declared via RAPP/KERNEL_PIN.json + a freeze CI); the grail (rapp-installer) ships 0.6.1. The version gap is an INTENTIONAL LTS pin, not silent drift \u2014 distros bump deliberately. Spec-unification across the spine is separately zero-drift (verify_spine I1-I5).",
   "the_real_stack": [
     "kody-w/rapp-installer \u2014 THE grail / single public on-ramp (curl one-liner, VERSION 0.6.1 verified locally; this working dir is its checkout; main is production)",
@@ -483,7 +483,8 @@
         "missed": "Slight under-statement of how far it forks: it is the ONLY satellite that both publishes to a public npm registry AND ships its own agent registry (rappterhub) \u2014 a genuine parallel ecosystem, not just a naming rebrand. It is fully outside the rapp-god/rapp-map/RAPP-Bible drift governance, so it can never be reconciled by ecosystem-sync; treat strictly as map-context, not a leg to align."
       },
       "deep_verified": true,
-      "load_bearing": true
+      "load_bearing": false,
+      "load_bearing_note": "corrected R4: canon_alignment=tangent \u2014 not a load-bearing canon repo"
     },
     {
       "repo": "kody-w/rapp-carts",
@@ -2808,6 +2809,27 @@
         "correction": "none. Verified at the line level: src/autopilot.py hardcodes repositoryId 'R_kgDORPJAUg' (line 104) and categoryId 'DIC_kwDORPJAUs4C0eFw' (line 105) via naive f-string interpolation into a gh graphql createDiscussion mutation (injection/escaping risk confirmed); harvest is a print stub 'Build complete. Check target repo for deliverables.' (line 189). One-shot, pushed only 2026-03-16T19:05:31Z.",
         "missed": "none."
       }
+    },
+    {
+      "repo": "kody-w/leviathan",
+      "role": "The Leviathan Protocol \u2014 one mind drives many no-LLM bodies; a locked Foundation pillar (leviathan SPEC v1.0). Canonical fleet WIRE is rapp-fleet-chat/1.0 over /chat (the /api/agent route is the Phase-1 RCE).",
+      "layer": "leviathan",
+      "status": "shipped-load-bearing",
+      "specs": [
+        "leviathan/1.0",
+        "rapp-fleet-chat/1.0"
+      ],
+      "depends_on": [
+        "kody-w/rapp-installer"
+      ],
+      "shipped_evidence": "Foundation pillar; controller leviathan.py + MCP + FLEET_CHAT.md spec.",
+      "gaps": [
+        "fleet_chat_agent + signed-/chat transport are to-build"
+      ],
+      "canon_alignment": "core-canon",
+      "load_bearing": true,
+      "deep_verified": true,
+      "load_bearing_note": "added R4: was a foundation pillar omitted from the map"
     }
   ]
 }
