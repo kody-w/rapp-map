@@ -585,7 +585,7 @@
     {
       "repo": "kody-w/rapp-installer",
       "role": "The single public entry point / distribution surface for RAPP: hosts the install one-liners and GitHub Pages landing site, and vendors a full copy of the brainstem server plus all three deployment tiers.",
-      "layer": "distribution",
+      "layer": "kernel",
       "status": "shipped-load-bearing",
       "specs": [],
       "depends_on": [
@@ -1363,7 +1363,7 @@
     {
       "repo": "kody-w/RAPP",
       "role": "The canonical public RAPP monorepo + live GitHub Pages site (kody-w.github.io/RAPP): houses the brainstem kernel, all canon law/specs, the installer one-liner, the public \"RAPP Cave\" neighborhood, and the Obsidian vault. This is the repo that owns the MASTER_PLAN ground truth.",
-      "layer": "kernel",
+      "layer": "distribution",
       "status": "shipped-load-bearing",
       "specs": [
         "RAPP-v1 single-file-agent-contract SPEC.md (frozen)",
@@ -2849,8 +2849,9 @@
       "gaps": [],
       "canon_alignment": "core-canon",
       "load_bearing": true,
-      "deep_verified": true,
-      "load_bearing_note": "added R5"
+      "deep_verified": false,
+      "load_bearing_note": "added R5",
+      "verify_note": "added R5 by reference; full deep-scan pending"
     },
     {
       "repo": "kody-w/rapp-distro",
@@ -2867,8 +2868,9 @@
       "gaps": [],
       "canon_alignment": "core-canon",
       "load_bearing": true,
-      "deep_verified": true,
-      "load_bearing_note": "added R5"
+      "deep_verified": false,
+      "load_bearing_note": "added R5",
+      "verify_note": "added R5 by reference; full deep-scan pending"
     }
   ]
 }
