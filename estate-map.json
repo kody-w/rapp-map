@@ -141,7 +141,8 @@
     "KNOWN-OPEN: kody-w/rapp-claude-skills hardcodes one personal Azure relay vs the decentralization north star; should resolve via GitHub-substrate discovery / swappable relay list. [CLOSED 2026-06-28: relay now swappable via RAPP_RELAY_URL.]",
     "KNOWN-OPEN (Phase-1): the kernel binds 0.0.0.0 + exposes unauth /api/agent (RCE) \u2014 roadmapped, experimental/secure-network-assumed.",
     "KNOWN-OPENS DISPOSITION (2026-06-28): CLOSED \u2014 T2 function_app envelope (kernel-aligned), Azure relay (swappable RAPP_RELAY_URL), dev/canary channels (deprecated->grail). LOCKED BY OPERATOR (2026-06-28 \u2014 the grail stays as-is; DO NOT TOUCH; deliberate decision, not drift): (1) grail tag-hygiene \u2014 main is rolling ahead of the brainstem-v0.6.1 release tag (cut the next brainstem-vX.Y.Z to settle); (2) Phase-1 kernel hardening \u2014 0.0.0.0 default bind + the unauth /api/agent RCE: roadmapped, the canonical fix is rapp-fleet-chat/1.0 (signed twin-chat over /chat) + a loopback-default bind; experimental/secure-network until then. These two are the ONLY items needing a grail (kernel) change. The grail is locked where it's at for now (operator's explicit call); these are roadmapped, not oversights.",
-    "KNOWN-OPEN: rapp-god (the drift observatory) lags \u2014 it labels the kernel v0.6.0 and its registry needs a rebuild to track 0.6.1 + the rapp-frame/2.0/rapp-hydra pillars. That repo's own rebuild, not spine drift."
+    "KNOWN-OPEN: rapp-god (the drift observatory) lags \u2014 it labels the kernel v0.6.0 and its registry needs a rebuild to track 0.6.1 + the rapp-frame/2.0/rapp-hydra pillars. That repo's own rebuild, not spine drift.",
+    "KNOWN-OPEN: rapp-commons PROTOCOL.md still mints key-derived participant identities; should defer to rapp-eternity/1.0 content-address (add to eternity's remediation list). External repo."
   ],
   "archival_or_consolidation_candidates": [
     "kody-w/PowerApps \u2014 2020 dead artifact, no RAPP relation beyond shared author; isArchived flag is actually false but it is functionally dead. Set the GitHub archive flag; treat as out-of-estate.",
@@ -1569,7 +1570,7 @@
     },
     {
       "repo": "kody-w/rapp-spine",
-      "role": "A situational router + foundation registry over the whole ~60-repo RAPP stack: maps a concrete situation -> one of six ordered layers (map/runtime/distribution/identity/network/leviathan) -> the protocol(s) that govern it, naming collisions/gaps so a crawler picks the right spec not the nearer one.",
+      "role": "The spine \u2014 maps a situation -> one of 7 ordered layers (kernel/map/runtime/distribution/identity/network/leviathan); the kernel/governance vertebra leads.",
       "layer": "map-drift",
       "status": "active",
       "specs": [
@@ -1587,7 +1588,7 @@
         "kody-w/rapp-frame-net",
         "kody-w/rapp-roadmap"
       ],
-      "shipped_evidence": "11-file repo, all present and coherent: registry.json (generated 2026-06-28) with full 6-layer column + ~37-row situational router + 28-row vertebra registry + collisions/gaps; index.json (callable surface rapp-index/1.0); foundation.json (7 locked content-addressed pillars, 5 of 7 with real sha256 + a 5-doc law section); llms.txt; SPINE.md/CRAWL.md/FOUNDATION.md prose; crawl.py deterministic helper (python crawl.py \"<situation>\", --collisions, --remote). README documents three crawl modes. MIT licensed.",
+      "shipped_evidence": "registry.json: 7-layer column + 29-row router + 57-row vertebra registry; foundation.json: 7 content-addressed pillars (all sha256-locked) + the kernel/distro model.",
       "gaps": [
         "Does NOT define new protocol behavior \u2014 it is an index; value depends entirely on staying current with the maps it crawls (rapp-map/rapp-god/Bible/docs), so it can itself drift",
         "Two foundation.json pillar shas are null (rapp-agent/1.0 README, kernel SPEC.md) \u2014 'scanned live by rapp-god' but not locked here",
