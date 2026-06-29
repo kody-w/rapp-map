@@ -138,8 +138,9 @@
     "'Live/autonomous' surfaces outrun substrate reality: rapp-dataverse status.json generated ONCE ~21 min after repo creation and never refreshed; rapp-commons events/ has ZERO federated events (real activity only in games/); rapp-frame-net is one tick / one demo edge created the same day.",
     "KNOWN-OPEN (Phase-0): grail tag hygiene \u2014 kody-w/rapp-installer tags are mixed (v0.6.0, brainstem-v0.6.1) and brainstem-v0.6.1 != main; standardize to one immutable brainstem-vX.Y.Z scheme matching main.",
     "KNOWN-OPEN: rapp-god status labels still read v0.6.0 for the kernel group; refresh to 0.6.1 (a rapp-god rebuild, that repo's concern).",
-    "KNOWN-OPEN: kody-w/rapp-claude-skills hardcodes one personal Azure relay vs the decentralization north star; should resolve via GitHub-substrate discovery / swappable relay list.",
-    "KNOWN-OPEN (Phase-1): the kernel binds 0.0.0.0 + exposes unauth /api/agent (RCE) \u2014 roadmapped, experimental/secure-network-assumed."
+    "KNOWN-OPEN: kody-w/rapp-claude-skills hardcodes one personal Azure relay vs the decentralization north star; should resolve via GitHub-substrate discovery / swappable relay list. [CLOSED 2026-06-28: relay now swappable via RAPP_RELAY_URL.]",
+    "KNOWN-OPEN (Phase-1): the kernel binds 0.0.0.0 + exposes unauth /api/agent (RCE) \u2014 roadmapped, experimental/secure-network-assumed.",
+    "KNOWN-OPENS DISPOSITION (2026-06-28): CLOSED \u2014 T2 function_app envelope (kernel-aligned), Azure relay (swappable RAPP_RELAY_URL), dev/canary channels (deprecated->grail). REMAINING (grail, by operator's call): (1) grail tag-hygiene \u2014 main is rolling ahead of the brainstem-v0.6.1 release tag (cut the next brainstem-vX.Y.Z to settle); (2) Phase-1 kernel hardening \u2014 0.0.0.0 default bind + the unauth /api/agent RCE: roadmapped, the canonical fix is rapp-fleet-chat/1.0 (signed twin-chat over /chat) + a loopback-default bind; experimental/secure-network until then. These two are the ONLY items needing a grail (kernel) change."
   ],
   "archival_or_consolidation_candidates": [
     "kody-w/PowerApps \u2014 2020 dead artifact, no RAPP relation beyond shared author; isArchived flag is actually false but it is functionally dead. Set the GitHub archive flag; treat as out-of-estate.",
