@@ -1,11 +1,11 @@
 # The RAPP Ecosystem — Full End-to-End Spec
 
-> **Schema:** `rapp-ecosystem-spec/1.0` · **Version:** `1.0.0` · **Canonical source:** `kody-w/RAPP`
+> **Schema:** `rapp-ecosystem-spec/1.0` · **Version:** `1.1.0` · **Canonical source:** `kody-w/RAPP`
 >
 > **This document is the human render of a machine spec.** The source of truth is [`specs/ecosystem-spec.json`](./ecosystem-spec.json) (`rapp-ecosystem-spec/1.0`). This Markdown is published **byte-identical** to two independent grail repos —
 > [`kody-w/rapp-god`](https://raw.githubusercontent.com/kody-w/rapp-god/main/api/v1/ecosystem-spec.json) and
 > [`kody-w/rapp-map`](https://raw.githubusercontent.com/kody-w/rapp-map/main/ecosystem-spec.json) — and rendered for a non-technical reader at the [RAPP-Bible](https://kody-w.github.io/RAPP-Bible/#specs).
-> Divergence between the two mirrors **is** drift; the agent's `verify` action sha256-compares them. This doc is **version-pinned to the JSON** (`1.0.0`) — if the JSON bumps, this bumps with it, in the same commit.
+> Divergence between the two mirrors **is** drift; the agent's `verify` action sha256-compares them. This doc is **version-pinned to the JSON** (`1.1.0`) — if the JSON bumps, this bumps with it, in the same commit.
 >
 > **Authority order** (when docs disagree, the higher wins): `MASTER_PLAN.md` → `CONSTITUTION.md` → spec-docs (`SPEC`/`skill`/`ECOSYSTEM`/`NEIGHBORHOOD_PROTOCOL`/`OSI`/`ESTATE_SPEC`) → vault (`Decisions`/`Architecture`) → code. This document is a spec-doc; it does not outrank the plan or the law.
 
@@ -300,7 +300,7 @@ The end-to-end natural-language flows the one agent is designed to satisfy:
 
 The full registry is ~80 schemas (`rapp-*/N.M` + `brainstem-egg/*`). The canonical, complete list lives in **[`ECOSYSTEM_MAP.md` §5](https://github.com/kody-w/RAPP/blob/main/ECOSYSTEM_MAP.md)** — search there before defining a new one (`ANTIPATTERNS` §3: bump versions cleanly, never add shims). Summarized by family:
 
-- **Identity** — `rapp-rappid/2.0` (birth certificate + kernel + bonds), `rapp-door/1.0` (derived door object), `rapp-estate/1.1` (local-first door catalog), `rapp-facets/1.0` (per-door capability declaration).
+- **Identity** — `rapp-rappid/2.0` (birth certificate + kernel + bonds), `rapp-eternity/1.0` (the PKI-free content-address identity authority), `rapp-door/1.0` (derived door object), `rapp-estate/1.1` (local-first door catalog), `rapp-facets/1.0` (per-door capability declaration).
 - **Cartridges (the `.egg` family)** — `brainstem-egg/2.2-organism`, `2.2-rapplication`, `2.3-session`, `2.3-neighborhood` *(planned)*, `2.3-estate` *(planned)*, `2.3-cubby`. One sneakernet primitive, one Pokédex shelf.
 - **Neighborhoods** — `rapp-neighborhood/1.0`, `rapp-neighborhood-members/1.0`, `rapp-rar-index/1.0` (the required per-seed participation kit).
 - **Private cubby** — `rapp-cubby/1.0`, `rapp-super-rar/1.0`, `rapp-payphone-dial/1.0`.
@@ -318,12 +318,12 @@ The ecosystem is split across many small public repos; each houses one part. `ko
 
 | Cluster | Repos |
 |---|---|
-| **Kernel & install** | `RAPP` (species root: kernel + specs), `rapp_kernel` (frozen DNA), `rapp-installer` (curl\|bash front door), `RAPP_Desktop`, `rapp-vscode-extension` |
-| **Identity & registry** | `rapp-god` (registry of every part + version; drift observatory; hosts this spec), `rapp-map` (which repo houses which part; hosts this spec; the neuron mesh), `RAR` (single-file agent registry), `rapp-static-apis` |
+| **Kernel & install** | `RAPP` (species root: kernel + specs + curl\|bash front door), `rapp_kernel` (frozen DNA), `rapp-installer` (installer; canonical front door now in RAPP), `RAPP_Desktop`, `rapp-vscode-extension` |
+| **Identity & registry** | `rapp-eternity` (identity authority — the sole identity standard, schema `rapp-eternity/1.0`; `rapp-rappid-spec/2.0` defers to it), `rapp-estate` (estate spec/template — the Constitutionally-mandated `<handle>/rapp-estate` public + `<handle>/rapp-estate-private` family, Art. XLVIII), `rapp-god` (registry of every part + version; drift observatory; hosts this spec), `rapp-map` (which repo houses which part; hosts this spec; the neuron mesh), `RAR` (single-file agent registry), `rapp-static-apis` |
 | **Stores & catalogs** | `RAPP_Store` (rapplications), `RAPP_Sense_Store` (senses), `rapp-egg-hub` (eggs) |
 | **Run a brainstem** | `vbrainstem` (browser Pyodide runtime), `rapp-brainstem-sdk` (headless `/chat`) |
 | **Channels & trust** | `rapp-sealed` (§8 codec), `rapp-kite` (operate kited twins), `rapp-kited-twin`, `rapp-doorman` (sealed-door), `rapp-neighborhood-protocol` (wire spec) |
-| **Front doors & neighborhoods** | `rapp-vneighborhood` (template), `rapp-commons` (global town square), `rapp-god-forum`, `rapp-resident` (cloud relay) |
+| **Front doors & neighborhoods** | `rapp-vneighborhood` (template), `rapp-commons` (global town square), `rapp-god-forum`, `rapp-resident` (cloud relay), `RAPP-Network` (project-twin neighborhood layer) |
 | **The agent-built web** | `rionet` (rapp.robots.txt → rappbot → RIO), `rio` (the browser, OSI L7) |
 | **MCP & cartridges** | `rapp-mcp` (MCP gateway), `racon` (experience cartridges), `rapp-carts` (cartridge spec) |
 | **Memory & social** | `CommunityRAPP` (hippocampus), `rappterbook` (social net for agents) |
@@ -360,4 +360,4 @@ The discipline is the point: this document, the machine JSON, the two mirror rep
 
 ---
 
-*This document is the human render of `specs/ecosystem-spec.json` (`rapp-ecosystem-spec/1.0`, version `1.0.0`). Published byte-identical to `kody-w/rapp-god` and `kody-w/rapp-map`; rendered for humans at the RAPP-Bible. Generated from the swarm-verified coverage audit (`verify-god-agent-coverage`) + `ECOSYSTEM_MAP.md` + `ECOSYSTEM.md` + `OSI.md` + the agent's embedded `ECOSYSTEM_PARTS`. To regenerate, summon the `ecosystem-sync` swarm.*
+*This document is the human render of `specs/ecosystem-spec.json` (`rapp-ecosystem-spec/1.0`, version `1.1.0`). Published byte-identical to `kody-w/rapp-god` and `kody-w/rapp-map`; rendered for humans at the RAPP-Bible. Generated from the swarm-verified coverage audit (`verify-god-agent-coverage`) + `ECOSYSTEM_MAP.md` + `ECOSYSTEM.md` + `OSI.md` + the agent's embedded `ECOSYSTEM_PARTS`. To regenerate, summon the `ecosystem-sync` swarm.*
