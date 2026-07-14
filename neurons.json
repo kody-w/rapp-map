@@ -18634,9 +18634,10 @@
       ],
       "canonical_phrases": [
         "A digital twin is a portable digital organism with identity (rappid), voice (soul.md), memory (.brainstem_data/), lineage (parent_rappid), body (agents/), cartridge (.egg), and share artifact (.html)",
-        "The rappid is no longer a UUIDv4 \u2014 it is a self-verifying rappid:<birth-slug>:<64hex> string derived by SHA-256 from a private germline key",
-        "The lineage_key is the private germline \u2014 the secret \u2014 and a leaked key forges the entire lineage",
-        "v2.0 is the identity upgrade: the rappid string is frozen forever (rappid:<birth-slug>:<64hex>, no version tag, ever); the rappid.json record is versionless and additive",
+        "The canonical rappid is a PKI-free SHA-256 content-address; a valid rappid requires NO key",
+        "The canonical Eternity form is rappid:@<owner>/<slug>:<64hex>; the string is NEVER re-versioned",
+        "The lineage_key is an OPTIONAL private germline seed for bloodline bookkeeping, never a required ownership or identity key",
+        "The rappid.json record is versionless and additive; new needs never create a new identity string",
         "A twin's rappid is minted exactly once at first hatch and never regenerated \u2014 it survives substrate hops, kernel updates, ownership transfers, and decades of egg roundtrips",
         "The hash is authoritative; the slug is descriptive \u2014 when they disagree, the hash wins and the record is malformed",
         "NEVER put a version tag inside the rappid string \u2014 there is no rappid:v4:\u2026 \u2014 all new needs go into the rappid.json RECORD as additive optional fields",
@@ -18647,7 +18648,9 @@
         "Producers converge on one canonical form; consumers tolerate every form, forever; the hash is identity \u2014 that is how the ecosystem grows without becoming a mess"
       ],
       "drift_watch": [
-        "Rappid format reverts to versioned string (v3, v4, etc.) or drops birth-slug \u2014 canonical form MUST remain rappid:<birth-slug>:<64hex>",
+        "The Eternity identity is re-versioned or emitted outside rappid:@<owner>/<slug>:<64hex> \u2014 the canonical string is never re-versioned",
+        "Identity is described as requiring a key or as derived from a private germline key \u2014 the canonical rappid is PKI-free and requires NO key",
+        "Canonical identity anchors diverge across repos kody-w/rapp-egg-hub, kody-w/rapp-eternity, and kody-w/rappterbox",
         "Lineage_key is committed to repo or embedded in egg/manifest/HTML \u2014 highest-severity violation",
         "Identity block dropped from soul.md or hard rule on impersonation removed/weakened",
         "Schema version strings in declares (rapp-rappid-spec, brainstem-egg, rapp-egg-hub-entry, etc.) increment without additive record design maintained",
