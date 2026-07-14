@@ -1,0 +1,4 @@
+{
+  "$comment": "Waiver entry shape: {id, case_or_finding, why_intentional, approved_by, date, expires?}. case_or_finding must be an exact case or finding id. A sweep passes only with zero unexplained drift: every finding is fixed or covered by an active waiver.",
+  "waivers": []
+}
