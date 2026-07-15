@@ -8,9 +8,12 @@ Use Node 20 or newer. There are no package or runtime dependencies.
 
 ```sh
 node conformance/run-conformance.mjs
+node conformance/waiver-freshness.mjs
 ```
 
 The runner loads `golden-cases.json` and `waivers.json`, executes the class checker for every mechanical fixture, and compares the result with `expected_verdict`. It exits non-zero for malformed input or any mechanical mismatch. A judgment fixture prints `JUDGE-REQUIRED` and the exact question; judgment items do not change the mechanical exit code.
+
+The waiver-freshness guard validates the waiver ledger, fetches every active waiver's pinned canon URL, and requires both the exact passage and its SHA-256 to remain unchanged. Expired waivers are reported and skipped. A moved or edited canon passage makes the waiver stale and reopens its finding.
 
 `DRIFT` in a golden fixture is expected test data. It proves the checker detects that class; it is not a live unexplained finding. `CLEAN` proves the checker recognizes a conforming or explicitly governed condition. `WAIVED` requires an active exact-id entry in `waivers.json`.
 
@@ -43,4 +46,4 @@ Add one object to `golden-cases.json` with a unique `id`, a registered `class`, 
 
 Use `fixture.mode: "judgment"` only when the ruling cannot be reduced to a deterministic check, and include one precise `review_question`. For a new drift class, add its checker and class name to `run-conformance.mjs`. Run the suite before accepting the case.
 
-Waivers have the shape documented by the `$comment` in `waivers.json`: `id`, `case_or_finding`, `why_intentional`, `approved_by`, `date`, and optional `expires`, with dates in `YYYY-MM-DD`.
+Waivers have the shape documented by the `$comment` in `waivers.json`: `id`, `case_or_finding`, `why_intentional`, `approved_by`, `date`, optional `expires`, `canon_url`, `passage`, and `passage_sha256`, with dates in `YYYY-MM-DD` and SHA-256 pins as 64 lowercase hex characters.

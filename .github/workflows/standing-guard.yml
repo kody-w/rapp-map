@@ -1,0 +1,72 @@
+name: Standing guard
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: standing-guard
+  cancel-in-progress: false
+
+jobs:
+  standing-guard:
+    name: Mechanical drift guard
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check drift triangle
+        id: triangle
+        continue-on-error: true
+        run: node .github/scripts/standing-guard.mjs triangle
+
+      - name: Check RAPP-Bible pin
+        id: bible
+        continue-on-error: true
+        run: node .github/scripts/standing-guard.mjs bible
+
+      - name: Run golden conformance
+        id: conformance
+        continue-on-error: true
+        run: node conformance/run-conformance.mjs
+
+      - name: Check waiver freshness
+        id: waiver_freshness
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node conformance/waiver-freshness.mjs
+
+      - name: Check repository liveness
+        id: liveness
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node .github/scripts/standing-guard.mjs liveness
+
+      - name: File or update drift issues
+        if: ${{ always() && (steps.triangle.outcome != 'success' || steps.bible.outcome != 'success' || steps.conformance.outcome != 'success' || steps.waiver_freshness.outcome != 'success' || steps.liveness.outcome != 'success') }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TRIANGLE_OUTCOME: ${{ steps.triangle.outcome }}
+          BIBLE_OUTCOME: ${{ steps.bible.outcome }}
+          CONFORMANCE_OUTCOME: ${{ steps.conformance.outcome }}
+          WAIVER_FRESHNESS_OUTCOME: ${{ steps.waiver_freshness.outcome }}
+          LIVENESS_OUTCOME: ${{ steps.liveness.outcome }}
+        run: node .github/scripts/standing-guard.mjs report
