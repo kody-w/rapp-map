@@ -1,4 +1,37 @@
 {
   "$comment": "Waiver entry shape: {id, case_or_finding, why_intentional, approved_by, date, expires?}. case_or_finding must be an exact case or finding id. A sweep passes only with zero unexplained drift: every finding is fixed or covered by an active waiver.",
-  "waivers": []
+  "waivers": [
+    {
+      "id": "waiver-r3-01",
+      "case_or_finding": "R3-2026-07-14/RAPP-specs-SPEC-protocol-version-vs-articles",
+      "why_intentional": "specs/SPEC.md cites Constitution Arts. XLVII-XLVIII while the schema string stays rapp-protocol/1.0. Adjudicated: both articles are policy-only (no central registry; no PII by default) and carry no normative field or wire change, so no version bump is due. 1.0 remains correct.",
+      "approved_by": "Fable 5 adjudication, session authorized by Kody Wildfeuer",
+      "date": "2026-07-14",
+      "expires": "2027-01-14"
+    },
+    {
+      "id": "waiver-r3-02",
+      "case_or_finding": "R3-2026-07-14/RAPP-ECOSYSTEM-identity-diagram-uuid-lag",
+      "why_intentional": "ECOSYSTEM.md section-3 diagram root and schema examples still show the pre-ratification bare-UUID form. Presentation lag, explicitly covered by the canon clause that pre-ratification rapp-rappid/1.1 bare-UUID seeds remain valid (UUID hex, dashes stripped, IS the hash). Prose cites Art. XXXIV.1 correctly. Cleanup optional, not drift.",
+      "approved_by": "Fable 5 adjudication, session authorized by Kody Wildfeuer",
+      "date": "2026-07-14",
+      "expires": "2027-01-14"
+    },
+    {
+      "id": "waiver-r3-03",
+      "case_or_finding": "R3-2026-07-14/heimdall-rappid-v2-schema-emit",
+      "why_intentional": "kody-w/heimdall rappid.json is a canonicalized v1-to-v2 migration (rappid hex is the exact nibble sequence of _migrated_from UUID; identity preserved). Legacy forms are read forever per the Eternity invariant; forward-normalization happens on next natural emit, never as a rewrite.",
+      "approved_by": "Fable 5 adjudication, session authorized by Kody Wildfeuer",
+      "date": "2026-07-14",
+      "expires": "2027-07-14"
+    },
+    {
+      "id": "waiver-r3-04",
+      "case_or_finding": "R3-2026-07-14/public-art-collective-frozen-bundle-rappid-v2-row",
+      "why_intentional": "Frozen planted spec bundle advertising the v2 identity format. Already tracked open-by-design (kody-w/public-art-collective issue #5) awaiting the documented specs-refresh ritual; refreshing it out-of-ritual would violate the planted-bundle discipline.",
+      "approved_by": "Fable 5 adjudication, session authorized by Kody Wildfeuer",
+      "date": "2026-07-14",
+      "expires": "2026-10-14"
+    }
+  ]
 }
