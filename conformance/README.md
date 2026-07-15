@@ -22,7 +22,7 @@ The runner loads `golden-cases.json` and `waivers.json`, executes the class chec
 4. Only after those results agree should the sweep inspect live ecosystem data.
 5. Apply the live gate: zero unexplained drift. Every live finding must be fixed or covered by an active waiver whose `case_or_finding` exactly matches the finding id.
 
-An expired waiver is inactive. The ledger intentionally starts empty.
+An expired waiver is inactive. The ledger started empty; entries are dated adjudications.
 
 ## Mechanical fixture contracts
 

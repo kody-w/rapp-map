@@ -82,7 +82,7 @@
       },
       "expected_verdict": "DRIFT",
       "expected_ruling": {
-        "citation": "OPUS.md Part II - identity assimilation ruling, superseding CONSTITUTION Article XXXIV.1",
+        "citation": "CONSTITUTION Art. XXXIV.1 / XXXVI.1 (the identity law is the authority); OPUS.md Part II records the rationale",
         "rationale": "sha256(owner/slug) is illegal because location is mutable; the identifier must derive from master_pubkey_SPKI or a stable UUID."
       }
     },
@@ -198,7 +198,7 @@
       },
       "expected_verdict": "DRIFT",
       "expected_ruling": {
-        "citation": "OPUS.md Part II - identity assimilation ruling, superseding CONSTITUTION Article XXXIV.1",
+        "citation": "CONSTITUTION Art. XXXIV.1 / XXXVI.1 (the identity law is the authority); OPUS.md Part II records the rationale",
         "rationale": "An address-derived digest is not a stable identity invariant and must be ruled drift."
       }
     },
