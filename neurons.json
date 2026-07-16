@@ -690,7 +690,7 @@
       "branch": "main",
       "surface": "kody-w/CommunityRAPP/azuredeploy.json",
       "kind": "spec",
-      "summary": "Azure Resource Manager deployment template (ARM) that provisions a RAPP (Rapid Agent Prototyping Platform) infrastructure on Azure Flex Consumption Functions, integrating Azure OpenAI, managed identity authentication, and Storage Account backend with comprehensive role-based access control.",
+      "summary": "Azure Resource Manager deployment template (ARM) that provisions a RAPP (Rapid Agent Prototype Platform) infrastructure on Azure Flex Consumption Functions, integrating Azure OpenAI, managed identity authentication, and Storage Account backend with comprehensive role-based access control.",
       "declares": [
         "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
         "contentVersion/1.0.0.0",
@@ -2752,7 +2752,7 @@
       ],
       "canonical_phrases": [
         "One repo. Every RAPP spec. Every entry point.",
-        "The canonical aggregation point for the RAPP (Rapid Agent Prototyping Platform) ecosystem.",
+        "The canonical aggregation point for the RAPP (Rapid Agent Prototype Platform) ecosystem.",
         "Land here, find the spec or the front door, follow the link to the canonical source.",
         "Two sources of truth: each canonical repo stays authoritative; the Bible aggregates and surfaces drift.",
         "RAPP is a portable, shareable, vibe-swarm building tool.",
@@ -3769,7 +3769,7 @@
         "rapp-static-mcp/1.0"
       ],
       "contracts": [
-        "Self-generated rappid (rappid:v3:<base64url(SHA-256(public_key))>) is the account \u2014 key possession is the sole authorization, no allowlist, no registration",
+        "Self-generated rappid (rappid:v3:<base64url(SHA-256(public_key))>) is the account \u2014 key possession is the sole authorization, no allowlist, no registration [legacy form: read-forever, never written]",
         "All events are signed rapp-commons-event/1.0 with ECDSA P-256 (or Ed25519 as optional alternative); signature verification is mandatory for hosts and readers",
         "Append-only event stream: (from, ts) is the universal key; no event mutations, no shared mutable state in body; timestamp is monotonically non-decreasing per from",
         "Hosting is by ephemeral kited vTwin: relays signed stream, has zero access to host device, passes well-known address 'rapp-commons-host' to next volunteer; cloud graduation is optional additive layer",
@@ -4501,7 +4501,7 @@
         "Pure transport at the surface: eight verbs (hatch, list, boot, chat, dispatch, job_status, await_job, stop) relay verbatim natural-language messages to twins; no templating, no workflow gating, no presumed schemas",
         "Offline-first, network-optional: identity via pure string derivation (uuid minted once, preserved on re-hatch); discovery via filesystem scan of ~/.rapp/twins/; inter-twin chat on 127.0.0.1 only; zero outbound HTTP from the agent itself",
         "Filesystem is source of truth per TWIN_LIFECYCLE_SPEC \u00a72: no parallel device-side registry; every fact reconstructable by walking ~/.rapp/twins/ and ~/.rapp/jobs/",
-        "Project twin kind='project' derived from git remote or operator rappid with 32-hex uuid; rappid format rappid:v2:project:@<owner>/<repo>:<32-hex>@github.com/<owner>/<repo>",
+        "Project twin kind='project' derived from git remote or operator rappid with 32-hex uuid; rappid format rappid:v2:project:@<owner>/<repo>:<32-hex>@github.com/<owner>/<repo> [legacy form: read-forever, never written]",
         "Manifest contract rapp-twin-manifest/1.0 required in every twin workspace with schema, rappid, hash, name, kind, port_hint, anchor_path, url, updated_at",
         "Two sources of truth: kody-w/RAPP (kernel, rappid format, ESTATE_SPEC, NEIGHBORHOOD_PROTOCOL, TWIN_LIFECYCLE_SPEC) and this repo (project-twin lifecycle, manifest, transport, dispatch/job state, canonical drop-in)",
         "Capability discovery via plain English chat: global LLM has NO twin registry; asks twin directly 'what can you do?'; twin replies based on loaded agents; new agents at runtime = global benefits automatically",
@@ -4521,7 +4521,7 @@
       ],
       "drift_watch": [
         "kind='project' not yet in frozen upstream ESTATE_SPEC valid-kinds list (should be added or adopt 'workspace'); scripts/cross_validate.py WARNS on this drift until resolved",
-        "rappid format structural shape constancy: ensure any upstream ESTATE_SPEC \u00a71 format change does not diverge from rapp-network/1.0 shape rappid:v2:project:@_/_:_@github.com/_/_",
+        "rappid format structural shape constancy: ensure any upstream ESTATE_SPEC \u00a71 format change does not diverge from rapp-network/1.0 shape rappid:v2:project:@_/_:_@github.com/_/_ [legacy form: read-forever, never written]",
         "Upstream references: TWIN_LIFECYCLE_SPEC.md \u00a72, ESTATE_SPEC.md \u00a71, NEIGHBORHOOD_PROTOCOL.md \u00a76, CONSTITUTION.md Article XXV, ECOSYSTEM.md federation framing \u2014 all must remain at pinned paths or cross_validate must be updated",
         "ProjectWorkspace agent contract rapp-twin-workspace/1.0 actions (scan_changes, find_docs, list_files, read_file, write_file): ensure project_twin_agent.py embedded source keeps parity with spec",
         "Port allocation algorithm _pick_port relies on manifest.json port_hint field existence and format; if manifest schema changes, algorithm may fail",
@@ -5701,7 +5701,7 @@
         "Headline demo or onboarding links rot or move",
         "Installation success metrics or minimum requirements change"
       ],
-      "summary": "Landing page for RAPP (Rapid Agent Prototyping Platform) \u2014 a three-tier stack deploying single-file Python agents from local Brainstem (GitHub Copilot, port 7071) to Azure Swarm to Microsoft Copilot Studio. Emphasizes portability, no API keys, and P2P collaboration via Neighborhood.ask protocol with QR/card-based sharing.",
+      "summary": "Landing page for RAPP (Rapid Agent Prototype Platform) \u2014 a three-tier stack deploying single-file Python agents from local Brainstem (GitHub Copilot, port 7071) to Azure Swarm to Microsoft Copilot Studio. Emphasizes portability, no API keys, and P2P collaboration via Neighborhood.ask protocol with QR/card-based sharing.",
       "versions": [
         "MSFTAIBASMultiAgentCopilot_1_0_0_5 (Copilot Studio bundle)"
       ],
@@ -6197,7 +6197,7 @@
       "contracts": [
         "chat.html is a redirect-only surface \u2014 it has merged into the grail brainstem (heimdall/index.html) per Art. XXXIV.5 portability (Constitution)",
         "localStorage vbs_rappid is the hand-off token \u2014 it caches the rappid from summon.html for cross-origin reuse and grail embodyment",
-        "The rappid regex /^rappid:v2:[^:]+:@([^/]+)\\/([^:]+):./ extracts owner and repo tuple to construct the grail seed parameter ?seed=<owner>/<repo>",
+        "The rappid regex /^rappid:v2:[^:]+:@([^/]+)\\/([^:]+):./ extracts owner and repo tuple to construct the grail seed parameter ?seed=<owner>/<repo> [legacy form: read-forever, never written]",
         "If vbs_rappid is present and matches rappid:v2 format, 600ms auto-redirect to https://kody-w.github.io/heimdall/?seed=<owner>/<repo>; else fallback to summon.html after 1200ms",
         "No twin embodied = bounce to summon portal (pages/summon.html) \u2014 never silent failure",
         "Page title states the transition: 'chat \u2192 grail brainstem'"
@@ -6284,7 +6284,7 @@
         "CONSTITUTION reference paths: Article I, Article II slots stability",
         "Frozen SPEC status: confirm v1 is still frozen and backwards-compatibility mandate holds"
       ],
-      "summary": "AGENTS.md is the executable codebase instruction guide for RAPP (Rapid Agent Prototyping Platform), restating the sacred single-file agent contract and three-tier architecture (brainstem/swarm/Copilot Studio) with mandatory portability across tiers and frozen v1 backwards-compatibility.",
+      "summary": "AGENTS.md is the executable codebase instruction guide for RAPP (Rapid Agent Prototype Platform), restating the sacred single-file agent contract and three-tier architecture (brainstem/swarm/Copilot Studio) with mandatory portability across tiers and frozen v1 backwards-compatibility.",
       "pattern": {
         "relevant": true,
         "covered": false,
@@ -8121,7 +8121,7 @@
         "Every tether-loaded agent is sourced from tether_requirements.agents[] URLs (Article XLVII fallback chain, no single source of truth)",
         "Operator identity = ECDSA P-256 keypair + rappid binding (localStorage STORAGE_KEY='rapp.commons.identity.v1')",
         "Events are ephemeral (WebRTC mesh lobby) XOR persistent (signed events in /events/ directory, federation roll-up every ~10 min)",
-        "Rappid v2 format: rappid:v2:<kind>:<namespace>:<hash>@<host>/<owner>/<repo> (exact parsing in parseNbhdCoords)",
+        "Rappid v2 format: rappid:v2:<kind>:<namespace>:<hash>@<host>/<owner>/<repo> (exact parsing in parseNbhdCoords) [legacy form: read-forever, never written]",
         "Operator rappid resolves to <handle>/twin front door; if no repo exists client-side mints deterministic default via operatorHash(handle)",
         "Private estate: <handle>/twin-private PRIVATE repo, hot-loadable agents, Article XLVIII convention",
         "Lobby topology: host=rapp-<rappid-hash:16>-host, guests=rapp-<rappid-hash:16>-<operator-hash:8> (star topology, host relays)",
@@ -8337,7 +8337,7 @@
         "article-xlvi, article-xlix (rappid implements claims)"
       ],
       "drift_watch": [
-        "rappid v2 format shifts (currently rappid:v2:cart:, rappid:v2:agent:)",
+        "rappid v2 format shifts (currently rappid:v2:cart:, rappid:v2:agent:) [legacy form: read-forever, never written]",
         "brainstem-egg schema version drift (currently 2.3-session; if reverts to 2.0 or 2.2)",
         "Pyodide agent URLs: canonical agents stay sourced from kody-w/RAPP@main/rapp_brainstem/agents/",
         "PeerJS/QRious CDN availability \u2014 critical for signaling + QR gen",
@@ -8368,14 +8368,14 @@
       ],
       "contracts": [
         "vbrainstem IS NOW a thin redirect to heimdall/?seed=owner/repo \u2014 the grail canonical browser brainstem",
-        "localStorage.vbs_rappid MUST be rappid:v2 format to auto-extract owner/repo and redirect; pattern is rappid:v2:[^:]+:@owner/repo:[\u2026]",
+        "localStorage.vbs_rappid MUST be rappid:v2 format to auto-extract owner/repo and redirect; pattern is rappid:v2:[^:]+:@owner/repo:[\u2026] [legacy form: read-forever, never written]",
         "If no valid v2 rappid in localStorage: redirect to summon.html (portal) to pick a twin",
         "If ?seed= param present in URL: pass it through to heimdall/?seed=... (allow direct embodiment)",
         "Auto-redirect delay: 700ms for localStorage-sourced flow, 600ms for URL param flow, 1500ms for summon fallback",
         "DO NOT duplicate vbrainstem \u2014 point all canonical vbrainstem URLs at heimdall instead"
       ],
       "drift_watch": [
-        "rappid v2 format changes (schema drift \u2014 pattern /^rappid:v2:[^:]+:@([^/]+)\\/([^:]+):/)",
+        "rappid v2 format changes (schema drift \u2014 pattern /^rappid:v2:[^:]+:@([^/]+)\\/([^:]+):/) [legacy form: read-forever, never written]",
         "heimdall URL (https://kody-w.github.io/heimdall/) \u2014 if canonical brainstem moves or URL structure changes",
         "localStorage key name vbs_rappid (key drift)",
         "summon.html path and availability (/RAPP/pages/summon.html)",
@@ -10679,7 +10679,7 @@
         "validateManifest() stops checking publisher @handle format or publisher mismatch warning logic inverts",
         "receiver workflow validation endpoint path or GitHub issue label scheme (approved/promoted/failed/pending-review) changes"
       ],
-      "summary": "HTML submission interface for RAPP Store (Rapid Agent Prototyping Platform catalog). Implements two submission modes: Bundle (zip upload) and Federation (public GitHub repo reference). Both validate manifest.json against rapp-application/1.0 schema and open [RAPP] issues on kody-w/RAPP_Store for receiver workflow validation. Requires GitHub OAuth or PAT authentication; stores token in browser localStorage. Enforces strict manifest structure (id, name, version, publisher, category, tags, agent/service, ui) and size constraints (5MB max for bundles).",
+      "summary": "HTML submission interface for RAPP Store (Rapid Agent Prototype Platform catalog). Implements two submission modes: Bundle (zip upload) and Federation (public GitHub repo reference). Both validate manifest.json against rapp-application/1.0 schema and open [RAPP] issues on kody-w/RAPP_Store for receiver workflow validation. Requires GitHub OAuth or PAT authentication; stores token in browser localStorage. Enforces strict manifest structure (id, name, version, publisher, category, tags, agent/service, ui) and size constraints (5MB max for bundles).",
       "pattern": {
         "relevant": true,
         "covered": true,
@@ -10820,7 +10820,7 @@
         "rapp_hatchery_agent.py"
       ],
       "canonical_phrases": [
-        "CommunityRAPP is the Azure Functions backend for the RAPP (Rapid Agent Prototyping Platform) ecosystem",
+        "CommunityRAPP is the Azure Functions backend for the RAPP (Rapid Agent Prototype Platform) ecosystem",
         "the thousand strangers test: if a thousand developers cloned this repo tomorrow, would this file help them \u2014 or confuse them?",
         "Start small, layer up when ready. The one-liner IS the onboarding.",
         "The brainstem stays clean. CommunityRAPP code and dependencies must never be injected into the brainstem at install time."
@@ -13079,7 +13079,7 @@
         "Each tier is self-contained; users advance when they choose to",
         "Do not push directly to main except via a merge at release time"
       ],
-      "summary": "RAPP Installer (aibast-agents-library) is the single entry point to the Rapid Agent Prototyping Platform \u2014 a three-tier progressive infrastructure (Brainstem local Flask server, Azure Spinal Cord, M365 Nervous System) with a foundational philosophy of \"engine, not experience.\" The brainstem server (~1100 lines, single-file, Python 3.11) provides agent discovery and orchestration via Copilot API, with priority-ordered auth (env token \u2192 .copilot_token \u2192 gh CLI \u2192 device code), import shims for CommunityRAPP compatibility, and special memory-agent handling; main branch is production and must always work, development happens on feature branches with release merges only.",
+      "summary": "RAPP Installer (aibast-agents-library) is the single entry point to the Rapid Agent Prototype Platform \u2014 a three-tier progressive infrastructure (Brainstem local Flask server, Azure Spinal Cord, M365 Nervous System) with a foundational philosophy of \"engine, not experience.\" The brainstem server (~1100 lines, single-file, Python 3.11) provides agent discovery and orchestration via Copilot API, with priority-ordered auth (env token \u2192 .copilot_token \u2192 gh CLI \u2192 device code), import shims for CommunityRAPP compatibility, and special memory-agent handling; main branch is production and must always work, development happens on feature branches with release merges only.",
       "pattern": {
         "relevant": true,
         "covered": true,
@@ -14575,7 +14575,7 @@
       ],
       "contracts": [
         "Rappids are permanent once minted\u2014never mutate post-planting; no kernel upgrade or re-graft re-mints.",
-        "Format is literal: rappid:v2:<kind>:@<owner>/<repo>:<32-hex>@github.com/<owner>/<repo>",
+        "Format is literal: rappid:v2:<kind>:@<owner>/<repo>:<32-hex>@github.com/<owner>/<repo> [legacy form: read-forever, never written]",
         "The 32-hex component is a UUID4 with dashes stripped, minted exactly once via uuid.uuid4().hex",
         "No two organisms share a rappid; collision probability is negligible.",
         "A neighborhood's parent_rappid chains lineage back to its ancestor (species root for many: @rapp/origin)",
@@ -15031,7 +15031,7 @@
         "schema rapp-vneighborhood version remains 1.0 \u2014 drift if bumped without front-door capability sync",
         "rapp-commons-event/1.0 event structure (from, pub, alg, ts, kind, body, sig fields) \u2014 drift if relay or signing code diverges",
         "PBKDF2 salt format (rapp-vneighborhood:channel) \u2014 drift if salt generation logic changes, breaking key derivation for existing neighborhoods",
-        "rappid:v3 address format (rappid:v3:<sha256-fingerprint-of-pubkey>) \u2014 drift if fingerprint algorithm or address scheme changes",
+        "rappid:v3 address format (rappid:v3:<sha256-fingerprint-of-pubkey>) \u2014 drift if fingerprint algorithm or address scheme changes [legacy form: read-forever, never written]",
         "Relay endpoint NH.addresses.cloud \u2014 drift if relay migrates, breaks communication, or returns non-sealed plaintext in body field",
         "Neighborhood.json loading from same origin \u2014 drift if neighborhood metadata format changes (especially kinds, rules, sealed flag)",
         "localStorage.setItem('rapp.vtwin') key name and JWK format \u2014 drift if identity persistence mechanism changes, orphans users",
@@ -15075,7 +15075,7 @@
         "Schema version rapp-commons-event must stay /1.0 \u2014 if relay enforces v2 or higher, events will reject",
         "PBKDF2 iterations must remain 100000 \u2014 if reduced for performance, key derivation weakens and old PINs may collide with new",
         "AES-GCM IV size must stay 12 bytes \u2014 crypto.subtle.encrypt enforces this, but if relay changes format, decryption fails",
-        "rappid format 'rappid:v3:<fp>' is canonical \u2014 if migrated to rappid:v4 elsewhere, this front door will mint incompatible identities",
+        "rappid format 'rappid:v3:<fp>' is canonical \u2014 if migrated to rappid:v4 elsewhere, this front door will mint incompatible identities [legacy form: read-forever, never written]",
         "Relay cloud address (https://rapp-resident-kw165843.azurewebsites.net/api) \u2014 if relay moves or shuts down, neighborhood becomes unreachable (no fallback discovery)",
         "neighborhood.json loading from relative path \u2014 if repo structure changes, the 'bones' (channel name, rules, kinds) fail to load silently",
         "The 'swarm-capable' claim references twin_chat_agent.py and egg/import convergence \u2014 if those agents drift in protocol support, offline/online reconvergence breaks"
@@ -17462,7 +17462,7 @@
         "A social network for agents. Stack-agnostic. Held up by whoever shows up.",
         "the key is the account",
         "you don't get let in, you let yourself in by playing by rules you can read",
-        "mint a rappid \u2014 keypair \u2192 rappid:v3:<fingerprint> (your username)"
+        "mint a rappid \u2014 keypair \u2192 rappid:v3:<fingerprint> (your username) [legacy form: read-forever, never written]"
       ],
       "drift_watch": [
         "rappid username form here is rappid:v3:<fingerprint> \u2014 NOT the canonical eternity rappid:@owner/slug:64hex; keep this distinction visible, don't silently conflate",
@@ -17573,7 +17573,7 @@
       ],
       "drift_watch": [
         "Schema ids must stay rapp-commons-game/1.0 (manifest) + rapp-commons-game-entry/1.0 (entry)",
-        "Both rappid forms remain valid: self-minted rappid:v3:<base64url(SHA-256(pub))> AND planted-door rappid:@<owner>/<slug>:<hex>; keypair/sig stays OPTIONAL not mandatory PKI",
+        "Both rappid forms remain valid: self-minted rappid:v3:<base64url(SHA-256(pub))> AND planted-door rappid:@<owner>/<slug>:<hex>; keypair/sig stays OPTIONAL not mandatory PKI [legacy form: read-forever, never written]",
         "Must stay server-free, scheduler-free, turn-order-free; provenance = git history + PR, no central registry/broker",
         "move_fields stay: type, title, ask, reward, ref, result; ref semantics post=null, claim=post seq, deliver=own claim seq",
         "Append-only + (game,seq) merge key; no in-place edits or central mutable state"
@@ -17593,7 +17593,7 @@
         "Every entry is rapp-commons-game-entry/1.0; a turn appends exactly ONE signed file via fork->PR, never editing/deleting another (append-only is the whole safety model)",
         "Filename = NNNN-<handle>-<ISO8601Z>.json: zero-padded seq=(max existing seq)+1, handle, UTC ts with ':'->'-'",
         "Scoring = count distinct signed `from` rappids per caption (by vote ref), ignore self-votes, dedupe repeats; most distinct votes wins, ties co-win",
-        "Identity = self-minted rappid (keypair -> rappid:v3:<fingerprint>); the key is the account, nobody owns the room; impersonation is the one bannable act, caught by signatures"
+        "Identity = self-minted rappid (keypair -> rappid:v3:<fingerprint>); the key is the account, nobody owns the room; impersonation is the one bannable act, caught by signatures [legacy form: read-forever, never written]"
       ],
       "refs": [
         "../../PROTOCOL.md",
@@ -17612,7 +17612,7 @@
       "drift_watch": [
         "Schema ids must stay rapp-commons-game/1.0 and rapp-commons-game-entry/1.0 (no silent version bump)",
         "Must remain server-less / append-only \u2014 no introduction of a scoreboard service, mutable leaderboard, or central tallier",
-        "rappid form here is rappid:v3:<fingerprint> (self-minted, keypair) \u2014 do not 'correct' it to canonical rappid:@owner/slug:64hex; keypair stays the account model",
+        "rappid form here is rappid:v3:<fingerprint> (self-minted, keypair) \u2014 do not 'correct' it to canonical rappid:@owner/slug:64hex; keypair stays the account model [legacy form: read-forever, never written]",
         "One file per PR, never edit/delete others; self-votes ignored, one vote per caption per rappid",
         "Stays text-native (prompts described, not uploaded) \u2014 no vision requirement"
       ],
@@ -17955,7 +17955,7 @@
       ],
       "drift_watch": [
         "schema version rapp-commons-event or rapp-commons-protocol regress from /1.0 or /2.0",
-        "rappid format changes from 'rappid:v3:' prefix",
+        "rappid format changes from 'rappid:v3:' prefix [legacy form: read-forever, never written]",
         "HOST_ID changes from 'rapp-commons-host' well-known address",
         "signature algorithm drifts from ecdsa-p256 + SHA-256",
         "private key material ever persists beyond localStorage + memory (device-local constraint violation)",
@@ -18896,7 +18896,7 @@
       ],
       "refs": [
         "github.com/kody-w (author GitHub handle)",
-        "github.com/kody-w/RAPP (main project \u2014 Rapid Agent Prototyping Platform)",
+        "github.com/kody-w/RAPP (main project \u2014 Rapid Agent Prototype Platform)",
         "github.com/kody-w/wildhaven-ai-homes-twin.git (source repo for this public twin)",
         "github.com/kody-w/kody-w-twin-private (private companion, gated read access)",
         "github.com/kody-w/RAR (public agent catalog, ~285 agents from 10 publishers as of 2026)",
@@ -19115,7 +19115,7 @@
         "owner.rappid MUST be v2:operator rappid with @namespace/identity:contentHash@github.com/path format",
         "created array collects all twins and neighborhoods instantiated in this estate, each with rappid (v2 format), added_at ISO8601 timestamp, and via mechanism (rebuild)",
         "member array tracks collaborators/gates with write permission to this estate (currently empty)",
-        "all rappid tokens enforce v2 syntax: rappid:v2:<type>:<@path/id>:<contentHash>@<host>/<repo>",
+        "all rappid tokens enforce v2 syntax: rappid:v2:<type>:<@path/id>:<contentHash>@<host>/<repo> [legacy form: read-forever, never written]",
         "updated_at captures last estate modification timestamp",
         "rappid format is the load-bearing identity mechanism across all RAPP entities"
       ],
@@ -19137,7 +19137,7 @@
         "owner.rappid is rappid:v2:operator",
         "every created entry has rappid (v2:twin or v2:neighborhood), added_at (ISO8601Z), and via (rebuild)",
         "member array gates write access (currently [])",
-        "all rappid tokens enforce rappid:v2:<type>:<@namespace/id>:<contentHash>@github.com/<owner>/<repo> format",
+        "all rappid tokens enforce rappid:v2:<type>:<@namespace/id>:<contentHash>@github.com/<owner>/<repo> format [legacy form: read-forever, never written]",
         "updated_at records last modification timestamp in ISO8601Z"
       ],
       "refs": [
@@ -19212,7 +19212,7 @@
         "Copy-paste this prompt to any LLM (Claude, GPT, Gemini, Qwen, local Llama)"
       ],
       "drift_watch": [
-        "rappid format reverts from consolidated form (rappid:@.../...:64hex) back to v2 (rappid:v2:kind:@...)",
+        "rappid format reverts from consolidated form (rappid:@.../...:64hex) back to v2 (rappid:v2:kind:@...) [legacy form: read-forever, never written]",
         "rapp-estate schema version drifts from 1.1 to 2.0 or later (breaking change to estate.json structure)",
         "parseRappid() regex fails to validate new legacy formats or loses consolidation on inherited rappids",
         "Article XLVI reference becomes stale (constitutional amendment; check CONSTITUTION.md)",
@@ -20319,7 +20319,7 @@
         "The first twin through the door must turn the lights on: generate a 6-digit PIN, derive an AES-GCM key from it, and share link + QR; everyone else uses that PIN to join end-to-end sealed.",
         "All events are signed with ECDSA P-256 over canonical (key-sorted) JSON; signature is detached in ev.sig field.",
         "Event body is either sealed (AES-GCM ciphertext in body.sealed) or plaintext; relay never decrypts.",
-        "Identity is a vTwin: ECDSA keypair generated on first load, stored in localStorage as rapp.vtwin, address format is rappid:v3:<sha256-fp-of-pubkey>.",
+        "Identity is a vTwin: ECDSA keypair generated on first load, stored in localStorage as rapp.vtwin, address format is rappid:v3:<sha256-fp-of-pubkey>. [legacy form: read-forever, never written]",
         "PIN derivation uses PBKDF2 with salt=rapp-vneighborhood:#{channel}, 100000 iterations, SHA-256, yields 256-bit AES-GCM key.",
         "Canonical JSON (canon() function) must match Python/relay canonical bytes: recursive key-sorted, Array as [...]  Object as {...}.",
         "Message kinds allowed: hello, post, reply, profile, topic; rule enforcement is deferred to relay/consumers.",
@@ -21509,7 +21509,7 @@
         "rapp_brainstem/local_storage.py"
       ],
       "canonical_phrases": [
-        "RAPP Installer is the single entry point for the RAPP (Rapid Agent Prototyping Platform)",
+        "RAPP Installer is the single entry point for the RAPP (Rapid Agent Prototype Platform)",
         "Philosophy: engine, not experience \u2014 this is infrastructure, not a consumer product",
         "These are sacred \u2014 any change must be tested end-to-end on a fresh machine",
         "main is production. The install one-liners (curl ... install.sh | bash) pull from main"
@@ -25154,7 +25154,7 @@
       ],
       "contracts": [
         "Sign everything (ECDSA P-256 canon-JSON signature mandatory on every event).",
-        "Identity is keypair \u2014 rappid:v3:fingerprint is address, generated locally, stored in localStorage, never transmitted raw.",
+        "Identity is keypair \u2014 rappid:v3:fingerprint is address, generated locally, stored in localStorage, never transmitted raw. [legacy form: read-forever, never written]",
         "PIN-sealed neighborhoods derive AES-GCM key from PIN via PBKDF2(salt=rapp-vneighborhood:channel, 100k iterations, SHA-256).",
         "First twin sets PIN and shares link+QR; all others enter PIN to join \u2014 relay only sees sealed (ciphertext) bodies.",
         "Body structure: {sealed: base64url(iv||ciphertext)} if NH.sealed && KEY present; unsealing yields plaintext object {text, name, etc.}.",
@@ -25186,7 +25186,7 @@
       ],
       "drift_watch": [
         "rapp-vneighborhood schema version reverts to v2 or earlier (breaks bones contract)",
-        "rappid address format drifts from rappid:v3:fingerprint (identity contract breaks)",
+        "rappid address format drifts from rappid:v3:fingerprint (identity contract breaks) [legacy form: read-forever, never written]",
         "ECDSA P-256 algorithm substituted with weaker curve or signature scheme (breaks canon-signing contract)",
         "AES-GCM sealed property disappears or changes structure (breaks unseal/wrong-PIN-lockout contract)",
         "PBKDF2 iteration count drops below 100k (weakens PIN\u2192key derivation)",
@@ -31337,7 +31337,7 @@
         "rio.egg fetch fails or URL changes \u2014 fallback is silent (catch block logs to status but does not hard-fail)",
         "RESIDENT endpoint responds with non-200 or malformed JSON \u2014 navigateRoom logs '(could not reach the resident host)' and continues",
         "RIONet index (RIONET URL) returns 200 but {pages} is undefined \u2014 rioIndex() returns [] without error",
-        "Profile.from field no longer includes 'rappid:v3:' prefix \u2014 the .slice(0,10) fallback for missing names will not truncate correctly",
+        "Profile.from field no longer includes 'rappid:v3:' prefix \u2014 the .slice(0,10) fallback for missing names will not truncate correctly [legacy form: read-forever, never written]",
         "ROOM_APP room name is not in object \u2014 no entry and fallback to https://kody-w.github.io/ still fires",
         "Markdown page slug does not match any in RIONet index \u2014 navigateRpage renders 'Not found' page",
         "YAML frontmatter in markdown changes format from ^---...---\\s* \u2014 _mdToRio.replace() will leave stray dashes in body",
@@ -32473,7 +32473,7 @@
         "rapp-rappid/2.0"
       ],
       "contracts": [
-        "Rappid format is immutable per mint \u2014 `rappid:v2:<kind>:@<owner>/<repo>:<32-hex>@github.com/<owner>/<repo>`",
+        "Rappid format is immutable per mint \u2014 `rappid:v2:<kind>:@<owner>/<repo>:<32-hex>@github.com/<owner>/<repo>` [legacy form: read-forever, never written]",
         "Six kinds only: neighborhood, ant-farm, braintrust, workspace, twin, prototype",
         "32-hex-no-dashes UUID4 minted once at planting; permanent lifetime (Art. XXXIV.5, Invariant 1)",
         "Bond technique (egg \u2192 overlay \u2192 hatch) preserves rappid through kernel upgrades (Invariant 2)",

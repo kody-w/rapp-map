@@ -1625,7 +1625,7 @@
       "gaps": [
         "Self-declared 'Draft v0' status \u2014 no test suite or CI evidence in the repo, validation is manual via cross_validate.py.",
         "Acknowledged unresolved kind drift: emits kind:'project' but upstream ESTATE_SPEC.md frozen valid-kinds list (twin/neighborhood/ant-farm/braintrust/workspace/hatched/rapplication/prototype/operator) lacks 'project'; cross_validate WARNs until one side amends.",
-        "Owns its own rappid format string (rappid:v2:project:...) and port-pick algorithm that must stay byte-aligned with upstream \u2014 drift risk is inherent to the two-sources-of-truth design.",
+        "Owns its own rappid format string (rappid:v2:project:...) and port-pick algorithm that must stay byte-aligned with upstream \u2014 drift risk is inherent to the two-sources-of-truth design. [legacy form: read-forever, never written]",
         "Network scope is single-device (one operator's projects); cross-operator/estate meshing is explicitly out of scope here, deferred to kody-w/RAPP federation."
       ],
       "canon_alignment": "aligned",
@@ -1696,7 +1696,7 @@
       "notes": "Textbook MASTER_PLAN substrate instance: pure GitHub (raw CDN inventory, Pages edge, .well-known beacon, topic:rapp-estate discovery, gh-collaborator trust, sha256 content-addressing). Zero kernel changes, zero central server/registry/broker \u2014 discovery is \"gh search repos topic:rapp-estate then validate each beacon,\" exactly the no-central-registry design. Identity uses rappid:v2 (rappid:v2:<kind>:@owner/slug:32hex@github.com/owner/repo) \u2014 note this is the OLDER v2 form, not the resolved canonical rappid eternity (rappid:@owner/slug:64hex); per the compatibility contract this is a legacy form to keep reading, but worth noting the hashes here are 32hex (md5-length) not 64hex sha256, so this estate predates the eternity standardization. private_estate_commitment is a sha256 hash pointer to a private twin estate (rapp-estate-private) \u2014 the PKI-free commitment pattern, not mandatory PKI; correctly aligned. This is a planted/operator-instance of the estate spec, load-bearing as kody-w's own node in the network. The \"created\" list doubles as a useful index of kody-w's twin/neighborhood rapps (echo/lumen/tide/wildhaven brainstems, kody-twin, pkstop-* park neighborhoods, sim-art-collective).",
       "recheck": {
         "confirmed": true,
-        "correction": "none \u2014 verified exact: schema rapp-estate/1.1, updated_at 2026-05-09T23:35:12Z, created_count 16, member_count 0; rappid:v2 form with 32hex (e.g. rappid:v2:twin:@kody-w/echo-brainstem:15461d6259ec49bdaf8ea032571b3f03@github.com/kody-w/echo-brainstem).",
+        "correction": "none \u2014 verified exact: schema rapp-estate/1.1, updated_at 2026-05-09T23:35:12Z, created_count 16, member_count 0; rappid:v2 form with 32hex (e.g. rappid:v2:twin:@kody-w/echo-brainstem:15461d6259ec49bdaf8ea032571b3f03@github.com/kody-w/echo-brainstem). [legacy form: read-forever, never written]",
         "missed": "The rappid:v2 ids embed an `@github.com/owner/repo` repo-LOCATOR suffix \u2014 identity is location-COUPLED, which is precisely what the resolved eternity standard (content-address, no location) moved away from. So this estate is doubly-legacy: v2 form AND location-bound. The finding's 'predates eternity' note is right but understates that the ids hard-bind to a repo URL."
       },
       "deep_verified": true,
@@ -1788,7 +1788,7 @@
       "gaps": [
         "No test suite committed (verify.py/store.py are testable by design but no tests present)",
         "PERSONA.md describes a reply-when-named participant persona, but no agent/responder code is in this repo \u2014 the persona is aspirational/external (relay only is implemented)",
-        "Uses rappid:v3: identity form (pub-key sha256 fingerprint) rather than the canonical rappid:@owner/slug:64hex eternity form \u2014 a separate v3 lineage",
+        "Uses rappid:v3: identity form (pub-key sha256 fingerprint) rather than the canonical rappid:@owner/slug:64hex eternity form \u2014 a separate v3 lineage [legacy form: read-forever, never written]",
         "Requires ECDSA P-256 signatures on every event (sign-everything), where the master plan frames keypairs as optional opt-in sovereignty",
         "Single reference host; cloud_hosts is a list but no multi-host federation/dedup logic shown here"
       ],
@@ -2210,7 +2210,7 @@
         "Pages UI is the canonical reader; spec relies on every renderer recomputing event ids consistently"
       ],
       "canon_alignment": "aligned",
-      "notes": "Strong north-star fit: PKI-free, content-addressed identity (rappid:v3:<base64url(SHA-256(public_key))>, the key IS the account, open join, no allowlist), GitHub raw CDN for neighborhood.json + Pages-edge UI, signed append-only events, and graceful degrade (UI tries cloud host first, falls back to kited WebRTC peer). Rejects kernel changes and mandatory PKI per canon; keypair is optional opt-in sovereignty, exactly as RESOLVED. It deliberately MIRRORS the rapp-commons pattern (a sibling/twin of rapp-commons) \u2014 reuses the same protocol unchanged and only adds two content kinds, so it is a thin social-layer profile, not a new substrate. Minor tension with \"no central server\": it graduates to an always-on Azure cloud host (rapp-resident) as the durable store \u2014 but this is framed as an untrusted relay with kited fallback, consistent with \"host you don't have to trust.\" This is the forum FOR rapp-god (the registry/drift layer), not part of rapp-god itself.",
+      "notes": "Strong north-star fit: PKI-free, content-addressed identity (rappid:v3:<base64url(SHA-256(public_key))>, the key IS the account, open join, no allowlist), GitHub raw CDN for neighborhood.json + Pages-edge UI, signed append-only events, and graceful degrade (UI tries cloud host first, falls back to kited WebRTC peer). Rejects kernel changes and mandatory PKI per canon; keypair is optional opt-in sovereignty, exactly as RESOLVED. It deliberately MIRRORS the rapp-commons pattern (a sibling/twin of rapp-commons) \u2014 reuses the same protocol unchanged and only adds two content kinds, so it is a thin social-layer profile, not a new substrate. Minor tension with \"no central server\": it graduates to an always-on Azure cloud host (rapp-resident) as the durable store \u2014 but this is framed as an untrusted relay with kited fallback, consistent with \"host you don't have to trust.\" This is the forum FOR rapp-god (the registry/drift layer), not part of rapp-god itself. [legacy form: read-forever, never written]",
       "recheck": {
         "confirmed": true,
         "correction": "Live host VERIFIED: GET https://rapp-resident-kw165843.azurewebsites.net/api/rooms/rapp-god-forum/events \u2192 HTTP 200, count:17, first event kind 'topic' title 'Welcome to the rapp-god forum', ecdsa-p256 signed, from rappid:v3:qrEXDSX8.... Minor: kinds are topic/reply/HELLO (3), not just 'topic + reply'.",
@@ -2377,7 +2377,7 @@
       "shipped_evidence": "4-file static repo (index.html 17KB, README.md, neighborhood.json, .nojekyll) deployed to GitHub Pages at kody-w.github.io/rappterbook-commons/. neighborhood.json declares schema rapp-neighborhood/1.0, commons schema rapp-commons-protocol/2.0, room \"rappterbook\", kinds [profile,post,follow,unfollow,endorse,hello], and a live cloud host https://rapp-resident-kw165843.azurewebsites.net/api. Headless join path via rapp-commons/swarm_agent.py --room rappterbook.",
       "gaps": [
         "Owns no spec of its own; borrows rapp-commons-protocol/2.0 and PROTOCOL.md from rapp-commons",
-        "Uses rappid_format 'rappid:v3:<base64url(SHA-256(public_key))>' (keypair-hash identity) which differs from the canonical PKI-free 'rappid:@owner/slug:<64hex>' eternity standard where keypair is supposed to be OPTIONAL, not the default; minor identity-canon drift",
+        "Uses rappid_format 'rappid:v3:<base64url(SHA-256(public_key))>' (keypair-hash identity) which differs from the canonical PKI-free 'rappid:@owner/slug:<64hex>' eternity standard where keypair is supposed to be OPTIONAL, not the default; minor identity-canon drift [legacy form: read-forever, never written]",
         "Hard-codes a single Azure resident URL (centralization vs the everyone's-hardware / GitHub-CDN north star)",
         "Verification limited to static-asset/manifest inspection; live runtime not exercised"
       ],
@@ -2387,7 +2387,7 @@
       "deep_verified": true,
       "recheck": {
         "confirmed": true,
-        "correction": "Status 'active' is generous \u2014 last push 2026-05-27T01:03:03Z (a month stale, 8KB, 0 stars), more recently-built-then-parked than active. The drift claims are confirmed verbatim from neighborhood.json: rappid_format 'rappid:v3:<base64url(SHA-256(public_key))>', single cloud host 'https://rapp-resident-kw165843.azurewebsites.net/api' (host rapp-resident), schemas rapp-commons-protocol/2.0 + rapp-neighborhood/1.0, crypto.subtle ECDSA signing in index.html.",
+        "correction": "Status 'active' is generous \u2014 last push 2026-05-27T01:03:03Z (a month stale, 8KB, 0 stars), more recently-built-then-parked than active. The drift claims are confirmed verbatim from neighborhood.json: rappid_format 'rappid:v3:<base64url(SHA-256(public_key))>', single cloud host 'https://rapp-resident-kw165843.azurewebsites.net/api' (host rapp-resident), schemas rapp-commons-protocol/2.0 + rapp-neighborhood/1.0, crypto.subtle ECDSA signing in index.html. [legacy form: read-forever, never written]",
         "missed": "This is the ONLY repo in the entire family that adopts the MASTER_PLAN's neighborhood vocabulary (rapp-neighborhood/1.0) \u2014 making it simultaneously the most canon-AWARE and the most canon-DIVERGENT node: it embraces the estate/neighborhood model while violating two of the plan's hard rejects (mandatory per-post signing = mandatory PKI, and routing all reads/writes through one always-on Azure server = central server). The drift label is correct and is the single genuine north-star conflict in this batch."
       }
     },
