@@ -1,114 +1,43 @@
 # rapp-map
 
-**The map of the RAPP ecosystem** — which repo houses which part. Not the spec itself (that lives
-in its own repos); this is the index that says *where each piece lives* so the whole thing stays
-legible and doesn't drift.
+`rapp-map` is a read-only repository map. It is not a protocol authority, a
+runtime, an installer, or an authenticated registry.
 
-> 📸 **v1.0.0 — the first full‑ecosystem snapshot** (2026‑05‑26). Every repo below is tagged
-> `v1.0.0`. The live registry of every part *and every version* is
-> **[rapp‑god](https://kody-w.github.io/rapp-god/)** (release 1.0.0) — the god's‑eye view that watches
-> the whole ecosystem for drift. The user‑facing layer is **[RACon](https://github.com/kody-w/racon)**:
-> drop a cartridge (`agent.py` / `.egg`), it runs as its own twin; take it anywhere + play together
-> (RACon Kited). **Full v1 release notes: [ECOSYSTEM.md](ECOSYSTEM.md).** The autonomous **swarm layer**
-> built on top (a signed society · Opus brains via the Copilot CLI · RIONet): **[SWARM.md](SWARM.md).**
+## RAPP/1 authority and status
 
-> One‑line mental model: **agents** (single `.py` files) run in a **brainstem**; brainstems meet as
-> uniform peers in a **kited neighborhood** — sealed, scan‑to‑join — and everything is indexed by a
-> **registry**. Each concept below has exactly one canonical home.
+The sole protocol authority used here is `kody-w/rapp-1` at commit
+`6723c7add2aed36bb68992fc71a56b0a4bd5ad81`, with `SPEC.md` pinned by exact
+length and SHA-256 in [`RAPP1_AUTHORITY.json`](RAPP1_AUTHORITY.json).
 
----
+**This repository is not yet fully RAPP/1 conformant.** The authenticated
+registry evidence required by section 13 is absent. See
+[`RAPP1_STATUS.md`](RAPP1_STATUS.md) and the
+[`owner-action ledger`](RAPP1_OWNER_ACTIONS.md).
 
-## 🪁 The kited neighborhood — the spec & its parts
-*(the capstone; canonical sources, referenced everywhere else)*
+## Live artifacts
 
-| Repo | Houses |
-|------|--------|
-| [rapp-neighborhood-protocol](https://github.com/kody-w/rapp-neighborhood-protocol) | **the spec + vocabulary** — `rapp-neighborhood-protocol/1.0`: twin‑chat (§6) is the base · controllers/twins/apps (§17) · **front doors · local≡kited≡cloud · 'v' = swarm‑capable · egg/import/fork (§18)** · vTwin · Sealed · Doorman · Cloud Neighborhood |
-| [rapp-sealed](https://github.com/kody-w/rapp-sealed) | **the sealed channel** — `rapp-sealed/1.0` end‑to‑end AES‑256‑GCM codec + conformance vectors (§8) |
-| [rapp-kited-twin](https://github.com/kody-w/rapp-kited-twin) | **the kited twin — visual identity** — a neutral kite (no third‑party logo), shown over a scan‑to‑join QR (§2) |
-| [rapp-vneighborhood](https://github.com/kody-w/rapp-vneighborhood) | **the front‑door template** — `rapp-vneighborhood/1.0`: a public repo is a front door to a neighborhood. First twin **turns the lights on** → **link + QR + PIN**; bodies **sealed** end‑to‑end; reads `neighborhood.json` bones; same protocol on‑device (`twin_chat_agent host=local`). [live](https://kody-w.github.io/rapp-vneighborhood/) |
-| [vneighborhood-design-studio](https://github.com/kody-w/vneighborhood-design-studio) · [vneighborhood-research-lab](https://github.com/kody-w/vneighborhood-research-lab) | **example front doors** — two deliberately‑different sealed neighborhoods (`#studio` critique · `#lab` findings) on the *same* twin‑chat, built from the template. [studio](https://kody-w.github.io/vneighborhood-design-studio/) · [lab](https://kody-w.github.io/vneighborhood-research-lab/) |
+| Artifact | Disposition |
+| --- | --- |
+| `ecosystem-spec.json` | Fail-closed registry-path status; consumers must refuse it as an authenticated registry. |
+| `graph.json` | Deterministic, offline structural map subordinate to the exact authority pin. |
+| `estate-map.json` | Historical 92-repository observation; non-authoritative. |
+| `neurons.json` | Historical 630-record observation; non-authoritative. |
+| `neurons-manifest.json` | Historical index for the same observation; non-authoritative. |
+| `conformance/` | Structural rev-5 identity vectors; never owner acceptance. |
 
-## 👁️ The god's-eye view — registry & static APIs
-*(the whole ecosystem indexed; every part, every version, as a static fallback API)*
+Historical ecosystem prose and the former unsigned mirror remain available in
+Git history at baseline commit
+`baded0098d8b97c2876c0b8af4475cf3061b7ad0`. They are not current guidance.
 
-| Repo | Houses |
-|------|--------|
-| [rapp-god](https://github.com/kody-w/rapp-god) | **the registry of the whole RAPP god** — every load‑bearing part *and every version* of it, content‑addressed as immutable fallback frames; a live drift / update‑waiting observatory (it observes, never fixes). Built on `rapp-static-api/1.0`. |
-| [rapp-static-apis](https://github.com/kody-w/rapp-static-apis) | **the spec** — `rapp-static-api/1.0`: APIs built entirely on GitHub raw user data, no server. Manifest → one build step → generated index + `api/v1/*` + append‑only content‑addressed fallbacks. Reference impl: rapp‑god. |
+## Local validation
 
-## 🧠 Run a brainstem
-| Repo | Houses |
-|------|--------|
-| [vbrainstem](https://github.com/kody-w/vbrainstem) | **the reference runtime** — browser‑native (Pyodide), no install: chat, share‑sheet, kited‑demo, brainstem‑bridge, guide. Inlines the codec + mark (CI‑synced to canonical) |
-| [rapp-brainstem-sdk](https://github.com/kody-w/rapp-brainstem-sdk) | **the headless SDK** — `vbrainstem_sdk.py`, stdlib‑only, serves the `brainstem.py /chat` contract over a port |
+```text
+node conformance/run-conformance.mjs
+node conformance/waiver-freshness.mjs
+python3.11 build_graph.py --check
+node .github/scripts/standing-guard.mjs local
+node .github/scripts/standing-guard.mjs blocker
+```
 
-## 🪢 Operate & connect — the string + doorman
-| Repo | Houses |
-|------|--------|
-| [rapp-kite](https://github.com/kody-w/rapp-kite) | **the string** — CLI + CDP tools to fly/operate kited twins (`vbridge`, `kited_twin`, `kite_vtwin`, `claude_bridge`) |
-| [rapp-doorman](https://github.com/kody-w/rapp-doorman) | **the doorman** — a skill that makes a fresh Claude the sealed door to a machine's brainstem + a self‑test |
-| [rapp-claude-skills](https://github.com/kody-w/rapp-claude-skills) | Claude Code skills/agents for the whole RAPP pattern |
-
-## 🔌 MCP — bring RAPP into any AI host
-*(the on‑ramp: any MCP client — Claude Desktop, the Copilot CLI, Cursor, … — speaks straight to the RAPP ecosystem)*
-
-| Repo | Houses |
-|------|--------|
-| [rapp-mcp](https://github.com/kody-w/rapp-mcp) | **the MCP gateway** — `rapp-mcp-spec/1.0`: two pure‑stdlib, single‑file MCP servers. `rapp_mcp.py` serves drop‑in `*_agent.py` (BasicAgent) as individual MCP tools — bytes are the contract, deterministic across hosts; `rapp_brainstem_mcp.py` bridges a running brainstem (full `/chat` — LLM + memory + every agent) and can bootstrap one from scratch, then automate T1→T2→T3 promotion when you're ready. MCP is **transport** realizing *Chat Is The Only Wire*: every MCP host is a **Layer‑2 caller of a brainstem's `/chat`**, not a new unit or kind in the taxonomy. The serverless companion is the **`rapp-static-mcp/1.0`** static profile — an MCP catalog of content‑addressed agent frames on `raw.githubusercontent.com` you **pin by sha8 and verify before exec** (built on `rapp-static-api/1.0`), the static‑fallback to this live gateway. The on‑ramp for **AIs joining the RAPP ecosystem**. [live](https://kody-w.github.io/rapp-mcp/) |
-
-## 🎮 RACon — cartridges & console
-*(the user-facing layer: drop a cartridge, it runs as its own twin — at home, on the go, together)*
-
-| Repo | Houses |
-|------|--------|
-| [racon](https://github.com/kody-w/racon) | **the experience (grail)** — `racon/1.0`: RACon is all the user sees; cartridges just work; **RACon Kited** = cross‑device + multiplayer. The frozen north‑star. |
-| [rapp-carts](https://github.com/kody-w/rapp-carts) | **the cartridge spec** — `rapp-cart/1.0`: an `agent.py` + an `.egg` are cartridges (rapp_carts); brainstem.py is the bootloader; everything else is under the hood. |
-| [cowork-cookbook-rapp](https://github.com/kody-w/cowork-cookbook-rapp) | **the first RACon cartridge** — the Cowork Cookbook as a vTwin (recipe→agent.py with WorkIQ); a portable `.egg` + a one‑file loader + vRACon (browser). |
-| [rio](https://github.com/kody-w/rio) | **RIO — the browser** (OSI L7): an early‑web‑style rapplication you load into RACon to browse the kited ecosystem; ships in RACon's catalog. |
-| [ai-agent-templates-mirror](https://github.com/kody-w/ai-agent-templates-mirror) | mirror of the AI agent stack library; target for one‑click MCS / Copilot Studio deploy (`ONE_CLICK.md`). |
-
-## 🎬 Demos & prototyping
-| Repo | Houses |
-|------|--------|
-| [rapp-demos](https://github.com/kody-w/rapp-demos) | **synced scan‑to‑watch demos** — host drives step‑by‑step, watchers see it live (sealed); a demo is just text in a fixed M365 template (rapid agent prototyping) |
-
-## 📇 Registry & agents
-| Repo | Houses |
-|------|--------|
-| [RAR](https://github.com/kody-w/RAR) | **the registry** — the open single‑file agent registry + the CONSTITUTION + `@rapp/twin_agent` (federation) |
-| [rapp-agents](https://github.com/kody-w/rapp-agents) | drop‑in single‑file agents (RappLoader, Scout, DoubleDown) |
-| [aibast-agents-library](https://github.com/kody-w/aibast-agents-library) | industry‑vertical agent templates |
-| [rapp-egg-hub](https://github.com/kody-w/rapp-egg-hub) | digital‑twin `.egg` cartridges — pull by URL, hatch locally |
-| [rapp-zoo](https://github.com/kody-w/rapp-zoo) | local‑first keeper for the twin estate (list / summon / hatch / start / stop) |
-
-## 🖥 Platform & clients
-| Repo | Houses |
-|------|--------|
-| [RAPP](https://github.com/kody-w/RAPP) | the platform — single‑file agents, local‑first, Copilot‑powered |
-| [RAPP_Store](https://github.com/kody-w/RAPP_Store) | public catalog of rapplications |
-| [RAPP_Desktop](https://github.com/kody-w/RAPP_Desktop) | native desktop app |
-| [rapp-vscode-extension](https://github.com/kody-w/rapp-vscode-extension) | VS Code extension (renders pages, surfaces twins, embeds the brainstem) |
-| [rapp-installer](https://github.com/kody-w/rapp-installer) | the `curl … | bash` installer |
-
-## 🧬 Memory, commons & social
-| Repo | Houses |
-|------|--------|
-| [CommunityRAPP](https://github.com/kody-w/CommunityRAPP) | RAPP Hippocampus — persistent memory (local‑first → Azure) |
-| [rapp-commons](https://github.com/kody-w/rapp-commons) | **a social network for agents** — `rapp-commons-protocol/2.0`: a stack‑agnostic public **front door** (any agent, any stack, no RACon); self‑generated **rappid = username**; a signed append‑only stream **held up by an ephemeral kited vTwin host** — now **graduated to an always‑on cloud host** (rapp‑resident on Azure). |
-| [rapp-god-forum](https://github.com/kody-w/rapp-god-forum) | **the agentic forum for the full stack** — the commons pattern as a **threaded forum** (`rapp-commons-protocol/2.0` forum profile: `topic` + `reply`); same rappid, same hosting; also a store rapplication. |
-| [rapp-resident](https://github.com/kody-w/rapp-resident) | **the permanent cloud host** — an Azure Function serving signed event *rooms* (commons, forum, …) over HTTP, verifying every signature server‑side. The always‑on graduation of a kited vTwin (kited = floor, cloud = ceiling). |
-| [rappterbook](https://github.com/kody-w/rappterbook) | social network for AI agents — feed `SKILLS.md`, become a citizen; GitHub is the platform |
-| [rappterbook-commons](https://github.com/kody-w/rappterbook-commons) | **rappterbook, rebuilt on the signed commons** — rappid citizens, signed feed, follows, karma, channels; hosted by the always‑on resident (a verifiable trust model, not GitHub‑Issues‑as‑API). |
-| [rionet](https://github.com/kody-w/rionet) | **the agent‑built web + its search engine** — RIO pages published as GitHub raw data, declared via `rapp.robots.txt`, crawled by `rappbot`, ranked by **rappPageRank**, searched from RIO with `search:`. |
-
-## 🏘 Neighborhood instances (public examples)
-[neighborhood-example](https://github.com/kody-w/neighborhood-example) ·
-[microsoft-se-team-neighborhood](https://github.com/kody-w/microsoft-se-team-neighborhood) ·
-[RAPP-Network](https://github.com/kody-w/RAPP-Network) ·
-[rapp-test-neighbor](https://github.com/kody-w/rapp-test-neighbor)
-
----
-
-*Curated to the load‑bearing repos. Each "part" has one canonical home; consumers reference it
-rather than copy it (and CI drift‑checks guard the few unavoidable inline copies). MIT © Kody Wildfeuer.*
+These commands are offline. Passing them establishes structural consistency
+only; it does not resolve the owner blocker.

@@ -1,159 +1,185 @@
 #!/usr/bin/env python3
-"""Build rapp-ecosystem-graph/1.0 — the relationship graph of the RAPP
-ecosystem, so agents can traverse it to keep the digital organism aligned
-across repos. Nodes = repos/parts; directed edges = how one consumes/derives
-from another. The blast radius of a mutation in node X = everything that points
-AT X (its consumers), transitively.
+"""Generate the deterministic, offline RAPP/1 relationship map."""
 
-Edge types (from CONSUMES/DERIVES-FROM to):
-  governed_by  — bound by the constitution / sacred constraints
-  specified_by — implements a spec section that lives in `to`
-  mirrors      — re-publishes / hubs `to`'s content (Bible, map)
-  snapshots    — content-addressed observation of `to` (rapp-god)
-  indexes      — catalogs/points-at `to` (map, stores)
-  implements   — code realizing a protocol in `to`
-  bundles      — ships a frozen copy of `to` inside itself (planted seeds)
-  vendors      — vendored copy of `to` (swarm ← brainstem)
+from __future__ import annotations
 
-Output: rapp-map/graph.json. Partly hand-authored (the canonical relationships
-the docs assert) + partly derived from rapp-god (every observed part → a
-`snapshots` edge to rapp-god).
-"""
-import json, sys, time, urllib.request
-
-SPECIES = "kody-w/RAPP"
-GOD = "kody-w/rapp-god"
-
-# Canonical nodes: id, role, authority tier (lower = higher; mirrors AUTHORITY)
-NODES = [
-    ("RAPP", "species root — kernel + constitution + specs", 1),
-    ("rapp-god", "observatory — registry of every part + version (content-addressed)", 6),
-    ("rapp-map", "index — which repo houses which part + this graph", 5),
-    ("RAPP-Bible", "specs hub — human-facing canon mirror", 5),
-    ("RAR", "registry — single-file agents", 4),
-    ("RAPP_Store", "catalog — rapplications", 4),
-    ("RAPP_Sense_Store", "catalog — senses", 4),
-    ("rapp-egg-hub", "catalog — eggs", 4),
-    ("rapp-sealed", "channel — AES-256-GCM §8 codec", 4),
-    ("rapp-neighborhood-protocol", "spec — the federation wire", 3),
-    ("rapp-vneighborhood", "front-door template — kited room", 4),
-    ("rapp-kite", "operate — the string / kited twins", 4),
-    ("rapp-doorman", "skill — the sealed door", 4),
-    ("rapp-kited-twin", "mark — kite visual identity", 4),
-    ("rapp-commons", "neighborhood — global town square", 4),
-    ("rapp-resident", "relay — permanent cloud host", 4),
-    ("rapp-mcp", "transport — MCP gateway (chat is the only wire)", 4),
-    ("rionet", "web — the agent-built web", 4),
-    ("rio", "browser — OSI L7", 4),
-    ("racon", "cartridges — experience grail", 4),
-    ("rapp-carts", "spec — cartridge format", 4),
-    ("vbrainstem", "runtime — browser Pyodide brainstem", 4),
-    ("rapp-brainstem-sdk", "runtime — headless /chat", 4),
-    ("rapp-installer", "install — curl|bash front door", 4),
-    ("CommunityRAPP", "memory — hippocampus", 4),
-    ("planted-seeds", "every planted twin/neighborhood (bundles specs)", 7),
-]
-
-# Canonical edges (from -> to, type). from CONSUMES/DERIVES-FROM to.
-EDGES = [
-    # everything is governed by the species root's constitution
-    *[(n, "RAPP", "governed_by") for n, _r, _t in NODES if n not in ("RAPP",)],
-    # the hubs/index mirror + index the species root
-    ("RAPP-Bible", "RAPP", "mirrors"),
-    ("rapp-map", "RAPP", "indexes"),
-    # the observatory snapshots the species root + the canonical parts
-    ("rapp-god", "RAPP", "snapshots"),
-    ("rapp-god", "rapp-sealed", "snapshots"),
-    ("rapp-god", "rapp-kite", "snapshots"),
-    ("rapp-god", "rapp-doorman", "snapshots"),
-    ("rapp-god", "rapp-neighborhood-protocol", "snapshots"),
-    ("rapp-god", "rapp-brainstem-sdk", "snapshots"),
-    ("rapp-god", "rapp-mcp", "snapshots"),
-    ("rapp-god", "rapp-commons", "snapshots"),
-    # protocol implementations
-    ("rapp-sealed", "rapp-neighborhood-protocol", "implements"),
-    ("rapp-vneighborhood", "rapp-neighborhood-protocol", "implements"),
-    ("rapp-doorman", "rapp-sealed", "implements"),
-    ("rapp-kite", "rapp-neighborhood-protocol", "implements"),
-    ("rapp-resident", "rapp-neighborhood-protocol", "implements"),
-    ("rapp-commons", "rapp-neighborhood-protocol", "implements"),
-    ("rapp-vneighborhood", "rapp-sealed", "implements"),
-    # the neighborhood protocol is specified inside the species root
-    ("rapp-neighborhood-protocol", "RAPP", "specified_by"),
-    # runtimes implement the kernel /chat contract (in RAPP)
-    ("vbrainstem", "RAPP", "implements"),
-    ("rapp-brainstem-sdk", "RAPP", "implements"),
-    ("rapp-mcp", "RAPP", "implements"),
-    # catalogs/registry index parts
-    ("RAR", "RAPP", "indexes"),
-    ("RAPP_Store", "RAPP", "indexes"),
-    ("RAPP_Sense_Store", "RAPP", "indexes"),
-    ("rapp-egg-hub", "RAPP", "indexes"),
-    # planted seeds bundle the specs + depend on the kernel
-    ("planted-seeds", "RAPP", "bundles"),
-    ("planted-seeds", "rapp-sealed", "implements"),
-    # cartridges
-    ("racon", "rapp-carts", "implements"),
-    ("rio", "rionet", "implements"),
-]
+import argparse
+import json
+import sys
+from pathlib import Path
+from typing import Any
 
 
-def _fetch(url):
+ROOT = Path(__file__).resolve().parent
+AUTHORITY_PATH = ROOT / "RAPP1_AUTHORITY.json"
+DEFAULT_OUTPUT = ROOT / "graph.json"
+
+EXPECTED_AUTHORITY = {
+    "document_type": "rapp-1-authority-pin",
+    "repository": "kody-w/rapp-1",
+    "commit": "6723c7add2aed36bb68992fc71a56b0a4bd5ad81",
+    "spec_path": "SPEC.md",
+    "spec_revision": 5,
+    "raw_url": (
+        "https://raw.githubusercontent.com/kody-w/rapp-1/"
+        "6723c7add2aed36bb68992fc71a56b0a4bd5ad81/SPEC.md"
+    ),
+    "bytes": 41880,
+    "sha256": "6d06daba65d7c045716f3d6e95db8401ab58e727820e4114466d847f62cae49b",
+    "structural_pin_only": True,
+    "authenticated_registry_acceptance": False,
+}
+
+
+def load_authority() -> dict[str, Any]:
     try:
-        with urllib.request.urlopen(url, timeout=12) as r:
-            return r.read().decode("utf-8", "replace")
-    except Exception:
-        return None
+        authority = json.loads(AUTHORITY_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise ValueError(f"cannot load {AUTHORITY_PATH.name}: {error}") from error
+
+    for key, expected in EXPECTED_AUTHORITY.items():
+        if authority.get(key) != expected:
+            raise ValueError(
+                f"{AUTHORITY_PATH.name}.{key} must be {expected!r}, "
+                f"found {authority.get(key)!r}"
+            )
+    return authority
 
 
-def main(out="graph.json", stamp=None):
-    node_ids = {n for n, _r, _t in NODES}
-    edges = [{"from": a, "to": b, "type": t} for a, b, t in EDGES if a in node_ids and b in node_ids]
-    # derive snapshots edges from rapp-god live parts → rapp-god (every part it observes)
-    derived = 0
-    gs = _fetch(f"https://raw.githubusercontent.com/{GOD}/main/api/v1/status.json")
-    god_groups = set()
-    if gs:
-        try:
-            for p in json.loads(gs).get("parts", []):
-                g = (p.get("group") or "").split("·")[0].strip()
-                god_groups.add(g)
-        except ValueError:
-            pass
-    graph = {
-        "schema": "rapp-ecosystem-graph/1.0",
-        "generated": stamp or "(stamp at commit time)",
-        "purpose": ("Traverse the RAPP ecosystem across repos. The blast radius of a "
-                    "mutation in node X = every node with an edge pointing AT X "
-                    "(its consumers), transitively. Use it to keep the digital "
-                    "organism aligned: when one repo mutates, walk inbound edges to "
-                    "find which other repos should be reviewed for update."),
-        "edge_types": {
-            "governed_by": "bound by the species constitution / sacred constraints",
-            "specified_by": "implements a spec that lives in `to`",
-            "mirrors": "re-publishes / hubs `to`'s content",
-            "snapshots": "content-addressed observation of `to`",
-            "indexes": "catalogs / points at `to`",
-            "implements": "code realizing a protocol/contract in `to`",
-            "bundles": "ships a frozen copy of `to`",
-            "vendors": "vendored copy of `to`",
-        },
-        "authority_note": ("Edges point from consumer to source. Lower-tier nodes "
-                           "(RAPP=1) win on conflict; mutations there have the widest "
-                           "blast radius. rapp-god is a witness (tier 6), never a judge."),
-        "nodes": [{"id": n, "role": r, "tier": t,
-                   "repo": f"kody-w/{n}" if n not in ("planted-seeds",) else None}
-                  for n, r, t in NODES],
-        "edges": edges,
-        "observatory_groups": sorted(g for g in god_groups if g),
+def build_graph(authority: dict[str, Any]) -> dict[str, Any]:
+    authority_node = {
+        "id": "rapp-1",
+        "repo": authority["repository"],
+        "classification": "protocol-authority",
+        "role": "Sole protocol authority, fixed to the exact rev-5 commit.",
+        "authority": True,
+        "subordinate": False,
+        "pinned_commit": authority["commit"],
     }
-    with open(out, "w") as f:
-        json.dump(graph, f, indent=2)
-        f.write("\n")
-    print(json.dumps({"nodes": len(graph["nodes"]), "edges": len(edges),
-                      "out": out, "god_reachable": bool(gs)}, indent=2))
-    return graph
+    subordinate_nodes = [
+        {
+            "id": "rapp-map",
+            "repo": "kody-w/rapp-map",
+            "classification": "read-only-map",
+            "role": "Structural map and historical observation holder.",
+            "authority": False,
+            "subordinate": True,
+        },
+        {
+            "id": "rapp-god",
+            "repo": "kody-w/rapp-god",
+            "classification": "observation",
+            "role": "External observation surface; moving or unsigned state is not authority.",
+            "authority": False,
+            "subordinate": True,
+        },
+        {
+            "id": "RAPP-Bible",
+            "repo": "kody-w/RAPP-Bible",
+            "classification": "human-documentation",
+            "role": "Human documentation surface; not a protocol or trust authority.",
+            "authority": False,
+            "subordinate": True,
+        },
+        {
+            "id": "RAPP",
+            "repo": "kody-w/RAPP",
+            "classification": "application",
+            "role": "Application and historical ecosystem repository subordinate to RAPP/1.",
+            "authority": False,
+            "subordinate": True,
+        },
+    ]
+    nodes = [authority_node, *subordinate_nodes]
+
+    return {
+        "document_type": "repository-relationship-map",
+        "format_version": 1,
+        "generated_by": "build_graph.py",
+        "generation": "deterministic-offline",
+        "disposition": {
+            "classification": "structural-map",
+            "authoritative": False,
+            "rapp1_registry": False,
+            "authenticated_registry": None,
+            "owner_acceptance": False,
+        },
+        "protocol_authority": {
+            "repository": authority["repository"],
+            "commit": authority["commit"],
+            "spec_path": authority["spec_path"],
+            "spec_revision": authority["spec_revision"],
+            "raw_url": authority["raw_url"],
+            "bytes": authority["bytes"],
+            "sha256": authority["sha256"],
+        },
+        "nodes": nodes,
+        "edges": [
+            {
+                "from": node["id"],
+                "to": authority_node["id"],
+                "type": "subordinate_to",
+            }
+            for node in subordinate_nodes
+        ],
+    }
+
+
+def render_graph() -> bytes:
+    graph = build_graph(load_authority())
+    return (json.dumps(graph, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Generate graph.json without timestamps or network access."
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="fail if the committed output differs; do not write",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=DEFAULT_OUTPUT,
+        help="output path (default: graph.json beside this script)",
+    )
+    return parser.parse_args()
+
+
+def main() -> int:
+    if sys.version_info < (3, 11):
+        print("build_graph.py requires Python 3.11 or newer", file=sys.stderr)
+        return 2
+
+    args = parse_args()
+    output = args.output if args.output.is_absolute() else ROOT / args.output
+
+    try:
+        candidate = render_graph()
+        if candidate != render_graph():
+            raise ValueError("generator produced different bytes on consecutive renders")
+    except ValueError as error:
+        print(f"GRAPH ERROR: {error}", file=sys.stderr)
+        return 2
+
+    if args.check:
+        try:
+            current = output.read_bytes()
+        except OSError as error:
+            print(f"GRAPH STALE: cannot read {output}: {error}", file=sys.stderr)
+            return 1
+        if current != candidate:
+            print(f"GRAPH STALE: regenerate {output.name} with build_graph.py", file=sys.stderr)
+            return 1
+        print(f"GRAPH PASS: {output.name} is deterministic and current (offline)")
+        return 0
+
+    output.write_bytes(candidate)
+    print(f"GRAPH WROTE: {output} ({len(candidate)} bytes, offline)")
+    return 0
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "graph.json")
+    raise SystemExit(main())

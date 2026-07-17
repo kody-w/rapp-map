@@ -4,69 +4,75 @@ on:
   schedule:
     - cron: "0 9 * * 1"
   workflow_dispatch:
+    inputs:
+      report_owner_blocker:
+        description: "Idempotently file or update the known owner-decision issue"
+        required: false
+        default: false
+        type: boolean
   push:
     branches:
       - main
 
-permissions:
-  contents: read
-  issues: write
+permissions: {}
 
 concurrency:
   group: standing-guard
   cancel-in-progress: false
 
 jobs:
-  standing-guard:
-    name: Mechanical drift guard
+  checks:
+    name: Offline structural checks
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: read
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
 
       - name: Use Node.js 20
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 20
 
-      - name: Check drift triangle
-        id: triangle
-        continue-on-error: true
-        run: node .github/scripts/standing-guard.mjs triangle
-
-      - name: Check RAPP-Bible pin
-        id: bible
-        continue-on-error: true
-        run: node .github/scripts/standing-guard.mjs bible
-
-      - name: Run golden conformance
-        id: conformance
-        continue-on-error: true
+      - name: Run rev-5 identity vectors
         run: node conformance/run-conformance.mjs
 
-      - name: Check waiver freshness
-        id: waiver_freshness
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+      - name: Verify waiver retirement
         run: node conformance/waiver-freshness.mjs
 
-      - name: Check repository liveness
-        id: liveness
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: node .github/scripts/standing-guard.mjs liveness
+      - name: Check deterministic graph
+        run: python3 build_graph.py --check
 
-      - name: File or update drift issues
-        if: ${{ always() && (steps.triangle.outcome != 'success' || steps.bible.outcome != 'success' || steps.conformance.outcome != 'success' || steps.waiver_freshness.outcome != 'success' || steps.liveness.outcome != 'success') }}
+      - name: Run offline standing guard
+        run: node .github/scripts/standing-guard.mjs local
+
+      - name: Print unresolved owner decision
+        run: node .github/scripts/standing-guard.mjs blocker
+
+  report-owner-blocker:
+    name: Optional owner-blocker report
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.report_owner_blocker == true }}
+    needs: checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 20
+
+      - name: File or update decision-ready owner blocker
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          TRIANGLE_OUTCOME: ${{ steps.triangle.outcome }}
-          BIBLE_OUTCOME: ${{ steps.bible.outcome }}
-          CONFORMANCE_OUTCOME: ${{ steps.conformance.outcome }}
-          WAIVER_FRESHNESS_OUTCOME: ${{ steps.waiver_freshness.outcome }}
-          LIVENESS_OUTCOME: ${{ steps.liveness.outcome }}
+          RAPP1_REPORT_OWNER_BLOCKER: "true"
         run: node .github/scripts/standing-guard.mjs report

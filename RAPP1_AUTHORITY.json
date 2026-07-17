@@ -1,0 +1,13 @@
+{
+  "document_type": "rapp-1-authority-pin",
+  "repository": "kody-w/rapp-1",
+  "commit": "6723c7add2aed36bb68992fc71a56b0a4bd5ad81",
+  "spec_path": "SPEC.md",
+  "spec_revision": 5,
+  "raw_url": "https://raw.githubusercontent.com/kody-w/rapp-1/6723c7add2aed36bb68992fc71a56b0a4bd5ad81/SPEC.md",
+  "bytes": 41880,
+  "sha256": "6d06daba65d7c045716f3d6e95db8401ab58e727820e4114466d847f62cae49b",
+  "authority_scope": "Sole RAPP/1 protocol authority for this repository.",
+  "structural_pin_only": true,
+  "authenticated_registry_acceptance": false
+}

@@ -1,0 +1,70 @@
+{
+  "document_type": "rapp-1-owner-action-ledger",
+  "status": "blocked-on-owner",
+  "authoritative": false,
+  "can_grant_rapp1_acceptance": false,
+  "authority_pin": "RAPP1_AUTHORITY.json",
+  "blockers": [
+    {
+      "id": "rapp1-section-13-authenticated-registry",
+      "state": "open",
+      "why": "RAPP/1 section 13 makes the authenticated, monotonic, freshness-checked registry the estate root of trust. No owner-provided trust anchor or verifiable registry is present.",
+      "what": "The estate owner must publish and authenticate the section 13 registry. Repository maintainers must not invent any missing trust material.",
+      "where": {
+        "required_repository_path": "ecosystem-spec.json",
+        "owner_publication_location": null
+      },
+      "when": {
+        "owner_decision_at": null,
+        "published_at": null
+      },
+      "how": "Provide the out-of-band estate_owner rappid and SPKI, then publish a section 13 document whose detached signature, sequence, entries, source, and freshness evidence satisfy the pinned rev-5 specification.",
+      "owner_inputs": {
+        "estate_owner_rappid": null,
+        "estate_owner_spki_der_b64": null,
+        "registry_seq": null,
+        "canonical_source": null,
+        "registry_document_url": null,
+        "registry_document_sha256": null,
+        "registry_sig": null,
+        "staleness_policy": null
+      },
+      "acceptance_tests": [
+        {
+          "id": "owner-anchor",
+          "assertion": "The estate_owner rappid is supplied out of band and its tail equals Hb(\"rapp/1:rappid\", SPKI_DER)."
+        },
+        {
+          "id": "registry-shape",
+          "assertion": "The publication is an I-JSON document with schema exactly \"rapp/1-registry\", a uint53 registry_seq, the required append-only entries, and a detached signature."
+        },
+        {
+          "id": "registry-signature",
+          "assertion": "The detached signature verifies over canonical(registry without sig), and its kid is the supplied estate_owner rappid."
+        },
+        {
+          "id": "registry-monotonicity",
+          "assertion": "registry_seq is not lower than the highest registry_seq previously verified by the consumer."
+        },
+        {
+          "id": "registry-source-and-freshness",
+          "assertion": "The registry is obtained from canonical_source or an authenticated provenance-stamped mirror and is within the owner-defined staleness policy."
+        },
+        {
+          "id": "entry-validation",
+          "assertion": "Every protocol, kind, egg-variant, error-code, genesis, SPKI, tombstone, re-anchor, estate-owner, and master-plan entry present is validated against section 13.3 before use."
+        },
+        {
+          "id": "fail-closed-negative-cases",
+          "assertion": "Tests refuse an absent anchor, absent or invalid signature, SPKI-tail mismatch, rollback sequence, stale evidence, unknown namespace value, and malformed entry."
+        }
+      ]
+    }
+  ],
+  "prohibited_substitutes": [
+    "Unsigned ecosystem descriptions",
+    "Moving-branch content",
+    "Byte equality or structural hash equality without owner authentication",
+    "Locally invented owner keys, signatures, sequence values, anchors, re-anchors, tombstones, genesis entries, or acceptance state"
+  ]
+}

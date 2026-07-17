@@ -1,225 +1,113 @@
 {
-  "$comment": "Synthetic golden cases only. Historical source details are reduced to drift classes; no customer data or private names are copied.",
-  "format_version": 1,
+  "$comment": "Synthetic structural vectors for RAPP/1 rev-5 identity only. A passing result does not authenticate an owner, registry, provenance claim, or acceptance state.",
+  "format_version": 2,
+  "authority": {
+    "commit": "6723c7add2aed36bb68992fc71a56b0a4bd5ad81",
+    "spec_sha256": "6d06daba65d7c045716f3d6e95db8401ab58e727820e4114466d847f62cae49b"
+  },
   "cases": [
     {
-      "id": "r1-catalog-live-without-resolution",
-      "class": "catalog-outran-reality",
-      "description": "A catalog calls a synthetic node live even though its only resolution failed.",
-      "fixture": {
-        "catalog": [
-          {
-            "id": "synthetic-node",
-            "status": "live"
-          }
-        ],
-        "resolutions": [
-          {
-            "id": "synthetic-node",
-            "resolved": false,
-            "evidence": "Synthetic health probe returned 404."
-          }
-        ]
-      },
-      "expected_verdict": "DRIFT",
-      "expected_ruling": {
-        "citation": "OPUS.md Part II - catalog/reality assimilation ruling",
-        "rationale": "A catalog claim cannot be assimilated as live truth without successful observed resolution."
-      }
-    },
-    {
-      "id": "r2-mirror-byte-divergence",
-      "class": "mirror-divergence",
-      "description": "Two synthetic mirrors claim to represent the same contract but differ by one version value.",
-      "fixture": {
-        "canonical_text": "{\"version\":\"1.0.0\",\"required_actions\":[\"verify\"]}\n",
-        "mirror_text": "{\"version\":\"1.0.1\",\"required_actions\":[\"verify\"]}\n"
-      },
-      "expected_verdict": "DRIFT",
-      "expected_ruling": {
-        "citation": "OPUS.md Part II - mirror assimilation ruling; ecosystem-spec.json drift_triangle.checks[0]",
-        "rationale": "Independent mirrors of one contract must be byte-identical; unequal SHA-256 digests are drift."
-      }
-    },
-    {
-      "id": "r2-consumer-schema-version-lag",
-      "class": "schema-version-lag",
-      "description": "A synthetic producer emits version 2.0 and two required enum values while its consumer accepts only version 1.0 and one value.",
-      "fixture": {
-        "producer": {
-          "name": "synthetic-record",
-          "version": "2.0",
-          "required_enum_values": [
-            "create",
-            "verify"
-          ]
-        },
-        "consumer": {
-          "name": "synthetic-record",
-          "accepted_versions": [
-            "1.0"
-          ],
-          "enum_values": [
-            "create"
-          ]
-        }
-      },
-      "expected_verdict": "DRIFT",
-      "expected_ruling": {
-        "citation": "OPUS.md Part II - schema-version assimilation ruling",
-        "rationale": "A producer contract is not assimilated until every required consumer accepts its version and exposes a superset of its required enum."
-      }
-    },
-    {
-      "id": "r2-owner-slug-rappid-derivation",
-      "class": "rappid-invariant-violation",
-      "description": "A synthetic rappid suffix is derived from owner/slug instead of stable identity material.",
-      "fixture": {
-        "owner": "example-owner",
-        "slug": "example-organism",
-        "derivation": "sha256(owner/slug)",
-        "identifier": "5c7cbf35666afd09c7371d7d3fa211a1b0c13a05cc14ee825b04abc4215b4efc"
-      },
-      "expected_verdict": "DRIFT",
-      "expected_ruling": {
-        "citation": "CONSTITUTION Art. XXXIV.1 / XXXVI.1 (the identity law is the authority); OPUS.md Part II records the rationale",
-        "rationale": "sha256(owner/slug) is illegal because location is mutable; the identifier must derive from master_pubkey_SPKI or a stable UUID."
-      }
-    },
-    {
-      "id": "r2-bible-version-pin-stale",
-      "class": "bible-pin-stale",
-      "description": "A synthetic Bible render remains pinned to 1.0.0 after the machine contract advances to 1.1.0.",
-      "fixture": {
-        "ecosystem_spec_version": "1.1.0",
-        "bible_spec_version": "1.0.0"
-      },
-      "expected_verdict": "DRIFT",
-      "expected_ruling": {
-        "citation": "OPUS.md Part II - canonical-pin assimilation ruling; ecosystem-spec.json drift_triangle.checks[2]",
-        "rationale": "The human rendering must name the exact machine-contract version it renders."
-      }
-    },
-    {
-      "id": "r3-declared-lts-kernel-pin",
-      "class": "kernel-pin-lag",
-      "description": "A synthetic distribution intentionally pins an older kernel with a matching digest and passing freeze check.",
-      "fixture": {
-        "grail": {
-          "version": "0.6.1",
-          "digest": "15823a3616aeda97a156e859b79d701df79bcfe3a07ef27f13892cc05f9bb281"
-        },
-        "distribution": {
-          "version": "0.6.0",
-          "digest": "bd5366cfd863da09ad047bbef4d2738846edfb798eacfa67a97a456523fdd0ab"
-        },
-        "pin": {
-          "policy": "intentional-lts",
-          "version": "0.6.0",
-          "digest": "bd5366cfd863da09ad047bbef4d2738846edfb798eacfa67a97a456523fdd0ab",
-          "freeze_check": true
-        }
+      "id": "rev5-keyless-uuid4-raw-octets",
+      "description": "A keyless tail uses Hb with the 16 raw UUIDv4 octets.",
+      "rappid": "rappid:@example-owner/keyless:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7",
+      "mint": {
+        "method": "uuid4-octets",
+        "uuid": "00112233-4455-4677-8899-aabbccddeeff",
+        "uuid_octets_hex": "00112233445546778899aabbccddeeff"
       },
       "expected_verdict": "CLEAN",
-      "expected_ruling": {
-        "citation": "OPUS.md Part II - intentional-pin assimilation ruling",
-        "rationale": "A version gap is not silent drift when an explicit LTS pin matches the distributed bytes and a freeze check enforces it."
-      }
+      "expected_rule": "RAPP/1 rev-5 sections 5, 6.1, and 6.2"
     },
     {
-      "id": "r1-unnamed-normalization-collision",
-      "class": "name-collision-unnamed",
-      "description": "Two synthetic records normalize to the same unnamed placeholder.",
-      "fixture": {
-        "records": [
-          {
-            "id": "synthetic-a",
-            "name": ""
-          },
-          {
-            "id": "synthetic-b",
-            "name": "Unnamed"
-          }
-        ]
+      "id": "rev5-keyed-spki-der",
+      "description": "A keyed tail uses Hb with the raw DER SubjectPublicKeyInfo bytes.",
+      "rappid": "rappid:@example-owner/keyed:ba71c721cbd5605b7e155f20d25efb77fecf935449bfc5bf7849da6d577773c4",
+      "mint": {
+        "method": "spki-der",
+        "spki_der_b64": "MCowBQYDK2VwAyEA11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURo="
       },
-      "expected_verdict": "DRIFT",
-      "expected_ruling": {
-        "citation": "OPUS.md Part II - naming assimilation ruling",
-        "rationale": "Distinct records cannot be safely assimilated when their public names collapse to one placeholder identity."
-      }
+      "expected_verdict": "CLEAN",
+      "expected_rule": "RAPP/1 rev-5 sections 5, 6.1, and 6.2"
     },
     {
-      "id": "r3-private-identifier-on-public-surface",
-      "class": "private-name-leak",
-      "description": "A synthetic private identifier appears in public text.",
-      "fixture": {
-        "private_names": [
-          "private-synthetic-alpha"
-        ],
-        "public_text": "Deployment notes reference private-synthetic-alpha as an origin."
+      "id": "rev5-forbid-untagged-spki-sha256",
+      "description": "The pre-domain-separation SHA-256 of SPKI bytes is not a rev-5 mint.",
+      "rappid": "rappid:@example-owner/keyed:06e3fd8fda29bb60ab59557de61edb0aecdb231134be30e75b455f8e1b792fa9",
+      "mint": {
+        "method": "sha256-spki-untagged",
+        "spki_der_b64": "MCowBQYDK2VwAyEA11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURo="
       },
       "expected_verdict": "DRIFT",
-      "expected_ruling": {
-        "citation": "CONSTITUTION Article XLVIII - public/private split",
-        "rationale": "A public artifact must not disclose names from the private side of the estate."
-      }
+      "expected_rule": "RAPP/1 rev-5 sections 5, 6.2, and 6.3"
     },
     {
-      "id": "historical-latest-autonomy-claim",
-      "class": "catalog-outran-reality",
-      "description": "Historical corroborated finding represented by a synthetic qualitative catalog claim and a one-time observation.",
-      "historical": true,
-      "source": "rapp-body/sweeps/latest.json",
-      "resolved": "pending",
-      "fixture": {
-        "mode": "judgment",
-        "catalog_text": "The synthetic node operates continuously and autonomously.",
-        "observation_text": "One snapshot exists; no refresh cadence or later activity is recorded.",
-        "review_question": "Does the one-time synthetic snapshot substantiate the catalog's claim of continuous autonomous operation?"
+      "id": "rev5-forbid-uuid-text-sha256",
+      "description": "Hashing the printable UUID text is not hashing its 16 raw octets with Hb.",
+      "rappid": "rappid:@example-owner/keyless:18a9ef1aae7e35545addbece5cc6b061e2a8ac4c299e9311235bef392addc124",
+      "mint": {
+        "method": "sha256-uuid-text",
+        "uuid": "00112233-4455-4677-8899-aabbccddeeff"
       },
       "expected_verdict": "DRIFT",
-      "expected_ruling": {
-        "citation": "OPUS.md Part II - catalog/reality assimilation ruling",
-        "rationale": "A qualitative operating claim needs evidence at the claimed duration and scope; a one-time snapshot is insufficient."
-      }
+      "expected_rule": "RAPP/1 rev-5 sections 5 and 6.2"
     },
     {
-      "id": "historical-latest-owner-slug-rappid",
-      "class": "rappid-invariant-violation",
-      "description": "Historical corroborated identity finding represented by a second synthetic owner/slug-derived identifier.",
-      "historical": true,
-      "source": "rapp-body/sweeps/latest.json",
-      "resolved": "pending",
-      "fixture": {
-        "owner": "sample-owner",
-        "slug": "sample-twin",
-        "derivation": "sha256(owner/slug)",
-        "identifier": "b712c6f49ffbb5fedf1f7aabca9a964e93f68773f6b69c5794452d4b0e0b52e8"
+      "id": "rev5-forbid-owner-slug-sha256",
+      "description": "A tail derived from the mutable owner and slug is forbidden.",
+      "rappid": "rappid:@example-owner/example-organism:5c7cbf35666afd09c7371d7d3fa211a1b0c13a05cc14ee825b04abc4215b4efc",
+      "mint": {
+        "method": "sha256-owner-slug"
       },
       "expected_verdict": "DRIFT",
-      "expected_ruling": {
-        "citation": "CONSTITUTION Art. XXXIV.1 / XXXVI.1 (the identity law is the authority); OPUS.md Part II records the rationale",
-        "rationale": "An address-derived digest is not a stable identity invariant and must be ruled drift."
-      }
+      "expected_rule": "RAPP/1 rev-5 section 6.2"
     },
     {
-      "id": "historical-latest-private-name",
-      "class": "private-name-leak",
-      "description": "Historical corroborated privacy finding represented by a synthetic private name in a public index.",
-      "historical": true,
-      "source": "rapp-body/sweeps/latest.json",
-      "resolved": "pending",
-      "fixture": {
-        "private_names": [
-          "private-synthetic-beta"
-        ],
-        "public_text": "Public index: private-synthetic-beta"
-      },
+      "id": "rev5-forbid-legacy-v2-grammar",
+      "description": "A legacy version-tagged identity is not the sole rev-5 grammar.",
+      "rappid": "rappid:v2:twin:@example-owner/example-organism:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7@github.com/example-owner/example-organism",
+      "mint": null,
       "expected_verdict": "DRIFT",
-      "expected_ruling": {
-        "citation": "CONSTITUTION Article XLVIII - public/private split",
-        "rationale": "Private-side names are data even when no contents are exposed; publishing the name is a leak."
-      }
+      "expected_rule": "RAPP/1 rev-5 sections 6.1 and 6.3"
+    },
+    {
+      "id": "rev5-forbid-bare-slug-grammar",
+      "description": "A legacy identity without the owner segment is not the rev-5 grammar.",
+      "rappid": "rappid:example-organism:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7",
+      "mint": null,
+      "expected_verdict": "DRIFT",
+      "expected_rule": "RAPP/1 rev-5 section 6.1"
+    },
+    {
+      "id": "rev5-forbid-uppercase-tail",
+      "description": "The hash tail must be exactly 64 lowercase hexadecimal characters.",
+      "rappid": "rappid:@example-owner/keyless:3EDC8783B43579D59A123B50A00C7FAF78963A415EAC9F05F80ECC826FC756F7",
+      "mint": null,
+      "expected_verdict": "DRIFT",
+      "expected_rule": "RAPP/1 rev-5 sections 5 and 6.1"
+    },
+    {
+      "id": "rev5-forbid-short-tail",
+      "description": "A 32-hex provisional tail is not valid in emitted rev-5 identity grammar.",
+      "rappid": "rappid:@example-owner/keyless:3edc8783b43579d59a123b50a00c7faf",
+      "mint": null,
+      "expected_verdict": "DRIFT",
+      "expected_rule": "RAPP/1 rev-5 sections 6.1 and 6.3"
+    },
+    {
+      "id": "rev5-forbid-uppercase-owner",
+      "description": "Owner labels are lowercase and case-sensitive.",
+      "rappid": "rappid:@Example-owner/keyless:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7",
+      "mint": null,
+      "expected_verdict": "DRIFT",
+      "expected_rule": "RAPP/1 rev-5 section 6.1"
+    },
+    {
+      "id": "rev5-forbid-adjacent-hyphen",
+      "description": "Labels cannot contain adjacent hyphens.",
+      "rappid": "rappid:@example--owner/keyless:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7",
+      "mint": null,
+      "expected_verdict": "DRIFT",
+      "expected_rule": "RAPP/1 rev-5 section 6.1"
     }
   ]
 }
