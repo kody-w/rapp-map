@@ -1,13 +1,4 @@
 {
-  "_disposition": {
-    "classification": "historical-observation",
-    "authoritative": false,
-    "rapp1_registry": false,
-    "captured_at": "2026-06-28T20:03:35Z",
-    "source_commit": "baded0098d8b97c2876c0b8af4475cf3061b7ad0",
-    "authority_pin": "RAPP1_AUTHORITY.json",
-    "use": "Audit context only; do not use for current protocol, trust, execution, or owner-acceptance decisions."
-  },
   "schema": "rapp-neuron-mesh/1.0",
   "purpose": "A summonable neuron mesh over the RAPP ecosystem: one rapp-neuron/1.0 card per public spec/HTML surface, understood word-level. Re-instantiate a neuron from its card + live file to answer any drift/audit question; fan the relevant neurons out in a loop for all-encompassing coverage. Built by the build-ecosystem-neuron-mesh workflow.",
   "built_at": "2026-06-28T20:03:35Z",

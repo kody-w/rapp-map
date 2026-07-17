@@ -21,12 +21,17 @@ The machine-readable pin is
 - `ecosystem-spec.json` is a fail-closed registry-path status document, not an
   accepted registry.
 - `estate-map.json`, `neurons.json`, and `neurons-manifest.json` are retained
-  historical observations and are non-authoritative.
-- `graph.json` is deterministic offline map output subordinate to the pinned
-  protocol authority.
-- Conformance vectors test only rev-5 identity grammar and domain-separated
-  mint calculations. They do not authenticate an owner or registry.
+  byte-for-byte as baseline historical evidence. Their non-authoritative
+  disposition and exact hashes are separate in `HISTORICAL_OBSERVATIONS.json`.
+- `graph.json` format 2 separates technical conformance to the pinned protocol
+  authority from section 11 Router/Mirror subordination to `kody-w/RAPP`; it
+  carries no section 13 registry provenance.
+- Conformance format 3 hard-binds every required vector and validates exact DER
+  SPKI bytes before hashing. It does not authenticate an owner or registry.
 - Live waivers cannot suppress a RAPP/1 failure.
+- Local Node checks require the checked-in `rapp-map-offline-guard/1.0`
+  project-process guard in a credential-empty environment. This is not host
+  sandbox enforcement.
 
 ## Remaining blocker
 

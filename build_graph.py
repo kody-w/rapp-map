@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate the deterministic, offline RAPP/1 relationship map."""
+"""Generate the deterministic RAPP/1 relationship map without network imports.
+
+Format 2 separates technical ``conforms_to`` edges to the pinned protocol
+authority from section 11 ``subordinate_to`` edges to the federal source.
+"""
 
 from __future__ import annotations
 
@@ -47,61 +51,61 @@ def load_authority() -> dict[str, Any]:
 
 
 def build_graph(authority: dict[str, Any]) -> dict[str, Any]:
-    authority_node = {
-        "id": "rapp-1",
-        "repo": authority["repository"],
-        "classification": "protocol-authority",
-        "role": "Sole protocol authority, fixed to the exact rev-5 commit.",
-        "authority": True,
-        "subordinate": False,
-        "pinned_commit": authority["commit"],
-    }
-    subordinate_nodes = [
+    nodes = [
         {
-            "id": "rapp-map",
-            "repo": "kody-w/rapp-map",
-            "classification": "read-only-map",
-            "role": "Structural map and historical observation holder.",
-            "authority": False,
-            "subordinate": True,
-        },
-        {
-            "id": "rapp-god",
-            "repo": "kody-w/rapp-god",
-            "classification": "observation",
-            "role": "External observation surface; moving or unsigned state is not authority.",
-            "authority": False,
-            "subordinate": True,
-        },
-        {
-            "id": "RAPP-Bible",
-            "repo": "kody-w/RAPP-Bible",
-            "classification": "human-documentation",
-            "role": "Human documentation surface; not a protocol or trust authority.",
-            "authority": False,
-            "subordinate": True,
+            "id": "rapp-1",
+            "repo": authority["repository"],
+            "classification": "protocol-authority",
+            "role": "Exact rev-5 technical protocol authority.",
+            "protocol_authority": True,
+            "federal_canonical_source": False,
+            "pinned_commit": authority["commit"],
         },
         {
             "id": "RAPP",
             "repo": "kody-w/RAPP",
-            "classification": "application",
-            "role": "Application and historical ecosystem repository subordinate to RAPP/1.",
-            "authority": False,
-            "subordinate": True,
+            "classification": "federal-canonical-source",
+            "role": "Federal canonical source named by RAPP/1 section 11.",
+            "protocol_authority": False,
+            "federal_canonical_source": True,
+            "pinned_commit": None,
+        },
+        {
+            "id": "rapp-map",
+            "repo": "kody-w/rapp-map",
+            "classification": "router-mirror",
+            "role": "Read-only structural map and historical observation holder.",
+            "protocol_authority": False,
+            "federal_canonical_source": False,
+        },
+        {
+            "id": "rapp-god",
+            "repo": "kody-w/rapp-god",
+            "classification": "observation-mirror",
+            "role": "External observation surface; moving or unsigned state is not authority.",
+            "protocol_authority": False,
+            "federal_canonical_source": False,
+        },
+        {
+            "id": "RAPP-Bible",
+            "repo": "kody-w/RAPP-Bible",
+            "classification": "documentation-mirror",
+            "role": "Human documentation surface; not a protocol or trust authority.",
+            "protocol_authority": False,
+            "federal_canonical_source": False,
         },
     ]
-    nodes = [authority_node, *subordinate_nodes]
 
     return {
         "document_type": "repository-relationship-map",
-        "format_version": 1,
+        "format_version": 2,
         "generated_by": "build_graph.py",
-        "generation": "deterministic-offline",
+        "generation": "deterministic-network-free",
         "disposition": {
             "classification": "structural-map",
             "authoritative": False,
             "rapp1_registry": False,
-            "authenticated_registry": None,
+            "registry_provenance": None,
             "owner_acceptance": False,
         },
         "protocol_authority": {
@@ -113,14 +117,58 @@ def build_graph(authority: dict[str, Any]) -> dict[str, Any]:
             "bytes": authority["bytes"],
             "sha256": authority["sha256"],
         },
+        "federal_canonical_source": {
+            "repository": "kody-w/RAPP",
+            "commit": None,
+            "basis": "RAPP/1 rev-5 section 11 Router/Mirror subordination.",
+        },
+        "edge_semantics": {
+            "conforms_to": (
+                "Declares the technical RAPP/1 protocol target only; not owner "
+                "acceptance or section 13 provenance."
+            ),
+            "subordinate_to": (
+                "Declares mandatory Router/Mirror subordination to the section 11 "
+                "federal canonical source."
+            ),
+        },
         "nodes": nodes,
         "edges": [
             {
-                "from": node["id"],
-                "to": authority_node["id"],
+                "from": "RAPP",
+                "to": "rapp-1",
+                "type": "conforms_to",
+            },
+            {
+                "from": "rapp-map",
+                "to": "rapp-1",
+                "type": "conforms_to",
+            },
+            {
+                "from": "rapp-map",
+                "to": "RAPP",
                 "type": "subordinate_to",
-            }
-            for node in subordinate_nodes
+            },
+            {
+                "from": "rapp-god",
+                "to": "rapp-1",
+                "type": "conforms_to",
+            },
+            {
+                "from": "rapp-god",
+                "to": "RAPP",
+                "type": "subordinate_to",
+            },
+            {
+                "from": "RAPP-Bible",
+                "to": "rapp-1",
+                "type": "conforms_to",
+            },
+            {
+                "from": "RAPP-Bible",
+                "to": "RAPP",
+                "type": "subordinate_to",
+            },
         ],
     }
 
@@ -132,7 +180,7 @@ def render_graph() -> bytes:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Generate graph.json without timestamps or network access."
+        description="Generate graph.json without timestamps or network-capable imports."
     )
     parser.add_argument(
         "--check",
@@ -173,11 +221,17 @@ def main() -> int:
         if current != candidate:
             print(f"GRAPH STALE: regenerate {output.name} with build_graph.py", file=sys.stderr)
             return 1
-        print(f"GRAPH PASS: {output.name} is deterministic and current (offline)")
+        print(
+            f"GRAPH PASS: {output.name} is deterministic and current "
+            "(network-free by construction)"
+        )
         return 0
 
     output.write_bytes(candidate)
-    print(f"GRAPH WROTE: {output} ({len(candidate)} bytes, offline)")
+    print(
+        f"GRAPH WROTE: {output} ({len(candidate)} bytes, "
+        "network-free by construction)"
+    )
     return 0
 
 

@@ -16,6 +16,11 @@ function invariant(condition, message) {
 async function main() {
   const nodeMajor = Number(process.versions.node.split(".")[0]);
   invariant(nodeMajor >= 20, `Node >=20 is required; found ${process.versions.node}`);
+  invariant(
+    globalThis[Symbol.for("rapp-map.offline-guard")]?.schema ===
+      "rapp-map-offline-guard/1.0",
+    "run with NODE_OPTIONS=--import=./.github/scripts/offline-guard.mjs"
+  );
 
   const text = await readFile(waiversPath, "utf8");
   let document;
@@ -43,7 +48,9 @@ async function main() {
   invariant(document.waivers.length === 0, "live RAPP/1 waivers are prohibited");
 
   console.log("RAPP/1 waiver retirement");
-  console.log("waivers=0 authoritative=false suppression=false network=offline");
+  console.log(
+    "waivers=0 authoritative=false suppression=false network=guarded-project-process host-enforcement=false"
+  );
   console.log("RESULT PASS: no live waiver can hide a RAPP/1 failure.");
 }
 

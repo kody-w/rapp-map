@@ -1,6 +1,6 @@
 {
-  "$comment": "Synthetic structural vectors for RAPP/1 rev-5 identity only. A passing result does not authenticate an owner, registry, provenance claim, or acceptance state.",
-  "format_version": 2,
+  "$comment": "Synthetic structural vectors for RAPP/1 rev-5 identity only. Required IDs, verdicts, and normalized fixture digests are independently pinned in identity-validation.mjs.",
+  "format_version": 3,
   "authority": {
     "commit": "6723c7add2aed36bb68992fc71a56b0a4bd5ad81",
     "spec_sha256": "6d06daba65d7c045716f3d6e95db8401ab58e727820e4114466d847f62cae49b"
@@ -20,7 +20,7 @@
     },
     {
       "id": "rev5-keyed-spki-der",
-      "description": "A keyed tail uses Hb with the raw DER SubjectPublicKeyInfo bytes.",
+      "description": "A keyed tail uses Hb with one exact DER SubjectPublicKeyInfo object.",
       "rappid": "rappid:@example-owner/keyed:ba71c721cbd5605b7e155f20d25efb77fecf935449bfc5bf7849da6d577773c4",
       "mint": {
         "method": "spki-der",
@@ -30,8 +30,41 @@
       "expected_rule": "RAPP/1 rev-5 sections 5, 6.1, and 6.2"
     },
     {
+      "id": "rev5-forbid-spki-trailing-one-byte",
+      "description": "A valid SPKI followed by one unconsumed byte is not exact DER SPKI.",
+      "rappid": "rappid:@example-owner/keyed:91481784c7d4e4c1b0bb7af8e56708a85f1c28632650dfc6c26a9b89c63fcecb",
+      "mint": {
+        "method": "spki-der",
+        "spki_der_b64": "MCowBQYDK2VwAyEA11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURoA"
+      },
+      "expected_verdict": "DRIFT",
+      "expected_rule": "RAPP/1 rev-5 section 6.2 exact SPKI_DER octets"
+    },
+    {
+      "id": "rev5-forbid-spki-trailing-four-bytes",
+      "description": "A valid SPKI followed by four unconsumed bytes is not exact DER SPKI.",
+      "rappid": "rappid:@example-owner/keyed:478f4f82f4a9783fb1b337f1dda66cc9d3ae4022dd7528699d87f1c1ac78dc0e",
+      "mint": {
+        "method": "spki-der",
+        "spki_der_b64": "MCowBQYDK2VwAyEA11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURrerb7v"
+      },
+      "expected_verdict": "DRIFT",
+      "expected_rule": "RAPP/1 rev-5 section 6.2 exact SPKI_DER octets"
+    },
+    {
+      "id": "rev5-forbid-spki-malformed-length",
+      "description": "A DER sequence length that exceeds the supplied object is malformed.",
+      "rappid": "rappid:@example-owner/keyed:18f12293d635297df2a0394312a15367829ec6fb09d631aa0af7ff53722311c0",
+      "mint": {
+        "method": "spki-der",
+        "spki_der_b64": "MCswBQYDK2VwAyEA11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHURo="
+      },
+      "expected_verdict": "DRIFT",
+      "expected_rule": "RAPP/1 rev-5 section 6.2 exact SPKI_DER octets"
+    },
+    {
       "id": "rev5-forbid-untagged-spki-sha256",
-      "description": "The pre-domain-separation SHA-256 of SPKI bytes is not a rev-5 mint.",
+      "description": "The pre-domain-separation SHA-256 of exact SPKI bytes is not a rev-5 mint.",
       "rappid": "rappid:@example-owner/keyed:06e3fd8fda29bb60ab59557de61edb0aecdb231134be30e75b455f8e1b792fa9",
       "mint": {
         "method": "sha256-spki-untagged",
@@ -42,7 +75,7 @@
     },
     {
       "id": "rev5-forbid-uuid-text-sha256",
-      "description": "Hashing the printable UUID text is not hashing its 16 raw octets with Hb.",
+      "description": "Hashing printable UUID text is not hashing its 16 raw octets with Hb.",
       "rappid": "rappid:@example-owner/keyless:18a9ef1aae7e35545addbece5cc6b061e2a8ac4c299e9311235bef392addc124",
       "mint": {
         "method": "sha256-uuid-text",
@@ -63,49 +96,97 @@
     },
     {
       "id": "rev5-forbid-legacy-v2-grammar",
-      "description": "A legacy version-tagged identity is not the sole rev-5 grammar.",
-      "rappid": "rappid:v2:twin:@example-owner/example-organism:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7@github.com/example-owner/example-organism",
-      "mint": null,
+      "description": "A version-tagged form is a specific mutation of the valid keyless control.",
+      "rappid": "rappid:v2:twin:@example-owner/keyless:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7@github.com/example-owner/keyless",
+      "mint": {
+        "method": "uuid4-octets",
+        "uuid": "00112233-4455-4677-8899-aabbccddeeff",
+        "uuid_octets_hex": "00112233445546778899aabbccddeeff"
+      },
+      "mutation": {
+        "control_id": "rev5-keyless-uuid4-raw-octets",
+        "kind": "legacy-v2-grammar"
+      },
       "expected_verdict": "DRIFT",
       "expected_rule": "RAPP/1 rev-5 sections 6.1 and 6.3"
     },
     {
       "id": "rev5-forbid-bare-slug-grammar",
-      "description": "A legacy identity without the owner segment is not the rev-5 grammar.",
-      "rappid": "rappid:example-organism:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7",
-      "mint": null,
+      "description": "Removing the owner segment is a specific mutation of the valid keyless control.",
+      "rappid": "rappid:keyless:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7",
+      "mint": {
+        "method": "uuid4-octets",
+        "uuid": "00112233-4455-4677-8899-aabbccddeeff",
+        "uuid_octets_hex": "00112233445546778899aabbccddeeff"
+      },
+      "mutation": {
+        "control_id": "rev5-keyless-uuid4-raw-octets",
+        "kind": "bare-slug-grammar"
+      },
       "expected_verdict": "DRIFT",
       "expected_rule": "RAPP/1 rev-5 section 6.1"
     },
     {
       "id": "rev5-forbid-uppercase-tail",
-      "description": "The hash tail must be exactly 64 lowercase hexadecimal characters.",
+      "description": "Uppercasing the tail is a specific mutation of the valid keyless control.",
       "rappid": "rappid:@example-owner/keyless:3EDC8783B43579D59A123B50A00C7FAF78963A415EAC9F05F80ECC826FC756F7",
-      "mint": null,
+      "mint": {
+        "method": "uuid4-octets",
+        "uuid": "00112233-4455-4677-8899-aabbccddeeff",
+        "uuid_octets_hex": "00112233445546778899aabbccddeeff"
+      },
+      "mutation": {
+        "control_id": "rev5-keyless-uuid4-raw-octets",
+        "kind": "uppercase-tail"
+      },
       "expected_verdict": "DRIFT",
       "expected_rule": "RAPP/1 rev-5 sections 5 and 6.1"
     },
     {
       "id": "rev5-forbid-short-tail",
-      "description": "A 32-hex provisional tail is not valid in emitted rev-5 identity grammar.",
+      "description": "Truncating the tail to 32 hex is a specific mutation of the valid keyless control.",
       "rappid": "rappid:@example-owner/keyless:3edc8783b43579d59a123b50a00c7faf",
-      "mint": null,
+      "mint": {
+        "method": "uuid4-octets",
+        "uuid": "00112233-4455-4677-8899-aabbccddeeff",
+        "uuid_octets_hex": "00112233445546778899aabbccddeeff"
+      },
+      "mutation": {
+        "control_id": "rev5-keyless-uuid4-raw-octets",
+        "kind": "short-tail"
+      },
       "expected_verdict": "DRIFT",
       "expected_rule": "RAPP/1 rev-5 sections 6.1 and 6.3"
     },
     {
       "id": "rev5-forbid-uppercase-owner",
-      "description": "Owner labels are lowercase and case-sensitive.",
+      "description": "Uppercasing the first owner letter is a specific mutation of the valid keyless control.",
       "rappid": "rappid:@Example-owner/keyless:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7",
-      "mint": null,
+      "mint": {
+        "method": "uuid4-octets",
+        "uuid": "00112233-4455-4677-8899-aabbccddeeff",
+        "uuid_octets_hex": "00112233445546778899aabbccddeeff"
+      },
+      "mutation": {
+        "control_id": "rev5-keyless-uuid4-raw-octets",
+        "kind": "uppercase-owner"
+      },
       "expected_verdict": "DRIFT",
       "expected_rule": "RAPP/1 rev-5 section 6.1"
     },
     {
       "id": "rev5-forbid-adjacent-hyphen",
-      "description": "Labels cannot contain adjacent hyphens.",
+      "description": "Duplicating the owner hyphen is a specific mutation of the valid keyless control.",
       "rappid": "rappid:@example--owner/keyless:3edc8783b43579d59a123b50a00c7faf78963a415eac9f05f80ecc826fc756f7",
-      "mint": null,
+      "mint": {
+        "method": "uuid4-octets",
+        "uuid": "00112233-4455-4677-8899-aabbccddeeff",
+        "uuid_octets_hex": "00112233445546778899aabbccddeeff"
+      },
+      "mutation": {
+        "control_id": "rev5-keyless-uuid4-raw-octets",
+        "kind": "adjacent-hyphen"
+      },
       "expected_verdict": "DRIFT",
       "expected_rule": "RAPP/1 rev-5 section 6.1"
     }

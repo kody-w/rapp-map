@@ -19,11 +19,12 @@ registry evidence required by section 13 is absent. See
 | Artifact | Disposition |
 | --- | --- |
 | `ecosystem-spec.json` | Fail-closed registry-path status; consumers must refuse it as an authenticated registry. |
-| `graph.json` | Deterministic, offline structural map subordinate to the exact authority pin. |
-| `estate-map.json` | Historical 92-repository observation; non-authoritative. |
-| `neurons.json` | Historical 630-record observation; non-authoritative. |
-| `neurons-manifest.json` | Historical index for the same observation; non-authoritative. |
-| `conformance/` | Structural rev-5 identity vectors; never owner acceptance. |
+| `graph.json` | Format 2 deterministic map: technical `conforms_to` targets `kody-w/rapp-1`; section 11 `subordinate_to` targets `kody-w/RAPP`. It claims no registry provenance. |
+| `estate-map.json` | Historical 92-repository evidence, byte-identical to the baseline blob. |
+| `neurons.json` | Historical 630-record evidence, byte-identical to the baseline blob. |
+| `neurons-manifest.json` | Historical index evidence, byte-identical to the baseline blob. |
+| `HISTORICAL_OBSERVATIONS.json` | Versioned non-authoritative sidecar with baseline byte lengths and SHA-256 values. |
+| `conformance/` | Format 3, independently bound rev-5 identity vectors; never owner acceptance. |
 
 Historical ecosystem prose and the former unsigned mirror remain available in
 Git history at baseline commit
@@ -31,13 +32,14 @@ Git history at baseline commit
 
 ## Local validation
 
-```text
-node conformance/run-conformance.mjs
-node conformance/waiver-freshness.mjs
-python3.11 build_graph.py --check
-node .github/scripts/standing-guard.mjs local
-node .github/scripts/standing-guard.mjs blocker
+```sh
+bash .github/scripts/run-offline-gates.sh
 ```
 
-These commands are offline. Passing them establishes structural consistency
-only; it does not resolve the owner blocker.
+The runner starts every Node check with the checked-in
+`rapp-map-offline-guard/1.0` project-process guard in a credential-empty
+environment and runs Python graph generation, which has no network-capable
+imports. The guard denies the tested Node network, subprocess, worker, and
+native-loading paths and synchronizes patched built-ins for ESM. It is **not
+host sandbox enforcement**. Passing establishes structural consistency only;
+it does not resolve the owner blocker.

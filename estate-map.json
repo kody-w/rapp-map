@@ -1,13 +1,4 @@
 {
-  "_disposition": {
-    "classification": "historical-observation",
-    "authoritative": false,
-    "rapp1_registry": false,
-    "captured_at": "2026-06-28T20:21:23Z",
-    "source_commit": "baded0098d8b97c2876c0b8af4475cf3061b7ad0",
-    "authority_pin": "RAPP1_AUTHORITY.json",
-    "use": "Audit context only; do not use for current protocol, trust, liveness, or owner-acceptance decisions."
-  },
   "schema": "rapp-estate-map/1.0",
   "built_at": "2026-06-28T20:21:23Z",
   "purpose": "Repo-level map of the whole rapp estate \u2014 every rapp-named repo scanned then verifier-rechecked. Complements the per-file neuron mesh (neurons.json). Load this first to avoid operating on half the estate.",

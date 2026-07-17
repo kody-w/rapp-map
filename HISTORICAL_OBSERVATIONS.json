@@ -1,0 +1,45 @@
+{
+  "schema": "rapp-map-historical-observations/1.0",
+  "document_type": "historical-observation-disposition",
+  "baseline_commit": "baded0098d8b97c2876c0b8af4475cf3061b7ad0",
+  "authority_pin": "RAPP1_AUTHORITY.json",
+  "authoritative": false,
+  "rapp1_registry": false,
+  "registry_provenance": null,
+  "integrity_basis": "Exact Git blob bytes at the baseline commit plus pinned byte length and SHA-256; this is not RAPP/1 section 13 registry provenance.",
+  "observations": [
+    {
+      "path": "estate-map.json",
+      "payload_schema": "rapp-estate-map/1.0",
+      "classification": "historical-observation",
+      "captured_at": "2026-06-28T20:21:23Z",
+      "record_count": 92,
+      "bytes": 366229,
+      "sha256": "b557ce7b3855658124252d8b4cb60af2ec56fb52ebc27e7fb0069f15251605a1",
+      "authoritative": false,
+      "rapp1_registry": false
+    },
+    {
+      "path": "neurons.json",
+      "payload_schema": "rapp-neuron-mesh/1.0",
+      "classification": "historical-observation",
+      "captured_at": "2026-06-28T20:03:35Z",
+      "record_count": 630,
+      "bytes": 2484245,
+      "sha256": "52cbb3d5db3a79364d23dc8b9d0554e411996af312dfb7b1a03207073707d1eb",
+      "authoritative": false,
+      "rapp1_registry": false
+    },
+    {
+      "path": "neurons-manifest.json",
+      "payload_schema": "rapp-neuron-mesh-manifest/1.0",
+      "classification": "historical-observation-index",
+      "captured_at": "2026-06-28T20:03:35Z",
+      "record_count": 630,
+      "bytes": 339458,
+      "sha256": "9918344e75fcdcf4dba73da8b2bc0a165c6ed5659a58508f4de608a11ffd255a",
+      "authoritative": false,
+      "rapp1_registry": false
+    }
+  ]
+}

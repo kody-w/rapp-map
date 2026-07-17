@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   checks:
-    name: Offline structural checks
+    name: Guarded local structural checks
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -31,26 +31,16 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js 20
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 20
 
-      - name: Run rev-5 identity vectors
-        run: node conformance/run-conformance.mjs
-
-      - name: Verify waiver retirement
-        run: node conformance/waiver-freshness.mjs
-
-      - name: Check deterministic graph
-        run: python3 build_graph.py --check
-
-      - name: Run offline standing guard
-        run: node .github/scripts/standing-guard.mjs local
-
-      - name: Print unresolved owner decision
-        run: node .github/scripts/standing-guard.mjs blocker
+      - name: Run credential-empty guarded local gates
+        run: bash .github/scripts/run-offline-gates.sh
 
   report-owner-blocker:
     name: Optional owner-blocker report

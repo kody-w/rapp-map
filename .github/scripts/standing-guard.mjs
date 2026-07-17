@@ -3,28 +3,15 @@
 import { readFile, readdir } from "node:fs/promises";
 import { dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  AUTHORITY,
+  BASELINE_COMMIT,
+  validateGraphDocument,
+  validateHistoricalObservations,
+  validateWorkflowSources
+} from "./repository-validators.mjs";
 
 const repositoryRoot = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-const BASELINE_COMMIT = "baded0098d8b97c2876c0b8af4475cf3061b7ad0";
-const AUTHORITY = {
-  document_type: "rapp-1-authority-pin",
-  repository: "kody-w/rapp-1",
-  commit: "6723c7add2aed36bb68992fc71a56b0a4bd5ad81",
-  spec_path: "SPEC.md",
-  spec_revision: 5,
-  raw_url:
-    "https://raw.githubusercontent.com/kody-w/rapp-1/6723c7add2aed36bb68992fc71a56b0a4bd5ad81/SPEC.md",
-  bytes: 41880,
-  sha256: "6d06daba65d7c045716f3d6e95db8401ab58e727820e4114466d847f62cae49b",
-  structural_pin_only: true,
-  authenticated_registry_acceptance: false
-};
-const WORKFLOW_PINS = {
-  "actions/checkout": "34e114876b0b11c390a56381ad16ebd13914f8d5",
-  "actions/setup-node": "49933ea5288caeca8642d1e84afbd3f7d6820020",
-  "kody-w/rapp-drift-lint/.github/workflows/drift-lint-reusable.yml":
-    "de1c664154d3456224bdf95e830736ffb5270c2b"
-};
 
 function invariant(condition, message) {
   if (!condition) {
@@ -162,67 +149,20 @@ async function checkRegistryQuarantine() {
 }
 
 async function checkHistoricalDispositions() {
-  const expectations = [
-    ["estate-map.json", 92, "2026-06-28T20:21:23Z"],
-    ["neurons.json", 630, "2026-06-28T20:03:35Z"],
-    ["neurons-manifest.json", 630, "2026-06-28T20:03:35Z"]
-  ];
-  for (const [path, count, capturedAt] of expectations) {
-    const document = await json(path);
-    const disposition = document._disposition;
-    invariant(
-      disposition?.classification?.startsWith("historical-observation"),
-      `${path} must be classified as a historical observation`
-    );
-    invariant(disposition.authoritative === false, `${path} must be non-authoritative`);
-    invariant(disposition.rapp1_registry === false, `${path} must not be a RAPP/1 registry`);
-    invariant(disposition.captured_at === capturedAt, `${path} capture time drifted`);
-    invariant(disposition.source_commit === BASELINE_COMMIT, `${path} source commit drifted`);
-    invariant(
-      disposition.authority_pin === "RAPP1_AUTHORITY.json",
-      `${path} authority pin reference drifted`
-    );
-    invariant(document.count === count, `${path} historical count changed unexpectedly`);
-  }
-  return "historical observations=3 non-authoritative=true";
+  const sidecar = await json("HISTORICAL_OBSERVATIONS.json");
+  const fileBytes = {
+    "estate-map.json": await readFile(join(repositoryRoot, "estate-map.json")),
+    "neurons.json": await readFile(join(repositoryRoot, "neurons.json")),
+    "neurons-manifest.json": await readFile(join(repositoryRoot, "neurons-manifest.json"))
+  };
+  validateHistoricalObservations(sidecar, fileBytes);
+  return "historical observations=3 baseline-bytes=exact disposition=sidecar-only";
 }
 
 async function checkGraph() {
   const graph = await json("graph.json");
-  invariant(graph.generation === "deterministic-offline", "graph generation must be deterministic offline");
-  invariant(graph.disposition?.authoritative === false, "graph must be non-authoritative");
-  invariant(graph.disposition?.rapp1_registry === false, "graph must not be a registry");
-  invariant(graph.disposition?.authenticated_registry === null, "graph cannot claim registry evidence");
-  invariant(graph.disposition?.owner_acceptance === false, "graph cannot claim owner acceptance");
-  invariant(
-    graph.protocol_authority?.repository === AUTHORITY.repository &&
-      graph.protocol_authority?.commit === AUTHORITY.commit &&
-      graph.protocol_authority?.sha256 === AUTHORITY.sha256,
-    "graph protocol authority pin drifted"
-  );
-  invariant(Array.isArray(graph.nodes) && graph.nodes.length === 5, "graph must contain five scoped nodes");
-  const authorities = graph.nodes.filter((node) => node.authority === true);
-  invariant(
-    authorities.length === 1 &&
-      authorities[0].id === "rapp-1" &&
-      authorities[0].repo === AUTHORITY.repository &&
-      authorities[0].pinned_commit === AUTHORITY.commit,
-    "rapp-1 must be the sole graph authority"
-  );
-  const subordinates = graph.nodes.filter((node) => node.id !== "rapp-1");
-  invariant(
-    subordinates.every((node) => node.authority === false && node.subordinate === true),
-    "all map, observation, documentation, and application nodes must be subordinate"
-  );
-  invariant(
-    Array.isArray(graph.edges) &&
-      graph.edges.length === subordinates.length &&
-      graph.edges.every(
-        (edge) => edge.to === "rapp-1" && edge.type === "subordinate_to"
-      ),
-    "every subordinate graph node must point to rapp-1"
-  );
-  return "graph authority=1 subordinate-nodes=4";
+  validateGraphDocument(graph);
+  return "graph-format=2 technical-target=rapp-1 federal-source=RAPP";
 }
 
 async function checkWaivers() {
@@ -269,38 +209,11 @@ async function checkCurrentDocumentation() {
 }
 
 async function checkWorkflowPins() {
-  const workflowPaths = [
-    ".github/workflows/drift-lint.yml",
-    ".github/workflows/standing-guard.yml"
-  ];
-  let usesCount = 0;
-  for (const path of workflowPaths) {
-    const source = await text(path);
-    const uses = [...source.matchAll(/^\s*uses:\s*([^\s#]+)\s*$/gmu)].map((match) => match[1]);
-    invariant(uses.length > 0, `${path} has no workflow references`);
-    for (const reference of uses) {
-      usesCount += 1;
-      const at = reference.lastIndexOf("@");
-      invariant(at > 0, `${path} has an unpinned reference: ${reference}`);
-      const action = reference.slice(0, at);
-      const pin = reference.slice(at + 1);
-      invariant(/^[0-9a-f]{40}$/.test(pin), `${path} reference is mutable: ${reference}`);
-      invariant(Object.hasOwn(WORKFLOW_PINS, action), `${path} uses unexpected action ${action}`);
-      invariant(pin === WORKFLOW_PINS[action], `${path} uses the wrong pin for ${action}`);
-    }
-  }
-  const drift = await text(".github/workflows/drift-lint.yml");
-  invariant(
-    drift.includes("permissions: { contents: read }"),
-    "drift-lint workflow must retain read-only contents permission"
-  );
-  const guard = await text(".github/workflows/standing-guard.yml");
-  invariant(/^permissions:\s*\{\}\s*$/mu.test(guard), "standing guard must default to no permissions");
-  invariant(!/contents:\s*write/u.test(guard), "standing guard must not write repository contents");
-  invariant(
-    (guard.match(/issues:\s*write/gu) ?? []).length === 1,
-    "only the opt-in report job may write issues"
-  );
+  const sources = {
+    ".github/workflows/drift-lint.yml": await text(".github/workflows/drift-lint.yml"),
+    ".github/workflows/standing-guard.yml": await text(".github/workflows/standing-guard.yml")
+  };
+  const usesCount = validateWorkflowSources(sources);
   return `workflow-references=${usesCount} immutable=true`;
 }
 
@@ -310,18 +223,44 @@ async function checkOfflineSources() {
     !/\b(?:urllib|requests|httpx|socket)\b|urlopen\s*\(/u.test(python),
     "build_graph.py contains a network dependency"
   );
-  const offlineScripts = [
-    "conformance/run-conformance.mjs",
-    "conformance/waiver-freshness.mjs"
-  ];
-  for (const path of offlineScripts) {
-    const source = await text(path);
-    invariant(
-      !/\bfetch\s*\(|node:https|node:http/u.test(source),
-      `${path} contains a network call in a local check`
-    );
-  }
-  return "local-check-network-calls=0 standing-guard-fetch=runtime-disabled";
+  const gateRunner = await text(".github/scripts/run-offline-gates.sh");
+  invariant(gateRunner.includes("env -i"), "local gate runner must clear inherited credentials");
+  invariant(
+    gateRunner.includes("NODE_OPTIONS=\"--import=$GUARD\""),
+    "local gate runner must preload the checked-in guard"
+  );
+  invariant(
+    gateRunner.includes("tests/offline-guard-probe.mjs") &&
+      gateRunner.includes("tests/run-regressions.mjs"),
+    "local gate runner must execute offline and adversarial probes"
+  );
+  const marker = globalThis[Symbol.for("rapp-map.offline-guard")];
+  invariant(
+    marker?.schema === "rapp-map-offline-guard/1.0" && marker.active === true,
+    "checked-in offline guard is not active"
+  );
+  invariant(marker.host_enforcement === false, "project guard must not claim host enforcement");
+  return "python=network-free-construction node=guarded-project-process host-enforcement=false";
+}
+
+async function checkSchemaTokens() {
+  const sidecar = await json("HISTORICAL_OBSERVATIONS.json");
+  const graph = await json("graph.json");
+  const cases = await json("conformance/golden-cases.json");
+  const candidate = await json("ecosystem-spec.json");
+  invariant(
+    sidecar.schema === "rapp-map-historical-observations/1.0",
+    "historical sidecar version token drifted"
+  );
+  invariant(graph.format_version === 2, "graph shape requires format_version 2");
+  invariant(cases.format_version === 3, "identity fixture shape requires format_version 3");
+  invariant(!Object.hasOwn(candidate, "schema"), "quarantined registry path must remain schema-less");
+  invariant(
+    globalThis[Symbol.for("rapp-map.offline-guard")]?.schema ===
+      "rapp-map-offline-guard/1.0",
+    "offline guard interface token drifted"
+  );
+  return "sidecar=1.0 graph=2 identity-vectors=3 offline-guard=1.0 quarantine=schema-less";
 }
 
 async function checkLocal() {
@@ -335,10 +274,11 @@ async function checkLocal() {
     ["waivers", checkWaivers],
     ["documentation", checkCurrentDocumentation],
     ["workflow-pins", checkWorkflowPins],
+    ["schema-tokens", checkSchemaTokens],
     ["offline", checkOfflineSources]
   ];
 
-  console.log("RAPP/1 standing guard (offline structural checks)");
+  console.log("RAPP/1 standing guard (guarded local structural checks)");
   for (const [name, check] of checks) {
     const detail = await check();
     console.log(`PASS ${name}: ${detail}`);
@@ -386,12 +326,11 @@ async function main() {
     `usage: node .github/scripts/standing-guard.mjs <${Object.keys(commands).join("|")}>`
   );
   if (command !== "report") {
-    Object.defineProperty(globalThis, "fetch", {
-      configurable: false,
-      value() {
-        throw new Error("network access is disabled for standing-guard local commands");
-      }
-    });
+    invariant(
+      globalThis[Symbol.for("rapp-map.offline-guard")]?.schema ===
+        "rapp-map-offline-guard/1.0",
+      "run local commands with NODE_OPTIONS=--import=./.github/scripts/offline-guard.mjs"
+    );
   }
   await commands[command]();
 }
