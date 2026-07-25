@@ -47,4 +47,13 @@ jobs:
 
           Derived by tools/spine.py. Do not hand-edit estate-map.json — edit
           spine/overlay.json instead."
-          git push
+          # Two runs can overlap (a schedule and a manual dispatch), and the
+          # loser's push is rejected. The observation is still valid, so rebase
+          # onto whatever landed and retry rather than throwing the run away.
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "push rejected (attempt $attempt) — rebasing onto origin/main"
+            git pull --rebase --autostash origin main || exit 1
+          done
+          echo "::error::could not push after 3 attempts"
+          exit 1
