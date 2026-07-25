@@ -1621,7 +1621,7 @@
         "kody-w/RAPP",
         "kody-w/rapp-mcp"
       ],
-      "shipped_evidence": "5-file repo with a 1400-line stdlib-only project_twin_agent.py (embeds ProjectWorkspace companion as a string), full 13-section SPEC.md (schema rapp-network/1.0), and a mechanical scripts/cross_validate.py drift checker. PR #1 (drift-fixes) merged. Manifest example shows a real shipped twin (bchydro, kind:project, port 7074). No CI/test output or live URL observed.",
+      "shipped_evidence": "5-file repo with a 1400-line stdlib-only project_twin_agent.py (embeds ProjectWorkspace companion as a string), full 13-section SPEC.md (schema rapp-network/1.0), and a mechanical scripts/cross_validate.py drift checker. PR #1 (drift-fixes) merged. Manifest example shows a real shipped twin (example-co, kind:project, port 7074). No CI/test output or live URL observed.",
       "gaps": [
         "Self-declared 'Draft v0' status \u2014 no test suite or CI evidence in the repo, validation is manual via cross_validate.py.",
         "Acknowledged unresolved kind drift: emits kind:'project' but upstream ESTATE_SPEC.md frozen valid-kinds list (twin/neighborhood/ant-farm/braintrust/workspace/hatched/rapplication/prototype/operator) lacks 'project'; cross_validate WARNs until one side amends.",
