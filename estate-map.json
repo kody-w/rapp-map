@@ -2919,6 +2919,19 @@
       "load_bearing": false,
       "deep_verified": true,
       "note": "household-organ layer; drop-in organ + a global PWA repo"
+    },
+    {
+      "repo": "kody-w/rapp-toaster",
+      "role": "The SKILL.md Toaster: zero-fidelity-loss conversion between agent.py (the grail form), SKILL.md, openclaw, and openrappter. Encodes the pattern that agent.py is canonical and every other format is a PROJECTION carrying the canonical record inside itself (the RCI capsule). --bundle ships the runnable stdlib-only agent beside the markdown so a non-RAPP host keeps real determinism by executing rather than paraphrasing. soak proves fixed-point, path-independence and idempotence -- the properties a single round trip cannot see.",
+      "layer": "distribution",
+      "status": "active",
+      "specs": [
+        "rapp-capability-interchange/1.0 (rci capsule)"
+      ],
+      "depends_on": [
+        "kody-w/rapp-installer (BasicAgent contract it targets)"
+      ],
+      "notes": "Membrane transport for the neighborhood protocol: carries capabilities across a host boundary without the host adopting RAPP. Created 2026-07-24."
     }
   ]
 }
