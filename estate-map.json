@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-07-25T17:34:55Z",
+  "built_at": "2026-07-25T17:37:41Z",
   "canon_paths": [
     "CONSTITUTION.md",
     "specs/SPEC.md",
@@ -15,7 +15,7 @@
     "total": 377,
     "with_heartbeat": 0
   },
-  "generated_at": "2026-07-25T17:34:55Z",
+  "generated_at": "2026-07-25T17:37:41Z",
   "generated_by": "spine map \u2014 DERIVED. Do not hand-edit; edit overlay.json.",
   "members": [
     {
@@ -2260,7 +2260,7 @@
       "head_tree_sha": "b0f4caf6b3df4e571d206cd68ef1cfab694b78cb",
       "private": false,
       "repo": "kody-w/localFirstTools-main",
-      "updated_at": "2026-07-25T13:37:14Z"
+      "updated_at": "2026-07-25T17:33:07Z"
     },
     {
       "archived": false,
@@ -4048,10 +4048,10 @@
       "default_branch": "main",
       "description": "Map of the RAPP ecosystem \u2014 which repo houses which part of the spec (canonical homes for the kited neighborhood, runtime, registry, agents, platform, social).",
       "file_count": 43,
-      "head_tree_sha": "cef5a874376c3e14447709210a59a56c715b1364",
+      "head_tree_sha": "b198eb61d516376f5a3615a1a0191dacd077faa3",
       "private": false,
       "repo": "kody-w/rapp-map",
-      "updated_at": "2026-07-25T02:38:41Z"
+      "updated_at": "2026-07-25T17:35:46Z"
     },
     {
       "archived": false,
@@ -6842,7 +6842,7 @@
       "updated_at": "2026-03-20T12:53:01Z"
     }
   ],
-  "observed_at": "2026-07-25T17:34:55Z",
+  "observed_at": "2026-07-25T17:37:41Z",
   "overlay_entries_for_missing_repos": [],
   "owner": "kody-w",
   "schema": "rapp-estate-map/2.0"
