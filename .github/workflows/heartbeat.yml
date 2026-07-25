@@ -1,0 +1,48 @@
+# Reusable heartbeat. A member repo calls this to DECLARE what it is; the spine
+# already observes what it CONTAINS without any cooperation. Declaration is
+# enrichment, never a requirement — the map is complete without a single repo
+# adopting this.
+name: rapp-heartbeat
+on:
+  workflow_call:
+    inputs:
+      role:   {type: string, required: false, default: ""}
+      layer:  {type: string, required: false, default: ""}
+      schemas: {type: string, required: false, default: "", description: "comma-separated schema versions this repo implements"}
+
+permissions: {contents: write}
+
+jobs:
+  beat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: write .rapp/heartbeat.json
+        run: |
+          mkdir -p .rapp
+          python3 - <<'PY'
+          import json, os, subprocess, time
+          sha = subprocess.run(["git","rev-parse","HEAD"],capture_output=True,text=True).stdout.strip()
+          tree = subprocess.run(["git","rev-parse","HEAD^{tree}"],capture_output=True,text=True).stdout.strip()
+          hb = {
+            "schema": "rapp-heartbeat/1.0",
+            "repo": os.environ.get("GITHUB_REPOSITORY"),
+            "commit": sha, "tree": tree,
+            "beat_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "role": os.environ.get("IN_ROLE") or None,
+            "layer": os.environ.get("IN_LAYER") or None,
+            "implements": [s.strip() for s in (os.environ.get("IN_SCHEMAS") or "").split(",") if s.strip()],
+          }
+          json.dump({k:v for k,v in hb.items() if v not in (None,[],"")},
+                    open(".rapp/heartbeat.json","w"), indent=2, sort_keys=True)
+          PY
+        env:
+          IN_ROLE:    ${{ inputs.role }}
+          IN_LAYER:   ${{ inputs.layer }}
+          IN_SCHEMAS: ${{ inputs.schemas }}
+      - name: commit if changed
+        run: |
+          git config user.name  "heartbeat[bot]"
+          git config user.email "heartbeat@users.noreply.github.com"
+          git add .rapp/heartbeat.json
+          git diff --cached --quiet || { git commit -m "heartbeat"; git push; }

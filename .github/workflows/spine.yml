@@ -1,0 +1,50 @@
+name: spine
+on:
+  schedule: [{cron: "17 6 * * *"}]
+  workflow_dispatch:
+  push: {branches: [main], paths: ["tools/spine.py", "spine/overlay.json", "spine/waivers.json"]}
+
+permissions: {contents: write}
+
+jobs:
+  vertebra:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+
+      # The mechanical layer. No repo has to opt in, which is the whole point:
+      # the map that died was the one that required someone to go and look.
+      - name: observe the estate
+        env: {GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
+        run: python3 tools/spine.py collect -o spine/observations.json
+
+      - name: rebuild the map (derived — never hand-edited)
+        run: python3 tools/spine.py map spine/observations.json --overlay spine/overlay.json -o estate-map.json
+
+      - name: canon drift report
+        run: python3 tools/spine.py drift spine/observations.json --waivers spine/waivers.json
+
+      # A ratchet, not a wall. Fails only if canon drift got WORSE than the
+      # recorded baseline; tightens the baseline automatically when it improves.
+      - name: drift gate
+        run: python3 tools/spine.py gate spine/observations.json --baseline spine/drift-baseline.json --waivers spine/waivers.json --ratchet
+
+      - name: cut today's vertebra
+        run: |
+          python3 tools/spine.py snapshot spine/observations.json \
+            -o "spine/vertebrae/estate-$(date -u +%F).egg"
+          ls -1 spine/vertebrae | tail -3
+
+      - name: commit if anything moved
+        run: |
+          git config user.name  "spine[bot]"
+          git config user.email "spine@users.noreply.github.com"
+          git add estate-map.json spine/
+          git diff --cached --quiet && { echo "estate unchanged"; exit 0; }
+          git commit -m "spine: vertebra $(date -u +%F)
+
+          Derived by tools/spine.py. Do not hand-edit estate-map.json — edit
+          spine/overlay.json instead."
+          git push

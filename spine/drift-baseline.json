@@ -1,0 +1,12 @@
+{
+  "note": "First baseline \u2014 the estate's starting debt. This file only ever ratchets DOWN.",
+  "recorded_at": "2026-07-25T17:27:15Z",
+  "schema": "rapp-drift-baseline/1.0",
+  "variants": {
+    "CONSTITUTION.md": 22,
+    "RAPP1_AUTHORITY.json": 3,
+    "agents/basic_agent.py": 10,
+    "rapp_brainstem/agents/basic_agent.py": 2,
+    "specs/SPEC.md": 5
+  }
+}

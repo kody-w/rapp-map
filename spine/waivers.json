@@ -1,0 +1,5 @@
+{
+  "schema": "rapp-drift-waiver/1.0",
+  "note": "Canon divergence accepted ON PURPOSE. Every waiver needs a reason and an expiry — an unexpiring waiver is just permanent drift with paperwork. The gate treats a waived path as not-drift; nothing else does.",
+  "waivers": {}
+}

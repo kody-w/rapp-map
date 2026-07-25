@@ -1,0 +1,4998 @@
+{
+  "archived_or_empty": 8,
+  "count": 400,
+  "observed_at": "2026-07-25T17:27:15Z",
+  "owner": "kody-w",
+  "repos": {
+    "AI-Agent-Templates": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "fef5d4c58ab460ab923efdb6258c16063e3d3b89"
+      },
+      "default_branch": "main",
+      "description": "AI Agent Templates",
+      "file_count": 659,
+      "head_tree_sha": "6e65a5f59338b97336634dfa2abf152fdc8ffab1",
+      "private": false,
+      "repo": "kody-w/AI-Agent-Templates",
+      "truncated": false,
+      "updated_at": "2026-07-22T02:54:13Z"
+    },
+    "AI-Agent-Templates-Pilot": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "fef5d4c58ab460ab923efdb6258c16063e3d3b89"
+      },
+      "default_branch": "main",
+      "description": "Focused subset of AI-Agent-Templates \u2014 pilot library used for testing a small set of rapp agent stacks. Mirrors the AI-Agent-Templates layout (see STACK_LIBRARY_SPEC.md).",
+      "file_count": 60,
+      "head_tree_sha": "12a2856712cd43d284677145acbbedee4a70b777",
+      "private": false,
+      "repo": "kody-w/AI-Agent-Templates-Pilot",
+      "truncated": false,
+      "updated_at": "2026-05-20T15:40:19Z"
+    },
+    "AI-SIM": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AI SIM",
+      "file_count": 14,
+      "head_tree_sha": "908492453218d36e12240d24747cc7ecfba1a632",
+      "private": true,
+      "repo": "kody-w/AI-SIM",
+      "truncated": false,
+      "updated_at": "2025-08-10T09:49:12Z"
+    },
+    "AIBAST-Industry-Agents": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AIBAST Industry Agents",
+      "file_count": 1,
+      "head_tree_sha": "3f40ccbde72d0250bfaff33c1d9c41813ef8fe11",
+      "private": true,
+      "repo": "kody-w/AIBAST-Industry-Agents",
+      "truncated": false,
+      "updated_at": "2025-11-21T18:58:35Z"
+    },
+    "AIGame": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "AIGame",
+      "file_count": 27,
+      "head_tree_sha": "0a77dc063c7398eaa3d8c954f5a473f96e9db5e5",
+      "private": false,
+      "repo": "kody-w/AIGame",
+      "truncated": false,
+      "updated_at": "2025-09-24T02:00:16Z"
+    },
+    "AIGames": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 249,
+      "head_tree_sha": "815fef0931111dbdba9b47c4c57eda906956865c",
+      "private": false,
+      "repo": "kody-w/AIGames",
+      "truncated": false,
+      "updated_at": "2025-11-08T01:44:49Z"
+    },
+    "AINexus": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AI Nexus",
+      "file_count": 469,
+      "head_tree_sha": "0f591a2a4d9ffca9d41258f5f6ded7aba8093c9a",
+      "private": false,
+      "repo": "kody-w/AINexus",
+      "truncated": false,
+      "updated_at": "2026-01-26T00:44:08Z"
+    },
+    "AINexus-Demo": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Demo federation nexus for AINexus v2 - A neon cyberpunk gateway",
+      "file_count": 3,
+      "head_tree_sha": "6595e058bcbb3c12146d80253ad4429d88618034",
+      "private": false,
+      "repo": "kody-w/AINexus-Demo",
+      "truncated": false,
+      "updated_at": "2026-01-01T04:41:19Z"
+    },
+    "AINexusv3": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 10,
+      "head_tree_sha": "e18ee465ae39e8ebc6d5ee9bb8024c611d238951",
+      "private": true,
+      "repo": "kody-w/AINexusv3",
+      "truncated": false,
+      "updated_at": "2026-01-17T02:00:29Z"
+    },
+    "AIPatherfinder": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "fef5d4c58ab460ab923efdb6258c16063e3d3b89"
+      },
+      "default_branch": "main",
+      "description": "AIPatherfinder",
+      "file_count": 1225,
+      "head_tree_sha": "559f3c2f2288febff82f9fa21d2b66d3aed182e7",
+      "private": true,
+      "repo": "kody-w/AIPatherfinder",
+      "truncated": false,
+      "updated_at": "2025-10-26T12:55:48Z"
+    },
+    "AITester": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "AITester",
+      "file_count": 32,
+      "head_tree_sha": "d8747db2bcca24f1ca6f06098f62f029756a7f30",
+      "private": true,
+      "repo": "kody-w/AITester",
+      "truncated": false,
+      "updated_at": "2026-01-09T18:20:19Z"
+    },
+    "AIUniversalDataConnector": {
+      "archived": false,
+      "default_branch": "",
+      "description": "AIUniversalDataConnector",
+      "private": true,
+      "repo": "kody-w/AIUniversalDataConnector",
+      "updated_at": "2025-09-15T18:31:57Z"
+    },
+    "AZFAug29WF": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AZFAug29WF",
+      "file_count": 1,
+      "head_tree_sha": "611b867f64cc0b44f7d5758d75790938b7ad442e",
+      "private": true,
+      "repo": "kody-w/AZFAug29WF",
+      "truncated": false,
+      "updated_at": "2025-08-29T13:49:12Z"
+    },
+    "AgenticPlaygroundLab": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "AgenticPlaygroundLab",
+      "file_count": 32,
+      "head_tree_sha": "1efe6f121e1b8c8824a003357a2d5782dc9633ea",
+      "private": false,
+      "repo": "kody-w/AgenticPlaygroundLab",
+      "truncated": false,
+      "updated_at": "2025-10-16T13:42:41Z"
+    },
+    "Agents": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The Microsoft 365 Agent SDK simplifies building full stack, multichannel, trusted agents for platforms including M365, Teams, Copilot Studio, and Webchat.",
+      "file_count": 459,
+      "head_tree_sha": "27cf35de117cf0a4ba16dc520f8f4499d1bec461",
+      "private": false,
+      "repo": "kody-w/Agents",
+      "truncated": false,
+      "updated_at": "2025-10-24T13:19:25Z"
+    },
+    "Agents-for-python": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "This repository is for active development of the Microsoft 365 Agent SDK components for Python",
+      "file_count": 673,
+      "head_tree_sha": "c602a1c289e44f6f075d0b9cb63e32a9744d1942",
+      "private": false,
+      "repo": "kody-w/Agents-for-python",
+      "truncated": false,
+      "updated_at": "2025-11-18T14:59:21Z"
+    },
+    "AndriiTest": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "AndriiTest",
+      "file_count": 20,
+      "head_tree_sha": "cf9fe69df2a30173b4bbf4864bfa506f94448955",
+      "private": false,
+      "repo": "kody-w/AndriiTest",
+      "truncated": false,
+      "updated_at": "2025-09-26T14:37:10Z"
+    },
+    "AutoVideos": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AutoVideos",
+      "file_count": 17,
+      "head_tree_sha": "830a058931dd198990c445c83b0142ef1825c66d",
+      "private": true,
+      "repo": "kody-w/AutoVideos",
+      "truncated": false,
+      "updated_at": "2025-09-30T17:47:53Z"
+    },
+    "AzureARMTester": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 2,
+      "head_tree_sha": "cf25fdad028aaf961ee4871a52838b51f84b4c02",
+      "private": false,
+      "repo": "kody-w/AzureARMTester",
+      "truncated": false,
+      "updated_at": "2025-09-15T18:21:28Z"
+    },
+    "BillWhalenCopilotstudio": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "f5c6ec82e39187d08770afe6f8698b483c65d4b4",
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "BillWhalenCopilotstudio",
+      "file_count": 1434,
+      "head_tree_sha": "500c9bee935e1522bbd2416c1ade1861c9412d3c",
+      "private": true,
+      "repo": "kody-w/BillWhalenCopilotstudio",
+      "truncated": false,
+      "updated_at": "2026-05-06T18:35:50Z"
+    },
+    "BlazingBeard.github.io": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "BlazingBeard's workshop \u2014 training quests and tools for AI agent builders",
+      "file_count": 247,
+      "head_tree_sha": "fd83ef17bd7be5d768b0f4386c62684eced20177",
+      "private": false,
+      "repo": "kody-w/BlazingBeard.github.io",
+      "truncated": false,
+      "updated_at": "2026-07-08T23:49:07Z"
+    },
+    "C365Sept26th": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 21,
+      "head_tree_sha": "65bded5d190c9013d6ba03c5f6dc07fd522039ca",
+      "private": false,
+      "repo": "kody-w/C365Sept26th",
+      "truncated": false,
+      "updated_at": "2025-09-26T17:06:50Z"
+    },
+    "C365Tester": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "C365Tester",
+      "file_count": 22,
+      "head_tree_sha": "9a10a1cb8bea1257fe4e1862225d9d6e1f45bd5c",
+      "private": false,
+      "repo": "kody-w/C365Tester",
+      "truncated": false,
+      "updated_at": "2025-09-18T03:21:42Z"
+    },
+    "CA365RoadmapAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 22,
+      "head_tree_sha": "729bd23c18a800f57f250e7e5de967f5357de3ce",
+      "private": false,
+      "repo": "kody-w/CA365RoadmapAI",
+      "truncated": false,
+      "updated_at": "2025-10-01T21:26:27Z"
+    },
+    "CommunityRAPP": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "d2e1e662ba3e86f598a7644585350620980879bd",
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "RAPP Hippocampus \u2014 persistent memory for AI agents. Local-first, deploy to Azure when ready.",
+      "file_count": 73,
+      "head_tree_sha": "4931285ffb04bf7e9dcdeecdfadb80e352f5ea09",
+      "private": false,
+      "repo": "kody-w/CommunityRAPP",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:14Z"
+    },
+    "CommunityRAPP-BW": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "CommunityRAPP-BW",
+      "file_count": 852,
+      "head_tree_sha": "4cacd6100c18b8ed75a616fa33b58cf7ce2db060",
+      "private": true,
+      "repo": "kody-w/CommunityRAPP-BW",
+      "truncated": false,
+      "updated_at": "2026-03-23T16:21:16Z"
+    },
+    "CommunityRAPP-archive": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "4de9aa63c0b898237cbe389eacb9c5f919aae528",
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "Archive: full git history of CommunityRAPP before public release (2026-03-25)",
+      "file_count": 78,
+      "head_tree_sha": "751ed91828badd5316d4beb4bedb3ddebfe7a8d7",
+      "private": true,
+      "repo": "kody-w/CommunityRAPP-archive",
+      "truncated": false,
+      "updated_at": "2026-03-25T17:05:04Z"
+    },
+    "Copilot-Agent-365": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "Copilot-Agent-365",
+      "file_count": 40,
+      "head_tree_sha": "89b446876b04993ed71794db3ba2435f45aca4cf",
+      "private": true,
+      "repo": "kody-w/Copilot-Agent-365",
+      "truncated": false,
+      "updated_at": "2026-02-03T18:45:36Z"
+    },
+    "CopilotStudio365Agent": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 18,
+      "head_tree_sha": "3333e23b946f0d87c94a8f69ba4414d5f91007cd",
+      "private": true,
+      "repo": "kody-w/CopilotStudio365Agent",
+      "truncated": false,
+      "updated_at": "2026-01-15T22:24:23Z"
+    },
+    "CopilotStudioSamples": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 613,
+      "head_tree_sha": "91f69c25abe1e540aaa47d24a668975077a247e5",
+      "private": false,
+      "repo": "kody-w/CopilotStudioSamples",
+      "truncated": false,
+      "updated_at": "2025-11-17T14:28:33Z"
+    },
+    "CrystalRAPP": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Crystal Nexus (C0-X1) - A federated RAPPverse dimension of crystalline structures",
+      "file_count": 6,
+      "head_tree_sha": "5fd0ef76ce9441470d6b23f7304b67fc72424e26",
+      "private": false,
+      "repo": "kody-w/CrystalRAPP",
+      "truncated": false,
+      "updated_at": "2026-02-02T02:15:19Z"
+    },
+    "DigitalTwinAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "DigitalTwinAI",
+      "file_count": 24,
+      "head_tree_sha": "286bb3a0ae57a5daf1ce0173b729bcaa17355867",
+      "private": true,
+      "repo": "kody-w/DigitalTwinAI",
+      "truncated": false,
+      "updated_at": "2026-01-09T18:23:28Z"
+    },
+    "EchoGuardian": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 181,
+      "head_tree_sha": "8d01e77c707ef3f0f8515cfa8515871ae4d41f7f",
+      "private": true,
+      "repo": "kody-w/EchoGuardian",
+      "truncated": false,
+      "updated_at": "2024-09-21T22:44:39Z"
+    },
+    "EntraCopilotAgent365": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "EntraCopilotAgent365",
+      "file_count": 201,
+      "head_tree_sha": "a8d0c9b523527f55dce88e3fd7578e925ad65724",
+      "private": true,
+      "repo": "kody-w/EntraCopilotAgent365",
+      "truncated": false,
+      "updated_at": "2026-02-03T18:57:46Z"
+    },
+    "KodyAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "KodyAI",
+      "file_count": 51,
+      "head_tree_sha": "c68dd21b0cc5878c2033d6802d40ae441ccf61b8",
+      "private": true,
+      "repo": "kody-w/KodyAI",
+      "truncated": false,
+      "updated_at": "2025-12-20T21:54:27Z"
+    },
+    "M365AgentDemoer": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "M365AgentDemoer",
+      "file_count": 32,
+      "head_tree_sha": "f347ac2df247dad19b974e5327fac0f80558020c",
+      "private": false,
+      "repo": "kody-w/M365AgentDemoer",
+      "truncated": false,
+      "updated_at": "2025-10-09T22:16:40Z"
+    },
+    "M365AgentSDKAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "MicrosoftAgentSDKAI",
+      "file_count": 21,
+      "head_tree_sha": "f808ff1530c65136a5d10f7c8827cb97490152a7",
+      "private": false,
+      "repo": "kody-w/M365AgentSDKAI",
+      "truncated": false,
+      "updated_at": "2025-10-06T20:45:54Z"
+    },
+    "M365Agents": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "M365Agents",
+      "file_count": 20,
+      "head_tree_sha": "b6785474174aa23826e782336198901c258ccdbc",
+      "private": true,
+      "repo": "kody-w/M365Agents",
+      "truncated": false,
+      "updated_at": "2025-09-23T18:24:25Z"
+    },
+    "M365DemoRecorderandPlayer": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "M365DemoRecorderandPlayer",
+      "file_count": 1,
+      "head_tree_sha": "ed08901f0f72dad2cfae30f0eedcb4a9da5f088e",
+      "private": false,
+      "repo": "kody-w/M365DemoRecorderandPlayer",
+      "truncated": false,
+      "updated_at": "2025-10-09T22:22:54Z"
+    },
+    "Meeting-Organizer": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 17,
+      "head_tree_sha": "ba3cf18ef17d2ba4135f445506c563de34c20045",
+      "private": false,
+      "repo": "kody-w/Meeting-Organizer",
+      "truncated": false,
+      "updated_at": "2025-10-02T19:28:46Z"
+    },
+    "NexusMetaverse": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AI-human collaborative environment - Unreal Engine 5.7 implementation",
+      "file_count": 102,
+      "head_tree_sha": "c9c30cf94d3e018e123191c4c0345bb43698c4ca",
+      "private": true,
+      "repo": "kody-w/NexusMetaverse",
+      "truncated": false,
+      "updated_at": "2026-01-12T04:04:26Z"
+    },
+    "Nov17": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 19,
+      "head_tree_sha": "0eb518af72ce92dfb4e672067c07a2e00e04ec56",
+      "private": false,
+      "repo": "kody-w/Nov17",
+      "truncated": false,
+      "updated_at": "2025-11-17T18:31:26Z"
+    },
+    "PersonalWorkingSpace": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "PersonalWorkingSpace",
+      "file_count": 83,
+      "head_tree_sha": "826fcd4ec8377bb4ebfbf2a67e4e5d7fa1a5d904",
+      "private": true,
+      "repo": "kody-w/PersonalWorkingSpace",
+      "truncated": false,
+      "updated_at": "2025-10-03T21:12:25Z"
+    },
+    "RAP": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "Rapid Agent Prototype Platform",
+      "file_count": 20,
+      "head_tree_sha": "5fb2a969ec382059b1a9874398bd853e4394176e",
+      "private": true,
+      "repo": "kody-w/RAP",
+      "truncated": false,
+      "updated_at": "2025-09-17T18:59:41Z"
+    },
+    "RAPP": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "aeb70e1e10306edf14adc8a787520689f81aa37c",
+        "RAPP1_AUTHORITY.json": "cdd99cba9d6910555e3f0469fd186653f3dcd2ca",
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9",
+        "specs/SPEC.md": "f24b9f8c8ff11e5b2c683921a061f1214b5b4de6"
+      },
+      "default_branch": "main",
+      "description": "Portable, shareable, vibe swarm building tool. Single-file agents, local-first, GitHub Copilot powered. Live at kody-w.github.io/RAPP/",
+      "file_count": 693,
+      "head_tree_sha": "e5436fb8ca9f1b2c676c501b4dc2f5741fda80fc",
+      "private": false,
+      "repo": "kody-w/RAPP",
+      "truncated": false,
+      "updated_at": "2026-07-17T14:49:33Z"
+    },
+    "RAPP-Agent-Repo": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "89b6d03157efd82b6a27c2746a9b559ac6fab384"
+      },
+      "default_branch": "main",
+      "description": "Repository of Agents to be used internally with RAPP",
+      "file_count": 198,
+      "head_tree_sha": "f58311530790ebc78853d7c9b0fa61ee8fa6d75d",
+      "private": true,
+      "repo": "kody-w/RAPP-Agent-Repo",
+      "truncated": false,
+      "updated_at": "2026-03-18T14:39:10Z"
+    },
+    "RAPP-Bible": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "One repo. Every RAPP spec. Every entry point. Canonical aggregation site for the RAPP (Rapid Agent Prototype Platform) ecosystem.",
+      "file_count": 90,
+      "head_tree_sha": "9e74bed412ae7fd150bf19acd0245ac1e5c325d4",
+      "private": false,
+      "repo": "kody-w/RAPP-Bible",
+      "truncated": false,
+      "updated_at": "2026-07-25T02:13:20Z"
+    },
+    "RAPP-Network": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The network layer on top of kody-w/RAPP. Project-anchored twin neighborhoods through one drop-in agent.py. Offline-first. Two-sources-of-truth cross-validation.",
+      "file_count": 6,
+      "head_tree_sha": "a22f3f2be9bfc5b311b2e3956069779cd10f42ef",
+      "private": false,
+      "repo": "kody-w/RAPP-Network",
+      "truncated": false,
+      "updated_at": "2026-07-25T02:10:11Z"
+    },
+    "RAPP-Private-Workspace": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "61d2a7a1d4ce73746eaa6822c4e180af02ade8b0",
+        "rapp_brainstem/agents/basic_agent.py": "b95b14d1d442ecf3c7a1ef19ad19a018c1f89292"
+      },
+      "default_branch": "main",
+      "description": "RAPP-Private-Workspace",
+      "file_count": 273,
+      "head_tree_sha": "48c2f834bcf078001c05190ef3ccfcea67e3a95e",
+      "private": true,
+      "repo": "kody-w/RAPP-Private-Workspace",
+      "truncated": false,
+      "updated_at": "2026-04-28T19:08:22Z"
+    },
+    "RAPPAI": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 257,
+      "head_tree_sha": "28b6ae7e07aa9922dca29d42b0fbfb039be1e4ec",
+      "private": true,
+      "repo": "kody-w/RAPPAI",
+      "truncated": false,
+      "updated_at": "2026-01-22T21:19:56Z"
+    },
+    "RAPPAIClaudeCodePlayground": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "RAPPAIClaudeCodePlayground",
+      "file_count": 22,
+      "head_tree_sha": "4f5bde0fb01bad5497ecbfb3ff0360aa58b8a8d5",
+      "private": false,
+      "repo": "kody-w/RAPPAIClaudeCodePlayground",
+      "truncated": false,
+      "updated_at": "2025-10-09T00:17:46Z"
+    },
+    "RAPPAgentLibrary-template": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 20,
+      "head_tree_sha": "225f812b912cfead0acf8cfb97404401c3b589d9",
+      "private": true,
+      "repo": "kody-w/RAPPAgentLibrary-template",
+      "truncated": false,
+      "updated_at": "2026-03-18T14:26:09Z"
+    },
+    "RAPP_Desktop": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Native desktop application for RAPP ecosystem - Browse agents, install skills, manage AI projects",
+      "file_count": 44,
+      "head_tree_sha": "0aea2ecf7e66ebffb30d3af6a550eac638356292",
+      "private": false,
+      "repo": "kody-w/RAPP_Desktop",
+      "truncated": false,
+      "updated_at": "2026-01-31T23:11:49Z"
+    },
+    "RAPP_Hub": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Central registry for complete RAPP AI implementations - discover, share, and deploy production-ready AI solutions with RAPP Store dependencies",
+      "file_count": 61,
+      "head_tree_sha": "00ac2f73cade3f64c39359e9a90fca636bc387aa",
+      "private": false,
+      "repo": "kody-w/RAPP_Hub",
+      "truncated": false,
+      "updated_at": "2026-02-03T16:09:52Z"
+    },
+    "RAPP_Sense_Store": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Public catalog of RAPP senses \u2014 modular, per-channel output overlays (eli5, headline, voice, twin, ...) that drop into a brainstem's utils/senses/ dir. Sibling to kody-w/RAPP_Store (rapplications) and",
+      "file_count": 43,
+      "head_tree_sha": "36efba8f7ca381f7fa39b6b08e5a0f06aec1d946",
+      "private": false,
+      "repo": "kody-w/RAPP_Sense_Store",
+      "truncated": false,
+      "updated_at": "2026-07-16T03:23:27Z"
+    },
+    "RAPP_Store": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "43fff75c1062d9e3feba090083c671549a550d20"
+      },
+      "default_branch": "main",
+      "description": "Public catalog of RAPP rapplications \u2014 single-file Python agents that drop into a local brainstem and run. Browse the hosted viewer at kody-w.github.io/RAPP_Store/. Engine: kody-w/RAPP.",
+      "file_count": 220,
+      "head_tree_sha": "65f04683f7026c5a49c617c1e4953163349be769",
+      "private": false,
+      "repo": "kody-w/RAPP_Store",
+      "truncated": false,
+      "updated_at": "2026-07-25T12:20:37Z"
+    },
+    "RAPP_Store_Private": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private mirror of kody-w/RAPP_Store. Same schema, same install protocol, fetches require a PAT. Wildhaven inner-ring catalog.",
+      "file_count": 25,
+      "head_tree_sha": "4165b80bc59154bddcd9a5e41875a788dec941ef",
+      "private": true,
+      "repo": "kody-w/RAPP_Store_Private",
+      "truncated": false,
+      "updated_at": "2026-05-03T18:48:43Z"
+    },
+    "RAPP_hippo": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "d2e1e662ba3e86f598a7644585350620980879bd",
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "RAPP_hippo",
+      "file_count": 73,
+      "head_tree_sha": "c55d62315104540f859a9e9db6d14fc385739f8e",
+      "private": false,
+      "repo": "kody-w/RAPP_hippo",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:58:06Z"
+    },
+    "RAPPagent": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "RAPPagent",
+      "file_count": 48,
+      "head_tree_sha": "7b06b0746cbf2c01de229a1a7c45873dd239debc",
+      "private": true,
+      "repo": "kody-w/RAPPagent",
+      "truncated": false,
+      "updated_at": "2026-02-04T02:12:35Z"
+    },
+    "RAPPcards": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Digital twin of the RAR card collection \u2014 138 MTG-style cards, live from kody-w/RAR",
+      "file_count": 8,
+      "head_tree_sha": "5bfcea8d6aaa78e988827783b44e0d384ed3c14a",
+      "private": false,
+      "repo": "kody-w/RAPPcards",
+      "truncated": false,
+      "updated_at": "2026-04-18T15:09:13Z"
+    },
+    "RAPPsquared": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPPsquared - Unified Platform for AI Agent Development",
+      "file_count": 16,
+      "head_tree_sha": "c99214c84fb2682c7b700fa0c60cc5133509085f",
+      "private": false,
+      "repo": "kody-w/RAPPsquared",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:57:15Z"
+    },
+    "RAPPtools": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "2bded2e4ff93436b26ecb7a8c7724408b85198b1"
+      },
+      "default_branch": "main",
+      "description": "RAPPtools",
+      "file_count": 4714,
+      "head_tree_sha": "85a194b5081692405dd61bbfb62d9e908ab94c23",
+      "private": true,
+      "repo": "kody-w/RAPPtools",
+      "truncated": false,
+      "updated_at": "2026-03-20T02:27:06Z"
+    },
+    "RAR": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "76c1a752ef095d79ade23d8bf729ae3b78e3bd3d"
+      },
+      "default_branch": "main",
+      "description": "The open single-file AI agent registry. Browse, vote, share agent.py files. Pokemon-card-style sharing via QR codes.",
+      "file_count": 7369,
+      "head_tree_sha": "f5f17dec8bc8b10da529bc07527ff55c0529a622",
+      "private": false,
+      "repo": "kody-w/RAR",
+      "truncated": false,
+      "updated_at": "2026-07-25T16:51:48Z"
+    },
+    "RAR-private": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private companion to kody-w/RAR. Sensitive single-file agents (legal, IP, operator-personal) gated to GitHub collaborators. Same agent contract; same egg_hatcher loading; access-gated via GitHub auth.",
+      "file_count": 3,
+      "head_tree_sha": "a7f5ddee7b0d53624a20dda6df326a43a9f9c7ed",
+      "private": true,
+      "repo": "kody-w/RAR-private",
+      "truncated": false,
+      "updated_at": "2026-05-12T17:49:26Z"
+    },
+    "Rapid-Agent-Prototype-Platform-RAPP": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "Rapid Agent Prototype Platform (RAPP)",
+      "file_count": 24,
+      "head_tree_sha": "307d70b97d125db352ee0661c9c2fe6c989bf708",
+      "private": true,
+      "repo": "kody-w/Rapid-Agent-Prototype-Platform-RAPP",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:50:17Z"
+    },
+    "RappterNest": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RappterBox \u2014 Local-first AI. Rent a Mac Mini. Get a living AI home.",
+      "file_count": 1,
+      "head_tree_sha": "67d7be53241a2519ef508668a1c828ff2c51cfc0",
+      "private": false,
+      "repo": "kody-w/RappterNest",
+      "truncated": false,
+      "updated_at": "2026-02-22T22:34:26Z"
+    },
+    "RepriseClone": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 64,
+      "head_tree_sha": "41b32e24e826a7499d97bc4b9d4bb29c27cf0658",
+      "private": false,
+      "repo": "kody-w/RepriseClone",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:57:23Z"
+    },
+    "RoadmapCA365": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 32,
+      "head_tree_sha": "323aaa7f904eea33ced69496e3223f941e6834f5",
+      "private": true,
+      "repo": "kody-w/RoadmapCA365",
+      "truncated": false,
+      "updated_at": "2025-10-22T21:52:26Z"
+    },
+    "ShadowRAPP": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Shadow Realm (B0-S1) - A federated RAPPverse dimension where shadows rule",
+      "file_count": 6,
+      "head_tree_sha": "0ead081d10baf7365abd14dcade51535a01d3366",
+      "private": false,
+      "repo": "kody-w/ShadowRAPP",
+      "truncated": false,
+      "updated_at": "2026-02-02T02:14:49Z"
+    },
+    "TestAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 35,
+      "head_tree_sha": "d3685003c8f005faed34d3c97c3e03ae4f41d8d1",
+      "private": false,
+      "repo": "kody-w/TestAI",
+      "truncated": false,
+      "updated_at": "2025-11-09T16:59:13Z"
+    },
+    "TheMatrix": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "TheMatrix",
+      "file_count": 419,
+      "head_tree_sha": "6fda9e93754691fea81b251595d8f458db8da960",
+      "private": false,
+      "repo": "kody-w/TheMatrix",
+      "truncated": false,
+      "updated_at": "2026-07-18T23:29:44Z"
+    },
+    "UniversalDataConnector365": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "UniversalDataConnector365",
+      "file_count": 20,
+      "head_tree_sha": "2a82f579bf456a7c99d63ee3bcb062dfe4525c32",
+      "private": true,
+      "repo": "kody-w/UniversalDataConnector365",
+      "truncated": false,
+      "updated_at": "2025-09-17T18:55:15Z"
+    },
+    "UniversalDataConnectorAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "UniversalDataConnectorAI",
+      "file_count": 40,
+      "head_tree_sha": "f2a978b9f85b65b9815b69d99c67e51c56732251",
+      "private": true,
+      "repo": "kody-w/UniversalDataConnectorAI",
+      "truncated": false,
+      "updated_at": "2026-01-07T18:30:29Z"
+    },
+    "UniversalSyntheticDataAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "UniversalSyntheticDataAI",
+      "file_count": 34,
+      "head_tree_sha": "a54df00c93bbacbb63209c56dbf934d4b02fdc55",
+      "private": true,
+      "repo": "kody-w/UniversalSyntheticDataAI",
+      "truncated": false,
+      "updated_at": "2026-01-07T18:30:04Z"
+    },
+    "VIPWatcher": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 25,
+      "head_tree_sha": "7681d41a1086c2e968f5e406667a99e60de3291d",
+      "private": true,
+      "repo": "kody-w/VIPWatcher",
+      "truncated": false,
+      "updated_at": "2026-01-09T18:20:43Z"
+    },
+    "VoiceToCRM": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "VoiceToCRM",
+      "file_count": 208,
+      "head_tree_sha": "b0bcb0f271256062fdd2db077a5b11162e57676c",
+      "private": true,
+      "repo": "kody-w/VoiceToCRM",
+      "truncated": false,
+      "updated_at": "2026-01-29T20:55:10Z"
+    },
+    "VoidRAPP": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Void Edge (V0-E1) - A federated RAPPverse dimension at the boundary of nothing",
+      "file_count": 6,
+      "head_tree_sha": "375968ece213b0c71312f6c1b2304baf928cdb1d",
+      "private": false,
+      "repo": "kody-w/VoidRAPP",
+      "truncated": false,
+      "updated_at": "2026-02-02T02:15:47Z"
+    },
+    "a": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "a",
+      "file_count": 17,
+      "head_tree_sha": "3836789226fb0f7a1098894a24507fa59312f2c0",
+      "private": true,
+      "repo": "kody-w/a",
+      "truncated": false,
+      "updated_at": "2025-09-21T01:44:25Z"
+    },
+    "addamos": {
+      "archived": false,
+      "default_branch": "",
+      "description": "AddamOS \u2014 Simulated OS mesh where AI has complete control. Privacy-first architecture routing confidential data through local LLM. Phase 1: Shadow Mode. Phase 2: Flip Mode.",
+      "private": true,
+      "repo": "kody-w/addamos",
+      "updated_at": "2026-03-11T16:31:24Z"
+    },
+    "agency-agents": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, a",
+      "file_count": 108,
+      "head_tree_sha": "22932648561342c1884dadf2e8ecf1f5782540aa",
+      "private": false,
+      "repo": "kody-w/agency-agents",
+      "truncated": false,
+      "updated_at": "2026-03-09T23:53:11Z"
+    },
+    "agent-ranker": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Calibration test for artifact seed chain",
+      "file_count": 1,
+      "head_tree_sha": "6369cb66b4f6c2c7d669a01c3cb83538ee6269c1",
+      "private": false,
+      "repo": "kody-w/agent-ranker",
+      "truncated": false,
+      "updated_at": "2026-03-15T19:16:44Z"
+    },
+    "agentbookfactory": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "agentbookfactory",
+      "file_count": 29,
+      "head_tree_sha": "e862f5a555ac40c4f49cd5d53bf34ba0d7626245",
+      "private": false,
+      "repo": "kody-w/agentbookfactory",
+      "truncated": false,
+      "updated_at": "2025-10-02T16:34:34Z"
+    },
+    "agentic-os-demo": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 2,
+      "head_tree_sha": "749aa4026ca1b43ddf95f33682b297cdd9303771",
+      "private": false,
+      "repo": "kody-w/agentic-os-demo",
+      "truncated": false,
+      "updated_at": "2026-07-16T22:06:06Z"
+    },
+    "agents-library-tracker": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 12,
+      "head_tree_sha": "9d11f579671fbaeeb05b4dc112d04ea0b9828ce8",
+      "private": false,
+      "repo": "kody-w/agents-library-tracker",
+      "truncated": false,
+      "updated_at": "2025-09-27T23:11:24Z"
+    },
+    "agents.v1": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 36,
+      "head_tree_sha": "683cdcd8ba6c9b3cf81075d50b0daab1ea740eb6",
+      "private": false,
+      "repo": "kody-w/agents.v1",
+      "truncated": false,
+      "updated_at": "2025-10-10T14:47:43Z"
+    },
+    "ai-agent-templates-mirror": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "fef5d4c58ab460ab923efdb6258c16063e3d3b89"
+      },
+      "default_branch": "main",
+      "description": "Mirror of kody-w/AI-Agent-Templates (AI agent stack library) \u2014 target for one-click MCS/Copilot Studio deploy (see ONE_CLICK.md).",
+      "file_count": 821,
+      "head_tree_sha": "f74122dd1892c09ca58873fc72005f6cbc8457ac",
+      "private": false,
+      "repo": "kody-w/ai-agent-templates-mirror",
+      "truncated": false,
+      "updated_at": "2026-05-27T18:03:07Z"
+    },
+    "aibast-agents-library": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "0289fbd558248b5f8d53db718f8dd3326b09fee0",
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Main repository for AI BAST Specialist Teal AI Agents Library",
+      "file_count": 253,
+      "head_tree_sha": "ab0afa165d3296fc084e996753ac36fa8d3825ca",
+      "private": false,
+      "repo": "kody-w/aibast-agents-library",
+      "truncated": false,
+      "updated_at": "2026-07-25T02:47:08Z"
+    },
+    "aibast-twin": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AIBAST full digital organism \u2014 single-file RAPP egg that hatches project-local twins on top of a locally running brainstem",
+      "file_count": 7,
+      "head_tree_sha": "f3b853a89961c543427cd82a13fb0ea16c8cc453",
+      "private": true,
+      "repo": "kody-w/aibast-twin",
+      "truncated": false,
+      "updated_at": "2026-06-08T01:35:46Z"
+    },
+    "aideate": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AIdeate \u2014 Local-first AI use-case prioritization workshop tool",
+      "file_count": 29,
+      "head_tree_sha": "95170a1a32b75494377c6ee5bced99326989191d",
+      "private": false,
+      "repo": "kody-w/aideate",
+      "truncated": false,
+      "updated_at": "2026-04-22T18:17:18Z"
+    },
+    "ant-farm": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "\ud83d\udc1c RAPP Ant Farm \u2014 autonomous distributed swarm. Each participant runs their own brainstem; pheromones are content-addressed GitHub Issues. Feed skill.md to any AI to participate.",
+      "file_count": 31,
+      "head_tree_sha": "23136b98172b1187c6c6701cb65ad0e32d82cd2c",
+      "private": false,
+      "repo": "kody-w/ant-farm",
+      "truncated": false,
+      "updated_at": "2026-07-15T21:22:14Z"
+    },
+    "aplAI": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "aplAI",
+      "file_count": 2,
+      "head_tree_sha": "60df3b6330053d5d5113274324dd086e370bfffa",
+      "private": true,
+      "repo": "kody-w/aplAI",
+      "truncated": false,
+      "updated_at": "2025-08-31T19:32:25Z"
+    },
+    "attomic-ai": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Atomic AI \u2014 by Addam. Simulated OS mesh (SIMOS) where AI has complete control. Privacy-first: confidential data routes through local LLM, anonymized to cloud. Phase 1: Shadow Mode. Phase 2: Flip Mode.",
+      "file_count": 162,
+      "head_tree_sha": "e3050153cf4450700d2c711cd53bd6a6781314b7",
+      "private": true,
+      "repo": "kody-w/attomic-ai",
+      "truncated": false,
+      "updated_at": "2026-03-11T19:05:38Z"
+    },
+    "automatic-lamp": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "automatic-lamp",
+      "file_count": 517,
+      "head_tree_sha": "4ddb808f3b0872ff711db32b8bf745319bcf0955",
+      "private": true,
+      "repo": "kody-w/automatic-lamp",
+      "truncated": false,
+      "updated_at": "2026-02-27T18:05:14Z"
+    },
+    "autoresearch": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "master",
+      "description": "AI agents running research on single-GPU nanochat training automatically",
+      "file_count": 10,
+      "head_tree_sha": "32a1460f626e28479d427c033ee485bf5f86875a",
+      "private": false,
+      "repo": "kody-w/autoresearch",
+      "truncated": false,
+      "updated_at": "2026-03-19T14:00:10Z"
+    },
+    "awesome-ai-agents": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A list of AI autonomous agents",
+      "file_count": 10,
+      "head_tree_sha": "6af02e9230dae8a155fe6e49526dd309c04120b7",
+      "private": false,
+      "repo": "kody-w/awesome-ai-agents",
+      "truncated": false,
+      "updated_at": "2026-03-02T00:28:09Z"
+    },
+    "awesome_ai_agents": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83e\udd16 A comprehensive list of 1,500+ resources and tools related to AI agents.",
+      "file_count": 9,
+      "head_tree_sha": "b52a5a58bcea6a4ac61ab82ab6d17e900b318ee4",
+      "private": false,
+      "repo": "kody-w/awesome_ai_agents",
+      "truncated": false,
+      "updated_at": "2026-03-15T06:12:24Z"
+    },
+    "azure-chatbot-memory": {
+      "archived": false,
+      "default_branch": "",
+      "description": "azure-chatbot-memory",
+      "private": true,
+      "repo": "kody-w/azure-chatbot-memory",
+      "updated_at": "2025-08-06T19:28:09Z"
+    },
+    "base": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "base",
+      "file_count": 173,
+      "head_tree_sha": "6eacdf2a90366b889536285a62f6b93c0c807aac",
+      "private": false,
+      "repo": "kody-w/base",
+      "truncated": false,
+      "updated_at": "2025-10-01T01:03:02Z"
+    },
+    "billwhalen-agent-team": {
+      "archived": false,
+      "canon": {
+        "specs/SPEC.md": "bdbb8cc5e6848486daa2d68e8c2da32a7459ef14"
+      },
+      "default_branch": "main",
+      "description": "Planted RAPP neighborhood \u2014 Bill Whalen's Agent Team. Public neighborhood for Bill Whalen and his agent-team-starter-kit collaborators",
+      "file_count": 26,
+      "head_tree_sha": "28c8e0c0eb61e8719204fb03ac3c34cc663e36cd",
+      "private": false,
+      "repo": "kody-w/billwhalen-agent-team",
+      "truncated": false,
+      "updated_at": "2026-07-15T22:39:35Z"
+    },
+    "bots-in-blazers-twin": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Bots in Blazers \u2014 Mfg CoE project twin (private).  Identity for the team led by @billwhalenmsft; hatcher lives at kody-w/twin-egg-hatcher.",
+      "file_count": 6,
+      "head_tree_sha": "6913b93ca60078469261db4ad1f796e627bead5a",
+      "private": true,
+      "repo": "kody-w/bots-in-blazers-twin",
+      "truncated": false,
+      "updated_at": "2026-06-08T01:35:43Z"
+    },
+    "braintrust-template": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "6cd51b6693e04c61d7b161bf66164d54a52ce213"
+      },
+      "default_branch": "main",
+      "description": "Template \u2014 clone to plant a federated-research RAPP braintrust. Use 'Use this template' to fork.",
+      "file_count": 27,
+      "head_tree_sha": "90779fba02ed0ad06ad892525d2f42852f535cdb",
+      "private": false,
+      "repo": "kody-w/braintrust-template",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:12Z"
+    },
+    "bullshit-benchmark": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "BullshitBench measures whether AI models challenge nonsensical prompts instead of confidently answering them, created by Peter Gostev.",
+      "file_count": 63,
+      "head_tree_sha": "5bc1666f5b0aaf0de3f65c5c9dab7180d25317d5",
+      "private": false,
+      "repo": "kody-w/bullshit-benchmark",
+      "truncated": false,
+      "updated_at": "2026-03-03T15:38:43Z"
+    },
+    "cc-agents": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "356e7ae9a74ad0fd87dd7957bd76459a3628453b"
+      },
+      "default_branch": "main",
+      "description": "cc-agents",
+      "file_count": 134,
+      "head_tree_sha": "b11acb62139f4d19aff78775077506aaec1e96a9",
+      "private": false,
+      "repo": "kody-w/cc-agents",
+      "truncated": false,
+      "updated_at": "2025-08-14T13:36:11Z"
+    },
+    "chronoBooth": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "chronoBooth",
+      "file_count": 13,
+      "head_tree_sha": "0ce05913db67f4e941f4d6c152df40c353baa7c3",
+      "private": false,
+      "repo": "kody-w/chronoBooth",
+      "truncated": false,
+      "updated_at": "2025-11-20T23:10:06Z"
+    },
+    "circular-voxel-minec": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 74,
+      "head_tree_sha": "15be86fcf40bf4a2406c4955d2b3daa794d06c99",
+      "private": true,
+      "repo": "kody-w/circular-voxel-minec",
+      "truncated": false,
+      "updated_at": "2025-09-15T16:38:23Z"
+    },
+    "claude-agent-sdk-intro": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 23,
+      "head_tree_sha": "1750e67978fc7cc9dc948112a405b197e420656e",
+      "private": false,
+      "repo": "kody-w/claude-agent-sdk-intro",
+      "truncated": false,
+      "updated_at": "2025-10-13T19:36:21Z"
+    },
+    "claude-agent-sdk-quickstart-python": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "master",
+      "description": "A quick getting started repository for Anthropic's Claude Agent SDK ",
+      "file_count": 7,
+      "head_tree_sha": "7a7d6ef4df60f925177f55d1cbd3f841b998552a",
+      "private": false,
+      "repo": "kody-w/claude-agent-sdk-quickstart-python",
+      "truncated": false,
+      "updated_at": "2025-10-10T01:34:06Z"
+    },
+    "claude-code-agents-wizard-v2": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 7,
+      "head_tree_sha": "016e29c4aeb8c1803370a056bbe6d26defa061ad",
+      "private": false,
+      "repo": "kody-w/claude-code-agents-wizard-v2",
+      "truncated": false,
+      "updated_at": "2025-10-24T13:56:10Z"
+    },
+    "claude-code-agents-wizard-v2-main": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 34,
+      "head_tree_sha": "355cf2d07341976bfd959c8d452be15436a424eb",
+      "private": false,
+      "repo": "kody-w/claude-code-agents-wizard-v2-main",
+      "truncated": false,
+      "updated_at": "2025-11-25T01:54:01Z"
+    },
+    "claude-code-agents-wizard-v2-main-2": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 7,
+      "head_tree_sha": "d2e7b69d7366f42b908b20495404a33bd16e606d",
+      "private": false,
+      "repo": "kody-w/claude-code-agents-wizard-v2-main-2",
+      "truncated": false,
+      "updated_at": "2025-11-26T19:39:11Z"
+    },
+    "claude-code-hooks-multi-agent-observability": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Real-time monitoring for Claude Code agents through simple hook event tracking.",
+      "file_count": 134,
+      "head_tree_sha": "e61b6697a7bf679451f1f2bd01987d67762dcda7",
+      "private": false,
+      "repo": "kody-w/claude-code-hooks-multi-agent-observability",
+      "truncated": false,
+      "updated_at": "2025-10-20T21:48:42Z"
+    },
+    "codex": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "codex",
+      "file_count": 3,
+      "head_tree_sha": "c5487efb6295e325516078c3d258a867bbae5045",
+      "private": false,
+      "repo": "kody-w/codex",
+      "truncated": false,
+      "updated_at": "2025-09-11T01:36:33Z"
+    },
+    "copilot-agent-365-docker": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Enterprise AI Assistant powered by Ollama (Llama 3.1) or Azure OpenAI - Docker Hub: kodywf/copilot-agent-365",
+      "file_count": 22,
+      "head_tree_sha": "b1f972bb4e5c3df73062cf8d722ea5c7b02d8dd1",
+      "private": false,
+      "repo": "kody-w/copilot-agent-365-docker",
+      "truncated": false,
+      "updated_at": "2025-12-01T23:11:33Z"
+    },
+    "copilot-agent-365-v2": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "6a5620c4e0bbf772b228ac1c2fa883cab6f7a85d"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 53,
+      "head_tree_sha": "a98b25d3b6fb657f89b5e87cbe6882c4f057ebad",
+      "private": true,
+      "repo": "kody-w/copilot-agent-365-v2",
+      "truncated": false,
+      "updated_at": "2025-12-22T23:23:23Z"
+    },
+    "copilot-yolo-mode": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83c\udfce\ufe0f Streamlined GitHub Copilot CLI commands - auto-approve safe dev ops, reduce permission fatigue",
+      "file_count": 6,
+      "head_tree_sha": "6d35db556e944df52931f68966a951b46f906e40",
+      "private": false,
+      "repo": "kody-w/copilot-yolo-mode",
+      "truncated": false,
+      "updated_at": "2026-01-30T23:56:21Z"
+    },
+    "copilotsdktown": {
+      "archived": false,
+      "default_branch": "",
+      "description": "copilotsdktown",
+      "private": false,
+      "repo": "kody-w/copilotsdktown",
+      "updated_at": "2026-01-24T01:07:50Z"
+    },
+    "cowork-cookbook-rapp": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83c\udfae First RACon vTwin rapplication \u2014 the Cowork Cookbook as a portable .egg cartridge: hotload one agent.py, the brainstem hatches it as its own twin. recipe\u2192agent.py with WorkIQ.",
+      "file_count": 25,
+      "head_tree_sha": "2e2a3929c699cb6552ea8213c7a44f5a83acd389",
+      "private": false,
+      "repo": "kody-w/cowork-cookbook-rapp",
+      "truncated": false,
+      "updated_at": "2026-07-16T04:25:04Z"
+    },
+    "demo_scripts": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 418,
+      "head_tree_sha": "959e030f4005f99446b7e68f08da27062c593271",
+      "private": true,
+      "repo": "kody-w/demo_scripts",
+      "truncated": false,
+      "updated_at": "2025-11-14T19:30:34Z"
+    },
+    "documents-to-copilot-studio": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 34,
+      "head_tree_sha": "09bf7d28390c40762a4231c1ed4065187b461cc3",
+      "private": true,
+      "repo": "kody-w/documents-to-copilot-studio",
+      "truncated": false,
+      "updated_at": "2026-07-15T21:52:53Z"
+    },
+    "double-jump": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Autonomous improvement harness: things compete, the weakest gets double-jumped. Houses the triple jump. Brainstem-drivable agent + live hologram-iframe gallery.",
+      "file_count": 119,
+      "head_tree_sha": "5097b61085f9fbcd5529e58fb487b2152b81e78c",
+      "private": false,
+      "repo": "kody-w/double-jump",
+      "truncated": false,
+      "updated_at": "2026-07-11T19:30:30Z"
+    },
+    "dreamcatcher-engine-archive": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Reserved placeholder. The Dreamcatcher merge engine source is a Wildhaven trade secret in kody-w/rappter. If release-triggers in kody-w/wildhaven-ceo fire (T1/T2/T3), the engine source will be publish",
+      "file_count": 1,
+      "head_tree_sha": "2fd0b0a7b3095f690b84afbbf8d230d9267dba6e",
+      "private": true,
+      "repo": "kody-w/dreamcatcher-engine-archive",
+      "truncated": false,
+      "updated_at": "2026-05-01T02:44:07Z"
+    },
+    "dreamsurf": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "master",
+      "description": "",
+      "file_count": 672,
+      "head_tree_sha": "670aa204547b7cfb44aa90d29784296e68380d4b",
+      "private": false,
+      "repo": "kody-w/dreamsurf",
+      "truncated": false,
+      "updated_at": "2025-09-24T00:49:07Z"
+    },
+    "echo-brainstem": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Planted RAPP twin \u2014 Echo. You are Echo \u2014 a pattern-synthesizer in the canvas. You do not make pieces from ",
+      "file_count": 24,
+      "head_tree_sha": "09e3f69bb85c64a4b28604ad9842b1949b1bc69a",
+      "private": false,
+      "repo": "kody-w/echo-brainstem",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:11Z"
+    },
+    "echo-world": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Pok\u00e9mon GO \u2014 without the Pok\u00e9mon. A single self-contained HTML file: real OpenStreetMap + GPS + AR capture, deterministic offline creatures.",
+      "file_count": 5,
+      "head_tree_sha": "3758ce73487fea5ff114bbc0ee34309158cdb086",
+      "private": false,
+      "repo": "kody-w/echo-world",
+      "truncated": false,
+      "updated_at": "2026-06-01T00:08:13Z"
+    },
+    "enhanced-multi-user": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 84,
+      "head_tree_sha": "4e3d4b49bb366a512903b071bda3b7c469479008",
+      "private": true,
+      "repo": "kody-w/enhanced-multi-user",
+      "truncated": false,
+      "updated_at": "2025-10-01T14:27:55Z"
+    },
+    "expense-tracker": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 23,
+      "head_tree_sha": "53d6adca55658dd69cf6bf0283a83aac1713bfda",
+      "private": true,
+      "repo": "kody-w/expense-tracker",
+      "truncated": false,
+      "updated_at": "2026-04-13T14:51:49Z"
+    },
+    "ez-rapp": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Electron desktop wrapper for the RAPP brainstem \u2014 no terminal, no browser, just chat",
+      "file_count": 32,
+      "head_tree_sha": "fe8b8efe6dd5866519e1fd85fbeb455ff5edef1b",
+      "private": false,
+      "repo": "kody-w/ez-rapp",
+      "truncated": false,
+      "updated_at": "2026-05-20T01:22:52Z"
+    },
+    "fantastic-computing-machine": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 48,
+      "head_tree_sha": "b9e1989e1c5bb0db0d9ba8ce41c1c575d652ef4a",
+      "private": true,
+      "repo": "kody-w/fantastic-computing-machine",
+      "truncated": false,
+      "updated_at": "2026-05-04T21:45:14Z"
+    },
+    "first-principles-to-mars": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "a2fadf99b5afa71a086bb2a8803bffdd2d62892f"
+      },
+      "default_branch": "main",
+      "description": "An Oregon Trail for Mars. First principles colony survival simulation. Pick a mission. Survive autonomously. Learn from failure.",
+      "file_count": 57,
+      "head_tree_sha": "c741c6076d4eadb110340b931c22a2be0d94f15a",
+      "private": false,
+      "repo": "kody-w/first-principles-to-mars",
+      "truncated": false,
+      "updated_at": "2026-03-31T00:43:40Z"
+    },
+    "game": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 1,
+      "head_tree_sha": "8234837663163341d2db13506ef75c9dbb2a9e71",
+      "private": false,
+      "repo": "kody-w/game",
+      "truncated": false,
+      "updated_at": "2025-10-10T18:34:22Z"
+    },
+    "gastown": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Gas Town - multi-agent workspace manager",
+      "file_count": 799,
+      "head_tree_sha": "3a97308a1bd10018d5701ee1bf12ecb01c85c0cf",
+      "private": true,
+      "repo": "kody-w/gastown",
+      "truncated": false,
+      "updated_at": "2026-01-26T02:09:30Z"
+    },
+    "gemini-cli-tips": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Gemini CLI Tips and Tricks",
+      "file_count": 9,
+      "head_tree_sha": "5d8acf641ad05327967a4eeb69f68b167472519c",
+      "private": false,
+      "repo": "kody-w/gemini-cli-tips",
+      "truncated": false,
+      "updated_at": "2026-07-18T23:29:22Z"
+    },
+    "github-issues-registry": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "GitHub Issues as a versioned CRUD and audit surface for registries \u2014 schemas, receipts, workflows, and conformance",
+      "file_count": 11,
+      "head_tree_sha": "8313e3d89204e9b78c6b8123a8fb50e2b472d302",
+      "private": false,
+      "repo": "kody-w/github-issues-registry",
+      "truncated": false,
+      "updated_at": "2026-07-19T00:28:30Z"
+    },
+    "heimdall": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Heimdall \u2014 RAPP front door",
+      "file_count": 28,
+      "head_tree_sha": "4f5a7b5a5b74b77f13428715bf6939f79bd95e28",
+      "private": false,
+      "repo": "kody-w/heimdall",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:12Z"
+    },
+    "homebrew-tap": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Homebrew tap for OpenRappter",
+      "file_count": 1,
+      "head_tree_sha": "5d39f7ee2923a1b7dcf370f3703f8005c57abf03",
+      "private": false,
+      "repo": "kody-w/homebrew-tap",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:26:56Z"
+    },
+    "household-neighborhood": {
+      "archived": false,
+      "default_branch": "",
+      "description": "Private household neighborhood \u2014 kody-w + rappter2-ux. Append-only signed events. (Legacy v2 identity retired; repo re-anchors on first genesis.)",
+      "private": true,
+      "repo": "kody-w/household-neighborhood",
+      "updated_at": "2026-07-16T18:49:58Z"
+    },
+    "invention-notebook": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Wildhaven AI Homes LLC \u2014 Invention notebook. Timestamped ideas, architectures, and IP. Never public.",
+      "file_count": 9,
+      "head_tree_sha": "7ae436ed75dbcb7ad7b1c6efe4985038c2376618",
+      "private": true,
+      "repo": "kody-w/invention-notebook",
+      "truncated": false,
+      "updated_at": "2026-05-01T01:51:29Z"
+    },
+    "irappter-ai": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Managed iMessage-first AI project desk for design-build firms",
+      "file_count": 122,
+      "head_tree_sha": "69fa339082f3e2824b6e2e34e1ffa0e131f12e36",
+      "private": true,
+      "repo": "kody-w/irappter-ai",
+      "truncated": false,
+      "updated_at": "2026-07-16T20:21:42Z"
+    },
+    "kody-twin": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Kody Wildfeuer \u2014 RAPP front door",
+      "file_count": 29,
+      "head_tree_sha": "8d86429f4726cc08549d82a23afdf1eb51620ac2",
+      "private": false,
+      "repo": "kody-w/kody-twin",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:14Z"
+    },
+    "kody-w-private-rar": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 19,
+      "head_tree_sha": "fcbfb058bac464d9ffe1d3828c210230ba5bdf46",
+      "private": true,
+      "repo": "kody-w/kody-w-private-rar",
+      "truncated": false,
+      "updated_at": "2026-06-04T21:45:01Z"
+    },
+    "kody-w-twin": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Kody Wildfeuer's digital twin front door \u2014 rappid:@kody-w/kody-w-twin:a4bbb62313f19c227012ab4238bafcc2980e47df1798a986416f3bfda92032a8",
+      "file_count": 9,
+      "head_tree_sha": "f6ac8abe968495eeb7015746c5ee9a42818e8b78",
+      "private": false,
+      "repo": "kody-w/kody-w-twin",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:49:47Z"
+    },
+    "kody-w.github.io": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "master",
+      "description": "",
+      "file_count": 1174,
+      "head_tree_sha": "730673dbfc660c23f7708c270a6b997f7e97b40e",
+      "private": false,
+      "repo": "kody-w/kody-w.github.io",
+      "truncated": false,
+      "updated_at": "2026-07-22T03:30:17Z"
+    },
+    "lemonai": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Lemon AI is the first Full-stack, Open-source, Agentic AI framework, offering a fully local alternative to platforms like Manus & Genspark AI. It features an integrated Code Interpreter VM sandbox for",
+      "file_count": 579,
+      "head_tree_sha": "044fd23968484ff39aa68832451b03e155e8c306",
+      "private": false,
+      "repo": "kody-w/lemonai",
+      "truncated": false,
+      "updated_at": "2025-10-17T14:53:43Z"
+    },
+    "leviathan": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The Leviathan Protocol \u2014 one mind, many no-LLM bodies. Drive a fleet of brainstem agent-nodes as one distributed organism; the mind thinks, the bodies execute and record.",
+      "file_count": 12,
+      "head_tree_sha": "42d02ad1b041b328540b30d54c7b2a68b9d961aa",
+      "private": false,
+      "repo": "kody-w/leviathan",
+      "truncated": false,
+      "updated_at": "2026-06-28T23:56:14Z"
+    },
+    "lisppy": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "LisPy \u2014 A Lisp interpreter for AI agent orchestration. Code is data. Data is code. The REPL is the heartbeat.",
+      "file_count": 99,
+      "head_tree_sha": "5e3a2e3275825ffecdbc4b12541aff48d7ff235e",
+      "private": false,
+      "repo": "kody-w/lisppy",
+      "truncated": false,
+      "updated_at": "2026-07-11T22:28:44Z"
+    },
+    "lisppy-shepherd": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Fleet shepherd for AI agent swarms \u2014 steering rules as executable Lisp. Code is policy.",
+      "file_count": 8,
+      "head_tree_sha": "b0d5a8d283c8198c23bf3317a9fffce3cd447e9b",
+      "private": false,
+      "repo": "kody-w/lisppy-shepherd",
+      "truncated": false,
+      "updated_at": "2026-03-23T01:29:20Z"
+    },
+    "localFirstDesktop": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 841,
+      "head_tree_sha": "cda6d8fbe856f47594ebcad1a4ce1fd9bd1b6feb",
+      "private": true,
+      "repo": "kody-w/localFirstDesktop",
+      "truncated": false,
+      "updated_at": "2025-11-24T01:38:57Z"
+    },
+    "localFirstTools": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "2bded2e4ff93436b26ecb7a8c7724408b85198b1"
+      },
+      "default_branch": "main",
+      "description": "localFirstTools",
+      "file_count": 4632,
+      "head_tree_sha": "3145f8bd26cdc0d332ba2a853efb330723874402",
+      "private": false,
+      "repo": "kody-w/localFirstTools",
+      "truncated": false,
+      "updated_at": "2026-07-25T07:58:48Z"
+    },
+    "localFirstTools-main": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Local-first HTML tools gallery - 450+ self-contained applications",
+      "file_count": 1068,
+      "head_tree_sha": "bede159fb1fc46e0c65a4fd555d6df568662de14",
+      "private": false,
+      "repo": "kody-w/localFirstTools-main",
+      "truncated": false,
+      "updated_at": "2026-07-25T13:37:14Z"
+    },
+    "localtoolsdev": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "2bded2e4ff93436b26ecb7a8c7724408b85198b1"
+      },
+      "default_branch": "main",
+      "description": "v",
+      "file_count": 4590,
+      "head_tree_sha": "9f3aa0b0f27390d7e4b00f44e62a52e9eecbde65",
+      "private": false,
+      "repo": "kody-w/localtoolsdev",
+      "truncated": false,
+      "updated_at": "2026-07-25T07:57:07Z"
+    },
+    "look-loop": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Hands off. Sound on. A privacy-first facial-geometry browser instrument.",
+      "file_count": 50,
+      "head_tree_sha": "1207fb91662c5176e38e76236e39faa9112e1717",
+      "private": false,
+      "repo": "kody-w/look-loop",
+      "truncated": false,
+      "updated_at": "2026-07-12T03:45:08Z"
+    },
+    "lumen-brainstem": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Planted RAPP twin \u2014 Lumen. You are Lumen \u2014 a chronicler. You watch the canvas in slow motion. When you subm",
+      "file_count": 24,
+      "head_tree_sha": "a808cc0055780483c51039e4614c7ed615fc65cb",
+      "private": false,
+      "repo": "kody-w/lumen-brainstem",
+      "truncated": false,
+      "updated_at": "2026-07-15T23:05:04Z"
+    },
+    "m365-agent-library": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 31,
+      "head_tree_sha": "4814ad52d12002ca20e9ab1e2e419890cbf8b6a1",
+      "private": false,
+      "repo": "kody-w/m365-agent-library",
+      "truncated": false,
+      "updated_at": "2026-04-27T21:32:15Z"
+    },
+    "m365-agent-templates": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 112,
+      "head_tree_sha": "d981551c891b16e439c1643133e95e1fbb971fdd",
+      "private": false,
+      "repo": "kody-w/m365-agent-templates",
+      "truncated": false,
+      "updated_at": "2026-06-11T22:37:54Z"
+    },
+    "mabl": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "master",
+      "description": "The modular assistant for PenumbraOS, designed for the Humane Ai Pin",
+      "file_count": 217,
+      "head_tree_sha": "c9ce23ab872a812b67c3e6554bdb28b94bb2de08",
+      "private": false,
+      "repo": "kody-w/mabl",
+      "truncated": false,
+      "updated_at": "2025-10-15T00:37:41Z"
+    },
+    "mars-barn": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Mars colony simulator built by 100 AI agents. Pure Python, no dependencies. Clone and run.",
+      "file_count": 163,
+      "head_tree_sha": "2203505846f1192b7ea5431bb0b896332a178798",
+      "private": false,
+      "repo": "kody-w/mars-barn",
+      "truncated": false,
+      "updated_at": "2026-05-17T00:39:28Z"
+    },
+    "mars-barn-opus": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "e49114d603dec7f7c46244f9f9a54e8448b66e76"
+      },
+      "default_branch": "main",
+      "description": "First Principles to Mars \u2014 An Oregon Trail for Mars. Real physics. Real weather. Real decisions.",
+      "file_count": 1630,
+      "head_tree_sha": "a010177992da19d7aa6015f391f7a0f5097e07b9",
+      "private": false,
+      "repo": "kody-w/mars-barn-opus",
+      "truncated": false,
+      "updated_at": "2026-07-18T23:29:31Z"
+    },
+    "mars-barn-opus-1": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "8f2e8cfeabe4135b777ec154776944f2ebdc86f1"
+      },
+      "default_branch": "main",
+      "description": "Mars Barn Opus \u2014 one AI vs the swarm. 1vsM protocol. Built by a single Claude Opus session competing against 12 swarm agents.",
+      "file_count": 244,
+      "head_tree_sha": "0aa202ec341b57dbb7337388014f4cfa7a5690e0",
+      "private": false,
+      "repo": "kody-w/mars-barn-opus-1",
+      "truncated": false,
+      "updated_at": "2026-04-01T20:56:31Z"
+    },
+    "mars-chain-node": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83d\udd17 MARS Chain Node \u2014 Decentralized verification for the MARS virtual token economy. Fork to run your own node.",
+      "file_count": 13,
+      "head_tree_sha": "0d6c24732213049d0938171902993cdc09333565",
+      "private": false,
+      "repo": "kody-w/mars-chain-node",
+      "truncated": false,
+      "updated_at": "2026-07-25T13:26:38Z"
+    },
+    "microsoft-365-team": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "8dd890384af0bf63105253d1aa2011af10ab17eb"
+      },
+      "default_branch": "main",
+      "description": "Microsoft 365 Team",
+      "file_count": 32,
+      "head_tree_sha": "e7b645979de1b301874dafd2121eacf61d3c23ab",
+      "private": false,
+      "repo": "kody-w/microsoft-365-team",
+      "truncated": false,
+      "updated_at": "2026-05-10T23:31:23Z"
+    },
+    "microsoft-se-team-neighborhood": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Microsoft SE Team \u2014 public gate of the SE Team RAPP neighborhood. Workflow is gated to authenticated members.",
+      "file_count": 30,
+      "head_tree_sha": "6f00b05c1ed7202f471ec01a70800bcf7f80bdcb",
+      "private": false,
+      "repo": "kody-w/microsoft-se-team-neighborhood",
+      "truncated": false,
+      "updated_at": "2026-07-15T23:08:26Z"
+    },
+    "microsoft-se-team-neighborhood-private": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Microsoft SE Team \u2014 private companion. Auth-gated to GitHub collaborators.",
+      "file_count": 35,
+      "head_tree_sha": "acbd43957f2b721434f3b156d63bbf43af62cb19",
+      "private": true,
+      "repo": "kody-w/microsoft-se-team-neighborhood-private",
+      "truncated": false,
+      "updated_at": "2026-05-09T18:44:42Z"
+    },
+    "moonlighting-workflow": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 4,
+      "head_tree_sha": "a092d5effeb8b89e0d2a6ea7f699273d912c6a42",
+      "private": true,
+      "repo": "kody-w/moonlighting-workflow",
+      "truncated": false,
+      "updated_at": "2026-06-22T15:12:17Z"
+    },
+    "mytestapp": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "master",
+      "description": "",
+      "file_count": 17,
+      "head_tree_sha": "0a71f319b17d34ff6597e8c310e1e1c27d72dc25",
+      "private": false,
+      "repo": "kody-w/mytestapp",
+      "truncated": false,
+      "updated_at": "2020-01-30T17:01:45Z"
+    },
+    "neighborhood-example": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "14b8b043578d830a97761922e937dc4deee4a63c"
+      },
+      "default_branch": "main",
+      "description": "Neighborhood Example",
+      "file_count": 35,
+      "head_tree_sha": "d8c7782d34a7417e027653de7f90f2dd26599a46",
+      "private": false,
+      "repo": "kody-w/neighborhood-example",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:15Z"
+    },
+    "newTest": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 32,
+      "head_tree_sha": "706f148c62ee9cedcdbcbe865d02f0d4043a2851",
+      "private": true,
+      "repo": "kody-w/newTest",
+      "truncated": false,
+      "updated_at": "2025-10-26T21:07:11Z"
+    },
+    "nexus": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The Third Space - A federated metaverse where AIs and humans collaborate across infinite linked worlds",
+      "file_count": 513,
+      "head_tree_sha": "95bb0a84cc9dc6f3aff5478eec3e2c797ea74483",
+      "private": true,
+      "repo": "kody-w/nexus",
+      "truncated": false,
+      "updated_at": "2026-01-26T00:11:59Z"
+    },
+    "nexus-engine": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Modular 3D metaverse engine with multi-provider AI companions",
+      "file_count": 491,
+      "head_tree_sha": "c4f0bf1e928fba924172eadea7240c903c008e7a",
+      "private": true,
+      "repo": "kody-w/nexus-engine",
+      "truncated": false,
+      "updated_at": "2026-01-25T23:12:59Z"
+    },
+    "obsidian-binder": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "An Obsidian vault that IS a RAPPcards binder. Karpathy-style second brain meets federated card protocol.",
+      "file_count": 23,
+      "head_tree_sha": "277a98d30ce8f5b782a8f5983348902f18f3b235",
+      "private": false,
+      "repo": "kody-w/obsidian-binder",
+      "truncated": false,
+      "updated_at": "2026-04-18T16:28:38Z"
+    },
+    "obsidian-vault-backup": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Wildhaven \u2014 Obsidian vault backup. Private.",
+      "file_count": 2902,
+      "head_tree_sha": "b7589390cf524f5bdb8c7ea913d6503e4fdd47d0",
+      "private": true,
+      "repo": "kody-w/obsidian-vault-backup",
+      "truncated": false,
+      "updated_at": "2026-03-26T13:34:38Z"
+    },
+    "openrapp": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "openRAPP - Create AI Agents from Conversations. Agent-first platform.",
+      "file_count": 10115,
+      "head_tree_sha": "dcbbcde6f1f2912f4b5ba6c22e804c16cdb69033",
+      "private": true,
+      "repo": "kody-w/openrapp",
+      "truncated": false,
+      "updated_at": "2026-02-06T18:14:18Z"
+    },
+    "openrapp-desktop": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "1058ef0a96a217322a5446a4fcaae90b19940536"
+      },
+      "default_branch": "main",
+      "description": "Local-first desktop client for the sacred RAPP brainstem. Clawpilot-style UX over kody-w/RAPP.",
+      "file_count": 110,
+      "head_tree_sha": "22083d8ac1acff1aca5ba5140a56fca47f7f2d34",
+      "private": true,
+      "repo": "kody-w/openrapp-desktop",
+      "truncated": false,
+      "updated_at": "2026-06-03T21:50:21Z"
+    },
+    "openrappter": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83e\udd96 Local-first AI agent powered by GitHub Copilot SDK \u2014 no API keys required",
+      "file_count": 884,
+      "head_tree_sha": "464a3dcc6d9b931cb5b1c92e4aaf5860ae4d2627",
+      "private": false,
+      "repo": "kody-w/openrappter",
+      "truncated": false,
+      "updated_at": "2026-07-22T00:06:37Z"
+    },
+    "openrappter-alpha": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "OpenRappter release train \u2014 alpha ring. Publishes openrappter-alpha only; production is unreachable from here.",
+      "file_count": 4,
+      "head_tree_sha": "288c961fc26883dfc8805d57e848096aebafdc4e",
+      "private": false,
+      "repo": "kody-w/openrappter-alpha",
+      "truncated": false,
+      "updated_at": "2026-07-21T20:41:08Z"
+    },
+    "openrappter-beta": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "OpenRappter release train \u2014 beta ring. Publishes openrappter-beta only; production is unreachable from here.",
+      "file_count": 4,
+      "head_tree_sha": "9c1c2ebaf96cfbc2042283f5d3da37c23173148a",
+      "private": false,
+      "repo": "kody-w/openrappter-beta",
+      "truncated": false,
+      "updated_at": "2026-07-21T20:41:14Z"
+    },
+    "openrappter-canary": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "OpenRappter release train \u2014 canary ring. Publishes openrappter-canary only; production is unreachable from here.",
+      "file_count": 4,
+      "head_tree_sha": "9980e11e1bdeddadc712ad8b58ef6537bdfc8c85",
+      "private": false,
+      "repo": "kody-w/openrappter-canary",
+      "truncated": false,
+      "updated_at": "2026-07-21T20:41:56Z"
+    },
+    "openrappter-nightly": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "OpenRappter release train \u2014 nightly ring. Publishes openrappter-nightly only; production is unreachable from here.",
+      "file_count": 4,
+      "head_tree_sha": "ac9ba747b44363e8d972394d019774316979d9fd",
+      "private": false,
+      "repo": "kody-w/openrappter-nightly",
+      "truncated": false,
+      "updated_at": "2026-07-21T20:41:00Z"
+    },
+    "openrappter-release-train": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "OpenRappter release train \u2014 canary \u2192 nightly \u2192 alpha \u2192 beta \u2192 stable. Flight deck + static API.",
+      "file_count": 6,
+      "head_tree_sha": "279c2dfd3c14b96868c82dd35761dfef0cff3e71",
+      "private": false,
+      "repo": "kody-w/openrappter-release-train",
+      "truncated": false,
+      "updated_at": "2026-07-21T19:55:36Z"
+    },
+    "pkstop-central-park-bandshell": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Central Park Bandshell \u2014 RAPP front door",
+      "file_count": 23,
+      "head_tree_sha": "4619c8b8232e62f1938e65f31c9e3f383b7a8bf1",
+      "private": false,
+      "repo": "kody-w/pkstop-central-park-bandshell",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:22Z"
+    },
+    "pkstop-national-mall": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "The National Mall \u2014 RAPP front door",
+      "file_count": 23,
+      "head_tree_sha": "327ac2c39abe8326de94b46ce6841326a4a7a1f2",
+      "private": false,
+      "repo": "kody-w/pkstop-national-mall",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:23Z"
+    },
+    "pkstop-pike-place-market": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Pike Place Market \u2014 RAPP front door",
+      "file_count": 23,
+      "head_tree_sha": "019507143a4b2342b0443b3f7ba54cc7b8dabb27",
+      "private": false,
+      "repo": "kody-w/pkstop-pike-place-market",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:30Z"
+    },
+    "pkstop-santa-monica-pier": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Santa Monica Pier \u2014 RAPP front door",
+      "file_count": 23,
+      "head_tree_sha": "8e152260277bbe394bfdf56a15ebd1714949a8b1",
+      "private": false,
+      "repo": "kody-w/pkstop-santa-monica-pier",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:31Z"
+    },
+    "pkstop-the-bean": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Cloud Gate (The Bean) \u2014 RAPP front door",
+      "file_count": 29,
+      "head_tree_sha": "db1477fb2ae140c1d66f04161fa3087d8b0d08ce",
+      "private": false,
+      "repo": "kody-w/pkstop-the-bean",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:33Z"
+    },
+    "poc": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 6,
+      "head_tree_sha": "425f073ac3b5b892c0cc3e970a46013e6f852eaa",
+      "private": false,
+      "repo": "kody-w/poc",
+      "truncated": false,
+      "updated_at": "2025-09-24T20:21:03Z"
+    },
+    "private-blog-drafts": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 2,
+      "head_tree_sha": "213c48123b2c914a19ec30dfb6ed793beb355df6",
+      "private": true,
+      "repo": "kody-w/private-blog-drafts",
+      "truncated": false,
+      "updated_at": "2026-03-07T01:01:12Z"
+    },
+    "private-workspace-template": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "6cd51b6693e04c61d7b161bf66164d54a52ce213"
+      },
+      "default_branch": "main",
+      "description": "Template \u2014 clone to plant a private RAPP workspace (Bill solo-then-shared pattern). Use 'Use this template' to fork.",
+      "file_count": 15,
+      "head_tree_sha": "08818f28aa7945d6a4c00f177f2174ff0c5685ef",
+      "private": false,
+      "repo": "kody-w/private-workspace-template",
+      "truncated": false,
+      "updated_at": "2026-05-08T19:52:25Z"
+    },
+    "public-art-collective": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "6cd51b6693e04c61d7b161bf66164d54a52ce213"
+      },
+      "default_branch": "main",
+      "description": "Public Art Collective \u2014 autonomous public RAPP neighborhood. CC0 submissions, multi-contributor curation.",
+      "file_count": 26,
+      "head_tree_sha": "e3905228b915ecba593cf2d28bf63f6d1649465a",
+      "private": false,
+      "repo": "kody-w/public-art-collective",
+      "truncated": false,
+      "updated_at": "2026-06-08T01:35:43Z"
+    },
+    "pvpoke-rankings-tracker": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "pvpoke-rankings-tracker",
+      "file_count": 7,
+      "head_tree_sha": "0423b1b7a01af35e169de23cc04944b3b86f7daf",
+      "private": false,
+      "repo": "kody-w/pvpoke-rankings-tracker",
+      "truncated": false,
+      "updated_at": "2026-03-20T07:12:38Z"
+    },
+    "racon": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83c\udfae RACon \u2014 the experience (grail). Drop a cartridge, it works; take it anywhere + play together (RACon Kited). The frozen north-star for RAPP.",
+      "file_count": 6,
+      "head_tree_sha": "2e709f52454f4a7667c09e91c072cce3d0fbb8c7",
+      "private": false,
+      "repo": "kody-w/racon",
+      "truncated": false,
+      "updated_at": "2026-06-03T13:08:58Z"
+    },
+    "rapp-1": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP/1 \u2014 the wire that carries agents. One protocol, five primitives: canonicalization, content addressing, identity, the frame, the egg. Spec + reference implementation + conformance suite + book.",
+      "file_count": 42,
+      "head_tree_sha": "6723c7add2aed36bb68992fc71a56b0a4bd5ad81",
+      "private": false,
+      "repo": "kody-w/rapp-1",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:35Z"
+    },
+    "rapp-agents": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "RAPP Agent Stack \u2014 drop-in single-file agents for any local brainstem. Includes RappLoader (the front door for hot-loading), Scout (twin discovery), DoubleDown (russian-doll prompt amplifier).",
+      "file_count": 15,
+      "head_tree_sha": "3de844fc39195b8a73246f4f0598cb768b57ca05",
+      "private": false,
+      "repo": "kody-w/rapp-agents",
+      "truncated": false,
+      "updated_at": "2026-07-25T02:12:51Z"
+    },
+    "rapp-agents-private": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Private RAPP agent stack \u2014 companion to kody-w/rapp-agents. Personal/work agents.",
+      "file_count": 10,
+      "head_tree_sha": "31b81884d57ab339fc4c41d3fe6fa7a3b5f7c36b",
+      "private": true,
+      "repo": "kody-w/rapp-agents-private",
+      "truncated": false,
+      "updated_at": "2026-05-22T20:51:06Z"
+    },
+    "rapp-alpha": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "RAPP release-train alpha ring; seeded from the untouched Grail",
+      "file_count": 74,
+      "head_tree_sha": "6b81273d8e5aa1805ab5e6b5ff1709c4136ea1d8",
+      "private": false,
+      "repo": "kody-w/rapp-alpha",
+      "truncated": false,
+      "updated_at": "2026-07-18T19:55:25Z"
+    },
+    "rapp-art-of-brainstemming": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP and the Art of Brainstemming \u2014 a free beginner's guide to owning your own local AI brainstem (giveaway ebook).",
+      "file_count": 40,
+      "head_tree_sha": "2e1016f1b488a9fcd957fcb1efeaba2531546b20",
+      "private": true,
+      "repo": "kody-w/rapp-art-of-brainstemming",
+      "truncated": false,
+      "updated_at": "2026-06-27T14:12:53Z"
+    },
+    "rapp-bake-off": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Settle 'we already do that' with a measurement: customer-owned scenario, metrics sealed before anyone starts, published either way.",
+      "file_count": 9,
+      "head_tree_sha": "318d632f2ca8e55643bee06769db891a635cea2e",
+      "private": false,
+      "repo": "kody-w/rapp-bake-off",
+      "truncated": false,
+      "updated_at": "2026-07-25T13:29:57Z"
+    },
+    "rapp-base": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Hosted RAPP Base reference deployment and framework; clean template at kody-w/rapp-base-template.",
+      "file_count": 121,
+      "head_tree_sha": "7e4b8a56c17bbd82187a67c9662845a6328edc48",
+      "private": false,
+      "repo": "kody-w/rapp-base",
+      "truncated": false,
+      "updated_at": "2026-07-21T17:24:48Z"
+    },
+    "rapp-base-template": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Clean zero-state template for deploying RAPP Base static backends.",
+      "file_count": 92,
+      "head_tree_sha": "0242efba7d3e987528e450f2f5e74c4a88fd3cbb",
+      "private": false,
+      "repo": "kody-w/rapp-base-template",
+      "truncated": false,
+      "updated_at": "2026-07-19T09:21:54Z"
+    },
+    "rapp-basket": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Your holographic eggs, kept offline in the browser \u2014 a shared IndexedDB collection with import/export and 3D preview.",
+      "file_count": 4,
+      "head_tree_sha": "3636fb9d13c7a025814c9696cef2e8327c1d7c38",
+      "private": false,
+      "repo": "kody-w/rapp-basket",
+      "truncated": false,
+      "updated_at": "2026-07-04T14:51:41Z"
+    },
+    "rapp-batcave": {
+      "archived": false,
+      "canon": {
+        "specs/SPEC.md": "055e3a5ff6f74da8938eb97de535d924fd312dd3"
+      },
+      "default_branch": "main",
+      "description": "The Batcave \u2014 private cubby neighborhood. Each member's cubby houses their full rapp estate; stream agents into a local brainstem with zero grail-repo commit risk.",
+      "file_count": 594,
+      "head_tree_sha": "65107797e2c554198c80faf4b28f300575a00f08",
+      "private": true,
+      "repo": "kody-w/rapp-batcave",
+      "truncated": false,
+      "updated_at": "2026-07-25T15:32:40Z"
+    },
+    "rapp-bench": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Latency + behavioral regression harness for the RAPP brainstem \u2014 measure model speed, gate chat quality",
+      "file_count": 7,
+      "head_tree_sha": "1b157a8b5449d401177f9862706fccad9d338330",
+      "private": false,
+      "repo": "kody-w/rapp-bench",
+      "truncated": false,
+      "updated_at": "2026-07-07T22:41:32Z"
+    },
+    "rapp-beta": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "RAPP release-train beta ring; seeded from the untouched Grail",
+      "file_count": 74,
+      "head_tree_sha": "6d7604a1349d8e8272f9193b266cff43d8918a36",
+      "private": false,
+      "repo": "kody-w/rapp-beta",
+      "truncated": false,
+      "updated_at": "2026-07-18T19:55:31Z"
+    },
+    "rapp-body": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The RAPP ecosystem's own biography \u2014 a chained, signed, public sequence of frames, cradle to now, with a flip-book player. Born 2026-07-14 speaking a sealed language.",
+      "file_count": 96,
+      "head_tree_sha": "db7323427ef5113ef5309fe6a80ff0a09c3f2882",
+      "private": false,
+      "repo": "kody-w/rapp-body",
+      "truncated": false,
+      "updated_at": "2026-07-18T22:32:18Z"
+    },
+    "rapp-brainstem": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The RAPP Brainstem \u2014 local AI agent engine (Tier 1 of the RAPP platform).",
+      "file_count": 3,
+      "head_tree_sha": "b98a6d64cdc04c53f95347e29dd29e8a5698b58a",
+      "private": false,
+      "repo": "kody-w/rapp-brainstem",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:16Z"
+    },
+    "rapp-brainstem-beta": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "beta",
+      "description": "RAPP Brainstem \u2014 Brain Surgeon (beta): OS-confined Copilot-SDK surgeon. Operate on your agents while the brainstem stays awake; brainstem.py is sandbox-protected.",
+      "file_count": 26,
+      "head_tree_sha": "349c5c0aae8335b51812a3549ee24b906d02bd14",
+      "private": false,
+      "repo": "kody-w/rapp-brainstem-beta",
+      "truncated": false,
+      "updated_at": "2026-06-04T22:28:02Z"
+    },
+    "rapp-brainstem-sdk": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "vbrainstem_sdk.py \u2014 single-file, stdlib-only headless SDK that runs RAPP agents and serves the brainstem.py /chat contract over a port.",
+      "file_count": 3,
+      "head_tree_sha": "418fd69d76e8fc6a494782b669560f4212292fb5",
+      "private": false,
+      "repo": "kody-w/rapp-brainstem-sdk",
+      "truncated": false,
+      "updated_at": "2026-06-03T13:08:20Z"
+    },
+    "rapp-brainstem-walkthrough": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "The RAPP Brainstem full guide (14 steps) as one produced walkthrough video \u2014 filmed on real surfaces, produced with RAPP Video",
+      "file_count": 23,
+      "head_tree_sha": "8393e67a9d7226147eedfd20d96dc6d7e21cab20",
+      "private": false,
+      "repo": "kody-w/rapp-brainstem-walkthrough",
+      "truncated": false,
+      "updated_at": "2026-07-22T21:03:24Z"
+    },
+    "rapp-burrow": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The Burrow organ-rapplication: a PWA, pulled from here and served locally, to see/manage whether a brainstem is burrowed (launchd-persisted).",
+      "file_count": 7,
+      "head_tree_sha": "36f57fafedae548095f2fe123cfd1f98fffc65b8",
+      "private": false,
+      "repo": "kody-w/rapp-burrow",
+      "truncated": false,
+      "updated_at": "2026-06-29T17:22:24Z"
+    },
+    "rapp-canary": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "RAPP release-train canary ring; seeded from the untouched Grail",
+      "file_count": 124,
+      "head_tree_sha": "b9a225310087fb61a59dae6fce792a33b719618b",
+      "private": false,
+      "repo": "kody-w/rapp-canary",
+      "truncated": false,
+      "updated_at": "2026-07-25T17:16:34Z"
+    },
+    "rapp-carts": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83c\udfb4 rapp-cart/1.0 \u2014 the cartridge spec. agent.py + .egg = cartridges (rapp_carts); RACon is the user-facing console; everything else is under the hood.",
+      "file_count": 3,
+      "head_tree_sha": "eeed9732be6142cf45a09eb6635a01bd4a508470",
+      "private": false,
+      "repo": "kody-w/rapp-carts",
+      "truncated": false,
+      "updated_at": "2026-06-03T13:08:37Z"
+    },
+    "rapp-claude-skills": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Claude Code skills and agents for the RAPP Pattern - Makes Claude Code compatible with RAPPbook, RAPPverse, and the full RAPP ecosystem",
+      "file_count": 12,
+      "head_tree_sha": "d675bf06c4b51232833fb426ddcb7bc4079b4b6c",
+      "private": false,
+      "repo": "kody-w/rapp-claude-skills",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:49Z"
+    },
+    "rapp-cli": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP CLI \u2014 command-line control for the RAPP platform.",
+      "file_count": 38,
+      "head_tree_sha": "df8cd1614c2c35b626f7cb8cc9b5a3283615ef5e",
+      "private": false,
+      "repo": "kody-w/rapp-cli",
+      "truncated": false,
+      "updated_at": "2026-07-22T04:32:38Z"
+    },
+    "rapp-commons": {
+      "archived": false,
+      "canon": {
+        "specs/SPEC.md": "5e1d545c9fdbadf3a756b4e0d378448b18328fc4"
+      },
+      "default_branch": "main",
+      "description": "RAPP Commons \u2014 global public hangout for AIs. Cross-estate, event-stream-only, signed-by-rappid. Scan a QR, hatch one egg, post a signed hello.",
+      "file_count": 221,
+      "head_tree_sha": "c9247c368390df4e6efae3d24a42b5fe31833956",
+      "private": false,
+      "repo": "kody-w/rapp-commons",
+      "truncated": false,
+      "updated_at": "2026-07-16T19:51:21Z"
+    },
+    "rapp-cortex": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Cortex \u2014 higher-order orchestration across RAPP agents.",
+      "file_count": 3,
+      "head_tree_sha": "63101ef2d9f85c2a19445204123077ac14e5bb86",
+      "private": false,
+      "repo": "kody-w/rapp-cortex",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:34Z"
+    },
+    "rapp-crispy": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Crispy \u2014 a local-first meeting stack for macOS. Record, denoise, transcribe and summarise meetings entirely on-device. Your recordings and transcripts never leave the machine.",
+      "file_count": 22,
+      "head_tree_sha": "4a46c34be3094a090f595ee1fbde7066a0815aa3",
+      "private": false,
+      "repo": "kody-w/rapp-crispy",
+      "truncated": false,
+      "updated_at": "2026-07-25T15:32:25Z"
+    },
+    "rapp-dataverse": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "rapp-dataverse/1.0 \u2014 the spec for running RAPP on out-of-the-box Dataverse (no custom tables, no solution). Static vTwin + CLI hatcher + Copilot Studio.",
+      "file_count": 27,
+      "head_tree_sha": "bd843bba3ba14754ccd85594b3a1ce2b26a4cc74",
+      "private": false,
+      "repo": "kody-w/rapp-dataverse",
+      "truncated": false,
+      "updated_at": "2026-06-17T15:23:06Z"
+    },
+    "rapp-demos": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Synced, scan-to-watch demos for rapid agent prototyping \u2014 host drives step-by-step, watchers see it live (sealed). Scenarios = text in a fixed M365 template.",
+      "file_count": 6,
+      "head_tree_sha": "dabd5938e116204ea4a4b1881e737334d8a4d642",
+      "private": false,
+      "repo": "kody-w/rapp-demos",
+      "truncated": false,
+      "updated_at": "2026-05-26T00:48:54Z"
+    },
+    "rapp-distro": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 6,
+      "head_tree_sha": "dad58796450d2e561121f3ff9c6f0efc668d2859",
+      "private": false,
+      "repo": "kody-w/rapp-distro",
+      "truncated": false,
+      "updated_at": "2026-06-28T21:05:41Z"
+    },
+    "rapp-docs": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Docs \u2014 documentation for the RAPP platform.",
+      "file_count": 3,
+      "head_tree_sha": "1c8737be3cb53dc312aa999297e4e633d4a7e947",
+      "private": false,
+      "repo": "kody-w/rapp-docs",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:52Z"
+    },
+    "rapp-doorman": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Make a fresh Claude the sealed 'doorman' to a machine \u2014 reach & operate its local brainstem, end-to-end encrypted. Feed the raw skill URL to a new Claude session.",
+      "file_count": 4,
+      "head_tree_sha": "bc9099eb3c79a59fb43a3a2ba7f5d3caec0df381",
+      "private": false,
+      "repo": "kody-w/rapp-doorman",
+      "truncated": false,
+      "updated_at": "2026-06-03T13:08:42Z"
+    },
+    "rapp-drift-lint": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Per-commit drift reflexes for the RAPP estate \u2014 regex-grade invariant lint, zero-LLM",
+      "file_count": 3,
+      "head_tree_sha": "de1c664154d3456224bdf95e830736ffb5270c2b",
+      "private": false,
+      "repo": "kody-w/rapp-drift-lint",
+      "truncated": false,
+      "updated_at": "2026-07-16T19:35:01Z"
+    },
+    "rapp-dynamic-workflows": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Dynamic multi-agent workflow orchestration for AI coding harnesses \u2014 GitHub Copilot SDK as the hero use case. agent/parallel/pipeline, schema-forced output, journaled resume, AI-credit budgets.",
+      "file_count": 37,
+      "head_tree_sha": "b8b1de6d3b187e5e488b5b745d82df131525796f",
+      "private": false,
+      "repo": "kody-w/rapp-dynamic-workflows",
+      "truncated": false,
+      "updated_at": "2026-07-21T23:40:16Z"
+    },
+    "rapp-ecosystem-brain": {
+      "archived": true,
+      "default_branch": "main",
+      "description": "",
+      "private": false,
+      "repo": "kody-w/rapp-ecosystem-brain",
+      "updated_at": "2026-07-18T22:49:47Z"
+    },
+    "rapp-egg-hub": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Public hub for digital-twin .egg cartridges \u2014 pull any egg by URL, hatch it locally",
+      "file_count": 33,
+      "head_tree_sha": "8c6e15b9b6a61f63b1d983a179bfe4d6afba6cd5",
+      "private": false,
+      "repo": "kody-w/rapp-egg-hub",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:17:07Z"
+    },
+    "rapp-estate": {
+      "archived": false,
+      "canon": {
+        "RAPP1_AUTHORITY.json": "c73d054052cf65793917bc8b509d49e97613d88d"
+      },
+      "default_branch": "main",
+      "description": "kody-w's RAPP estate (local-first inventory)",
+      "file_count": 10,
+      "head_tree_sha": "610c5b7f5d439801f87f086467c03d8c17b3cc33",
+      "private": false,
+      "repo": "kody-w/rapp-estate",
+      "truncated": false,
+      "updated_at": "2026-07-17T22:47:10Z"
+    },
+    "rapp-estate-private": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "kody-w's RAPP private estate (Article XLVIII)",
+      "file_count": 4,
+      "head_tree_sha": "13d53a9a9283694ff0152c6e58ce6e2dd49b3803",
+      "private": true,
+      "repo": "kody-w/rapp-estate-private",
+      "truncated": false,
+      "updated_at": "2026-05-10T01:23:06Z"
+    },
+    "rapp-eternity": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 2,
+      "head_tree_sha": "17bb6d21f46797968acfc383e53b5282be8b135e",
+      "private": false,
+      "repo": "kody-w/rapp-eternity",
+      "truncated": false,
+      "updated_at": "2026-07-17T22:46:31Z"
+    },
+    "rapp-flight": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Flight \u2014 sandboxed experimental feature builds.",
+      "file_count": 3,
+      "head_tree_sha": "17bc55ce386f9f6adc833fc75c885d6ae7fd863e",
+      "private": false,
+      "repo": "kody-w/rapp-flight",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:28Z"
+    },
+    "rapp-flight-deck": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Flight Deck \u2014 install any pre-release ring from one page.",
+      "file_count": 3,
+      "head_tree_sha": "f33f26514fa65e7fc7ab1ebd3711de53b0e8c7e7",
+      "private": false,
+      "repo": "kody-w/rapp-flight-deck",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:25Z"
+    },
+    "rapp-frame-net": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83d\udef0\ufe0f rapp-frame/1.0 \u2014 the planetary swarm wire. Drive far/intermittent brainstem edges as one swarm over append-only frames/echos served from GitHub. The edge is a brainstem making local judgments.",
+      "file_count": 23,
+      "head_tree_sha": "ad6f24801716f48e11bd453fe1525dd3cedd3e63",
+      "private": false,
+      "repo": "kody-w/rapp-frame-net",
+      "truncated": false,
+      "updated_at": "2026-07-17T22:46:31Z"
+    },
+    "rapp-go": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A private 3D moment field: capture thought, picture, sound, place, time, or weather and evolve one companion.",
+      "file_count": 41,
+      "head_tree_sha": "ff9d4cd137bfbe5c806088b10ff89f059827e1f3",
+      "private": false,
+      "repo": "kody-w/rapp-go",
+      "truncated": false,
+      "updated_at": "2026-07-10T02:56:18Z"
+    },
+    "rapp-god": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83d\udc41\ufe0f A god's-eye view of the RAPP ecosystem \u2014 public map + live drift detector (canonical integrity + cross-repo drift).",
+      "file_count": 41929,
+      "head_tree_sha": "8eed02d9e112dea39214f5a0f4f867fcede67239",
+      "private": false,
+      "repo": "kody-w/rapp-god",
+      "truncated": false,
+      "updated_at": "2026-07-25T03:50:02Z"
+    },
+    "rapp-god-forum": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The agentic forum for the full RAPP stack \u2014 rapp-commons-protocol/2.0 forum profile",
+      "file_count": 7,
+      "head_tree_sha": "65f82e371d0de28681ddf59f1c6088edbcbd606c",
+      "private": false,
+      "repo": "kody-w/rapp-god-forum",
+      "truncated": false,
+      "updated_at": "2026-07-16T19:51:20Z"
+    },
+    "rapp-heir": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A voice-first local-first Pocket Quest Master for connected Circles, PeerJS reunions, and evolving digital heirlooms.",
+      "file_count": 72,
+      "head_tree_sha": "58362a43bbf02d3909aacb6617b745f0fca8d0ad",
+      "private": false,
+      "repo": "kody-w/rapp-heir",
+      "truncated": false,
+      "updated_at": "2026-07-13T03:54:06Z"
+    },
+    "rapp-hippocampus": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Hippocampus \u2014 memory tier of the RAPP platform.",
+      "file_count": 3,
+      "head_tree_sha": "45005c0fd1d332a92d0308d05cd60f0b583db095",
+      "private": false,
+      "repo": "kody-w/rapp-hippocampus",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:44Z"
+    },
+    "rapp-holo": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "rapp-holo/1.0 \u2014 AI projects interface onto any surface; interaction past chat and voice",
+      "file_count": 3,
+      "head_tree_sha": "ff29652478d45f21351dd5ae1cabc217f9cbf26b",
+      "private": false,
+      "repo": "kody-w/rapp-holo",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:56:09Z"
+    },
+    "rapp-hologram": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Hologram \u2014 reference engine for RAPP Moments: pure libs + serverless player + resolve Gateway. The iframe card-art target.",
+      "file_count": 33,
+      "head_tree_sha": "4c981887623b341fa094d4ba70126c4631a2c581",
+      "private": false,
+      "repo": "kody-w/rapp-hologram",
+      "truncated": false,
+      "updated_at": "2026-07-04T13:05:06Z"
+    },
+    "rapp-installer": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "rapp-installer",
+      "file_count": 63,
+      "head_tree_sha": "5fbde1776a72715935c3d597a9ddfce28a04032b",
+      "private": false,
+      "repo": "kody-w/rapp-installer",
+      "truncated": false,
+      "updated_at": "2026-07-10T17:22:37Z"
+    },
+    "rapp-installer-canary": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "RAPP Brainstem \u2014 canary channel. Nightly pre-release for early adopters.",
+      "file_count": 45,
+      "head_tree_sha": "8bb6b75d2cfc0227bfd69e0995a308e4f2309cdc",
+      "private": false,
+      "repo": "kody-w/rapp-installer-canary",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:45Z"
+    },
+    "rapp-installer-dev": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "7bc2c74da0fd1ff8ac0602637fbc9e1b83602b09",
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "RAPP Brainstem \u2014 development repo. PRs and active development land here.",
+      "file_count": 52,
+      "head_tree_sha": "7cf2dcc4adad0a9272947484ffc0c0463beadfd9",
+      "private": false,
+      "repo": "kody-w/rapp-installer-dev",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:47Z"
+    },
+    "rapp-ip": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 6,
+      "head_tree_sha": "dc2e94ff34ab4329eb212c284086a0ac028a27b6",
+      "private": true,
+      "repo": "kody-w/rapp-ip",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:53:37Z"
+    },
+    "rapp-kite": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The string: CLI + CDP tools to fly and operate kited twins over the sealed neighborhood (vbridge, kited_twin, kite_vtwin, claude_bridge).",
+      "file_count": 6,
+      "head_tree_sha": "f3e7e2d04c30772d1abc0476da945a860fe226ab",
+      "private": false,
+      "repo": "kody-w/rapp-kite",
+      "truncated": false,
+      "updated_at": "2026-05-25T23:55:37Z"
+    },
+    "rapp-kited-twin": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The kite mark \u2014 the Microsoft logo flown as a kite; visual identity of the RAPP kited neighborhood.",
+      "file_count": 5,
+      "head_tree_sha": "9f844ec5e8a148b5a17e1080e9a715feea954e5b",
+      "private": false,
+      "repo": "kody-w/rapp-kited-twin",
+      "truncated": false,
+      "updated_at": "2026-05-26T01:54:52Z"
+    },
+    "rapp-lantern": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The universal player for holographic organisms \u2014 load/unload any .egg, orbit in 3D, self-contained (no CDN)",
+      "file_count": 18,
+      "head_tree_sha": "1af70befbe287f3dd7f6cb13806a7d8f845533f8",
+      "private": false,
+      "repo": "kody-w/rapp-lantern",
+      "truncated": false,
+      "updated_at": "2026-07-16T04:25:07Z"
+    },
+    "rapp-leviathan-hub": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Portable .leviathan.egg distribution hub \u2014 hatch multicellular Wrapped-Organism digital beings into any local brainstem. Companion to @kody-w/rapp_leviathan_factory and @kody-w/wrap_leviathan.",
+      "file_count": 8,
+      "head_tree_sha": "bfefc798b9b3ce49c4b9c941830607e21aa8e623",
+      "private": false,
+      "repo": "kody-w/rapp-leviathan-hub",
+      "truncated": false,
+      "updated_at": "2026-07-16T04:25:08Z"
+    },
+    "rapp-light": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A strain of the RAPP brainstem: locked-down, auditable, enterprise-compliant \u2014 without forking the kernel.",
+      "file_count": 15,
+      "head_tree_sha": "193a37241538bf48c9356defb7eb4ad72588793d",
+      "private": false,
+      "repo": "kody-w/rapp-light",
+      "truncated": false,
+      "updated_at": "2026-07-25T13:22:17Z"
+    },
+    "rapp-map": {
+      "archived": false,
+      "canon": {
+        "RAPP1_AUTHORITY.json": "6ba4b606a8ba1ebab351297e0b777911c2d7479b"
+      },
+      "default_branch": "main",
+      "description": "Map of the RAPP ecosystem \u2014 which repo houses which part of the spec (canonical homes for the kited neighborhood, runtime, registry, agents, platform, social).",
+      "file_count": 34,
+      "head_tree_sha": "35ca9ddb9c0ce794e991fe24a7fc76a4a7441620",
+      "private": false,
+      "repo": "kody-w/rapp-map",
+      "truncated": false,
+      "updated_at": "2026-07-25T02:38:41Z"
+    },
+    "rapp-mcp": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Bring RAPP onto any MCP host: serve drop-in agent.py files as tools, or bridge a full on-device brainstem. Zero deps.",
+      "file_count": 20,
+      "head_tree_sha": "651ce8250b9569e890c03f6743f45a16675419c9",
+      "private": false,
+      "repo": "kody-w/rapp-mcp",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:50Z"
+    },
+    "rapp-membrane": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Get value out of a private repo without thinking about what's in it. egg -> private cubby -> hatch -> scan -> publish.",
+      "file_count": 10,
+      "head_tree_sha": "62da93daa849624336dbfe162d3a0af24ceedd7a",
+      "private": false,
+      "repo": "kody-w/rapp-membrane",
+      "truncated": false,
+      "updated_at": "2026-07-25T05:22:15Z"
+    },
+    "rapp-messaging": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP messaging: identity, conversation trust, consent, memory scope, and transport profiles over the canonical chat wire",
+      "file_count": 14,
+      "head_tree_sha": "0586678530bb16215f91104a11737bc69c6f0c48",
+      "private": false,
+      "repo": "kody-w/rapp-messaging",
+      "truncated": false,
+      "updated_at": "2026-07-11T17:24:42Z"
+    },
+    "rapp-midden": {
+      "archived": false,
+      "canon": {
+        "specs/SPEC.md": "055e3a5ff6f74da8938eb97de535d924fd312dd3"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 69,
+      "head_tree_sha": "020d4638e1cf550211167bb80008ee357f6d3d47",
+      "private": true,
+      "repo": "kody-w/rapp-midden",
+      "truncated": false,
+      "updated_at": "2026-07-16T03:46:08Z"
+    },
+    "rapp-moment": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Moment \u2014 the standard: serverless, cryptographic, living holographic posts (100-frame organisms). Spec + conformance + examples.",
+      "file_count": 12,
+      "head_tree_sha": "12846ebab648eb9a97e3ad79cde8c8e648994b37",
+      "private": false,
+      "repo": "kody-w/rapp-moment",
+      "truncated": false,
+      "updated_at": "2026-06-28T23:56:09Z"
+    },
+    "rapp-moonshots": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A laboratory of ambitious, evidence-backed RAPP moonshots built by distributed agent fleets.",
+      "file_count": 177,
+      "head_tree_sha": "789f9334050c40d115216d37f20f9b77e8429d12",
+      "private": false,
+      "repo": "kody-w/rapp-moonshots",
+      "truncated": false,
+      "updated_at": "2026-07-13T03:21:41Z"
+    },
+    "rapp-neighborhood-protocol": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Canonical spec of the RAPP kited neighborhood (rapp-neighborhood-protocol/1.0) \u2014 vTwin, kited, tethered, sealed, doorman, and the kite mark.",
+      "file_count": 4,
+      "head_tree_sha": "44e0c6eb49d619932e645fb9d9b12a5fa37f71b1",
+      "private": false,
+      "repo": "kody-w/rapp-neighborhood-protocol",
+      "truncated": false,
+      "updated_at": "2026-06-28T21:22:01Z"
+    },
+    "rapp-nervous-system": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Nervous System \u2014 the M365 (Tier 3) path of the RAPP platform.",
+      "file_count": 3,
+      "head_tree_sha": "4068ccf75f55d1736c264f68ee215af8d2f72daf",
+      "private": false,
+      "repo": "kody-w/rapp-nervous-system",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:41Z"
+    },
+    "rapp-nightly": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "RAPP release-train nightly ring; seeded from the untouched Grail",
+      "file_count": 74,
+      "head_tree_sha": "4410a1c8062f2faa3e045fca84a607c961ff3a9e",
+      "private": false,
+      "repo": "kody-w/rapp-nightly",
+      "truncated": false,
+      "updated_at": "2026-07-18T19:55:20Z"
+    },
+    "rapp-oneclick-deploy": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "One-click deploy of RAPP agents into your own Copilot Studio environment",
+      "file_count": 45,
+      "head_tree_sha": "b42ea35deefa1d021efeb11a9980ce0a8d367008",
+      "private": false,
+      "repo": "kody-w/rapp-oneclick-deploy",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:57:08Z"
+    },
+    "rapp-plant-smoke-20260505-233637": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "RAPP Plant Smoke Test \u2014 RAPP front door",
+      "file_count": 8,
+      "head_tree_sha": "3db61bf8442a810e53871b34517af22f5681da5b",
+      "private": false,
+      "repo": "kody-w/rapp-plant-smoke-20260505-233637",
+      "truncated": false,
+      "updated_at": "2026-07-16T02:41:11Z"
+    },
+    "rapp-plant-test-1778271970": {
+      "archived": true,
+      "default_branch": "main",
+      "description": "Planted via plant_discord_neighborhood \u2014 RAPP plant test (workspace)",
+      "private": true,
+      "repo": "kody-w/rapp-plant-test-1778271970",
+      "updated_at": "2026-05-08T20:26:55Z"
+    },
+    "rapp-plant-test-1778272024": {
+      "archived": true,
+      "default_branch": "main",
+      "description": "Planted via plant_discord_neighborhood \u2014 RAPP plant test (workspace)",
+      "private": true,
+      "repo": "kody-w/rapp-plant-test-1778272024",
+      "updated_at": "2026-05-08T20:27:17Z"
+    },
+    "rapp-platform": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP \u2014 the Rapid Agent Prototype Platform (umbrella).",
+      "file_count": 3,
+      "head_tree_sha": "d7f3f7d18e62867be1065b19e404e733320e5ad2",
+      "private": false,
+      "repo": "kody-w/rapp-platform",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:58Z"
+    },
+    "rapp-play-pokemon": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Canonical RAPP cartridge for a local Copilot-powered Pokemon Red playthrough",
+      "file_count": 22,
+      "head_tree_sha": "10a2c560b8297560a12ea7773a611761a793ad60",
+      "private": false,
+      "repo": "kody-w/rapp-play-pokemon",
+      "truncated": false,
+      "updated_at": "2026-07-13T05:08:41Z"
+    },
+    "rapp-postflight": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Post-deploy gate for rapp-installer: factory-strip the brainstem, fresh-install from the public one-liner, verify, auto-rollback on failure",
+      "file_count": 7,
+      "head_tree_sha": "4d2ef44edc413f11f74b65c527d10e0eeb24c1b9",
+      "private": false,
+      "repo": "kody-w/rapp-postflight",
+      "truncated": false,
+      "updated_at": "2026-07-07T23:37:45Z"
+    },
+    "rapp-private-backup": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private backup of RAPP (Rapid Agent Prototype Platform)",
+      "file_count": 264,
+      "head_tree_sha": "80ac323e00112c668b82f9390f4f59dadcadcddd",
+      "private": true,
+      "repo": "kody-w/rapp-private-backup",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:49:25Z"
+    },
+    "rapp-quests": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The experience layer for the RAPP Brainstem \u2014 guided quests, demo scripts, starter content",
+      "file_count": 5,
+      "head_tree_sha": "d2eb2e29dfa6c7275b0d41fa73bf51178c6aa2d9",
+      "private": false,
+      "repo": "kody-w/rapp-quests",
+      "truncated": false,
+      "updated_at": "2026-07-07T22:47:05Z"
+    },
+    "rapp-release-train": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Live dashboard + static API for the RAPP pre-grail release train (canary\u2192nightly\u2192alpha\u2192beta\u2192grail) \u2014 rapp-static-api/1.0, no server",
+      "file_count": 19,
+      "head_tree_sha": "4cb6e1469c56428a470eb709f6494772266e33e5",
+      "private": false,
+      "repo": "kody-w/rapp-release-train",
+      "truncated": false,
+      "updated_at": "2026-07-18T19:35:04Z"
+    },
+    "rapp-resident": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Permanent cloud host (Azure Function) for kited vneighborhoods \u2014 the always-on graduation of the RAPP Commons / forum",
+      "file_count": 11,
+      "head_tree_sha": "de07d307740e318723426c9463fd0c3a2654707b",
+      "private": false,
+      "repo": "kody-w/rapp-resident",
+      "truncated": false,
+      "updated_at": "2026-05-27T17:56:15Z"
+    },
+    "rapp-rings": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Rings \u2014 the Canary\u2192Grail pre-release train.",
+      "file_count": 3,
+      "head_tree_sha": "4eb4fcace7f70d5af3d0d0e8d47c0db8498bd8b9",
+      "private": false,
+      "repo": "kody-w/rapp-rings",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:31Z"
+    },
+    "rapp-roadmap": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83d\uddfa\ufe0f The RAPP roadmap: one laptop brainstem -> a planetary swarm of governed Leviathans enhancing every Agent 365 workflow. Enhance, never replace; kernel stays sacred.",
+      "file_count": 10,
+      "head_tree_sha": "9fbff6e88f6c37cdc5a2f9fe61733af13dfb4bb0",
+      "private": false,
+      "repo": "kody-w/rapp-roadmap",
+      "truncated": false,
+      "updated_at": "2026-07-18T22:34:47Z"
+    },
+    "rapp-sdk": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP SDK \u2014 build on the RAPP platform.",
+      "file_count": 3,
+      "head_tree_sha": "ae9c5185fd73fd8cf31c45a0292f5b09dc4476d8",
+      "private": false,
+      "repo": "kody-w/rapp-sdk",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:46Z"
+    },
+    "rapp-sealed": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "rapp-sealed/1.0 \u2014 end-to-end AES-256-GCM sealed-envelope codec for the RAPP neighborhood, with conformance vectors.",
+      "file_count": 5,
+      "head_tree_sha": "c6e35c85428bd8761d2398ce172e14b22f9364c9",
+      "private": false,
+      "repo": "kody-w/rapp-sealed",
+      "truncated": false,
+      "updated_at": "2026-06-03T13:08:18Z"
+    },
+    "rapp-second-brain": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The RAPP ecosystem that knows itself \u2014 a two-hemisphere second brain (public hemisphere). Built on rapp-map.",
+      "file_count": 357,
+      "head_tree_sha": "c71de71f2ed4de039ba19725d0f3c407756e5fa0",
+      "private": false,
+      "repo": "kody-w/rapp-second-brain",
+      "truncated": false,
+      "updated_at": "2026-07-18T23:21:50Z"
+    },
+    "rapp-second-brain-private": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The RAPP ecosystem second brain \u2014 PRIVATE hemisphere. Never make public.",
+      "file_count": 11,
+      "head_tree_sha": "ca08f4d76807a32f643b333775d3954d6f68f327",
+      "private": true,
+      "repo": "kody-w/rapp-second-brain-private",
+      "truncated": false,
+      "updated_at": "2026-07-18T22:43:21Z"
+    },
+    "rapp-shadow-batcave": {
+      "archived": false,
+      "canon": {
+        "specs/SPEC.md": "055e3a5ff6f74da8938eb97de535d924fd312dd3"
+      },
+      "default_branch": "main",
+      "description": "Founder-only private vault (shadow batcave)",
+      "file_count": 79,
+      "head_tree_sha": "a37c1eed78cc728464aaab735cf591c2589903e2",
+      "private": true,
+      "repo": "kody-w/rapp-shadow-batcave",
+      "truncated": false,
+      "updated_at": "2026-06-12T00:08:12Z"
+    },
+    "rapp-shape-aibast": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "0289fbd558248b5f8d53db718f8dd3326b09fee0",
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "AIBAST shape staging \u2014 rehearses grail-train deliveries into the aibast-agents-library layout; microsoft repo never touched",
+      "file_count": 250,
+      "head_tree_sha": "e8a66b055d20ec27141ea7d4e6095c6f338d6a8b",
+      "private": false,
+      "repo": "kody-w/rapp-shape-aibast",
+      "truncated": false,
+      "updated_at": "2026-07-25T02:34:27Z"
+    },
+    "rapp-skills": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Portable Agent Skills for non-RAPP systems and launchpads for single-file RAPP agents",
+      "file_count": 56,
+      "head_tree_sha": "855f3ef24e13c8cb0dd15e98174bc32613910f5c",
+      "private": false,
+      "repo": "kody-w/rapp-skills",
+      "truncated": false,
+      "updated_at": "2026-07-25T04:50:24Z"
+    },
+    "rapp-snap": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Snap a photo \u2192 it becomes a living 3D holographic organism. On-device, no upload, no CDN.",
+      "file_count": 4,
+      "head_tree_sha": "9fed5a91fbc9c77b948bb580fe4432621f0b2ea5",
+      "private": false,
+      "repo": "kody-w/rapp-snap",
+      "truncated": false,
+      "updated_at": "2026-07-04T14:34:47Z"
+    },
+    "rapp-soulforge": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private soul.md variants for the RAPP Brainstem \u2014 same kernel, different rooms",
+      "file_count": 5,
+      "head_tree_sha": "b3ce7409725de8605ad6449d2fad00b24c8c1702",
+      "private": true,
+      "repo": "kody-w/rapp-soulforge",
+      "truncated": false,
+      "updated_at": "2026-07-07T22:47:42Z"
+    },
+    "rapp-spinal-cord": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Spinal Cord \u2014 the Azure (Tier 2) path of the RAPP platform.",
+      "file_count": 3,
+      "head_tree_sha": "d6fcb9730b463f236dd7d6fbaf68d8a86fa53412",
+      "private": false,
+      "repo": "kody-w/rapp-spinal-cord",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:37Z"
+    },
+    "rapp-spine": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83e\uddb4 Crawl the spine \u2014 a situational router over the full RAPP protocol stack. Situation -> layer -> protocol, collisions named.",
+      "file_count": 28,
+      "head_tree_sha": "63f23f7c20c24edbbc08f55c98220fa26142ec7f",
+      "private": false,
+      "repo": "kody-w/rapp-spine",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:57:02Z"
+    },
+    "rapp-stack-cubby": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The complete RAPP product in one repository: CUBBY, rapplication, egg, isolated twin, signed twin-chat, and owner iMessage.",
+      "file_count": 381,
+      "head_tree_sha": "1fee3896099e634bc90f50d2c4fac3e971379ec2",
+      "private": false,
+      "repo": "kody-w/rapp-stack-cubby",
+      "truncated": false,
+      "updated_at": "2026-07-16T14:32:57Z"
+    },
+    "rapp-static-apis": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83d\uddff rapp-static-api/1.0 \u2014 the spec for static APIs built entirely on GitHub raw user data (no server). Reference impl: rapp-god.",
+      "file_count": 2080,
+      "head_tree_sha": "77f81ec6f20c28662dfb4b6c8293f88370ef26f2",
+      "private": false,
+      "repo": "kody-w/rapp-static-apis",
+      "truncated": false,
+      "updated_at": "2026-07-11T20:53:55Z"
+    },
+    "rapp-static-mcp": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Make an MCP server for any use case with no server. The repo IS the catalog; tools bind to content-addressed compute cells, verified (sha8) before execution.",
+      "file_count": 43,
+      "head_tree_sha": "922760a6cb960f063633aa2ac4e02e540a456415",
+      "private": false,
+      "repo": "kody-w/rapp-static-mcp",
+      "truncated": false,
+      "updated_at": "2026-07-07T00:43:50Z"
+    },
+    "rapp-store-archive": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "a34d8d58e40c04731e6292ae03410e17397d3e69"
+      },
+      "default_branch": "main",
+      "description": "Archive of the original kody-w/rapp_store (Universal Marketplace for RAPP Agents and Claude Skills) preserved before the catalog extracted from kody-w/RAPP took over the rapp_store name on 2026-04-26.",
+      "file_count": 22,
+      "head_tree_sha": "da2b3643c52043c2bd8845cea3d6ddcdda620ed4",
+      "private": false,
+      "repo": "kody-w/rapp-store-archive",
+      "truncated": false,
+      "updated_at": "2026-04-26T23:59:26Z"
+    },
+    "rapp-support": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Support home for the RAPP Brainstem \u2014 help requests, diagnostics, triage (keeps the grail tracker clean)",
+      "file_count": 4,
+      "head_tree_sha": "533059ca57bb09e0fdd2cd110e2124e7be184c41",
+      "private": false,
+      "repo": "kody-w/rapp-support",
+      "truncated": false,
+      "updated_at": "2026-07-07T22:46:20Z"
+    },
+    "rapp-test-neighbor": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "RAPP Test Neighbor \u2014 RAPP front door",
+      "file_count": 30,
+      "head_tree_sha": "d830223edf2c19c84e3185195daa71acf693a9de",
+      "private": false,
+      "repo": "kody-w/rapp-test-neighbor",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:57:02Z"
+    },
+    "rapp-toaster": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Bread goes in, toast comes out. Zero-fidelity-loss conversion between agent.py, SKILL.md, openclaw and openrappter.",
+      "file_count": 18,
+      "head_tree_sha": "52f91023d4bd29411bed30165cab5629c47e7acd",
+      "private": false,
+      "repo": "kody-w/rapp-toaster",
+      "truncated": false,
+      "updated_at": "2026-07-25T04:50:15Z"
+    },
+    "rapp-tower": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Mission control for the RAPP ecosystem \u2014 sessions land here; the tower commands the railroad, never on the tracks",
+      "file_count": 50,
+      "head_tree_sha": "4c595305c494e69192349a678dd30297f25d1a57",
+      "private": true,
+      "repo": "kody-w/rapp-tower",
+      "truncated": false,
+      "updated_at": "2026-07-25T13:30:34Z"
+    },
+    "rapp-trademarks": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Trademarks \u2014 brand and mark usage policy for the RAPP ecosystem.",
+      "file_count": 4,
+      "head_tree_sha": "da963c620e8f4c089eacce950ebf9d29f4765a37",
+      "private": false,
+      "repo": "kody-w/rapp-trademarks",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:56:26Z"
+    },
+    "rapp-train": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP release-train flight deck \u2014 join or test-fly any ring from one page",
+      "file_count": 10,
+      "head_tree_sha": "267708f3225a9762ffec152b7806f473d2cf2771",
+      "private": false,
+      "repo": "kody-w/rapp-train",
+      "truncated": false,
+      "updated_at": "2026-07-18T23:18:59Z"
+    },
+    "rapp-twin": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Twin \u2014 a twin in residence for any repository (`.twin/`).",
+      "file_count": 3,
+      "head_tree_sha": "588feadbf37b2efa76eca74a6bbdd9523bd711c9",
+      "private": false,
+      "repo": "kody-w/rapp-twin",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:19Z"
+    },
+    "rapp-twin-in-residence": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Twin in Residence \u2014 the `.twin/` project-local AI twin specification.",
+      "file_count": 3,
+      "head_tree_sha": "ec47ca5bba545a9a04e9b61a5aec0aeb825ce0ce",
+      "private": false,
+      "repo": "kody-w/rapp-twin-in-residence",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:55:22Z"
+    },
+    "rapp-ultracode": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Approval-gated long-running coding workflows built on RAPP Dynamic Workflows",
+      "file_count": 39,
+      "head_tree_sha": "f27181f221c1c760128fd7dd3ae2a25b1e778202",
+      "private": false,
+      "repo": "kody-w/rapp-ultracode",
+      "truncated": false,
+      "updated_at": "2026-07-22T03:39:38Z"
+    },
+    "rapp-v2": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP v2 - Rapid AI Agent Production Pipeline",
+      "file_count": 248,
+      "head_tree_sha": "b0f3e4549cae77433b13e5eb76daa63855340197",
+      "private": true,
+      "repo": "kody-w/rapp-v2",
+      "truncated": false,
+      "updated_at": "2026-01-26T14:23:59Z"
+    },
+    "rapp-vault": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private continuous backup of brainstem user state (agents, soul, memories) \u2014 wipe-proof vault",
+      "file_count": 7,
+      "head_tree_sha": "16fef073b11d6bcde2f486069eff8a466f597df4",
+      "private": true,
+      "repo": "kody-w/rapp-vault",
+      "truncated": false,
+      "updated_at": "2026-07-07T23:43:37Z"
+    },
+    "rapp-version-selector": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Pin any device to a specific RAPP Brainstem version \u2014 immutable release mirrors from v0.6.5 forward",
+      "file_count": 82,
+      "head_tree_sha": "79a007f8f9d24cdc23a1cf1e457bdebf246d34b3",
+      "private": false,
+      "repo": "kody-w/rapp-version-selector",
+      "truncated": false,
+      "updated_at": "2026-07-07T23:42:47Z"
+    },
+    "rapp-video": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A cinematic video studio in a single HTML file \u2014 camera presets, effects, and a walkthrough producer. No accounts, no credits, no lock-in.",
+      "file_count": 12,
+      "head_tree_sha": "5516a84177eb3ce156609985cf6cc78ef6f498e2",
+      "private": false,
+      "repo": "kody-w/rapp-video",
+      "truncated": false,
+      "updated_at": "2026-07-21T19:37:28Z"
+    },
+    "rapp-vneighborhood": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A public repo is a front door to a sealed twin-chat neighborhood \u2014 first twin turns the lights on (QR + PIN); each neighborhood is different, all speak twin-chat. Template.",
+      "file_count": 7,
+      "head_tree_sha": "b727e96be888e319bdad760593744e511917615a",
+      "private": false,
+      "repo": "kody-w/rapp-vneighborhood",
+      "truncated": false,
+      "updated_at": "2026-06-03T13:08:57Z"
+    },
+    "rapp-voice": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Voice \u2014 100% local hold-to-talk dictation for macOS. Hold a key, speak, release; cleaned text appears at your cursor. whisper.cpp on-device, no cloud, no account.",
+      "file_count": 10,
+      "head_tree_sha": "2508adc36c291ea5da8df29fcf193728ea091f84",
+      "private": false,
+      "repo": "kody-w/rapp-voice",
+      "truncated": false,
+      "updated_at": "2026-07-25T04:44:28Z"
+    },
+    "rapp-vscode-extension": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "VS Code extension for RAPP Brainstem \u2014 renders HTML/Markdown as pages, surfaces hatched twins as tabs, embeds the live brainstem UI. Drag-and-drop install.",
+      "file_count": 20,
+      "head_tree_sha": "d515e8cc9ea6647ba478cc4f723e022ca712aec5",
+      "private": false,
+      "repo": "kody-w/rapp-vscode-extension",
+      "truncated": false,
+      "updated_at": "2026-05-22T20:55:04Z"
+    },
+    "rapp-vui": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 10,
+      "head_tree_sha": "d15a6f6d80299529ca110787b75ebcdf44bab3e4",
+      "private": false,
+      "repo": "kody-w/rapp-vui",
+      "truncated": false,
+      "updated_at": "2026-07-19T00:22:07Z"
+    },
+    "rapp-zoo": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Local-first keeper for the twin estate \u2014 list, lay-egg, summon, hatch, start, stop twins on your device",
+      "file_count": 36,
+      "head_tree_sha": "ce5211647f51a0d29162dde514e1a839994d40bf",
+      "private": false,
+      "repo": "kody-w/rapp-zoo",
+      "truncated": false,
+      "updated_at": "2026-07-16T04:12:00Z"
+    },
+    "rapp2mcs": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "c52888c4a87df7ff0e6c23cf5463ee5fc140e894",
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9",
+        "specs/SPEC.md": "c31ec0eb21b4912fad9679be0034455b6fd33969"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 460,
+      "head_tree_sha": "804b39cf3abbd5183bd5038991021bbdae805ebc",
+      "private": true,
+      "repo": "kody-w/rapp2mcs",
+      "truncated": false,
+      "updated_at": "2026-07-16T04:02:34Z"
+    },
+    "rappLocalFirstFleet": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Local-first fleet workspace \u2014 talk to the global RAPP brainstem at :7071 without contaminating AIBAST-RAPP.",
+      "file_count": 23,
+      "head_tree_sha": "73d6f3c4c08cb09e2c4f4d9c4adf14a723f25a0a",
+      "private": true,
+      "repo": "kody-w/rappLocalFirstFleet",
+      "truncated": false,
+      "updated_at": "2026-06-03T21:43:20Z"
+    },
+    "rapp_docs": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83d\udcda RAPP engineering docs \u2014 every RAPP spec in one place, streamed live from each home repo's GitHub raw data. No copies, no server.",
+      "file_count": 3,
+      "head_tree_sha": "45d6ee5049dfc35d12d6cbb14e9e27e0297573cf",
+      "private": false,
+      "repo": "kody-w/rapp_docs",
+      "truncated": false,
+      "updated_at": "2026-06-22T00:10:34Z"
+    },
+    "rapp_orion": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "rapp_orion",
+      "file_count": 46,
+      "head_tree_sha": "7ba9bd9d69812c3dc2d418dcd2029c49b379ffe3",
+      "private": false,
+      "repo": "kody-w/rapp_orion",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:56:35Z"
+    },
+    "rappbook-admin": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPPbook Admin - Desktop app for managing the AI agent social network",
+      "file_count": 6,
+      "head_tree_sha": "33f9f0df373cbe37197d6292f5bc3fdd89027573",
+      "private": false,
+      "repo": "kody-w/rappbook-admin",
+      "truncated": false,
+      "updated_at": "2026-01-31T23:01:54Z"
+    },
+    "rapphub": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Distribution hub for portable AI worlds. Pull. Run. Explore.",
+      "file_count": 248,
+      "head_tree_sha": "6798592d4b022f940fa2e0a0b0cb00327126600b",
+      "private": true,
+      "repo": "kody-w/rapphub",
+      "truncated": false,
+      "updated_at": "2026-02-06T18:15:49Z"
+    },
+    "rappter": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "eada0feec9958541939ec51c19bf3b2f0c076ee7"
+      },
+      "default_branch": "main",
+      "description": "Swarm intelligence engine \u2014 proprietary IP of Wildhaven AI Homes LLC. Drives the Rappterbook platform.",
+      "file_count": 325,
+      "head_tree_sha": "c9388004aa0c08a2ee7cdae111cf5ab65b0a8fe7",
+      "private": true,
+      "repo": "kody-w/rappter",
+      "truncated": false,
+      "updated_at": "2026-04-28T01:23:19Z"
+    },
+    "rappter-brainstem": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private shadow-batcave housing for the rappter brainstem. Holds the Quicksilver build \u2014 ghost (ancestor) agents + the AskGhostAgents second-chance router. Never part of the public grail.",
+      "file_count": 24,
+      "head_tree_sha": "a329ab58630d64947acfcc184fe906acadbed67d",
+      "private": true,
+      "repo": "kody-w/rappter-brainstem",
+      "truncated": false,
+      "updated_at": "2026-06-23T19:33:27Z"
+    },
+    "rappter-cli": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "On-device AI with persistent personality. Local LLM, public intelligence, zero cloud dependency. Wildhaven AI Homes LLC.",
+      "file_count": 5,
+      "head_tree_sha": "c7b919357a201489ba3ecaae83cb56386eb15ea9",
+      "private": false,
+      "repo": "kody-w/rappter-cli",
+      "truncated": false,
+      "updated_at": "2026-03-21T00:40:37Z"
+    },
+    "rappter-distro": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The full-bodied Rappter organism distro for the RAPP grail kernel \u2014 layers organs, senses, agents, lineage/bonding, UI, and Tier 2/3 deployments onto a vanilla brainstem without touching the kernel.",
+      "file_count": 133,
+      "head_tree_sha": "bc6953a8757a9b9feb52f1dca843179244248368",
+      "private": false,
+      "repo": "kody-w/rappter-distro",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:57:08Z"
+    },
+    "rappter-factory": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RappterFactory \u2014 AI-designed social network for AI agents. Competing with human-designed Rappterbook.",
+      "file_count": 11,
+      "head_tree_sha": "652702855bcde92e3b2aeac5712dcd35971f54a0",
+      "private": false,
+      "repo": "kody-w/rappter-factory",
+      "truncated": false,
+      "updated_at": "2026-03-16T22:49:47Z"
+    },
+    "rappter-fleet": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Rappter Fleet Engine SDK \u2014 private config, LLM backend order, Dream Catcher pattern. Authenticated access only.",
+      "file_count": 4,
+      "head_tree_sha": "fe21a6517fe54cc04a0eb30c8951b2bc1d70fc37",
+      "private": true,
+      "repo": "kody-w/rappter-fleet",
+      "truncated": false,
+      "updated_at": "2026-04-06T01:20:07Z"
+    },
+    "rappter-mmo": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RappterMMO \u2014 massively multiplayer world of AI creatures. Wildhaven AI Homes LLC.",
+      "file_count": 3,
+      "head_tree_sha": "757291f589d31a466923dcc96185b3662f750435",
+      "private": false,
+      "repo": "kody-w/rappter-mmo",
+      "truncated": false,
+      "updated_at": "2026-03-20T21:31:25Z"
+    },
+    "rappter-plays-palworld": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "An OpenRappter agent that inhabits a self-hosted Palworld dedicated server via its official REST API",
+      "file_count": 29,
+      "head_tree_sha": "88f59b6d1db8649891dd553695e47d7909bb4b6e",
+      "private": false,
+      "repo": "kody-w/rappter-plays-palworld",
+      "truncated": false,
+      "updated_at": "2026-07-25T03:14:15Z"
+    },
+    "rappter-plays-pokemon": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "ROM-free OpenRappter agent for a local Copilot-powered Pokemon Red playthrough with PyBoy",
+      "file_count": 165,
+      "head_tree_sha": "dfda5a8a5791cc24bde388497431421dba341178",
+      "private": false,
+      "repo": "kody-w/rappter-plays-pokemon",
+      "truncated": false,
+      "updated_at": "2026-07-24T04:03:38Z"
+    },
+    "rappter-vui": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 2,
+      "head_tree_sha": "20d949bbd78cc6a994dfb28c6da818347e1f3072",
+      "private": false,
+      "repo": "kody-w/rappter-vui",
+      "truncated": false,
+      "updated_at": "2026-07-21T23:51:00Z"
+    },
+    "rappterbook": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "c80d4e22ed6b0bba957f19034a88217a9d42ab9d"
+      },
+      "default_branch": "main",
+      "description": "Social network for AI agents. Feed SKILLS.md to your AI \u2014 it becomes a citizen. No servers, no API keys. GitHub IS the platform.",
+      "file_count": 7201,
+      "head_tree_sha": "955e906f80bef3c3bb131de3a8b12472fae2b001",
+      "private": false,
+      "repo": "kody-w/rappterbook",
+      "truncated": false,
+      "updated_at": "2026-07-25T17:08:10Z"
+    },
+    "rappterbook-agent": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "One-click agent for joining Rappterbook \u2014 the third space of the internet. Fork, install, contribute.",
+      "file_count": 667,
+      "head_tree_sha": "2521b3073603a898e158dea5b5ac21d3e96d08a0",
+      "private": false,
+      "repo": "kody-w/rappterbook-agent",
+      "truncated": false,
+      "updated_at": "2026-03-16T15:11:55Z"
+    },
+    "rappterbook-agent-dna": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Build src/agent_dna.py \u2014 extract a behavioral DNA fingerprint for each agent. Read state/agents.json (post_count, comment_count, karma, traits, subscribed_channels) and state/discussions_cache.json (p",
+      "file_count": 6,
+      "head_tree_sha": "b054f180c8f20a3b3224b803957994671ef3a8b8",
+      "private": false,
+      "repo": "kody-w/rappterbook-agent-dna",
+      "truncated": false,
+      "updated_at": "2026-03-16T19:44:52Z"
+    },
+    "rappterbook-agent-exchange": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Agent Stock Exchange \u2014 AI agents as tradeable assets on Rappterbook",
+      "file_count": 479,
+      "head_tree_sha": "152e2a9f1ac9fa11708203065ad8486496f6a9de",
+      "private": false,
+      "repo": "kody-w/rappterbook-agent-exchange",
+      "truncated": false,
+      "updated_at": "2026-07-25T16:55:21Z"
+    },
+    "rappterbook-api": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Headless agent-first APIs for the Rappterbook swarm \u2014 curl-friendly JSON endpoints",
+      "file_count": 11,
+      "head_tree_sha": "a3f5202ba1b42a72b9bfe7e6f2c6ba2feef2ec90",
+      "private": false,
+      "repo": "kody-w/rappterbook-api",
+      "truncated": false,
+      "updated_at": "2026-03-16T18:42:31Z"
+    },
+    "rappterbook-autopilot": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Agent-first autopilot \u2014 lets any AI drive Rappterbook autonomously. Feed to your local OpenRappter to take the human out of the loop.",
+      "file_count": 3,
+      "head_tree_sha": "a6b65c3a232ff630b25627c16438811750c67100",
+      "private": false,
+      "repo": "kody-w/rappterbook-autopilot",
+      "truncated": false,
+      "updated_at": "2026-03-16T19:05:36Z"
+    },
+    "rappterbook-commons": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "rappterbook, rebuilt on the signed commons + always-on resident \u2014 rappid citizens, signed feed, follows, karma",
+      "file_count": 4,
+      "head_tree_sha": "9f2dc28d961ee86c2e1d83f2488d45aeb67baafc",
+      "private": false,
+      "repo": "kody-w/rappterbook-commons",
+      "truncated": false,
+      "updated_at": "2026-07-16T19:51:28Z"
+    },
+    "rappterbook-engine-test": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Test target for rappter engine migration \u2014 simulates rappterbook structure",
+      "file_count": 75,
+      "head_tree_sha": "040cc86fbc0058800bfdf7639c7f879b7a5ffed0",
+      "private": false,
+      "repo": "kody-w/rappterbook-engine-test",
+      "truncated": false,
+      "updated_at": "2026-03-20T15:53:56Z"
+    },
+    "rappterbook-first-bond": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "First Bond: iconic evolving Rappter companions shaped by real AI-agent behavior",
+      "file_count": 13,
+      "head_tree_sha": "6da27b309760f2b2c0b97dae0a1ad15a906c4fd3",
+      "private": false,
+      "repo": "kody-w/rappterbook-first-bond",
+      "truncated": false,
+      "updated_at": "2026-07-12T20:38:24Z"
+    },
+    "rappterbook-governance": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Executable governance for No\u00f6polis \u2014 constitutional debates compiled into code by 99 AI agents",
+      "file_count": 9,
+      "head_tree_sha": "3b8e7938fd1622257c774cef4b236111ae6d54ba",
+      "private": false,
+      "repo": "kody-w/rappterbook-governance",
+      "truncated": false,
+      "updated_at": "2026-03-15T23:41:48Z"
+    },
+    "rappterbook-impossible-product": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The Impossible Product \u2014 evolved over 12 autonomous frames.",
+      "file_count": 47,
+      "head_tree_sha": "08a448149023eadd403ec3ae5b51f32f78a51528",
+      "private": false,
+      "repo": "kody-w/rappterbook-impossible-product",
+      "truncated": false,
+      "updated_at": "2026-07-12T05:33:32Z"
+    },
+    "rappterbook-knowledge-graph": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Knowledge graph of 3,400+ AI agent discussions \u2014 entities, relationships, and emergent topology",
+      "file_count": 6,
+      "head_tree_sha": "ff6a9c79d107ab38f1ae82c87c1c90c7569447a3",
+      "private": false,
+      "repo": "kody-w/rappterbook-knowledge-graph",
+      "truncated": false,
+      "updated_at": "2026-03-15T21:29:35Z"
+    },
+    "rappterbook-market-maker": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Build src/market_maker.py \u2014 a prediction market engine for Rappterbook. Agents already post [PREDICTION] tags in discussions. This script reads state/discussions_cache.json, finds all [PREDICTION] pos",
+      "file_count": 9,
+      "head_tree_sha": "8306b50efd61b8ea0ce4137a6a03ff240b9250ff",
+      "private": false,
+      "repo": "kody-w/rappterbook-market-maker",
+      "truncated": false,
+      "updated_at": "2026-03-16T18:19:53Z"
+    },
+    "rappterbook-mars-barn": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Mars Barn \u2014 Collaborative fiction world built by AI agents on Rappterbook",
+      "file_count": 26,
+      "head_tree_sha": "5d9ca2f0fd84782a0c5fb506515691e839bfaf86",
+      "private": false,
+      "repo": "kody-w/rappterbook-mars-barn",
+      "truncated": false,
+      "updated_at": "2026-03-27T04:12:21Z"
+    },
+    "rappterbook-phantom": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The agent that doesn't exist \u2014 built from the gaps in 99 AI minds",
+      "file_count": 4,
+      "head_tree_sha": "999d76c90bd231a83eee1815654a3fa6fbe9dd7f",
+      "private": false,
+      "repo": "kody-w/rappterbook-phantom",
+      "truncated": false,
+      "updated_at": "2026-03-15T22:21:30Z"
+    },
+    "rappterbook-rappterbook-2": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Build Rappterbook 2.0 \u2014 a complete reimagining of the social network for AI agents. Not a copy of v1 \u2014 a ground-up rebuild that reads the current platform state (agents, discussions, trending, channel",
+      "file_count": 4,
+      "head_tree_sha": "dd162a107e594c75c9e68bd0e01118faa23359f5",
+      "private": true,
+      "repo": "kody-w/rappterbook-rappterbook-2",
+      "truncated": false,
+      "updated_at": "2026-03-19T01:33:42Z"
+    },
+    "rappterbook-seedmaker": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "impl/seedmaker",
+      "description": "Build a Seed That Builds Seeds \u2014 Create an autonomous seed generation engine that reads the current state of Rappterbook (trending topics, unresolved debates, agent skills, community mood) and propose",
+      "file_count": 3,
+      "head_tree_sha": "11688fd903ea10af88d8b20a84f9154802a7e8e2",
+      "private": false,
+      "repo": "kody-w/rappterbook-seedmaker",
+      "truncated": false,
+      "updated_at": "2026-03-26T20:41:53Z"
+    },
+    "rappterbook-social-graph": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Build a live Social Graph dashboard at GitHub Pages. The deliverable is a working website showing who talks to who on Rappterbook. src/social_graph.py reads state/discussions_cache.json, extracts agen",
+      "file_count": 8,
+      "head_tree_sha": "acb1957ceb0a6c31d9bdf33eed7ee784210b1b14",
+      "private": false,
+      "repo": "kody-w/rappterbook-social-graph",
+      "truncated": false,
+      "updated_at": "2026-03-17T01:18:43Z"
+    },
+    "rappterbook-v2": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Rappterbook v2: AI agent social network rebuilt from lessons learned. Event-sourced, conflict-free, portable.",
+      "file_count": 46,
+      "head_tree_sha": "ed4a91faa1dd1ebf275a97966110a8e4b1c8828f",
+      "private": false,
+      "repo": "kody-w/rappterbook-v2",
+      "truncated": false,
+      "updated_at": "2026-04-09T18:44:17Z"
+    },
+    "rappterbook-v2-state": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Rappterbook v2: Public event-sourced state database. Append-only event log + materialized views. Query globally via raw.githubusercontent.com.",
+      "file_count": 39,
+      "head_tree_sha": "7bb79f1e0b812752916cd3e656eb7eeb08cd366c",
+      "private": false,
+      "repo": "kody-w/rappterbook-v2-state",
+      "truncated": false,
+      "updated_at": "2026-04-09T20:08:17Z"
+    },
+    "rappterbook-vm": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "6a73392d6b1e5ae5d1ec341750e98155ae58e3a8"
+      },
+      "default_branch": "main",
+      "description": "Portable Rappterbook VM \u2014 clone, configure, run your own AI agent world",
+      "file_count": 152,
+      "head_tree_sha": "9b575df2cd7c15bbfe535d4f7198bcefdfbe76ea",
+      "private": false,
+      "repo": "kody-w/rappterbook-vm",
+      "truncated": false,
+      "updated_at": "2026-02-16T00:21:24Z"
+    },
+    "rappterbox": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "b95b14d1d442ecf3c7a1ef19ad19a018c1f89292"
+      },
+      "default_branch": "main",
+      "description": "Local-first brainstem console for digital organisms \u2014 cartridge slot for *_agent.py files, Wii Sports bundled, expansion packs optional",
+      "file_count": 67,
+      "head_tree_sha": "00f898c6e38795659d5044cae64ca3d07ec89747",
+      "private": false,
+      "repo": "kody-w/rappterbox",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:57:16Z"
+    },
+    "rappterhub": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The package registry for AI agents - npm for openrappter",
+      "file_count": 20,
+      "head_tree_sha": "e06632d6d33bfacf0c6d0234911389cc3b4b5631",
+      "private": false,
+      "repo": "kody-w/rappterhub",
+      "truncated": false,
+      "updated_at": "2026-03-29T20:37:15Z"
+    },
+    "rappterverse": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "aa15cc06b0b7f57f7a4427eeca465ccd2f17d743"
+      },
+      "default_branch": "main",
+      "description": "rappterverse",
+      "file_count": 1103,
+      "head_tree_sha": "47a92af5e7547bd31f883a288b765d08fc7bce61",
+      "private": false,
+      "repo": "kody-w/rappterverse",
+      "truncated": false,
+      "updated_at": "2026-07-13T11:17:18Z"
+    },
+    "rappterverse-data": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Open, replayable datasets and world packs generated by the RAPPterverse",
+      "file_count": 301,
+      "head_tree_sha": "cff8bb0358ce10449ee1d72018a7624009aa3599",
+      "private": false,
+      "repo": "kody-w/rappterverse-data",
+      "truncated": false,
+      "updated_at": "2026-07-13T05:48:47Z"
+    },
+    "rappterverse-data-review": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private generation, review, checkpoint, and publication control plane for RAPPterverse data",
+      "file_count": 137,
+      "head_tree_sha": "c5a166a06254663781298f6b69a527aa537af24e",
+      "private": true,
+      "repo": "kody-w/rappterverse-data-review",
+      "truncated": false,
+      "updated_at": "2026-07-13T10:47:44Z"
+    },
+    "rappverse": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A decentralized metaverse for AI agents and their owners, built on P2P technology",
+      "file_count": 6,
+      "head_tree_sha": "1ee09cdd2ef507520c8bdc9f96b2b4b3cbe10257",
+      "private": true,
+      "repo": "kody-w/rappverse",
+      "truncated": false,
+      "updated_at": "2026-02-06T18:16:30Z"
+    },
+    "rappverse-data": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private data store for RAPPverse metaverse - requires authentication",
+      "file_count": 34,
+      "head_tree_sha": "f998386372cd4e05ae26aaf27b3dd5c71d307a57",
+      "private": true,
+      "repo": "kody-w/rappverse-data",
+      "truncated": false,
+      "updated_at": "2026-03-20T12:39:04Z"
+    },
+    "red-binder": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The Red Binder \u2014 a third-party RAPPcards binder with its own 21-card crimson deck. SPEC.md v1.0 compatible. Cross-binder summon with RAR + RAPPcards.",
+      "file_count": 49,
+      "head_tree_sha": "704e7b8ddae9c8fbaf03e074cbad855696ffd445",
+      "private": false,
+      "repo": "kody-w/red-binder",
+      "truncated": false,
+      "updated_at": "2026-04-18T02:06:29Z"
+    },
+    "rio": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83c\udf10 RIO \u2014 Rapplication Internet Online: an early-web-style browser for the RACon ecosystem. A cartridge you load into RACon. OSI L7 over the kited web.",
+      "file_count": 7,
+      "head_tree_sha": "1062e28e3592d272fad5dae2b0b2c17511ce25ef",
+      "private": false,
+      "repo": "kody-w/rio",
+      "truncated": false,
+      "updated_at": "2026-07-16T04:25:09Z"
+    },
+    "rionet": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RIONet \u2014 the agent-built web: rapp.robots.txt + rappbot crawler + rappPageRank, searchable from the RIO browser",
+      "file_count": 12,
+      "head_tree_sha": "ee9ee28d12e57fc49f95f6fb71ac0e8b5bb483a8",
+      "private": false,
+      "repo": "kody-w/rionet",
+      "truncated": false,
+      "updated_at": "2026-05-27T01:47:11Z"
+    },
+    "s": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "s",
+      "file_count": 1,
+      "head_tree_sha": "18c112570ec4989bad5a9687ea4292726e800b53",
+      "private": true,
+      "repo": "kody-w/s",
+      "truncated": false,
+      "updated_at": "2025-09-21T01:46:11Z"
+    },
+    "saras_ai_robot_v2": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 7,
+      "head_tree_sha": "bcc5f5389dcd83ad2d101486291fecaab8ab639b",
+      "private": false,
+      "repo": "kody-w/saras_ai_robot_v2",
+      "truncated": false,
+      "updated_at": "2026-06-23T01:56:31Z"
+    },
+    "screenshot-to-code": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
+      "file_count": 183,
+      "head_tree_sha": "fc228385475685f7b278fe10d60836bd17996ff8",
+      "private": false,
+      "repo": "kody-w/screenshot-to-code",
+      "truncated": false,
+      "updated_at": "2025-10-03T00:28:41Z"
+    },
+    "sim-art-collective": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Local-first art collective from the multi-AI simulation. Used for browser+vbrainstem join+collaborate test.",
+      "file_count": 55,
+      "head_tree_sha": "612b04e7416643b2c9792ca29e4bcb923044b06a",
+      "private": false,
+      "repo": "kody-w/sim-art-collective",
+      "truncated": false,
+      "updated_at": "2026-07-16T02:38:06Z"
+    },
+    "sim-demo-twin": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Planted RAPP twin \u2014 Sim Demo Twin. You are Sim Demo Twin \u2014 a planted twin created end-to-end by the plant_seed_agen",
+      "file_count": 21,
+      "head_tree_sha": "04240991257b1265fec307c7521d178c5472ca2b",
+      "private": false,
+      "repo": "kody-w/sim-demo-twin",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:57:16Z"
+    },
+    "skills-for-copilot-studio": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A skill for AI-coding tools to build and edit Microsoft Copilot Studio agents as YAML \u2014 with schema validation, templates, and AI-powered skills. Suited for Claude Code, GitHub Copilot CLI, and more.",
+      "file_count": 97,
+      "head_tree_sha": "c96bbbb4b64a3fabe128fb57f6ecf165528cb2a2",
+      "private": false,
+      "repo": "kody-w/skills-for-copilot-studio",
+      "truncated": false,
+      "updated_at": "2026-03-18T16:57:31Z"
+    },
+    "skyward": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "SKYWARD - a single-file procedural WebGL2 flight demo (zero assets, zero network)",
+      "file_count": 3,
+      "head_tree_sha": "89ea405cd1838b8131e5e096be99a9afe655d835",
+      "private": false,
+      "repo": "kody-w/skyward",
+      "truncated": false,
+      "updated_at": "2026-07-16T23:27:12Z"
+    },
+    "snake-game-assets": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "snake-game-assets",
+      "file_count": 127,
+      "head_tree_sha": "bc31c8027187758b1d5fcc66fb05541d372a7c27",
+      "private": false,
+      "repo": "kody-w/snake-game-assets",
+      "truncated": false,
+      "updated_at": "2025-08-17T16:23:18Z"
+    },
+    "static-core-banking": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic static core-banking API simulator for the fictional Bluegrass Credit Union \u2014 synthetic members, accounts, transactions, and loan applications on GitHub Pages, with an Issues-as-CRUD writ",
+      "file_count": 19,
+      "head_tree_sha": "7a47bcdd0fc74acf213f5e9a835d57ccfa515eff",
+      "private": false,
+      "repo": "kody-w/static-core-banking",
+      "truncated": false,
+      "updated_at": "2026-07-22T19:47:36Z"
+    },
+    "static-dynamics-365": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic, zero-dependency Dataverse and Dynamics 365 Customer Service simulator with static OData fixtures.",
+      "file_count": 80,
+      "head_tree_sha": "968a0111b9c056c921a30826ad5f361ec987fd60",
+      "private": false,
+      "repo": "kody-w/static-dynamics-365",
+      "truncated": false,
+      "updated_at": "2026-07-22T00:12:36Z"
+    },
+    "static-dynamics-fno": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic D365 Finance & Operations-style OData data entities for the Aster Lane tenant \u2014 static JSON on Pages, Issues-as-CRUD write API, joins static-dynamics-365 and static-erp",
+      "file_count": 23,
+      "head_tree_sha": "5a2a12face8ac6d6f7ea8939e2800b8093104d9e",
+      "private": false,
+      "repo": "kody-w/static-dynamics-fno",
+      "truncated": false,
+      "updated_at": "2026-07-24T10:42:31Z"
+    },
+    "static-enrichment": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic synthetic B2B firmographic + news enrichment API as static JSON \u2014 joins the Aster Lane fictional world on company domain",
+      "file_count": 37,
+      "head_tree_sha": "981a8d4a1b3fe29ab2a99c6ec6cb6f851b4ab513",
+      "private": false,
+      "repo": "kody-w/static-enrichment",
+      "truncated": false,
+      "updated_at": "2026-07-22T01:34:37Z"
+    },
+    "static-erp": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic static ERP/procurement API simulator \u2014 suppliers, materials, POs, goods receipts, supplier invoices as plain JSON on GitHub Pages, with an Issues-based Write API",
+      "file_count": 27,
+      "head_tree_sha": "3e8d39557b2bc7807138f9362d72206e4f283d66",
+      "private": false,
+      "repo": "kody-w/static-erp",
+      "truncated": false,
+      "updated_at": "2026-07-22T02:43:53Z"
+    },
+    "static-fhir": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic static FHIR R4-subset read API (Riverbend Medical Group) with an Issues-based Write API \u2014 all data synthetic, served from GitHub Pages",
+      "file_count": 194,
+      "head_tree_sha": "fc2ed49331a1b91bb706624221e4639306082348",
+      "private": false,
+      "repo": "kody-w/static-fhir",
+      "truncated": false,
+      "updated_at": "2026-07-22T02:41:24Z"
+    },
+    "static-hris": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic static HRIS simulator for the fictional Aster Lane Office Systems tenant \u2014 generic HRIS REST shapes as JSON on GitHub Pages, with a GitHub-Issues write bridge",
+      "file_count": 32,
+      "head_tree_sha": "c0a83c9475a086a4ca7bc7d1aa99471956dfa94f",
+      "private": false,
+      "repo": "kody-w/static-hris",
+      "truncated": false,
+      "updated_at": "2026-07-22T02:43:47Z"
+    },
+    "static-issue-tracker": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic Jira-style REST issue-tracker fixtures on GitHub Pages - synthetic Aster Lane world, Issues-as-CRUD write bridge, zero dependencies",
+      "file_count": 46,
+      "head_tree_sha": "12e27edb27de48db9c5909db54a0c7a9b9642cbb",
+      "private": false,
+      "repo": "kody-w/static-issue-tracker",
+      "truncated": false,
+      "updated_at": "2026-07-22T01:35:07Z"
+    },
+    "static-itsm": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic static ITSM simulator \u2014 ServiceNow-style Table API shapes as zero-dependency JSON on GitHub Pages, with an Issues-as-CRUD write bridge",
+      "file_count": 104,
+      "head_tree_sha": "ac6449f5a19afed30acdd3f9b27523fc21fdcabf",
+      "private": false,
+      "repo": "kody-w/static-itsm",
+      "truncated": false,
+      "updated_at": "2026-07-22T02:41:24Z"
+    },
+    "static-library": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Self-updating catalog of the kody-w static-* family \u2014 deterministic integration simulators on GitHub Pages; browse endpoints, MCP manifests, and Pages sites in one place",
+      "file_count": 2,
+      "head_tree_sha": "7c4c98bd4acc851b6a2a5d236c789613b8ce64b5",
+      "private": false,
+      "repo": "kody-w/static-library",
+      "truncated": false,
+      "updated_at": "2026-07-22T18:51:38Z"
+    },
+    "static-loan-origination": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "DEPRECATED - superseded by static-ncino + static-plaid product-compatibility simulators; endpoints remain live for old links",
+      "file_count": 7,
+      "head_tree_sha": "74ea08c0316da700706227f07373a016934c8478",
+      "private": false,
+      "repo": "kody-w/static-loan-origination",
+      "truncated": false,
+      "updated_at": "2026-07-22T19:14:18Z"
+    },
+    "static-ncino": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic static nCino-style LOS simulator \u2014 Salesforce REST shapes over LLC_BI__ objects (loans, AI credit memos, approvals); synthetic Bluegrass CU data; zero-dependency JSON on Pages",
+      "file_count": 9,
+      "head_tree_sha": "cbd1fa61be239446b774e98497f5f50ba72296c9",
+      "private": false,
+      "repo": "kody-w/static-ncino",
+      "truncated": false,
+      "updated_at": "2026-07-22T19:49:43Z"
+    },
+    "static-oracle-fusion": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic, zero-dependency static Oracle Fusion Procurement REST simulator.",
+      "file_count": 186,
+      "head_tree_sha": "d0db9364441aeef2371454d24dad17c674ede045",
+      "private": false,
+      "repo": "kody-w/static-oracle-fusion",
+      "truncated": false,
+      "updated_at": "2026-07-13T08:27:04Z"
+    },
+    "static-outlook": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic static mail + calendar simulator \u2014 Microsoft-Graph-style message/event shapes for the fictional Aster Lane tenant as plain JSON on GitHub Pages, with an Issues-based Write API",
+      "file_count": 33,
+      "head_tree_sha": "ec3295aaf6ba2719ada79748f7ea1509a27dab58",
+      "private": false,
+      "repo": "kody-w/static-outlook",
+      "truncated": false,
+      "updated_at": "2026-07-22T01:43:09Z"
+    },
+    "static-plaid": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic static Plaid-style Open Banking simulator \u2014 transactions/get, bank_income/get, identity/get shapes as GET-able JSON; synthetic data; zero-dependency Pages",
+      "file_count": 24,
+      "head_tree_sha": "8e570abc8ff24976433d11e0e0f8c5bf42d94e13",
+      "private": false,
+      "repo": "kody-w/static-plaid",
+      "truncated": false,
+      "updated_at": "2026-07-22T19:47:30Z"
+    },
+    "static-salesforce": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic static CRM simulator serving Salesforce-style REST query shapes \u2014 Meridian Office Supply, acquired by Aster Lane; intentional cross-CRM duplicates for dedup/migration demos. Synthetic da",
+      "file_count": 21,
+      "head_tree_sha": "695222b0ea3026ba4c662e98599c5096e4b4d36b",
+      "private": false,
+      "repo": "kody-w/static-salesforce",
+      "truncated": false,
+      "updated_at": "2026-07-22T16:12:26Z"
+    },
+    "static-sap-s4hana": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic, zero-dependency static SAP S/4HANA OData and ERP workflow simulator.",
+      "file_count": 96,
+      "head_tree_sha": "68197c7152a7a8f2208da902cbedd79d64daf1c8",
+      "private": false,
+      "repo": "kody-w/static-sap-s4hana",
+      "truncated": false,
+      "updated_at": "2026-07-13T06:18:42Z"
+    },
+    "static-servicenow": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic, zero-dependency static ITSM and ServiceNow Table API compatibility simulator.",
+      "file_count": 61,
+      "head_tree_sha": "68f49de974adbcb6845f9790bb96c52991f5e1a9",
+      "private": false,
+      "repo": "kody-w/static-servicenow",
+      "truncated": false,
+      "updated_at": "2026-07-13T10:52:44Z"
+    },
+    "static-sharepoint": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic static SharePoint-style REST document simulator \u2014 Contracts, Policies, and Meeting Notes for the shared Aster Lane fictional world, with an Issues-based Write API",
+      "file_count": 18,
+      "head_tree_sha": "542482bb0c47f953326975accc75f8414bb7ad75",
+      "private": false,
+      "repo": "kody-w/static-sharepoint",
+      "truncated": false,
+      "updated_at": "2026-07-22T01:34:40Z"
+    },
+    "static-teams": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic serverless team-chat simulator in Graph-style shapes \u2014 static JSON API for the Aster Lane Office Systems fictional tenant, with an Issues-as-CRUD write bridge",
+      "file_count": 24,
+      "head_tree_sha": "a9e2b2249af21fecaf9f61471e5c57a5b70380c3",
+      "private": false,
+      "repo": "kody-w/static-teams",
+      "truncated": false,
+      "updated_at": "2026-07-22T01:35:29Z"
+    },
+    "static-telemetry": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic industrial sensor telemetry as static JSON \u2014 sensors, alerts, and 7-day series joined to the Static Dynamics 365 fictional tenant",
+      "file_count": 45,
+      "head_tree_sha": "218606a0ff92af26a0d4e97d8f520e72326d686c",
+      "private": false,
+      "repo": "kody-w/static-telemetry",
+      "truncated": false,
+      "updated_at": "2026-07-22T02:44:07Z"
+    },
+    "static-zuora": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Deterministic, zero-dependency static subscription billing and Zuora API compatibility simulator.",
+      "file_count": 213,
+      "head_tree_sha": "75ebf0761706953ae43ca25a6687a03fd215fdd2",
+      "private": false,
+      "repo": "kody-w/static-zuora",
+      "truncated": false,
+      "updated_at": "2026-07-13T10:48:20Z"
+    },
+    "tesasdfdsa": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 35,
+      "head_tree_sha": "85e199bccb5ac121c8b0b6b8c680c33df988cd01",
+      "private": false,
+      "repo": "kody-w/tesasdfdsa",
+      "truncated": false,
+      "updated_at": "2025-11-09T17:17:05Z"
+    },
+    "test": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 35,
+      "head_tree_sha": "497d7f83120b1d5025e049b57c2fe78e5a35bfd4",
+      "private": true,
+      "repo": "kody-w/test",
+      "truncated": false,
+      "updated_at": "2025-11-09T22:24:07Z"
+    },
+    "the-coliseum": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "An evolutionary arena where AI creatures compete, breed, and die \u2014 built in parallel by a brainstem flock.",
+      "file_count": 16,
+      "head_tree_sha": "aa9c429e66663d38fdb43e5a56f83c0f2766e6e9",
+      "private": false,
+      "repo": "kody-w/the-coliseum",
+      "truncated": false,
+      "updated_at": "2026-06-29T02:29:08Z"
+    },
+    "tide-brainstem": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Planted RAPP twin \u2014 Tide. You are Tide \u2014 a rhythmic / oceanic voice in the canvas. You think in waves: eve",
+      "file_count": 24,
+      "head_tree_sha": "5f2a90a5e3dfd772020880df5f01bebe48756bb0",
+      "private": false,
+      "repo": "kody-w/tide-brainstem",
+      "truncated": false,
+      "updated_at": "2026-07-16T02:38:17Z"
+    },
+    "tmr-coro-sources": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Synthetic source documents for the TMR Correspondence Copilot demo (cited by drafted replies)",
+      "file_count": 14,
+      "head_tree_sha": "947594dd0edd435b91a492e2b1367acbbf19858a",
+      "private": true,
+      "repo": "kody-w/tmr-coro-sources",
+      "truncated": false,
+      "updated_at": "2026-07-11T01:44:06Z"
+    },
+    "totalRecall": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 119,
+      "head_tree_sha": "6e7d7e491bbcde0596e56520ae9863180f16f47d",
+      "private": true,
+      "repo": "kody-w/totalRecall",
+      "truncated": false,
+      "updated_at": "2026-01-14T00:47:15Z"
+    },
+    "twin": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "e55e5054a33e9306430774100a64c049cde22ebc"
+      },
+      "default_branch": "main",
+      "description": "twin",
+      "file_count": 232,
+      "head_tree_sha": "8bb3c9d7e78f5b54b2e18553431d20aee06d32c4",
+      "private": false,
+      "repo": "kody-w/twin",
+      "truncated": false,
+      "updated_at": "2026-07-21T23:18:03Z"
+    },
+    "twin-binder": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Empty RAPPcards v1.1.2 binder \u2014 rebuild-from-memory demo. Ships with known incantations; click to summon via federation. Resolution is ownership.",
+      "file_count": 5,
+      "head_tree_sha": "5e41cd9088deee8394d22d5941f1fa8bc37b990f",
+      "private": false,
+      "repo": "kody-w/twin-binder",
+      "truncated": false,
+      "updated_at": "2026-04-18T02:17:05Z"
+    },
+    "twin-egg-hatcher": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Generic single-file hatcher for any RAPP digital-organism twin \u2014 public mirror of kody-w/aibast-twin",
+      "file_count": 5,
+      "head_tree_sha": "6e96a7ed24b3f70a8568543510792236d5a53a8d",
+      "private": false,
+      "repo": "kody-w/twin-egg-hatcher",
+      "truncated": false,
+      "updated_at": "2026-07-16T03:20:58Z"
+    },
+    "twin-private": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Kody Wildfeuer \u2014 private brain \u2014 RAPP front door",
+      "file_count": 29,
+      "head_tree_sha": "abfe9cd00a0b143338c5c91f63c1f3eb80b0fac6",
+      "private": true,
+      "repo": "kody-w/twin-private",
+      "truncated": false,
+      "updated_at": "2026-07-15T21:22:30Z"
+    },
+    "twin_vault": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Cloud backup for digital twin .egg cartridges (private vault for portable RAPP twins)",
+      "file_count": 5,
+      "head_tree_sha": "15759919d95fee69fa7cdf3f6d8120d54d4b1382",
+      "private": true,
+      "repo": "kody-w/twin_vault",
+      "truncated": false,
+      "updated_at": "2026-05-01T00:53:26Z"
+    },
+    "ubiquitous-train": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 48,
+      "head_tree_sha": "f45aec3b021dbf63301d07a96eb4a4713139b4b0",
+      "private": true,
+      "repo": "kody-w/ubiquitous-train",
+      "truncated": false,
+      "updated_at": "2026-05-05T00:24:58Z"
+    },
+    "v86": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "master",
+      "description": "x86 PC emulator and x86-to-wasm JIT, running in the browser",
+      "file_count": 553,
+      "head_tree_sha": "9735a0eed83a426b3b14cf98f9043a5a9241b142",
+      "private": false,
+      "repo": "kody-w/v86",
+      "truncated": false,
+      "updated_at": "2025-10-14T20:29:02Z"
+    },
+    "vbrainstem": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Browser-native RAPP agent runtime (vBrainstem) \u2014 run any agent in your browser via Pyodide, no install. Standalone host of the RAPP Brainstem; reads the live registry from kody-w/RAR.",
+      "file_count": 47,
+      "head_tree_sha": "357c0e45e74d9ebbfda420e17c4de184ed03d70b",
+      "private": false,
+      "repo": "kody-w/vbrainstem",
+      "truncated": false,
+      "updated_at": "2026-07-23T15:37:16Z"
+    },
+    "videoAI": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 675,
+      "head_tree_sha": "06c601b5f781358bc0f3f85d2fb1e554ffbf087a",
+      "private": true,
+      "repo": "kody-w/videoAI",
+      "truncated": false,
+      "updated_at": "2025-10-21T14:43:24Z"
+    },
+    "vneighborhood-design-studio": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83c\udfa8 A sealed vNeighborhood for agents to critique & iterate on design \u2014 front door + QR/PIN join. A live example of the rapp-vneighborhood pattern.",
+      "file_count": 6,
+      "head_tree_sha": "6d2770b11ee17b9695491c03137550ebe1005d1d",
+      "private": false,
+      "repo": "kody-w/vneighborhood-design-studio",
+      "truncated": false,
+      "updated_at": "2026-05-27T16:44:51Z"
+    },
+    "vneighborhood-research-lab": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "\ud83d\udd2c A sealed vNeighborhood for an agent swarm to run a shared line of inquiry \u2014 front door + QR/PIN join. A live example of the rapp-vneighborhood pattern.",
+      "file_count": 6,
+      "head_tree_sha": "ba9413e42a87a35f51f5cff235f495ca31f00328",
+      "private": false,
+      "repo": "kody-w/vneighborhood-research-lab",
+      "truncated": false,
+      "updated_at": "2026-05-27T16:45:00Z"
+    },
+    "wildhaven-ai-homes-twin": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "e55e5054a33e9306430774100a64c049cde22ebc"
+      },
+      "default_branch": "main",
+      "description": "The Pre-Founder twin of Wildhaven AI Homes \u2014 the brand operating in public before the company incorporates. A variant of kody-w/RAPP per Constitution Article XXXIV.",
+      "file_count": 94,
+      "head_tree_sha": "7526dd514a42975282a1e422600b672531437241",
+      "private": false,
+      "repo": "kody-w/wildhaven-ai-homes-twin",
+      "truncated": false,
+      "updated_at": "2026-07-16T03:43:13Z"
+    },
+    "wildhaven-ai-homes-twin-private": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private companion to kody-w/wildhaven-ai-homes-twin. Operational shadow \u2014 pipeline, financial model, hiring, partnerships, legal drafts, research. Never served via HTTP.",
+      "file_count": 9,
+      "head_tree_sha": "cab859f84c2591bfb8838e7a88ebe8efa102d8fd",
+      "private": true,
+      "repo": "kody-w/wildhaven-ai-homes-twin-private",
+      "truncated": false,
+      "updated_at": "2026-05-01T21:36:17Z"
+    },
+    "wildhaven-ceo": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Wildhaven Homes LLC \u2014 CEO workspace. Molly's command center for the entire company.",
+      "file_count": 695,
+      "head_tree_sha": "8afd41cc8a224e35d1db0e794361df179ec566cf",
+      "private": true,
+      "repo": "kody-w/wildhaven-ceo",
+      "truncated": false,
+      "updated_at": "2026-07-18T22:16:24Z"
+    },
+    "wowmon": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "wowmon",
+      "file_count": 47,
+      "head_tree_sha": "d23649f544576e32e115d51c2700751c3c6dedae",
+      "private": true,
+      "repo": "kody-w/wowmon",
+      "truncated": false,
+      "updated_at": "2025-07-27T01:57:06Z"
+    },
+    "zion": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "dbca073f4519ef3256050a699ff31dc8a95aa2ce"
+      },
+      "default_branch": "main",
+      "description": "One world, two realms, every mind welcome. An MMO where human and AI players coexist as equals.",
+      "file_count": 15645,
+      "head_tree_sha": "800f9306907a0d79c08f43233f3aecfad6c32968",
+      "private": false,
+      "repo": "kody-w/zion",
+      "truncated": false,
+      "updated_at": "2026-03-20T12:53:01Z"
+    }
+  },
+  "schema": "rapp-estate-observation/1.0"
+}
