@@ -81,9 +81,18 @@ def gh(*args, parse=True, quiet=False):
 
 # ── collect: the mechanical layer ────────────────────────────────────────────
 
-def collect(owner=OWNER, limit=400, only=None):
+def collect(owner=OWNER, limit=2000, only=None):
     repos = gh("repo", "list", owner, "--limit", str(limit), "--json",
                "name,isArchived,isPrivate,defaultBranchRef,updatedAt,description")
+    # If the listing came back exactly at the limit, it was almost certainly
+    # truncated — and a truncated listing produces a perfectly well-formed map
+    # that is simply missing repos. On 2026-07-25 a --limit of 400 hid 121 of
+    # 521 repos, and nothing anywhere said so.
+    if len(repos) >= limit:
+        raise RuntimeError(
+            f"the repo listing returned exactly {len(repos)} for --limit "
+            f"{limit}, so it was truncated. Raise --limit; a truncated estate "
+            f"is worse than no estate because it looks complete.")
     out, skipped = {}, 0
     for i, r in enumerate(repos, 1):
         name = r["name"]
@@ -134,14 +143,56 @@ def collect(owner=OWNER, limit=400, only=None):
         out[name] = rec
         print(f"  [{i}/{len(repos)}] {name}: {len(blobs)} files, "
               f"{len(rec['canon'])} canon", file=sys.stderr)
+    private = sum(1 for r in out.values() if r.get("private"))
     return {"schema": OBS_SCHEMA, "owner": owner,
             "observed_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-            "count": len(out), "archived_or_empty": skipped, "repos": out}
+            "count": len(out), "archived_or_empty": skipped,
+            # An observation must state what it could SEE, not only what it
+            # found. A token without private scope produces a perfectly
+            # well-formed map that is missing a third of the estate.
+            "visibility": {"private_visible": private,
+                           "token_sees_private": private > 0},
+            "repos": out}
+
+
+def _newest_vertebra(d="spine/vertebrae"):
+    if not os.path.isdir(d):
+        return None
+    eggs = sorted(f for f in os.listdir(d) if f.endswith(".egg"))
+    if not eggs:
+        return None
+    try:
+        return read_vertebra(os.path.join(d, eggs[-1]))
+    except Exception:  # noqa: BLE001
+        return None
 
 
 def cmd_collect(args):
     obs = collect(args.owner, args.limit,
                   set(args.only.split(",")) if args.only else None)
+
+    # A map may never quietly get smaller. On 2026-07-25 the first scheduled
+    # run wrote a map with 103 fewer repos than the local run, because Actions'
+    # default GITHUB_TOKEN cannot see other repositories' private repos. The
+    # output was valid JSON, the job was green, and a third of the estate had
+    # silently vanished. Shrinking is now an error you must opt into.
+    prev = _newest_vertebra()
+    if prev and not args.allow_shrink:
+        was, now = len(prev.get("members") or {}), obs["count"]
+        lost = sorted(set(prev.get("members") or {}) - set(obs["repos"]))
+        if lost and len(lost) > max(2, int(was * 0.02)):
+            print(f"\n  REFUSED: {len(lost)} repo(s) present in the last "
+                  f"vertebra are missing from this observation "
+                  f"({was} -> {now} members).", file=sys.stderr)
+            print(f"  Missing: {', '.join(lost[:8])}"
+                  + (" …" if len(lost) > 8 else ""), file=sys.stderr)
+            if prev.get("private_visible") and not obs["visibility"]["token_sees_private"]:
+                print("  The observer could not see private repos this time — "
+                      "almost certainly a token scope problem, not deletions.",
+                      file=sys.stderr)
+            print("  Fix the token, or pass --allow-shrink if repos really "
+                  "were deleted.", file=sys.stderr)
+            return 2
     with open(args.out, "w") as fh:
         json.dump(obs, fh, indent=2, sort_keys=True)
         fh.write("\n")
@@ -293,6 +344,7 @@ def vertebra_body(obs):
         "owner": obs["owner"],
         "observed_at": obs["observed_at"],
         "count": obs["count"],
+        "private_visible": (obs.get("visibility") or {}).get("private_visible", 0),
         "canon_paths": CANON,
         "members": {
             name: {"repo": r["repo"], "branch": r.get("default_branch"),
@@ -508,9 +560,11 @@ def main(argv=None):
 
     q = sub.add_parser("collect", help="observe every repo mechanically")
     q.add_argument("--owner", default=OWNER)
-    q.add_argument("--limit", type=int, default=400)
+    q.add_argument("--limit", type=int, default=2000)
     q.add_argument("--only", help="comma-separated repo names")
     q.add_argument("-o", "--out", default="spine/observations.json")
+    q.add_argument("--allow-shrink", action="store_true",
+                   help="accept an estate that got smaller (real deletions)")
     q.set_defaults(fn=cmd_collect)
 
     q = sub.add_parser("map", help="rebuild the estate map (derived)")
@@ -544,7 +598,7 @@ def main(argv=None):
 
     q = sub.add_parser("check", help="a vertebra vs the estate now")
     q.add_argument("vertebra")
-    q.add_argument("--limit", type=int, default=400)
+    q.add_argument("--limit", type=int, default=2000)
     q.add_argument("--strict", action="store_true")
     q.set_defaults(fn=cmd_check)
 

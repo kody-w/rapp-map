@@ -1,7 +1,7 @@
 {
-  "archived_or_empty": 6,
-  "count": 377,
-  "observed_at": "2026-07-25T17:37:41Z",
+  "archived_or_empty": 16,
+  "count": 522,
+  "observed_at": "2026-07-26T01:25:20Z",
   "owner": "kody-w",
   "repos": {
     "AI-Agent-Templates": {
@@ -32,6 +32,54 @@
       "truncated": false,
       "updated_at": "2026-05-20T15:40:19Z"
     },
+    "AI-SIM": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AI SIM",
+      "file_count": 14,
+      "head_tree_sha": "908492453218d36e12240d24747cc7ecfba1a632",
+      "private": true,
+      "repo": "kody-w/AI-SIM",
+      "truncated": false,
+      "updated_at": "2025-08-10T09:49:12Z"
+    },
+    "AIAcceleratorProgram": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AIAcceleratorProgram",
+      "file_count": 18,
+      "head_tree_sha": "5e69488c7b86b6e348cdf8a9515d373bb8bf4c93",
+      "private": true,
+      "repo": "kody-w/AIAcceleratorProgram",
+      "truncated": false,
+      "updated_at": "2025-07-23T20:03:42Z"
+    },
+    "AIBAST-Industry-Agents": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AIBAST Industry Agents",
+      "file_count": 1,
+      "head_tree_sha": "3f40ccbde72d0250bfaff33c1d9c41813ef8fe11",
+      "private": true,
+      "repo": "kody-w/AIBAST-Industry-Agents",
+      "truncated": false,
+      "updated_at": "2025-11-21T18:58:35Z"
+    },
+    "AIChatHistory": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AIChatPile",
+      "file_count": 3,
+      "head_tree_sha": "c4fc96a77c97f24c1795eb3d780e11f7880b1aec",
+      "private": true,
+      "repo": "kody-w/AIChatHistory",
+      "truncated": false,
+      "updated_at": "2025-06-20T19:24:43Z"
+    },
     "AIGame": {
       "archived": false,
       "canon": {
@@ -58,6 +106,18 @@
       "truncated": false,
       "updated_at": "2025-11-08T01:44:49Z"
     },
+    "AILab": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AILab",
+      "file_count": 39,
+      "head_tree_sha": "9bfb7adc390b92d560d98edb6c8c95800ef34ed1",
+      "private": true,
+      "repo": "kody-w/AILab",
+      "truncated": false,
+      "updated_at": "2024-06-25T19:00:55Z"
+    },
     "AINexus": {
       "archived": false,
       "canon": {},
@@ -82,6 +142,54 @@
       "truncated": false,
       "updated_at": "2026-01-01T04:41:19Z"
     },
+    "AINexusv3": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 10,
+      "head_tree_sha": "e18ee465ae39e8ebc6d5ee9bb8024c611d238951",
+      "private": true,
+      "repo": "kody-w/AINexusv3",
+      "truncated": false,
+      "updated_at": "2026-01-17T02:00:29Z"
+    },
+    "AIPatherfinder": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "fef5d4c58ab460ab923efdb6258c16063e3d3b89"
+      },
+      "default_branch": "main",
+      "description": "AIPatherfinder",
+      "file_count": 1225,
+      "head_tree_sha": "559f3c2f2288febff82f9fa21d2b66d3aed182e7",
+      "private": true,
+      "repo": "kody-w/AIPatherfinder",
+      "truncated": false,
+      "updated_at": "2025-10-26T12:55:48Z"
+    },
+    "AITester": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "AITester",
+      "file_count": 32,
+      "head_tree_sha": "d8747db2bcca24f1ca6f06098f62f029756a7f30",
+      "private": true,
+      "repo": "kody-w/AITester",
+      "truncated": false,
+      "updated_at": "2026-01-09T18:20:19Z"
+    },
+    "AIUniversalDataConnector": {
+      "archived": false,
+      "default_branch": "",
+      "description": "AIUniversalDataConnector",
+      "private": true,
+      "repo": "kody-w/AIUniversalDataConnector",
+      "updated_at": "2025-09-15T18:31:57Z"
+    },
     "AI_LAB": {
       "archived": false,
       "canon": {},
@@ -93,6 +201,44 @@
       "repo": "kody-w/AI_LAB",
       "truncated": false,
       "updated_at": "2024-08-05T02:38:26Z"
+    },
+    "AI_Omni_Agent": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "fef5d4c58ab460ab923efdb6258c16063e3d3b89"
+      },
+      "default_branch": "main",
+      "description": "AI_Omni_Agent",
+      "file_count": 19,
+      "head_tree_sha": "8896b015134e49eb528bfb02ceff832bff899ded",
+      "private": true,
+      "repo": "kody-w/AI_Omni_Agent",
+      "truncated": false,
+      "updated_at": "2025-05-30T20:43:33Z"
+    },
+    "ARM_AI": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "ARM_AI",
+      "file_count": 8,
+      "head_tree_sha": "35a849fca728679628727dfe6b567323de85f68e",
+      "private": true,
+      "repo": "kody-w/ARM_AI",
+      "truncated": false,
+      "updated_at": "2025-05-19T19:54:35Z"
+    },
+    "AZFAug29WF": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AZFAug29WF",
+      "file_count": 1,
+      "head_tree_sha": "611b867f64cc0b44f7d5758d75790938b7ad442e",
+      "private": true,
+      "repo": "kody-w/AZFAug29WF",
+      "truncated": false,
+      "updated_at": "2025-08-29T13:49:12Z"
     },
     "AgenticPlaygroundLab": {
       "archived": false,
@@ -170,6 +316,18 @@
       "truncated": false,
       "updated_at": "2023-04-15T01:54:34Z"
     },
+    "AutoVideos": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AutoVideos",
+      "file_count": 17,
+      "head_tree_sha": "830a058931dd198990c445c83b0142ef1825c66d",
+      "private": true,
+      "repo": "kody-w/AutoVideos",
+      "truncated": false,
+      "updated_at": "2025-09-30T17:47:53Z"
+    },
     "AzureARMTester": {
       "archived": false,
       "canon": {},
@@ -202,6 +360,21 @@
       "repo": "kody-w/BigNerdRanch",
       "updated_at": "2015-12-30T23:48:19Z"
     },
+    "BillWhalenCopilotstudio": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "f5c6ec82e39187d08770afe6f8698b483c65d4b4",
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "BillWhalenCopilotstudio",
+      "file_count": 1434,
+      "head_tree_sha": "500c9bee935e1522bbd2416c1ade1861c9412d3c",
+      "private": true,
+      "repo": "kody-w/BillWhalenCopilotstudio",
+      "truncated": false,
+      "updated_at": "2026-05-06T18:35:50Z"
+    },
     "BlazingBeard.github.io": {
       "archived": false,
       "canon": {},
@@ -213,6 +386,56 @@
       "repo": "kody-w/BlazingBeard.github.io",
       "truncated": false,
       "updated_at": "2026-07-08T23:49:07Z"
+    },
+    "BookGOD": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 4,
+      "head_tree_sha": "13a0e213407f2082647c06a34a1f6e9160e6ac9f",
+      "private": true,
+      "repo": "kody-w/BookGOD",
+      "truncated": false,
+      "updated_at": "2023-05-20T17:51:59Z"
+    },
+    "BookPi": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 4,
+      "head_tree_sha": "13a0e213407f2082647c06a34a1f6e9160e6ac9f",
+      "private": true,
+      "repo": "kody-w/BookPi",
+      "truncated": false,
+      "updated_at": "2023-05-22T01:28:08Z"
+    },
+    "Business-Insight-Copilot": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "fef5d4c58ab460ab923efdb6258c16063e3d3b89"
+      },
+      "default_branch": "main",
+      "description": "BusinessInsightBotAzure",
+      "file_count": 204,
+      "head_tree_sha": "5ce53f91c8ea3c12d69a3d81ac80c60610f26aa1",
+      "private": true,
+      "repo": "kody-w/Business-Insight-Copilot",
+      "truncated": false,
+      "updated_at": "2025-04-07T22:26:14Z"
+    },
+    "BusinessInsightBot": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 41,
+      "head_tree_sha": "c397b654beba83ef06cb171670f9b9da4d6525bc",
+      "private": true,
+      "repo": "kody-w/BusinessInsightBot",
+      "truncated": false,
+      "updated_at": "2024-11-07T01:31:13Z"
     },
     "C365Sept26th": {
       "archived": false,
@@ -304,6 +527,18 @@
       "truncated": false,
       "updated_at": "2023-05-22T22:27:59Z"
     },
+    "ClippyNeu": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "ClippyNeu",
+      "file_count": 28,
+      "head_tree_sha": "f97290d6dc85e9aefb62aa542a54dff2e301d38f",
+      "private": true,
+      "repo": "kody-w/ClippyNeu",
+      "truncated": false,
+      "updated_at": "2024-05-24T18:48:57Z"
+    },
     "CommunityRAPP": {
       "archived": false,
       "canon": {
@@ -319,6 +554,35 @@
       "truncated": false,
       "updated_at": "2026-07-16T18:56:14Z"
     },
+    "CommunityRAPP-BW": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "CommunityRAPP-BW",
+      "file_count": 852,
+      "head_tree_sha": "4cacd6100c18b8ed75a616fa33b58cf7ce2db060",
+      "private": true,
+      "repo": "kody-w/CommunityRAPP-BW",
+      "truncated": false,
+      "updated_at": "2026-03-23T16:21:16Z"
+    },
+    "CommunityRAPP-archive": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "4de9aa63c0b898237cbe389eacb9c5f919aae528",
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "Archive: full git history of CommunityRAPP before public release (2026-03-25)",
+      "file_count": 78,
+      "head_tree_sha": "751ed91828badd5316d4beb4bedb3ddebfe7a8d7",
+      "private": true,
+      "repo": "kody-w/CommunityRAPP-archive",
+      "truncated": false,
+      "updated_at": "2026-03-25T17:05:04Z"
+    },
     "Cooking-With-React": {
       "archived": false,
       "canon": {},
@@ -330,6 +594,46 @@
       "repo": "kody-w/Cooking-With-React",
       "truncated": false,
       "updated_at": "2020-07-07T01:15:10Z"
+    },
+    "Copilot-Advanced-Agent": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 18,
+      "head_tree_sha": "f04e46b530b0e12c6c1972f0b9a9a974f0963be6",
+      "private": true,
+      "repo": "kody-w/Copilot-Advanced-Agent",
+      "truncated": false,
+      "updated_at": "2025-06-27T18:23:13Z"
+    },
+    "Copilot-Agent-365": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "Copilot-Agent-365",
+      "file_count": 40,
+      "head_tree_sha": "89b446876b04993ed71794db3ba2435f45aca4cf",
+      "private": true,
+      "repo": "kody-w/Copilot-Agent-365",
+      "truncated": false,
+      "updated_at": "2026-02-03T18:45:36Z"
+    },
+    "CopilotStudio365Agent": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 18,
+      "head_tree_sha": "3333e23b946f0d87c94a8f69ba4414d5f91007cd",
+      "private": true,
+      "repo": "kody-w/CopilotStudio365Agent",
+      "truncated": false,
+      "updated_at": "2026-01-15T22:24:23Z"
     },
     "CopilotStudioSamples": {
       "archived": false,
@@ -367,6 +671,38 @@
       "truncated": false,
       "updated_at": "2019-12-03T23:01:29Z"
     },
+    "D365Console": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "master",
+      "description": "",
+      "file_count": 21,
+      "head_tree_sha": "ea4788bd3fc17b9398cb42ee24ec8afafe4fcbea",
+      "private": true,
+      "repo": "kody-w/D365Console",
+      "truncated": false,
+      "updated_at": "2020-02-27T17:50:49Z"
+    },
+    "D365ConsoleApp": {
+      "archived": false,
+      "default_branch": "",
+      "description": "",
+      "private": true,
+      "repo": "kody-w/D365ConsoleApp",
+      "updated_at": "2020-02-27T17:52:28Z"
+    },
+    "D365ConsoleAppTemplate": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "master",
+      "description": "",
+      "file_count": 21,
+      "head_tree_sha": "0e49099b24dd408bbe0a08d9c709bccc4ef8bf60",
+      "private": true,
+      "repo": "kody-w/D365ConsoleAppTemplate",
+      "truncated": false,
+      "updated_at": "2020-02-27T17:46:57Z"
+    },
     "DSU-OOP": {
       "archived": false,
       "canon": {},
@@ -378,6 +714,30 @@
       "repo": "kody-w/DSU-OOP",
       "truncated": false,
       "updated_at": "2016-09-15T02:04:04Z"
+    },
+    "Developer": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "DeveloperAI",
+      "file_count": 44161,
+      "head_tree_sha": "060e5422b85a6b3ca8e79c56ab7d5aac13d7e60f",
+      "private": true,
+      "repo": "kody-w/Developer",
+      "truncated": true,
+      "updated_at": "2023-12-26T19:52:27Z"
+    },
+    "DigitalAssistant": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "DigitalAssistant",
+      "file_count": 2,
+      "head_tree_sha": "c9a6fa42412aad3418f2ff0593234a02333d2aa6",
+      "private": true,
+      "repo": "kody-w/DigitalAssistant",
+      "truncated": false,
+      "updated_at": "2024-06-21T01:46:56Z"
     },
     "DigitalAssistant-1": {
       "archived": false,
@@ -391,6 +751,20 @@
       "truncated": false,
       "updated_at": "2024-10-29T18:05:48Z"
     },
+    "DigitalTwinAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "DigitalTwinAI",
+      "file_count": 24,
+      "head_tree_sha": "286bb3a0ae57a5daf1ce0173b729bcaa17355867",
+      "private": true,
+      "repo": "kody-w/DigitalTwinAI",
+      "truncated": false,
+      "updated_at": "2026-01-09T18:23:28Z"
+    },
     "Dynamics365ConsoleAppTemplate": {
       "archived": false,
       "canon": {},
@@ -403,6 +777,26 @@
       "truncated": false,
       "updated_at": "2022-03-12T18:25:40Z"
     },
+    "EchoGuardian": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 181,
+      "head_tree_sha": "8d01e77c707ef3f0f8515cfa8515871ae4d41f7f",
+      "private": true,
+      "repo": "kody-w/EchoGuardian",
+      "truncated": false,
+      "updated_at": "2024-09-21T22:44:39Z"
+    },
+    "EchoGuardians": {
+      "archived": false,
+      "default_branch": "",
+      "description": "",
+      "private": true,
+      "repo": "kody-w/EchoGuardians",
+      "updated_at": "2024-09-03T02:28:25Z"
+    },
     "Echos": {
       "archived": false,
       "canon": {},
@@ -414,6 +808,32 @@
       "repo": "kody-w/Echos",
       "truncated": false,
       "updated_at": "2024-09-27T00:31:41Z"
+    },
+    "EntraCopilotAgent365": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "EntraCopilotAgent365",
+      "file_count": 201,
+      "head_tree_sha": "a8d0c9b523527f55dce88e3fd7578e925ad65724",
+      "private": true,
+      "repo": "kody-w/EntraCopilotAgent365",
+      "truncated": false,
+      "updated_at": "2026-02-03T18:57:46Z"
+    },
+    "FastMCP": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "FastMCP",
+      "file_count": 2,
+      "head_tree_sha": "6a877163b6ec7a6d9217096f3aab3c0bbbd74712",
+      "private": true,
+      "repo": "kody-w/FastMCP",
+      "truncated": false,
+      "updated_at": "2025-05-13T19:34:55Z"
     },
     "FreeCodeCampCode": {
       "archived": false,
@@ -451,6 +871,20 @@
       "truncated": false,
       "updated_at": "2019-11-11T05:11:00Z"
     },
+    "KodyAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "KodyAI",
+      "file_count": 51,
+      "head_tree_sha": "c68dd21b0cc5878c2033d6802d40ae441ccf61b8",
+      "private": true,
+      "repo": "kody-w/KodyAI",
+      "truncated": false,
+      "updated_at": "2025-12-20T21:54:27Z"
+    },
     "LCTHW-Exercises": {
       "archived": false,
       "canon": {},
@@ -470,6 +904,18 @@
       "private": false,
       "repo": "kody-w/LPTHW",
       "updated_at": "2014-09-15T23:04:05Z"
+    },
+    "Llama_Agent": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 87,
+      "head_tree_sha": "bf7ecbaf1a59cd4ee7e05ffa196520b8d41d5e42",
+      "private": true,
+      "repo": "kody-w/Llama_Agent",
+      "truncated": false,
+      "updated_at": "2025-01-27T20:44:12Z"
     },
     "M365AgentDemoer": {
       "archived": false,
@@ -499,6 +945,18 @@
       "truncated": false,
       "updated_at": "2025-10-06T20:45:54Z"
     },
+    "M365Agents": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "M365Agents",
+      "file_count": 20,
+      "head_tree_sha": "b6785474174aa23826e782336198901c258ccdbc",
+      "private": true,
+      "repo": "kody-w/M365Agents",
+      "truncated": false,
+      "updated_at": "2025-09-23T18:24:25Z"
+    },
     "M365DemoRecorderandPlayer": {
       "archived": false,
       "canon": {},
@@ -510,6 +968,46 @@
       "repo": "kody-w/M365DemoRecorderandPlayer",
       "truncated": false,
       "updated_at": "2025-10-09T22:22:54Z"
+    },
+    "MAC": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "fef5d4c58ab460ab923efdb6258c16063e3d3b89"
+      },
+      "default_branch": "main",
+      "description": "Microsoft Assessment Copilot",
+      "file_count": 18,
+      "head_tree_sha": "7e0d83a3b5761324e07875ab2e2e658fac29f60e",
+      "private": true,
+      "repo": "kody-w/MAC",
+      "truncated": false,
+      "updated_at": "2025-05-21T20:07:15Z"
+    },
+    "MACv1": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "fef5d4c58ab460ab923efdb6258c16063e3d3b89"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 21,
+      "head_tree_sha": "0515f2b65d80432e570f104039d6f6bb828a9cd6",
+      "private": true,
+      "repo": "kody-w/MACv1",
+      "truncated": false,
+      "updated_at": "2025-05-27T19:30:49Z"
+    },
+    "MCPJoke": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 72,
+      "head_tree_sha": "1b53586aecf8a15a6ea40c48d856943ac6425268",
+      "private": true,
+      "repo": "kody-w/MCPJoke",
+      "truncated": false,
+      "updated_at": "2025-05-16T17:17:29Z"
     },
     "Mastering-Assistant_API_for_Use_Cases": {
       "archived": false,
@@ -535,6 +1033,42 @@
       "truncated": false,
       "updated_at": "2025-10-02T19:28:46Z"
     },
+    "Neu2": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Neu2",
+      "file_count": 281,
+      "head_tree_sha": "9d0f2c64ee9aedcd1a81c676dff6ac82a3e80543",
+      "private": true,
+      "repo": "kody-w/Neu2",
+      "truncated": false,
+      "updated_at": "2024-05-07T22:59:47Z"
+    },
+    "NeuAssistant": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "NeuAssistant",
+      "file_count": 122,
+      "head_tree_sha": "b3d1e2f8de7cb2c63c843b093ae57f46f86cc6bf",
+      "private": true,
+      "repo": "kody-w/NeuAssistant",
+      "truncated": false,
+      "updated_at": "2024-06-04T01:58:39Z"
+    },
+    "NeuTwo": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "NeuTwo",
+      "file_count": 121,
+      "head_tree_sha": "8df32c5579dd96918821f06a58edb8c74d8160fd",
+      "private": true,
+      "repo": "kody-w/NeuTwo",
+      "truncated": false,
+      "updated_at": "2024-09-17T01:33:06Z"
+    },
     "Neu_AI": {
       "archived": false,
       "canon": {},
@@ -546,6 +1080,18 @@
       "repo": "kody-w/Neu_AI",
       "truncated": false,
       "updated_at": "2026-03-25T21:52:08Z"
+    },
+    "NexusMetaverse": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AI-human collaborative environment - Unreal Engine 5.7 implementation",
+      "file_count": 102,
+      "head_tree_sha": "c9c30cf94d3e018e123191c4c0345bb43698c4ca",
+      "private": true,
+      "repo": "kody-w/NexusMetaverse",
+      "truncated": false,
+      "updated_at": "2026-01-12T04:04:26Z"
     },
     "Nov17": {
       "archived": false,
@@ -571,6 +1117,42 @@
       "truncated": false,
       "updated_at": "2015-12-30T23:52:42Z"
     },
+    "Omni_Agent": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 4,
+      "head_tree_sha": "01478ebe4d1c578495ca494963433342a9e4c9d3",
+      "private": true,
+      "repo": "kody-w/Omni_Agent",
+      "truncated": false,
+      "updated_at": "2025-05-29T16:44:29Z"
+    },
+    "PersonalWorkingSpace": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "PersonalWorkingSpace",
+      "file_count": 83,
+      "head_tree_sha": "826fcd4ec8377bb4ebfbf2a67e4e5d7fa1a5d904",
+      "private": true,
+      "repo": "kody-w/PersonalWorkingSpace",
+      "truncated": false,
+      "updated_at": "2025-10-03T21:12:25Z"
+    },
+    "PocketGo": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 106,
+      "head_tree_sha": "ef6afffcf838c88824baede0debec64a7cc1ec3a",
+      "private": true,
+      "repo": "kody-w/PocketGo",
+      "truncated": false,
+      "updated_at": "2024-08-02T19:04:36Z"
+    },
     "PowerApps": {
       "archived": false,
       "canon": {},
@@ -582,6 +1164,20 @@
       "repo": "kody-w/PowerApps",
       "truncated": false,
       "updated_at": "2020-07-14T21:06:40Z"
+    },
+    "RAP": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "Rapid Agent Prototype Platform",
+      "file_count": 20,
+      "head_tree_sha": "5fb2a969ec382059b1a9874398bd853e4394176e",
+      "private": true,
+      "repo": "kody-w/RAP",
+      "truncated": false,
+      "updated_at": "2025-09-17T18:59:41Z"
     },
     "RAPP": {
       "archived": false,
@@ -599,6 +1195,20 @@
       "repo": "kody-w/RAPP",
       "truncated": false,
       "updated_at": "2026-07-17T14:49:33Z"
+    },
+    "RAPP-Agent-Repo": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "89b6d03157efd82b6a27c2746a9b559ac6fab384"
+      },
+      "default_branch": "main",
+      "description": "Repository of Agents to be used internally with RAPP",
+      "file_count": 198,
+      "head_tree_sha": "f58311530790ebc78853d7c9b0fa61ee8fa6d75d",
+      "private": true,
+      "repo": "kody-w/RAPP-Agent-Repo",
+      "truncated": false,
+      "updated_at": "2026-03-18T14:39:10Z"
     },
     "RAPP-Bible": {
       "archived": false,
@@ -624,6 +1234,33 @@
       "truncated": false,
       "updated_at": "2026-07-25T02:10:11Z"
     },
+    "RAPP-Private-Workspace": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "61d2a7a1d4ce73746eaa6822c4e180af02ade8b0",
+        "rapp_brainstem/agents/basic_agent.py": "b95b14d1d442ecf3c7a1ef19ad19a018c1f89292"
+      },
+      "default_branch": "main",
+      "description": "RAPP-Private-Workspace",
+      "file_count": 273,
+      "head_tree_sha": "48c2f834bcf078001c05190ef3ccfcea67e3a95e",
+      "private": true,
+      "repo": "kody-w/RAPP-Private-Workspace",
+      "truncated": false,
+      "updated_at": "2026-04-28T19:08:22Z"
+    },
+    "RAPPAI": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 257,
+      "head_tree_sha": "28b6ae7e07aa9922dca29d42b0fbfb039be1e4ec",
+      "private": true,
+      "repo": "kody-w/RAPPAI",
+      "truncated": false,
+      "updated_at": "2026-01-22T21:19:56Z"
+    },
     "RAPPAIClaudeCodePlayground": {
       "archived": false,
       "canon": {
@@ -637,6 +1274,18 @@
       "repo": "kody-w/RAPPAIClaudeCodePlayground",
       "truncated": false,
       "updated_at": "2025-10-09T00:17:46Z"
+    },
+    "RAPPAgentLibrary-template": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 20,
+      "head_tree_sha": "225f812b912cfead0acf8cfb97404401c3b589d9",
+      "private": true,
+      "repo": "kody-w/RAPPAgentLibrary-template",
+      "truncated": false,
+      "updated_at": "2026-03-18T14:26:09Z"
     },
     "RAPP_Desktop": {
       "archived": false,
@@ -688,6 +1337,18 @@
       "truncated": false,
       "updated_at": "2026-07-25T12:20:37Z"
     },
+    "RAPP_Store_Private": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private mirror of kody-w/RAPP_Store. Same schema, same install protocol, fetches require a PAT. Wildhaven inner-ring catalog.",
+      "file_count": 25,
+      "head_tree_sha": "4165b80bc59154bddcd9a5e41875a788dec941ef",
+      "private": true,
+      "repo": "kody-w/RAPP_Store_Private",
+      "truncated": false,
+      "updated_at": "2026-05-03T18:48:43Z"
+    },
     "RAPP_hippo": {
       "archived": false,
       "canon": {
@@ -702,6 +1363,20 @@
       "repo": "kody-w/RAPP_hippo",
       "truncated": false,
       "updated_at": "2026-07-16T18:58:06Z"
+    },
+    "RAPPagent": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "RAPPagent",
+      "file_count": 48,
+      "head_tree_sha": "7b06b0746cbf2c01de229a1a7c45873dd239debc",
+      "private": true,
+      "repo": "kody-w/RAPPagent",
+      "truncated": false,
+      "updated_at": "2026-02-04T02:12:35Z"
     },
     "RAPPcards": {
       "archived": false,
@@ -727,6 +1402,20 @@
       "truncated": false,
       "updated_at": "2026-07-16T18:57:15Z"
     },
+    "RAPPtools": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "2bded2e4ff93436b26ecb7a8c7724408b85198b1"
+      },
+      "default_branch": "main",
+      "description": "RAPPtools",
+      "file_count": 4714,
+      "head_tree_sha": "85a194b5081692405dd61bbfb62d9e908ab94c23",
+      "private": true,
+      "repo": "kody-w/RAPPtools",
+      "truncated": false,
+      "updated_at": "2026-03-20T02:27:06Z"
+    },
     "RAR": {
       "archived": false,
       "canon": {
@@ -734,12 +1423,38 @@
       },
       "default_branch": "main",
       "description": "The open single-file AI agent registry. Browse, vote, share agent.py files. Pokemon-card-style sharing via QR codes.",
-      "file_count": 7369,
-      "head_tree_sha": "f5f17dec8bc8b10da529bc07527ff55c0529a622",
+      "file_count": 7387,
+      "head_tree_sha": "6a41da515288f8ef40b1dd58a0f83b1a3207b030",
       "private": false,
       "repo": "kody-w/RAR",
       "truncated": false,
-      "updated_at": "2026-07-25T16:51:48Z"
+      "updated_at": "2026-07-25T22:47:23Z"
+    },
+    "RAR-private": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private companion to kody-w/RAR. Sensitive single-file agents (legal, IP, operator-personal) gated to GitHub collaborators. Same agent contract; same egg_hatcher loading; access-gated via GitHub auth.",
+      "file_count": 3,
+      "head_tree_sha": "a7f5ddee7b0d53624a20dda6df326a43a9f9c7ed",
+      "private": true,
+      "repo": "kody-w/RAR-private",
+      "truncated": false,
+      "updated_at": "2026-05-12T17:49:26Z"
+    },
+    "Rapid-Agent-Prototype-Platform-RAPP": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "Rapid Agent Prototype Platform (RAPP)",
+      "file_count": 24,
+      "head_tree_sha": "307d70b97d125db352ee0661c9c2fe6c989bf708",
+      "private": true,
+      "repo": "kody-w/Rapid-Agent-Prototype-Platform-RAPP",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:50:17Z"
     },
     "RappterNest": {
       "archived": false,
@@ -765,6 +1480,20 @@
       "truncated": false,
       "updated_at": "2026-07-16T18:57:23Z"
     },
+    "RoadmapCA365": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 32,
+      "head_tree_sha": "323aaa7f904eea33ced69496e3223f941e6834f5",
+      "private": true,
+      "repo": "kody-w/RoadmapCA365",
+      "truncated": false,
+      "updated_at": "2025-10-22T21:52:26Z"
+    },
     "SMSAssistant": {
       "archived": false,
       "canon": {},
@@ -788,6 +1517,18 @@
       "repo": "kody-w/ShadowRAPP",
       "truncated": false,
       "updated_at": "2026-02-02T02:14:49Z"
+    },
+    "Storyboards": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 1,
+      "head_tree_sha": "a9c7299331f7bb4d06b08061fe5ce86b9375f94c",
+      "private": true,
+      "repo": "kody-w/Storyboards",
+      "truncated": false,
+      "updated_at": "2025-05-19T14:01:35Z"
     },
     "Swifter": {
       "archived": false,
@@ -847,6 +1588,62 @@
       "truncated": false,
       "updated_at": "2016-01-20T00:40:41Z"
     },
+    "UniversalDataConnector365": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "UniversalDataConnector365",
+      "file_count": 20,
+      "head_tree_sha": "2a82f579bf456a7c99d63ee3bcb062dfe4525c32",
+      "private": true,
+      "repo": "kody-w/UniversalDataConnector365",
+      "truncated": false,
+      "updated_at": "2025-09-17T18:55:15Z"
+    },
+    "UniversalDataConnectorAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "UniversalDataConnectorAI",
+      "file_count": 40,
+      "head_tree_sha": "f2a978b9f85b65b9815b69d99c67e51c56732251",
+      "private": true,
+      "repo": "kody-w/UniversalDataConnectorAI",
+      "truncated": false,
+      "updated_at": "2026-01-07T18:30:29Z"
+    },
+    "UniversalSyntheticDataAI": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "UniversalSyntheticDataAI",
+      "file_count": 34,
+      "head_tree_sha": "a54df00c93bbacbb63209c56dbf934d4b02fdc55",
+      "private": true,
+      "repo": "kody-w/UniversalSyntheticDataAI",
+      "truncated": false,
+      "updated_at": "2026-01-07T18:30:04Z"
+    },
+    "VIPWatcher": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 25,
+      "head_tree_sha": "7681d41a1086c2e968f5e406667a99e60de3291d",
+      "private": true,
+      "repo": "kody-w/VIPWatcher",
+      "truncated": false,
+      "updated_at": "2026-01-09T18:20:43Z"
+    },
     "VSProjects": {
       "archived": false,
       "canon": {},
@@ -859,6 +1656,20 @@
       "truncated": false,
       "updated_at": "2016-01-20T12:42:03Z"
     },
+    "VoiceToCRM": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "VoiceToCRM",
+      "file_count": 208,
+      "head_tree_sha": "b0bcb0f271256062fdd2db077a5b11162e57676c",
+      "private": true,
+      "repo": "kody-w/VoiceToCRM",
+      "truncated": false,
+      "updated_at": "2026-01-29T20:55:10Z"
+    },
     "VoidRAPP": {
       "archived": false,
       "canon": {},
@@ -870,6 +1681,26 @@
       "repo": "kody-w/VoidRAPP",
       "truncated": false,
       "updated_at": "2026-02-02T02:15:47Z"
+    },
+    "a": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "a",
+      "file_count": 17,
+      "head_tree_sha": "3836789226fb0f7a1098894a24507fa59312f2c0",
+      "private": true,
+      "repo": "kody-w/a",
+      "truncated": false,
+      "updated_at": "2025-09-21T01:44:25Z"
+    },
+    "addamos": {
+      "archived": false,
+      "default_branch": "",
+      "description": "AddamOS \u2014 Simulated OS mesh where AI has complete control. Privacy-first architecture routing confidential data through local LLM. Phase 1: Shadow Mode. Phase 2: Flip Mode.",
+      "private": true,
+      "repo": "kody-w/addamos",
+      "updated_at": "2026-03-11T16:31:24Z"
     },
     "agency-agents": {
       "archived": false,
@@ -996,6 +1827,18 @@
       "truncated": false,
       "updated_at": "2026-07-25T02:47:08Z"
     },
+    "aibast-twin": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AIBAST full digital organism \u2014 single-file RAPP egg that hatches project-local twins on top of a locally running brainstem",
+      "file_count": 7,
+      "head_tree_sha": "f3b853a89961c543427cd82a13fb0ea16c8cc453",
+      "private": true,
+      "repo": "kody-w/aibast-twin",
+      "truncated": false,
+      "updated_at": "2026-06-08T01:35:46Z"
+    },
     "aideate": {
       "archived": false,
       "canon": {},
@@ -1034,6 +1877,44 @@
       "truncated": false,
       "updated_at": "2026-07-15T21:22:14Z"
     },
+    "aplAI": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "aplAI",
+      "file_count": 2,
+      "head_tree_sha": "60df3b6330053d5d5113274324dd086e370bfffa",
+      "private": true,
+      "repo": "kody-w/aplAI",
+      "truncated": false,
+      "updated_at": "2025-08-31T19:32:25Z"
+    },
+    "attomic-ai": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Atomic AI \u2014 by Addam. Simulated OS mesh (SIMOS) where AI has complete control. Privacy-first: confidential data routes through local LLM, anonymized to cloud. Phase 1: Shadow Mode. Phase 2: Flip Mode.",
+      "file_count": 162,
+      "head_tree_sha": "e3050153cf4450700d2c711cd53bd6a6781314b7",
+      "private": true,
+      "repo": "kody-w/attomic-ai",
+      "truncated": false,
+      "updated_at": "2026-03-11T19:05:38Z"
+    },
+    "automatic-lamp": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "automatic-lamp",
+      "file_count": 517,
+      "head_tree_sha": "4ddb808f3b0872ff711db32b8bf745319bcf0955",
+      "private": true,
+      "repo": "kody-w/automatic-lamp",
+      "truncated": false,
+      "updated_at": "2026-02-27T18:05:14Z"
+    },
     "autoresearch": {
       "archived": false,
       "canon": {},
@@ -1069,6 +1950,14 @@
       "repo": "kody-w/awesome_ai_agents",
       "truncated": false,
       "updated_at": "2026-03-15T06:12:24Z"
+    },
+    "azure-chatbot-memory": {
+      "archived": false,
+      "default_branch": "",
+      "description": "azure-chatbot-memory",
+      "private": true,
+      "repo": "kody-w/azure-chatbot-memory",
+      "updated_at": "2025-08-06T19:28:09Z"
     },
     "base": {
       "archived": false,
@@ -1131,6 +2020,18 @@
       "repo": "kody-w/bookish-robot",
       "truncated": false,
       "updated_at": "2017-11-18T09:58:25Z"
+    },
+    "bots-in-blazers-twin": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Bots in Blazers \u2014 Mfg CoE project twin (private).  Identity for the team led by @billwhalenmsft; hatcher lives at kody-w/twin-egg-hatcher.",
+      "file_count": 6,
+      "head_tree_sha": "6913b93ca60078469261db4ad1f796e627bead5a",
+      "private": true,
+      "repo": "kody-w/bots-in-blazers-twin",
+      "truncated": false,
+      "updated_at": "2026-06-08T01:35:43Z"
     },
     "braintrust-template": {
       "archived": false,
@@ -1208,6 +2109,18 @@
       "truncated": false,
       "updated_at": "2025-08-14T13:36:11Z"
     },
+    "chatbot-ui": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 253,
+      "head_tree_sha": "aebb03fecd4b801d74e5584a06d2b0d169aa5401",
+      "private": true,
+      "repo": "kody-w/chatbot-ui",
+      "truncated": false,
+      "updated_at": "2023-08-18T18:56:20Z"
+    },
     "chronoBooth": {
       "archived": false,
       "canon": {},
@@ -1219,6 +2132,18 @@
       "repo": "kody-w/chronoBooth",
       "truncated": false,
       "updated_at": "2025-11-20T23:10:06Z"
+    },
+    "circular-voxel-minec": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 74,
+      "head_tree_sha": "15be86fcf40bf4a2406c4955d2b3daa794d06c99",
+      "private": true,
+      "repo": "kody-w/circular-voxel-minec",
+      "truncated": false,
+      "updated_at": "2025-09-15T16:38:23Z"
     },
     "claude-agent-sdk-intro": {
       "archived": false,
@@ -1304,6 +2229,18 @@
       "truncated": false,
       "updated_at": "2025-10-20T21:48:42Z"
     },
+    "claudePOC": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 4,
+      "head_tree_sha": "e8067cd978c5d36ff073a78d585cf1126ab988ec",
+      "private": true,
+      "repo": "kody-w/claudePOC",
+      "truncated": false,
+      "updated_at": "2025-07-11T23:57:53Z"
+    },
     "codex": {
       "archived": false,
       "canon": {},
@@ -1339,6 +2276,20 @@
       "repo": "kody-w/copilot-agent-365-docker",
       "truncated": false,
       "updated_at": "2025-12-01T23:11:33Z"
+    },
+    "copilot-agent-365-v2": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "6a5620c4e0bbf772b228ac1c2fa883cab6f7a85d"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 53,
+      "head_tree_sha": "a98b25d3b6fb657f89b5e87cbe6882c4f057ebad",
+      "private": true,
+      "repo": "kody-w/copilot-agent-365-v2",
+      "truncated": false,
+      "updated_at": "2025-12-22T23:23:23Z"
     },
     "copilot-yolo-mode": {
       "archived": false,
@@ -1384,6 +2335,18 @@
       "truncated": false,
       "updated_at": "2025-06-13T20:55:42Z"
     },
+    "demo_scripts": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 418,
+      "head_tree_sha": "959e030f4005f99446b7e68f08da27062c593271",
+      "private": true,
+      "repo": "kody-w/demo_scripts",
+      "truncated": false,
+      "updated_at": "2025-11-14T19:30:34Z"
+    },
     "digital-sculpter": {
       "archived": false,
       "canon": {},
@@ -1420,6 +2383,20 @@
       "truncated": false,
       "updated_at": "2020-07-07T01:19:57Z"
     },
+    "documents-to-copilot-studio": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 34,
+      "head_tree_sha": "09bf7d28390c40762a4231c1ed4065187b461cc3",
+      "private": true,
+      "repo": "kody-w/documents-to-copilot-studio",
+      "truncated": false,
+      "updated_at": "2026-07-15T21:52:53Z"
+    },
     "double-jump": {
       "archived": false,
       "canon": {
@@ -1433,6 +2410,18 @@
       "repo": "kody-w/double-jump",
       "truncated": false,
       "updated_at": "2026-07-11T19:30:30Z"
+    },
+    "dreamcatcher-engine-archive": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Reserved placeholder. The Dreamcatcher merge engine source is a Wildhaven trade secret in kody-w/rappter. If release-triggers in kody-w/wildhaven-ceo fire (T1/T2/T3), the engine source will be publish",
+      "file_count": 1,
+      "head_tree_sha": "2fd0b0a7b3095f690b84afbbf8d230d9267dba6e",
+      "private": true,
+      "repo": "kody-w/dreamcatcher-engine-archive",
+      "truncated": false,
+      "updated_at": "2026-05-01T02:44:07Z"
     },
     "dreamsurf": {
       "archived": false,
@@ -1470,6 +2459,30 @@
       "truncated": false,
       "updated_at": "2026-06-01T00:08:13Z"
     },
+    "enhanced-multi-user": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 84,
+      "head_tree_sha": "4e3d4b49bb366a512903b071bda3b7c469479008",
+      "private": true,
+      "repo": "kody-w/enhanced-multi-user",
+      "truncated": false,
+      "updated_at": "2025-10-01T14:27:55Z"
+    },
+    "expense-tracker": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 23,
+      "head_tree_sha": "53d6adca55658dd69cf6bf0283a83aac1713bfda",
+      "private": true,
+      "repo": "kody-w/expense-tracker",
+      "truncated": false,
+      "updated_at": "2026-04-13T14:51:49Z"
+    },
     "ez-rapp": {
       "archived": false,
       "canon": {},
@@ -1481,6 +2494,20 @@
       "repo": "kody-w/ez-rapp",
       "truncated": false,
       "updated_at": "2026-05-20T01:22:52Z"
+    },
+    "fantastic-computing-machine": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 48,
+      "head_tree_sha": "b9e1989e1c5bb0db0d9ba8ce41c1c575d652ef4a",
+      "private": true,
+      "repo": "kody-w/fantastic-computing-machine",
+      "truncated": false,
+      "updated_at": "2026-05-04T21:45:14Z"
     },
     "first-principles-to-mars": {
       "archived": false,
@@ -1507,6 +2534,18 @@
       "repo": "kody-w/game",
       "truncated": false,
       "updated_at": "2025-10-10T18:34:22Z"
+    },
+    "gastown": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Gas Town - multi-agent workspace manager",
+      "file_count": 799,
+      "head_tree_sha": "3a97308a1bd10018d5701ee1bf12ecb01c85c0cf",
+      "private": true,
+      "repo": "kody-w/gastown",
+      "truncated": false,
+      "updated_at": "2026-01-26T02:09:30Z"
     },
     "gemini-cli-tips": {
       "archived": false,
@@ -1556,6 +2595,18 @@
       "truncated": false,
       "updated_at": "2023-12-29T15:00:28Z"
     },
+    "gptea-news": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 71,
+      "head_tree_sha": "c12b666d829fc48f235ab0e146f8a0b01cf8abe5",
+      "private": true,
+      "repo": "kody-w/gptea-news",
+      "truncated": false,
+      "updated_at": "2023-08-08T20:17:53Z"
+    },
     "graphql-server": {
       "archived": false,
       "canon": {},
@@ -1567,6 +2618,30 @@
       "repo": "kody-w/graphql-server",
       "truncated": false,
       "updated_at": "2019-11-19T00:22:01Z"
+    },
+    "groq_lab": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 3,
+      "head_tree_sha": "827fc6ba9ffa8e6dfa6f1e890649950972d02b63",
+      "private": true,
+      "repo": "kody-w/groq_lab",
+      "truncated": false,
+      "updated_at": "2024-07-31T02:16:55Z"
+    },
+    "groq_llama3.2_cursor_poc": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 7,
+      "head_tree_sha": "2bfe8efa674a19e7e7dfdd5abe1b6258f6db0d75",
+      "private": true,
+      "repo": "kody-w/groq_llama3.2_cursor_poc",
+      "truncated": false,
+      "updated_at": "2024-09-26T23:55:22Z"
     },
     "hackernews": {
       "archived": false,
@@ -1630,6 +2705,14 @@
       "truncated": false,
       "updated_at": "2019-11-17T16:03:11Z"
     },
+    "household-neighborhood": {
+      "archived": false,
+      "default_branch": "",
+      "description": "Private household neighborhood \u2014 kody-w + rappter2-ux. Append-only signed events. (Legacy v2 identity retired; repo re-anchors on first genesis.)",
+      "private": true,
+      "repo": "kody-w/household-neighborhood",
+      "updated_at": "2026-07-16T18:49:58Z"
+    },
     "iOS9": {
       "archived": false,
       "canon": {},
@@ -1642,6 +2725,18 @@
       "truncated": false,
       "updated_at": "2015-12-30T23:46:49Z"
     },
+    "invention-notebook": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Wildhaven AI Homes LLC \u2014 Invention notebook. Timestamped ideas, architectures, and IP. Never public.",
+      "file_count": 9,
+      "head_tree_sha": "7ae436ed75dbcb7ad7b1c6efe4985038c2376618",
+      "private": true,
+      "repo": "kody-w/invention-notebook",
+      "truncated": false,
+      "updated_at": "2026-05-01T01:51:29Z"
+    },
     "inventwithpython": {
       "archived": false,
       "default_branch": "",
@@ -1649,6 +2744,18 @@
       "private": false,
       "repo": "kody-w/inventwithpython",
       "updated_at": "2015-12-30T23:49:49Z"
+    },
+    "irappter-ai": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Managed iMessage-first AI project desk for design-build firms",
+      "file_count": 122,
+      "head_tree_sha": "69fa339082f3e2824b6e2e34e1ffa0e131f12e36",
+      "private": true,
+      "repo": "kody-w/irappter-ai",
+      "truncated": false,
+      "updated_at": "2026-07-16T20:21:42Z"
     },
     "jokesmcp": {
       "archived": false,
@@ -1687,6 +2794,18 @@
       "repo": "kody-w/kody-twin",
       "truncated": false,
       "updated_at": "2026-07-16T18:56:14Z"
+    },
+    "kody-w-private-rar": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 19,
+      "head_tree_sha": "fcbfb058bac464d9ffe1d3828c210230ba5bdf46",
+      "private": true,
+      "repo": "kody-w/kody-w-private-rar",
+      "truncated": false,
+      "updated_at": "2026-06-04T21:45:01Z"
     },
     "kody-w-twin": {
       "archived": false,
@@ -1772,6 +2891,18 @@
       "truncated": false,
       "updated_at": "2015-03-05T02:05:55Z"
     },
+    "localFirstDesktop": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 841,
+      "head_tree_sha": "cda6d8fbe856f47594ebcad1a4ce1fd9bd1b6feb",
+      "private": true,
+      "repo": "kody-w/localFirstDesktop",
+      "truncated": false,
+      "updated_at": "2025-11-24T01:38:57Z"
+    },
     "localFirstTools": {
       "archived": false,
       "canon": {
@@ -1792,11 +2923,23 @@
       "default_branch": "main",
       "description": "Local-first HTML tools gallery - 450+ self-contained applications",
       "file_count": 1068,
-      "head_tree_sha": "b0f4caf6b3df4e571d206cd68ef1cfab694b78cb",
+      "head_tree_sha": "5980626d62ed5bfb9662dd8906fb63364bef9825",
       "private": false,
       "repo": "kody-w/localFirstTools-main",
       "truncated": false,
-      "updated_at": "2026-07-25T17:33:07Z"
+      "updated_at": "2026-07-25T20:15:34Z"
+    },
+    "localToolsPrivate": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "localToolsPrivate",
+      "file_count": 3,
+      "head_tree_sha": "4eae975e94f0fe56fba1b55d02768871e61b908f",
+      "private": true,
+      "repo": "kody-w/localToolsPrivate",
+      "truncated": false,
+      "updated_at": "2025-02-19T17:12:24Z"
     },
     "localtoolsdev": {
       "archived": false,
@@ -1918,11 +3061,11 @@
       "default_branch": "main",
       "description": "\ud83d\udd17 MARS Chain Node \u2014 Decentralized verification for the MARS virtual token economy. Fork to run your own node.",
       "file_count": 13,
-      "head_tree_sha": "0d6c24732213049d0938171902993cdc09333565",
+      "head_tree_sha": "8adc7ad21c787c3c0f38eafb1e1442100356126a",
       "private": false,
       "repo": "kody-w/mars-chain-node",
       "truncated": false,
-      "updated_at": "2026-07-25T13:26:38Z"
+      "updated_at": "2026-07-25T19:06:59Z"
     },
     "mcpreg": {
       "archived": false,
@@ -1963,6 +3106,32 @@
       "repo": "kody-w/microsoft-se-team-neighborhood",
       "truncated": false,
       "updated_at": "2026-07-15T23:08:26Z"
+    },
+    "microsoft-se-team-neighborhood-private": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Microsoft SE Team \u2014 private companion. Auth-gated to GitHub collaborators.",
+      "file_count": 35,
+      "head_tree_sha": "acbd43957f2b721434f3b156d63bbf43af62cb19",
+      "private": true,
+      "repo": "kody-w/microsoft-se-team-neighborhood-private",
+      "truncated": false,
+      "updated_at": "2026-05-09T18:44:42Z"
+    },
+    "moonlighting-workflow": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 4,
+      "head_tree_sha": "a092d5effeb8b89e0d2a6ea7f699273d912c6a42",
+      "private": true,
+      "repo": "kody-w/moonlighting-workflow",
+      "truncated": false,
+      "updated_at": "2026-06-22T15:12:17Z"
     },
     "my-first-static-web-app": {
       "archived": false,
@@ -2014,6 +3183,56 @@
       "truncated": false,
       "updated_at": "2024-12-01T15:49:19Z"
     },
+    "newTest": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 32,
+      "head_tree_sha": "706f148c62ee9cedcdbcbe865d02f0d4043a2851",
+      "private": true,
+      "repo": "kody-w/newTest",
+      "truncated": false,
+      "updated_at": "2025-10-26T21:07:11Z"
+    },
+    "nextjs-chat": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 83,
+      "head_tree_sha": "7e90a72d290e8672bae468165170c309924ccccc",
+      "private": true,
+      "repo": "kody-w/nextjs-chat",
+      "truncated": false,
+      "updated_at": "2023-06-21T01:36:29Z"
+    },
+    "nexus": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The Third Space - A federated metaverse where AIs and humans collaborate across infinite linked worlds",
+      "file_count": 513,
+      "head_tree_sha": "95bb0a84cc9dc6f3aff5478eec3e2c797ea74483",
+      "private": true,
+      "repo": "kody-w/nexus",
+      "truncated": false,
+      "updated_at": "2026-01-26T00:11:59Z"
+    },
+    "nexus-engine": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Modular 3D metaverse engine with multi-provider AI companions",
+      "file_count": 491,
+      "head_tree_sha": "c4f0bf1e928fba924172eadea7240c903c008e7a",
+      "private": true,
+      "repo": "kody-w/nexus-engine",
+      "truncated": false,
+      "updated_at": "2026-01-25T23:12:59Z"
+    },
     "nexus-function-agents": {
       "archived": false,
       "canon": {
@@ -2052,17 +3271,55 @@
       "truncated": false,
       "updated_at": "2026-04-18T16:28:38Z"
     },
+    "obsidian-vault-backup": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Wildhaven \u2014 Obsidian vault backup. Private.",
+      "file_count": 2902,
+      "head_tree_sha": "b7589390cf524f5bdb8c7ea913d6503e4fdd47d0",
+      "private": true,
+      "repo": "kody-w/obsidian-vault-backup",
+      "truncated": false,
+      "updated_at": "2026-03-26T13:34:38Z"
+    },
+    "openrapp": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "openRAPP - Create AI Agents from Conversations. Agent-first platform.",
+      "file_count": 10115,
+      "head_tree_sha": "dcbbcde6f1f2912f4b5ba6c22e804c16cdb69033",
+      "private": true,
+      "repo": "kody-w/openrapp",
+      "truncated": false,
+      "updated_at": "2026-02-06T18:14:18Z"
+    },
+    "openrapp-desktop": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "1058ef0a96a217322a5446a4fcaae90b19940536"
+      },
+      "default_branch": "main",
+      "description": "Local-first desktop client for the sacred RAPP brainstem. Clawpilot-style UX over kody-w/RAPP.",
+      "file_count": 110,
+      "head_tree_sha": "22083d8ac1acff1aca5ba5140a56fca47f7f2d34",
+      "private": true,
+      "repo": "kody-w/openrapp-desktop",
+      "truncated": false,
+      "updated_at": "2026-06-03T21:50:21Z"
+    },
     "openrappter": {
       "archived": false,
       "canon": {},
       "default_branch": "main",
       "description": "\ud83e\udd96 Local-first AI agent powered by GitHub Copilot SDK \u2014 no API keys required",
-      "file_count": 884,
-      "head_tree_sha": "464a3dcc6d9b931cb5b1c92e4aaf5860ae4d2627",
+      "file_count": 888,
+      "head_tree_sha": "f05a50d1c08de8e67f2aba8d907c297b1f92908f",
       "private": false,
       "repo": "kody-w/openrappter",
       "truncated": false,
-      "updated_at": "2026-07-22T00:06:37Z"
+      "updated_at": "2026-07-26T00:19:28Z"
     },
     "openrappter-alpha": {
       "archived": false,
@@ -2218,6 +3475,18 @@
       "truncated": false,
       "updated_at": "2020-02-02T17:20:43Z"
     },
+    "private-blog-drafts": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 2,
+      "head_tree_sha": "213c48123b2c914a19ec30dfb6ed793beb355df6",
+      "private": true,
+      "repo": "kody-w/private-blog-drafts",
+      "truncated": false,
+      "updated_at": "2026-03-07T01:01:12Z"
+    },
     "private-workspace-template": {
       "archived": false,
       "canon": {
@@ -2332,6 +3601,20 @@
       "truncated": false,
       "updated_at": "2026-07-25T02:12:51Z"
     },
+    "rapp-agents-private": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Private RAPP agent stack \u2014 companion to kody-w/rapp-agents. Personal/work agents.",
+      "file_count": 10,
+      "head_tree_sha": "31b81884d57ab339fc4c41d3fe6fa7a3b5f7c36b",
+      "private": true,
+      "repo": "kody-w/rapp-agents-private",
+      "truncated": false,
+      "updated_at": "2026-05-22T20:51:06Z"
+    },
     "rapp-alpha": {
       "archived": false,
       "canon": {
@@ -2345,6 +3628,18 @@
       "repo": "kody-w/rapp-alpha",
       "truncated": false,
       "updated_at": "2026-07-18T19:55:25Z"
+    },
+    "rapp-art-of-brainstemming": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP and the Art of Brainstemming \u2014 a free beginner's guide to owning your own local AI brainstem (giveaway ebook).",
+      "file_count": 40,
+      "head_tree_sha": "2e1016f1b488a9fcd957fcb1efeaba2531546b20",
+      "private": true,
+      "repo": "kody-w/rapp-art-of-brainstemming",
+      "truncated": false,
+      "updated_at": "2026-06-27T14:12:53Z"
     },
     "rapp-bake-off": {
       "archived": false,
@@ -2393,6 +3688,20 @@
       "repo": "kody-w/rapp-basket",
       "truncated": false,
       "updated_at": "2026-07-04T14:51:41Z"
+    },
+    "rapp-batcave": {
+      "archived": false,
+      "canon": {
+        "specs/SPEC.md": "055e3a5ff6f74da8938eb97de535d924fd312dd3"
+      },
+      "default_branch": "main",
+      "description": "The Batcave \u2014 private cubby neighborhood. Each member's cubby houses their full rapp estate; stream agents into a local brainstem with zero grail-repo commit risk.",
+      "file_count": 594,
+      "head_tree_sha": "7bf28e67cc1b506e5204f63a6b65045ecd918cee",
+      "private": true,
+      "repo": "kody-w/rapp-batcave",
+      "truncated": false,
+      "updated_at": "2026-07-25T17:25:57Z"
     },
     "rapp-bench": {
       "archived": false,
@@ -2558,6 +3867,18 @@
       "truncated": false,
       "updated_at": "2026-07-16T19:51:21Z"
     },
+    "rapp-coop": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "AI schooling: experienced agents train newly hatched ones, then examine them cold to graduate them. The coop is the local RAPP neighborhood - several twins (human and AI), one world, no collisions. Pa",
+      "file_count": 19,
+      "head_tree_sha": "299a7da13b553fa9e3385f9aecab79963a3da721",
+      "private": false,
+      "repo": "kody-w/rapp-coop",
+      "truncated": false,
+      "updated_at": "2026-07-25T19:37:05Z"
+    },
     "rapp-cortex": {
       "archived": false,
       "canon": {},
@@ -2623,12 +3944,12 @@
       "canon": {},
       "default_branch": "main",
       "description": "RAPP Docs \u2014 documentation for the RAPP platform.",
-      "file_count": 3,
-      "head_tree_sha": "1c8737be3cb53dc312aa999297e4e633d4a7e947",
+      "file_count": 9,
+      "head_tree_sha": "0cd0b0a136997991d18dbd267432d47b5677f664",
       "private": false,
       "repo": "kody-w/rapp-docs",
       "truncated": false,
-      "updated_at": "2026-07-18T21:55:52Z"
+      "updated_at": "2026-07-26T00:19:29Z"
     },
     "rapp-doorman": {
       "archived": false,
@@ -2699,6 +4020,18 @@
       "repo": "kody-w/rapp-estate",
       "truncated": false,
       "updated_at": "2026-07-17T22:47:10Z"
+    },
+    "rapp-estate-private": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "kody-w's RAPP private estate (Article XLVIII)",
+      "file_count": 4,
+      "head_tree_sha": "13d53a9a9283694ff0152c6e58ce6e2dd49b3803",
+      "private": true,
+      "repo": "kody-w/rapp-estate-private",
+      "truncated": false,
+      "updated_at": "2026-05-10T01:23:06Z"
     },
     "rapp-eternity": {
       "archived": false,
@@ -2875,6 +4208,30 @@
       "truncated": false,
       "updated_at": "2026-07-16T18:56:47Z"
     },
+    "rapp-ip": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 6,
+      "head_tree_sha": "dc2e94ff34ab4329eb212c284086a0ac028a27b6",
+      "private": true,
+      "repo": "kody-w/rapp-ip",
+      "truncated": false,
+      "updated_at": "2026-07-18T21:53:37Z"
+    },
+    "rapp-keyring": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "On-device credential broker for AI agents \u2014 the agent uses a secret without ever seeing it. Zero network, stdlib only, tamper-evident audit.",
+      "file_count": 16,
+      "head_tree_sha": "89386724e9bf8b365ce3bd2847fbcc06365953d5",
+      "private": false,
+      "repo": "kody-w/rapp-keyring",
+      "truncated": false,
+      "updated_at": "2026-07-26T00:21:15Z"
+    },
     "rapp-kite": {
       "archived": false,
       "canon": {},
@@ -2928,12 +4285,12 @@
       "canon": {},
       "default_branch": "main",
       "description": "A strain of the RAPP brainstem: locked-down, auditable, enterprise-compliant \u2014 without forking the kernel.",
-      "file_count": 15,
-      "head_tree_sha": "193a37241538bf48c9356defb7eb4ad72588793d",
+      "file_count": 22,
+      "head_tree_sha": "41c044052fc8a38c63829759ef303521f43a85a2",
       "private": false,
       "repo": "kody-w/rapp-light",
       "truncated": false,
-      "updated_at": "2026-07-25T13:22:17Z"
+      "updated_at": "2026-07-26T00:21:09Z"
     },
     "rapp-map": {
       "archived": false,
@@ -2943,11 +4300,11 @@
       "default_branch": "main",
       "description": "Map of the RAPP ecosystem \u2014 which repo houses which part of the spec (canonical homes for the kited neighborhood, runtime, registry, agents, platform, social).",
       "file_count": 43,
-      "head_tree_sha": "b198eb61d516376f5a3615a1a0191dacd077faa3",
+      "head_tree_sha": "e3c00c92547f91a67a707ce831aefc462db4f650",
       "private": false,
       "repo": "kody-w/rapp-map",
       "truncated": false,
-      "updated_at": "2026-07-25T17:35:46Z"
+      "updated_at": "2026-07-25T17:37:57Z"
     },
     "rapp-mcp": {
       "archived": false,
@@ -2984,6 +4341,20 @@
       "repo": "kody-w/rapp-messaging",
       "truncated": false,
       "updated_at": "2026-07-11T17:24:42Z"
+    },
+    "rapp-midden": {
+      "archived": false,
+      "canon": {
+        "specs/SPEC.md": "055e3a5ff6f74da8938eb97de535d924fd312dd3"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 69,
+      "head_tree_sha": "020d4638e1cf550211167bb80008ee357f6d3d47",
+      "private": true,
+      "repo": "kody-w/rapp-midden",
+      "truncated": false,
+      "updated_at": "2026-07-16T03:46:08Z"
     },
     "rapp-moment": {
       "archived": false,
@@ -3073,6 +4444,22 @@
       "truncated": false,
       "updated_at": "2026-07-16T02:41:11Z"
     },
+    "rapp-plant-test-1778271970": {
+      "archived": true,
+      "default_branch": "main",
+      "description": "Planted via plant_discord_neighborhood \u2014 RAPP plant test (workspace)",
+      "private": true,
+      "repo": "kody-w/rapp-plant-test-1778271970",
+      "updated_at": "2026-05-08T20:26:55Z"
+    },
+    "rapp-plant-test-1778272024": {
+      "archived": true,
+      "default_branch": "main",
+      "description": "Planted via plant_discord_neighborhood \u2014 RAPP plant test (workspace)",
+      "private": true,
+      "repo": "kody-w/rapp-plant-test-1778272024",
+      "updated_at": "2026-05-08T20:27:17Z"
+    },
     "rapp-platform": {
       "archived": false,
       "canon": {},
@@ -3109,6 +4496,18 @@
       "truncated": false,
       "updated_at": "2026-07-07T23:37:45Z"
     },
+    "rapp-private-backup": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private backup of RAPP (Rapid Agent Prototype Platform)",
+      "file_count": 264,
+      "head_tree_sha": "80ac323e00112c668b82f9390f4f59dadcadcddd",
+      "private": true,
+      "repo": "kody-w/rapp-private-backup",
+      "truncated": false,
+      "updated_at": "2026-07-16T18:49:25Z"
+    },
     "rapp-quests": {
       "archived": false,
       "canon": {},
@@ -3144,6 +4543,18 @@
       "repo": "kody-w/rapp-resident",
       "truncated": false,
       "updated_at": "2026-05-27T17:56:15Z"
+    },
+    "rapp-rewind": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP Rewind \u2014 a local, searchable memory of everything on your screen. Vision OCR + SQLite FTS5, entirely on-device. Nothing is uploaded.",
+      "file_count": 8,
+      "head_tree_sha": "6f5332fccb20cd19eda2990e8c0205dfb9a854ce",
+      "private": false,
+      "repo": "kody-w/rapp-rewind",
+      "truncated": false,
+      "updated_at": "2026-07-26T01:21:43Z"
     },
     "rapp-rings": {
       "archived": false,
@@ -3205,6 +4616,32 @@
       "truncated": false,
       "updated_at": "2026-07-18T23:21:50Z"
     },
+    "rapp-second-brain-private": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "The RAPP ecosystem second brain \u2014 PRIVATE hemisphere. Never make public.",
+      "file_count": 11,
+      "head_tree_sha": "ca08f4d76807a32f643b333775d3954d6f68f327",
+      "private": true,
+      "repo": "kody-w/rapp-second-brain-private",
+      "truncated": false,
+      "updated_at": "2026-07-18T22:43:21Z"
+    },
+    "rapp-shadow-batcave": {
+      "archived": false,
+      "canon": {
+        "specs/SPEC.md": "055e3a5ff6f74da8938eb97de535d924fd312dd3"
+      },
+      "default_branch": "main",
+      "description": "Founder-only private vault (shadow batcave)",
+      "file_count": 79,
+      "head_tree_sha": "a37c1eed78cc728464aaab735cf591c2589903e2",
+      "private": true,
+      "repo": "kody-w/rapp-shadow-batcave",
+      "truncated": false,
+      "updated_at": "2026-06-12T00:08:12Z"
+    },
     "rapp-shape-aibast": {
       "archived": false,
       "canon": {
@@ -3243,6 +4680,18 @@
       "repo": "kody-w/rapp-snap",
       "truncated": false,
       "updated_at": "2026-07-04T14:34:47Z"
+    },
+    "rapp-soulforge": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private soul.md variants for the RAPP Brainstem \u2014 same kernel, different rooms",
+      "file_count": 5,
+      "head_tree_sha": "b3ce7409725de8605ad6449d2fad00b24c8c1702",
+      "private": true,
+      "repo": "kody-w/rapp-soulforge",
+      "truncated": false,
+      "updated_at": "2026-07-07T22:47:42Z"
     },
     "rapp-spinal-cord": {
       "archived": false,
@@ -3356,6 +4805,18 @@
       "truncated": false,
       "updated_at": "2026-07-25T04:50:15Z"
     },
+    "rapp-tower": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Mission control for the RAPP ecosystem \u2014 sessions land here; the tower commands the railroad, never on the tracks",
+      "file_count": 50,
+      "head_tree_sha": "4c595305c494e69192349a678dd30297f25d1a57",
+      "private": true,
+      "repo": "kody-w/rapp-tower",
+      "truncated": false,
+      "updated_at": "2026-07-25T13:30:34Z"
+    },
     "rapp-trademarks": {
       "archived": false,
       "canon": {},
@@ -3415,6 +4876,30 @@
       "repo": "kody-w/rapp-ultracode",
       "truncated": false,
       "updated_at": "2026-07-22T03:39:38Z"
+    },
+    "rapp-v2": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "RAPP v2 - Rapid AI Agent Production Pipeline",
+      "file_count": 248,
+      "head_tree_sha": "b0f3e4549cae77433b13e5eb76daa63855340197",
+      "private": true,
+      "repo": "kody-w/rapp-v2",
+      "truncated": false,
+      "updated_at": "2026-01-26T14:23:59Z"
+    },
+    "rapp-vault": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private continuous backup of brainstem user state (agents, soul, memories) \u2014 wipe-proof vault",
+      "file_count": 7,
+      "head_tree_sha": "16fef073b11d6bcde2f486069eff8a466f597df4",
+      "private": true,
+      "repo": "kody-w/rapp-vault",
+      "truncated": false,
+      "updated_at": "2026-07-07T23:43:37Z"
     },
     "rapp-version-selector": {
       "archived": false,
@@ -3500,6 +4985,34 @@
       "truncated": false,
       "updated_at": "2026-07-16T04:12:00Z"
     },
+    "rapp2mcs": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "c52888c4a87df7ff0e6c23cf5463ee5fc140e894",
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9",
+        "specs/SPEC.md": "c31ec0eb21b4912fad9679be0034455b6fd33969"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 460,
+      "head_tree_sha": "804b39cf3abbd5183bd5038991021bbdae805ebc",
+      "private": true,
+      "repo": "kody-w/rapp2mcs",
+      "truncated": false,
+      "updated_at": "2026-07-16T04:02:34Z"
+    },
+    "rappLocalFirstFleet": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Local-first fleet workspace \u2014 talk to the global RAPP brainstem at :7071 without contaminating AIBAST-RAPP.",
+      "file_count": 23,
+      "head_tree_sha": "73d6f3c4c08cb09e2c4f4d9c4adf14a723f25a0a",
+      "private": true,
+      "repo": "kody-w/rappLocalFirstFleet",
+      "truncated": false,
+      "updated_at": "2026-06-03T21:43:20Z"
+    },
     "rapp_docs": {
       "archived": false,
       "canon": {},
@@ -3538,6 +5051,44 @@
       "truncated": false,
       "updated_at": "2026-01-31T23:01:54Z"
     },
+    "rapphub": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Distribution hub for portable AI worlds. Pull. Run. Explore.",
+      "file_count": 248,
+      "head_tree_sha": "6798592d4b022f940fa2e0a0b0cb00327126600b",
+      "private": true,
+      "repo": "kody-w/rapphub",
+      "truncated": false,
+      "updated_at": "2026-02-06T18:15:49Z"
+    },
+    "rappter": {
+      "archived": false,
+      "canon": {
+        "CONSTITUTION.md": "eada0feec9958541939ec51c19bf3b2f0c076ee7"
+      },
+      "default_branch": "main",
+      "description": "Swarm intelligence engine \u2014 proprietary IP of Wildhaven AI Homes LLC. Drives the Rappterbook platform.",
+      "file_count": 325,
+      "head_tree_sha": "c9388004aa0c08a2ee7cdae111cf5ab65b0a8fe7",
+      "private": true,
+      "repo": "kody-w/rappter",
+      "truncated": false,
+      "updated_at": "2026-04-28T01:23:19Z"
+    },
+    "rappter-brainstem": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private shadow-batcave housing for the rappter brainstem. Holds the Quicksilver build \u2014 ghost (ancestor) agents + the AskGhostAgents second-chance router. Never part of the public grail.",
+      "file_count": 24,
+      "head_tree_sha": "a329ab58630d64947acfcc184fe906acadbed67d",
+      "private": true,
+      "repo": "kody-w/rappter-brainstem",
+      "truncated": false,
+      "updated_at": "2026-06-23T19:33:27Z"
+    },
     "rappter-cli": {
       "archived": false,
       "canon": {},
@@ -3573,6 +5124,18 @@
       "repo": "kody-w/rappter-factory",
       "truncated": false,
       "updated_at": "2026-03-16T22:49:47Z"
+    },
+    "rappter-fleet": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Rappter Fleet Engine SDK \u2014 private config, LLM backend order, Dream Catcher pattern. Authenticated access only.",
+      "file_count": 4,
+      "head_tree_sha": "fe21a6517fe54cc04a0eb30c8951b2bc1d70fc37",
+      "private": true,
+      "repo": "kody-w/rappter-fleet",
+      "truncated": false,
+      "updated_at": "2026-04-06T01:20:07Z"
     },
     "rappter-mmo": {
       "archived": false,
@@ -3630,11 +5193,11 @@
       "default_branch": "main",
       "description": "Social network for AI agents. Feed SKILLS.md to your AI \u2014 it becomes a citizen. No servers, no API keys. GitHub IS the platform.",
       "file_count": 7201,
-      "head_tree_sha": "955e906f80bef3c3bb131de3a8b12472fae2b001",
+      "head_tree_sha": "627beeda590441556f14246a3c901970d0a62d2e",
       "private": false,
       "repo": "kody-w/rappterbook",
       "truncated": false,
-      "updated_at": "2026-07-25T17:08:10Z"
+      "updated_at": "2026-07-26T00:25:37Z"
     },
     "rappterbook-agent": {
       "archived": false,
@@ -3666,11 +5229,11 @@
       "default_branch": "main",
       "description": "Agent Stock Exchange \u2014 AI agents as tradeable assets on Rappterbook",
       "file_count": 479,
-      "head_tree_sha": "152e2a9f1ac9fa11708203065ad8486496f6a9de",
+      "head_tree_sha": "9d9255a40e4abdf058309196dc92e0326257ba71",
       "private": false,
       "repo": "kody-w/rappterbook-agent-exchange",
       "truncated": false,
-      "updated_at": "2026-07-25T16:55:21Z"
+      "updated_at": "2026-07-25T22:54:24Z"
     },
     "rappterbook-api": {
       "archived": false,
@@ -3804,6 +5367,18 @@
       "truncated": false,
       "updated_at": "2026-03-15T22:21:30Z"
     },
+    "rappterbook-rappterbook-2": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Build Rappterbook 2.0 \u2014 a complete reimagining of the social network for AI agents. Not a copy of v1 \u2014 a ground-up rebuild that reads the current platform state (agents, discussions, trending, channel",
+      "file_count": 4,
+      "head_tree_sha": "dd162a107e594c75c9e68bd0e01118faa23359f5",
+      "private": true,
+      "repo": "kody-w/rappterbook-rappterbook-2",
+      "truncated": false,
+      "updated_at": "2026-03-19T01:33:42Z"
+    },
     "rappterbook-seedmaker": {
       "archived": false,
       "canon": {},
@@ -3918,6 +5493,42 @@
       "truncated": false,
       "updated_at": "2026-07-13T05:48:47Z"
     },
+    "rappterverse-data-review": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private generation, review, checkpoint, and publication control plane for RAPPterverse data",
+      "file_count": 137,
+      "head_tree_sha": "c5a166a06254663781298f6b69a527aa537af24e",
+      "private": true,
+      "repo": "kody-w/rappterverse-data-review",
+      "truncated": false,
+      "updated_at": "2026-07-13T10:47:44Z"
+    },
+    "rappverse": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "A decentralized metaverse for AI agents and their owners, built on P2P technology",
+      "file_count": 6,
+      "head_tree_sha": "1ee09cdd2ef507520c8bdc9f96b2b4b3cbe10257",
+      "private": true,
+      "repo": "kody-w/rappverse",
+      "truncated": false,
+      "updated_at": "2026-02-06T18:16:30Z"
+    },
+    "rappverse-data": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private data store for RAPPverse metaverse - requires authentication",
+      "file_count": 34,
+      "head_tree_sha": "f998386372cd4e05ae26aaf27b3dd5c71d307a57",
+      "private": true,
+      "repo": "kody-w/rappverse-data",
+      "truncated": false,
+      "updated_at": "2026-03-20T12:39:04Z"
+    },
     "raw_wasm": {
       "archived": false,
       "canon": {},
@@ -4025,6 +5636,18 @@
       "repo": "kody-w/rustHelloWorld",
       "truncated": false,
       "updated_at": "2019-11-17T15:56:38Z"
+    },
+    "s": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "s",
+      "file_count": 1,
+      "head_tree_sha": "18c112570ec4989bad5a9687ea4292726e800b53",
+      "private": true,
+      "repo": "kody-w/s",
+      "truncated": false,
+      "updated_at": "2025-09-21T01:46:11Z"
     },
     "saras_ai_robot_v2": {
       "archived": false,
@@ -4410,6 +6033,18 @@
       "truncated": false,
       "updated_at": "2023-04-14T21:33:51Z"
     },
+    "teamAILibraryEcho": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 2,
+      "head_tree_sha": "db90bc030d728db1aa5c6754482e6c0f156bfef0",
+      "private": true,
+      "repo": "kody-w/teamAILibraryEcho",
+      "truncated": false,
+      "updated_at": "2025-05-20T13:05:58Z"
+    },
     "teams-agent-cli-poc": {
       "archived": false,
       "canon": {},
@@ -4447,6 +6082,32 @@
       "repo": "kody-w/tesasdfdsa",
       "truncated": false,
       "updated_at": "2025-11-09T17:17:05Z"
+    },
+    "test": {
+      "archived": false,
+      "canon": {
+        "agents/basic_agent.py": "53b56116b19964dd221dd1656d802bcc6b772962"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 35,
+      "head_tree_sha": "497d7f83120b1d5025e049b57c2fe78e5a35bfd4",
+      "private": true,
+      "repo": "kody-w/test",
+      "truncated": false,
+      "updated_at": "2025-11-09T22:24:07Z"
+    },
+    "testAgent": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 12,
+      "head_tree_sha": "ecf89a79473570a6a730dcc1a5e38e7f6ef2dd97",
+      "private": true,
+      "repo": "kody-w/testAgent",
+      "truncated": false,
+      "updated_at": "2025-06-04T15:25:02Z"
     },
     "text-adventure": {
       "archived": false,
@@ -4508,6 +6169,30 @@
       "truncated": false,
       "updated_at": "2016-09-28T20:22:04Z"
     },
+    "tmr-coro-sources": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Synthetic source documents for the TMR Correspondence Copilot demo (cited by drafted replies)",
+      "file_count": 14,
+      "head_tree_sha": "947594dd0edd435b91a492e2b1367acbbf19858a",
+      "private": true,
+      "repo": "kody-w/tmr-coro-sources",
+      "truncated": false,
+      "updated_at": "2026-07-11T01:44:06Z"
+    },
+    "totalRecall": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 119,
+      "head_tree_sha": "6e7d7e491bbcde0596e56520ae9863180f16f47d",
+      "private": true,
+      "repo": "kody-w/totalRecall",
+      "truncated": false,
+      "updated_at": "2026-01-14T00:47:15Z"
+    },
     "twin": {
       "archived": false,
       "canon": {
@@ -4546,6 +6231,32 @@
       "truncated": false,
       "updated_at": "2026-07-16T03:20:58Z"
     },
+    "twin-private": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "Kody Wildfeuer \u2014 private brain \u2014 RAPP front door",
+      "file_count": 29,
+      "head_tree_sha": "abfe9cd00a0b143338c5c91f63c1f3eb80b0fac6",
+      "private": true,
+      "repo": "kody-w/twin-private",
+      "truncated": false,
+      "updated_at": "2026-07-15T21:22:30Z"
+    },
+    "twin_vault": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Cloud backup for digital twin .egg cartridges (private vault for portable RAPP twins)",
+      "file_count": 5,
+      "head_tree_sha": "15759919d95fee69fa7cdf3f6d8120d54d4b1382",
+      "private": true,
+      "repo": "kody-w/twin_vault",
+      "truncated": false,
+      "updated_at": "2026-05-01T00:53:26Z"
+    },
     "twitter-cashtag-heatmap": {
       "archived": false,
       "canon": {},
@@ -4558,6 +6269,20 @@
       "truncated": false,
       "updated_at": "2016-02-26T21:18:57Z"
     },
+    "ubiquitous-train": {
+      "archived": false,
+      "canon": {
+        "rapp_brainstem/agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
+      },
+      "default_branch": "main",
+      "description": "",
+      "file_count": 48,
+      "head_tree_sha": "f45aec3b021dbf63301d07a96eb4a4713139b4b0",
+      "private": true,
+      "repo": "kody-w/ubiquitous-train",
+      "truncated": false,
+      "updated_at": "2026-05-05T00:24:58Z"
+    },
     "ultra-turmeric": {
       "archived": false,
       "canon": {},
@@ -4569,6 +6294,22 @@
       "repo": "kody-w/ultra-turmeric",
       "truncated": false,
       "updated_at": "2019-11-01T23:36:11Z"
+    },
+    "updated-story-generator-main": {
+      "archived": false,
+      "default_branch": "",
+      "description": "",
+      "private": true,
+      "repo": "kody-w/updated-story-generator-main",
+      "updated_at": "2023-06-19T18:15:40Z"
+    },
+    "updated-story-generator-main-2": {
+      "archived": false,
+      "default_branch": "",
+      "description": "",
+      "private": true,
+      "repo": "kody-w/updated-story-generator-main-2",
+      "updated_at": "2023-07-08T01:59:02Z"
     },
     "v86": {
       "archived": false,
@@ -4595,6 +6336,18 @@
       "repo": "kody-w/vbrainstem",
       "truncated": false,
       "updated_at": "2026-07-23T15:37:16Z"
+    },
+    "videoAI": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "",
+      "file_count": 675,
+      "head_tree_sha": "06c601b5f781358bc0f3f85d2fb1e554ffbf087a",
+      "private": true,
+      "repo": "kody-w/videoAI",
+      "truncated": false,
+      "updated_at": "2025-10-21T14:43:24Z"
     },
     "vneighborhood-design-studio": {
       "archived": false,
@@ -4634,6 +6387,42 @@
       "truncated": false,
       "updated_at": "2026-07-16T03:43:13Z"
     },
+    "wildhaven-ai-homes-twin-private": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Private companion to kody-w/wildhaven-ai-homes-twin. Operational shadow \u2014 pipeline, financial model, hiring, partnerships, legal drafts, research. Never served via HTTP.",
+      "file_count": 9,
+      "head_tree_sha": "cab859f84c2591bfb8838e7a88ebe8efa102d8fd",
+      "private": true,
+      "repo": "kody-w/wildhaven-ai-homes-twin-private",
+      "truncated": false,
+      "updated_at": "2026-05-01T21:36:17Z"
+    },
+    "wildhaven-ceo": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "Wildhaven Homes LLC \u2014 CEO workspace. Molly's command center for the entire company.",
+      "file_count": 698,
+      "head_tree_sha": "7a93fa9785ebb9aa8fde6e7eaeecf97846128cc6",
+      "private": true,
+      "repo": "kody-w/wildhaven-ceo",
+      "truncated": false,
+      "updated_at": "2026-07-26T01:18:09Z"
+    },
+    "wowmon": {
+      "archived": false,
+      "canon": {},
+      "default_branch": "main",
+      "description": "wowmon",
+      "file_count": 47,
+      "head_tree_sha": "d23649f544576e32e115d51c2700751c3c6dedae",
+      "private": true,
+      "repo": "kody-w/wowmon",
+      "truncated": false,
+      "updated_at": "2025-07-27T01:57:06Z"
+    },
     "zion": {
       "archived": false,
       "canon": {
@@ -4649,5 +6438,9 @@
       "updated_at": "2026-03-20T12:53:01Z"
     }
   },
-  "schema": "rapp-estate-observation/1.0"
+  "schema": "rapp-estate-observation/1.0",
+  "visibility": {
+    "private_visible": 142,
+    "token_sees_private": true
+  }
 }

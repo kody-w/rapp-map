@@ -16,9 +16,28 @@ jobs:
 
       # The mechanical layer. No repo has to opt in, which is the whole point:
       # the map that died was the one that required someone to go and look.
+      # SPINE_TOKEN is a PAT with `repo` scope. Without it, Actions' default
+      # GITHUB_TOKEN cannot see other repositories' private repos, and the run
+      # produces a perfectly valid map missing every private member. That
+      # happened on the first scheduled run: 522 -> 377, green, silent.
       - name: observe the estate
-        env: {GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
+        env: {GH_TOKEN: "${{ secrets.SPINE_TOKEN || secrets.GITHUB_TOKEN }}"}
         run: python3 tools/spine.py collect -o spine/observations.json
+
+      - name: refuse a partial observation
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          o = json.load(open("spine/observations.json"))
+          v = o.get("visibility", {})
+          print(f"observed {o['count']} repos; private visible: "
+                f"{v.get('private_visible', 0)}")
+          if not v.get("token_sees_private"):
+              print("::error::this observation cannot see private repos, so the "
+                    "map would be incomplete. Set the SPINE_TOKEN secret to a "
+                    "PAT with `repo` scope.")
+              sys.exit(1)
+          PY
 
       - name: rebuild the map (derived — never hand-edited)
         run: python3 tools/spine.py map spine/observations.json --overlay spine/overlay.json -o estate-map.json
