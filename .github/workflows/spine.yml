@@ -1,6 +1,10 @@
 name: spine
+# NOT scheduled. The scheduled collector runs in the PRIVATE rapp-tower
+# (.github/workflows/spine-collect.yml) because observing 142 private repos
+# needs a `repo`-scoped token, and this repository is public — a token here is
+# reachable by any workflow anyone can cause to run. Kept for manual runs by
+# someone whose own gh token can see the whole estate.
 on:
-  schedule: [{cron: "17 6 * * *"}]
   workflow_dispatch:
   push: {branches: [main], paths: ["tools/spine.py", "spine/overlay.json", "spine/waivers.json"]}
 
