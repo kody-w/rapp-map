@@ -7,10 +7,10 @@ cannot establish owner acceptance.
 ## Exact authority
 
 - Repository: `kody-w/rapp-1`
-- Commit: `6723c7add2aed36bb68992fc71a56b0a4bd5ad81`
+- Commit: `d2cd5abed48d3f52b86bbb975ac3558286d1db41`
 - Path: `SPEC.md`
-- Bytes: `41880`
-- SHA-256: `6d06daba65d7c045716f3d6e95db8401ab58e727820e4114466d847f62cae49b`
+- Bytes: `41952`
+- SHA-256: `cea7847f98f9751734995f46fd4e1bde211c8eb9d03dbbb477934213865bb91a`
 
 The machine-readable pin is
 [`RAPP1_AUTHORITY.json`](RAPP1_AUTHORITY.json).
