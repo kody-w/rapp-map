@@ -2,8 +2,8 @@
   "$comment": "Synthetic structural vectors for RAPP/1 rev-5 identity only. Required IDs, verdicts, and normalized fixture digests are independently pinned in identity-validation.mjs.",
   "format_version": 3,
   "authority": {
-    "commit": "6723c7add2aed36bb68992fc71a56b0a4bd5ad81",
-    "spec_sha256": "6d06daba65d7c045716f3d6e95db8401ab58e727820e4114466d847f62cae49b"
+    "commit": "d2cd5abed48d3f52b86bbb975ac3558286d1db41",
+    "spec_sha256": "cea7847f98f9751734995f46fd4e1bde211c8eb9d03dbbb477934213865bb91a"
   },
   "cases": [
     {
