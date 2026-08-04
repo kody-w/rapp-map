@@ -21,15 +21,15 @@ DEFAULT_OUTPUT = ROOT / "graph.json"
 EXPECTED_AUTHORITY = {
     "document_type": "rapp-1-authority-pin",
     "repository": "kody-w/rapp-1",
-    "commit": "6723c7add2aed36bb68992fc71a56b0a4bd5ad81",
+    "commit": "d2cd5abed48d3f52b86bbb975ac3558286d1db41",
     "spec_path": "SPEC.md",
     "spec_revision": 5,
     "raw_url": (
         "https://raw.githubusercontent.com/kody-w/rapp-1/"
-        "6723c7add2aed36bb68992fc71a56b0a4bd5ad81/SPEC.md"
+        "d2cd5abed48d3f52b86bbb975ac3558286d1db41/SPEC.md"
     ),
-    "bytes": 41880,
-    "sha256": "6d06daba65d7c045716f3d6e95db8401ab58e727820e4114466d847f62cae49b",
+    "bytes": 41952,
+    "sha256": "cea7847f98f9751734995f46fd4e1bde211c8eb9d03dbbb477934213865bb91a",
     "structural_pin_only": True,
     "authenticated_registry_acceptance": False,
 }

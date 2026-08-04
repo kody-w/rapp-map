@@ -6,7 +6,7 @@ runtime, an installer, or an authenticated registry.
 ## RAPP/1 authority and status
 
 The sole protocol authority used here is `kody-w/rapp-1` at commit
-`6723c7add2aed36bb68992fc71a56b0a4bd5ad81`, with `SPEC.md` pinned by exact
+`d2cd5abed48d3f52b86bbb975ac3558286d1db41`, with `SPEC.md` pinned by exact
 length and SHA-256 in [`RAPP1_AUTHORITY.json`](RAPP1_AUTHORITY.json).
 
 **This repository is not yet fully RAPP/1 conformant.** The authenticated

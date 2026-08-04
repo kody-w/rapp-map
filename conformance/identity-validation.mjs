@@ -1,9 +1,9 @@
 import { createHash, createPublicKey } from "node:crypto";
 
 const RAPPID_SPACE = "rapp/1:rappid";
-const AUTHORITY_COMMIT = "6723c7add2aed36bb68992fc71a56b0a4bd5ad81";
+const AUTHORITY_COMMIT = "d2cd5abed48d3f52b86bbb975ac3558286d1db41";
 const AUTHORITY_SHA256 =
-  "6d06daba65d7c045716f3d6e95db8401ab58e727820e4114466d847f62cae49b";
+  "cea7847f98f9751734995f46fd4e1bde211c8eb9d03dbbb477934213865bb91a";
 
 export const REQUIRED_VECTORS = Object.freeze({
   "rev5-keyless-uuid4-raw-octets": Object.freeze({
