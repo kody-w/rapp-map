@@ -10,7 +10,20 @@ else
 fi
 GUARD="$ROOT/.github/scripts/offline-guard.mjs"
 OFFLINE_HOME="$ROOT/.offline-home"
-BASELINE="baded0098d8b97c2876c0b8af4475cf3061b7ad0"
+# Reviewed checkpoint for the three evidence files. Advanced deliberately, in
+# a commit that says why -- never silently.
+#
+# The previous value (baded009, 2026-07-16) went stale ONE DAY later: 66dd344
+# regenerated estate-map.json on 2026-07-17, and both Drift lint and Standing
+# guard have failed on every run since, for 18 days. Neither had reached a
+# single gate past this one.
+#
+# estate-map.json is a DERIVED artifact -- "spine: derive the estate map" -- so
+# pinning its whole blob guarantees this recurs after the next rebuild. See
+# issue #16 for the durable fix: pin the recorded observations inside it rather
+# than the file itself. neurons.json and neurons-manifest.json are genuinely
+# stable and still matched after 18 days, so their pins are doing real work.
+BASELINE="150f8c255f807f56eb65a9e0fe4ab80e86c574ef"
 
 guarded_node() {
   env -i \
