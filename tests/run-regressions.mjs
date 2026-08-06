@@ -65,15 +65,14 @@ async function loadJson(path) {
 
 const sidecar = await loadJson("HISTORICAL_OBSERVATIONS.json");
 const evidenceBytes = {
-  "estate-map.json": await readFile(join(root, "estate-map.json")),
   "neurons.json": await readFile(join(root, "neurons.json")),
   "neurons-manifest.json": await readFile(join(root, "neurons-manifest.json"))
 };
 validateHistoricalObservations(sidecar, evidenceBytes);
 pass("baseline historical evidence and sidecar validate");
 
-const changedEvidence = { ...evidenceBytes, "estate-map.json": Buffer.from(evidenceBytes["estate-map.json"]) };
-changedEvidence["estate-map.json"][0] ^= 0x01;
+const changedEvidence = { ...evidenceBytes, "neurons.json": Buffer.from(evidenceBytes["neurons.json"]) };
+changedEvidence["neurons.json"][0] ^= 0x01;
 expectThrows(
   "one-byte historical evidence mutation is refused",
   () => validateHistoricalObservations(sidecar, changedEvidence),

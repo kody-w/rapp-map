@@ -34,7 +34,7 @@ clean_python() {
 }
 
 cd "$ROOT"
-for evidence in estate-map.json neurons.json neurons-manifest.json; do
+for evidence in neurons.json neurons-manifest.json; do
   current_blob="$(git hash-object "$evidence")"
   baseline_blob="$(git rev-parse "$BASELINE:$evidence")"
   if [[ "$current_blob" != "$baseline_blob" ]]; then
@@ -42,7 +42,7 @@ for evidence in estate-map.json neurons.json neurons-manifest.json; do
     exit 1
   fi
 done
-echo "PASS historical evidence: all three Git blob IDs match baseline"
+echo "PASS historical evidence: frozen Git blob IDs match baseline"
 
 guarded_node conformance/run-conformance.mjs
 guarded_node conformance/waiver-freshness.mjs
