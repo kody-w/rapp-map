@@ -151,12 +151,11 @@ async function checkRegistryQuarantine() {
 async function checkHistoricalDispositions() {
   const sidecar = await json("HISTORICAL_OBSERVATIONS.json");
   const fileBytes = {
-    "estate-map.json": await readFile(join(repositoryRoot, "estate-map.json")),
     "neurons.json": await readFile(join(repositoryRoot, "neurons.json")),
     "neurons-manifest.json": await readFile(join(repositoryRoot, "neurons-manifest.json"))
   };
   validateHistoricalObservations(sidecar, fileBytes);
-  return "historical observations=3 baseline-bytes=exact disposition=sidecar-only";
+  return `historical observations=${sidecar.observations.length} baseline-bytes=exact disposition=sidecar-only`;
 }
 
 async function checkGraph() {

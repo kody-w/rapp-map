@@ -20,7 +20,7 @@ registry evidence required by section 13 is absent. See
 | --- | --- |
 | `ecosystem-spec.json` | Fail-closed registry-path status; consumers must refuse it as an authenticated registry. |
 | `graph.json` | Format 2 deterministic map: technical `conforms_to` targets `kody-w/rapp-1`; section 11 `subordinate_to` targets `kody-w/RAPP`. It claims no registry provenance. |
-| `estate-map.json` | Historical 92-repository evidence, byte-identical to the baseline blob. |
+| `estate-map.json` | Derived by `tools/spine.py` from `spine/observations.json` and `spine/overlay.json`; never hand-edited and not byte-pinned. See [`SPINE.md`](SPINE.md). |
 | `neurons.json` | Historical 630-record evidence, byte-identical to the baseline blob. |
 | `neurons-manifest.json` | Historical index evidence, byte-identical to the baseline blob. |
 | `HISTORICAL_OBSERVATIONS.json` | Versioned non-authoritative sidecar with baseline byte lengths and SHA-256 values. |

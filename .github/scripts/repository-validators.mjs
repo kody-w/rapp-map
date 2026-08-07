@@ -15,15 +15,11 @@ export const AUTHORITY = Object.freeze({
   authenticated_registry_acceptance: false
 });
 
+// estate-map.json is deliberately absent: since the 2026-07-25 spine, it is
+// derived output rebuilt and committed by tools/spine.py (see SPINE.md), so a
+// frozen byte pin on it can only ever be red. Its integrity is the spine's
+// drift ratchet. Only genuinely frozen evidence belongs here.
 export const EVIDENCE_EXPECTATIONS = Object.freeze({
-  "estate-map.json": Object.freeze({
-    payload_schema: "rapp-estate-map/1.0",
-    classification: "historical-observation",
-    captured_at: "2026-06-28T20:21:23Z",
-    record_count: 92,
-    bytes: 366229,
-    sha256: "b557ce7b3855658124252d8b4cb60af2ec56fb52ebc27e7fb0069f15251605a1"
-  }),
   "neurons.json": Object.freeze({
     payload_schema: "rapp-neuron-mesh/1.0",
     classification: "historical-observation",
@@ -73,7 +69,7 @@ export function validateHistoricalObservations(sidecar, fileBytes) {
   const expectedPaths = Object.keys(EVIDENCE_EXPECTATIONS);
   invariant(
     sidecar.observations.length === expectedPaths.length,
-    "historical sidecar must describe exactly three observations"
+    `historical sidecar must describe exactly ${expectedPaths.length} observations`
   );
   const entries = new Map();
   for (const entry of sidecar.observations) {
