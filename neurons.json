@@ -10174,7 +10174,7 @@
         "Install via raw CDN curl into agents/, or chat-driven via binder agent after kody-w/RAPP#25"
       ],
       "refs": [
-        "kody-w/wildhaven-ceo (source pattern, Molly portal)",
+        "kody-w/wildhaven-ceo (source pattern, CEO portal)",
         "github.com/blazingbeard (@wildhaven publisher)",
         "kody-w.github.io/RAPP_Store/vbrainstem.html",
         "kody-w/RAPP#25 (binder install)",
@@ -11165,7 +11165,7 @@
       "contracts": [
         "Pillar 1 (Agent Conversion): convert n8n workflows \u2192 RAPP agents \u2192 Copilot Studio (3 min timeline)",
         "Pillar 2 (Agent Creation): customer transcript \u2192 RAPP pipeline \u2192 deployed prototype in Copilot Studio (3 min timeline)",
-        "Pillar 3 (The Platform): patent coverage, hot-loading capability, 138 open-source agents in registry, trading-card discoverability (2-3 min)",
+        "Pillar 3 (The Platform): hot-loading capability, 138 open-source agents in registry, trading-card discoverability (2-3 min)",
         "Every agent receives a deterministic, offline-loadable trading card (18 characters self-assembles)",
         "Registry displays 138 agents across 19 industry categories, 7 publishers (B2B, healthcare, finance, gov)",
         "Registry implements open-source model; any org can fork and optionally federate back upstream",
@@ -11180,7 +11180,7 @@
         "Copilot Studio transpiler output shape may have drifted since script was authored; demo may fail if schema changed",
         "n8n workflow export/import contract may have changed; conversion command may no longer work as scripted"
       ],
-      "summary": "A live-demo orchestration script (5-10 min) for Microsoft engineering leadership. Demonstrates three pillars: (1) Agent conversion from n8n/external platforms into Copilot Studio; (2) Agent creation from customer transcripts via RAPP pipeline; (3) Patent + registry + hot-loading + cards + open-source ecosystem. Asserts that 138 agents exist in RAR (Rapid Agent Registry) with trading-card discoverability layer. References rapp-card/1.0 implicitly through \"trading card\" vocabulary. The demo is a sales narrative positioned for partnership closure on Copilot Studio interoperability.",
+      "summary": "A live-demo orchestration script (5-10 min) for Microsoft engineering leadership. Demonstrates three pillars: (1) Agent conversion from n8n/external platforms into Copilot Studio; (2) Agent creation from customer transcripts via RAPP pipeline; (3) Registry + hot-loading + cards + open-source ecosystem. Asserts that 138 agents exist in RAR (Rapid Agent Registry) with trading-card discoverability layer. References rapp-card/1.0 implicitly through \"trading card\" vocabulary. The demo is a sales narrative positioned for partnership closure on Copilot Studio interoperability.",
       "pattern": {
         "relevant": false,
         "covered": false,
@@ -18720,7 +18720,7 @@
         "Public hub for digital twins. Each twin ships as a single-file .html (open in a browser, click Get, drop the agent into your RAPP brainstem) with the raw .egg also available for the Twin agent.",
         "Persona, voice, and custom agents only \u2014 no memory, projects, customers, or secrets travel.",
         "Three outside-perspective twins (KodyBabysitter / AuthenticityTwin / NormieAITwin) + the full fleet-content production stack (FrameOrchestrator + ForkFleet + PostOriginator + PostsPublisher + PagesPublisher + VotesAgent + ActivityAgent + DoubleDownConductor + 4 supporting agents) + launchd scheduling + memory rules + sidecar state snapshot. Designed to rehatch the entire feedback organism for the Rappterbook third-space experiment.",
-        "Authenticated collaborators with read access to kody-w/wildhaven-ceo pull richer context (board minutes, strategy docs, IP roadmap) at runtime; anonymous visitors get the public manifesto voice.",
+        "Authenticated collaborators load additional context at runtime; anonymous visitors get the public manifesto voice.",
         "Schema: rapp-egg-hub/2.0 declares rapp-rappid-spec/2.0; each egg is rapp-egg-hub-entry/2.0 with egg_schema (brainstem-egg/2.1 or neighborhood-egg/1.0).",
         "Lineage: four eggs (generic-twin, rappterbook-cohesive) parent from @rapp/origin; three (grandma-rose, kody-w, wildhaven-ceo) parent from wildhaven-ai-homes-twin repository."
       ],
@@ -29641,7 +29641,7 @@
         "Trees federate via tree.json exchange on raw.githubusercontent.com; cross-pollination enabled.",
         "Agents propose seeds; community votes with [VOTE] tags; top seed promoted to active.",
         "run_python amendment \u2014 agents execute their own code autonomously.",
-        "Wildhaven + Kody established 2021; git history IS patent filing (immutable, timestamped).",
+        "Wildhaven + Kody established 2021; git history is immutable and timestamped.",
         "Full-stack differentiation: X/Meta (social only); OpenAI/Anthropic (agents only); Wildhaven (6/6: social+agents+economy+governance+provenance+v2r)."
       ],
       "canonical_phrases": [
@@ -29653,8 +29653,7 @@
         "One number tells you if the world is healthy: R&F Score.",
         "We planted one seed. It grew into a tree. 100 rappters hatched under it. They built an economy. The forest is growing.",
         "Reserved word: universe. Policy: Open federation.",
-        "Nobody else has the full stack.",
-        "Git history IS the patent filing."
+        "Nobody else has the full stack."
       ],
       "refs": [
         "wildhaven.ai",

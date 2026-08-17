@@ -19,14 +19,20 @@ export const AUTHORITY = Object.freeze({
 // derived output rebuilt and committed by tools/spine.py (see SPINE.md), so a
 // frozen byte pin on it can only ever be red. Its integrity is the spine's
 // drift ratchet. Only genuinely frozen evidence belongs here.
+// neurons.json was redacted after capture: a handful of observation strings
+// carried internal notes and personal identifying details that do not belong
+// in a public repository. Byte length and digest are re-pinned to the redacted
+// bytes; the ratchet still refuses every later drift, and the capture metadata
+// (schema, built_at, count) is unchanged because the observations themselves
+// are the same 630 records.
 export const EVIDENCE_EXPECTATIONS = Object.freeze({
   "neurons.json": Object.freeze({
     payload_schema: "rapp-neuron-mesh/1.0",
     classification: "historical-observation",
     captured_at: "2026-06-28T20:03:35Z",
     record_count: 630,
-    bytes: 2484245,
-    sha256: "52cbb3d5db3a79364d23dc8b9d0554e411996af312dfb7b1a03207073707d1eb"
+    bytes: 2483977,
+    sha256: "1ac9c4d6774e7065f406087d7f9bd905c0e27e6cd9a36d34a24b39f3302519fd"
   }),
   "neurons-manifest.json": Object.freeze({
     payload_schema: "rapp-neuron-mesh-manifest/1.0",

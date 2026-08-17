@@ -99,13 +99,19 @@ def collect(owner=OWNER, limit=2000, only=None):
         if only and name not in only:
             continue
         branch = (r.get("defaultBranchRef") or {}).get("name")
+        private = bool(r.get("isPrivate"))
+        # A private repo's description is private content. This map is public,
+        # so mirroring it here republishes the one field the owner wrote
+        # expecting a closed audience. The estate shape (name, visibility,
+        # heartbeat) is the public fact; the blurb is not.
+        description = "" if private else (r.get("description") or "")[:200]
         rec = {
             "repo": f"{owner}/{name}",
             "archived": bool(r.get("isArchived")),
-            "private": bool(r.get("isPrivate")),
+            "private": private,
             "default_branch": branch,
             "updated_at": r.get("updatedAt"),
-            "description": (r.get("description") or "")[:200],
+            "description": description,
         }
         if not branch or r.get("isArchived"):
             # An archived repo is a real member of the estate and its absence
