@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 9,
+  "utc": "2026-08-25T22:19:10.195Z",
+  "payload": {
+    "slug": "README",
+    "title": "rapp-map",
+    "sha256": "848246610f4619daa75583e9951fb113578fe45331a65e4b9004b681957c60b5",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "abf4b771e94616be0a356eda5f41ccab61b71d10c84c3bd854dfd87dda65ce4f",
+  "prev": "abf7792d2dee49bc4cfbf4d3317d8b0af1defde8f7e324c99dac945baede57dc",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "15384455cfedbaf2d42300d5f32642731fbe6598be36661ed8a23765bfe95bc8"
+}

@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 13,
+  "utc": "2026-08-25T22:19:10.221Z",
+  "payload": {
+    "slug": "conformance/README",
+    "title": "RAPP/1 rev-5 structural identity vectors",
+    "sha256": "f2101a9b81d2d1c735963eae0acddfb20c311ca59cfe7d2219b606a795c3cbff",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "298b383e724c431d9582732438be3099152ed4412c00189643a2d515a18505c3",
+  "prev": "bcbd3ded24b8e9f5d43d90e088c42d27c99789d739b8f64ce0459d1394e6c4fc",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "7a1b302af313a7dc5481d7dedd2ff044e2e877bc30ade040f3cc2ccbcfc095f5"
+}

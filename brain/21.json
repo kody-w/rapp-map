@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 21,
+  "utc": "2026-08-25T22:19:10.301Z",
+  "payload": {
+    "slug": "spine/drift-baseline",
+    "title": "spine/drift-baseline",
+    "sha256": "46cf368a27be7832e4873b3903dddd59289363e070bb6887b751a3aa1617dbb5",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "57f61e130f9725e9bfc56e4cd8e906934315d6d1e211a591bc83a9ce157dfcb5",
+  "prev": "11bb23809b432bb5833269af3afb4ec96a22a43de1d7baacc826a474be1ebf54",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "127bc866b1e76d192f32eabaccc3a8418259d0c4cfa7b6855755ec01246c3efb"
+}

@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 5,
+  "utc": "2026-08-25T22:19:10.164Z",
+  "payload": {
+    "slug": "RAPP1_AUTHORITY",
+    "title": "RAPP1_AUTHORITY",
+    "sha256": "16c63fc58c392437ceb844eefdf85a911cbdd3a76de2c55ca3668f39cbee0007",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "7562ca672ec28fa70f963e9edbae8e9a47e0a2d750e56e259535590794e40f9b",
+  "prev": "ed771ccabeee6b126bacbc4d9386754a5d45fe4a5c162c484829f8e34c8cc325",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "6cd3548cf4dbc1231086502d2ab12386151fda902000e827e9563b091433e9d4"
+}

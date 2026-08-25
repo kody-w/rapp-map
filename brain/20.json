@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 20,
+  "utc": "2026-08-25T22:19:10.288Z",
+  "payload": {
+    "slug": "neurons",
+    "title": "neurons",
+    "sha256": "1ac9c4d6774e7065f406087d7f9bd905c0e27e6cd9a36d34a24b39f3302519fd",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "11bb23809b432bb5833269af3afb4ec96a22a43de1d7baacc826a474be1ebf54",
+  "prev": "7d9be618eadad61690170d633c1759eab6781a51385b6ccaaa7c1a9b7d47d519",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "acb4e5f78ed1de232dab36017a7f30c2055bf39ebdd85dfccdf8ec466aad69c7"
+}

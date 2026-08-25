@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 8,
+  "utc": "2026-08-25T22:19:10.189Z",
+  "payload": {
+    "slug": "RAPP1_STATUS",
+    "title": "NOT YET FULLY RAPP/1 CONFORMANT",
+    "sha256": "eaf4df27b73992072bb940e6494138a4cf9658bec96ad3c6654ffb233d211938",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "abf7792d2dee49bc4cfbf4d3317d8b0af1defde8f7e324c99dac945baede57dc",
+  "prev": "fed9792fe3ea83ef6026a39f1c317560e088955ded3afa2de6a043191f1114ce",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "90100baf923792efb36b0991d30947fbfad21c4a238016a3e970047075e4e7d1"
+}

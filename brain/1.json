@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 1,
+  "utc": "2026-08-25T22:19:10.124Z",
+  "payload": {
+    "slug": "ECOSYSTEM_SPEC",
+    "title": "Historical ecosystem specification — retired",
+    "sha256": "434a2968bf602aa582f74f59b9e81ba62976c66148047b82f4643262c351b31f",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "15e61e70c57ae4c55c90528f5288bcbeff4cc1f3833defe610c49dc26a973c8d",
+  "prev": "5bc1a51e9dea2d2db0af3aa46a491c69d6fbeaef8ca0ee183f4814bf07887101",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "041cf5f56447f5d21e126ad7ae804c2c64742138b39b3a49ee26b79a7dd200ab"
+}

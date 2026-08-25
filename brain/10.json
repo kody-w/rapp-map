@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 10,
+  "utc": "2026-08-25T22:19:10.202Z",
+  "payload": {
+    "slug": "SPINE",
+    "title": "The spine",
+    "sha256": "f9d69924d07c90d4ea9903882d4b447b45f8e748d5786843604e5b7df6291359",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "5b5572092bdb773c52a8e0858900a9e2fb15cb9b3270d343eb63cdd35afec967",
+  "prev": "abf4b771e94616be0a356eda5f41ccab61b71d10c84c3bd854dfd87dda65ce4f",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "b7e22c907a97cefb382c99758605539f2df7a775240bec6062fae80ceeb6287f"
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "rapp/1",
+  "rappid": "rappid:@kody-w/rapp-map:382422e0b322bec01c1f20af48a7f558e64c648f9dc82377fa5af14c8305d223",
+  "kind": "brain",
+  "name": "rapp-map",
+  "host": "github.com",
+  "owner": "kody-w",
+  "repo": "rapp-map",
+  "github": "https://github.com/kody-w/rapp-map",
+  "brain_protocol": "rapp-brain/0",
+  "chain": "brain/ (DOGG dir form)",
+  "minted_at": "2026-08-25T22:19:27Z",
+  "notes": "The estate map as a public brain: every map/spec/neuron document content-addressed by a brain.page frame, tick-anchored \u2014 'what did the estate map say at tick N' is answerable forever. Minted once per RAPP spec \u00a76.2."
+}

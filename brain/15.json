@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 15,
+  "utc": "2026-08-25T22:19:10.242Z",
+  "payload": {
+    "slug": "conformance/waivers",
+    "title": "conformance/waivers",
+    "sha256": "a0b16e577dbdd0602c164d8729017731dbf5595520b7c6ff048b282684314346",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "a5387d43577dcebbbc62958ba3d008f42b69db541a5ec3f415d0f6a8579175e1",
+  "prev": "64f7653ba897e1a1dd423ee1fd3ced921b03a23fb423baf13b337027cd2efdaa",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "d615ff2ac2dc1f511a23a0a2982a8ae6d1c0b6e7fd765d73334479fb1eb37ef7"
+}

@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 6,
+  "utc": "2026-08-25T22:19:10.176Z",
+  "payload": {
+    "slug": "RAPP1_OWNER_ACTIONS",
+    "title": "RAPP1_OWNER_ACTIONS",
+    "sha256": "8b4aba0daf8fe8ad7f1da1126a33dad3e8b1a7cc0a30d8e4a1f964f6caa06821",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "4812fd6abac887b8b082b443b7d5860f02e88daa0f79c3dbaf7d1ff608e6e134",
+  "prev": "7562ca672ec28fa70f963e9edbae8e9a47e0a2d750e56e259535590794e40f9b",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "c07bafef448899764439214eaf9335612a9137561307f3b1c8616e2b121b0bb0"
+}

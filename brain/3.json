@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 3,
+  "utc": "2026-08-25T22:19:10.145Z",
+  "payload": {
+    "slug": "HISTORICAL_OBSERVATIONS",
+    "title": "HISTORICAL_OBSERVATIONS",
+    "sha256": "32aaccdf54d983cc27e15966e9d528290ac5ee210b0eeb2fd9aa45e8b0c5a4e9",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "5c89dc1667fa14908e3737d06499144cf324fed6196ce758930271e908f323e1",
+  "prev": "ebb3013bd643c347065965fc45942befe9017a3dd0684ca7e07ccbd323746ad0",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "468eca530ea25b2117cb932da32d9a04e5d5ec908c4c07fd3867be7096950799"
+}

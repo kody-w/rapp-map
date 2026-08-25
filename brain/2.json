@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 2,
+  "utc": "2026-08-25T22:19:10.135Z",
+  "payload": {
+    "slug": "ESTATE_MAP",
+    "title": "Historical estate observation",
+    "sha256": "fe4d6e8d89f50f67072d1e04d3ccfb97156b4d04c98e7737391110c10f822ed3",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "ebb3013bd643c347065965fc45942befe9017a3dd0684ca7e07ccbd323746ad0",
+  "prev": "15e61e70c57ae4c55c90528f5288bcbeff4cc1f3833defe610c49dc26a973c8d",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "587afd2c519eb7cf7339b25b1c78243ccf992d408b4774c4801b93eb004a4915"
+}

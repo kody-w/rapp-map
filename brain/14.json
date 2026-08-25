@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 14,
+  "utc": "2026-08-25T22:19:10.232Z",
+  "payload": {
+    "slug": "conformance/golden-cases",
+    "title": "conformance/golden-cases",
+    "sha256": "67bc1a4ea4eef3ebe98f3807d0b8905df3db7ae491b577cdbc13b51bec7ca5c8",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "64f7653ba897e1a1dd423ee1fd3ced921b03a23fb423baf13b337027cd2efdaa",
+  "prev": "298b383e724c431d9582732438be3099152ed4412c00189643a2d515a18505c3",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "301bc21037beb0f59d567ee20013e617012c7f69fbe0a560341d779f5c81bb7f"
+}

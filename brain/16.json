@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 16,
+  "utc": "2026-08-25T22:19:10.247Z",
+  "payload": {
+    "slug": "ecosystem-spec",
+    "title": "ecosystem-spec",
+    "sha256": "736a9ae026b4be0d602a1a405195115ef1ab15484b5748e1502664b349f41e2d",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "1fcf6325598b4d135afd4c1fa08386ab33905a2c604eb5d90f005e3018fad47b",
+  "prev": "a5387d43577dcebbbc62958ba3d008f42b69db541a5ec3f415d0f6a8579175e1",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "063ba6f52b78885b737692b73a1c0deac37a0be2a5e74ec7edef5adad957f3bf"
+}

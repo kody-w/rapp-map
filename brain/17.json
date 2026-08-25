@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 17,
+  "utc": "2026-08-25T22:19:10.253Z",
+  "payload": {
+    "slug": "estate-map",
+    "title": "estate-map",
+    "sha256": "a85919413e27d96e30d010057f4cb928c34c14af89fdcb06351ab8e50da379d2",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "3ce3194cfe922c6c0431c340debfb2ccf7d05a72a5736c381c172e219dbe3f5e",
+  "prev": "1fcf6325598b4d135afd4c1fa08386ab33905a2c604eb5d90f005e3018fad47b",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "fb7b613e777c61f2138e377ca2164584044f3fa0125b9fc88672bc32bd45ddd9"
+}

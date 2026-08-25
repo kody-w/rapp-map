@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 4,
+  "utc": "2026-08-25T22:19:10.154Z",
+  "payload": {
+    "slug": "NEURON_SWARM",
+    "title": "Historical neuron observation",
+    "sha256": "0dd40e232a4adf57c85cc2a53d07fe8d9af7a05c24018cf81a8d054a06b2c73c",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "ed771ccabeee6b126bacbc4d9386754a5d45fe4a5c162c484829f8e34c8cc325",
+  "prev": "5c89dc1667fa14908e3737d06499144cf324fed6196ce758930271e908f323e1",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "ef81367e695cdd5b9b016db2cc6ba8c3ab535065f992f03e3a5edb9827201bdd"
+}

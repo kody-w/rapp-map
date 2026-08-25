@@ -1,0 +1,19 @@
+{
+  "spec": "rapp/1",
+  "kind": "brain.page",
+  "stream_id": "brain:@kody-w/rapp-map",
+  "seq": 18,
+  "utc": "2026-08-25T22:19:10.263Z",
+  "payload": {
+    "slug": "graph",
+    "title": "graph",
+    "sha256": "4dbf9bd1fab4bc49bd7fdacbee129818c07af36ecb85968aa74b94bc984a5ebf",
+    "tick": 108,
+    "tick_frame": "25035caec1a97613e169e37ba5a38286c5965b7f8342cb5a6a62fbe716d5ae21"
+  },
+  "payload_hash": "d6cc90df1cccac653cb93bd3b013cd7915bb2396202d9166484cd3c8b8901e7d",
+  "prev": "3ce3194cfe922c6c0431c340debfb2ccf7d05a72a5736c381c172e219dbe3f5e",
+  "prev_wave": null,
+  "sig": null,
+  "frame_hash": "08e9e2959ca87f2dffae609bd29800d7fe42c0be54bef12ab760516d9d511fe9"
+}
