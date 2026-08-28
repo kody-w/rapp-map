@@ -55,6 +55,10 @@ guarded_node conformance/waiver-freshness.mjs
 guarded_node tests/run-regressions.mjs
 guarded_node tests/offline-guard-probe.mjs
 clean_python build_graph.py --check
+# Candidate corpus offered from openrappter: structural + digest check only.
+# The executing harness needs a live runtime on loopback, which the offline
+# guard denies by design, so it is deliberately not run here.
+clean_python parity_vectors/verify_corpus.py
 guarded_node .github/scripts/standing-guard.mjs local
 guarded_node .github/scripts/standing-guard.mjs blocker
 
