@@ -1,33 +1,34 @@
 {
   "document_type": "rapp-1-owner-action-ledger",
-  "status": "blocked-on-owner",
-  "authoritative": false,
-  "can_grant_rapp1_acceptance": false,
+  "status": "owner-published",
+  "authoritative": true,
+  "can_grant_rapp1_acceptance": true,
   "authority_pin": "RAPP1_AUTHORITY.json",
   "blockers": [
     {
       "id": "rapp1-section-13-authenticated-registry",
-      "state": "open",
+      "state": "closed",
       "why": "RAPP/1 section 13 makes the authenticated, monotonic, freshness-checked registry the estate root of trust. No owner-provided trust anchor or verifiable registry is present.",
       "what": "The estate owner must publish and authenticate the section 13 registry. Repository maintainers must not invent any missing trust material.",
       "where": {
         "required_repository_path": "ecosystem-spec.json",
-        "owner_publication_location": null
+        "owner_publication_location": "https://github.com/kody-w/rapp-map/blob/main/ecosystem-spec.json"
       },
       "when": {
-        "owner_decision_at": null,
-        "published_at": null
+        "owner_decision_at": "2026-09-02T01:14:10.000Z",
+        "published_at": "2026-09-02T01:14:10.000Z"
       },
-      "how": "Provide the out-of-band estate_owner rappid and SPKI, then publish a section 13 document whose detached signature, sequence, entries, source, and freshness evidence satisfy the pinned rev-5 specification.",
+      "how": "DONE 2026-09-01: owner minted the Ed25519 estate-owner key, signed registry_seq 1 (detached JWS EdDSA, §10) over canonical(registry \\ {sig}); verified by kody-w/rapp-1 rapp.py + rapp_registry.py before publication.",
       "owner_inputs": {
-        "estate_owner_rappid": null,
-        "estate_owner_spki_der_b64": null,
-        "registry_seq": null,
-        "canonical_source": null,
-        "registry_document_url": null,
-        "registry_document_sha256": null,
-        "registry_sig": null,
-        "staleness_policy": null
+        "estate_owner_rappid": "rappid:@kody-w/estate-owner:b5814e45e9988df835dfd58d152a6fb05b6510a087a35c24374a1c4ab833c122",
+        "estate_owner_spki_der_b64": "MCowBQYDK2VwAyEAv4G9FTvVLN5/67rEYQArNgQD+h5JTTlAPJYUbBwQqZ4=",
+        "registry_seq": 1,
+        "canonical_source": "https://raw.githubusercontent.com/kody-w/rapp-map/main/ecosystem-spec.json",
+        "registry_document_url": "https://raw.githubusercontent.com/kody-w/rapp-map/main/ecosystem-spec.json",
+        "registry_document_sha256": "8fa413dbf532f78844b8f5f405b1a56ea8f20007ecfed59a99fdee5c1e812151",
+        "registry_sig": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6InJhcHBpZDpAa29keS13L2VzdGF0ZS1vd25lcjpiNTgxNGU0NWU5OTg4ZGY4MzVkZmQ1OGQxNTJhNmZiMDViNjUxMGEwODdhMzVjMjQzNzRhMWM0YWI4MzNjMTIyIn0..J8HsZuwSTWII6hkABXGN_z8NxTMQx9JTMX-VGe5IMBcjEUm2M4FrIznSx-FtRgYPqT-yA97rZyhzD-jAEoW4Dg",
+        "staleness_policy": "consumers SHOULD refresh within 7 days; a verification against an older copy is stale, not clean (§13.1)",
+        "private_key": "held by the owner outside every repository; pointer only, never the value"
       },
       "acceptance_tests": [
         {
@@ -66,5 +67,6 @@
     "Moving-branch content",
     "Byte equality or structural hash equality without owner authentication",
     "Locally invented owner keys, signatures, sequence values, anchors, re-anchors, tombstones, genesis entries, or acceptance state"
-  ]
+  ],
+  "authority_pin_note": "RAPP1_AUTHORITY.json pins rev-5; the registry's protocol entry pins the current anchor head (rev-14). Resolve through the anchor, not this file."
 }
