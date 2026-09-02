@@ -8,16 +8,31 @@ estate's standing plan so that plan exists *before* it is needed.
 
 - The estate-owner key is Ed25519; its public SPKI is in `ecosystem-spec.json` and its
   rappid is published out of band in `kody-w/rapp-1`'s README.
-- The private key is held by the owner outside every repository, and is **split 2-of-3**
+- The private key is held by the owner outside every repository, and is **split 2-of-4**
   with `tools/key_shares.py` (Shamir over GF(256), stdlib). Any two shares reproduce the
   key byte-for-byte; one share reveals nothing.
-- Share custody (the owner fills this in and keeps it current):
 
-  | share | where | held by |
-  |---|---|---|
-  | 1 | owner's machine | owner |
-  | 2 | *(to assign: password manager or second device)* | owner |
-  | 3 | *(to assign)* | **successor — unnamed** |
+## Line of succession (owner's decision, 2026-09-01)
+
+1. **Molly Wildfeuer**
+2. **Sawyer Wildfeuer**
+3. **Evelyn Wildfeuer**
+
+Each successor, in that order, becomes estate owner by the planned rotation below when the
+person ahead of them cannot act. Authority passes by a signed `re-anchor` record, never by
+possession of a share alone.
+
+## Share custody
+
+| share | held by | role |
+|---|---|---|
+| 1 | Kody Wildfeuer | owner |
+| 2 | Molly Wildfeuer | first successor |
+| 3 | Sawyer Wildfeuer | second successor |
+| 4 | Evelyn Wildfeuer | third successor |
+
+Any two of the four recover the key. Shares travel to their holders off this machine; a
+share is never committed to a repository, mailed in plain text, or stored beside another.
 
 ## Planned succession (owner alive, key rotating)
 
@@ -29,11 +44,11 @@ estate's standing plan so that plan exists *before* it is needed.
 
 ## Unplanned succession (owner cannot act)
 
-1. Any two share holders recombine the key: `tools/key_shares.py combine --share A --share B --out key.pem`.
+1. The next person in the line of succession and any other share holder recombine the key: `tools/key_shares.py combine --share A --share B --out key.pem`.
    The tool refuses a recombination whose digest does not match the recorded one.
 2. The recombined key performs the *planned* rotation above, then is destroyed. Compromise
    is never assumed from absence (§13.1).
-3. If fewer than two shares survive, the trust anchor is lost: every dependent estate re-anchors
+3. If fewer than two of the four shares survive, the trust anchor is lost: every dependent estate re-anchors
    out of band to a new rappid. That is the failure this page exists to prevent.
 
 ## What survives without any key
