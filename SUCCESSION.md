@@ -14,9 +14,12 @@ estate's standing plan so that plan exists *before* it is needed.
 
 ## Line of succession (owner's decision, 2026-09-01)
 
-1. **Molly Wildfeuer**
-2. **Sawyer Wildfeuer**
-3. **Evelyn Wildfeuer**
+1. first successor
+2. second successor
+3. third successor
+
+*Who these people are is recorded in the owner's private workspace, not here. A public
+list of share holders is a map of whom to coerce; this page carries roles only.*
 
 Each successor, in that order, becomes estate owner by the planned rotation below when the
 person ahead of them cannot act. Authority passes by a signed `re-anchor` record, never by
@@ -26,10 +29,10 @@ possession of a share alone.
 
 | share | held by | role |
 |---|---|---|
-| 1 | Kody Wildfeuer | owner |
-| 2 | Molly Wildfeuer | first successor |
-| 3 | Sawyer Wildfeuer | second successor |
-| 4 | Evelyn Wildfeuer | third successor |
+| 1 | the owner | owner |
+| 2 | first successor | first successor |
+| 3 | second successor | second successor |
+| 4 | third successor | third successor |
 
 Any two of the four recover the key. Shares travel to their holders off this machine; a
 share is never committed to a repository, mailed in plain text, or stored beside another.

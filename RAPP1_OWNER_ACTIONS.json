@@ -16,17 +16,17 @@
       },
       "when": {
         "owner_decision_at": "2026-09-02T01:14:10.000Z",
-        "published_at": "2026-09-02T01:14:10.000Z"
+        "published_at": "2026-09-02T12:41:49.000Z"
       },
       "how": "DONE 2026-09-01: owner minted the Ed25519 estate-owner key, signed registry_seq 1 (detached JWS EdDSA, §10) over canonical(registry \\ {sig}); verified by kody-w/rapp-1 rapp.py + rapp_registry.py before publication.",
       "owner_inputs": {
         "estate_owner_rappid": "rappid:@kody-w/estate-owner:b5814e45e9988df835dfd58d152a6fb05b6510a087a35c24374a1c4ab833c122",
         "estate_owner_spki_der_b64": "MCowBQYDK2VwAyEAv4G9FTvVLN5/67rEYQArNgQD+h5JTTlAPJYUbBwQqZ4=",
-        "registry_seq": 1,
+        "registry_seq": 2,
         "canonical_source": "https://raw.githubusercontent.com/kody-w/rapp-map/main/ecosystem-spec.json",
         "registry_document_url": "https://raw.githubusercontent.com/kody-w/rapp-map/main/ecosystem-spec.json",
-        "registry_document_sha256": "8fa413dbf532f78844b8f5f405b1a56ea8f20007ecfed59a99fdee5c1e812151",
-        "registry_sig": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6InJhcHBpZDpAa29keS13L2VzdGF0ZS1vd25lcjpiNTgxNGU0NWU5OTg4ZGY4MzVkZmQ1OGQxNTJhNmZiMDViNjUxMGEwODdhMzVjMjQzNzRhMWM0YWI4MzNjMTIyIn0..J8HsZuwSTWII6hkABXGN_z8NxTMQx9JTMX-VGe5IMBcjEUm2M4FrIznSx-FtRgYPqT-yA97rZyhzD-jAEoW4Dg",
+        "registry_document_sha256": "c19d40d5f287301b51bcfe9f16e60bcc6d7c6e008d2b8396144a02a485b16a33",
+        "registry_sig": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6InJhcHBpZDpAa29keS13L2VzdGF0ZS1vd25lcjpiNTgxNGU0NWU5OTg4ZGY4MzVkZmQ1OGQxNTJhNmZiMDViNjUxMGEwODdhMzVjMjQzNzRhMWM0YWI4MzNjMTIyIn0..jqeoe5VVN8VtFEwt6auQ6w1yRzTP0wAfsudSVs4C2vVgRtL9Ak1NprqsSzpsaVXzJASqMhZjsTEwh79S31UYBA",
         "staleness_policy": "consumers SHOULD refresh within 7 days; a verification against an older copy is stale, not clean (§13.1)",
         "private_key": "held by the owner outside every repository; pointer only, never the value"
       },

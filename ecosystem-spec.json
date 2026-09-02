@@ -1,16 +1,16 @@
 {
   "schema": "rapp/1-registry",
-  "registry_seq": 1,
+  "registry_seq": 2,
   "canonical_source": "https://raw.githubusercontent.com/kody-w/rapp-map/main/ecosystem-spec.json",
   "estate": "kody-w",
-  "published_utc": "2026-09-02T01:14:10.000Z",
+  "published_utc": "2026-09-02T12:41:49.000Z",
   "staleness_policy": "consumers SHOULD refresh within 7 days; a verification against an older copy is stale, not clean (§13.1)",
   "anchor": {
     "repository": "https://github.com/kody-w/rapp-1",
     "beacon": "anchor/orient.json",
-    "revision": "rev-14",
-    "revision_frame_hash": "59629adab4e26d156f3d66ecfb766e08705919ea1d2adc92ba0ad2b17337dfc2",
-    "head_frame_hash": "59629adab4e26d156f3d66ecfb766e08705919ea1d2adc92ba0ad2b17337dfc2"
+    "revision": "rev-15",
+    "revision_frame_hash": "83ca275f35cca96e43d75c99d338326c1a39b2240eabf57eb7c29ac96cc90818",
+    "head_frame_hash": "83ca275f35cca96e43d75c99d338326c1a39b2240eabf57eb7c29ac96cc90818"
   },
   "entries": [
     {
@@ -29,7 +29,7 @@
       "spec_repo": "https://github.com/kody-w/rapp-1",
       "spec_path": "SPEC.md",
       "spec_hash": "d345235be5bc698d78c5893285abd09f2e62a398f781123d1de8da313a01c7de",
-      "deprecated": false
+      "deprecated": true
     },
     {
       "type": "protocol",
@@ -184,7 +184,15 @@
       "type": "master-plan",
       "repo": "https://github.com/kody-w/RAPP",
       "path": "MASTER_PLAN.md"
+    },
+    {
+      "type": "protocol",
+      "name": "rapp/1",
+      "spec_repo": "https://github.com/kody-w/rapp-1",
+      "spec_path": "SPEC.md",
+      "spec_hash": "348e7d5baa94aaf2ce4c5354f3cb261f389298a04af65e271a686d3b62f7c384",
+      "deprecated": false
     }
   ],
-  "sig": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6InJhcHBpZDpAa29keS13L2VzdGF0ZS1vd25lcjpiNTgxNGU0NWU5OTg4ZGY4MzVkZmQ1OGQxNTJhNmZiMDViNjUxMGEwODdhMzVjMjQzNzRhMWM0YWI4MzNjMTIyIn0..J8HsZuwSTWII6hkABXGN_z8NxTMQx9JTMX-VGe5IMBcjEUm2M4FrIznSx-FtRgYPqT-yA97rZyhzD-jAEoW4Dg"
+  "sig": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6InJhcHBpZDpAa29keS13L2VzdGF0ZS1vd25lcjpiNTgxNGU0NWU5OTg4ZGY4MzVkZmQ1OGQxNTJhNmZiMDViNjUxMGEwODdhMzVjMjQzNzRhMWM0YWI4MzNjMTIyIn0..jqeoe5VVN8VtFEwt6auQ6w1yRzTP0wAfsudSVs4C2vVgRtL9Ak1NprqsSzpsaVXzJASqMhZjsTEwh79S31UYBA"
 }
