@@ -64,8 +64,12 @@ def sign(key, doc):
     return unsigned
 
 
-def verify(doc, persisted_seq=None):
-    status, reg, why = REG.load_document(doc, entries_member="entries", persisted_seq=persisted_seq)
+def verify(doc, persisted_seq=None, trust_anchor=None):
+    """Verify against the OUT-OF-BAND trust anchor. The signer path derives it from the key
+    it holds; the verify path must be told it (--trust-anchor or RAPP_ESTATE_OWNER)."""
+    if trust_anchor is None:
+        raise SystemExit("verify needs the out-of-band estate-owner rappid: --trust-anchor or RAPP_ESTATE_OWNER")
+    status, reg, why = REG.load_document(doc, entries_member="entries", trust_anchor=trust_anchor, persisted_seq=persisted_seq)
     print(f"{status}: {why}")
     if status == "verified":
         print(f"  owner {reg.estate_owner}")
@@ -79,7 +83,7 @@ def main():
     k = sub.add_parser("keygen"); k.add_argument("--key", required=True)
     r = sub.add_parser("rappid"); r.add_argument("--key", required=True); r.add_argument("--owner", required=True); r.add_argument("--slug", required=True)
     s = sub.add_parser("sign"); s.add_argument("--key", required=True); s.add_argument("--in", dest="inp", required=True); s.add_argument("--out", required=True)
-    v = sub.add_parser("verify"); v.add_argument("--in", dest="inp", required=True); v.add_argument("--persisted-seq", type=int)
+    v = sub.add_parser("verify"); v.add_argument("--in", dest="inp", required=True); v.add_argument("--persisted-seq", type=int); v.add_argument("--trust-anchor", default=os.environ.get("RAPP_ESTATE_OWNER"))
     a = ap.parse_args()
     if a.cmd == "keygen":
         keygen(a.key)
@@ -91,15 +95,19 @@ def main():
         if stat.S_IMODE(os.stat(a.key).st_mode) & 0o077:
             raise SystemExit("key file must be mode 0600")
         with open(a.inp) as f: doc = json.load(f)
-        signed = sign(load_private(a.key), doc)
-        if not verify(signed):
+        key = load_private(a.key)
+        signed = sign(key, doc)
+        # The signer holds the key, and sign() already proved the key's SPKI hashes to the
+        # estate_owner rappid — so for the signer, that rappid is the anchor.
+        anchor = [e for e in signed["entries"] if e["type"] == "estate_owner"][0]["rappid"]
+        if not verify(signed, trust_anchor=anchor):
             raise SystemExit("signed document does not verify; not written")
         with open(a.out, "w") as f:
             f.write(json.dumps(signed, indent=2, ensure_ascii=False) + "\n")
         print("written:", a.out)
     elif a.cmd == "verify":
         with open(a.inp) as f: doc = json.load(f)
-        sys.exit(0 if verify(doc, a.persisted_seq) else 1)
+        sys.exit(0 if verify(doc, a.persisted_seq, a.trust_anchor) else 1)
 
 
 if __name__ == "__main__":
