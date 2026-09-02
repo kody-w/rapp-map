@@ -113,7 +113,8 @@ async function listIssues(request, token, repository) {
 export async function reportOwnerBlocker({
   request = githubRequest,
   environment = process.env,
-  log = console.log
+  log = console.log,
+  load = loadJson
 } = {}) {
   invariant(
     environment.RAPP1_REPORT_OWNER_BLOCKER === "true",
@@ -125,13 +126,33 @@ export async function reportOwnerBlocker({
   invariant(/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repository), "invalid GitHub repository");
 
   const [authority, ledger] = await Promise.all([
-    loadJson("RAPP1_AUTHORITY.json"),
-    loadJson("RAPP1_OWNER_ACTIONS.json")
+    load("RAPP1_AUTHORITY.json"),
+    load("RAPP1_OWNER_ACTIONS.json")
   ]);
   const blocker = ledger.blockers?.find((entry) => entry.id === blockerId);
-  invariant(blocker?.state === "open", "owner blocker is not open");
+  invariant(blocker?.state === "open" || blocker?.state === "closed", "owner blocker state must be open or closed");
+  const issues = await listIssues(request, token, repository);
+  if (blocker.state === "closed") {
+    // The owner decided. Close the managed request if it is still open; never file a new one.
+    const openManaged = issues.filter(
+      (issue) => !issue.pull_request && typeof issue.body === "string" && issue.body.includes(ISSUE_MARKER) && issue.state === "open"
+    );
+    invariant(openManaged.length <= 1, `refusing ${openManaged.length} open issues with the managed marker`);
+    if (openManaged.length === 0) {
+      log("NOOP: owner blocker closed; no open managed issue");
+      return { action: "noop", number: null };
+    }
+    const number = openManaged[0].number;
+    await request(token, `/repos/${repository}/issues/${number}/comments`, {
+      method: "POST",
+      body: { body: `Owner decision recorded ${blocker.when?.published_at ?? ""}: registry published at ${blocker.where?.owner_publication_location ?? "(see ledger)"}. Closing.` }
+    });
+    await request(token, `/repos/${repository}/issues/${number}`, { method: "PATCH", body: { state: "closed" } });
+    log(`CLOSED #${number}: owner blocker resolved`);
+    return { action: "closed", number };
+  }
   const body = issueBody(authority, blocker);
-  const existing = selectManagedIssue(await listIssues(request, token, repository));
+  const existing = selectManagedIssue(issues);
 
   if (!existing) {
     const created = await request(token, `/repos/${repository}/issues`, {

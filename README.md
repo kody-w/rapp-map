@@ -41,5 +41,7 @@ The runner starts every Node check with the checked-in
 environment and runs Python graph generation, which has no network-capable
 imports. The guard denies the tested Node network, subprocess, worker, and
 native-loading paths and synchronizes patched built-ins for ESM. It is **not
-host sandbox enforcement**. Passing establishes structural consistency only;
-it does not resolve the owner blocker.
+host sandbox enforcement**. Passing establishes structural consistency, and — now that the owner
+has published the signed section 13 registry — verifies that signature with
+Node built-ins. It still does not make the repository fully RAPP/1 conformant
+on its own (see `RAPP1_STATUS.md`).

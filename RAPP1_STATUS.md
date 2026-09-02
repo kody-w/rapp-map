@@ -1,8 +1,11 @@
 # NOT YET FULLY RAPP/1 CONFORMANT
 
-The repository is structurally aligned to the pinned rev-5 authority, but
-RAPP/1 section 13 authenticated-registry evidence is absent. Structural checks
-cannot establish owner acceptance.
+The repository is structurally aligned to the pinned rev-5 authority. The
+RAPP/1 section 13 registry **was published and signed by the estate owner on
+2026-09-01** (`ecosystem-spec.json`, registry_seq 1); the standing guard verifies
+that signature with Node built-ins on every run. "Not yet fully conformant"
+remains true for other reasons: the authority pin is rev-5 while the anchor head
+is rev-14 (issue #14), and open drift issues remain.
 
 ## Exact authority
 
@@ -18,8 +21,8 @@ The machine-readable pin is
 ## Current disposition
 
 - This repository is a read-only map and observation surface.
-- `ecosystem-spec.json` is a fail-closed registry-path status document, not an
-  accepted registry.
+- `ecosystem-spec.json` is the estate's signed `rapp/1-registry` (registry_seq 1,
+  detached JWS EdDSA by the estate owner). Its signature is verified, never assumed.
 - `estate-map.json`, `neurons.json`, and `neurons-manifest.json` are retained
   byte-for-byte as baseline historical evidence. Their non-authoritative
   disposition and exact hashes are separate in `HISTORICAL_OBSERVATIONS.json`.
@@ -33,10 +36,11 @@ The machine-readable pin is
   project-process guard in a credential-empty environment. This is not host
   sandbox enforcement.
 
-## Remaining blocker
+## Owner action: recorded
 
-The owner action and its acceptance tests are recorded in
-[`RAPP1_OWNER_ACTIONS.md`](RAPP1_OWNER_ACTIONS.md) and
-[`RAPP1_OWNER_ACTIONS.json`](RAPP1_OWNER_ACTIONS.json). Until that action is
-completed and independently verified, consumers must report the repository as
-structurally checked but **not accepted as fully RAPP/1 conformant**.
+The section 13 owner action is **closed**: the estate-owner key was minted (held
+outside every repository), the registry was signed and published, and the public
+halves (rappid, SPKI, sequence, source, digest, signature) are recorded in
+[`RAPP1_OWNER_ACTIONS.json`](RAPP1_OWNER_ACTIONS.json). Consumers verify the
+signature against the out-of-band estate-owner rappid published in
+`kody-w/rapp-1`'s README; they do not take this file's word for it.

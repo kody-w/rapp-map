@@ -215,6 +215,23 @@ function mockRequest(openIssues) {
   return { request, calls };
 }
 
+// The reporter is exercised against SYNTHETIC ledgers so the tests stay meaningful in both the
+// blocked-on-owner and owner-published states of the real ledger.
+const syntheticAuthority = JSON.parse(await readFile(join(root, "RAPP1_AUTHORITY.json"), "utf8"));
+const realLedger = JSON.parse(await readFile(join(root, "RAPP1_OWNER_ACTIONS.json"), "utf8"));
+const openLedger = {
+  ...realLedger,
+  status: "blocked-on-owner",
+  blockers: [{ ...realLedger.blockers[0], state: "open", where: { ...realLedger.blockers[0].where, owner_publication_location: null } }]
+};
+const closedLedger = {
+  ...realLedger,
+  status: "owner-published",
+  blockers: [{ ...realLedger.blockers[0], state: "closed", when: { owner_decision_at: "2026-09-01T00:00:00.000Z", published_at: "2026-09-01T00:00:00.000Z" }, where: { ...realLedger.blockers[0].where, owner_publication_location: "https://example.invalid/registry" } }]
+};
+const loadOpen = async (path) => (path === "RAPP1_OWNER_ACTIONS.json" ? openLedger : syntheticAuthority);
+const loadClosed = async (path) => (path === "RAPP1_OWNER_ACTIONS.json" ? closedLedger : syntheticAuthority);
+
 const environment = {
   RAPP1_REPORT_OWNER_BLOCKER: "true",
   GITHUB_TOKEN: "synthetic-test-token",
@@ -238,7 +255,8 @@ const renamed = mockRequest([
 const renamedResult = await reportOwnerBlocker({
   request: renamed.request,
   environment,
-  log() {}
+  log() {},
+  load: loadOpen
 });
 assert(renamedResult.action === "updated" && renamedResult.number === 41, "renamed issue was not reused");
 const renamedWrite = renamed.calls.find((call) => call.options.method === "PATCH");
@@ -256,7 +274,7 @@ const collision = mockRequest([
 ]);
 await expectRejects(
   "unmarked same-title issue collision is refused",
-  () => reportOwnerBlocker({ request: collision.request, environment, log() {} }),
+  () => reportOwnerBlocker({ request: collision.request, environment, log() {}, load: loadOpen }),
   /unmarked title collision/u
 );
 assert(
@@ -270,7 +288,7 @@ const duplicate = mockRequest([
 ]);
 await expectRejects(
   "duplicate managed markers are refused",
-  () => reportOwnerBlocker({ request: duplicate.request, environment, log() {} }),
+  () => reportOwnerBlocker({ request: duplicate.request, environment, log() {}, load: loadOpen }),
   /2 issues with the managed marker/u
 );
 assert(
@@ -283,12 +301,39 @@ const closed = mockRequest([
 ]);
 await expectRejects(
   "closed managed marker is not reopened or duplicated",
-  () => reportOwnerBlocker({ request: closed.request, environment, log() {} }),
+  () => reportOwnerBlocker({ request: closed.request, environment, log() {}, load: loadOpen }),
   /closed; refusing to reopen or duplicate/u
 );
 assert(
   !closed.calls.some((call) => ["POST", "PATCH"].includes(call.options.method)),
   "closed managed issue caused a write"
 );
+
+const resolved = mockRequest([
+  { number: 46, state: "open", title: DEFAULT_TITLE, body: ISSUE_MARKER }
+]);
+const resolvedResult = await reportOwnerBlocker({ request: resolved.request, environment, log() {}, load: loadClosed });
+assert(resolvedResult.action === "closed" && resolvedResult.number === 46, "closed blocker did not close the managed issue");
+assert(resolved.calls.some((call) => call.options.method === "PATCH" && call.options.body.state === "closed"), "managed issue was not closed");
+assert(!resolved.calls.some((call) => call.options.method === "POST" && call.path.endsWith("/issues")), "closed blocker filed a new issue");
+pass("closed owner blocker closes the open managed issue and files nothing");
+
+const quiet = mockRequest([]);
+const quietResult = await reportOwnerBlocker({ request: quiet.request, environment, log() {}, load: loadClosed });
+assert(quietResult.action === "noop", "closed blocker with no managed issue must be a noop");
+assert(!quiet.calls.some((call) => ["POST", "PATCH"].includes(call.options.method)), "noop wrote");
+pass("closed owner blocker with no managed issue writes nothing");
+
+// The published registry must verify with Node built-ins, and a one-byte tamper must not.
+const { verifyRegistry } = await import("../.github/scripts/registry-verify.mjs");
+const registry = JSON.parse(await readFile(join(root, "ecosystem-spec.json"), "utf8"));
+if (registry.schema === "rapp/1-registry") {
+  const verdict = verifyRegistry(registry);
+  assert(/^rappid:@kody-w\//u.test(verdict.owner), "registry owner is not the kody-w estate");
+  pass("published registry signature verifies with node:crypto");
+  expectThrows("registry_seq tamper is refused", () => verifyRegistry({ ...registry, registry_seq: registry.registry_seq + 1 }), /does not verify/u);
+  expectThrows("entry tamper is refused", () => verifyRegistry({ ...registry, entries: [...registry.entries, { type: "error-code", code: "injected" }] }), /does not verify/u);
+  expectThrows("missing sig is refused", () => verifyRegistry({ ...registry, sig: undefined }), /detached JWS sig/u);
+}
 
 console.log(`RESULT PASS: ${checks} adversarial repository regressions passed.`);
