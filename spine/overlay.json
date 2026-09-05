@@ -414,9 +414,9 @@
       "deep_verified": true,
       "gaps": [
         "Pricing is placeholder: all three tiers show \"$__ per month\".",
-        "No product link, signup, or installer \u2014 only a mailto to wildhavenhomesllc@gmail.com.",
+        "No product link, signup, or installer \u2014 only a mailto to a personal contact address.",
         "Open-Questions section openly admits unresolved economics (GitHub Models free tier vs paid API keys: \"we're figuring out who pays\").",
-        "Contact email (wildhavenhomesllc) differs from the canonical kody-w identity \u2014 looks like an early commercial-venture draft.",
+        "Contact email domain differs from the canonical kody-w identity \u2014 looks like an early commercial-venture draft.",
         "Owns no spec and exports no callable artifact."
       ],
       "layer": "distribution",
