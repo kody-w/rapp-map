@@ -10,12 +10,12 @@
   "count": 604,
   "counts": {
     "archived": 5,
-    "curated": 93,
+    "curated": 95,
     "private": 154,
     "total": 604,
     "with_heartbeat": 0
   },
-  "generated_at": "2026-08-25T22:49:45Z",
+  "generated_at": "2026-09-04T19:44:09Z",
   "generated_by": "spine map \u2014 DERIVED. Do not hand-edit; edit overlay.json.",
   "members": [
     {
@@ -6497,6 +6497,19 @@
     {
       "archived": false,
       "canon": {},
+      "curated": {
+        "canon_alignment": "aligned",
+        "deep_verified": true,
+        "depends_on": [
+          "Agent Skills open standard (agentskills.io)"
+        ],
+        "gaps": [
+          "opt-in jacket/egg flags not built yet (by charter: only when nothing simpler serves)"
+        ],
+        "layer": "tooling",
+        "load_bearing": true,
+        "notes": "Lossless conversion between a skill file and a single-file agent.py; host adapters for Claude Code and Copilot CLI; verified live on both with nothing installed. Rebuilt 2026-09-04; rapp-skills-legacy archived."
+      },
       "default_branch": "main",
       "description": "107 verified Agent Skill + RAPP agent.py pairs, including all 76 CAT Agent Skills, powered by the byte-exact converter.",
       "file_count": 498,
@@ -9342,6 +9355,15 @@
       "canon": {
         "agents/basic_agent.py": "221ba132886a501076533aeb2f03c44205bbb3d9"
       },
+      "curated": {
+        "canon_alignment": "aligned",
+        "deep_verified": true,
+        "depends_on": [],
+        "gaps": [],
+        "layer": "product",
+        "load_bearing": true,
+        "notes": "The person's own file (one SKILL.md with a mint-once identity and in-file memory) plus the starter skill that onboards a new person by asking plain questions. Replaced the archived browser runtime vbrainstem-legacy on 2026-09-04. On 2026-09-05 the virtual-brainstem skill made any AI a whole Brainstem in its own mind: the real kernel vendored byte for byte, run as a Python virtual machine within the AI's reasoning, the file as its disk, factory tools present, drift measured by running the code, and an exact procedure to plant a real one."
+      },
       "default_branch": "main",
       "description": "Browser-native RAPP agent runtime (vBrainstem) \u2014 run any agent in your browser via Pyodide, no install. Standalone host of the RAPP Brainstem; reads the live registry from kody-w/RAR.",
       "file_count": 47,
@@ -9444,7 +9466,9 @@
     }
   ],
   "observed_at": "2026-08-25T22:49:45Z",
-  "overlay_entries_for_missing_repos": [],
+  "overlay_entries_for_missing_repos": [
+    "rapp-mission"
+  ],
   "owner": "kody-w",
   "schema": "rapp-estate-map/2.0"
 }
