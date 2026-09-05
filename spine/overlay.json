@@ -2549,7 +2549,7 @@
       "gaps": [],
       "layer": "product",
       "load_bearing": true,
-      "notes": "The person's own file (one SKILL.md with a mint-once identity and in-file memory) plus the starter skill that onboards a new person by asking plain questions. Replaced the archived browser runtime vbrainstem-legacy on 2026-09-04."
+      "notes": "The person's own file (one SKILL.md with a mint-once identity and in-file memory) plus the starter skill that onboards a new person by asking plain questions. Replaced the archived browser runtime vbrainstem-legacy on 2026-09-04. On 2026-09-05 the virtual-brainstem skill made any AI a whole Brainstem in its own mind: the real kernel vendored byte for byte, run as a Python virtual machine within the AI's reasoning, the file as its disk, factory tools present, drift measured by running the code, and an exact procedure to plant a real one."
     },
     "rapp-skills": {
       "canon_alignment": "aligned",
