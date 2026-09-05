@@ -19,9 +19,14 @@ function invariant(condition, message) {
 }
 
 function requireOfflineGuard() {
+  const marker = globalThis[Symbol.for("rapp-map.offline-guard")];
+  // Matches the guard check in tests/run-regressions.mjs and
+  // tests/offline-guard-probe.mjs — this previously checked only `.schema`,
+  // so a marker object with the right schema but `active: false` (or no
+  // `active` field at all) passed here even though the guard itself
+  // documents `active` as part of what makes it live.
   invariant(
-    globalThis[Symbol.for("rapp-map.offline-guard")]?.schema ===
-      "rapp-map-offline-guard/1.0",
+    marker?.schema === "rapp-map-offline-guard/1.0" && marker.active === true,
     "run with NODE_OPTIONS=--import=./.github/scripts/offline-guard.mjs"
   );
 }

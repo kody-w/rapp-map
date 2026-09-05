@@ -41,6 +41,15 @@ def load_authority() -> dict[str, Any]:
     except (OSError, json.JSONDecodeError) as error:
         raise ValueError(f"cannot load {AUTHORITY_PATH.name}: {error}") from error
 
+    # Valid JSON can still be the wrong shape (e.g. a list or a string
+    # instead of an object) — without this check, `authority.get(...)`
+    # below raises an uncaught AttributeError instead of the controlled,
+    # fail-closed ValueError this function is documented to produce.
+    if not isinstance(authority, dict):
+        raise ValueError(
+            f"{AUTHORITY_PATH.name} must be a JSON object, found {type(authority).__name__}"
+        )
+
     for key, expected in EXPECTED_AUTHORITY.items():
         if authority.get(key) != expected:
             raise ValueError(
