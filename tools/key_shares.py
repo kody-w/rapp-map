@@ -106,7 +106,12 @@ def selftest():
 
 def main():
     ap = argparse.ArgumentParser(); sub = ap.add_subparsers(dest="cmd", required=True)
-    s = sub.add_parser("split"); s.add_argument("--in", dest="inp", required=True); s.add_argument("--out-dir", required=True); s.add_argument("--n", type=int, default=3); s.add_argument("--k", type=int, default=2)
+    # Defaults match this estate's documented custody plan (SUCCESSION.md:
+    # "split 2-of-4" -- one share for the owner, one for each of the three
+    # successors). The prior default of n=3 silently produced a 2-of-3 split
+    # if `split` were ever invoked without explicit --n/--k, leaving the
+    # third successor without a share.
+    s = sub.add_parser("split"); s.add_argument("--in", dest="inp", required=True); s.add_argument("--out-dir", required=True); s.add_argument("--n", type=int, default=4); s.add_argument("--k", type=int, default=2)
     c = sub.add_parser("combine"); c.add_argument("--share", action="append", required=True); c.add_argument("--out", required=True)
     sub.add_parser("selftest")
     a = ap.parse_args()

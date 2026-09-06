@@ -132,6 +132,17 @@ def collect(owner=OWNER, limit=2000, only=None):
             continue
         rec["head_tree_sha"] = tree.get("sha")
         rec["truncated"] = bool(tree.get("truncated"))
+        if rec["truncated"]:
+            # GitHub's recursive tree API silently drops entries past its size
+            # cap instead of erroring -- treating that response as complete
+            # would let a canon file go unnoticed if it happened to be past
+            # the cut, the same class of miss that "record archived repos
+            # instead of skipping them" (above) exists to prevent. Fail
+            # closed on this repo's observation rather than report a
+            # possibly-incomplete canon set as authoritative.
+            rec["error"] = "tree response truncated by GitHub API"
+            out[name] = rec
+            continue
         blobs = {t["path"]: t["sha"] for t in (tree.get("tree") or [])
                  if t.get("type") == "blob"}
         rec["file_count"] = len(blobs)
@@ -397,7 +408,20 @@ def cmd_snapshot(args):
 
 def read_vertebra(path):
     with zipfile.ZipFile(path) as z:
-        return json.loads(z.read("estate.json"))
+        payload = z.read("estate.json")
+        # cmd_snapshot writes manifest.json's sha256 specifically so a later
+        # read can prove estate.json hasn't been altered inside the zip --
+        # skipping that check (as this function used to) makes the digest
+        # decorative: `spine diff`/`spine check` would compare a silently
+        # tampered or corrupted vertebra against live state and report
+        # whatever the altered content says, not a mismatch.
+        manifest = json.loads(z.read("manifest.json"))
+        digest = hashlib.sha256(payload).hexdigest()
+        if digest != manifest.get("sha256"):
+            raise ValueError(
+                f"{path}: estate.json digest {digest[:16]} does not match "
+                f"manifest.json sha256 {str(manifest.get('sha256'))[:16]}")
+        return json.loads(payload)
 
 
 def _diff(a, b):
