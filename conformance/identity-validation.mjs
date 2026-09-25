@@ -8,71 +8,85 @@ const AUTHORITY_SHA256 =
 export const REQUIRED_VECTORS = Object.freeze({
   "rev5-keyless-uuid4-raw-octets": Object.freeze({
     verdict: "CLEAN",
+    rule: "RAPP/1 rev-5 sections 5, 6.1, and 6.2",
     digest: "522d52fb5a83b437352e3391de74ab72ffb545dad0ee7a2d1000407cd11136cc",
     invariant: "uuid4-hb"
   }),
   "rev5-keyed-spki-der": Object.freeze({
     verdict: "CLEAN",
+    rule: "RAPP/1 rev-5 sections 5, 6.1, and 6.2",
     digest: "1e9286fcf45faa74c1411ed1e70c9d7e7607cbd0bbcb4f0bd3e63e64e61baa39",
     invariant: "spki-hb-exact"
   }),
   "rev5-forbid-spki-trailing-one-byte": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 section 6.2 exact SPKI_DER octets",
     digest: "38481cc56b49470621249b337fd2fc757049a5bc9e436814d1c8b1bdd1e539ba",
     invariant: "spki-der-refused"
   }),
   "rev5-forbid-spki-trailing-four-bytes": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 section 6.2 exact SPKI_DER octets",
     digest: "647247861408f8bc1b220b77da6e72bb99252a6db7b0f13ddfd62e77280c6483",
     invariant: "spki-der-refused"
   }),
   "rev5-forbid-spki-malformed-length": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 section 6.2 exact SPKI_DER octets",
     digest: "8796882e7906fb1a9da75ecd97667fad8d902162e69d3c667c99d0a80343bf71",
     invariant: "spki-der-refused"
   }),
   "rev5-forbid-untagged-spki-sha256": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 sections 5, 6.2, and 6.3",
     digest: "900de8b6e46a80fd0788a201ab1d7fa9f677e9fa97e5897b1199b77612d04135",
     invariant: "forbidden-derivation"
   }),
   "rev5-forbid-uuid-text-sha256": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 sections 5 and 6.2",
     digest: "8d246b85d9544581d16c03b657278924adeddccd78d57d6bba25108279a9cd47",
     invariant: "forbidden-derivation"
   }),
   "rev5-forbid-owner-slug-sha256": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 section 6.2",
     digest: "533e5443a456db54c8c0695a309b06eb7165a527ddbc8f901fca8c15926db8db",
     invariant: "forbidden-derivation"
   }),
   "rev5-forbid-legacy-v2-grammar": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 sections 6.1 and 6.3",
     digest: "713861e60447a0a62cf9c38b94ace3e7167dce90404ede9c649b71cc1a4c8a74",
     invariant: "grammar-refused:legacy-v2-grammar"
   }),
   "rev5-forbid-bare-slug-grammar": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 section 6.1",
     digest: "74e7fcd505852b252f3b302b5bd6d28cbb6581d66fe7276ca47831b44fe32056",
     invariant: "grammar-refused:bare-slug-grammar"
   }),
   "rev5-forbid-uppercase-tail": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 sections 5 and 6.1",
     digest: "7972558c82c7183cbebcc912beaf88a404977681beff5f2b9d9ed5ee34742240",
     invariant: "grammar-refused:uppercase-tail"
   }),
   "rev5-forbid-short-tail": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 sections 6.1 and 6.3",
     digest: "021939d216eb1fda64a7b412e6202a814c1bc255e15d2fd8fa7a1ab24c307b04",
     invariant: "grammar-refused:short-tail"
   }),
   "rev5-forbid-uppercase-owner": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 section 6.1",
     digest: "3348838271762a7f125d5b3a5d2eb4e4166927f70c9f44de99b89d062ad5920d",
     invariant: "grammar-refused:uppercase-owner"
   }),
   "rev5-forbid-adjacent-hyphen": Object.freeze({
     verdict: "DRIFT",
+    rule: "RAPP/1 rev-5 section 6.1",
     digest: "28f0b66b46d035e5ef93821b65470ea027acb20a6329c47542855bd6de394e44",
     invariant: "grammar-refused:adjacent-hyphen"
   })
@@ -283,6 +297,10 @@ export function validateDocument(document) {
     invariant(
       testCase.expected_verdict === binding.verdict,
       `${testCase.id} verdict differs from the independently pinned verdict`
+    );
+    invariant(
+      testCase.expected_rule === binding.rule,
+      `${testCase.id} rule differs from the independently pinned rule`
     );
     invariant(
       normalizedFixtureDigest(testCase) === binding.digest,

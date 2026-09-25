@@ -181,6 +181,24 @@ expectThrows(
   /independently pinned verdict/u
 );
 
+const changedRule = structuredClone(cases);
+changedRule.cases[0].expected_rule = "RAPP/1 rev-5 section 6.1";
+expectThrows(
+  "required rule mutation is refused",
+  () => validateDocument(changedRule),
+  /^rev5-keyless-uuid4-raw-octets rule differs from the independently pinned rule$/u
+);
+
+assert(Object.isFrozen(REQUIRED_VECTORS), "required vector table must be immutable");
+for (const [id, binding] of Object.entries(REQUIRED_VECTORS)) {
+  assert(Object.isFrozen(binding), `${id} binding must be immutable`);
+  assert(
+    Object.keys(binding).sort().join(",") === "digest,invariant,rule,verdict",
+    `${id} binding must pin digest, invariant, rule, and verdict`
+  );
+}
+pass("required vector bindings are immutable and complete");
+
 const caseById = new Map(cases.cases.map((testCase) => [testCase.id, testCase]));
 for (const id of [
   "rev5-keyed-spki-der",

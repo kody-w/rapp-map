@@ -1,5 +1,5 @@
 {
-  "$comment": "Synthetic structural vectors for RAPP/1 rev-5 identity only. Required IDs, verdicts, and normalized fixture digests are independently pinned in identity-validation.mjs.",
+  "$comment": "Synthetic structural vectors for RAPP/1 rev-5 identity only. Required IDs, verdicts, rules, normalized fixture digests, and evaluation invariants are independently pinned in identity-validation.mjs.",
   "format_version": 3,
   "authority": {
     "commit": "d2cd5abed48d3f52b86bbb975ac3558286d1db41",
