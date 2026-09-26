@@ -1,11 +1,12 @@
 # NOT YET FULLY RAPP/1 CONFORMANT
 
 The repository is structurally aligned to the pinned rev-5 authority. The
-RAPP/1 section 13 registry **was published and signed by the estate owner on
-2026-09-01** (`ecosystem-spec.json`, registry_seq 1); the standing guard verifies
-that signature with Node built-ins on every run. "Not yet fully conformant"
-remains true for other reasons: the authority pin is rev-5 while the anchor head
-is rev-14 (issue #14), and open drift issues remain.
+RAPP/1 section 13 registry **was published and signed by the estate owner at
+`2026-09-02T01:14:10.000Z`** (`ecosystem-spec.json`, registry_seq 1) and is now
+at registry_seq 2 (published `2026-09-02T12:41:49.000Z`); the standing guard
+verifies that signature with Node built-ins on every run. "Not yet fully
+conformant" remains true for other reasons: the authority pin is rev-5 while
+the anchor head is rev-14 (issue #14), and open drift issues remain.
 
 ## Exact authority
 
@@ -21,7 +22,7 @@ The machine-readable pin is
 ## Current disposition
 
 - This repository is a read-only map and observation surface.
-- `ecosystem-spec.json` is the estate's signed `rapp/1-registry` (registry_seq 1,
+- `ecosystem-spec.json` is the estate's signed `rapp/1-registry` (registry_seq 2,
   detached JWS EdDSA by the estate owner). Its signature is verified, never assumed.
 - `estate-map.json`, `neurons.json`, and `neurons-manifest.json` are retained
   byte-for-byte as baseline historical evidence. Their non-authoritative

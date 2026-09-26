@@ -1,7 +1,9 @@
 # rapp-map
 
 `rapp-map` is a read-only repository map. It is not a protocol authority, a
-runtime, an installer, or an authenticated registry.
+runtime, or an installer. It hosts the estate's signed section 13 registry,
+`ecosystem-spec.json`, whose authority comes from the estate owner's signature,
+not from this repository.
 
 ## RAPP/1 authority and status
 
@@ -9,16 +11,17 @@ The sole protocol authority used here is `kody-w/rapp-1` at commit
 `d2cd5abed48d3f52b86bbb975ac3558286d1db41`, with `SPEC.md` pinned by exact
 length and SHA-256 in [`RAPP1_AUTHORITY.json`](RAPP1_AUTHORITY.json).
 
-**This repository is not yet fully RAPP/1 conformant.** The authenticated
-registry evidence required by section 13 is absent. See
-[`RAPP1_STATUS.md`](RAPP1_STATUS.md) and the
+**This repository is not yet fully RAPP/1 conformant.** The section 13 registry
+is published: `ecosystem-spec.json` is the estate owner's signed
+`rapp/1-registry` (registry_seq 2). The remaining reasons are in
+[`RAPP1_STATUS.md`](RAPP1_STATUS.md); the owner action is recorded in the
 [`owner-action ledger`](RAPP1_OWNER_ACTIONS.md).
 
 ## Live artifacts
 
 | Artifact | Disposition |
 | --- | --- |
-| `ecosystem-spec.json` | Fail-closed registry-path status; consumers must refuse it as an authenticated registry. |
+| `ecosystem-spec.json` | The estate owner's signed section 13 `rapp/1-registry` (registry_seq 2). Consumers verify its detached signature against the out-of-band estate-owner rappid in `kody-w/rapp-1`'s README before trusting it; the local gates verify it on every run. |
 | `graph.json` | Format 2 deterministic map: technical `conforms_to` targets `kody-w/rapp-1`; section 11 `subordinate_to` targets `kody-w/RAPP`. It claims no registry provenance. |
 | `estate-map.json` | Derived by `tools/spine.py` from `spine/observations.json` and `spine/overlay.json`; never hand-edited and not byte-pinned. See [`SPINE.md`](SPINE.md). |
 | `neurons.json` | Historical 630-record evidence, byte-identical to the baseline blob. |
