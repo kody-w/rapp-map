@@ -10,8 +10,11 @@ identities, the parser re-exports DER SubjectPublicKeyInfo and requires exact
 byte equality before hashing. Negative vectors include one-byte and four-byte
 trailing garbage, a malformed DER length, untagged SPKI hashing, printable UUID
 hashing, owner/slug hashing, and exact mutations of a valid grammar control.
-Format 3 binds every required ID to a code-owned verdict and normalized fixture
-digest.
+Format 3 binds every required ID to a code-owned verdict, rule, normalized
+fixture digest, and evaluation invariant. Each `expected_rule` must exactly
+match its independent `rule` binding in `identity-validation.mjs`. The fixture
+digest covers only `rappid`, `mint`, and `mutation`; rule metadata is pinned
+separately.
 
 ```sh
 bash .github/scripts/run-offline-gates.sh
