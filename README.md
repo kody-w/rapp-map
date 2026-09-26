@@ -1,5 +1,9 @@
 # rapp-map
 
+<!-- rapp1:network-header:start -->
+[![RAPP/1](https://kody-w.github.io/rapp-hive-public/portfolio/badges/rapp-map.svg)](https://github.com/kody-w/rapp-hive-public/blob/main/portfolio/repos/rapp-map.md) · **New to RAPP?** [Start here: get your Brainstem →](https://github.com/kody-w/rapp-installer#start-here)
+<!-- rapp1:network-header:end -->
+
 `rapp-map` is a read-only repository map. It is not a protocol authority, a
 runtime, or an installer. It hosts the estate's signed section 13 registry,
 `ecosystem-spec.json`, whose authority comes from the estate owner's signature,
